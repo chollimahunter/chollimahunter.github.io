@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:49:27Z",
+  "generated_at": "2026-10-26T13:57:55Z",
   "record_count": 12050,
   "records": [
     {
@@ -537,7 +537,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2018-03-16",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -17540,7 +17540,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -17714,7 +17714,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -29980,7 +29980,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -43209,7 +43209,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -43636,7 +43636,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -45179,7 +45179,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -51373,7 +51373,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -51669,7 +51669,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -54207,7 +54207,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -68802,7 +68802,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -72714,7 +72714,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -78360,7 +78360,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -86877,7 +86877,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -89195,7 +89195,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -93409,7 +93409,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -102172,7 +102172,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -103934,7 +103934,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-19",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -105591,7 +105591,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -108880,7 +108880,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -113547,7 +113547,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -116111,7 +116111,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-04-24",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -145007,7 +145007,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -146426,7 +146426,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -147378,7 +147378,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -147983,7 +147983,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-07-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -149645,7 +149645,7 @@
         "APT38"
       ],
       "first_seen": "2025-04-13",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -150814,7 +150814,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -153868,7 +153868,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-02-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -155318,7 +155318,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -156577,7 +156577,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -157692,7 +157692,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -159786,7 +159786,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -160470,7 +160470,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -162380,7 +162380,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -162440,7 +162440,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -169388,7 +169388,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -169610,7 +169610,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -170596,7 +170596,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -171019,7 +171019,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -179532,7 +179532,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -182033,7 +182033,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -182953,7 +182953,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -190419,7 +190419,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -192248,7 +192248,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -197334,7 +197334,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -198035,7 +198035,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -200283,7 +200283,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-04-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -200800,7 +200800,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -201081,7 +201081,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -201375,7 +201375,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -203049,7 +203049,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -203678,7 +203678,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-07-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -207180,7 +207180,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -207402,7 +207402,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -208275,7 +208275,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -208887,7 +208887,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -210467,7 +210467,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -210946,7 +210946,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-07-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -211221,7 +211221,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -212065,7 +212065,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2024-12-31",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -212864,7 +212864,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-04-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -214525,7 +214525,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -214677,7 +214677,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -221569,7 +221569,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -225057,7 +225057,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -225978,7 +225978,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -226114,7 +226114,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -226750,7 +226750,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-27",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -228750,7 +228750,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-10-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -230538,7 +230538,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -233066,7 +233066,7 @@
         "APT37"
       ],
       "first_seen": "2024-02-16",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -236117,7 +236117,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -239058,7 +239058,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -241320,7 +241320,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -243028,7 +243028,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -244536,7 +244536,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -245067,7 +245067,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -245159,7 +245159,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -249905,7 +249905,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -250113,7 +250113,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -250248,7 +250248,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -250608,7 +250608,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -253061,7 +253061,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-07-22",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -254668,7 +254668,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -255154,7 +255154,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -255184,7 +255184,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -255285,7 +255285,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -256924,7 +256924,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -258536,7 +258536,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -259756,7 +259756,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -260018,7 +260018,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -261020,7 +261020,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -263623,7 +263623,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -265196,7 +265196,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -266702,7 +266702,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -266988,7 +266988,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -268042,7 +268042,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -269425,7 +269425,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -271015,7 +271015,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-04-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -271655,7 +271655,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-04-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -275681,7 +275681,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-04-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -294003,7 +294003,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -306041,7 +306041,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-01-14",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -326226,7 +326226,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-01-14",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -330666,7 +330666,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-01-14",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -330934,7 +330934,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-01-14",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -342389,7 +342389,7 @@
         "APT37"
       ],
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -349744,7 +349744,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -359289,7 +359289,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -373601,7 +373601,7 @@
         "Konni"
       ],
       "first_seen": "2025-02-03",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378834,7 +378834,7 @@
         "APT37"
       ],
       "first_seen": "2026-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -387366,6 +387366,17 @@
           "section": "IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "2e7039485e5c56506ac2b40dceb0db927c024422fbd694685ec50127661c7ea6"
+        },
+        {
+          "url": "https://quetzal.bitso.com/p/interview-with-the-chollima-v",
+          "title": "Interview with the Chollima V",
+          "publisher": "Bitso Quetzal Team",
+          "published": "2025-11-07",
+          "context": "…” in “ Famous Chollima .” Until next time (we know it’ll happen again). IOCs URL:https://linkedin.com/in/sebastian-tamayo-pro URL:https://www.klimbup.com/perfiles/sebastian-tamayo 9 Share Previous Next Top Latest Discussions No posts Ready for more? Subscribe © 2026…",
+          "context_origin": "text",
+          "section": "IOCs",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "997ad47664a18c7558624a9ed7d961e1079e2ad2e0e8ca27dad33e6f9baaac49"
         }
       ]
     },
@@ -387544,6 +387555,17 @@
           "section": "IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "e120c68e464672bec519a944abd7a816e8889d2a727d8969156641cc6b6ed4d4"
+        },
+        {
+          "url": "https://quetzal.bitso.com/p/interview-with-the-chollima-iii",
+          "title": "Interview with the Chollima III",
+          "publisher": "Bitso Quetzal Team",
+          "published": "2025-10-30",
+          "context": "…I think I mislabelled our subjects in this article. IOCs URL:https://www.linkedin.com/in/alfredo-solares-garcia/ URL:https://www.linkedin.com/in/mateo-jimenez-aaa304379/ 6 Share Previous Next Top Latest Discussions No…",
+          "context_origin": "text",
+          "section": "IOCs",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "8cc4579ef4b2a8f0f45c4861f7b3659d44072ed0ec19a592ad31c625114b5723"
         }
       ]
     },
@@ -388822,6 +388844,17 @@
           "section": "Public IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "266060912fad7686dffa13488afbf484eef6629741b0fb74ae105ba5d9ed2117"
+        },
+        {
+          "url": "https://quetzal.bitso.com/p/interview-with-the-chollima-vi",
+          "title": "Interview with the Chollima VI",
+          "publisher": "Bitso Quetzal Team",
+          "published": "2025-11-10",
+          "context": "…Public IOCs URL:https://linkedin.com/in/jesus-sebastian/ 3 Share Previous Next Top Latest Discussions No posts Ready for more? Subscribe © 2026…",
+          "context_origin": "text",
+          "section": "Public IOCs",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "81417a8e55fd0da05033902a39e21522909c23ff98bbb866ce698be489de7b33"
         }
       ]
     },
@@ -389610,6 +389643,17 @@
           "section": "IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "e120c68e464672bec519a944abd7a816e8889d2a727d8969156641cc6b6ed4d4"
+        },
+        {
+          "url": "https://quetzal.bitso.com/p/interview-with-the-chollima-iii",
+          "title": "Interview with the Chollima III",
+          "publisher": "Bitso Quetzal Team",
+          "published": "2025-10-30",
+          "context": "…I think I mislabelled our subjects in this article. IOCs URL:https://www.linkedin.com/in/alfredo-solares-garcia/ URL:https://www.linkedin.com/in/mateo-jimenez-aaa304379/ 6 Share Previous Next Top Latest Discussions No posts Ready for more? Subscribe © 2026…",
+          "context_origin": "text",
+          "section": "IOCs",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "8cc4579ef4b2a8f0f45c4861f7b3659d44072ed0ec19a592ad31c625114b5723"
         }
       ]
     },
@@ -390345,6 +390389,17 @@
           "section": "IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "2e7039485e5c56506ac2b40dceb0db927c024422fbd694685ec50127661c7ea6"
+        },
+        {
+          "url": "https://quetzal.bitso.com/p/interview-with-the-chollima-v",
+          "title": "Interview with the Chollima V",
+          "publisher": "Bitso Quetzal Team",
+          "published": "2025-11-07",
+          "context": "…We put the “ Famous ” in “ Famous Chollima .” Until next time (we know it’ll happen again). IOCs URL:https://linkedin.com/in/sebastian-tamayo-pro URL:https://www.klimbup.com/perfiles/sebastian-tamayo 9 Share Previous Next Top Latest Discussions No…",
+          "context_origin": "text",
+          "section": "IOCs",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "997ad47664a18c7558624a9ed7d961e1079e2ad2e0e8ca27dad33e6f9baaac49"
         }
       ]
     },
@@ -390943,7 +390998,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -394830,7 +394885,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -395040,7 +395095,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -395160,7 +395215,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -395670,7 +395725,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2025-10-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -396401,7 +396456,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -396521,7 +396576,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -396701,7 +396756,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -396971,7 +397026,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -397001,7 +397056,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -397091,7 +397146,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -397451,7 +397506,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -397541,7 +397596,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-10-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -406444,7 +406499,7 @@
         "NullReceiver"
       ],
       "first_seen": "2025-10-20",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -406965,7 +407020,7 @@
         "NullReceiver"
       ],
       "first_seen": "2025-10-20",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-26",
       "extraction": {
         "method": "regex",
         "model": null,

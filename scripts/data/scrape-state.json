@@ -82,44 +82,44 @@
     "https://any.run/cybersecurity-blog/how-to-protect-organization-against-north-korean-it-workers": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b5d841b0d2779576c12175646fc7120fb6b06dfa59bc8cae868ba24a93be5411",
-      "last_fetched": "2026-10-18T04:07:19.933Z"
+      "source_sha256": "831e5120cd3d39e5b315f8afb244d86d5b8aa77a68e29ba148f79fd256f90968",
+      "last_fetched": "2026-10-26T13:56:55.612Z"
     },
     "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation-part-two/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "254f32ced423461eb03e83b8156c29bafe22cab7a58a9ad372604b018d4c7c1e",
-      "last_fetched": "2026-10-18T04:07:18.228Z"
+      "source_sha256": "928d85db05e9fd7c2d860b7b20f65cb2b1d4e1c402bfe4119f798f9676a816b3",
+      "last_fetched": "2026-10-26T13:56:54.089Z"
     },
     "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "9e2e09ea2c365874a8d17d1adb5dfc54e2bd62931aa6a86856cecd5948097423",
-      "last_fetched": "2026-10-18T04:07:15.951Z"
+      "source_sha256": "cd5280ebe3b87607dbbf49fcc701d895e6cac0e67a4cdc01491eae9e8202f978",
+      "last_fetched": "2026-10-26T13:56:51.385Z"
     },
     "https://any.run/cybersecurity-blog/lazarus-macos-malware-mach-o-man/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "19c8d905a03e5a1688d0822b1aa560be4237a433cd34218e66712ee647c9c9d9",
-      "last_fetched": "2026-10-18T04:07:21.791Z"
+      "source_sha256": "dd85f0e8d8aef3cbc3f899d012c66b5343db5d3c13ba99c511440da7ed3e00be",
+      "last_fetched": "2026-10-26T13:56:58.013Z"
     },
     "https://any.run/cybersecurity-blog/ottercookie-malware-analysis/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2beda93d01bdc86bafc854f2ffc46a6fd165f1782aa8b426cf1ab9c27f840a39",
-      "last_fetched": "2026-10-18T04:07:26.396Z"
+      "source_sha256": "8d7ed657f3c294c95416cdc821603f32456d08f7105221f7bc05c29e749cd3a6",
+      "last_fetched": "2026-10-26T13:57:02.427Z"
     },
     "https://any.run/cybersecurity-blog/pylangghost-malware-analysis/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ae643385ece44d00ec741808209a86e4387e43e24815f3915d204c3a1c583b22",
-      "last_fetched": "2026-10-18T04:07:23.315Z"
+      "source_sha256": "dfdfb54c66a2417a79b88026820ba8841cb68afa78feb7004a29f75037ff928d",
+      "last_fetched": "2026-10-26T13:56:59.458Z"
     },
     "https://any.run/cybersecurity-blog/wannacry-ransomware/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "acf060fdd8ad34177faec5af3d26f4a7fec553f31d9c8e286f04d0ca08207041",
-      "last_fetched": "2026-10-18T04:07:24.841Z"
+      "source_sha256": "c2f4485b5a5c6252997d361a82a845c0020822b01fae43004c88fdda82fc052f",
+      "last_fetched": "2026-10-26T13:57:01.019Z"
     },
     "https://arcticwolf.com/resources/blog/bluenoroff-uses-clickfix-fileless-powershell-and-ai-generated-zoom-meetings-to-target-web3-sector/": {
       "etag": null,
@@ -394,14 +394,14 @@
     "https://asec.ahnlab.com/en/84841": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "839fcb25e81508ff9bedee97a0fd1d686ef55d0ad5397dae7dc0425d2c41d275",
-      "last_fetched": "2026-10-18T04:05:53.152Z"
+      "source_sha256": "2b4ec8c9c0425e3d13eaf23cb43a65942679c0487445bd7c87956fcc8d3d9a87",
+      "last_fetched": "2026-10-26T13:55:31.246Z"
     },
     "https://asec.ahnlab.com/en/85400": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:05:58 GMT",
-      "source_sha256": "25cfa0c480fc8a82b086f353a9f691354d5392dfc7d79f72a719e26b538c3291",
-      "last_fetched": "2026-10-18T04:05:58.680Z"
+      "last_modified": null,
+      "source_sha256": "668f10d41e0021735ac0c741d8fc699dfdf5303525c2dc295e374758cdb2d118",
+      "last_fetched": "2026-10-26T13:55:34.455Z"
     },
     "https://asec.ahnlab.com/en/85942/": {
       "etag": null,
@@ -418,44 +418,44 @@
     "https://asec.ahnlab.com/en/86687": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7060eb79a62ae46e5a9ffbdd31597f55bb38d64efca0d77aec86b9d4449a4636",
-      "last_fetched": "2026-10-18T04:06:04.627Z"
+      "source_sha256": "90728b84599c160c9be7002f4f2ef70627035dd45e2b7d3258545257398769b3",
+      "last_fetched": "2026-10-26T13:55:37.030Z"
     },
     "https://asec.ahnlab.com/en/87299": {
       "etag": null,
-      "last_modified": "Mon, 12 Oct 2026 18:49:53 GMT",
-      "source_sha256": "64e5ac0abbcf784487194ddb3a878969fd08c2bd69872522c256c1d3cc2aec81",
-      "last_fetched": "2026-10-18T04:06:10.273Z"
+      "last_modified": null,
+      "source_sha256": "954f034efbee0e6fe9dd4ffc195682ca18e26eb3b13a6869b445c887a2b54dd7",
+      "last_fetched": "2026-10-26T13:55:39.592Z"
     },
     "https://asec.ahnlab.com/en/87554": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "3cb8fc1d106376dabda53a5d431402b2800ff84dcacc1fb6d9daae72ff4790c6",
-      "last_fetched": "2026-10-18T04:06:12.649Z"
+      "last_modified": "Mon, 26 Oct 2026 01:44:28 GMT",
+      "source_sha256": "7f4a3e19fd48b38d59d8b7b36831cadcaea7f57afe3678184b3a2de48c86717b",
+      "last_fetched": "2026-10-26T13:55:42.307Z"
     },
     "https://asec.ahnlab.com/en/87621": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:16 GMT",
-      "source_sha256": "ba70e2f7d564aaf765401593782a54160eab6997d5c8bf88f36a717a7d057df4",
-      "last_fetched": "2026-10-18T04:06:16.658Z"
+      "last_modified": "Mon, 12 Oct 2026 16:45:58 GMT",
+      "source_sha256": "af3b25ee3f7effd3e0b99f4b2fad552590496082ed87aaabc81a2bb7f1b4a376",
+      "last_fetched": "2026-10-26T13:55:44.794Z"
     },
     "https://asec.ahnlab.com/en/88132": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:21 GMT",
-      "source_sha256": "bf7c10fcf795c25c93c697dfc112b6647bd0262720a41a232563d0c97cb19df6",
-      "last_fetched": "2026-10-18T04:06:22.802Z"
+      "last_modified": null,
+      "source_sha256": "5787d9e4f3b24244c88268a9e32aa973d8186e3b6324c78e3c5120756036c4a2",
+      "last_fetched": "2026-10-26T13:55:47.284Z"
     },
     "https://asec.ahnlab.com/en/88465": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:25 GMT",
-      "source_sha256": "eaf4439be3b31efb6feebc66bf430c8577f8cbfe00349362bfa1429f5de538b4",
-      "last_fetched": "2026-10-18T04:06:26.896Z"
+      "last_modified": null,
+      "source_sha256": "269120fe3253c349c38faa2e7b744fdcfaaf2e9863d926043b9a43bb537bc83b",
+      "last_fetched": "2026-10-26T13:55:49.717Z"
     },
     "https://asec.ahnlab.com/en/89130": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:30 GMT",
-      "source_sha256": "fc8354d8b8313945adba66eb7da18f50ae9b83efecf11815fa0f54ca0b908f40",
-      "last_fetched": "2026-10-18T04:06:30.924Z"
+      "last_modified": null,
+      "source_sha256": "0d6c80abe18be218df80f0aa28aa210ad2d39acf07187846f6f8b2f7d048ff5e",
+      "last_fetched": "2026-10-26T13:55:53.852Z"
     },
     "https://asec.ahnlab.com/en/89639/": {
       "etag": null,
@@ -471,9 +471,9 @@
     },
     "https://asec.ahnlab.com/en/93421": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:33 GMT",
-      "source_sha256": "8913ad1d3328e6e9b9352d1f9ed8a6bd7cefadea033b46d89d7b506b262f002b",
-      "last_fetched": "2026-10-18T04:06:36.052Z"
+      "last_modified": null,
+      "source_sha256": "887e3832831f2e1629b3777d4a3b3743635e094dea1a3c10e988bc541b5aff40",
+      "last_fetched": "2026-10-26T13:55:56.362Z"
     },
     "https://asec.ahnlab.com/en/94271/": {
       "etag": null,
@@ -533,91 +533,91 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "588015ae95c45505d1e6c13f18bcd7bda355168deae872c70aeab1a599749007",
-      "last_fetched": "2026-10-18T04:06:39.432Z"
+      "last_fetched": "2026-10-26T13:55:59.061Z"
     },
     "https://asec.ahnlab.com/ko/27166": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "688babb2182288f0103409fd0de556069528ca599282d0d5ba21c1621674b943",
-      "last_fetched": "2026-10-18T04:06:44.584Z"
+      "last_fetched": "2026-10-26T13:56:05.763Z"
     },
     "https://asec.ahnlab.com/ko/27760": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:47 GMT",
+      "last_modified": "Sun, 18 Oct 2026 21:06:07 GMT",
       "source_sha256": "a0ac64b246a17b00fc3d0190302cf11cb2e9aab75457de6cde9d8194b894096a",
-      "last_fetched": "2026-10-18T04:06:49.301Z"
+      "last_fetched": "2026-10-26T13:56:09.237Z"
     },
     "https://asec.ahnlab.com/ko/29718": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:51 GMT",
-      "source_sha256": "b517169f43b8057a86d5ef3da4a20250f044d510e2891e72c6a6566481d528d9",
-      "last_fetched": "2026-10-18T04:06:53.446Z"
+      "last_modified": null,
+      "source_sha256": "d25a9ab9550d0ebf5d137ae580d6df570befc10182abc0930a57dfb2df20d461",
+      "last_fetched": "2026-10-26T13:56:11.841Z"
     },
     "https://asec.ahnlab.com/ko/30953": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3141630e6564bd1e8ed893dabb4a7fe5d6eef9c73e5741250bab75404aba84df",
-      "last_fetched": "2026-10-18T04:06:57.531Z"
+      "source_sha256": "1faefc6b7122066d78ea1612bba91068eae9fedeb6c1625d24181902845b5328",
+      "last_fetched": "2026-10-26T13:56:14.302Z"
     },
     "https://asec.ahnlab.com/ko/30980": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:06:58 GMT",
-      "source_sha256": "c762eec1e4c07d7ecc94b8a5b250e370bb6ec246cdc85480fa9416864551d1a5",
-      "last_fetched": "2026-10-18T04:07:01.211Z"
+      "last_modified": null,
+      "source_sha256": "525e6c774f24c5d357f5bcb0464d57fcf0e319fb670cdd33bd3996739ba0ab10",
+      "last_fetched": "2026-10-26T13:56:16.837Z"
     },
     "https://asec.ahnlab.com/ko/31481": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "138909fc8e7111134da8e57b3de3a4fec3d3812dbd8fae87131cc14309ebc1e4",
-      "last_fetched": "2026-10-18T04:07:04.553Z"
+      "last_modified": "Mon, 26 Oct 2026 13:56:24 GMT",
+      "source_sha256": "6870c81f5b0eb2a0891e0064df3a92b55bf726c6d35523a51b06b0229a0e94c2",
+      "last_fetched": "2026-10-26T13:56:19.352Z"
     },
     "https://asec.ahnlab.com/ko/32765": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7a743a509ee7b4e37c0730c09018ffd971e64611e53a1413718b6d0af469154f",
-      "last_fetched": "2026-10-18T04:07:09.909Z"
+      "source_sha256": "ad9cce28bad06f19df066abfbd80de2ad529fb6c2ceeb70c9de84cdf4e2a996d",
+      "last_fetched": "2026-10-26T13:56:25.578Z"
     },
     "https://asec.ahnlab.com/ko/32818": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8ce479a5cb65b07a32d77c868be0f088b3ca51e2971d68e2de25c8aabf147ee9",
-      "last_fetched": "2026-10-18T04:07:15.813Z"
+      "source_sha256": "3b61696e94320e99fe28729aa39d18cbd02da83abfb3a535c582cab437aaddd5",
+      "last_fetched": "2026-10-26T13:56:26.678Z"
     },
     "https://asec.ahnlab.com/ko/32929": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6c78bc5ad5b5bd8cf714aea6cc04f2fdab5667dbeb7ad1d72f39af2e79e2a97d",
-      "last_fetched": "2026-10-18T04:07:21.645Z"
+      "source_sha256": "d3c2edc64b0a09a7df721cf36d88f2549ac383960af625dda0025bf158a13198",
+      "last_fetched": "2026-10-26T13:56:29.317Z"
     },
     "https://asec.ahnlab.com/ko/33224": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ca14a0cf40d0d286da687e6dc00fdfeaf6fbfeceb552fd0e72a4d18516a5f179",
-      "last_fetched": "2026-10-18T04:07:27.780Z"
+      "source_sha256": "645c0272500baccbcbfa8cb3f67c6794d6f4ac7ee3b2ed6eb132269ec45f687e",
+      "last_fetched": "2026-10-26T13:56:31.893Z"
     },
     "https://asec.ahnlab.com/ko/33706": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "81dd14588fa6d3051d22e3ececed9fe59df0ca86a4ba5ee80691811ffbe10237",
-      "last_fetched": "2026-10-18T04:07:33.026Z"
+      "source_sha256": "cfa3148bc567396d3f43cedccd9dd94e75b23ad5537cf603ceab1c72ddcf45ed",
+      "last_fetched": "2026-10-26T13:56:34.646Z"
     },
     "https://asec.ahnlab.com/ko/34107": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "b15f1fd91e57a5be476d7b86fffa8a9e7ea0becea18f4627cf38020d3668cced",
-      "last_fetched": "2026-10-18T04:07:38.719Z"
+      "last_modified": "Mon, 26 Oct 2026 13:56:40 GMT",
+      "source_sha256": "9a41bc81354b98b794aa7c2f0c6ab3353abb957c7dafc206277e9b40c7b93d0e",
+      "last_fetched": "2026-10-26T13:56:37.437Z"
     },
     "https://asec.ahnlab.com/ko/34383": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "9e426b399af4215c00433b179713bfd18dfd57b552bbb54e5daffb9f904e3049",
-      "last_fetched": "2026-10-18T04:07:42.751Z"
+      "source_sha256": "7720642fcd153dad072c74fc207126a3ec64fb9b13481627af93fadacc850ae4",
+      "last_fetched": "2026-10-26T13:56:42.057Z"
     },
     "https://asec.ahnlab.com/ko/34883": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:07:47 GMT",
-      "source_sha256": "9f3272d3087d61dc8e77995191b58031f38c025d6c9d7a6554e46fc1f0058d62",
-      "last_fetched": "2026-10-18T04:07:47.842Z"
+      "last_modified": null,
+      "source_sha256": "837fec0dcb6644506b1a6f522de28ecbd161a02e2db9139b8bd646c451971ce6",
+      "last_fetched": "2026-10-26T13:56:44.716Z"
     },
     "https://asec.ahnlab.com/ko/35781": {
       "etag": null,
@@ -2021,73 +2021,73 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "2574ec7c7653024265214935554a73063c2d36d2def612337a057beb243aca09",
-      "last_fetched": "2026-10-18T04:05:46.697Z"
+      "last_fetched": "2026-10-26T13:55:31.279Z"
     },
     "https://blog.talosintelligence.com/2021/11/kimsuky-abuses-blogs-delivers-malware.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "6486481440c982cfb68c77daf225e7ef4bcff5267e1e15e42b0adf633ab22dbe",
-      "last_fetched": "2026-10-18T04:05:47.820Z"
+      "last_fetched": "2026-10-26T13:55:32.842Z"
     },
     "https://blog.talosintelligence.com/2022/09/lazarus-magicrat.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "4fb63b3fa35207178f0c914934d19aab65a705e962a263bd555ccaa2bfadce21",
-      "last_fetched": "2026-10-18T04:05:48.968Z"
+      "last_fetched": "2026-10-26T13:55:34.455Z"
     },
     "https://blog.talosintelligence.com/2022/09/lazarus-three-rats.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1db799eec87b162ba496db19a611a382bb7d4ec8649ecb968ebe752568418748",
-      "last_fetched": "2026-10-18T04:05:50.215Z"
+      "source_sha256": "aea27379f0c15c8e7738772b0fd3330e9eb2d0cb0727ff9f928366679d4283f6",
+      "last_fetched": "2026-10-26T13:55:35.799Z"
     },
     "https://blog.talosintelligence.com/beavertail-and-ottercookie": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "65919a145e5d008b83f5c67654205a372a79b277f20515f03dcd34deea494575",
-      "last_fetched": "2026-10-18T04:05:51.665Z"
+      "last_fetched": "2026-10-26T13:55:37.257Z"
     },
     "https://blog.talosintelligence.com/lazarus-collectionrat": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "680b62f52aa84753b3fa3759a059194ff9d52939eadd3ff58ffaa1f43d6a14ad",
-      "last_fetched": "2026-10-18T04:05:54.020Z"
+      "last_fetched": "2026-10-26T13:55:39.770Z"
     },
     "https://blog.talosintelligence.com/lazarus-quiterat": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "1297e82de4e85db561daeae28d86f5409086b48e054df5b28238e5095e99cab0",
-      "last_fetched": "2026-10-18T04:05:55.295Z"
+      "last_fetched": "2026-10-26T13:55:41.017Z"
     },
     "https://blog.talosintelligence.com/lazarus_new_rats_dlang_and_telegram": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "f9c6199ed8ed3d1835c58e4f9ff0d949b97f3283671ed77092ae1cf86eeb921b",
-      "last_fetched": "2026-10-18T04:05:52.785Z"
+      "last_fetched": "2026-10-26T13:55:38.566Z"
     },
     "https://blog.talosintelligence.com/lilacsquid": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "979ad8409a287df75d1b13c747b10dfa6936620627c11e8178390b9320bdbde1",
-      "last_fetched": "2026-10-18T04:05:56.402Z"
+      "last_fetched": "2026-10-26T13:55:42.562Z"
     },
     "https://blog.talosintelligence.com/moonpeak-malware-infrastructure-north-korea": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "f51299ad7dc502638cb9faf3d33ced192acec1524a6c138cfe37a4de2d5b1dee",
-      "last_fetched": "2026-10-18T04:05:57.519Z"
+      "last_fetched": "2026-10-26T13:55:44.037Z"
     },
     "https://blog.talosintelligence.com/new-dohdoor-malware-campaign": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8d19c53ab2a740055e49ea9d1417fa02ac693b0b7de4c309a10f9563c069cdbe",
-      "last_fetched": "2026-10-18T04:05:58.772Z"
+      "source_sha256": "08fe53def4e686fff9c1681a1d058194a219c65b4279c62a27baf13a575a99f4",
+      "last_fetched": "2026-10-26T13:55:45.272Z"
     },
     "https://blog.talosintelligence.com/python-version-of-golangghost-rat": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "739fc341e05ceb4f7ffff0824f9437fb893b6686b7dc74c31f6d17ebafa2fc9b",
-      "last_fetched": "2026-10-18T04:05:59.874Z"
+      "last_fetched": "2026-10-26T13:55:46.502Z"
     },
     "https://blog.thirdweb.com/metamask-dprk-contractor-breach-what-web3-developers-must-know-about-supply-chain-security/": {
       "etag": "W/\"88df-2+HQvCW0HQSXg+/bQyYr4egEFTA\"",
@@ -2116,50 +2116,56 @@
     "https://blogs.jpcert.or.jp/en/2020/09/BLINDINGCAN.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bfb588747e365796d7ef68dac4ca0845be289fdd8ab6d1d2dcc941466b500d81",
-      "last_fetched": "2026-10-18T04:07:31.939Z"
+      "source_sha256": "6eff714cad155c8287fd524d26c010a6c2152604213e5b5831d59913a7b37d7a",
+      "last_fetched": "2026-10-26T13:57:07.112Z"
     },
     "https://blogs.jpcert.or.jp/en/2021/01/Lazarus_malware2.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b85b82ee446b9790e9790a190dd3a1f67cb97e3e19f62ca59fe6d22521f3d7fe",
-      "last_fetched": "2026-10-18T04:07:24.148Z"
+      "source_sha256": "7804809ccea0c1455845312dd69fa4dc7cf8b586203bff504fcb40c0d09940f7",
+      "last_fetched": "2026-10-26T13:56:55.688Z"
     },
     "https://blogs.jpcert.or.jp/en/2021/01/Lazarus_tools.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2aa91331bf5db78df2b28e17c2048f5c274038cf7ea23bf7140f0e5d570b6466",
-      "last_fetched": "2026-10-18T04:07:30.762Z"
+      "source_sha256": "92f876030b155b8baf8f9f5f0ee426e9baea66f25104756b11fecf9efa5f4a79",
+      "last_fetched": "2026-10-26T13:57:05.985Z"
     },
     "https://blogs.jpcert.or.jp/en/2021/03/Lazarus_malware3.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7fef4cf270ccc085926f43bc77236635e39db3bec795c2d49b421428ff8a0c67",
-      "last_fetched": "2026-10-18T04:07:27.049Z"
+      "source_sha256": "96f37c30f5ef76096195e9801345761dffde91e0c3f676c8ebbd05f5b3f449d3",
+      "last_fetched": "2026-10-26T13:57:00.363Z"
     },
     "https://blogs.jpcert.or.jp/en/2023/05/dangerouspassword.html": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "370c24ef1d201effe76b64fe52be236773329ce0ae0aaf2aff91e091eba00f39",
-      "last_fetched": "2026-10-18T04:07:29.476Z"
+      "source_sha256": "5150fc4b5b54eac0112b1390027aa0a58d7dc3d4802b1032abf709dc56382572",
+      "last_fetched": "2026-10-26T13:57:02.858Z"
     },
     "https://blogs.jpcert.or.jp/ja/2020/08/Lazarus_malware.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "993d6e361824fb6cd488ce1e6c9c6320812818e84805e57c8abb6b59b94f8aa6",
-      "last_fetched": "2026-10-18T04:07:28.200Z"
+      "last_fetched": "2026-10-26T13:57:01.611Z"
     },
     "https://blogs.jpcert.or.jp/ja/2023/05/dangerouspassword.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "7e4813ca9c61ffd4785cd1668b7852451f024ed0330ca34da088ee2af8e7f75e",
-      "last_fetched": "2026-10-18T04:07:25.776Z"
+      "last_fetched": "2026-10-26T13:56:57.266Z"
     },
     "https://bloo.io/blog/tracking-the-trackers-lessons-from-the-apt43-kimsuky-takedown": {
       "etag": "\"1a81e63d15e8c63e7a766312f3f3346c-ssl-df\"",
       "last_modified": null,
       "source_sha256": "b01531e15af290642de104db84940effeb3cd6259bc8c52e646df6285f17bfd0",
       "last_fetched": "2026-10-18T04:12:13.453Z"
+    },
+    "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344",
+      "last_fetched": "2026-10-26T13:57:19.378Z"
     },
     "https://carnegieendowment.org/research/2024/10/cooperation-between-china-iran-north-korea-and-russia-current-and-potential-future-threats-to-america": {
       "etag": "\"zxhhq6bp6oa2ce\"",
@@ -2171,43 +2177,50 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "0f07f5cbecaf60d781bac24ac955985fd5ab61f317e07a8acb9e246586671cb5",
-      "last_fetched": "2026-10-18T04:07:17.247Z"
+      "last_fetched": "2026-10-26T13:56:52.259Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/bells-ringing-in-dar-es-salaam": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "73b0cf86193c893198058197560fd2c8252fe3d7516b05297e54f952a41ac36d",
-      "last_fetched": "2026-10-18T04:07:22.645Z"
+      "last_fetched": "2026-10-26T13:56:56.641Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/bells-ringing-in-dar-es-salaam.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "73b0cf86193c893198058197560fd2c8252fe3d7516b05297e54f952a41ac36d",
-      "last_fetched": "2026-10-18T04:07:18.583Z"
+      "last_fetched": "2026-10-26T13:56:53.339Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/dubai-crypto-moonstonesleet-pivot-odyssey": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "7c606bb6c67f7c66e3274718ae4c151157469701c0bb1d564355e00e16ee9034",
-      "last_fetched": "2026-10-18T04:07:21.305Z"
+      "last_fetched": "2026-10-26T13:56:55.533Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/dubai-crypto-moonstonesleet-pivot-odyssey.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "7c606bb6c67f7c66e3274718ae4c151157469701c0bb1d564355e00e16ee9034",
-      "last_fetched": "2026-10-18T04:07:19.917Z"
+      "last_fetched": "2026-10-26T13:56:54.444Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/reframing-insights-our-research-msmt": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "c320ac68c72d53ec327af02855a16d3638fd45040089e3f469889db167d7014b",
-      "last_fetched": "2026-10-18T04:07:15.830Z"
+      "last_fetched": "2026-10-26T13:56:51.116Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://chollima-group.io/posts/tracking-a-north-korean-it-worker-cell/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "9931ebadf83c1eb3e64980a63497a68ba155ed6093dd6ae3dd1876bfc5313997",
-      "last_fetched": "2026-10-18T04:07:23.875Z"
+      "last_fetched": "2026-10-26T13:56:57.722Z",
+      "last_error": "HTTP 403 Forbidden"
     },
     "https://cloud.google.com/blog/topics/threat-intelligence/dprk-adopts-etherhiding": {
       "etag": null,
@@ -2524,52 +2537,52 @@
       "last_fetched": "2026-10-18T04:11:04.629Z"
     },
     "https://github.com/Kawaii-Jong-UWUn/HyperBuildX-Continued-Research/blob/main/HyperBuildX%20%20Follow-up.canvas": {
-      "etag": "W/\"c04a60d37e9f0ea4eee4389a112a6e3a\"",
+      "etag": "W/\"1fd276cab688b1d103c1d05e707900e2\"",
       "last_modified": null,
-      "source_sha256": "62b46c6f5eae72b3a1fd277dd0ccd524542b8ef4cfd3d2680ee62c6c43e95ff4",
-      "last_fetched": "2026-10-18T04:07:05.756Z"
+      "source_sha256": "0d52d6a3b92e3f63c2f2878bd5b2e17e9ddd6e3c380b5c9e4a6aa0edc925adf8",
+      "last_fetched": "2026-10-26T13:56:57.651Z"
     },
     "https://github.com/OpenSourceMalware/PolinRider": {
-      "etag": "W/\"540eacbaa5f421a4498d17f7b20f4527\"",
+      "etag": "W/\"a675f848b0e86f6310c13ac38f6b208e\"",
       "last_modified": null,
-      "source_sha256": "eae198e775939e4f5a8e6ab6225dcb22cf69d630d03649903fd25e259748a587",
-      "last_fetched": "2026-10-18T04:07:01.180Z"
+      "source_sha256": "f1695c1c1c5e42ed76d42997192ca6355dc0d4b10ecc763421f62783dac7a351",
+      "last_fetched": "2026-10-26T13:56:53.049Z"
     },
     "https://github.com/Plainbit/Slides/blob/main/2026%20%EC%83%81%EB%B0%98%EA%B8%B0%20%EC%B9%A8%ED%95%B4%EC%82%AC%EA%B3%A0%20%EC%A0%95%EB%B3%B4%EA%B3%B5%EC%9C%A0%20%EC%84%B8%EB%AF%B8%EB%82%98/08-%EA%B5%AD%EB%82%B4%20%EA%B7%B8%EB%A3%B9%EC%9B%A8%EC%96%B4%20%EB%8C%80%EC%83%81%20%EB%B6%81%ED%95%9C%20APT%20%EA%B3%B5%EA%B2%A9%20%EB%B6%84%EC%84%9D_%EA%B9%80%EC%98%81%EC%9A%B4(%EC%97%94%ED%82%A4).pdf": {
-      "etag": "W/\"2a070b2e0292b11a682866a4dcd73ea7\"",
+      "etag": "W/\"7ae98b9c2814c2f54ae48c100b89af4a\"",
       "last_modified": null,
-      "source_sha256": "a74dd4db4293fc4eb52523b26abd1e4729f7e0b95c33b6888827a7bd0b843834",
-      "last_fetched": "2026-10-18T04:06:54.117Z"
+      "source_sha256": "eb3629bee0f4ecb329e5eb95797c615d7873dd783166adb0aaaa259a4543c0b8",
+      "last_fetched": "2026-10-26T13:56:46.196Z"
     },
     "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/North%20Korea/APT/APT37/2020-04-23/Analysis.md": {
-      "etag": "W/\"186235afcc21884ad81ef5d1f9742172\"",
+      "etag": "W/\"7ac4b70cc807d24eb6d988f53ad136ac\"",
       "last_modified": null,
-      "source_sha256": "fcc701a56bcc9a9cdf4bf69c96d31788ddbfc9e4c4423534e57d3e88ac550864",
-      "last_fetched": "2026-10-18T04:07:02.843Z"
+      "source_sha256": "4335501fb596272819dea5e13b966e05ac950c48001a095bce8f9262b0713368",
+      "last_fetched": "2026-10-26T13:56:54.669Z"
     },
     "https://github.com/StrangerealIntel/CyberThreatIntel/blob/master/North%20Korea/APT/Kimsuky/2020-03-20/Analysis.md": {
-      "etag": "W/\"1119daa904686f7a8c78e49924fdcba2\"",
+      "etag": "W/\"8dddf9076bfd16708dbdc3d50d33313e\"",
       "last_modified": null,
-      "source_sha256": "fc663255d3c5793f677e415d1fb4775286ac464250a1cf7bd05666ea32f65f8a",
-      "last_fetched": "2026-10-18T04:06:59.425Z"
+      "source_sha256": "02afa132d2d7b1eade76e737f08884970b3a62b5d805e0ff38073410339a9bb6",
+      "last_fetched": "2026-10-26T13:56:51.386Z"
     },
     "https://github.com/allinbits/announcements/blob/main/2024_10_15_lsmnk.md": {
-      "etag": "W/\"924a1e23969254506975ce7c89672a36\"",
+      "etag": "W/\"a45344251b5a614966cf363b747e33c8\"",
       "last_modified": null,
-      "source_sha256": "ef4ddeeda3882f5676f303955466ac38402711abd709a5a105925dc7e4b6bfde",
-      "last_fetched": "2026-10-18T04:06:56.068Z"
+      "source_sha256": "72edc973f3e1e45e0e51bf9f194bc3bb2a6426904bfadc536800656d8d1b9ef7",
+      "last_fetched": "2026-10-26T13:56:48.049Z"
     },
     "https://github.com/birminghamcyberarms/QRLog": {
-      "etag": "W/\"da83bbc67cdb87d2041dcefd7ec1454f\"",
+      "etag": "W/\"e7889912fba7031d13baf7fcfadeb72d\"",
       "last_modified": null,
-      "source_sha256": "1f945ac1fb7f9cd96c34286fc789c9ef6e3ed287fa5c6ce69da26e884fcc98b2",
-      "last_fetched": "2026-10-18T04:06:57.729Z"
+      "source_sha256": "7a5319e910f6bf02b307d8c2145daacfe45feb240c0c5a35a8484321dd01ccc0",
+      "last_fetched": "2026-10-26T13:56:49.737Z"
     },
     "https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/incident-response/SlowMist%20Investigation%20Progress%20Report%20-%20Bitget_en-us.pdf": {
-      "etag": "W/\"6608f500a2e8ccc5ebd7fc13643ca96f\"",
+      "etag": "W/\"40ff1fe50bdfc1c4c95487c89dff2ebe\"",
       "last_modified": null,
-      "source_sha256": "f56d2251c0a62ae295419c5a4911f449060f04cb28bbe7029dc76f2c88c9e6cc",
-      "last_fetched": "2026-10-18T04:07:04.380Z"
+      "source_sha256": "2567e504ea2b1582085280176e9e583d4e0c6ca51f511cd64ee9bf859f917de4",
+      "last_fetched": "2026-10-26T13:56:56.221Z"
     },
     "https://gitlab-com.gitlab.io/gl-security/security-tech-notes/threat-intelligence-tech-notes/north-korean-malware-sept-2025/": {
       "etag": "\"90d17335a1906a51f155011bab7ec434cd3c526f943024bdae67b446a74868e7\"",
@@ -2632,52 +2645,52 @@
       "last_fetched": "2026-10-18T04:12:27.924Z"
     },
     "https://hunt.io/blog/axios-supply-chain-attack-ta444-bluenoroff": {
-      "etag": "\"272ff1c73efc0dc78fef2f8a3cfd4c45\"",
-      "last_modified": "Fri, 16 Oct 2026 09:23:51 GMT",
-      "source_sha256": "487bdc108150968430d373675952ea7295f9b0ca1008ae2c8f8faae2de30503f",
-      "last_fetched": "2026-10-18T04:07:11.709Z"
+      "etag": "\"6060457b027281a753c21a1f1c240f0c\"",
+      "last_modified": "Fri, 23 Oct 2026 02:39:19 GMT",
+      "source_sha256": "3ee86d3d5910fe619cee82508fb2497f39e61ebeafbbf325532c2a570f0832a4",
+      "last_fetched": "2026-10-26T13:56:51.962Z"
     },
     "https://hunt.io/blog/dprk-lazarus-kimsuky-infrastructure-uncovered": {
-      "etag": "\"0bd3bbb5bfc66bfdc95a00eac93f77a2\"",
-      "last_modified": "Fri, 16 Oct 2026 09:01:39 GMT",
-      "source_sha256": "63ea4970b425c3974d4258eaf93e72758e4c321e81177465c6d2ededbd35f0d1",
-      "last_fetched": "2026-10-18T04:07:06.301Z"
+      "etag": "\"038a81300c275ba48db97cf87e5a30d6\"",
+      "last_modified": "Fri, 23 Oct 2026 02:39:19 GMT",
+      "source_sha256": "b5063c4fcd5a1ad787bee505ad87552063a289ad39cc61be050e1db209cbb2f1",
+      "last_fetched": "2026-10-26T13:56:47.127Z"
     },
     "https://hunt.io/blog/dprk-phishing-targets-naver-apple-domain-spoofing": {
-      "etag": "\"bfdfae9ea98c85614cb77aa92dc94d4e\"",
-      "last_modified": "Fri, 16 Oct 2026 08:43:03 GMT",
-      "source_sha256": "fc112506b44a0c0994641e952e98f75b9b1f9f433aee00bcb03c501081acec52",
-      "last_fetched": "2026-10-18T04:07:07.844Z"
+      "etag": "\"33a2a8ad185d20e3b659d1ce46f4440d\"",
+      "last_modified": "Fri, 23 Oct 2026 02:39:37 GMT",
+      "source_sha256": "a31f6a06b9c03579c734c8f4f8401e81f8a635d76f6a41e6359e37c8740c4f60",
+      "last_fetched": "2026-10-26T13:56:48.551Z"
     },
     "https://hunt.io/blog/justjoin-landing-page-linked-to-suspected-dprk-activity-resurfaces": {
-      "etag": "\"c9f0aec085192c95b397b3747c2d2107\"",
-      "last_modified": "Fri, 16 Oct 2026 09:57:03 GMT",
-      "source_sha256": "3cd9c4e57331dea9529cdc9d732266b38a1508e97db1b648da112b2947721d7e",
-      "last_fetched": "2026-10-18T04:07:15.580Z"
+      "etag": "\"58e3b8c029a8618eb8d83cfaef8c5150\"",
+      "last_modified": "Fri, 23 Oct 2026 03:01:08 GMT",
+      "source_sha256": "b102f805b55c8c4b1f64c58bc846bc1d1737c4f220b60d23997fdc4f1f246549",
+      "last_fetched": "2026-10-26T13:56:55.521Z"
     },
     "https://hunt.io/blog/million-ok-naver-facade-kimsuky-tracking": {
-      "etag": "\"ef3c917e1ca24347a370f26621d7fd11\"",
-      "last_modified": "Fri, 16 Oct 2026 09:21:15 GMT",
-      "source_sha256": "3cb45ead6b433cea2f21259a52e787ef3f257cc70edf2a18c15d938d68857ebd",
-      "last_fetched": "2026-10-18T04:07:14.335Z"
+      "etag": "\"ae55148e555336c9de6a73f90a47423a\"",
+      "last_modified": "Fri, 23 Oct 2026 03:01:10 GMT",
+      "source_sha256": "73f5cea53ab861b6b7984099cc9459981a4a16eb39308900b54ced86b366bb2a",
+      "last_fetched": "2026-10-26T13:56:54.365Z"
     },
     "https://hunt.io/blog/open-directory-exposes-phishing-campaign-targeting-google-and-naver-credentials": {
-      "etag": "\"7d72ffb450e09ac98d1f8e58dc2eaade\"",
-      "last_modified": "Fri, 16 Oct 2026 10:03:06 GMT",
-      "source_sha256": "7e558d3a7ce9d7a5e76411da6e31599ff5f3f5d1cc530cce41b196ce11b078b8",
-      "last_fetched": "2026-10-18T04:07:13.042Z"
+      "etag": "\"a13373e99cf72140437b4e181ea04fbf\"",
+      "last_modified": "Fri, 23 Oct 2026 02:39:41 GMT",
+      "source_sha256": "12bc0e9bdef14edaae81d0cbcdaa234b4d289cae521e49ed88239bf58905c040",
+      "last_fetched": "2026-10-26T13:56:53.175Z"
     },
     "https://hunt.io/blog/sparkrat-server-detection-macos-activity-and-malicious-connections": {
-      "etag": "\"5ba8bea684b0660d1fced8381d3f9f2e\"",
-      "last_modified": "Fri, 16 Oct 2026 08:56:10 GMT",
-      "source_sha256": "731cf1e30b0d0a6736c55eed381aa1eaada97ef875fb67cddd03cb4eec3a09fb",
-      "last_fetched": "2026-10-18T04:07:09.162Z"
+      "etag": "\"34d23223abdd198ccbbf10ae000fd9b4\"",
+      "last_modified": "Fri, 23 Oct 2026 02:39:37 GMT",
+      "source_sha256": "7ebd794e15178738334136b6e47401e7b36a92b081574a7a510ab544d8f0d9d9",
+      "last_fetched": "2026-10-26T13:56:49.715Z"
     },
     "https://hunt.io/blog/suspected-north-korean-hackers-target-blockchain-community-via-telegram": {
-      "etag": "\"1bfd7af4a278b8cef1d772500564e18c\"",
-      "last_modified": "Fri, 16 Oct 2026 10:03:06 GMT",
-      "source_sha256": "df9c7e778753ec113c44daf8d90849375e170fbb6311634f239eff5d5103f377",
-      "last_fetched": "2026-10-18T04:07:10.449Z"
+      "etag": "\"ee335582ccce068988dca8f1284b6f7f\"",
+      "last_modified": "Fri, 23 Oct 2026 03:01:30 GMT",
+      "source_sha256": "a839ab50efe66c55d7374695e1a00254920449a29a4922ea754334b51365aeef",
+      "last_fetched": "2026-10-26T13:56:50.796Z"
     },
     "https://huntability.tech/threat-note-2025-04-23-nk-zoom/": {
       "etag": "\"4617-1792171460;br\"",
@@ -2731,55 +2744,55 @@
       "etag": "\"99pbp3a2t8216v\"",
       "last_modified": null,
       "source_sha256": "8ed3135ef94a1001e409ea626d2331c135f7dbef6e37abd158a01fc9205e03c1",
-      "last_fetched": "2026-10-18T04:06:44.517Z"
+      "last_fetched": "2026-10-26T13:56:29.569Z"
     },
     "https://intel.breakglass.tech/post/kimsuky-2026-korea-840-hostnames-5-nodes": {
       "etag": "\"u6q0o5fcj513lu\"",
       "last_modified": null,
       "source_sha256": "898c4bc6cee9e1f6710b3dd6671ce55e5867c29da9f039e5ea22a6432240828b",
-      "last_fetched": "2026-10-18T04:06:45.964Z"
+      "last_fetched": "2026-10-26T13:56:30.819Z"
     },
     "https://intel.breakglass.tech/post/kimsuky-chm-nidlog-c2-dump-full-payload-recovery": {
       "etag": "\"3ous7sqe7i1wme\"",
       "last_modified": null,
       "source_sha256": "0ba2a9aceb0faefe6efe941dbab4cfd31dc4456f9dce4ecf3e0ee5a4db733b13",
-      "last_fetched": "2026-10-18T04:06:51.766Z"
+      "last_fetched": "2026-10-26T13:56:36.304Z"
     },
     "https://intel.breakglass.tech/post/kimsuky-s-five-stage-grimresource-loader-when-an-mmc-file-becomes-a-shellcode-injector": {
       "etag": "\"ntr687794c1zhu\"",
       "last_modified": null,
       "source_sha256": "fe23602d86acceb1177a389af4eff3671e0d32f5aec6aa78b662adc25bb5b156",
-      "last_fetched": "2026-10-18T04:06:47.216Z"
+      "last_fetched": "2026-10-26T13:56:32.009Z"
     },
     "https://intel.breakglass.tech/post/kimsuky-third-vultr-seoul-60-domains-ddns-rotation-naver-nts": {
       "etag": "\"qll5neblla1n1y\"",
       "last_modified": null,
       "source_sha256": "41e3b45d5a1a5b5115ca48ca5bcc5fafd93f3f50b3d4b0336ec8c833fc394882",
-      "last_fetched": "2026-10-18T04:06:48.356Z"
+      "last_fetched": "2026-10-26T13:56:33.084Z"
     },
     "https://intel.breakglass.tech/post/lazarus-group-caught-running-medusa-ransomware-xor-decoded-config-exposes-tor-c2-ime-based-loader-and-a-7-month-intrusion-timeline": {
       "etag": "\"6e9agsamr32dsh\"",
       "last_modified": null,
       "source_sha256": "a116945034272bfa271e8d3eb409a8973f93fa727705e14f22458d5d44be35e9",
-      "last_fetched": "2026-10-18T04:06:53.986Z"
+      "last_fetched": "2026-10-26T13:56:38.409Z"
     },
     "https://intel.breakglass.tech/post/lazarus-group-is-using-the-solana-blockchain-as-a-dead-drop-c2-channel-and-nobody-noticed-for-4-months": {
       "etag": "\"4qzigyk8yh2jmq\"",
       "last_modified": null,
       "source_sha256": "ed6e93d79acba1e91677c2b4fed31b8c3f9182917b4ba6d7174e473895fe984a",
-      "last_fetched": "2026-10-18T04:06:49.487Z"
+      "last_fetched": "2026-10-26T13:56:34.153Z"
     },
     "https://intel.breakglass.tech/post/team24-ten-operators-vercel-phishing-syndicate-open-backend-korean-targeting": {
       "etag": "\"rsrzin1lci12pl\"",
       "last_modified": null,
       "source_sha256": "05715a93d0520b7c2f18e074cfd36f520d5432e857b56589552ba29a45b37505",
-      "last_fetched": "2026-10-18T04:06:52.902Z"
+      "last_fetched": "2026-10-26T13:56:37.371Z"
     },
     "https://intel.breakglass.tech/post/when-nation-states-become-ransomware-affiliates-lazarus-group-deploys-medusa-via-a-custom-ime-based-loader": {
       "etag": "\"47gapm5lbl2pod\"",
       "last_modified": null,
       "source_sha256": "e103b6d7a9605c2a3124e8eebb64f253bd6ed8f2bb89a98a62f358e93416f181",
-      "last_fetched": "2026-10-18T04:06:50.631Z"
+      "last_fetched": "2026-10-26T13:56:35.231Z"
     },
     "https://intel471.com/blog/partners-in-crime-north-koreans-and-elite-russian-speaking-cybercriminals": {
       "etag": "W/\"iv9ng15bf33n1e\"",
@@ -2857,55 +2870,55 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "4da673922c7ac6df20bcfb5f63140eee6dc557e6b32f15a8670e611f6ca03c5a",
-      "last_fetched": "2026-10-18T04:06:40.280Z"
+      "last_fetched": "2026-10-26T13:56:22.632Z"
     },
     "https://kmsec.uk/blog/dprk-gdrive-stager/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "4a4f607358e3b7fdd065cf07ef89e5da823e843d049ee2b7ca14d62560f6d1e1",
-      "last_fetched": "2026-10-18T04:06:42.792Z"
+      "last_fetched": "2026-10-26T13:56:24.794Z"
     },
     "https://kmsec.uk/blog/dprk-google-docs/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "fd299d8b5e676dbf5b1cacd14f1b2bbacc902a05a6b2256430b2e2554e5efcac",
-      "last_fetched": "2026-10-18T04:06:41.628Z"
+      "last_fetched": "2026-10-26T13:56:23.736Z"
     },
     "https://kmsec.uk/blog/dprk-opsec-1/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "ecf2e5d2e5c758f4e05a22f7d1f33909682d718c4f1e5bbf6704a41e479c192b",
-      "last_fetched": "2026-10-18T04:06:47.231Z"
+      "last_fetched": "2026-10-26T13:56:29.015Z"
     },
     "https://kmsec.uk/blog/dprk-opsec-2/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "93e8aa822610a8974e278244eaef4cd7f322e0b8af53ebd664c162b3d08e081f",
-      "last_fetched": "2026-10-18T04:06:48.371Z"
+      "last_fetched": "2026-10-26T13:56:30.049Z"
     },
     "https://kmsec.uk/blog/dprk-opsec-3/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "0963b96175c5b7beb01304b99077cae4f7e459d05dc548a3185d1a9c0c48aded",
-      "last_fetched": "2026-10-18T04:06:43.899Z"
+      "last_fetched": "2026-10-26T13:56:25.849Z"
     },
     "https://kmsec.uk/blog/dprk-pages-dev-abuse/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "b09b1c027ebbe3a73926585fd2b4c27456885447d66887993321bc5cd38aa993",
-      "last_fetched": "2026-10-18T04:06:45.019Z"
+      "last_fetched": "2026-10-26T13:56:26.891Z"
     },
     "https://kmsec.uk/blog/dprk-text-steganography/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "2956b43a924f00d53e3680f9f6107100e6067c1d2d03f1f1388f85de51c16818",
-      "last_fetched": "2026-10-18T04:06:49.503Z"
+      "last_fetched": "2026-10-26T13:56:31.102Z"
     },
     "https://kmsec.uk/blog/pylangghost-npm/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "67f17d1c6bd9e4f5e7039a18ce9bb9ff24c37b1ea94b68d94537ef9124c14492",
-      "last_fetched": "2026-10-18T04:06:46.138Z"
+      "last_fetched": "2026-10-26T13:56:27.953Z"
     },
     "https://krebsonsecurity.com/2022/09/fake-ciso-profiles-on-linkedin-target-fortune-500s/": {
       "etag": null,
@@ -3000,62 +3013,62 @@
     "https://logpresso.com/en/blog/2025-09-22-kimsuky-attack": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2033f35c9b63424ede0db9619e1af1e3d771efea1dc534082bc78a51582cce4e",
-      "last_fetched": "2026-10-18T04:06:17.281Z"
+      "source_sha256": "6d3f98345589e9b5bbfa091afd4f9969ec775f015337639e624550b30e6505ab",
+      "last_fetched": "2026-10-26T13:55:59.928Z"
     },
     "https://logpresso.com/en/blog/2025-10-13-lazarus-apt-attack-en": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b00c80078e7cead752c7b8e1fa48f5832eb9b1cc211792443744b57790220044",
-      "last_fetched": "2026-10-18T04:06:22.756Z"
+      "source_sha256": "16eaf11caa79befd49501a3cd08524b7a989caecf09752e76dfcc8f428751a72",
+      "last_fetched": "2026-10-26T13:56:05.431Z"
     },
     "https://logpresso.com/en/blog/2025-11-06-healthcheckup-malware": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "cd07e23a3e5ee44bfd595515de588605084ca158de5cac427689b3316f7763a1",
-      "last_fetched": "2026-10-18T04:06:23.970Z"
+      "source_sha256": "fcf8819c3063cb0b7f04c40e1a9e6d870100c1de41f15792cdb40c76b2454dd4",
+      "last_fetched": "2026-10-26T13:56:06.622Z"
     },
     "https://logpresso.com/ko/blog/2025-01-23-APT-attack-targeting-prominent-law-firms": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5800db9690d9e0f086c81faaa8cd5b870906c34a7d7f78a86a091446bc3621a3",
-      "last_fetched": "2026-10-18T04:06:25.181Z"
+      "source_sha256": "c40e29d8f1166c1cc140df4f99dbb48d6286f722777ce9bb433f9fd17c373bcd",
+      "last_fetched": "2026-10-26T13:56:07.797Z"
     },
     "https://logpresso.com/ko/blog/2025-03-04-comparison-of-malware-disguised-as-a-hangul-document": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "515a72ab3f2b6202ca23c91702e13f81115fd542c38a66bed8075ad28ce8deb5",
-      "last_fetched": "2026-10-18T04:06:18.985Z"
+      "source_sha256": "80f5ea407c9efa0e595c8e5ae6971c9cf3b47f003c9707a406d2aa614c7e623b",
+      "last_fetched": "2026-10-26T13:56:01.633Z"
     },
     "https://logpresso.com/ko/blog/2025-03-17-lazarus-npm": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "cc5863bc31573318268e84dd304e08171194b94bdeb5508dbc69218682627255",
-      "last_fetched": "2026-10-18T04:06:26.383Z"
+      "source_sha256": "1699609ad40590217238de98b4aa4011d2813dd891b7afb9e3c4728888a4e99f",
+      "last_fetched": "2026-10-26T13:56:08.972Z"
     },
     "https://logpresso.com/ko/blog/2025-09-18-Kimsuky-Attack": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "41b3296d0f0dd0ed264a9a73ab76a9eb1459d3224c5a2a66a0c30f8325714e74",
-      "last_fetched": "2026-10-18T04:06:20.342Z"
+      "source_sha256": "7f03aadd2d089a6f4e092a2a6caa78e2cbd731425da33d2db67d53e5463948f9",
+      "last_fetched": "2026-10-26T13:56:03.015Z"
     },
     "https://logpresso.com/ko/blog/2026-01-14-2025-northkorea-attack-analysis": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1403ac2a340d4fab9b4719f4cd696b8bd02c1cb1e3c315ddbc63742ab10f298b",
-      "last_fetched": "2026-10-18T04:06:27.579Z"
+      "source_sha256": "b798c67918b71523610d3e627f6c7e8cbcae690da6ff103629c7da85b77eb8c5",
+      "last_fetched": "2026-10-26T13:56:10.145Z"
     },
     "https://logpresso.com/ko/blog/2026-03-09-dprk-remote-it-worker-osint": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d36ef69b1445394726df2745132ac167c2467c00c870df4431a5cb4250690a8e",
-      "last_fetched": "2026-10-18T04:06:28.774Z"
+      "source_sha256": "3682cb59cc388e21815f7b401eb1d7f75b1c33c2cf6317a2da761cf77b4008d3",
+      "last_fetched": "2026-10-26T13:56:11.327Z"
     },
     "https://logpresso.com/ko/blog/2026-05-15-1Q-Kimsuky-report": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ba72dd7be06d7a6f23c80e0b67f3ccfc9b1d4ebfefaa8f0c2adf47b5780e96ca",
-      "last_fetched": "2026-10-18T04:06:21.541Z"
+      "source_sha256": "945e013819d76e2fb070983c13abe2562136e0cdcd3efcc41cf12a0ac0c406ed",
+      "last_fetched": "2026-10-26T13:56:04.217Z"
     },
     "https://m.blog.naver.com/nurilab1/223493365290": {
       "etag": null,
@@ -3301,7 +3314,7 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "268f45bd3540ddec212b7a7632503138840cbcd9f232a12cb4f65c77280698bc",
-      "last_fetched": "2026-10-18T04:07:19.462Z"
+      "last_fetched": "2026-10-26T13:57:07.917Z"
     },
     "https://ofac.treasury.gov/recent-actions/20250724": {
       "etag": null,
@@ -3313,19 +3326,19 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "752e0e66d2d8823320561c0b65e62934aea20cbb040e209fe42a7e44972bae49",
-      "last_fetched": "2026-10-18T04:07:50.589Z"
+      "last_fetched": "2026-10-26T13:57:40.230Z"
     },
     "https://ofac.treasury.gov/recent-actions/20251104": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "117631a9693e1c7b7251652618fc5d530cab879df1658e82aa6941192cf1aa94",
-      "last_fetched": "2026-10-18T04:07:41.219Z"
+      "last_fetched": "2026-10-26T13:57:30.065Z"
     },
     "https://ofac.treasury.gov/recent-actions/20260312": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "7b865e8924b54b4616589ddfe7009a5e93743ea547979655e71b779e3c0b0236",
-      "last_fetched": "2026-10-18T04:07:30.021Z"
+      "last_fetched": "2026-10-26T13:57:19.561Z"
     },
     "https://opensourcemalware.com/blog/chainveil-and-vitevenom-dprk-polinrider-campaign": {
       "etag": "W/\"0a32a73eb2808c8fc6c0d37abd64771d\"",
@@ -3552,68 +3565,68 @@
     "https://quetzal.bitso.com/p/interview-with-the-chollima": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "42e03750bd19a90fdf8fa675ad25a4e928f2d6d81a114363e7780a864cd7682a",
-      "last_fetched": "2026-10-18T04:06:23.052Z"
+      "source_sha256": "aac0a31b250e7b57efedc9f116efe09a15588e440dac434ee221f1e0f941f817",
+      "last_fetched": "2026-10-26T13:56:05.754Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-ii": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "458bbf5da5291e65874846dedd6d1e6d4a48fd4b7f8153968cf57eee6dc6f855",
-      "last_fetched": "2026-10-18T04:06:18.198Z"
+      "source_sha256": "52afb744f5af5ee90bea24dc221bc5eb471385ec420a6d39fc0a624e1934f64f",
+      "last_fetched": "2026-10-26T13:56:01.276Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-iii": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7ac811909c929d17ce8fde4e37b128a099dd03303cb6b8dafa4cb4abaf3b7677",
-      "last_fetched": "2026-10-18T04:06:24.297Z"
+      "source_sha256": "8cc4579ef4b2a8f0f45c4861f7b3659d44072ed0ec19a592ad31c625114b5723",
+      "last_fetched": "2026-10-26T13:56:07.001Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-iv": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3fba56b09bc36f7b89ce7c32acb6f42ae084c3bafedb91a90aaf29188ee6ddaa",
-      "last_fetched": "2026-10-18T04:06:25.416Z"
+      "source_sha256": "06f61a011dce73dadfe6f582c54019fbe7e2324fd7f88fd2beb384dba5656823",
+      "last_fetched": "2026-10-26T13:56:08.086Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-v": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8217f261f355d8447c41ea24debad3658bba63ad0b0d450d45810c35a1ae32b0",
-      "last_fetched": "2026-10-18T04:06:26.553Z"
+      "source_sha256": "997ad47664a18c7558624a9ed7d961e1079e2ad2e0e8ca27dad33e6f9baaac49",
+      "last_fetched": "2026-10-26T13:56:09.195Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-vi": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "48f7fd3e233e2c6827b71b19a053d0ca101971c0ab6339a7b6c207f3a94f56d9",
-      "last_fetched": "2026-10-18T04:06:27.812Z"
+      "source_sha256": "81417a8e55fd0da05033902a39e21522909c23ff98bbb866ce698be489de7b33",
+      "last_fetched": "2026-10-26T13:56:10.289Z"
     },
     "https://quetzal.bitso.com/p/interview-with-the-chollima-viii": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e3a744dc0ab9f21c0e2372ba6f9df532fc6cbbef6fb825a5d394884ed2755a6f",
-      "last_fetched": "2026-10-18T04:06:16.841Z"
+      "source_sha256": "c8218ee6f146bd7578b85f1026b3b82e281eae93080d94b93ecdc0cef61c766f",
+      "last_fetched": "2026-10-26T13:56:00.045Z"
     },
     "https://quetzal.bitso.com/p/north-koreas-crypt-hunting-ghosts": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "0783446a7da24066d3d32b14d86e45f1935b03a1ef08e5c2fca5850c4df98194",
-      "last_fetched": "2026-10-18T04:06:19.440Z"
+      "source_sha256": "5fd3a2b1d20366580efa6243c6ab9b407a799161af76b5268d7e72dfdf10b57a",
+      "last_fetched": "2026-10-26T13:56:02.365Z"
     },
     "https://quetzal.bitso.com/p/north-koreas-safari-hunting-for-rats": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "79f5745afd97c2f27304646fd984830a96b874dc99638d43bd7ed5bb969c062d",
-      "last_fetched": "2026-10-18T04:06:29.051Z"
+      "source_sha256": "0c080908c958ddbba9667614034f72c5f4759aba12e1d54a9eedc9d61ccc0e5d",
+      "last_fetched": "2026-10-26T13:56:11.398Z"
     },
     "https://quetzal.bitso.com/p/north-koreas-safari-poaching-for": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7aa27085d9f47fcc601697edfce583888ddf6e077d265a590f3081f6b700e5b9",
-      "last_fetched": "2026-10-18T04:06:21.919Z"
+      "source_sha256": "2fe9eb63ca2799c4c1f61417db69ac280c8a355a076f5693eacbeb41cfe9bad4",
+      "last_fetched": "2026-10-26T13:56:04.649Z"
     },
     "https://quetzal.bitso.com/p/north-koreas-safari-poaching-for-064": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5094d2803c0b64cb148e9bea5143c389d8238bcf6dc6170970955f439817bb1d",
-      "last_fetched": "2026-10-18T04:06:20.684Z"
+      "source_sha256": "ee258c14decc62011c2b35e5d4129c28a83bba7774873194ec44312055d8d084",
+      "last_fetched": "2026-10-26T13:56:03.557Z"
     },
     "https://radar.securityalliance.org/advisory-on-dprk-unc1069-fake-microsoft-teams-and-zoom-calls/": {
       "etag": null,
@@ -3626,6 +3639,12 @@
       "last_modified": null,
       "source_sha256": "022980fe2e54c3e60d7eb6b80068e55375d96689937793ab51df9eb64cad7498",
       "last_fetched": "2026-10-18T04:10:01.250Z"
+    },
+    "https://radar.securityalliance.org/seal-weekly-stats-13-20-oct-2026": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "a1e2a6ff6fc6c15b75278248e629eb426c082be83dd3119931af2ad4a0301294",
+      "last_fetched": "2026-10-26T13:57:19.357Z"
     },
     "https://radar.securityalliance.org/seal-weekly-stats-6-13-oct-2026": {
       "etag": null,
@@ -3729,6 +3748,12 @@
       "source_sha256": "b0f21af9fc04ccc6149c2c77b73ea383ff5214ca00424c46f8c02fd7301a4b21",
       "last_fetched": "2026-10-26T04:13:24.693Z"
     },
+    "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md": {
+      "etag": "W/\"5b37f3a9a74261c327a7dc17704024908e40f91138376e6ebcd8bc96168aff54\"",
+      "last_modified": null,
+      "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9",
+      "last_fetched": "2026-10-26T13:57:19.183Z"
+    },
     "https://raw.githubusercontent.com/OpenSourceMalware/WeaselBiscuit/HEAD/README.md": {
       "etag": "W/\"5bf6dfc6b62115ae35fd0420c29e012f632d337266277db06b47296f9a42f3ea\"",
       "last_modified": null,
@@ -3781,43 +3806,43 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "ae9081b973d1e2097d1aa997dc903528e4e59c84aad22d8d02c931846a13c36a",
-      "last_fetched": "2026-10-18T04:07:44.245Z"
+      "last_fetched": "2026-10-26T13:57:10.889Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part2-blockchain-dead-drop": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "d7aedebf9316c0ae66b11e3c3d70129cf0e312864ef201b7caeed4a63c8c2d14",
-      "last_fetched": "2026-10-18T04:07:42.782Z"
+      "last_fetched": "2026-10-26T13:57:09.245Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part3-infrastructure-too-perfect": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "1a39e0434c8b71590c49851370eeb56683ef8d9d73f05683f55edd49aac1b388",
-      "last_fetched": "2026-10-18T04:07:45.583Z"
+      "last_fetched": "2026-10-26T13:57:12.361Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part4-real-blood-on-the-wire": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "5f7521b982b74f252dff93f9025847a567ebf9ed3def22c057c52055107d98b9",
-      "last_fetched": "2026-10-18T04:07:39.322Z"
+      "last_fetched": "2026-10-26T13:57:05.401Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part5-eleven-hours-on-his-disk": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "2de2d79246b92bb84577dfe5db78f5d86eb5799262bc6064d4cddacb036aae01",
-      "last_fetched": "2026-10-18T04:07:37.358Z"
+      "last_fetched": "2026-10-26T13:57:02.886Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part7-server-not-just-ftp": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "fafcfd38031f933178f81ecfc276ad8b0110cc186304c0c2ec40802dfc6f3809",
-      "last_fetched": "2026-10-18T04:07:47.594Z"
+      "last_fetched": "2026-10-26T13:57:13.859Z"
     },
     "https://redasgard.com/blog/hunting-lazarus-part8-ottercookie": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "00ed0fdb4c8202923ac4364f86fb659a1629fe189304d6867ff7f864e9a6e62f",
-      "last_fetched": "2026-10-18T04:07:41.451Z"
+      "last_fetched": "2026-10-26T13:57:07.765Z"
     },
     "https://regmedia.co.uk/2024/10/07/deribit_hack_court_documents.pdf": {
       "etag": "\"eb865-623eadee0692b\"",
@@ -3832,76 +3857,76 @@
       "last_fetched": "2026-10-18T04:11:39.580Z"
     },
     "https://rekt.news/afx-trade-rekt": {
-      "etag": "W/\"e51cc5595feeff23af782b3290388227\"",
+      "etag": "W/\"8d307cf6bb3c1af1ed65df5c2409ba95\"",
       "last_modified": null,
       "source_sha256": "b2fd7cb3cc1655aa30c8e80614e1caf85727157c0e7107cdc35c47703d66bf4e",
-      "last_fetched": "2026-10-18T04:06:10.381Z"
+      "last_fetched": "2026-10-26T13:55:56.459Z"
     },
     "https://rekt.news/alphapo-rekt/": {
-      "etag": "W/\"50bdf3d89b237fe14121f76cf7daf6df\"",
+      "etag": "W/\"41c0dd2a10795d46a54d862e7c305954\"",
       "last_modified": null,
       "source_sha256": "533e67a3e3fa323e2e2b8f8963587653a74e5a408608e959428f69f7198124e0",
-      "last_fetched": "2026-10-18T04:05:59.993Z"
+      "last_fetched": "2026-10-26T13:55:46.752Z"
     },
     "https://rekt.news/bitget-rekt": {
-      "etag": "W/\"2d69ab17d49c43267d90e89246e94040\"",
+      "etag": "W/\"c4258b9c655c9be7ddb596763d05da67\"",
       "last_modified": null,
       "source_sha256": "d133269f4ad7a9b8a89d45bebd20025a1b7959017d158ab996da257732e0476c",
-      "last_fetched": "2026-10-18T04:06:15.301Z"
+      "last_fetched": "2026-10-26T13:55:59.939Z"
     },
     "https://rekt.news/coinex-rekt/": {
-      "etag": "W/\"74db068633f3aee86c827650e564a10c\"",
+      "etag": "W/\"77b0d16894ab37b63d4bdb01ba64beb8\"",
       "last_modified": null,
       "source_sha256": "1b53990bfafd12284ecf8091f30eed13ca321af312699d936c8ea1d54f76719c",
-      "last_fetched": "2026-10-18T04:06:01.442Z"
+      "last_fetched": "2026-10-26T13:55:48.132Z"
     },
     "https://rekt.news/deltaprime-rekt/": {
-      "etag": "W/\"d48d16dd6fb7838378bd651ee60d9d15\"",
+      "etag": "W/\"f1cdc037b816ba6163528d59cc4cfb28\"",
       "last_modified": null,
       "source_sha256": "94323a1ae2fd1e0c8a4202f924ee2fcf907989b22ec420a87a404c7f8945400b",
-      "last_fetched": "2026-10-18T04:06:02.808Z"
+      "last_fetched": "2026-10-26T13:55:49.301Z"
     },
     "https://rekt.news/deribit-rekt/": {
-      "etag": "W/\"3d65b4faf7b70d2fbd64af2340b874de\"",
+      "etag": "W/\"e1b3ebdcebf04f1770a9a5f4b8db2977\"",
       "last_modified": null,
       "source_sha256": "946d650327a54219cdd65dc7167d93d7176088b23d1cee3d73c846f40de25dc6",
-      "last_fetched": "2026-10-18T04:06:04.066Z"
+      "last_fetched": "2026-10-26T13:55:50.532Z"
     },
     "https://rekt.news/harmony-rekt/": {
-      "etag": "W/\"0758337b8dc202f3ff1ae28a48832ca3\"",
+      "etag": "W/\"d208bd825d4f6290b7dc999b789bf9e5\"",
       "last_modified": null,
       "source_sha256": "8f54ae2fd10f466e66935c26cda8335422c7c5f7cd5f9ef0e9d9b69d56035ac8",
-      "last_fetched": "2026-10-18T04:06:05.310Z"
+      "last_fetched": "2026-10-26T13:55:51.729Z"
     },
     "https://rekt.news/heco-htx-rekt/": {
-      "etag": "W/\"3ffc225b55e86cadbbf4027fcc9b0b54\"",
+      "etag": "W/\"20289d1f4096fc2535d4e5b1b502a430\"",
       "last_modified": null,
       "source_sha256": "a20e89010e6cbfdadfa562f2982bcd19ef5d581b84b065d5aec134290503b63f",
-      "last_fetched": "2026-10-18T04:06:06.584Z"
+      "last_fetched": "2026-10-26T13:55:52.898Z"
     },
     "https://rekt.news/humanity-protocol-rekt": {
-      "etag": "W/\"2cccb3ae9b35b32a25ea7e00f69e168f\"",
+      "etag": "W/\"68cc86268bcf4ea31a6c193240f1a5a9\"",
       "last_modified": null,
       "source_sha256": "44bbf81a556a90ec18438bc4e8c20b4f9247e67747e0e4c8422c80939b0d03f6",
-      "last_fetched": "2026-10-18T04:06:11.592Z"
+      "last_fetched": "2026-10-26T13:55:57.592Z"
     },
     "https://rekt.news/indodax-rekt/": {
-      "etag": "W/\"738ab3f53e0eb0e5f52d6683f96cdd65\"",
+      "etag": "W/\"9a0e864eb41def3f3387b8d341e79d91\"",
       "last_modified": null,
       "source_sha256": "196b5c784bb81b1626b925e52e654b4744eb438cf59975fc067003743df22c6d",
-      "last_fetched": "2026-10-18T04:06:07.809Z"
+      "last_fetched": "2026-10-26T13:55:54.094Z"
     },
     "https://rekt.news/ko/drift-protocol-rekt": {
-      "etag": "W/\"6yxg1dg7ti2dry\"",
+      "etag": "W/\"3vt4wk87xk2dry\"",
       "last_modified": null,
       "source_sha256": "90271952fe2629b78bfa727a1208a293965038e61e3cd6b33a417186e5c939b6",
-      "last_fetched": "2026-10-18T04:06:12.838Z"
+      "last_fetched": "2026-10-26T13:55:58.750Z"
     },
     "https://rekt.news/poloniex-rekt/": {
-      "etag": "W/\"05184ce5665d2291161bbff221ec296e\"",
+      "etag": "W/\"901a11024ca7a39aab7be1a12590d45a\"",
       "last_modified": null,
       "source_sha256": "78921b94737353868bfc05cc55712650c8c79b3f884dd8978b26d9e20b756f25",
-      "last_fetched": "2026-10-18T04:06:09.081Z"
+      "last_fetched": "2026-10-26T13:55:55.293Z"
     },
     "https://reliaquest.com/blog/threat-spotlight-identifying-north-korean-insider-threats/": {
       "etag": null,
@@ -3960,44 +3985,44 @@
     "https://researchcenter.paloaltonetworks.com/2017/04/unit42-the-blockbuster-sequel/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d00a35ce4081f85103f7c7e646c4a81f064d2420928306be6517321ce71a2bfb",
-      "last_fetched": "2026-10-18T04:07:35.447Z"
+      "source_sha256": "18aee01ab26d7c4a18d5444dbda3784e479c098f65222f54113a01e30e375d14",
+      "last_fetched": "2026-10-26T13:57:01.581Z"
     },
     "https://researchcenter.paloaltonetworks.com/2017/08/unit42-blockbuster-saga-continues/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "9bd9f214f31531402fac118ed74457d334c9d00e5af5bb1a17b09568779b16d6",
-      "last_fetched": "2026-10-18T04:07:41.853Z"
+      "source_sha256": "ba0c0c25a134e057488a8228374d6b14003b590d4488c6727f2c2ae7be767a0d",
+      "last_fetched": "2026-10-26T13:57:07.060Z"
     },
     "https://researchcenter.paloaltonetworks.com/2017/11/unit42-operation-blockbuster-goes-mobile/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e0c621e8160b94fc7d5190cffeea482723a9b7bec6486660325f18c225f645ab",
-      "last_fetched": "2026-10-18T04:07:38.311Z"
+      "source_sha256": "28381b5714b513a126f407ecf789e257107550d50cb3864511c8581ae3bc81dd",
+      "last_fetched": "2026-10-26T13:57:04.379Z"
     },
     "https://researchcenter.paloaltonetworks.com/2018/04/unit42-reaper-groups-updated-mobile-arsenal/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3e91ef09ce0673320c67c16ed5a28619f1d79d4471b6d5a3173ba27fcb7daaad",
-      "last_fetched": "2026-10-18T04:07:50.651Z"
+      "source_sha256": "5f5b4d8619d18a8739068a6f46d1c80e60dac71db760f2ce3f2b7ee71a35deb0",
+      "last_fetched": "2026-10-26T13:57:15.937Z"
     },
     "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "00b91a3d1923f3ef966f387dd90325c8a47f4bdb49447458d0c15ebcdf1bd34b",
-      "last_fetched": "2026-10-18T04:07:47.841Z"
+      "source_sha256": "4c729a5ba28ef963de40b115867f31e36e853b2fed4c64bfc48d1b94d000fdb6",
+      "last_fetched": "2026-10-26T13:57:13.141Z"
     },
     "https://researchcenter.paloaltonetworks.com/2018/09/unit42-new-konni-malware-attacking-eurasia-southeast-asia/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dbb42941d9ac2d1e8528bc747a4ca6f30661cfc691980ad6f89a4fa8e540434a",
-      "last_fetched": "2026-10-18T04:07:45.006Z"
+      "source_sha256": "020267c5be65cda104cf1cd2114d6274ccf47c0e12059d0d66c74f3cb94ac2ff",
+      "last_fetched": "2026-10-26T13:57:10.446Z"
     },
     "https://researchcenter.paloaltonetworks.com/2018/11/unit42-the-fractured-block-campaign-carrotbat-malware-used-to-deliver-malware-targeting-southeast-asia/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "68f6c3feb02639cb9ff218e4407848e19e91dbf6b7f281ba35bf480406373455",
-      "last_fetched": "2026-10-18T04:07:32.084Z"
+      "source_sha256": "b6460d922011636a065e4c8cb93a10eb079620a202c5b5ee8c281d9986c5e605",
+      "last_fetched": "2026-10-26T13:56:58.226Z"
     },
     "https://rewterz.com/threat-advisory/north-korea-linked-konni-apt-group-active-iocs-14": {
       "etag": "\"45148-1792987918;br\"",
@@ -4020,50 +4045,50 @@
     "https://safedep.io/astro-config-blockchain-c2-supply-chain": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "157e168f928d6c636ade2da290e342edafafd9b26ed66ae07479860210ba4ebb",
-      "last_fetched": "2026-10-18T04:06:51.007Z"
+      "source_sha256": "217ed8a8148ec484c5320cee0076837fb8f65fb0c4d2251321658e12bbb61d60",
+      "last_fetched": "2026-10-26T13:56:39.748Z"
     },
     "https://safedep.io/joyfill-npm-blockchain-c2-supply-chain": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e424a342781989301279bd17fac339694eff7cdffb2048611d222a9fdefe0282",
-      "last_fetched": "2026-10-18T04:06:52.251Z"
+      "source_sha256": "568bbc7a8de0821f0c70e1993a7ff315f7f23f35bfe7225aaa9f9c0ad9c4b2a4",
+      "last_fetched": "2026-10-26T13:56:40.921Z"
     },
     "https://safedep.io/malicious-nodemon-sudo-tslint-conf-npm-backdoor/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "557d7dd63d140c247eb9de5f0209475db68e6adc73a0780d520f53b4c3c3626c",
-      "last_fetched": "2026-10-18T04:06:54.717Z"
+      "source_sha256": "2f0e014e9c7157f7858ff9dc7d609c2ec6cb952a5ea8c7bba662b48f0f63da26",
+      "last_fetched": "2026-10-26T13:56:43.253Z"
     },
     "https://safedep.io/malicious-npm-package-express-session-js": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f0ef461ab159853f26162eeea82ba08397432fecfffe2d8a50bb9c2758ed6c6b",
-      "last_fetched": "2026-10-18T04:06:55.897Z"
+      "source_sha256": "8975323ae8585c1f895c5425e3693d9d655eeaeddae8e661bf90ddf56cd1311e",
+      "last_fetched": "2026-10-26T13:56:44.357Z"
     },
     "https://safedep.io/mastra-npm-scope-takeover-supply-chain-attack/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "46cd40521b26ba0f6bd35ec7841feccdb493ef30a2a00e4eb31b39df3850ae66",
-      "last_fetched": "2026-10-18T04:06:53.492Z"
+      "source_sha256": "a3c4d84ddba274008cf64acf4cbbfd9afbc010d3df47a95aed4823f5a1603cb2",
+      "last_fetched": "2026-10-26T13:56:42.108Z"
     },
     "https://safedep.io/microsoftsystem64-binary-payload-analysis": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "95f3b24f0e3604d2706a5ec605dd9565c8dc4f0d001c7d8df1be1db19ec6c81c",
-      "last_fetched": "2026-10-18T04:06:57.146Z"
+      "source_sha256": "d9239dabdc1b34f3cab4c955770e55a09197c03cac5283caa74e78b4ba96330b",
+      "last_fetched": "2026-10-26T13:56:45.598Z"
     },
     "https://safedep.io/polinrider-ethereum-c2-github-repositories": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "9fe89a91248a1cf9308bdb84b3748e32febacb648211fa7331b69e85d8141c9d",
-      "last_fetched": "2026-10-18T04:06:58.380Z"
+      "source_sha256": "1d2e1bb1eec2c956b0f8e2f8d03884ab9f58ced687ec3a7a128800ae7ad8e5ab",
+      "last_fetched": "2026-10-26T13:56:46.855Z"
     },
     "https://safedep.io/ulid-xyz-transitive-dependency-delivery-chain": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ec539716d185c3684739b658ca0fb026d8cd997aa221ff2cc5c728964aada04c",
-      "last_fetched": "2026-10-18T04:06:49.676Z"
+      "source_sha256": "1ee0d2f653c15021d0dd59f3f371bb4d76b4e8f1526b83c9a622ccca46233c71",
+      "last_fetched": "2026-10-26T13:56:38.485Z"
     },
     "https://sansec.io/research/north-korea-magecart": {
       "etag": null,
@@ -4179,6 +4204,12 @@
       "last_modified": null,
       "source_sha256": "5cc29abe752ad52e1e38df894dca661f8f172671bc40d515bedd423ce5673524",
       "last_fetched": "2026-10-26T04:12:20.379Z"
+    },
+    "https://securelist.com/lazarus-operation-flashhole/121541/": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "ca3630500a20a9d608e1d34263a251373e5a2b019f563fbc8424863d63b6176b",
+      "last_fetched": "2026-10-26T13:57:18.103Z"
     },
     "https://securelist.com/lazarus-threatneedle/100803": {
       "etag": null,
@@ -4297,44 +4328,44 @@
     "https://sfkino.tistory.com/65": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "4b9190c87e3e449a72f848a74cc5efc7b35a52b36b9c657eba8c54727add8202",
-      "last_fetched": "2026-10-18T04:07:32.652Z"
+      "source_sha256": "e7a0e53c699377fdbcf3b026ae53e6fc37b159eb93673494535c9501ce225c0b",
+      "last_fetched": "2026-10-26T13:57:03.403Z"
     },
     "https://sfkino.tistory.com/69": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dda3dc2cb64455d256b301a72d3e47ef9ab969e2f3a897c1cd351e1d7002759d",
-      "last_fetched": "2026-10-18T04:07:35.478Z"
+      "source_sha256": "7a6cc8d532e5aada08b0733dd3b279aed76c871a4e33fd890cbbdc7c7ad418d3",
+      "last_fetched": "2026-10-26T13:57:06.155Z"
     },
     "https://sfkino.tistory.com/73": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "76ea2ef94f65e7c500d7b4917ee10b2c569eb324d735635e6422a22a1f3ea156",
-      "last_fetched": "2026-10-18T04:07:34.060Z"
+      "source_sha256": "b974c0a4aa0e22c85794170f11c5359d5da75b6d59419af87b840c10b6251b80",
+      "last_fetched": "2026-10-26T13:57:04.757Z"
     },
     "https://sfkino.tistory.com/75": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "128c5271243ce14691f65da8c447b241c9621d3e3e7b4d705071b965d39a0178",
-      "last_fetched": "2026-10-18T04:07:29.413Z"
+      "source_sha256": "1b30e90a1d451469781c2154d78dddbc48348df71a8589c670d216cf9246379d",
+      "last_fetched": "2026-10-26T13:57:00.496Z"
     },
     "https://sfkino.tistory.com/77": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "fbeb03f451b28bce889be42cac9414c708f03a23b75de03d897083a03aaa6fcc",
-      "last_fetched": "2026-10-18T04:07:36.938Z"
+      "source_sha256": "1c2f19716e767d870b4c64f11dc980a92faf792149e5f013adbd06acbef4afb9",
+      "last_fetched": "2026-10-26T13:57:07.534Z"
     },
     "https://sfkino.tistory.com/78": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5eb0bfe4089fa51c10f4a2930af21fbe6449b8518ed7f1bef1518918b3974e9e",
-      "last_fetched": "2026-10-18T04:07:26.900Z"
+      "source_sha256": "06cdae509547f427d97cdba8544e8cd20c9b7460bb988a739ce99f99d173db4b",
+      "last_fetched": "2026-10-26T13:56:57.816Z"
     },
     "https://sfkino.tistory.com/80": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5e9d271a638c7fecf1a6b08e464598e1027760d14365a514dfe23787c02212f1",
-      "last_fetched": "2026-10-18T04:07:31.011Z"
+      "source_sha256": "fb8b16c7d19688ef48b6a47de93358263a1895b6281ff655930646306d82837c",
+      "last_fetched": "2026-10-26T13:57:02.038Z"
     },
     "https://snyk.io/articles/inside-stegabin/": {
       "etag": "W/\"alvx2il2zq3sfy\"",
@@ -4351,86 +4382,86 @@
     "https://socket.dev/blog/attackers-hunting-high-impact-nodejs-maintainers": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c63c86ee7124c3dec4c8ddc09eb12a219b2416777f23365c268dbd7bb93b8d9d",
-      "last_fetched": "2026-10-18T04:06:08.162Z"
+      "source_sha256": "284de63f0ff00bcece52ea2a9a345f2d5c27f344e239855a7a78e877d3130d87",
+      "last_fetched": "2026-10-26T13:55:52.389Z"
     },
     "https://socket.dev/blog/contagious-interview-campaign-escalates-67-malicious-npm-packages": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "34c68674d82b6bc70c9943213004ca07f86b6c78660c51025de20bce5fec0c9c",
-      "last_fetched": "2026-10-18T04:05:56.494Z"
+      "source_sha256": "b526d544fdecf36ef206cd34ad1623c3812d633eb66ee264508066e6165b8f0e",
+      "last_fetched": "2026-10-26T13:55:40.540Z"
     },
     "https://socket.dev/blog/contagious-interview-campaign-spreads-across-5-ecosystems": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "fa062b2cc3c1986f207e91aa2d81ee230b105ee3878e1e66ab2e17f135ecf25f",
-      "last_fetched": "2026-10-18T04:05:58.230Z"
+      "source_sha256": "813405f1410434b07e8b53d9d312c0d38c281ace815602f36a6a2a444f9cd56c",
+      "last_fetched": "2026-10-26T13:55:42.273Z"
     },
     "https://socket.dev/blog/famous-chollima-targets-php-developers-through-compromised-packagist-package": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5440894f6471f06de32af5a9c72028597058558bd5a4531b2c4e8636d24ce793",
-      "last_fetched": "2026-10-18T04:05:51.571Z"
+      "source_sha256": "859d84ad610ac109c452802852f94b791c60a15cb01f5cb5ca6d087a1501872f",
+      "last_fetched": "2026-10-26T13:55:35.454Z"
     },
     "https://socket.dev/blog/joyfill-npm-beta-releases-compromised": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "12d20f860ef41069c6ec58000200d6a19182f847452860ef7a21e900b8996946",
-      "last_fetched": "2026-10-18T04:05:53.168Z"
+      "source_sha256": "4744817fd3b2c4ffebd1105ba2054b5fec724804204ad6cb054d04011d653b21",
+      "last_fetched": "2026-10-26T13:55:37.095Z"
     },
     "https://socket.dev/blog/lazarus-expands-malicious-npm-campaign-11-new-packages-add-malware-loaders-and-bitbucket": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5c4231ab7529872cfe1af5a21ce37c6e21012be2b4aca8b3c9c9a8be43bd729e",
-      "last_fetched": "2026-10-18T04:05:59.843Z"
+      "source_sha256": "2082437967349887563315eab0092c31630ce1d3eb85fce5625d2f4fa298eaaa",
+      "last_fetched": "2026-10-26T13:55:44.074Z"
     },
     "https://socket.dev/blog/lazarus-strikes-npm-again-with-a-new-wave-of-malicious-packages": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "86de0312c7bdcf964180804160f49db780a04df0b59d00f739408a333d10b9a4",
-      "last_fetched": "2026-10-18T04:06:01.457Z"
+      "source_sha256": "090a1df3054fa464e558a014a019d48e9608199a778f8b9a135062311be1075b",
+      "last_fetched": "2026-10-26T13:55:45.744Z"
     },
     "https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ddcb1e8c6af4514be31a2b630db7e6c09ca85c9c2c0459d175a8bee49df15ff3",
-      "last_fetched": "2026-10-18T04:05:47.223Z"
+      "source_sha256": "0c3fbc4f7ed9226a6d42d57a278cc33b28e9bf6958f475c0dc3282a311979e9d",
+      "last_fetched": "2026-10-26T13:55:31.277Z"
     },
     "https://socket.dev/blog/north-korea-contagious-interview-npm-attacks": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "a5c429a4d21d4fa3176eb0589034a617eecf864832362d2fc67effa2fe89b7ef",
-      "last_fetched": "2026-10-18T04:05:49.532Z"
+      "source_sha256": "d80aaa29d6b9705e5d71ff7ecd0f82d155e254d6f0442d0d85e2932982ee41bd",
+      "last_fetched": "2026-10-26T13:55:33.425Z"
     },
     "https://socket.dev/blog/north-korean-apt-lazarus-targets-developers-with-malicious-npm-package": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "669a1f320af838c97e0693a9fd350fa5db8b19073719857cd7b17751c84fc683",
-      "last_fetched": "2026-10-18T04:06:03.165Z"
+      "source_sha256": "ff5fc2bdd17b8899f623017395624b34a88bb0b9c1e1c5cbf20f07cc877b65ee",
+      "last_fetched": "2026-10-26T13:55:47.437Z"
     },
     "https://socket.dev/blog/north-korean-contagious-interview-campaign-drops-35-new-malicious-npm-packages": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "95fa26822528280d0d86cad3e3640ce19728b97137301885bb5198bb9e392f90",
-      "last_fetched": "2026-10-18T04:06:04.782Z"
+      "source_sha256": "3f79e8973a592bfea99b9565765b7f72f38f58bf9142735ff7a2f492b3212c47",
+      "last_fetched": "2026-10-26T13:55:49.050Z"
     },
     "https://socket.dev/blog/polinrider-github-packagist": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7c240fef6c8fc78065851e5c5c43dd5ff6ef6df05f6a4f431ad3206443b7890c",
-      "last_fetched": "2026-10-18T04:06:09.765Z"
+      "source_sha256": "91f043e0e970e67aebf047ba69ba915a0421a47c95fb24dcbcc219cb192ec418",
+      "last_fetched": "2026-10-26T13:55:54.077Z"
     },
     "https://socket.dev/blog/polinrider-north-korea-linked-supply-chain-campaign-expands": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e604ee6439b6af1e664480c2429cfc20114cf54fbc1a7674815f319839e54eb9",
-      "last_fetched": "2026-10-18T04:05:54.829Z"
+      "source_sha256": "580d181a8426c9fec9627a1605cd77bab291a5a4825479ad3d69d820fabe8ae9",
+      "last_fetched": "2026-10-26T13:55:38.736Z"
     },
     "https://socket.dev/blog/stegabin-26-malicious-npm-packages-use-pastebin-steganography": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "eea9fa3c29596f14800af44c0b00b1993c8261422efe4f16b6d93d3bada93e19",
-      "last_fetched": "2026-10-18T04:06:06.474Z"
+      "source_sha256": "69c9e9f1fbc85db0e3b8bdad1e3624ea702a0b49f6c669cb178b371f3c4217e5",
+      "last_fetched": "2026-10-26T13:55:50.714Z"
     },
     "https://somedieyoungzz.github.io/posts/kimsucky-2/": {
       "etag": "W/\"68fe0885-e329\"",
@@ -4508,7 +4539,8 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "7a2ddaf3d4956795dc77b558b211852fe1cff21856420e3274c2e6286c9c1f3f",
-      "last_fetched": "2026-10-18T04:07:47.975Z"
+      "last_fetched": "2026-10-26T13:57:20.862Z",
+      "last_error": "no DPRK-related keyword found on page; refusing to extract"
     },
     "https://starmap.dbappsecurity.com.cn/blog/articles/2022/08/17/lazarus-group-continues-to-launch-attacks-on-the-cryptocurrency-industry-2/": {
       "etag": null,
@@ -4669,68 +4701,68 @@
     "https://unit42.paloaltonetworks.com/3cxdesktopapp-supply-chain-attack/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1da8ca2323cb163b6674ff51761dfbea4ae783eceeefc5d2fa57b37d1885dabd",
-      "last_fetched": "2026-10-18T04:06:13.594Z"
+      "source_sha256": "4aa321890c80b0103a92b1c4a7e1be0cd3e70eba9e3a4d529d37bf6f806783a1",
+      "last_fetched": "2026-10-26T13:55:58.816Z"
     },
     "https://unit42.paloaltonetworks.com/fake-north-korean-it-worker-activity-cluster/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "472539d3a625039f6d64c97db9593a24d6b490623ad79758a0502fae15da95c1",
-      "last_fetched": "2026-10-18T04:06:10.625Z"
+      "source_sha256": "3de2531df51ef66d66be8a824b66d348e2ec5dfb139f5656c32fe21b638c0419",
+      "last_fetched": "2026-10-26T13:55:55.873Z"
     },
     "https://unit42.paloaltonetworks.com/gleaming-pisces-applejeus-poolrat-and-pondrat": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3f68f5de502a9f5f63a9e1b6f1fca15762a679dd9e3ed7258ebe9debe99b485d",
-      "last_fetched": "2026-10-18T04:06:16.331Z"
+      "source_sha256": "753aedbd057d1a2df1f9ea39bc8ec893795f69a1b13efb59a3b33323af0faf21",
+      "last_fetched": "2026-10-26T13:56:01.586Z"
     },
     "https://unit42.paloaltonetworks.com/kimsuky-new-keylogger-backdoor-variant": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8dab44fa95d235cfab89975a43a88a3600f837445954f8ab8ac449f96d11815b",
-      "last_fetched": "2026-10-18T04:06:19.659Z"
+      "source_sha256": "6481efeaabeeed609f0d6a2a6e6a4fd26f724f6c95a632cb32836e8526af3950",
+      "last_fetched": "2026-10-26T13:56:04.619Z"
     },
     "https://unit42.paloaltonetworks.com/macos-malware-targets-crypto-sector": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "18ca0883c82438a19dd8db32d1c1ebd1662bf1ee012f2bed6cadd4c980cfc5b5",
-      "last_fetched": "2026-10-18T04:06:22.928Z"
+      "source_sha256": "7a2afb381fbda09ff39a81066bebbdb6c6db15ab6b830489b8f7deff49cba202",
+      "last_fetched": "2026-10-26T13:56:07.860Z"
     },
     "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "4b4b1e7b7b1808a1eb902cf87171bc964e9defd317ed767786ae9359a96bfe2e",
-      "last_fetched": "2026-10-18T04:06:26.165Z"
+      "source_sha256": "3533615092928c3cd58f50a1b1785c041aa6540f6ca4a8939b523cec76e31177",
+      "last_fetched": "2026-10-26T13:56:10.970Z"
     },
     "https://unit42.paloaltonetworks.com/north-korean-threat-group-play-ransomware": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "20edfad43c67a44290b282c233d07aa411ff33f4922960a8d8cb5566e0bcc9ab",
-      "last_fetched": "2026-10-18T04:06:29.298Z"
+      "source_sha256": "7c5e55b989a58c1e63e570309a561503b330a04616b8d21e2123bb7f4f200974",
+      "last_fetched": "2026-10-26T13:56:14.178Z"
     },
     "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "99374a1adbf7437af1ab744231c337a771392ad47c1e9ac1d86ca81dcbf6b4f6",
-      "last_fetched": "2026-10-18T04:06:32.600Z"
+      "source_sha256": "3de65008a77cc094d4ce166d8824f93f3767ccf0262b89237d4485e1ce07d37c",
+      "last_fetched": "2026-10-26T13:56:17.356Z"
     },
     "https://unit42.paloaltonetworks.com/the-fractured-statue-campaign-u-s-government-targeted-in-spear-phishing-attacks": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d23840ad7dcbfff8d84852dd3e51468a36bdd387cdb5b6b5e4993f48a6971cf5",
-      "last_fetched": "2026-10-18T04:06:35.928Z"
+      "source_sha256": "0b0f4602ac6b10674527375721af6f526741137db8d4833fd5bacf45565e71ec",
+      "last_fetched": "2026-10-26T13:56:20.745Z"
     },
     "https://unit42.paloaltonetworks.com/threat-assessment-north-korean-threat-groups-2024": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dd886dc2dddc72e8a41ba15e11267b9f9b0b3c233882ee193f027be5c2157476",
-      "last_fetched": "2026-10-18T04:06:39.183Z"
+      "source_sha256": "343cd7f3eb1c2168d773fe145123c76f297d49e3060ecabab0bd799f4768d95a",
+      "last_fetched": "2026-10-26T13:56:23.907Z"
     },
     "https://unit42.paloaltonetworks.com/unsigned-dlls": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "00ba6213b8d0889e62e540f9bce496f5c8228b5c5e39254f76835e637666216f",
-      "last_fetched": "2026-10-18T04:06:42.406Z"
+      "source_sha256": "ab6c821af9222980473435dc3afd6efe334f41f47c551df940add8600d242a0d",
+      "last_fetched": "2026-10-26T13:56:27.155Z"
     },
     "https://us-cert.cisa.gov/ncas/alerts/aa20-239a": {
       "etag": null,
@@ -6087,6 +6119,12 @@
       "source_sha256": "decc7d376f18a45653413e324080418bb6b4acbdf16922c5442d2e8c53342ef5",
       "last_fetched": "2026-10-26T04:12:00.851Z"
     },
+    "https://wezard4u.tistory.com/429903": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "13cb4689dc6ba8bdd7960636c126a8bfe318ea6e56cd7961357b53f0db1f9730",
+      "last_fetched": "2026-10-26T13:57:16.702Z"
+    },
     "https://wezard4u.tistory.com/5847": {
       "etag": null,
       "last_modified": null,
@@ -6627,6 +6665,12 @@
       "last_modified": null,
       "source_sha256": "a165c466621350866e1658a538faffee9d224641e07e74f7ebf06aaf22715c10",
       "last_fetched": "2026-10-18T04:09:44.685Z"
+    },
+    "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc",
+      "last_fetched": "2026-10-26T13:57:17.682Z"
     },
     "https://www.cyfirma.com/research/the-changing-cyber-threat-landscape-asia-pacific-apac-region-volume-1-2": {
       "etag": null,
@@ -7193,52 +7237,52 @@
       "last_fetched": "2026-10-18T04:11:50.898Z"
     },
     "https://www.igloopedia.com/128f216a-760c-81d3-99d1-c5918596ab01": {
-      "etag": "W/\"893558-3244872639\"",
+      "etag": "W/\"894229-2847512472\"",
       "last_modified": null,
-      "source_sha256": "7d614121145062ec9f33fb841047e1aa66e6f20b0cd187e1d7de13e4e6a10aa3",
-      "last_fetched": "2026-10-18T04:07:00.250Z"
+      "source_sha256": "958270dc71b0d380c9b4f9800e2ecc761c6a630a0b8ead0bf409cc52cc154381",
+      "last_fetched": "2026-10-26T13:56:51.330Z"
     },
     "https://www.igloopedia.com/181f216a-760c-8026-8c0a-ce31a25bbb11": {
-      "etag": "W/\"291856-2510102890\"",
+      "etag": "W/\"252357-450023215\"",
       "last_modified": null,
       "source_sha256": "b5b49dead07fae39077750e0796f8b70d0faba46b1c95e74119c368e45c2c3f9",
-      "last_fetched": "2026-10-18T04:06:59.177Z"
+      "last_fetched": "2026-10-26T13:56:49.111Z"
     },
     "https://www.igloopedia.com/19ef216a-760c-8008-a248-dde97abdadf3": {
-      "etag": "W/\"705529-1406093945\"",
+      "etag": "W/\"587062-3053231042\"",
       "last_modified": null,
-      "source_sha256": "25c06ebe8e76e35dc1898fcfcd5865b8a84f25f5ba82288e1b85628de5113844",
-      "last_fetched": "2026-10-18T04:06:51.794Z"
+      "source_sha256": "0e92f0625c786d39c9fe2510cf88cf9cb6ab7dfa7674ae0c8eac0acfd3f53805",
+      "last_fetched": "2026-10-26T13:56:38.828Z"
     },
     "https://www.igloopedia.com/1caf216a-760c-807e-8aef-daa4cb009201": {
-      "etag": "W/\"338813-2765522384\"",
+      "etag": "W/\"336566-3703337288\"",
       "last_modified": null,
-      "source_sha256": "73dd261bd120e34750d9b1acfabb4123a84f64783c77d15a2ed67c0418c99ffd",
-      "last_fetched": "2026-10-18T04:06:58.101Z"
+      "source_sha256": "eb55049c2ad53f4fcd93bf59da58d4669287186e223eaa5b44596c3c81e82207",
+      "last_fetched": "2026-10-26T13:56:48.060Z"
     },
     "https://www.igloopedia.com/1caf216a-760c-80f7-8328-d581057c6277": {
-      "etag": "W/\"671416-2004082229\"",
+      "etag": "W/\"665858-1087071307\"",
       "last_modified": null,
-      "source_sha256": "acc969430ffcc8575ff1abb32f8869ce09b17b8c3d7e66b3e8ce336d5711c50b",
-      "last_fetched": "2026-10-18T04:06:53.724Z"
+      "source_sha256": "0761d9fe025240196fac23cff848764a9d977e80323dd7e306fffc306dfff952",
+      "last_fetched": "2026-10-26T13:56:42.631Z"
     },
     "https://www.igloopedia.com/1edf216a-760c-8003-bb0a-c065e469a3c2": {
-      "etag": "W/\"706909-382484854\"",
+      "etag": "W/\"707747-3993055235\"",
       "last_modified": null,
-      "source_sha256": "a5d2488b63813365889366e0fd05f84e33df41873ca538a41d9aeadeff98879c",
-      "last_fetched": "2026-10-18T04:06:54.827Z"
+      "source_sha256": "625dea11d9b2de04d3813c5dee921903565b94911a07302b2c4a5403fb28d776",
+      "last_fetched": "2026-10-26T13:56:43.699Z"
     },
     "https://www.igloopedia.com/1edf216a-760c-80ef-8341-fe6774dc1467": {
-      "etag": "W/\"451889-1004675391\"",
+      "etag": "W/\"390966-2605144762\"",
       "last_modified": null,
       "source_sha256": "dbbc2a4424b680bd631568dab0b29d56194d47482ab95df1600aa92aaa3b152a",
-      "last_fetched": "2026-10-18T04:06:55.913Z"
+      "last_fetched": "2026-10-26T13:56:44.765Z"
     },
     "https://www.igloopedia.com/345f216a-760c-8003-9c12-ecd7dfe4f1b6": {
-      "etag": "W/\"972605-2790582412\"",
+      "etag": "W/\"772670-2511163676\"",
       "last_modified": null,
       "source_sha256": "e06ebc402f0622e62950afb510e4a4878e09ce5b0ecd6d5e1de1573195d25f37",
-      "last_fetched": "2026-10-18T04:06:56.993Z"
+      "last_fetched": "2026-10-26T13:56:45.802Z"
     },
     "https://www.jamf.com/blog/bluenoroff-strikes-again-with-new-macos-malware/": {
       "etag": null,
@@ -7298,61 +7342,61 @@
       "etag": "\"37bfdb51df2c8029ffd7c877bac1641f\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "e3a3de6f4ada67a33ac1b3e89ab0fafcd15f4a63eaa6e499f88f62d37c2afd54",
-      "last_fetched": "2026-10-18T04:06:29.345Z"
+      "last_fetched": "2026-10-26T13:56:11.527Z"
     },
     "https://www.ketman.org/dprk-it-workers-github-organizations.html": {
       "etag": "\"a6f68fbfac0a3d42f6a944aca4faeaa7\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "8b97d6c1255d6826f7b98a1cebefead30f306fb9594a961b779849eb3b8ed917",
-      "last_fetched": "2026-10-18T04:06:30.633Z"
+      "last_fetched": "2026-10-26T13:56:12.836Z"
     },
     "https://www.ketman.org/dprk-it-workers-in-freelance-platform-onlyDust.html": {
       "etag": "\"ea54433417c46c66f6e0691161d3bc14\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "051ee57d53c005b6f53fd5bc54376b1a1494b766b00b375d9daa83e2b5671320",
-      "last_fetched": "2026-10-18T04:06:31.932Z"
+      "last_fetched": "2026-10-26T13:56:14.152Z"
     },
     "https://www.ketman.org/dprk-it-workers-risks.html": {
       "etag": "\"301886661bf16eed1899635eac4fa6b0\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "e516e12f7f7f85e97d41ef3dcac0c3f52db45d8a4a78756bb74c99d3a09aedcc",
-      "last_fetched": "2026-10-18T04:06:33.251Z"
+      "last_fetched": "2026-10-26T13:56:15.323Z"
     },
     "https://www.ketman.org/february-2025-summary.html": {
       "etag": "\"817cc11239741b7383fd2a69152a4ce0\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "e40bce497b754907b8d998b3662b621cf60b3c0d1cdd7092bba6b795367cb933",
-      "last_fetched": "2026-10-18T04:06:38.934Z"
+      "last_fetched": "2026-10-26T13:56:21.247Z"
     },
     "https://www.ketman.org/identifying-suspicious-gh-accounts.html": {
       "etag": "\"35b621ceb51dc1839f7cd7af7675e192\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "b9b389bcc89c5c7288c41f7ee0a150ea98eb4489169f36658c6d9fd569a572f5",
-      "last_fetched": "2026-10-18T04:06:34.341Z"
+      "last_fetched": "2026-10-26T13:56:16.508Z"
     },
     "https://www.ketman.org/malicious-github-accounts.html": {
       "etag": "\"3c41d4e6d459a0aac9480d3610c36c22\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "fa9845954a255a16950f7ac9d97670044f7ac1d4e72f72d7815de41f4686c902",
-      "last_fetched": "2026-10-18T04:06:35.430Z"
+      "last_fetched": "2026-10-26T13:56:17.686Z"
     },
     "https://www.ketman.org/one-north-korean-four-north-koreans.html": {
       "etag": "\"036c953fa19873d597b2bdca6ed57264\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "8939fa11e88c9324bc486d34aaaa110c34efa9ad518324f5b57e7301ff13f554",
-      "last_fetched": "2026-10-18T04:06:36.667Z"
+      "last_fetched": "2026-10-26T13:56:18.877Z"
     },
     "https://www.ketman.org/russia-dprk-soft-connection.html": {
       "etag": "\"ed6fb85059d27021e024ca7a3d3b0e22\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:05 UTC",
       "source_sha256": "f7aecddbd0b346015cd35c48b7b905e66b988bc8933fab45d220a19341392abd",
-      "last_fetched": "2026-10-18T04:06:37.828Z"
+      "last_fetched": "2026-10-26T13:56:20.055Z"
     },
     "https://www.ketman.org/understanding-dprk-it-workers-conversations-and-insight.html": {
       "etag": "\"9e0bafac2a0be0c7fe600c205ab39014\"",
       "last_modified": "Wed, 01 Oct 2025 15:58:06 UTC",
       "source_sha256": "f99038ed84f9287d1a5c14903cb36101b2044ef58685b34850e07aba7c45a2d5",
-      "last_fetched": "2026-10-18T04:06:40.175Z"
+      "last_fetched": "2026-10-26T13:56:22.454Z"
     },
     "https://www.knowyouradversary.ru/2026/03/378-hunting-for-apt37-zoho-workdrive.html": {
       "etag": "W/\"6fcbceeee6af5dc2ddeb855da3ef4c39f8700e55f4972dd3e1abfb6e8979c370\"",
@@ -7387,8 +7431,8 @@
     "https://www.logpresso.com/en/blog/2026-03-10-dprk-remote-it-worker-osint": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b2d27907381d99a928070fd868329beb4da52262fcc4e36beec85abdd0567ac9",
-      "last_fetched": "2026-10-18T04:06:15.377Z"
+      "source_sha256": "ef9cc65599adc46f2e8930a0b80f7c034757dc74216b3b59f84b9609d349dfe6",
+      "last_fetched": "2026-10-26T13:55:57.981Z"
     },
     "https://www.macnica.co.jp/business/security/manufacturers/files/mpressioncss_ta_report_2020_5_en.pdf": {
       "etag": "\"a3ede0-5cc6da63bed00\"",
@@ -7411,80 +7455,80 @@
     "https://www.microsoft.com/en-us/security/blog/2022/12/06/dev-0139-launches-targeted-attacks-against-the-cryptocurrency-industry/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "688c5178a759a0ffbeee42262a4ab5654549c40707e9d999bacd89f7ef5bd772",
-      "last_fetched": "2026-10-18T04:05:50.570Z"
+      "source_sha256": "62a0fd114c24f427b7f9aae8b924567982e096ea0c10cbf40a0b37da2d5b6730",
+      "last_fetched": "2026-10-26T13:55:31.278Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2023/11/22/diamond-sleet-supply-chain-compromise-distributes-a-modified-cyberlink-installer/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "df833e228b277df41367c97b193807d6be5cef7a63706554cb0d24a1c9464f21",
-      "last_fetched": "2026-10-18T04:06:05.171Z"
+      "source_sha256": "fea4dd496f2950a57fb94e12a75fbbe97073379fd65a9e074fa2c59a144d09f6",
+      "last_fetched": "2026-10-26T13:55:46.436Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b29b778453cf773320bdd01d597edf375aa6a9cae727c08d15c801b59f617b5c",
-      "last_fetched": "2026-10-18T04:05:52.924Z"
+      "source_sha256": "f099eb714e8f39d0bf1d3eb8ee6c7a8b5a7304d00f81bb3082ce09da42a71e8b",
+      "last_fetched": "2026-10-26T13:55:33.450Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2024/07/25/onyx-sleet-uses-array-of-malware-to-gather-intelligence-for-north-korea/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d34cf2dee720516b68ec356b68982df134dcec3375d69f8e363d58aeaa7e3aca",
-      "last_fetched": "2026-10-18T04:05:56.901Z"
+      "source_sha256": "e3d6c6e098f7fd6c106b69663505390f77488e3dc13c1e6bef94a5366bfb3e86",
+      "last_fetched": "2026-10-26T13:55:38.353Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2024/08/30/north-korean-threat-actor-citrine-sleet-exploiting-chromium-zero-day/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ef707ba8d7c61601169112e5be8ed92a8c55abdfa59354715045d4404b62f70d",
-      "last_fetched": "2026-10-18T04:06:13.609Z"
+      "source_sha256": "327e7782146a4d56661e8007e1930aa79e060f6661753d290c54e1e8588d7a61",
+      "last_fetched": "2026-10-26T13:55:55.236Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2026/04/01/mitigating-the-axios-npm-supply-chain-compromise/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "27c5aee557ccbcc501ece6533e9198b1c21facc6c9a2439f10f741a6a0c556cf",
-      "last_fetched": "2026-10-18T04:06:00.838Z"
+      "source_sha256": "66140512f936a893ebb32570a6a09efd0818aaf9321da9edded06aad09a61020",
+      "last_fetched": "2026-10-26T13:55:42.299Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2026/04/16/dissecting-sapphire-sleets-macos-intrusion-from-lure-to-compromise/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ce112c7ea674371595f965af13277c67bd5a96423ce0a6a17c368e693dd370d5",
-      "last_fetched": "2026-10-18T04:05:58.849Z"
+      "source_sha256": "24658a40e9fe70b92aa57464e14d7bfe4f44dbca6014807ec0991760289d8a2e",
+      "last_fetched": "2026-10-26T13:55:40.152Z"
     },
     "https://www.microsoft.com/en-us/security/blog/2026/06/17/postinstall-payload-inside-mastra-npm-supply-chain-compromise/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f89418e71b088abd50093e7fac4ad2e51c9a14f4a3491ee45633ffa804de29b4",
-      "last_fetched": "2026-10-18T04:05:54.877Z"
+      "source_sha256": "af9ed124285a0f495a2cecca31cb2be7b10c770c14b3e45efd534f50488bea53",
+      "last_fetched": "2026-10-26T13:55:35.587Z"
     },
     "https://www.microsoft.com/en-us/security/business/security-insider/reports/east-asia-threat-actors-employ-unique-methods/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dcfe74f7fa87b4d092050f2246699f6592314c3fe05eb43641d517b9b6d135e6",
-      "last_fetched": "2026-10-18T04:06:09.134Z"
+      "source_sha256": "97e75aa0b97a4bc39a0acdba8734d1b60d3ca04924b7f17a88397a78ef0644d6",
+      "last_fetched": "2026-10-26T13:55:50.027Z"
     },
     "https://www.microsoft.com/security/blog/2021/01/28/zinc-attacks-against-security-researchers/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e3969d1b4b8c8f7604e5810b7adf28124b457abada3be8cde2fbddb761bbe989",
-      "last_fetched": "2026-10-18T04:06:07.188Z"
+      "source_sha256": "572d2e9821b7e18703e473bb446253e5b9a13a1f770fa840cc2c4f8c2eec61e5",
+      "last_fetched": "2026-10-26T13:55:48.153Z"
     },
     "https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "72d7589d009c93e0eaad93f5e56aefb81feccf827f511f533c8f38e7dea5448c",
-      "last_fetched": "2026-10-18T04:06:02.871Z"
+      "source_sha256": "9b3db21ea531133cd6b69ac63aff5f1e645974cdbb9334f9678c55bc7f465b57",
+      "last_fetched": "2026-10-26T13:55:44.112Z"
     },
     "https://www.microsoft.com/security/blog/2022/07/14/north-korean-threat-actor-targets-small-and-midsize-businesses-with-h0lygh0st-ransomware/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "0b09e51bb52612b8f39255051d09091701c171c38cf7fc1ab7ce294c7d3afd2b",
-      "last_fetched": "2026-10-18T04:06:15.786Z"
+      "source_sha256": "f3804694e09e134f42d90da2903b9a9f37bc5ae4f70cf1ea6d4749fd7f4343a9",
+      "last_fetched": "2026-10-26T13:55:57.046Z"
     },
     "https://www.microsoft.com/security/blog/2022/09/29/zinc-weaponizing-open-source-software/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c5dd0ab03c0a5712729120c8695bec96565522fdb21a4403f9f85423ebfb1ebb",
-      "last_fetched": "2026-10-18T04:06:11.407Z"
+      "source_sha256": "9e2a271f246df3d17f33239707861e88c75721775e997b2431f05d3cc7e7199c",
+      "last_fetched": "2026-10-26T13:55:53.274Z"
     },
     "https://www.newyorker.com/magazine/2021/04/26/the-incredible-rise-of-north-koreas-hacking-army": {
       "etag": null,
@@ -7961,10 +8005,10 @@
       "last_fetched": "2026-10-26T04:13:17.348Z"
     },
     "https://www.sentinelone.com/labs/dont-call-us-well-call-your-apis-tradertraitor-backdoors-resurface-on-victim-with-no-crypto-ties/": {
-      "etag": "W/\"iipq9sgu5z739j\"",
+      "etag": "W/\"se46ay7cn073id\"",
       "last_modified": null,
       "source_sha256": "ff22448bc3b083057789f5da2e8ca48d90c1c508f6435cff9f9770951df3144f",
-      "last_fetched": "2026-10-18T04:05:46.885Z"
+      "last_fetched": "2026-10-26T13:57:20.152Z"
     },
     "https://www.sentinelone.com/labs/jumpcloud-intrusion-attacker-infrastructure-links-compromise-to-north-korean-apt-activity": {
       "etag": "W/\"6vfw1z32ac4bop\"",
@@ -8144,67 +8188,67 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "9101b73577e18eb1d8a2a1ec1d12962bc0d1fc35888cf1b7e4dd2264eb8689cf",
-      "last_fetched": "2026-10-18T04:06:28.971Z"
+      "last_fetched": "2026-10-26T13:56:11.516Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/AR18-165A": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "b8a28510b5d6c8d51f51b27bb1e670a67676dab185f6fbb36fd12abcec8e66fe",
-      "last_fetched": "2026-10-18T04:06:30.664Z"
+      "last_fetched": "2026-10-26T13:56:17.396Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/AR18-221A": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "02b63793b8329176f5bc54116e26eea19fddff77766797b6ead4a55bbe4484c4",
-      "last_fetched": "2026-10-18T04:06:32.118Z"
+      "last_fetched": "2026-10-26T13:56:23.914Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar19-252a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "b75c53e766898b9af9b0aea01dbb0454c1b88cdc9ea13e848e3e827220c3fac7",
-      "last_fetched": "2026-10-18T04:06:33.717Z"
+      "last_fetched": "2026-10-26T13:56:25.480Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "8f01ab7ee849de92eb5506f66f312374190e75ec4f77929c24f033a7ce3cc40f",
-      "last_fetched": "2026-10-18T04:06:35.120Z"
+      "last_fetched": "2026-10-26T13:56:29.902Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045b": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "eb7613b63040a3937f11c46a078e97ac7297863c7bc4201b08127ce77ae83e77",
-      "last_fetched": "2026-10-18T04:06:36.730Z"
+      "last_fetched": "2026-10-26T13:56:41.070Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045c": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "cda1d3b912c572329b3eed7ebcb3bd9c9ab4ce87e07d1762b27729315b733d37",
-      "last_fetched": "2026-10-18T04:06:38.201Z"
+      "last_fetched": "2026-10-26T13:56:45.065Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045d": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "fea40ca97c7a10e06b81e93b648a79f621aea47fa9ac6bd1120d195ed4f57247",
-      "last_fetched": "2026-10-18T04:06:39.589Z"
+      "last_fetched": "2026-10-26T13:56:46.373Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045e": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "f894b607d062110b35e1b2de39ed3ef0a42d362c1e29275cb434272de70fb8fd",
-      "last_fetched": "2026-10-18T04:06:41.006Z"
+      "last_fetched": "2026-10-26T13:56:47.616Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045f": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "016f903df98877d0337c2b5df0f0a3ccf690ce375a3037936697fa0399b24646",
-      "last_fetched": "2026-10-18T04:06:42.390Z"
+      "last_fetched": "2026-10-26T13:56:49.094Z"
     },
     "https://www.us-cert.gov/ncas/analysis-reports/ar20-045g": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "b34e76e34602a0b1a47c7103823bdeb8756dd88e90a2b7ebd2b4c102c40a286d",
-      "last_fetched": "2026-10-18T04:06:43.946Z"
+      "last_fetched": "2026-10-26T13:56:50.383Z"
     },
     "https://www.validin.com/blog/bybit_hack_infrastructure_hunt/": {
       "etag": "W/\"6abc6a2a-f6cb\"",
@@ -8261,22 +8305,22 @@
       "last_fetched": "2026-10-18T04:12:17.471Z"
     },
     "https://www.virusbulletin.com/uploads/pdf/conference/vb2022/VB2022-Kalnai-Havranek.pdf": {
-      "etag": "\"20166d-339a49-5e96bd2534bc0\"",
+      "etag": "\"632efe77-339a49\"",
       "last_modified": "Sat, 24 Sep 2022 12:56:23 GMT",
       "source_sha256": "ce49cf4321c85101fc28f776665fac712c2ccd405bc5a7332040354e31587aa8",
-      "last_fetched": "2026-10-18T04:07:08.386Z"
+      "last_fetched": "2026-10-26T13:57:14.839Z"
     },
     "https://www.virusbulletin.com/uploads/pdf/conference/vb2024/slides/Slides-Unveiling-shadows-key-tactics-for-tracking-cyber-threat-actors-attribution-and-infrastructure-analysis.pdf": {
-      "etag": "\"2018e4-398ce1-6228faf6ba8c0\"",
+      "etag": "\"66eda54b-398ce1\"",
       "last_modified": "Fri, 20 Sep 2024 16:39:39 GMT",
       "source_sha256": "c533e7cc663d78732733db838d267eaf4922438dba0efebb6e3bbd4e9ad19f60",
-      "last_fetched": "2026-10-18T04:07:01.351Z"
+      "last_fetched": "2026-10-26T13:57:10.749Z"
     },
     "https://www.virusbulletin.com/uploads/pdf/conference_slides/2019/VB2019-Kim.pdf": {
-      "etag": "\"2013c6-1a1125e-59462f70693ec\"",
+      "etag": "\"5d9c59a7-1a1125e\"",
       "last_modified": "Tue, 08 Oct 2019 09:40:55 GMT",
       "source_sha256": "dd759e6d28477d87b701e175a297e1aedb3ad3c8b8677754db02b2a1f58003b6",
-      "last_fetched": "2026-10-18T04:07:04.773Z"
+      "last_fetched": "2026-10-26T13:57:13.120Z"
     },
     "https://www.volexity.com/blog/2021/08/17/north-korean-apt-inkysquid-infects-victims-using-browser-exploits": {
       "etag": null,
@@ -8317,8 +8361,8 @@
     "https://www.welivesecurity.com/2021/04/08/are-you-afreight-dark-watch-out-vyveva-new-lazarus-backdoor/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5b5bd54e55387682667d29633a7c9cce788003602473cdbf17ccea4cb8ab3b8a",
-      "last_fetched": "2026-10-18T04:05:48.530Z"
+      "source_sha256": "8cd7a6c1438b05633015b6a79a9ab259eea13f558810e0e8995753882ef5d7d6",
+      "last_fetched": "2026-10-26T13:57:20.367Z"
     },
     "https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium": {
       "etag": null,
