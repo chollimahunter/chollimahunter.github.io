@@ -161,25 +161,25 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "c7e9c2b1e423420e8115ca5f4f1d52b84a6499f4b96e084f8f01f5773e3d1866",
-      "last_fetched": "2026-10-18T04:03:32.737Z"
+      "last_fetched": "2026-10-26T04:12:00.137Z"
     },
     "https://asec.ahnlab.com/1376": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "3a1d9d50ef10bcdcec7945cab5fccee677847d674282699f01fc634c33ddee8a",
-      "last_fetched": "2026-10-18T04:03:36.705Z"
+      "last_fetched": "2026-10-26T04:12:04.441Z"
     },
     "https://asec.ahnlab.com/993": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "f995e45a274ac4cd61399efd76a4141d27e6b08b11cff13b53ef19af8966886f",
-      "last_fetched": "2026-10-18T04:03:40.545Z"
+      "last_fetched": "2026-10-26T04:12:09.090Z"
     },
     "https://asec.ahnlab.com/en/27346": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:03:43 GMT",
-      "source_sha256": "a03fc894c2743150c4713cd300f1983cf881f81713bdb6506426e5ef1f9d2c47",
-      "last_fetched": "2026-10-18T04:03:44.729Z"
+      "last_modified": null,
+      "source_sha256": "c2e1615bfd38a8c8522eee42fe868dc99abae9989d4141de527810b15927c7bf",
+      "last_fetched": "2026-10-26T04:12:13.370Z"
     },
     "https://asec.ahnlab.com/en/45437/": {
       "etag": null,
@@ -197,43 +197,43 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "f0f1770503fd4577797805aacfb0c421048fbcf6f2a73a0edeb7710de05934ed",
-      "last_fetched": "2026-10-18T04:03:49.778Z"
+      "last_fetched": "2026-10-26T04:12:15.849Z"
     },
     "https://asec.ahnlab.com/en/53046": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:03:54 GMT",
-      "source_sha256": "0200dbae62ce827973c994b0796fae795099a6e93a7f8b381d19c8a935fa8c8d",
-      "last_fetched": "2026-10-18T04:03:55.356Z"
+      "last_modified": null,
+      "source_sha256": "ef2da92852844cb4e6ce57d0ca1e86acc03aa9700bc1c2a9e3ee9d67b855082d",
+      "last_fetched": "2026-10-26T04:12:21.731Z"
     },
     "https://asec.ahnlab.com/en/53132": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "9b949a2a93d67f1fffa4b14eb301fee5ba663c9459c3c79ca4e1eda3cd19cd33",
-      "last_fetched": "2026-10-18T04:04:00.009Z"
+      "last_fetched": "2026-10-26T04:12:24.608Z"
     },
     "https://asec.ahnlab.com/en/54349": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "24d143ab44191e5e5e0487061f6ef545dcbe97bda716c6b7e3d7e50350bc10b2",
-      "last_fetched": "2026-10-18T04:04:03.626Z"
+      "last_fetched": "2026-10-26T04:12:26.932Z"
     },
     "https://asec.ahnlab.com/en/54678": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:04:08 GMT",
-      "source_sha256": "5386e0f47171bfbab3de49613c224f1a77175b99eb9652f18559770a2972a216",
-      "last_fetched": "2026-10-18T04:04:08.582Z"
+      "last_modified": null,
+      "source_sha256": "be3592c344c49da096b5451759741a8e66d2a2348b0193ff37266c70bb7faf17",
+      "last_fetched": "2026-10-26T04:12:29.349Z"
     },
     "https://asec.ahnlab.com/en/54736": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "27b3c560643658d004b16c4afb876568ded586e292506a026e4903f8a0f989e0",
-      "last_fetched": "2026-10-18T04:04:14.443Z"
+      "last_fetched": "2026-10-26T04:12:35.494Z"
     },
     "https://asec.ahnlab.com/en/55145": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "f27dd6b34c83284148d728cf2f1a5eb469853157eb757d879c950d250102e57d",
-      "last_fetched": "2026-10-18T04:04:19.324Z"
+      "last_modified": "Tue, 20 Oct 2026 02:09:14 GMT",
+      "source_sha256": "af68082d16b317151196a406a908aa05bfb5aae81349fe732a6aa926b80978b2",
+      "last_fetched": "2026-10-26T04:12:41.293Z"
     },
     "https://asec.ahnlab.com/en/55219/": {
       "etag": null,
@@ -245,7 +245,7 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "54ae6f6f8b2fccc00654a74bd24ee6fb91c39ef6f2e909d45709c8a4b13a0b8e",
-      "last_fetched": "2026-10-18T04:04:21.644Z"
+      "last_fetched": "2026-10-26T04:12:44.194Z"
     },
     "https://asec.ahnlab.com/en/55944/": {
       "etag": null,
@@ -256,8 +256,8 @@
     "https://asec.ahnlab.com/en/56405": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c0e6e30c1b472ba7aca123b4e88b29a3dc5f992a1f4a7bebb499bdc12aea474a",
-      "last_fetched": "2026-10-18T04:04:26.365Z"
+      "source_sha256": "009ba6d3676b1962a69d12c327a9dfb39bad21c575e2801f2abc742758ba504f",
+      "last_fetched": "2026-10-26T04:12:50.290Z"
     },
     "https://asec.ahnlab.com/en/56756/": {
       "etag": null,
@@ -268,20 +268,20 @@
     "https://asec.ahnlab.com/en/56857": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7ab2a50499db243e32657fb1d1fd68414ebf3fb92259de63c295f4f96f9011c7",
-      "last_fetched": "2026-10-18T04:04:28.660Z"
+      "source_sha256": "78b71bb825e99fc9afb9940ff57021f0b1e249051186e6a3f7ed7ca2503846c0",
+      "last_fetched": "2026-10-26T04:12:55.891Z"
     },
     "https://asec.ahnlab.com/en/57685": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "a684af96d2c370a5d6a6c534097ce7618a9bc312d75db6650b67a0611cdb53c8",
-      "last_fetched": "2026-10-18T04:04:31.077Z"
+      "last_fetched": "2026-10-26T04:13:01.243Z"
     },
     "https://asec.ahnlab.com/en/57873": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:04:35 GMT",
-      "source_sha256": "5b18db20ee993455693a5f629c6b3a80f1b6a0e056adba08d96a9e3ff436a110",
-      "last_fetched": "2026-10-18T04:04:36.403Z"
+      "last_modified": "Tue, 13 Oct 2026 05:22:47 GMT",
+      "source_sha256": "88d83dbd2ef72cf6714d44087cf32bba3bf17d619c892a6c429eaf6b2dca0bcc",
+      "last_fetched": "2026-10-26T04:13:03.270Z"
     },
     "https://asec.ahnlab.com/en/59042/": {
       "etag": null,
@@ -293,61 +293,61 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "e8788dd78d6c4cbe7ef1092e6174dd9a87918bf0692d47b99c203ede63c5801a",
-      "last_fetched": "2026-10-18T04:04:40.990Z"
+      "last_fetched": "2026-10-26T04:13:05.318Z"
     },
     "https://asec.ahnlab.com/en/59318": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "26238a17466d5e4e52e27e8e34542ec044fc9283218a9bef9e9110c9fb109627",
-      "last_fetched": "2026-10-18T04:04:46.864Z"
+      "last_modified": "Tue, 20 Oct 2026 02:09:10 GMT",
+      "source_sha256": "0bd17032e2cdd3a166f0ee441e7978b73f686948cca871aa32994084c302f0e1",
+      "last_fetched": "2026-10-26T04:13:10.667Z"
     },
     "https://asec.ahnlab.com/en/59590": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "6f5679088356f399d51e38dac1b36ef1acd28b10f70910d3a5d9b2fe89b106c8",
-      "last_fetched": "2026-10-18T04:04:52.278Z"
+      "last_fetched": "2026-10-26T04:13:12.927Z"
     },
     "https://asec.ahnlab.com/en/59763": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "a85839df16c2136ef938ccb96661423dcfa5b69f71c1bde2d37172ed914a94fb",
-      "last_fetched": "2026-10-18T04:04:54.865Z"
+      "last_modified": "Mon, 26 Oct 2026 04:13:22 GMT",
+      "source_sha256": "863b42c49bfb3cc39dd785c5216c4950285e177c398940c689a4a0af71b742f8",
+      "last_fetched": "2026-10-26T04:13:18.398Z"
     },
     "https://asec.ahnlab.com/en/60054": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:04:56 GMT",
-      "source_sha256": "47c8254ceb77a38ebee65af5f23f62cf3e8bac98f7abcf827b27ad5fe69dc88e",
-      "last_fetched": "2026-10-18T04:04:57.219Z"
+      "last_modified": null,
+      "source_sha256": "6913f02fdb3ef0eda3c4efc0ca2c53390b8de5b777b0a864a7910846235ae62a",
+      "last_fetched": "2026-10-26T04:13:23.792Z"
     },
     "https://asec.ahnlab.com/en/60792": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "d7ed25fb0b3adec6c2e3be8590c95a73e8972cf7eb6076c2ebe269c2f6c26b59",
-      "last_fetched": "2026-10-18T04:05:02.424Z"
+      "last_modified": "Mon, 26 Oct 2026 04:13:30 GMT",
+      "source_sha256": "fc7c65bb9a49cfa75a50c17a2fb24dfa3b44b5b1a49f8ae2e18b2d1325a3e135",
+      "last_fetched": "2026-10-26T04:13:26.264Z"
     },
     "https://asec.ahnlab.com/en/61631": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:05:04 GMT",
-      "source_sha256": "8df82df3a3bebf5748c424a5b9dd2db55cae32b0e5898e4a2278be2734fefd66",
-      "last_fetched": "2026-10-18T04:05:04.536Z"
+      "last_modified": null,
+      "source_sha256": "4be74dc9472a996d6e5b416ef7017899c4f54b33fb34150fe7c37c698aa78f9c",
+      "last_fetched": "2026-10-26T04:13:31.652Z"
     },
     "https://asec.ahnlab.com/en/61934": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "1139d77318040979f84c693075738feb3a83638093003cda1fb6b01fd91ae3a9",
-      "last_fetched": "2026-10-18T04:05:10.553Z"
+      "last_modified": "Fri, 23 Oct 2026 02:23:10 GMT",
+      "source_sha256": "df8c66078534c898ca67f42b826baf548edab765213970dc0b0192f0d44d0c33",
+      "last_fetched": "2026-10-26T04:13:37.964Z"
     },
     "https://asec.ahnlab.com/en/63192": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "a1b6ba2a2d2fcabf37a77371a0a725b7a63f82369154930ead56665c6cec2760",
-      "last_fetched": "2026-10-18T04:05:12.944Z"
+      "last_fetched": "2026-10-26T04:13:40.864Z"
     },
     "https://asec.ahnlab.com/en/63396": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:05:14 GMT",
-      "source_sha256": "a715314f1fe9043c8816f518309aa69749442321940c37b74768d3a75c359458",
-      "last_fetched": "2026-10-18T04:05:15.112Z"
+      "last_modified": null,
+      "source_sha256": "6adab6ac9838360a87d4d8be268d8153901ae2e7381f9c9a971cdb08418c09c8",
+      "last_fetched": "2026-10-26T04:13:46.725Z"
     },
     "https://asec.ahnlab.com/en/65076/": {
       "etag": null,
@@ -357,39 +357,39 @@
     },
     "https://asec.ahnlab.com/en/65245": {
       "etag": null,
-      "last_modified": null,
-      "source_sha256": "16cc25a9c2b9fd17b6d412e9eb17d0cca546a1fdd83b9fc5be6da319ee1b8157",
-      "last_fetched": "2026-10-18T04:05:20.612Z"
+      "last_modified": "Mon, 26 Oct 2026 04:13:54 GMT",
+      "source_sha256": "3862fd4abe6d9341e2871ca5a1316e8969fd28139625fa781b7a3bc215d91f8a",
+      "last_fetched": "2026-10-26T04:13:49.580Z"
     },
     "https://asec.ahnlab.com/en/66088": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "0af76de2c908be2b928cae2cc1b6228d6d4ac2850e241dd38633515b29f26143",
-      "last_fetched": "2026-10-18T04:05:25.894Z"
+      "source_sha256": "ee4b280bc34a0687c5165fcafa5abfd4a6af8fa8ee1fc703681be738cb9d58b7",
+      "last_fetched": "2026-10-26T04:13:55.428Z"
     },
     "https://asec.ahnlab.com/en/66546": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "d09ac3cc3dcd333756d61429171561f98bb43584db8a2890255cc58e58fba7cf",
-      "last_fetched": "2026-10-18T04:05:29.578Z"
+      "last_fetched": "2026-10-26T04:14:01.775Z"
     },
     "https://asec.ahnlab.com/en/66720": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:05:33 GMT",
-      "source_sha256": "adb9226782112300f3313048a18dc15138d90e7b58eb436f7cd50dfb5204e46c",
-      "last_fetched": "2026-10-18T04:05:33.031Z"
+      "last_modified": null,
+      "source_sha256": "ebd6a0001cd8c80f43c5e316e321e2d4298c1781df80411723e253ce295abd6d",
+      "last_fetched": "2026-10-26T04:14:06.212Z"
     },
     "https://asec.ahnlab.com/en/67558": {
       "etag": null,
-      "last_modified": "Sun, 18 Oct 2026 04:05:40 GMT",
+      "last_modified": "Mon, 26 Oct 2026 04:14:18 GMT",
       "source_sha256": "18a9b9a4e69462f00aa564fad76c1b47f54a70e4215d27f04d264730120a5b48",
-      "last_fetched": "2026-10-18T04:05:39.520Z"
+      "last_fetched": "2026-10-26T04:14:13.084Z"
     },
     "https://asec.ahnlab.com/en/67660": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3a1ff48e2fb1105b22a43275d8bd00e807e4d73714c70a102d4e925d5f729098",
-      "last_fetched": "2026-10-18T04:05:46.495Z"
+      "source_sha256": "241f4c0061e5cb661ddb4da5c7e76081a6a60769903c700af93c7b617e808bfa",
+      "last_fetched": "2026-10-26T04:14:19.961Z"
     },
     "https://asec.ahnlab.com/en/84841": {
       "etag": null,
@@ -510,6 +510,12 @@
       "last_modified": "Tue, 13 Oct 2026 02:38:18 GMT",
       "source_sha256": "1b1c9181129fb7f81315c9b78db4f6c9d649bf1a13aca87a9c59f949a0158f2b",
       "last_fetched": "2026-10-18T04:13:59.543Z"
+    },
+    "https://asec.ahnlab.com/en/95775": {
+      "etag": null,
+      "last_modified": "Fri, 23 Oct 2026 12:42:26 GMT",
+      "source_sha256": "c2ee91122921923cb35c5e051fc9b170b5dc534f881a90f3a187ef053fd248b2",
+      "last_fetched": "2026-10-26T04:11:57.835Z"
     },
     "https://asec.ahnlab.com/ko/21873/": {
       "etag": null,
@@ -1216,8 +1222,8 @@
     "https://blog.alyac.co.kr/1446": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2945a72d0ea921618d13ca57703874050f7bbe4a63b581d6f290f652254950f4",
-      "last_fetched": "2026-10-18T04:03:46.342Z"
+      "source_sha256": "2a66c530dc0886a0efa61add6fcc7a0c8e83a4ef01c675c21e5d24fea411970b",
+      "last_fetched": "2026-10-26T04:13:47.086Z"
     },
     "https://blog.alyac.co.kr/1448": {
       "etag": null,
@@ -1312,8 +1318,8 @@
     "https://blog.alyac.co.kr/2004": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6a26d05814a1160109581b75e5da0759d1453569a9e7d723c27a0f7876a1d256",
-      "last_fetched": "2026-10-18T04:03:44.791Z"
+      "source_sha256": "5ba5ca1d124460ffe1a5f9fb920468ec2d6afe8fd1d59161e9b8387a6cb55f06",
+      "last_fetched": "2026-10-26T04:13:45.563Z"
     },
     "https://blog.alyac.co.kr/2061": {
       "etag": null,
@@ -1324,8 +1330,8 @@
     "https://blog.alyac.co.kr/2063": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "eca5b2fc685f858193f0972f7616de2f09bf44df569179b9f6d6cde5572a836e",
-      "last_fetched": "2026-10-18T04:03:43.191Z"
+      "source_sha256": "c71a259a133c29a4eb991b2ab7b87c7ad40b8166725da20dd36b44a3c29cfeb9",
+      "last_fetched": "2026-10-26T04:13:44.004Z"
     },
     "https://blog.alyac.co.kr/2105": {
       "etag": null,
@@ -1432,8 +1438,8 @@
     "https://blog.alyac.co.kr/2474": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bd37f9028102395773f08b4b8603060dce4cf32120df55590901fba9ed87fb5d",
-      "last_fetched": "2026-10-18T04:03:41.472Z"
+      "source_sha256": "34cee05f2b15d7fd1814e2e66e9d33c601268840b544e75f3788a2e25b1eca33",
+      "last_fetched": "2026-10-26T04:13:42.424Z"
     },
     "https://blog.alyac.co.kr/2486": {
       "etag": null,
@@ -1486,8 +1492,8 @@
     "https://blog.alyac.co.kr/3014": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6124346064ee1b8d1924595fee7cd3fd2ce09c33e2633e65576513f182ec66d9",
-      "last_fetched": "2026-10-18T04:03:39.863Z"
+      "source_sha256": "977c1af1f4b48e1bf4301f8972be6d9a4d375ec29f0efbc793f59ae650d32099",
+      "last_fetched": "2026-10-26T04:13:40.860Z"
     },
     "https://blog.alyac.co.kr/3018": {
       "etag": null,
@@ -1552,14 +1558,14 @@
     "https://blog.alyac.co.kr/3489": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c9cc0f724a1f3fcf6c994d7ffbfbae3c7c4f29b457acf736bb154047edfd7085",
-      "last_fetched": "2026-10-18T04:03:38.553Z"
+      "source_sha256": "db4ff74423fd112c28818c4b9c11339a06fdbf60bbbc01715f5db3ca4295b028",
+      "last_fetched": "2026-10-26T04:13:39.313Z"
     },
     "https://blog.alyac.co.kr/3525": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d00df43a7f7316528781eda41d3e66324e637572f677e94a61d17235590f3da4",
-      "last_fetched": "2026-10-18T04:03:36.999Z"
+      "source_sha256": "9a3e5e27509c898a8022a865dc5711abdebf11c9f6d59e6258bce420d038246d",
+      "last_fetched": "2026-10-26T04:13:37.735Z"
     },
     "https://blog.alyac.co.kr/3536": {
       "etag": null,
@@ -1576,14 +1582,14 @@
     "https://blog.alyac.co.kr/3624": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "33856d34f61f2aa13db39dba822df3e5387e926c6388d566b2f61991876bf189",
-      "last_fetched": "2026-10-18T04:03:35.449Z"
+      "source_sha256": "e26c6b5f01a8dcd4c908d30c0462d2208c01d7270fbfc28d11a28bdc71c841a8",
+      "last_fetched": "2026-10-26T04:13:36.015Z"
     },
     "https://blog.alyac.co.kr/3754": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ac3614defddbfbd22290a598ed6e33f1b39672d98dea0eb3e6285d3c9c04c7e1",
-      "last_fetched": "2026-10-18T04:03:33.872Z"
+      "source_sha256": "9201c39ff80ccf5af424f412b596b240bb931088e27fd336c7cf9f3f0ba4907f",
+      "last_fetched": "2026-10-26T04:13:34.460Z"
     },
     "https://blog.alyac.co.kr/3868": {
       "etag": null,
@@ -1594,8 +1600,8 @@
     "https://blog.alyac.co.kr/4262": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c95708fb05a80788026097f1586c2e1d92e9fa5e860974d4ed5de5de2cc46b2d",
-      "last_fetched": "2026-10-18T04:03:32.323Z"
+      "source_sha256": "f6bd2ce4f3cc822507de37f8f90def10082012f19b72a74635d0e899dce0c8f4",
+      "last_fetched": "2026-10-26T04:13:32.906Z"
     },
     "https://blog.alyac.co.kr/4417": {
       "etag": null,
@@ -1606,8 +1612,8 @@
     "https://blog.alyac.co.kr/4501": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b815c8badcfea5456fabd2e9d05372328ee7cfc14db53fc69f5c5ced29ece7c6",
-      "last_fetched": "2026-10-18T04:03:30.734Z"
+      "source_sha256": "ac4b6edc5e3d6de22871bb23173489a9ce15de33549238c5d732c0aa4eaf6159",
+      "last_fetched": "2026-10-26T04:13:31.106Z"
     },
     "https://blog.alyac.co.kr/4570": {
       "etag": null,
@@ -1660,8 +1666,8 @@
     "https://blog.alyac.co.kr/4946": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "17b506c84a542474ea9ee715b70f690c27770ab4828dd0f8664136f58752687c",
-      "last_fetched": "2026-10-18T04:03:29.145Z"
+      "source_sha256": "2e2428df1f72d08cad885cca6563c961ee32985c53bb96b494668c6c28061275",
+      "last_fetched": "2026-10-26T04:13:28.307Z"
     },
     "https://blog.alyac.co.kr/4960": {
       "etag": null,
@@ -1997,19 +2003,19 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "815ca3422ab332cbac640ac85a677bfb4201273ee595b9fcdaeab90e1ed1217f",
-      "last_fetched": "2026-10-18T04:05:43.174Z"
+      "last_fetched": "2026-10-26T04:13:40.219Z"
     },
     "https://blog.talosintelligence.com/2017/05/konni-malware-under-radar-for-years.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "3996c411001502d633461d63b5cdd8c43726d008b31e1288d1080bd2f7b04910",
-      "last_fetched": "2026-10-18T04:05:44.428Z"
+      "last_fetched": "2026-10-26T04:13:41.305Z"
     },
     "https://blog.talosintelligence.com/2018/01/korea-in-crosshairs.html": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "4c325fd60afe4539be647ad5ee000fe7c720461f4234f9c3a9fc8defbf815d76",
-      "last_fetched": "2026-10-18T04:05:45.559Z"
+      "last_fetched": "2026-10-26T04:13:42.366Z"
     },
     "https://blog.talosintelligence.com/2018/05/navrat.html": {
       "etag": null,
@@ -3322,112 +3328,112 @@
       "last_fetched": "2026-10-18T04:07:30.021Z"
     },
     "https://opensourcemalware.com/blog/chainveil-and-vitevenom-dprk-polinrider-campaign": {
-      "etag": "W/\"9671323537d47281008afdf44e596be6\"",
-      "last_modified": "Fri, 16 Oct 2026 09:07:01 GMT",
+      "etag": "W/\"0a32a73eb2808c8fc6c0d37abd64771d\"",
+      "last_modified": "Sun, 25 Oct 2026 03:35:00 GMT",
       "source_sha256": "0f6b6e9bbeefb59bb814aed92715e1d9b7ee2d62bf26c8bcf7cd00f2b05c0f28",
-      "last_fetched": "2026-10-18T04:04:35.893Z"
+      "last_fetched": "2026-10-26T04:12:49.491Z"
     },
     "https://opensourcemalware.com/blog/contagious-code-fake-font": {
-      "etag": "W/\"688b832345d12abb45905fc3ad928890\"",
-      "last_modified": "Fri, 16 Oct 2026 07:54:24 GMT",
+      "etag": "W/\"197b63c81da3927c4fbd379e032f1353\"",
+      "last_modified": "Sun, 25 Oct 2026 00:14:30 GMT",
       "source_sha256": "4288f500b37cca97756b7bac5cfcdebd583aa2396dafbc0df2ace60e4548c81c",
-      "last_fetched": "2026-10-18T04:04:40.182Z"
+      "last_fetched": "2026-10-26T04:12:53.560Z"
     },
     "https://opensourcemalware.com/blog/contagious-interview-gets-an-upgrade-for-2026": {
-      "etag": "W/\"ca7471581b8d39574679a92adf878c87\"",
-      "last_modified": "Fri, 16 Oct 2026 19:43:26 GMT",
+      "etag": "W/\"75931b52cbd37f550ffa479fca921833\"",
+      "last_modified": "Sun, 25 Oct 2026 07:14:41 GMT",
       "source_sha256": "b8d2f140ebfac6b5e823fc90a22db959b8138a3bc9b815ce168f69c41640196c",
-      "last_fetched": "2026-10-18T04:04:51.883Z"
+      "last_fetched": "2026-10-26T04:13:02.851Z"
     },
     "https://opensourcemalware.com/blog/contagious-interview-vscode": {
-      "etag": "W/\"b6b42c2e6ae26eee2de6d6164c3c7a9c\"",
-      "last_modified": "Sat, 17 Oct 2026 20:18:13 GMT",
+      "etag": "W/\"32b1cd7fdd8b898675bfc72787cd511c\"",
+      "last_modified": "Sun, 25 Oct 2026 00:15:26 GMT",
       "source_sha256": "f33a4ae7c6a9005fea8cff9bd6ae83e27a2b461579bfaf4060d4f74dab569fc1",
-      "last_fetched": "2026-10-18T04:04:41.393Z"
+      "last_fetched": "2026-10-26T04:12:54.641Z"
     },
     "https://opensourcemalware.com/blog/developer-guide-getting-over-polinrider": {
-      "etag": "W/\"95a142532bcf0a66761a0eb78e1e2ac0\"",
-      "last_modified": "Fri, 16 Oct 2026 09:05:37 GMT",
+      "etag": "W/\"b3ba76162b9e00fd510c3164b59b9703\"",
+      "last_modified": "Sun, 25 Oct 2026 04:30:13 GMT",
       "source_sha256": "5dbc17fa49a20258ad66b0a801696980baf32b13e33a3821d319022491743d98",
-      "last_fetched": "2026-10-18T04:04:42.602Z"
+      "last_fetched": "2026-10-26T04:12:55.662Z"
     },
     "https://opensourcemalware.com/blog/dprk-git-hooks-malware": {
-      "etag": "W/\"d0ade496c316682fd8836e6ec33c77d3\"",
-      "last_modified": "Fri, 16 Oct 2026 09:10:27 GMT",
+      "etag": "W/\"e0cd6910dbb8861a20d1173e45239b00\"",
+      "last_modified": "Sun, 25 Oct 2026 07:00:15 GMT",
       "source_sha256": "0e2711da63e63e06b598fc20b853abc6bbac45bc9d9d974c5b3f76890d838228",
-      "last_fetched": "2026-10-18T04:04:43.685Z"
+      "last_fetched": "2026-10-26T04:12:56.692Z"
     },
     "https://opensourcemalware.com/blog/introducing-weaselbiscuit": {
-      "etag": "W/\"4b09de9414f65eb932754a229fbc96ea\"",
-      "last_modified": "Fri, 16 Oct 2026 09:04:18 GMT",
+      "etag": "W/\"36a8f177d7d9570d0dee8ceadb31b101\"",
+      "last_modified": "Sun, 25 Oct 2026 02:05:54 GMT",
       "source_sha256": "dbebc39621299aea6e79289f3305e70f07f8381161951482882f9ee2e3cbd349",
-      "last_fetched": "2026-10-18T04:04:54.056Z"
+      "last_fetched": "2026-10-26T04:13:04.880Z"
     },
     "https://opensourcemalware.com/blog/malware-abuses-vscode-lifecycle-scripts": {
-      "etag": "W/\"6d4de3ce291f67abd6efa2ca697d0097\"",
-      "last_modified": "Fri, 16 Oct 2026 09:10:08 GMT",
+      "etag": "W/\"22d3e3d0eafa76d2a8a37c9f6f42c2e0\"",
+      "last_modified": "Sun, 25 Oct 2026 07:00:13 GMT",
       "source_sha256": "83d41008fea3014be184cdfb2ec6580da3723cf75124cee030190b782321e4fc",
-      "last_fetched": "2026-10-18T04:04:50.743Z"
+      "last_fetched": "2026-10-26T04:13:01.825Z"
     },
     "https://opensourcemalware.com/blog/mastra-npm-malware": {
-      "etag": "W/\"5322b7f34b9fc48ae0bf2791e19c886d\"",
-      "last_modified": "Fri, 16 Oct 2026 09:08:20 GMT",
+      "etag": "W/\"8007efd2ea5c1de37bc1605dd829e74d\"",
+      "last_modified": "Sun, 25 Oct 2026 06:00:13 GMT",
       "source_sha256": "b7607315352f2f4f7b7bd2b794187db8c044c6b683ad06b9625cc69db769e095",
-      "last_fetched": "2026-10-18T04:04:36.965Z"
+      "last_fetched": "2026-10-26T04:12:50.508Z"
     },
     "https://opensourcemalware.com/blog/neutralinojs-compromise": {
-      "etag": "W/\"ba0d14ffd3a94add8b5e8776361a5dcb\"",
-      "last_modified": "Fri, 16 Oct 2026 16:35:08 GMT",
+      "etag": "W/\"0a0740427e44456d2827b88ab6ca98e8\"",
+      "last_modified": "Sun, 25 Oct 2026 00:13:53 GMT",
       "source_sha256": "4b4926e995b2cf4403230f8926af7f4561fc1c101558896d1075d216f943c267",
-      "last_fetched": "2026-10-18T04:04:44.799Z"
+      "last_fetched": "2026-10-26T04:12:57.721Z"
     },
     "https://opensourcemalware.com/blog/nullreceiver-dprk-c2-technique": {
-      "etag": "W/\"f5ec2bbcbda8b0209ea4e94172fc7bc7\"",
-      "last_modified": "Fri, 16 Oct 2026 14:02:32 GMT",
+      "etag": "W/\"928de903412eb62143fce244cafd1aa3\"",
+      "last_modified": "Sun, 25 Oct 2026 00:35:32 GMT",
       "source_sha256": "3aff604aa6a15278870c9c8a969af910cf732951c57867897e02b2cf0dc63ce5",
-      "last_fetched": "2026-10-18T04:04:34.831Z"
+      "last_fetched": "2026-10-26T04:12:48.470Z"
     },
     "https://opensourcemalware.com/blog/opensourcemalware-show-episode03": {
-      "etag": "W/\"a42f0a732b3927cab05a93c3c914cc91\"",
-      "last_modified": "Sat, 17 Oct 2026 19:40:29 GMT",
+      "etag": "W/\"270d571dc1202a819126cce874a69a98\"",
+      "last_modified": "Sun, 25 Oct 2026 07:00:14 GMT",
       "source_sha256": "a23d0962460b2d094698575329e192b5dfd8060fbe5b2266255bd254f651bcb1",
-      "last_fetched": "2026-10-18T04:04:45.936Z"
+      "last_fetched": "2026-10-26T04:12:58.744Z"
     },
     "https://opensourcemalware.com/blog/oss-maintainters-vscode-tasks-compromised": {
-      "etag": "W/\"06f30a7aa49c6a4c398105fa9bd81265\"",
-      "last_modified": "Sat, 17 Oct 2026 18:14:04 GMT",
+      "etag": "W/\"d9c65e14e50065e77d079e8c66ce8a15\"",
+      "last_modified": "Sun, 25 Oct 2026 00:14:48 GMT",
       "source_sha256": "43e4a816547462cf46d0fac8eccfd4697e3814bb1979cc8a4f7828604fb746fd",
-      "last_fetched": "2026-10-18T04:04:46.988Z"
+      "last_fetched": "2026-10-26T04:12:59.761Z"
     },
     "https://opensourcemalware.com/blog/polinrider-caused-dozens-of-npm-and-go-compromises": {
-      "etag": "W/\"35865a4403704866f783daea69c3faa7\"",
-      "last_modified": "Fri, 16 Oct 2026 08:18:43 GMT",
+      "etag": "W/\"3e6f9ffe25fe23eb194f8f50e87d3216\"",
+      "last_modified": "Sun, 25 Oct 2026 06:41:32 GMT",
       "source_sha256": "25a68c24052fccc7b2a43765b502a686a6997647ace5ef82e9a52b292749dca4",
-      "last_fetched": "2026-10-18T04:04:38.035Z"
+      "last_fetched": "2026-10-26T04:12:51.523Z"
     },
     "https://opensourcemalware.com/blog/polinrider-is-a-b-testing-its-way-past-your-detections": {
-      "etag": "W/\"ff9c960b2e52d65fe727883d19037759\"",
-      "last_modified": "Sat, 17 Oct 2026 15:27:18 GMT",
+      "etag": "W/\"da5a45641dcf323470602321395745ed\"",
+      "last_modified": "Sun, 25 Oct 2026 03:00:20 GMT",
       "source_sha256": "c0ac92876bb18ade4048c2c650c8cbb618376fa110cfcc3d3ec90150e9a921b7",
-      "last_fetched": "2026-10-18T04:04:52.974Z"
+      "last_fetched": "2026-10-26T04:13:03.865Z"
     },
     "https://opensourcemalware.com/blog/polinrider-jumps-the-fence": {
-      "etag": "W/\"28c20048179dcfbeb7c04a9e3b9d479b\"",
-      "last_modified": "Fri, 16 Oct 2026 09:07:41 GMT",
+      "etag": "W/\"7ee98bd1d33c349a5b2bda5f747ace2a\"",
+      "last_modified": "Sun, 25 Oct 2026 03:35:03 GMT",
       "source_sha256": "a44fb45fbdcb7018c1e660023bdd2b587f56910f51458ed87649f48abae04b5a",
-      "last_fetched": "2026-10-18T04:04:39.111Z"
+      "last_fetched": "2026-10-26T04:12:52.543Z"
     },
     "https://opensourcemalware.com/blog/polinrider-npm-case-study-dprk-attack": {
-      "etag": "W/\"d6c9a3b2cc0c051128e9fd2b08cecf5f\"",
-      "last_modified": "Sat, 17 Oct 2026 17:24:33 GMT",
+      "etag": "W/\"4071f1f82e602cc2488d8828fdcc3eeb\"",
+      "last_modified": "Sun, 25 Oct 2026 01:20:20 GMT",
       "source_sha256": "f8e1191bc189789c9c48344771b82c04b9e47c26ca30fb5424b7a453ee5e9014",
-      "last_fetched": "2026-10-18T04:04:33.673Z"
+      "last_fetched": "2026-10-26T04:12:47.395Z"
     },
     "https://opensourcemalware.com/blog/polinrider-rides-again": {
-      "etag": "W/\"82aa0e12e6e0f7742239e07c8bcab1f2\"",
-      "last_modified": "Sun, 18 Oct 2026 00:11:24 GMT",
+      "etag": "W/\"9180b5427dfe11a715d83b8a8e8e6c97\"",
+      "last_modified": "Sun, 25 Oct 2026 03:35:02 GMT",
       "source_sha256": "5b03b180d1f5da8c297d92bc94a3edb75e4b2b1190f9abb07df07dcbc8a22b02",
-      "last_fetched": "2026-10-18T04:04:48.101Z"
+      "last_fetched": "2026-10-26T04:13:00.785Z"
     },
     "https://panther.com/blog/inside-dprk%E2%80%99s-npm-malware-factory-108-packages-261-versions-and-a-31-day-campaign-wave": {
       "etag": null,
@@ -3673,97 +3679,97 @@
       "etag": "W/\"10534a024f3b05a9aa1a933d0c25fd10a09e7e252df7315eed2282f8f514ce2d\"",
       "last_modified": null,
       "source_sha256": "b73fb1eeef2bdb3a082af69435046be32834c743c780bc7cdf86de51546d8fc4",
-      "last_fetched": "2026-10-18T04:05:16.932Z"
+      "last_fetched": "2026-10-26T04:13:19.332Z"
     },
     "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2023/08/lazarus-collectionrat.txt": {
       "etag": "W/\"7bf53bdd72e13fc1361caa7ed9c8c9ec60ae2b19906137ff4d4e70cfc93d3caf\"",
       "last_modified": null,
       "source_sha256": "afd72d4282e8e7dbd24e8c3af4ef2f436709e04a5117f288867710baed11dd41",
-      "last_fetched": "2026-10-18T04:05:15.749Z"
+      "last_fetched": "2026-10-26T04:13:18.277Z"
     },
     "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2023/08/lazarus-quiterat.txt": {
       "etag": "W/\"788d91f7b11f901182361042fbf33e2ec7b1a2d948a7034b451ba0083c285b18\"",
       "last_modified": null,
       "source_sha256": "36b549633028e1e760428eaaee9ea5af4923065ef5c056073474a899f6b76f68",
-      "last_fetched": "2026-10-18T04:05:14.572Z"
+      "last_fetched": "2026-10-26T04:13:17.220Z"
     },
     "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2024/08/moonpeak-infrastructure-north-korea.txt": {
       "etag": "W/\"269641ad0dc26ce0948ddc17a7219d50e958b80cce0eeb5ea5957b16da8ea7ca\"",
       "last_modified": null,
       "source_sha256": "28792fa515188f414977fdb8d900e6a20133f47db5a17afb693f6430549d1749",
-      "last_fetched": "2026-10-18T04:05:18.082Z"
+      "last_fetched": "2026-10-26T04:13:20.386Z"
     },
     "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2025/10/beavertail-and-ottercookie.txt": {
       "etag": "W/\"7fc6f74990cf972953879240cef51bbc82706891b4834c0926000d7737d70760\"",
       "last_modified": null,
       "source_sha256": "4a92f6516cde51c4b90b3f9218154d37c444115cd615406d6441d210e146868d",
-      "last_fetched": "2026-10-18T04:05:13.427Z"
+      "last_fetched": "2026-10-26T04:13:16.164Z"
     },
     "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt": {
-      "etag": "W/\"57be1f8831bb370cc5db6ef83b48531a0806d17615267e091074db9ef4a8b7bd\"",
+      "etag": "W/\"935a2b6b293a08511d352093a4b0fdb40771b429eee6d9b8f3cea7667cc60aa7\"",
       "last_modified": null,
-      "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f",
-      "last_fetched": "2026-10-18T04:05:11.092Z"
+      "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837",
+      "last_fetched": "2026-10-26T04:13:14.029Z"
     },
     "https://raw.githubusercontent.com/JPCERTCC/Lazarus-research/main/slides/CODEBLUE2021_The-Lazarus-Groups-Attack-Operations-Targeting-Japan.pdf": {
       "etag": "W/\"454a09a388b3159ff9d75792bd89b3b74c9f9b9d3096e93ae6eee4eebe9f95e0\"",
       "last_modified": null,
       "source_sha256": "c2c549495888353dbde6e3b5cb3f1f93172100ae576ae6151fe841b968766463",
-      "last_fetched": "2026-10-18T04:05:26.172Z"
+      "last_fetched": "2026-10-26T04:13:26.992Z"
     },
     "https://raw.githubusercontent.com/JPCERTCC/Lazarus-research/main/slides/HITCON2021_Anatomy-of-COBRA.pdf": {
       "etag": "W/\"5ff1493173f4330082ddfa124d73f9fa8c87c790689469263428f9c222e20dd2\"",
       "last_modified": null,
       "source_sha256": "63a4ca6fa428d235bf07916d5f0a1e866b79f171620259db7ec66c6f2d40c0ce",
-      "last_fetched": "2026-10-18T04:05:24.412Z"
+      "last_fetched": "2026-10-26T04:13:25.772Z"
     },
     "https://raw.githubusercontent.com/Kawaii-Jong-UWUn/post-minions-assessment/main/README.md": {
       "etag": "W/\"4c92517552cea9d2141779f0c302b4e172427ce826c1d7269003d0f9974dfc84\"",
       "last_modified": null,
       "source_sha256": "b0f21af9fc04ccc6149c2c77b73ea383ff5214ca00424c46f8c02fd7301a4b21",
-      "last_fetched": "2026-10-18T04:05:23.197Z"
+      "last_fetched": "2026-10-26T04:13:24.693Z"
     },
     "https://raw.githubusercontent.com/OpenSourceMalware/WeaselBiscuit/HEAD/README.md": {
       "etag": "W/\"5bf6dfc6b62115ae35fd0420c29e012f632d337266277db06b47296f9a42f3ea\"",
       "last_modified": null,
       "source_sha256": "1125ad271ff71109feac863271998a62b74ff01a73767f24488899655e55de62",
-      "last_fetched": "2026-10-18T04:05:21.967Z"
+      "last_fetched": "2026-10-26T04:13:23.580Z"
     },
     "https://raw.githubusercontent.com/PaloAltoNetworks/Unit42-timely-threat-intel/main/2026-02-04-IOCs-for-December-2025-Contagious-Interview-activity.txt": {
       "etag": "W/\"73b97e836df970829c548ffc0ca9a00121c4ab9c1fdcb5083e55b8aca56afef3\"",
       "last_modified": null,
       "source_sha256": "254dd521396aac657b528013a12cb198241e2847fe57f51e4efb78dc00125821",
-      "last_fetched": "2026-10-18T04:05:12.258Z"
+      "last_fetched": "2026-10-26T04:13:15.117Z"
     },
     "https://raw.githubusercontent.com/TheRavenFile/THREAT-ACTORS/main/DPRK%20GitHub%20Accounts": {
       "etag": "W/\"68952473407d5301f53f761846e012a7b610bd5f2a24a8669dc12040587a3736\"",
       "last_modified": null,
       "source_sha256": "34f9bd47f2a5557ee2494c4cefa4b06b6cd79ea910e52d9a418ee494ed2327a5",
-      "last_fetched": "2026-10-18T04:05:09.733Z"
+      "last_fetched": "2026-10-26T04:13:12.929Z"
     },
     "https://raw.githubusercontent.com/elastic/labs-releases/main/indicators/ref7001/ecs-indicators.ndjson": {
       "etag": "W/\"869ab0a8feb6e0e53a7ac949027bd072e0aa920905a8bd1f74fd56e95a20a83e\"",
       "last_modified": null,
       "source_sha256": "11e66c683652947be4eefb22f15f1af47d66a2312fa7819b598fea67530ec043",
-      "last_fetched": "2026-10-18T04:05:20.691Z"
+      "last_fetched": "2026-10-26T04:13:22.514Z"
     },
     "https://raw.githubusercontent.com/elastic/labs-releases/main/indicators/rustbucket/ecs-indicators.ndjson": {
       "etag": "W/\"7b7ce664edfbcfa9d3e247b0c3cd257c3d0cac903a9dda86c5cac54c80f7cdfa\"",
       "last_modified": null,
       "source_sha256": "d80e36426a2cffd671d982462d221258940e70714e996babebdf8aee3b96e28b",
-      "last_fetched": "2026-10-18T04:05:19.262Z"
+      "last_fetched": "2026-10-26T04:13:21.434Z"
     },
     "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md": {
       "etag": "W/\"9f3b794c6d4afc8a2049bebe585c51182baefa2d09c72bfb4d850fba3c8aa2d6\"",
       "last_modified": null,
       "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba",
-      "last_fetched": "2026-10-18T04:05:07.718Z"
+      "last_fetched": "2026-10-26T04:13:11.829Z"
     },
     "https://raw.githubusercontent.com/theseongsu/presentation/main/SAS2019_ScarCruft.pdf": {
       "etag": "W/\"beca216bbb07e15c203fb164afb42dd2d200fee44a70f84ee10a9275f42ceee3\"",
       "last_modified": null,
       "source_sha256": "5367655bffb3028d6d08c9436a26795a20ab11f3225e64fd940faf9c8102ec12",
-      "last_fetched": "2026-10-18T04:05:27.786Z"
+      "last_fetched": "2026-10-26T04:13:28.155Z"
     },
     "https://redalert.nshc.net/2019/01/23/sectora01-custom-proxy-utility-tool-analysis": {
       "etag": null,
@@ -3994,22 +4000,22 @@
       "last_fetched": "2026-10-18T04:07:32.084Z"
     },
     "https://rewterz.com/threat-advisory/north-korea-linked-konni-apt-group-active-iocs-14": {
-      "etag": "\"546199-1792296234;br\"",
+      "etag": "\"45148-1792987918;br\"",
       "last_modified": null,
       "source_sha256": "8374cd39ccac52e5a3a7d0122e48a24645a7e2760292acb23becc234e0a58577",
-      "last_fetched": "2026-10-18T04:03:58.319Z"
+      "last_fetched": "2026-10-26T04:11:57.836Z"
     },
     "https://rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-43": {
-      "etag": "\"546200-1792296236;br\"",
+      "etag": "\"45150-1792987920;br\"",
       "last_modified": null,
       "source_sha256": "770de1452f28ff0a17333c32838b63f1edf2fa0d70499069fa1486f74964655d",
-      "last_fetched": "2026-10-18T04:04:00.834Z"
+      "last_fetched": "2026-10-26T04:12:00.085Z"
     },
     "https://rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-45": {
-      "etag": "\"546202-1792296238;br\"",
+      "etag": "\"45151-1792987922;br\"",
       "last_modified": null,
       "source_sha256": "33a9dfffe03f5b8f3f42a69fbad4f7222eb0f16940fda1f21ca79fa4e1687af1",
-      "last_fetched": "2026-10-18T04:04:02.660Z"
+      "last_fetched": "2026-10-26T04:12:01.721Z"
     },
     "https://safedep.io/astro-config-blockchain-c2-supply-chain": {
       "etag": null,
@@ -4086,182 +4092,183 @@
     "https://securelist.com/andariel-deploys-dtrack-and-maui-ransomware/107063": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "a455a610ad04e29f193f80acd4a124b7f477d2c1d7296375069e8da272bfed48",
-      "last_fetched": "2026-10-18T04:03:56.099Z"
+      "source_sha256": "9ae8982beff6855c51aca39f303c882b04f8931926a541ddd14d071cd875050c",
+      "last_fetched": "2026-10-26T04:12:05.942Z"
     },
     "https://securelist.com/andariel-evolves-to-target-south-korea-with-ransomware/102811": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "113742280595df736c4cf6364597ba9cfb6eea631e75a35f053ba3fe1daa0fbe",
-      "last_fetched": "2026-10-18T04:03:58.794Z"
+      "source_sha256": "7e47c6259fdac84f63122e9d20a60e41f83fd7642114087845f472bc365c6434",
+      "last_fetched": "2026-10-26T04:12:08.036Z"
     },
     "https://securelist.com/apt-trends-report-q1-2023/109581/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "0da5e9bdc332fca92390ec3e52224d076bbd471dafdfbd42a399675fbc53d88a",
-      "last_fetched": "2026-10-18T04:04:43.483Z"
+      "source_sha256": "a1f016f7a07923f1347e968534f26983c291e70619632beec7b6d22c7704f6be",
+      "last_fetched": "2026-10-26T04:12:45.517Z"
     },
     "https://securelist.com/apt-trends-report-q3-2021/104708/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "603ac570e5782910eb010b3c100a711de30dadbb5f0e5dfde384bb9254359781",
-      "last_fetched": "2026-10-18T04:04:45.019Z"
+      "source_sha256": "984ff94dbfd9fb46c661afb914a1e26f160b3e9b86ef4a23496f50292c7a46eb",
+      "last_fetched": "2026-10-26T04:12:46.892Z"
     },
     "https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1ce442ab75b71c22d6289e682ab1d4599f984d9728882645bb1c188436124334",
-      "last_fetched": "2026-10-18T04:04:00.974Z"
+      "source_sha256": "632bb5af27a0093fa413a24bda30dabd73a646cd13e71bd99727cda37a670f67",
+      "last_fetched": "2026-10-26T04:12:10.015Z"
     },
     "https://securelist.com/bluenoroff-methods-bypass-motw/108383": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "61d80de08c2e6520d6f36618993f6115ab0f62ac367acd4dbbb009cf9ac27f06",
-      "last_fetched": "2026-10-18T04:04:02.986Z"
+      "source_sha256": "29aa70ea183a39715e2e34f01c153c11f6b370f81a9b5d80c7c2cc27b5d69649",
+      "last_fetched": "2026-10-26T04:12:11.711Z"
     },
     "https://securelist.com/bluenoroff-new-macos-malware/111290": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7aac3aa1793c82bd354b1ffcf709cf48a2d4c7dca664ef05d9aecc31d4eef300",
-      "last_fetched": "2026-10-18T04:04:05.192Z"
+      "source_sha256": "a36dd883792ed1469153704b36d1d8ed90d8f88116a612b9f348cd445da8af5a",
+      "last_fetched": "2026-10-26T04:12:13.413Z"
     },
     "https://securelist.com/cryptocurrency-businesses-still-being-targeted-by-lazarus/90019/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6ef7c58dc3fd66fe76bd7e3a29cfe5c7418dc05a493e7e9bfa8aa4178b9d2f0c",
-      "last_fetched": "2026-10-18T04:04:36.779Z"
+      "source_sha256": "c0f6e76757a0512c34b35fc62933526fb34266806fdc649a9ef7b5efaa386f9b",
+      "last_fetched": "2026-10-26T04:12:39.633Z"
     },
     "https://securelist.com/dtrack-targeting-europe-latin-america/107798": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "56aac7db9d5427b52f15a59f061afa702edde845f4fcc14597986323b901fa67",
-      "last_fetched": "2026-10-18T04:04:07.299Z"
+      "source_sha256": "4fdec451cb8e94372654544ae76ebc7ebe6c573beb139a7eae1eaad7dd661945",
+      "last_fetched": "2026-10-26T04:12:14.960Z"
     },
     "https://securelist.com/gopuram-backdoor-deployed-through-3cx-supply-chain-attack/109344/": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "601af1acb7e0e2aff76183ae61e60e8aa7f6248ed2fd7146b62d2c70d55f1618",
-      "last_fetched": "2026-10-18T04:03:54.553Z"
+      "last_fetched": "2026-10-26T04:12:04.549Z",
+      "last_error": "no DPRK-related keyword found on page; refusing to extract"
     },
     "https://securelist.com/kimsuky-appleseed-pebbledash-campaigns/119785": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "49107d79e69869b9a59c74c7df285f658c5b534def0288678ec06404b9df97ff",
-      "last_fetched": "2026-10-18T04:04:09.290Z"
+      "source_sha256": "029d6974c2505a5a42bb1228cb67bf6a1cb81950783b2e05bb1f635274c8f372",
+      "last_fetched": "2026-10-26T04:12:16.553Z"
     },
     "https://securelist.com/kimsukys-golddragon-cluster-and-its-c2-operations/107258/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bd5919d21b1cb831767a3089dd32e5d92a0dfb25a5635dca53e9be1cd67fb216",
-      "last_fetched": "2026-10-18T04:04:38.281Z"
+      "source_sha256": "448d181e0fdea6f0f06e117c843178c534905f17d9e6c037b3b61bdedd20c567",
+      "last_fetched": "2026-10-26T04:12:40.991Z"
     },
     "https://securelist.com/ksb-2019-review-of-the-year/95394/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bf372e0c5d94643eaefaac3e34ad05947a6762f3affd978c75e38a2474f05d75",
-      "last_fetched": "2026-10-18T04:04:41.745Z"
+      "source_sha256": "452fc7fee67847c99d622b63012e4010dd2f923879c019ad9103bb2e655882ae",
+      "last_fetched": "2026-10-26T04:12:43.963Z"
     },
     "https://securelist.com/lazarus-covets-covid-19-related-intelligence/99906": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d44a8e3caf0acbc66b4bbea70298c0233a2c52228fab322b812a676434206cf3",
-      "last_fetched": "2026-10-18T04:04:11.504Z"
+      "source_sha256": "4cedb6c1a9656b44de7fbcf3f154c6a7292b1785103762abfb0a71613b02f4e3",
+      "last_fetched": "2026-10-26T04:12:18.439Z"
     },
     "https://securelist.com/lazarus-on-the-hunt-for-big-game/97757": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c4a962f7d85eced5ff0c784ecd9dda3b4a2a5a78b7376fdba1a7b7cac884fd2d",
-      "last_fetched": "2026-10-18T04:04:13.820Z"
+      "source_sha256": "5cc29abe752ad52e1e38df894dca661f8f172671bc40d515bedd423ce5673524",
+      "last_fetched": "2026-10-26T04:12:20.379Z"
     },
     "https://securelist.com/lazarus-threatneedle/100803": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "341388031963cff747934f6ee0e17813e2573e7b8010464ba617a0098ccd78d7",
-      "last_fetched": "2026-10-18T04:04:15.779Z"
+      "source_sha256": "654334bd5914dc3c1f6474c58591f86dab36f9e5518a496899edc138099af99c",
+      "last_fetched": "2026-10-26T04:12:22.135Z"
     },
     "https://securelist.com/lazarus-trojanized-defi-app/106195": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ecc222228fcc97698e65cfa2fd0be3f7a6e483ec8df2c29987d6933156991dc6",
-      "last_fetched": "2026-10-18T04:04:18.050Z"
+      "source_sha256": "d8d90991961ca08364d7fdcc7c5df1657b5de83f68d46dcfc20968f97e143903",
+      "last_fetched": "2026-10-26T04:12:23.805Z"
     },
     "https://securelist.com/mata-multi-platform-targeted-malware-framework/97746/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "fed13ca47750d40dde820aa6d1c8d6a8b8d062c2ff8dda65735e335a22a48b03",
-      "last_fetched": "2026-10-18T04:04:35.237Z"
+      "source_sha256": "1cff3f1055065b0e6d6185121b598bda99dc8577635e2f90a2649d39cee5ec2c",
+      "last_fetched": "2026-10-26T04:12:38.138Z"
     },
     "https://securelist.com/olympicdestroyer-is-here-to-trick-the-industry/84295": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "25ac2e6d0772cc0ddced7537a9df773c12ac99ad3a40064e1050563f136ddde2",
-      "last_fetched": "2026-10-18T04:04:20.296Z"
+      "source_sha256": "fae3d50c8ac30f502705b365a99c12c7944c46624c5fcc449c3eeb13a57529df",
+      "last_fetched": "2026-10-26T04:12:25.506Z"
     },
     "https://securelist.com/operation-applejeus-sequel/95596/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "08db97ce2ddb22aa6a2f07d05f19a7b12cbd537c55966145820ae7bc0df576e4",
-      "last_fetched": "2026-10-18T04:03:46.961Z"
+      "source_sha256": "3e088b03a8fbd83bf022b07c02e3d15e9b87b1cc1d891efbcc79764f0cbd0525",
+      "last_fetched": "2026-10-26T04:11:57.835Z"
     },
     "https://securelist.com/operation-applejeus/87553/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "88e4f2d6bf114dc4d57628ff41355aa4e11a9b393f39bec04d6d38b285c56a62",
-      "last_fetched": "2026-10-18T04:03:49.298Z"
+      "source_sha256": "375124337d9212b7aec0c41ecdf9d384678d574b35bea7645429d925f7b83f2b",
+      "last_fetched": "2026-10-26T04:11:59.878Z"
     },
     "https://securelist.com/operation-daybreak/75100": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "94ed7fb61e40b8b26359404ccf4eb14003c9a6f63cee8801bf9539b1f3079c0d",
-      "last_fetched": "2026-10-18T04:04:22.468Z"
+      "source_sha256": "466d5e98ea8d0c28e2e6cbfde88dd8b8f9f530b4ab77e2597c727ab0920aa25c",
+      "last_fetched": "2026-10-26T04:12:27.406Z"
     },
     "https://securelist.com/operation-synchole-watering-hole-attacks-by-lazarus/116326": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "994c88be8856bf3fd2eb7d4efe83fcc3eee9723313a4b8d1e2186d90a178712d",
-      "last_fetched": "2026-10-18T04:04:24.452Z"
+      "source_sha256": "bf46433c6882aa5c170bdbbe701e4aa840e05f4cb298b5b499ab2c3157b5dfae",
+      "last_fetched": "2026-10-26T04:12:29.168Z"
     },
     "https://securelist.com/scarcruft-continues-to-evolve-introduces-bluetooth-harvester/90729": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2a130c9c1835ee620f1f84136606899d2d174b50d1ec22c3794ee7c9d8d92a86",
-      "last_fetched": "2026-10-18T04:04:26.642Z"
+      "source_sha256": "b6b2cb681621f295be0cc4afe261a10201cc1189780cfaf5afd9a5e575a794d3",
+      "last_fetched": "2026-10-26T04:12:31.071Z"
     },
     "https://securelist.com/scarcruft-surveilling-north-korean-defectors-and-human-rights-activists/105074": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "91990fce2af73e51377586e7afbfc5b3cdcf1b6b7daeb1b110f5bfef2cdc5201",
-      "last_fetched": "2026-10-18T04:04:28.721Z"
+      "source_sha256": "f7d98b7410a370677bdb60c53317275385ef421b57876d457b61bc9f422be1ea",
+      "last_fetched": "2026-10-26T04:12:32.824Z"
     },
     "https://securelist.com/the-bluenoroff-cryptocurrency-hunt-is-still-on/105488/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "259a5ffecd4bf6afdbc37e07e83ef204adc0e27654fc05d70036042d385bdaab",
-      "last_fetched": "2026-10-18T04:03:51.031Z"
+      "source_sha256": "bbefc658d6f1e2d87016178a05e6c66e1005f52e608783bfed7aca9c47de284e",
+      "last_fetched": "2026-10-26T04:12:01.438Z"
     },
     "https://securelist.com/the-kimsuky-operation-a-north-korean-apt/57915/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "af3a089fc3606041ea096a4af5d3795becf4aad16b53ad90a04d41e4807d6988",
-      "last_fetched": "2026-10-18T04:03:52.804Z"
+      "source_sha256": "c2d63bcdbb6396295ced13b1a4962b895af64be3add7508ceb22865bbc540391",
+      "last_fetched": "2026-10-26T04:12:03.025Z"
     },
     "https://securelist.com/the-lazarus-group-deathnote-campaign/109490": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f0106a2d7711ae5b08f6d4f6ad93cd98c598e85a4b0afa47e012d1ce72a1fee2",
-      "last_fetched": "2026-10-18T04:04:30.937Z"
+      "source_sha256": "375a9cea4d7104640a9a9a7502d07b91b75ffca9a9febe8d689d0add12c59f2d",
+      "last_fetched": "2026-10-26T04:12:34.717Z"
     },
     "https://securelist.com/unveiling-lazarus-new-campaign/110888/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "e40e82ea6ad735f71d943d016941166e8a27c254871199fb2f0005df527e6f8c",
-      "last_fetched": "2026-10-18T04:04:39.979Z"
+      "source_sha256": "a6a4293e1385019fb6f087519d688018c4739de5286e7bb6ee9db0f6bc60401a",
+      "last_fetched": "2026-10-26T04:12:42.480Z"
     },
     "https://securelist.com/wannacry-and-lazarus-group-the-missing-link/78431": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "701706ecc849eaec0a0df80069228eb6bfbc17c35d3331e883cc92657a4c8bc7",
-      "last_fetched": "2026-10-18T04:04:33.159Z"
+      "source_sha256": "7c1128ef2e4d5528a8776bf2907d7488e88e3c43c7227a0e05df3af75a751c76",
+      "last_fetched": "2026-10-26T04:12:36.413Z"
     },
     "https://securitylabs.datadoghq.com/articles/stressed-pungsan-dprk-aligned-threat-actor-leverages-npm-for-initial-access/": {
       "etag": "W/\"128bb4f0a97d78b9617e1ee6d2d7ef7e\"",
@@ -5615,14 +5622,14 @@
     "https://wezard4u.tistory.com/429221": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "409d896c929ce9be15e82d916146d34cfb69ffd684c31bb30b8f382bbeff03f0",
-      "last_fetched": "2026-10-18T04:04:09.243Z"
+      "source_sha256": "bd14e846ad655579a32761c29541c0417a35543a63dd11c595fcec6eb9b21e27",
+      "last_fetched": "2026-10-26T04:12:44.559Z"
     },
     "https://wezard4u.tistory.com/429236": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8752b0afe04ad62b1de678bfc89444544d2795379b5baf9d8054b9bccbafed15",
-      "last_fetched": "2026-10-18T04:04:07.671Z"
+      "source_sha256": "ba02a43797609212da6f934ad8ad39165d85e0f1d7df7de4be3cf6b6f534494f",
+      "last_fetched": "2026-10-26T04:12:42.830Z"
     },
     "https://wezard4u.tistory.com/429239": {
       "etag": null,
@@ -5633,20 +5640,20 @@
     "https://wezard4u.tistory.com/429242": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bb91423e46cb9b696ed715542c6d1a72717d5f7aab9de954198c47a2b2dff318",
-      "last_fetched": "2026-10-18T04:03:31.642Z"
+      "source_sha256": "01eaa23f680429b246979cd281c903b4244760fbff22b77b993826dec5a17bee",
+      "last_fetched": "2026-10-26T04:12:04.516Z"
     },
     "https://wezard4u.tistory.com/429251": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8554ec07baaea59fdec26450c26452bdd7843ee10a2adca1912afac7eebc647b",
-      "last_fetched": "2026-10-18T04:04:06.026Z"
+      "source_sha256": "ef7a0c7bb66b439283a1ff366d07e41ed67bbdee58c866ea00efe8c4fabe1afc",
+      "last_fetched": "2026-10-26T04:12:41.123Z"
     },
     "https://wezard4u.tistory.com/429252": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "83ff576281e4273e7e03936cd5a8c98d9f03208a40506fa2d8f27f10ef6ea752",
-      "last_fetched": "2026-10-18T04:04:04.386Z"
+      "source_sha256": "32f380efb9136618732f8d1b93073c0e8ce84e4f954b5b3fa6bd4c12b6c11039",
+      "last_fetched": "2026-10-26T04:12:39.431Z"
     },
     "https://wezard4u.tistory.com/429258": {
       "etag": null,
@@ -5675,20 +5682,20 @@
     "https://wezard4u.tistory.com/429269": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dfbb0ef9413293f37b036906e17133b2f1199d88b4fe3f5067edb545694a7625",
-      "last_fetched": "2026-10-18T04:04:02.753Z"
+      "source_sha256": "351aa9b6567ad5914c30739eafbba5613cc1a6d8a5833e6969882aca4f7dac03",
+      "last_fetched": "2026-10-26T04:12:37.750Z"
     },
     "https://wezard4u.tistory.com/429277": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6f56ba5add83eaf93fe191961cc51f11f37065c6d150612128dd99c7846f21a9",
-      "last_fetched": "2026-10-18T04:04:01.066Z"
+      "source_sha256": "9f6a4aa481b7af5612fd725f5537280cf71297903744640e20b4c8aabae5defb",
+      "last_fetched": "2026-10-26T04:12:36.062Z"
     },
     "https://wezard4u.tistory.com/429278": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "24ea057f590471b91a720b504683782eef5ef579d88ef7fa44e54b47941c033f",
-      "last_fetched": "2026-10-18T04:03:30.008Z"
+      "source_sha256": "22009cfb617cb841efc87474b6431e235f3db228b372ab5fadcc183b49eccf76",
+      "last_fetched": "2026-10-26T04:12:02.856Z"
     },
     "https://wezard4u.tistory.com/429281": {
       "etag": null,
@@ -5729,8 +5736,8 @@
     "https://wezard4u.tistory.com/429304": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3adf69a501a8de8275247288f81e8967b2891df72a6a7320617835555df4b17a",
-      "last_fetched": "2026-10-18T04:03:59.435Z"
+      "source_sha256": "03b8dc1fdfeda149ed0d9ef8b90d9f03669958dc46cab0d57f30ef2ac43ab68f",
+      "last_fetched": "2026-10-26T04:12:34.326Z"
     },
     "https://wezard4u.tistory.com/429312": {
       "etag": null,
@@ -5741,8 +5748,8 @@
     "https://wezard4u.tistory.com/429316": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f60e521f8eed11b0e5dd552e676ab3b1251884b4d733dff2290953c75d049d76",
-      "last_fetched": "2026-10-18T04:03:57.711Z"
+      "source_sha256": "488d2fad4608de97db4fefb5d3ac6fd9589fc106f5787744f467cca2b3e71559",
+      "last_fetched": "2026-10-26T04:12:32.601Z"
     },
     "https://wezard4u.tistory.com/429331": {
       "etag": null,
@@ -5753,20 +5760,20 @@
     "https://wezard4u.tistory.com/429333": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "82429696b7a9aebc3b60636029322b108ad5fad9ff30d5aea019466428e1d992",
-      "last_fetched": "2026-10-18T04:03:56.115Z"
+      "source_sha256": "4612e84c6e7b638cada8753f2efd0608330d4e4c03dcc5046d757d97a6fc7138",
+      "last_fetched": "2026-10-26T04:12:30.781Z"
     },
     "https://wezard4u.tistory.com/429360": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1f69604694ad7f936410a8832e9342a3cc4ddf172fd3a9397c97cb8f858cf6c7",
-      "last_fetched": "2026-10-18T04:03:54.506Z"
+      "source_sha256": "5fef10f224652f91e2e31f6863db8dc94e951ee2e2996233d356819eb1882cba",
+      "last_fetched": "2026-10-26T04:12:29.137Z"
     },
     "https://wezard4u.tistory.com/429365": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "957864f4fe078dc99d2d6fa0c512b1abd63bacf8a18963aa4dde9b1686313fe0",
-      "last_fetched": "2026-10-18T04:03:52.882Z"
+      "source_sha256": "d1620c047eb075530f2323e9af8a5751ed1c708b243cf6f74c7c048bc555361e",
+      "last_fetched": "2026-10-26T04:12:27.409Z"
     },
     "https://wezard4u.tistory.com/429371": {
       "etag": null,
@@ -5777,8 +5784,8 @@
     "https://wezard4u.tistory.com/429381": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f1fad9e81fc071ab75718b73ece6214d86d18b1716f8c524c5f4366249541a2b",
-      "last_fetched": "2026-10-18T04:03:51.279Z"
+      "source_sha256": "20556a850db2f373d6bb520d2592e3c4134d0cdeb1299a1e272dfaaa82d9a29a",
+      "last_fetched": "2026-10-26T04:12:25.649Z"
     },
     "https://wezard4u.tistory.com/429386": {
       "etag": null,
@@ -5807,8 +5814,8 @@
     "https://wezard4u.tistory.com/429410": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c6c7d5c8dc4397e41d88ec461fbc234963a8450b6d6559c60d78dd1dde12d62e",
-      "last_fetched": "2026-10-18T04:03:49.669Z"
+      "source_sha256": "345b8100f604428c2889097d9f551b22ad18de5afc64bb2623facd543f8508a6",
+      "last_fetched": "2026-10-26T04:12:23.916Z"
     },
     "https://wezard4u.tistory.com/429413": {
       "etag": null,
@@ -5819,8 +5826,8 @@
     "https://wezard4u.tistory.com/429426": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "22a6afb407e54f01c5568c22446387b207edd72c8c2bc3380cbc82b49abaef4b",
-      "last_fetched": "2026-10-18T04:03:47.998Z"
+      "source_sha256": "3982d4c3ffcd80fe5a45dcd30e3b477178aeee8a4e2979bec4d11975f2d4fe63",
+      "last_fetched": "2026-10-26T04:12:22.090Z"
     },
     "https://wezard4u.tistory.com/429430": {
       "etag": null,
@@ -5849,8 +5856,8 @@
     "https://wezard4u.tistory.com/429478": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "12c354eb85ee3651fc9ac34540549e6e3c41e32373ab95a2fc902e717e823cb6",
-      "last_fetched": "2026-10-18T04:03:46.342Z"
+      "source_sha256": "92eaadf76fbb8c4bbb70bced2fccc4611cbf38813623f8c20ca6d1eefa0692a3",
+      "last_fetched": "2026-10-26T04:12:20.298Z"
     },
     "https://wezard4u.tistory.com/429480": {
       "etag": null,
@@ -5915,8 +5922,8 @@
     "https://wezard4u.tistory.com/429525": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "809530f1afa7f26ddff620f3b3c4cb2d4df339720945d57c6dd5c09345a728b8",
-      "last_fetched": "2026-10-18T04:03:44.729Z"
+      "source_sha256": "c1878f6dea34f5d98d5cf7a5f20030b29ee4790defdc97859047cc0d44cf3882",
+      "last_fetched": "2026-10-26T04:12:18.574Z"
     },
     "https://wezard4u.tistory.com/429537": {
       "etag": null,
@@ -5927,8 +5934,8 @@
     "https://wezard4u.tistory.com/429544": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "29ef21c23154f8f97f38133d65eeb95eefb8c17203073f94c210273556919337",
-      "last_fetched": "2026-10-18T04:03:43.082Z"
+      "source_sha256": "59c971020ff603921042ac23866fde2851804d39aec22af7ad8d6a5149d010e0",
+      "last_fetched": "2026-10-26T04:12:16.776Z"
     },
     "https://wezard4u.tistory.com/429548": {
       "etag": null,
@@ -5975,8 +5982,8 @@
     "https://wezard4u.tistory.com/429575": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "30f9d738cb393779b56725ce1726ac6bff0f06cc3bfb4a64361d6bdb29a9c0b9",
-      "last_fetched": "2026-10-18T04:03:41.456Z"
+      "source_sha256": "b75daca1a8ebe1f4562a0fe19a6405c2ab7755b52a11ce11a62db8bd44fc0a66",
+      "last_fetched": "2026-10-26T04:12:15.015Z"
     },
     "https://wezard4u.tistory.com/429583": {
       "etag": null,
@@ -6011,14 +6018,14 @@
     "https://wezard4u.tistory.com/429598": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d7f759391f215fc80372f544ace3b49db7ac31f641fbe7fb03b6e1c50173e954",
-      "last_fetched": "2026-10-18T04:03:39.879Z"
+      "source_sha256": "c387b834bd3bdd992188e0e34745bb08c7d36cf804c767a0c882fd07019905b6",
+      "last_fetched": "2026-10-26T04:12:13.279Z"
     },
     "https://wezard4u.tistory.com/429599": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7b1c9fb671c8b98ddf05da365be7363e3205d8620e1a863357126b076cdb64e1",
-      "last_fetched": "2026-10-18T04:03:38.261Z"
+      "source_sha256": "e75a6e54e1b7ad970014dbf0fcb2860a69b049daef90789878b89e281727d9df",
+      "last_fetched": "2026-10-26T04:12:11.557Z"
     },
     "https://wezard4u.tistory.com/429601": {
       "etag": null,
@@ -6035,8 +6042,8 @@
     "https://wezard4u.tistory.com/429619": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "27d88c3405da5963e30d64e46b546158d7b48f0f069a40204563ce8e9d0ab75a",
-      "last_fetched": "2026-10-18T04:03:36.521Z"
+      "source_sha256": "24b5c9b76a6274f871f6f7a1f4d6bf9402f620e21738d8e753922bd7252fa618",
+      "last_fetched": "2026-10-26T04:12:09.736Z"
     },
     "https://wezard4u.tistory.com/429870": {
       "etag": null,
@@ -6047,26 +6054,38 @@
     "https://wezard4u.tistory.com/429874": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "9ef6636d60a03abf2cbab82aef5c478f07b5c41c6af61bee20ff081b0e491c6f",
-      "last_fetched": "2026-10-18T04:04:33.081Z"
+      "source_sha256": "2d194191cc1486c234f48483f8d288dec457054092556e8034c9c0a0043458a8",
+      "last_fetched": "2026-10-26T04:13:11.107Z"
     },
     "https://wezard4u.tistory.com/429876": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "53bc64dd9690366482d6b0d7ee1eecae6b3546c95e095bdde7f21d3032114999",
-      "last_fetched": "2026-10-18T04:04:31.465Z"
+      "source_sha256": "43faf93d995adc29a490c21967c37c6b7f9e26eba554ff378011185f18dded7a",
+      "last_fetched": "2026-10-26T04:13:09.320Z"
     },
     "https://wezard4u.tistory.com/429880": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "70b992d3f09d3660243739d8076937c85bd2bfc842905b570c14ef01eff92a51",
-      "last_fetched": "2026-10-18T04:04:30.191Z"
+      "source_sha256": "7a24584d08fbb7f3fe0e1973c1f837542d166c7726d79bc83756182d5b1c0f6f",
+      "last_fetched": "2026-10-26T04:13:07.587Z"
     },
     "https://wezard4u.tistory.com/429881": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "f7428d349e5db6275218428bf9eeb916724637700b22db4c33e79fc62d5c3b05",
-      "last_fetched": "2026-10-18T04:04:28.936Z"
+      "source_sha256": "470f4e8a50a72eadc0b11019af40240aa1063e448085c0f73985b50109375598",
+      "last_fetched": "2026-10-26T04:13:05.818Z"
+    },
+    "https://wezard4u.tistory.com/429889": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "af648ebed2f1a220deb9f3409af9823dc77f7a9325027838f6b2ccf258604456",
+      "last_fetched": "2026-10-26T04:11:57.809Z"
+    },
+    "https://wezard4u.tistory.com/429898": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "decc7d376f18a45653413e324080418bb6b4acbdf16922c5442d2e8c53342ef5",
+      "last_fetched": "2026-10-26T04:12:00.851Z"
     },
     "https://wezard4u.tistory.com/5847": {
       "etag": null,
@@ -6113,14 +6132,14 @@
     "https://wezard4u.tistory.com/6437": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c0f126bfb8e20fe151dbd07487640e8cb21f681320e5a54213bcd370cb2d9874",
-      "last_fetched": "2026-10-18T04:03:34.906Z"
+      "source_sha256": "ef612761c92b5bc1cd97b35e25dfdee14904bd9cd4cfe281515616e4bdd9a5b5",
+      "last_fetched": "2026-10-26T04:12:08.059Z"
     },
     "https://wezard4u.tistory.com/6444": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "ab26c62cc19036434a0a9f05a31d1ff8335252990e878ed4e8edd758cfd5f3cc",
-      "last_fetched": "2026-10-18T04:04:27.311Z"
+      "source_sha256": "a8695c17a34099edc1071dc37d9a105b98a1b24e67ed77658c30094b1f6d4ff3",
+      "last_fetched": "2026-10-26T04:13:04.085Z"
     },
     "https://wezard4u.tistory.com/6468": {
       "etag": null,
@@ -6137,8 +6156,8 @@
     "https://wezard4u.tistory.com/6514": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "2b6075cef5caba73a371794d2983ffa2fc4c7d3d8e0826951be9c615b80aafac",
-      "last_fetched": "2026-10-18T04:04:25.728Z"
+      "source_sha256": "1ae01bdb33d56292e1c18eacedc3f5502f15e8513a5d93d2994c162077bf7a35",
+      "last_fetched": "2026-10-26T04:13:02.389Z"
     },
     "https://wezard4u.tistory.com/6516": {
       "etag": null,
@@ -6149,8 +6168,8 @@
     "https://wezard4u.tistory.com/6519": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "cc868202aa148011488af9db13073dbff1a8fe0e81a48c01046c823a8f66b66d",
-      "last_fetched": "2026-10-18T04:04:24.019Z"
+      "source_sha256": "29bc999361390a86a4f816f75a49193151a43376a55aa2603b8017f38459a504",
+      "last_fetched": "2026-10-26T04:13:00.635Z"
     },
     "https://wezard4u.tistory.com/6530": {
       "etag": null,
@@ -6161,14 +6180,14 @@
     "https://wezard4u.tistory.com/6544": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5be377dc457b801b348d810b4da6b4fe4f16dda55ed3672314db41a17f524347",
-      "last_fetched": "2026-10-18T04:04:22.329Z"
+      "source_sha256": "94a09c497f7470950b329ebcee17a4194fdf37f5d030f3659e6b4e1835b5edbf",
+      "last_fetched": "2026-10-26T04:12:58.836Z"
     },
     "https://wezard4u.tistory.com/6552": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b7a0b6026b7a1e55bdd08dc1cdcd68586a750059938171d0fd4848e18385b87a",
-      "last_fetched": "2026-10-18T04:04:20.745Z"
+      "source_sha256": "6438ed44d5146c7cc72e1ad878ebca34eac6eef7ed15387c3fe6d472c6a246dc",
+      "last_fetched": "2026-10-26T04:12:57.041Z"
     },
     "https://wezard4u.tistory.com/6553": {
       "etag": null,
@@ -6191,8 +6210,8 @@
     "https://wezard4u.tistory.com/6592": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "6c183a52d7b3535c86dacdbd09a295ff43a69dfb9e61a40ee102c24c876c39a7",
-      "last_fetched": "2026-10-18T04:03:33.282Z"
+      "source_sha256": "8d294967ec0661dd6c023d949a18f7b320b78b656af9748e7f001d0533df3124",
+      "last_fetched": "2026-10-26T04:12:06.225Z"
     },
     "https://wezard4u.tistory.com/6608": {
       "etag": null,
@@ -6227,8 +6246,8 @@
     "https://wezard4u.tistory.com/6672": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "bc8f0b2a17aa8bca035d98e4bf47fd71cd634821a7179cd738c395ee28c40201",
-      "last_fetched": "2026-10-18T04:04:19.168Z"
+      "source_sha256": "ba073a1488ccda2bdd4df90676417661bdbc86a9c59a8569aac6650d627acc53",
+      "last_fetched": "2026-10-26T04:12:55.309Z"
     },
     "https://wezard4u.tistory.com/6693": {
       "etag": null,
@@ -6245,8 +6264,8 @@
     "https://wezard4u.tistory.com/6711": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "3699c6872a210cf91d5490a42ffdd843a380416251a2932a78ce87d88030c717",
-      "last_fetched": "2026-10-18T04:04:17.533Z"
+      "source_sha256": "d6810b2901a6de5c3fcb8ef6d18a93090807320b5369f898761144a037ae5685",
+      "last_fetched": "2026-10-26T04:12:53.534Z"
     },
     "https://wezard4u.tistory.com/6721": {
       "etag": null,
@@ -6269,8 +6288,8 @@
     "https://wezard4u.tistory.com/6769": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8a354acf175f8dbd77bfec23f0effaaece43341b7d7e94402e4f732e06a0e103",
-      "last_fetched": "2026-10-18T04:04:15.919Z"
+      "source_sha256": "8f80caec1dcc49e231bdd0a09289720b3f19722025748e6260c4616ac6c2d855",
+      "last_fetched": "2026-10-26T04:12:51.796Z"
     },
     "https://wezard4u.tistory.com/6776": {
       "etag": null,
@@ -6299,20 +6318,20 @@
     "https://wezard4u.tistory.com/6806": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "18257396b117290389f4287637d00441143cae557e67bdb929231dbfe76bc8e0",
-      "last_fetched": "2026-10-18T04:04:14.210Z"
+      "source_sha256": "7f8ed3a30ad5406d271abdade60810bf799df225ea901eae681fa1a9b464a3e0",
+      "last_fetched": "2026-10-26T04:12:50.049Z"
     },
     "https://wezard4u.tistory.com/6826": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1c050633a4b4e9b4e076cf43a2c012d99131aa7055746873c8a9eb0d1e54efbd",
-      "last_fetched": "2026-10-18T04:04:12.570Z"
+      "source_sha256": "c81a8df17cd221f0eed2e40cdb83e828f614b34e36d58f7a72054e4509ec9112",
+      "last_fetched": "2026-10-26T04:12:48.280Z"
     },
     "https://wezard4u.tistory.com/6831": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "1964407446167ed07a3f55d4da305fb84e1e7460fd02b6da1dc9c3fffdd9aefc",
-      "last_fetched": "2026-10-18T04:04:10.894Z"
+      "source_sha256": "1fcf059adcd2bc3ab691c3374ef401950c5b784ac6315f9edb2fd1010e1d5b96",
+      "last_fetched": "2026-10-26T04:12:46.325Z"
     },
     "https://wezard4u.tistory.com/6839": {
       "etag": null,
@@ -6463,109 +6482,109 @@
       "etag": null,
       "last_modified": null,
       "source_sha256": "4522f56970465830a9f91d0ea4ff9c0dfdf3ef363c7cb6a4e393ada80a179d2b",
-      "last_fetched": "2026-10-18T04:04:48.505Z"
+      "last_fetched": "2026-10-26T04:13:00.328Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar18-275a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "447df5f0261d0e1231566fd22bef0add8ad75990e667406a6f55ac94eb1cef99",
-      "last_fetched": "2026-10-18T04:04:49.760Z"
+      "last_fetched": "2026-10-26T04:13:01.339Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-133a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "42656e2ce22608b1fb1caf9c7692f3793b710e1a956cfcc4d3cac4e7d353291a",
-      "last_fetched": "2026-10-18T04:04:51.039Z"
+      "last_fetched": "2026-10-26T04:13:02.500Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-133b": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "199ecc7f84513708da35c70a08362fb5512c7b90769583f8b63df2b3d4cbbaa3",
-      "last_fetched": "2026-10-18T04:04:52.263Z"
+      "last_fetched": "2026-10-26T04:13:03.727Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-133c": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "2f6e99a030092b5ea97e64cb3e6fd3152a0cb79b6cd6ab5ff9f10cb89840acb5",
-      "last_fetched": "2026-10-18T04:04:53.423Z"
+      "last_fetched": "2026-10-26T04:13:04.828Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-239a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "33b6428b5b8259ef306f7d5001d9f8b50dd25507d7dffd832f36920d9fedbf26",
-      "last_fetched": "2026-10-18T04:04:54.710Z"
+      "last_fetched": "2026-10-26T04:13:05.928Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-239b": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "183388306073cfea1d0b230f807c58d3a5201e608b6aa35bfe1473a59a8a90eb",
-      "last_fetched": "2026-10-18T04:04:55.889Z"
+      "last_fetched": "2026-10-26T04:13:07.444Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar20-239c": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "0f6e112124b011332b752c4471f35bd1b9e4605a970f80195ab1239c0a73ec95",
-      "last_fetched": "2026-10-18T04:04:57.041Z"
+      "last_fetched": "2026-10-26T04:13:08.530Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "b205610fac935a5dedfea37125ed86ad65b4e455c8dd33f5cfffc82cb81c4852",
-      "last_fetched": "2026-10-18T04:04:58.264Z"
+      "last_fetched": "2026-10-26T04:13:09.619Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048b": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "09836d4d3d61b9958d09eb227ac137680cba5031f6185b59fea111b61180db84",
-      "last_fetched": "2026-10-18T04:04:59.490Z"
+      "last_fetched": "2026-10-26T04:13:10.724Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048c": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "adabc86a59f352104e1e0bc80d42eb0ffea716a972920236ef6d21685f57a1f5",
-      "last_fetched": "2026-10-18T04:05:00.666Z"
+      "last_fetched": "2026-10-26T04:13:11.801Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048d": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "7ab59515b55e10a1efbca0824f48b10c672a6ebf7c46e04a859dc02f437227f7",
-      "last_fetched": "2026-10-18T04:05:01.898Z"
+      "last_fetched": "2026-10-26T04:13:12.814Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048e": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "ca8a9ca7eaa46b0261cd4df791cd8fc549a2eff9a64c775cc0fba5f5d81bb725",
-      "last_fetched": "2026-10-18T04:05:03.186Z"
+      "last_fetched": "2026-10-26T04:13:13.902Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048f": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "d372cc0a0a54411c327de5bb323d838cde5bf1f14771635be673e0c3039f4740",
-      "last_fetched": "2026-10-18T04:05:04.382Z"
+      "last_fetched": "2026-10-26T04:13:14.913Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar21-048g": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "bfadb31d738ed857d82f45265dd10d8a813e04385efc2e0aea84f46cacd4b299",
-      "last_fetched": "2026-10-18T04:05:05.573Z"
+      "last_fetched": "2026-10-26T04:13:16.035Z"
     },
     "https://www.cisa.gov/news-events/analysis-reports/ar23-110a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "d3c02a1dc7bea80fef75bac5f8becae28b1c2eb81cc2b37633f80abf002e9e27",
-      "last_fetched": "2026-10-18T04:04:47.297Z"
+      "last_fetched": "2026-10-26T04:12:59.057Z"
     },
     "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "7de612b674b9bfc1bbecf9ba3909831f3fc0f2fcfa02afcffb725d21a41df219",
-      "last_fetched": "2026-10-18T04:05:06.989Z"
+      "source_sha256": "e5aec69ab77e5943c964118c433d29c7795eefe6527e6f0f97275d34a1487a22",
+      "last_fetched": "2026-10-26T04:13:17.245Z"
     },
     "https://www.cisa.gov/uscert/ncas/alerts/aa22-108a": {
       "etag": null,
       "last_modified": null,
       "source_sha256": "5e232bfcf0d64922157aa18c2de65e7f3abf4da718a57b9e84de2dd84fe7ca58",
-      "last_fetched": "2026-10-18T04:04:45.849Z"
+      "last_fetched": "2026-10-26T04:12:57.821Z"
     },
     "https://www.clearskysec.com/wp-content/uploads/2020/06/CryptoCore_Group.pdf": {
       "etag": "\"17ff84-5a8d0f889d600\"",
@@ -6706,28 +6725,28 @@
       "last_fetched": "2026-10-18T04:12:21.013Z"
     },
     "https://www.enki.co.kr/en/media-center/blog/analysis-of-kimsuky-s-attack-on-a-south-korean-groupware-vendor-using-a-new-gomir-family-variant": {
-      "etag": "\"3bc7762aaf1748c5f4ffd47c286fc23f\"",
-      "last_modified": "Wed, 14 Oct 2026 02:48:14 GMT",
-      "source_sha256": "f8976907ca36f43cfe9967421aed78fd1872ad7a608e2dc553640574681ac648",
-      "last_fetched": "2026-10-18T04:05:38.199Z"
+      "etag": "\"3735ae2528b911dde08d19248b89e625\"",
+      "last_modified": "Mon, 26 Oct 2026 01:49:48 GMT",
+      "source_sha256": "74baf20117c69599959d4be2cd95313636ac4b60867ed2b24e5c5f42bc01d65a",
+      "last_fetched": "2026-10-26T04:13:36.571Z"
     },
     "https://www.enki.co.kr/en/media-center/blog/inside-kimsuky-s-abuse-of-legitimate-remote-control-tools-across-northeast-asia": {
-      "etag": "\"cfe640bd3f79669f255905306d30ae76\"",
-      "last_modified": "Wed, 14 Oct 2026 02:38:16 GMT",
-      "source_sha256": "41575062db1be7c013c383dfcbb5c8b65f677d2baa1abe67443e6b58bf46ab11",
-      "last_fetched": "2026-10-18T04:05:39.870Z"
+      "etag": "\"a09cc8306ed11b56edbf47e4d9b50ad5\"",
+      "last_modified": "Mon, 26 Oct 2026 01:11:27 GMT",
+      "source_sha256": "d05a7932f7f6b3ac593a5addc1c1dbdd1c39d8d2415a2b866d64879612e3b483",
+      "last_fetched": "2026-10-26T04:13:38.010Z"
     },
     "https://www.enki.co.kr/en/media-center/blog/kimsuky-distributing-malicious-mobile-app-via-qr-code": {
-      "etag": "\"ea8397cd10c81836187941e4d110a0a4\"",
-      "last_modified": "Wed, 14 Oct 2026 02:42:02 GMT",
-      "source_sha256": "bda4fa07f5c2e91a7457fae4ccda33b07ec32cf48c2ce6fd648fe46ed249c56b",
-      "last_fetched": "2026-10-18T04:05:41.575Z"
+      "etag": "\"684357f1b486305866d8333f03c5c85b\"",
+      "last_modified": "Mon, 26 Oct 2026 01:40:13 GMT",
+      "source_sha256": "c085914c6662e8eed6fce12fbc9e9936ec2d503b4ed332937465cce7f5e00013",
+      "last_fetched": "2026-10-26T04:13:39.194Z"
     },
     "https://www.enki.co.kr/media-center/blog/joint-cybersecurity-advisory-watering-hole-malware-analysis": {
-      "etag": "\"83466780bc3574cd2051bbad627b40de\"",
-      "last_modified": "Wed, 14 Oct 2026 02:45:17 GMT",
-      "source_sha256": "7a268423861996c87e80b068c5b42d5f87560d886d0951fef7d41a7eca95f6a7",
-      "last_fetched": "2026-10-18T04:05:42.955Z"
+      "etag": "\"e7351ba764d49063f972400bfbadfd29\"",
+      "last_modified": "Mon, 26 Oct 2026 01:15:12 GMT",
+      "source_sha256": "306f2463bbffe37faa1c5ec89f3a7856001e85ce72f696fc8b498b2c04c7f7f0",
+      "last_fetched": "2026-10-26T04:13:40.378Z"
     },
     "https://www.esentire.com/blog/bored-beavertail-invisibleferret-yacht-club-a-lazarus-lure-pt-2": {
       "etag": null,
@@ -7028,6 +7047,12 @@
       "last_modified": "Sun, 27 Sep 2026 21:17:55 GMT",
       "source_sha256": "a19e6ef6e72ddfbd02bad32be31698c27243184de6c05f1460f23d77babbda20",
       "last_fetched": "2026-10-19T21:08:36.479Z"
+    },
+    "https://www.genians.co.kr/en/blog/threat_intelligence/operation-gitpower": {
+      "etag": null,
+      "last_modified": "Mon, 19 Oct 2026 22:57:58 GMT",
+      "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421",
+      "last_fetched": "2026-10-26T04:13:42.992Z"
     },
     "https://www.genians.co.kr/en/blog/threat_intelligence/pretexting": {
       "etag": null,
@@ -7612,166 +7637,166 @@
       "last_fetched": "2026-10-18T04:09:29.878Z"
     },
     "https://www.rewterz.com/threat-advisory/apt37-aka-scarcruft-or-redeyes-active-iocs-37073": {
-      "etag": "\"546204-1792296241;br\"",
+      "etag": "\"45153-1792987924;br\"",
       "last_modified": null,
       "source_sha256": "07278c2c9748c46375b310067ff49e82d74e12df8d8c3a28e353cd333336d2e1",
-      "last_fetched": "2026-10-18T04:04:04.526Z"
+      "last_fetched": "2026-10-26T04:12:03.388Z"
     },
     "https://www.rewterz.com/threat-advisory/apt37-aka-scarcruft-or-redeyes-active-iocs-37243": {
-      "etag": "\"546205-1792296244;br\"",
+      "etag": "\"45155-1792987926;br\"",
       "last_modified": null,
       "source_sha256": "fa15bfee0db38369245e7ca8f284d604bb6487fd870ab627d6d780c3e0975bad",
-      "last_fetched": "2026-10-18T04:04:07.377Z"
+      "last_fetched": "2026-10-26T04:12:05.864Z"
     },
     "https://www.rewterz.com/threat-advisory/apt37-aka-scarcruft-or-redeyes-active-iocs-37593": {
-      "etag": "\"546206-1792296246;br\"",
+      "etag": "\"45156-1792987928;br\"",
       "last_modified": null,
       "source_sha256": "184045f4f8a316cfc10ac05cd96e808ade31986c91906c9f001bc5df4cdbee4b",
-      "last_fetched": "2026-10-18T04:04:10.027Z"
+      "last_fetched": "2026-10-26T04:12:07.905Z"
     },
     "https://www.rewterz.com/threat-advisory/apt37-aka-scarcruft-or-redeyes-active-iocs-8": {
-      "etag": "\"546207-1792296248;br\"",
+      "etag": "\"45157-1792987930;br\"",
       "last_modified": null,
       "source_sha256": "18c2e8fc15a08b18620d811944a0142ce25d2ee94ef5c2e4a4247459d5af6e14",
-      "last_fetched": "2026-10-18T04:04:12.445Z"
+      "last_fetched": "2026-10-26T04:12:10.018Z"
     },
     "https://www.rewterz.com/threat-advisory/developers-targeted-by-new-ottercookie-malware-with-fake-job-offers-active-iocs": {
-      "etag": "\"546208-1792296251;br\"",
+      "etag": "\"45158-1792987933;br\"",
       "last_modified": null,
       "source_sha256": "88edecea88ef7f0b6b9a76f40736805c0e5c5a9f883604e27594ef7746c2cbb4",
-      "last_fetched": "2026-10-18T04:04:14.908Z"
+      "last_fetched": "2026-10-26T04:12:12.076Z"
     },
     "https://www.rewterz.com/threat-advisory/google-chrome-zero-day-vulnerability-exploited-by-lazarus-group-by-using-phony-defi-game-active-iocs": {
-      "etag": "\"546123-1792295597;br\"",
+      "etag": "\"44544-1792985268;br\"",
       "last_modified": null,
       "source_sha256": "a953d51cb5be8c714cbe9ec4b6471e7e0a16d5a35062fb390613090ecf86ad24",
-      "last_fetched": "2026-10-18T04:05:04.614Z"
+      "last_fetched": "2026-10-26T04:12:55.316Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-aka-hidden-cobra-apt-group-active-iocs-37279": {
-      "etag": "\"546209-1792296253;br\"",
+      "etag": "\"45159-1792987935;br\"",
       "last_modified": null,
       "source_sha256": "aec1bc09ed703f6a8a303df8a79f67d46d91f57a3a4483fc7bcefda61f904fe4",
-      "last_fetched": "2026-10-18T04:04:17.267Z"
+      "last_fetched": "2026-10-26T04:12:14.180Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-aka-hidden-cobra-apt-group-active-iocs-37353": {
-      "etag": "\"546211-1792296256;br\"",
+      "etag": "\"45161-1792987937;br\"",
       "last_modified": null,
       "source_sha256": "37b01a67a4376caa5a63b9a6d1db97ba0762e2e16594726d912257fac8c3c97f",
-      "last_fetched": "2026-10-18T04:04:19.577Z"
+      "last_fetched": "2026-10-26T04:12:16.294Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-aka-hidden-cobra-apt-group-active-iocs-37728": {
-      "etag": "\"546212-1792296258;br\"",
+      "etag": "\"45163-1792987939;br\"",
       "last_modified": null,
       "source_sha256": "c0b60741fc5b5fd805655106b8e4c7a4976207ab363f753a6648f89497283e95",
-      "last_fetched": "2026-10-18T04:04:21.955Z"
+      "last_fetched": "2026-10-26T04:12:18.309Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-aka-hidden-cobra-apt-group-active-iocs-37839": {
-      "etag": "\"546213-1792296260;br\"",
+      "etag": "\"45165-1792987941;br\"",
       "last_modified": null,
       "source_sha256": "fa83f2d795b07da11957e2645df41a52de79276ea2880428c543a2fe59dcde73",
-      "last_fetched": "2026-10-18T04:04:24.344Z"
+      "last_fetched": "2026-10-26T04:12:20.381Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-group-uses-cookieplus-malware-to-target-nuclear-engineers-active-iocs": {
-      "etag": "\"546219-1792296263;br\"",
+      "etag": "\"45166-1792987943;br\"",
       "last_modified": null,
       "source_sha256": "6c87a0673d876aba37c46156b76682cf51460668fc6ea02c6b6ed3a83364a556",
-      "last_fetched": "2026-10-18T04:04:26.703Z"
+      "last_fetched": "2026-10-26T04:12:22.510Z"
     },
     "https://www.rewterz.com/threat-advisory/lazarus-group-uses-new-rustyattr-malware-for-extended-attribute-abuse-to-target-macos-active-iocs": {
-      "etag": "\"546221-1792296265;br\"",
+      "etag": "\"45167-1792987945;br\"",
       "last_modified": null,
       "source_sha256": "5ddf39ed9904e0a4369ea1c6f8f5645efe0c2c67a4d0c21ec32cea4b2862874c",
-      "last_fetched": "2026-10-18T04:04:29.153Z"
+      "last_fetched": "2026-10-26T04:12:24.555Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korea-linked-konni-apt-group-active-iocs-13": {
-      "etag": "\"546222-1792296268;br\"",
+      "etag": "\"45169-1792987947;br\"",
       "last_modified": null,
       "source_sha256": "c635364732dbaa3933456c951dd823df847e824bda098deb8c3efceb773f19af",
-      "last_fetched": "2026-10-18T04:04:31.606Z"
+      "last_fetched": "2026-10-26T04:12:26.558Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korea-linked-konni-apt-group-active-iocs-37014": {
-      "etag": "\"546240-1792296302;br\"",
+      "etag": "\"45191-1792987977;br\"",
       "last_modified": null,
       "source_sha256": "b48ccac1a442a02e0303dc331034e3d07730fb3192c59de1ca09955cb21aa31d",
-      "last_fetched": "2026-10-18T04:05:06.384Z"
+      "last_fetched": "2026-10-26T04:12:56.817Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korea-linked-konni-apt-group-active-iocs-37739": {
-      "etag": "\"546223-1792296270;br\"",
+      "etag": "\"45171-1792987949;br\"",
       "last_modified": null,
       "source_sha256": "690220a7375eb958b11d2ebd230101732a90986b1b3438e1bff9dd794295388d",
-      "last_fetched": "2026-10-18T04:04:34.009Z"
+      "last_fetched": "2026-10-26T04:12:28.626Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-36924": {
-      "etag": "\"546224-1792296272;br\"",
+      "etag": "\"45174-1792987951;br\"",
       "last_modified": null,
       "source_sha256": "4795956c79e5bab83febf52a63a11adf2e13d5d663d9711557834c579a77ca5b",
-      "last_fetched": "2026-10-18T04:04:36.466Z"
+      "last_fetched": "2026-10-26T04:12:30.658Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37051": {
-      "etag": "\"546225-1792296275;br\"",
+      "etag": "\"45175-1792987953;br\"",
       "last_modified": null,
       "source_sha256": "946fff5a964d81594e1272159f055e6d6df848b7b7be6fbc0c217336d7ef8ada",
-      "last_fetched": "2026-10-18T04:04:38.837Z"
+      "last_fetched": "2026-10-26T04:12:32.735Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37159": {
-      "etag": "\"546227-1792296277;br\"",
+      "etag": "\"45176-1792987955;br\"",
       "last_modified": null,
       "source_sha256": "ae912f9905915e5bea9e06bba04e98d5ff3b2675d7c7ecacd9d4559373bb7dfc",
-      "last_fetched": "2026-10-18T04:04:41.225Z"
+      "last_fetched": "2026-10-26T04:12:34.691Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37323": {
-      "etag": "\"546229-1792296279;br\"",
+      "etag": "\"45178-1792987957;br\"",
       "last_modified": null,
       "source_sha256": "c3d69c3b9595e52d1ddf0f1ea42fa618c31f140a405ebb91760904b43c2bcb51",
-      "last_fetched": "2026-10-18T04:04:43.484Z"
+      "last_fetched": "2026-10-26T04:12:36.796Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37492": {
-      "etag": "\"546231-1792296282;br\"",
+      "etag": "\"45179-1792987959;br\"",
       "last_modified": null,
       "source_sha256": "f9433aba503a53fe9ebced7103ffde4d2bda4593ae3d688d819f6e0d0b8c5714",
-      "last_fetched": "2026-10-18T04:04:45.826Z"
+      "last_fetched": "2026-10-26T04:12:38.757Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37554": {
-      "etag": "\"546232-1792296284;br\"",
+      "etag": "\"45181-1792987961;br\"",
       "last_modified": null,
       "source_sha256": "6424c42065d200874fc872099fb6f2978755960746ea9f945adde4614bff700d",
-      "last_fetched": "2026-10-18T04:04:48.163Z"
+      "last_fetched": "2026-10-26T04:12:40.793Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37627": {
-      "etag": "\"546234-1792296286;br\"",
+      "etag": "\"45182-1792987963;br\"",
       "last_modified": null,
       "source_sha256": "0b0419993f13574795d47ca9eb734c9df553800501ef44f1804daf56f44976a0",
-      "last_fetched": "2026-10-18T04:04:50.554Z"
+      "last_fetched": "2026-10-26T04:12:42.864Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37718": {
-      "etag": "\"546235-1792296289;br\"",
+      "etag": "\"45184-1792987966;br\"",
       "last_modified": null,
       "source_sha256": "5169a576de6353a41039f9dbaf428153849ddc73b4b2a04873acf805a9276b92",
-      "last_fetched": "2026-10-18T04:04:52.944Z"
+      "last_fetched": "2026-10-26T04:12:45.018Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-apt-kimsuky-aka-black-banshee-active-iocs-37856": {
-      "etag": "\"546236-1792296291;br\"",
+      "etag": "\"45185-1792987968;br\"",
       "last_modified": null,
       "source_sha256": "6785bcd0405fcc1db81a45ba824f3dc9be47ab7e5aeaa51b1a8ccfe3fc04e495",
-      "last_fetched": "2026-10-18T04:04:55.363Z"
+      "last_fetched": "2026-10-26T04:12:47.131Z"
     },
     "https://www.rewterz.com/threat-advisory/north-korean-threat-actors-deploy-hidden-risk-malware-on-macos-to-target-crypto-firms-active-iocs": {
-      "etag": "\"546237-1792296294;br\"",
+      "etag": "\"45186-1792987970;br\"",
       "last_modified": null,
       "source_sha256": "890c2bc988a86e5c878930aa06c4871b450074263450b7f1a18f1108ddb2c913",
-      "last_fetched": "2026-10-18T04:04:57.755Z"
+      "last_fetched": "2026-10-26T04:12:49.157Z"
     },
     "https://www.rewterz.com/threat-advisory/play-ransomware-and-north-korean-apt45-work-together-to-launch-major-cyberattack-active-iocs": {
-      "etag": "\"546238-1792296296;br\"",
+      "etag": "\"45187-1792987972;br\"",
       "last_modified": null,
       "source_sha256": "039b279371d056cbfda84f6dbece210c291b5e9359d102a08d7d0b4c33c0eaef",
-      "last_fetched": "2026-10-18T04:05:00.047Z"
+      "last_fetched": "2026-10-26T04:12:51.332Z"
     },
     "https://www.rewterz.com/threat-advisory/russian-emails-used-by-north-korean-kimsuky-to-commit-credential-theft-attacks-active-iocs": {
-      "etag": "\"546239-1792296298;br\"",
+      "etag": "\"45189-1792987974;br\"",
       "last_modified": null,
       "source_sha256": "f95de04be265cee09bd28fd504fa2b1d3423b5418f38240cc1a714d69e56e460",
-      "last_fetched": "2026-10-18T04:05:02.299Z"
+      "last_fetched": "2026-10-26T04:12:53.326Z"
     },
     "https://www.rusi.org/explore-our-research/publications/research-papers/north-korean-crypto-fiat-activity": {
       "etag": "W/\"645a709a99ced14b2d7dd0d5c45f5cd8\"",
@@ -7876,64 +7901,64 @@
       "last_fetched": "2026-10-18T04:11:45.347Z"
     },
     "https://www.sentinelone.com/blog/2024-macos-malware-review-infostealers-backdoors-and-apt-campaigns-targeting-the-enterprise": {
-      "etag": "W/\"lb35lei5i17vao\"",
+      "etag": "W/\"12tuciduh1g7vs3\"",
       "last_modified": null,
-      "source_sha256": "1fe49d7a312611a645f8f5ce8d29f7714aada5ca916b4d3067a128bba42ef5dc",
-      "last_fetched": "2026-10-18T04:05:30.766Z"
+      "source_sha256": "3c5325a24ad75fc65d117d93704ee2ab97632e94917bd92c4b83aae0e515dab1",
+      "last_fetched": "2026-10-26T04:13:19.622Z"
     },
     "https://www.sentinelone.com/blog/bluenoroff-how-dprks-macos-rustbucket-seeks-to-evade-analysis-and-detection": {
-      "etag": "W/\"q492okuzmp7eji\"",
+      "etag": "W/\"163bpxpo2mu7f0x\"",
       "last_modified": null,
-      "source_sha256": "48ac7a8ed97d4981b258524a8f8b3abdd533fd10ea9d909464915687935003fb",
-      "last_fetched": "2026-10-18T04:05:32.119Z"
+      "source_sha256": "2ba0d402d72b9909f497b4a64834b3a1e9284611adf7c60253d10c75750aea3c",
+      "last_fetched": "2026-10-26T04:13:20.825Z"
     },
     "https://www.sentinelone.com/blog/dprk-crypto-theft-macos-rustbucket-droppers-pivot-to-deliver-kandykorn-payloads": {
-      "etag": "W/\"ye9ov23i8d711h\"",
+      "etag": "W/\"7n42npxeeo71iw\"",
       "last_modified": null,
-      "source_sha256": "4f54c1b6c2836cb1bfc2ca15d4521b39de5c7a566007cb0e792a032c0e2f7418",
-      "last_fetched": "2026-10-18T04:05:33.287Z"
+      "source_sha256": "fb285475ed1e5872b8103f50cd77936c9d1724d83466620a0aab39ffcf0aa926",
+      "last_fetched": "2026-10-26T04:13:21.949Z"
     },
     "https://www.sentinelone.com/blog/four-distinct-families-of-lazarus-malware-target-apples-macos-platform": {
-      "etag": "W/\"h5wjrcq9o478ke\"",
+      "etag": "W/\"ine0vkow9y791t\"",
       "last_modified": null,
-      "source_sha256": "bdc6f6cce2906fe3077e5ac665b8d9494d8aeb7aa98fe3be8c2f5ff744315cc5",
-      "last_fetched": "2026-10-18T04:05:34.619Z"
+      "source_sha256": "2f3e6b400ce96836b1e4e7f8babfebbc74567801e6c6e3d1e769c0adaa145096",
+      "last_fetched": "2026-10-26T04:13:23.070Z"
     },
     "https://www.sentinelone.com/blog/illicit-brand-impersonation-a-threat-hunting-approach": {
-      "etag": "W/\"uj3v9g1gt66e63\"",
+      "etag": "W/\"r4c4hsgjcy6eni\"",
       "last_modified": null,
-      "source_sha256": "e00803c8c75c5971d46d8dc4e4ec3892d1c7689eeb803f5e9914de482453353d",
-      "last_fetched": "2026-10-18T04:05:35.903Z"
+      "source_sha256": "e29921db659582a62d592514349c1adc83431338582358a92eb50c02851e7a3b",
+      "last_fetched": "2026-10-26T04:13:24.527Z"
     },
     "https://www.sentinelone.com/blog/lazarus-operation-interception-targets-macos-users-dreaming-of-jobs-in-crypto/": {
-      "etag": "W/\"s3vmvfwulm6cgh\"",
+      "etag": "W/\"zi9u6jkhnm6cxw\"",
       "last_modified": null,
-      "source_sha256": "b120bace5e69cdac1a03438b7330ac32ecfb08020b7e7db49ee8d640c1f07b2d",
-      "last_fetched": "2026-10-18T04:05:45.574Z"
+      "source_sha256": "c6eb5153bc3935b779f598294ee4aacdab9af60fe49858f46f70d7532f4d0108",
+      "last_fetched": "2026-10-26T04:13:32.926Z"
     },
     "https://www.sentinelone.com/labs/a-glimpse-into-future-scarcruft-campaigns-attackers-gather-strategic-intelligence-and-target-cybersecurity-professionals/": {
-      "etag": "W/\"n52stkytz6xjk\"",
+      "etag": "W/\"15m7soceuyl6xv5\"",
       "last_modified": null,
       "source_sha256": "ba4b39f18b329b6a5e2ec319b7dff9e3d2446d8d1536cb107089f7c050bc63b1",
-      "last_fetched": "2026-10-18T04:05:29.515Z"
+      "last_fetched": "2026-10-26T04:13:18.557Z"
     },
     "https://www.sentinelone.com/labs/bluenoroff-hidden-risk-threat-actor-targets-macs-with-fake-crypto-news-and-novel-persistence": {
-      "etag": "W/\"g6xts3wh2m6ewh\"",
+      "etag": "W/\"tau3yv495a6f65\"",
       "last_modified": null,
       "source_sha256": "ba03d46821b77978c1227980c3341e74790a85f7dbbad7b46e30f735ab55f53e",
-      "last_fetched": "2026-10-18T04:05:37.440Z"
+      "last_fetched": "2026-10-26T04:13:25.790Z"
     },
     "https://www.sentinelone.com/labs/comrades-in-arms-north-korea-compromises-sanctioned-russian-missile-engineering-company": {
-      "etag": "W/\"8ux053ml9554tp\"",
+      "etag": "W/\"tvrivb4zqm554k\"",
       "last_modified": null,
       "source_sha256": "7429902e9d53a36ce46e7b47d1cb0cef7080b978bfae983c8f1d8426a3891a81",
-      "last_fetched": "2026-10-18T04:05:38.697Z"
+      "last_fetched": "2026-10-26T04:13:27.003Z"
     },
     "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/": {
-      "etag": "W/\"16hi6zyv2hk7r53\"",
+      "etag": "W/\"6w3zfx2877rgb\"",
       "last_modified": null,
       "source_sha256": "a301bf47c548e0288654e05abf607005c0b33e537082a5da7b7cc772f3f71223",
-      "last_fetched": "2026-10-18T04:05:28.160Z"
+      "last_fetched": "2026-10-26T04:13:17.348Z"
     },
     "https://www.sentinelone.com/labs/dont-call-us-well-call-your-apis-tradertraitor-backdoors-resurface-on-victim-with-no-crypto-ties/": {
       "etag": "W/\"iipq9sgu5z739j\"",
@@ -7942,28 +7967,28 @@
       "last_fetched": "2026-10-18T04:05:46.885Z"
     },
     "https://www.sentinelone.com/labs/jumpcloud-intrusion-attacker-infrastructure-links-compromise-to-north-korean-apt-activity": {
-      "etag": "W/\"14t4668wg6d4bf1\"",
+      "etag": "W/\"6vfw1z32ac4bop\"",
       "last_modified": null,
       "source_sha256": "f5161b09d8997e8ce0387c387b3ed857a096724fa08943bade58721f02cb59a2",
-      "last_fetched": "2026-10-18T04:05:40.024Z"
+      "last_fetched": "2026-10-26T04:13:28.124Z"
     },
     "https://www.sentinelone.com/labs/kimsuky-evolves-reconnaissance-capabilities-in-new-global-campaign": {
-      "etag": "W/\"90krbty26154fd\"",
+      "etag": "W/\"br4jvbnc2j54p1\"",
       "last_modified": null,
       "source_sha256": "e243bfa648588fd21b990c2bd08de74f136703c62f83ea5b565b90b882ca5b88",
-      "last_fetched": "2026-10-18T04:05:41.559Z"
+      "last_fetched": "2026-10-26T04:13:29.241Z"
     },
     "https://www.sentinelone.com/labs/kimsuky-new-social-engineering-campaign-aims-to-steal-credentials-and-gather-strategic-intelligence": {
-      "etag": "W/\"huxli1xka051cn\"",
+      "etag": "W/\"1udljzciys51lh\"",
       "last_modified": null,
       "source_sha256": "ec68bd4955e6dd06d476d1fb114885e15192c1b8fe2dbda1857b84ed853a70fc",
-      "last_fetched": "2026-10-18T04:05:42.815Z"
+      "last_fetched": "2026-10-26T04:13:30.431Z"
     },
     "https://www.sentinelone.com/labs/kimsuky-ongoing-campaign-using-tailored-reconnaissance-toolkit": {
-      "etag": "W/\"bkzeua3q2o4zi2\"",
+      "etag": "W/\"127igtx73hv4zta\"",
       "last_modified": null,
       "source_sha256": "20341bc191a22a46412fea75c40e20fc5057fc7f8dc8c99aec10ac1d1aac24ba",
-      "last_fetched": "2026-10-18T04:05:44.101Z"
+      "last_fetched": "2026-10-26T04:13:31.638Z"
     },
     "https://www.seqrite.com/blog/kimsuky-apt-south-korea-pdf-lures/": {
       "etag": null,
@@ -8280,14 +8305,14 @@
     "https://www.welivesecurity.com/2017/02/16/demystifying-targeted-malware-used-polish-banks": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "273fa994ab274a706965815b6270849c2fc221886e84c672ef13ebad53de70ad",
-      "last_fetched": "2026-10-18T04:04:58.232Z"
+      "source_sha256": "787580706fa5fde08281f00359a72928b29966facc8d2237a6a81a95f618f6bf",
+      "last_fetched": "2026-10-26T04:13:07.249Z"
     },
     "https://www.welivesecurity.com/2020/11/16/lazarus-supply-chain-attack-south-korea/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b93afbfc365ad8898343db02e79551678e72916a48ffca7ee66583eded7ff4f4",
-      "last_fetched": "2026-10-18T04:04:54.117Z"
+      "source_sha256": "7a96342174b78d9e15d49aa2665364f3ec9786f8cd46bb4b93f27c9561d0d7b3",
+      "last_fetched": "2026-10-26T04:13:04.908Z"
     },
     "https://www.welivesecurity.com/2021/04/08/are-you-afreight-dark-watch-out-vyveva-new-lazarus-backdoor/": {
       "etag": null,
@@ -8298,86 +8323,86 @@
     "https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "b6dbc33a2e64d1c061f5c09e2cfd503fbdb1e49745724cb2dcaf5b1af0bec25a",
-      "last_fetched": "2026-10-18T04:05:02.392Z"
+      "source_sha256": "6851520df5de2dfbd6383220ba6b5422b9896532a3607d97d0140560cda0fe2b",
+      "last_fetched": "2026-10-26T04:13:10.383Z"
     },
     "https://www.welivesecurity.com/2022/11/30/whos-swimming-south-korean-waters-meet-scarcrufts-dolphin": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "112fbbf5ca498ff9eb7444608ab297405e003afd02493d7b54e110c5df799edc",
-      "last_fetched": "2026-10-18T04:05:06.073Z"
+      "source_sha256": "ad324b6d7a59d6cbc050384dbb6f7026b842c1975664ccbdb5d7d8e794ebb584",
+      "last_fetched": "2026-10-26T04:13:11.597Z"
     },
     "https://www.welivesecurity.com/2023/02/23/winordll64-backdoor-vast-lazarus-arsenal": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "d240077237dc30bdc357314e1ec31437467b455813d619603b714df13271f9a2",
-      "last_fetched": "2026-10-18T04:05:10.059Z"
+      "source_sha256": "654cf2d9ba30a1226a73d6c971b70ff2f752a92a9fc76566ad9f2ada7bdbb498",
+      "last_fetched": "2026-10-26T04:13:14.792Z"
     },
     "https://www.welivesecurity.com/2023/04/20/linux-malware-strengthens-links-lazarus-3cx-supply-chain-attack": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "a67c742416c3d90578a06e76591ea4372e1723bdbdfe72e2863107d8d727241d",
-      "last_fetched": "2026-10-18T04:05:13.551Z"
+      "source_sha256": "172c52859d87addbd7b1b3925d892ce6d1375bd44d72bedb9bfbb189b07a8294",
+      "last_fetched": "2026-10-26T04:13:17.834Z"
     },
     "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "dfffbaf4579bbe3fb20815794c4a1538d1e9990b031d5c7fceca14e6db35601c",
-      "last_fetched": "2026-10-18T04:05:15.687Z"
+      "source_sha256": "44a7a4e48ab8920e1b12855c96daaf7821f4d7d98f38cc80579aafa87a2e779b",
+      "last_fetched": "2026-10-26T04:13:19.338Z"
     },
     "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "583074498181c2f5da47aa073c65dabeca7bd0ad8eea6050e018ab3c3f0fd750",
-      "last_fetched": "2026-10-18T04:05:17.431Z"
+      "source_sha256": "38e3b1a84776bff55430f8ab7c608cd640204e8a7c2cdb66e6a67c46b1d81ff9",
+      "last_fetched": "2026-10-26T04:13:20.921Z"
     },
     "https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "5bfdefeeb7413d3a14eab83df4365253909e4d76a63b405b791332f53f742e80",
-      "last_fetched": "2026-10-18T04:05:18.624Z"
+      "source_sha256": "90d59e758a64a05bda2029848ab17f6c48c3b882722d322358c4bfba342c3627",
+      "last_fetched": "2026-10-26T04:13:22.351Z"
     },
     "https://www.welivesecurity.com/en/eset-research/lazarus-luring-employees-trojanized-coding-challenges-case-spanish-aerospace-company": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "8ba5f8fd5a9d0c626e214268f2b04b1576582d6f197a37f634567eb8235f0c0a",
-      "last_fetched": "2026-10-18T04:05:22.902Z"
+      "source_sha256": "730969bf2482b01d2938d24c119f8b6a771d3bf5919ab17a9586c7629303e58d",
+      "last_fetched": "2026-10-26T04:13:23.757Z"
     },
     "https://www.welivesecurity.com/en/eset-research/rigged-game-scarcruft-compromises-gaming-platform-supply-chain-attack": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "c8cb74bb542d19b8732ab3d1e3146881745809c8023d49884b04f3f46410f9f2",
-      "last_fetched": "2026-10-18T04:05:27.989Z"
+      "source_sha256": "f65d4ac4bb1af6bfb550caf0935e4321f1d6f371d55cad25fd05d77b5d5d1ef3",
+      "last_fetched": "2026-10-26T04:13:25.694Z"
     },
     "https://www.welivesecurity.com/en/eset-research/shifting-sands-ransomhub-edrkillshifter/": {
       "etag": null,
       "last_modified": null,
-      "source_sha256": "0e22481913e2dc581bb1b4503ef253487ec8f56417ae254924b5ec402aa082a8",
-      "last_fetched": "2026-10-18T04:04:57.057Z"
+      "source_sha256": "8e39d04dceca31cd71d925f2c49d85475800cd1a5ba0bfa11ef57d3d371afce5",
+      "last_fetched": "2026-10-26T04:13:06.034Z"
     },
     "https://www.welivesecurity.com/wp-content/uploads/2022/10/eset_threat_report_t22022.pdf": {
       "etag": "\"66153a36-786d09\"",
       "last_modified": "Tue, 09 Apr 2024 12:53:10 GMT",
       "source_sha256": "e5e616cfe60e9b174d3dc020abb3580ddc8bb216e3b9a1bf226eb4873029e813",
-      "last_fetched": "2026-10-18T04:05:33.054Z"
+      "last_fetched": "2026-10-26T04:13:27.264Z"
     },
     "https://www.welivesecurity.com/wp-content/uploads/2023/01/eset_apt_activity_report_t32022.pdf": {
       "etag": "\"66153f00-3e5498\"",
       "last_modified": "Tue, 09 Apr 2024 13:13:36 GMT",
       "source_sha256": "0d519c23d834dea8149bea07e3c0b2e236175184302d7717b6cf1f3201db825c",
-      "last_fetched": "2026-10-18T04:05:41.543Z"
+      "last_fetched": "2026-10-26T04:13:30.783Z"
     },
     "https://www.welivesecurity.com/wp-content/uploads/2023/05/eset_apt_activity_report_q42022_q12023.pdf": {
       "etag": "\"66154578-44ea01\"",
       "last_modified": "Tue, 09 Apr 2024 13:41:12 GMT",
       "source_sha256": "d33b00d2c0e21deb26c36f88caeb1759600e22d4bc403b683bd07aa646b5f2e7",
-      "last_fetched": "2026-10-18T04:05:44.676Z"
+      "last_fetched": "2026-10-26T04:13:32.181Z"
     },
     "https://www.welivesecurity.com/wp-content/uploads/2023/07/eset_threat_report_h12023.pdf": {
       "etag": "\"6615475a-8731c0\"",
       "last_modified": "Tue, 09 Apr 2024 13:49:14 GMT",
       "source_sha256": "00a9dbcd3cdfacb9ce2e5b4ff6203bc1b3f56530911e8faa22b4624c695f423e",
-      "last_fetched": "2026-10-18T04:05:37.188Z"
+      "last_fetched": "2026-10-26T04:13:29.213Z"
     },
     "https://www.wired.com/story/north-korea-hacker-internet-outage/": {
       "etag": null,
@@ -8438,6 +8463,12 @@
       "last_modified": null,
       "source_sha256": "ade0398145592596e4df93e0235d649c8c35c4e1dd565487359fe895b1596581",
       "last_fetched": "2026-10-18T04:08:58.332Z"
+    },
+    "https://www.zscaler.com/blogs/security-research/suspected-tradertraitor-group-uses-trojanized-terraform-provider-deliver": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "8f8f3c75ccb62792bb85e014a69cfd73625afefc010a094a9791a04d79dfde9b",
+      "last_fetched": "2026-10-26T04:13:43.126Z"
     },
     "https://www.zscaler.com/blogs/security-research/unintentional-leak-glimpse-attack-vectors-apt37": {
       "etag": null,

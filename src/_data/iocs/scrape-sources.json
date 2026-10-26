@@ -19234,6 +19234,129 @@
         "TraderTraitor"
       ],
       "discovered": "2026-10-12"
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429903",
+      "publisher": "wezard4u (tistory)",
+      "title": "김수키(Kimsuky)삼X자동화 견적서 드론 자율비행 기술기업을 노린 악성코드 분석",
+      "published": "2026-10-25",
+      "feed": "https://wezard4u.tistory.com/rss",
+      "matched_terms": [
+        "Kimsuky",
+        "김수키"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "publisher": "Wiz",
+      "title": "Gheist: Attempted Scaled Abuse of Stolen GitHub Tokens Stumbles",
+      "published": "2026-10-25",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "PolinRider"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+      "publisher": "Cyfirma",
+      "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+      "published": "2026-10-23",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Lazarus"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6860024_37004.html",
+      "publisher": "MBC",
+      "title": "북한 IT 인력, 한국기업 취업 첫 확인‥\"수사 중\"",
+      "published": "2026-10-22",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korean",
+        "북한",
+        "IT worker",
+        "IT workers"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://securelist.com/lazarus-operation-flashhole/121541/",
+      "publisher": "Kaspersky Securelist",
+      "title": "Operation FlashHole: Lazarus breaks security, defies control",
+      "published": "2026-10-21",
+      "feed": "https://securelist.com/feed/",
+      "matched_terms": [
+        "Lazarus"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/the-opensourcemalwareshow-episode26",
+      "publisher": "OpenSourceMalware",
+      "title": "The OpenSourceMalware Show #26",
+      "published": "2026-10-21",
+      "feed": "https://opensourcemalware.com/rss.xml",
+      "matched_terms": [
+        "PolinRider"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://github.com/NextronSystems/iocs/tree/master/reports/Hunting%20Kimsuky:%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors",
+      "publisher": "NextronSystems",
+      "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+      "published": "2026-10-21",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "Kimsuky"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-13-20-oct-2026",
+      "publisher": "SecurityAlliance",
+      "title": "SEAL weekly stats: 13-20 Oct, 2026",
+      "published": "2026-10-20",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview",
+        "PolinRider",
+        "UNC1069"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://medium.com/@tarunrd77/north-korea-backdoored-their-vs-code-npm-kept-bringing-it-back-6371da5e74c4",
+      "publisher": "tarunrd77",
+      "title": "North Korea Backdoored Their VS Code. npm Kept Bringing It Back.",
+      "published": "2026-10-20",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korea",
+        "Dev#Popper"
+      ],
+      "discovered": "2026-10-26"
+    },
+    {
+      "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+      "publisher": "BlueCyber",
+      "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+      "published": "2026-10-18",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview",
+        "NullReceiver",
+        "EtherHiding"
+      ],
+      "discovered": "2026-10-26"
     }
   ]
 }
