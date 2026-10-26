@@ -414,6 +414,18 @@ test("payload_url extraction: listed hosts in malicious context, and hostile tab
   assert.deepEqual(values("\n https://example.org/docs/page url reference N/A N/A Vendor documentation \n"), []);
 });
 
+test("indicatorSectionLabel walks past a Markdown fence and a bold sub-label", () => {
+  const { indicatorSectionLabel } = require("./ioc-normalize.js");
+  const a = "0fc425836eb854914525302b59cb8300b709c3e51ad776455a7eb5e29356d4f3";
+  const b = "01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149";
+  // Nextron's README layout, raw Markdown.
+  const readme = `## IOCs\n\n### File Hashes (SHA-256)\n\n**Malicious LNK Files**\n\`\`\`\n${a}\n${b}\n\`\`\`\n`;
+  assert.equal(indicatorSectionLabel(readme, readme.indexOf(b)), "hash");
+  // Prose between the heading and the value still ends the block.
+  const prose = `### File Hashes (SHA-256)\n\nThe loader then contacts a server we did not identify.\n${b}\n`;
+  assert.equal(indicatorSectionLabel(prose, prose.indexOf(b)), null);
+});
+
 test("an IOC heading word is not an npm package", () => {
   const { normalizeNpmPackage } = require("./ioc-normalize.js");
   assert.equal(normalizeNpmPackage("malicious"), null);

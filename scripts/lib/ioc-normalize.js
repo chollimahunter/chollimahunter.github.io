@@ -244,6 +244,12 @@ function indicatorSectionLabel(text, index, maxLines = 60) {
     if (!trimmed) continue;
     const label = sectionLabelOf(line);
     if (label) return label;
+    // A Markdown code fence, or a bold-only sub-label inside the block
+    // ("**Malicious LNK Files**"), sits between a heading and its values in a
+    // raw README: Nextron's IOC repository lists nine digests that way under
+    // "File Hashes (SHA-256)", and the walk stopped at the fence after the
+    // first. Neither is prose, so step over both.
+    if (/^`{3,}[\w-]*$/.test(trimmed) || /^\*\*[^*]{1,60}\*\*$/.test(trimmed)) continue;
     // Another row of the same block: keep walking. Anything else is prose,
     // which ends the block.
     if (!VALUE_ONLY_LINE.test(trimmed)) return null;
@@ -679,6 +685,9 @@ const HOSTED_SITE_HOSTS = [
   // 29 September 2026 names fe29jf323.kesug.com as a backdoor's C2 and notes
   // the InfinityFree __test cookie the backdoor has to solve.
   "kesug.com",
+  // InfinityFree's xo.je (its root page says so). The same Konni operator
+  // moved its C2 to four xo.je subdomains in October 2026, per Frost's list.
+  "xo.je",
 ];
 const HOSTED_SITE_PATTERN = new RegExp(
   String.raw`\b(?:https?:\/\/)?([a-z0-9][a-z0-9-]{1,60}\.(?:` +
