@@ -3934,6 +3934,40 @@
       "mutual_indexed": [],
       "organizations": []
     },
+    "arkadi20233": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "arkadi20233",
+      "status": "no report"
+    },
+    "aronhirotobz-ops": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "aronhirotobz-ops",
+      "created_at": "2026-01-28T20:37:46Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "GB-VPS",
+          "first_commit": "2025-06-10"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "aronknox930608": {
       "analyzed": "2026-09-30",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -3965,6 +3999,152 @@
       "mutual_indexed": [],
       "organizations": []
     },
+    "arsagajp": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "arsagajp",
+      "created_at": "2026-05-05T21:45:54Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "JP-Soccer",
+          "first_commit": "2025-07-18"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "arsagapartner": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "arsagapartner",
+      "created_at": "2026-05-05T21:41:39Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "JP-Soccer",
+          "first_commit": "2025-07-18"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "arsapro001": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "arsapro001",
+      "status": "no report"
+    },
+    "artemis701": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "artemis701",
+      "created_at": "2022-12-08T11:23:42Z",
+      "public_repos": 41,
+      "followers": 4,
+      "following": 3,
+      "original_repos": 40,
+      "forked_repos": 1,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 2,
+      "commit_emails": [
+        "developer789222@gmail.com"
+      ],
+      "commit_names": [
+        "Artemis701",
+        "artemis701"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "artemsyvko": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "artemsyvko",
+      "created_at": "2022-12-14T14:15:20Z",
+      "public_repos": 3,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 3,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "artemsyvko71@gmail.com"
+      ],
+      "commit_names": [
+        "Artem Syvko",
+        "artemsyvko"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "artur-kolesnyk": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "artur-kolesnyk",
+      "created_at": "2024-07-01T10:30:10Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "artur.kolesnyk@requestum.com"
+      ],
+      "commit_names": [
+        "artur-k",
+        "artur-kolesnyk"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "arturdranhoi": {
       "analyzed": "2026-09-30",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -3989,6 +4169,239 @@
       "dprk_naming": [],
       "following_indexed": [],
       "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "asimhafeezz": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "asimhafeezz",
+      "created_at": "2019-10-12T17:07:19Z",
+      "public_repos": 78,
+      "followers": 34,
+      "following": 66,
+      "original_repos": 74,
+      "forked_repos": 4,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 1,
+      "commit_emails": [
+        "asimhaff.social@gmail.com",
+        "asimhyff@my-pc.localdomain"
+      ],
+      "commit_names": [
+        "Asim Hafeez",
+        "asim",
+        "asimhafeezz",
+        "asimhyff"
+      ],
+      "names_per_email_max": 4,
+      "emails_per_name_max": 4,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "asrtothunder01": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "asrtothunder01",
+      "status": "no report"
+    },
+    "astermirac1e": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "astermirac1e",
+      "created_at": "2020-06-19T08:54:28Z",
+      "public_repos": 12,
+      "followers": 13,
+      "following": 4,
+      "original_repos": 2,
+      "forked_repos": 10,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "astrabytesyncshub2019": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "astrabytesyncshub2019",
+      "created_at": "2025-09-25T17:15:41Z",
+      "public_repos": 13,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 3,
+      "forked_repos": 10,
+      "backdated_repos": 2,
+      "backdated_examples": [
+        {
+          "repo": "nft-ecommerce",
+          "first_commit": "2025-08-26"
+        },
+        {
+          "repo": "sub-web3-social-platform",
+          "first_commit": "2017-10-16"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "astrabytesyncshub2019"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "astrasbytesyncs": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "astrasbytesyncs",
+      "created_at": "2025-09-29T18:55:48Z",
+      "public_repos": 12,
+      "followers": 2,
+      "following": 0,
+      "original_repos": 2,
+      "forked_repos": 10,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "web3-social-platform",
+          "first_commit": "2017-12-03"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "astro741": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "astro741",
+      "created_at": "2025-05-07T14:57:01Z",
+      "public_repos": 4,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 4,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 1,
+      "commit_emails": [
+        "williammorphy37@gmail.com"
+      ],
+      "commit_names": [
+        "astro741"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "astronicky": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "astronicky",
+      "created_at": "2022-03-28T06:54:47Z",
+      "public_repos": 16,
+      "followers": 17,
+      "following": 3,
+      "original_repos": 15,
+      "forked_repos": 1,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "astronickypower@gmail.com"
+      ],
+      "commit_names": [
+        "DESKTOP-ILI9J4H\\Power",
+        "astronicky",
+        "astronickypower",
+        "power"
+      ],
+      "names_per_email_max": 4,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "sharplip0518"
+      ],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "athenaweb629": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "athenaweb629",
+      "status": "no report"
+    },
+    "atoslabs": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "AtosLABs",
+      "created_at": "2022-06-19T21:02:48Z",
+      "public_repos": 55,
+      "followers": 5,
+      "following": 5,
+      "original_repos": 54,
+      "forked_repos": 1,
+      "backdated_repos": 13,
+      "backdated_examples": [
+        {
+          "repo": "AtosLABs/pancake-frontend",
+          "first_commit": "2022-01-24"
+        },
+        {
+          "repo": "meloket/rematic",
+          "first_commit": "2022-04-24"
+        },
+        {
+          "repo": "AtosLABs/DeFi-Pulse-Adapters",
+          "first_commit": "2022-01-25"
+        },
+        {
+          "repo": "meloket/chilliswap-game-backend",
+          "first_commit": "2022-05-20"
+        },
+        {
+          "repo": "meloket/ghoul_frontend",
+          "first_commit": "2022-05-04"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "codeninja819"
+      ],
       "mutual_indexed": [],
       "organizations": []
     },
@@ -4056,6 +4469,45 @@
         "infraform",
         "jazzband"
       ]
+    },
+    "austin-a3": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "austin-a3",
+      "status": "no report"
+    },
+    "autonomys-nexus": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "autonomys-nexus",
+      "status": "no report"
+    },
+    "avoroy": {
+      "analyzed": "2026-10-26",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "avoroy",
+      "created_at": "2023-10-25T14:37:17Z",
+      "public_repos": 0,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 0,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "avoroy@biztechadvisors.com"
+      ],
+      "commit_names": [
+        "avoroy"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
     },
     "bartlomiej-629": {
       "analyzed": "2026-10-08",
