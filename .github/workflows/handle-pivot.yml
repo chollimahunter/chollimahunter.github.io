@@ -5,6 +5,11 @@ name: Handle pivot (GitHub code search)
 # leads for review. Files nothing: the pull request lists the new leads, and a
 # person files the real ones by hand. See docs/handle-pivot.md.
 #
+# Two jobs. `pivot` searches GitHub with a read-only token and no git
+# credentials, and hands the leads on as an artifact. `propose` holds the
+# write permissions, runs no script that fetches anything, and opens the pull
+# request.
+#
 # Dispatch only: a pull request on this public repository would publish the
 # unreviewed leads, most of which belong to uninvolved people. The usual run is
 # local (`node scripts/pivot-handles-github.js`), which keeps the leads in the
@@ -19,9 +24,7 @@ on:
         default: "120"
 
 permissions:
-  contents: write
-  pull-requests: write
-  actions: write
+  contents: read
 
 # One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
 # on manual review; no step reads the value until a merge step is added.
@@ -36,12 +39,19 @@ jobs:
   pivot:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    permissions:
+      contents: read
+    outputs:
+      changed: ${{ steps.pivot.outputs.changed }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       # Leads from a run whose pull request is not merged yet, so they are
-      # neither lost nor found twice.
+      # neither lost nor found twice. The repository is public, so the fetch
+      # needs no stored credentials.
       - name: Carry over unmerged leads
         run: |
           if git fetch --depth=1 origin handle-pivot/leads 2>/dev/null; then
@@ -81,14 +91,50 @@ jobs:
             console.log(rows.join("\n"));
           ' > pr-body.md
 
+      - name: Stage results for the pull request
+        if: steps.pivot.outputs.changed == 'true'
+        run: |
+          mkdir proposal
+          cp scripts/data/handle-pivot-github.json pr-body.md proposal/
+
+      - name: Upload results
+        if: steps.pivot.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: handle-pivot-proposal
+          path: proposal/
+          retention-days: 1
+          if-no-files-found: error
+
+  propose:
+    needs: pivot
+    if: needs.pivot.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download results
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: handle-pivot-proposal
+          path: proposal
+
+      - name: Put results in place
+        run: cp proposal/handle-pivot-github.json scripts/data/handle-pivot-github.json
+
       - name: Open or update pull request
         id: cpr
-        if: steps.pivot.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           commit-message: "chore: handle pivot leads"
           title: "Handle pivot: leads for review"
-          body-path: pr-body.md
+          body-path: proposal/pr-body.md
           branch: handle-pivot/leads
           add-paths: |
             scripts/data/handle-pivot-github.json
