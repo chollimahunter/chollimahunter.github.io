@@ -9,10 +9,10 @@ ecosystem.
 | --- | --- | --- | --- | --- | --- |
 | `deploy.yml` | push to `main`, manual | `npm ci`, validate, build, check, CSS check, unit tests; plans an IndexNow submission | deploys `_site` to GitHub Pages, then submits changed URLs to IndexNow | none | `docs/search-indexing.md` |
 | `ci.yml` | pull request to `main`, manual (dispatched by the data workflows) | the same validate, build, check, CSS-check and unit-test sequence as `deploy.yml`, as the check `ci` | nothing | none | this file |
-| `sync-itworker-datasets.yml` | Mondays 06:00 UTC, manual | syncs DTEX's email appendix and Spur's Astrill exit list | pull request `sync/itworker-datasets` | none | `docs/sync-dtex-itworker-emails.md`, `docs/sync-spur-astrill-ips.md` |
+| `sync-itworker-datasets.yml` | Mondays 06:00 UTC, manual | syncs DTEX's email appendix, Spur's Astrill exit list and IPRoyal's free proxy list | pull request `sync/itworker-datasets` | none | `docs/sync-dtex-itworker-emails.md`, `docs/sync-spur-astrill-ips.md`, `docs/sync-iproyal-free-proxies.md` |
 | `scrape-dprk-iocs.yml` | Mondays 07:00 UTC (changed-only), the 1st of each month 09:00 UTC (full), manual | discovers new articles, scrapes sources, ingests the runs | pull request `sync/scraped-iocs` | none | `docs/scrape-dprk-iocs.md`, `docs/discover-sources.md` |
 | `gh-analyzer.yml` | daily 07:40 UTC, manual | runs gh-fake-analyzer over the next batch of GitHub accounts | pull request `gh-analyzer/results` | none | `docs/gh-fake-analyzer.md` |
-| `handle-pivot.yml` | Wednesdays 05:20 UTC, manual | searches GitHub code for persona handles and records leads | pull request `handle-pivot/leads` | none | `docs/handle-pivot.md` |
+| `handle-pivot.yml` | manual only (its leads would be public in a pull request; usually run locally) | searches GitHub code for persona handles and records leads | pull request `handle-pivot/leads` | none | `docs/handle-pivot.md` |
 | `etherhiding-refresh.yml` | every other day 06:15 UTC, manual | re-reads the EtherHiding watchlist from public RPC endpoints, and the XCTDH TRON and Aptos pointers from TronGrid and the Aptos REST API | pull request `etherhiding/refresh`, only when an observation moved | none | `docs/etherhiding-contract-check.md` |
 | `etherhiding-hunt.yml` | the 1st of each month 07:40 UTC, manual (optionally seeded) | rebuilds each watchlisted contract's write history from its transactions and rotation events, follows the writing wallets, and sweeps a week of blocks for new EtherHiding contracts | pull request `etherhiding/writes` (write histories, merges itself when green); candidates in the job summary | `ETHERSCAN_API_KEY` (Polygon), `NODEREAL_API_KEY` (BSC) | `docs/etherhiding-hunt.md` |
 | `enrich-refresh.yml` | Sundays 05:20 UTC, manual | re-runs the platform-account, GitHub-account, malware-status and OSV enrichers | pull request `enrich/refresh` | none | `docs/enrich-refresh.md` |
@@ -21,6 +21,18 @@ ecosystem.
 | `check-indexing.yml` | daily 13:17 UTC, manual | asks the Search Console URL Inspection API about hub pages and a sample of indicator pages | nothing; writes the run summary | `GSC_SERVICE_ACCOUNT` | `docs/search-indexing.md` |
 
 "none" means the workflow uses only the token GitHub issues to each run.
+
+## Changing `main`
+
+The "Protect main" ruleset requires every change to arrive through a pull
+request with a passing `ci` check; nothing is pushed to `main` directly, by a
+person or a workflow. Work on a branch, run the same sequence locally
+(`npm test` runs validate, build, check, check:css, test:unit and
+audit:integrity), open the pull request, wait for `ci`, squash-merge, and let
+GitHub delete the branch (`delete_branch_on_merge` is on). A pull request
+opened by a workflow on this public repository gets a `pull_request` run that
+waits at "action_required" until it is approved
+(`gh api -X POST repos/<owner>/<repo>/actions/runs/<id>/approve`).
 
 ## Validating pull requests opened by a workflow
 
