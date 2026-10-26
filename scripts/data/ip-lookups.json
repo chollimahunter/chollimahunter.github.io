@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-10-20",
+  "checked": "2026-10-26",
   "addresses": {
     "1.0.0.109": {
       "kind": "datacenter",
@@ -180,6 +180,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "2.56.123.203": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "NetCrafters OU",
+      "org": "NetCrafters OU",
+      "asn": "AS203273 NetCrafters OU",
+      "as_name": "NetCraftersOU",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
     "2.56.151.8": {
@@ -32595,6 +32610,36 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.135.181.15": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "12651980 Canada Inc.",
+      "org": null,
+      "asn": "AS399486 12651980 CANADA INC.",
+      "as_name": "VIRTUO",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.135.181.25": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "12651980 Canada Inc.",
+      "org": null,
+      "asn": "AS399486 12651980 CANADA INC.",
+      "as_name": "VIRTUO",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
     "95.143.193.150": {
