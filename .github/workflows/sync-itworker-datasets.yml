@@ -132,12 +132,17 @@ jobs:
         run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
 
       # Each sync carries continue-on-error so one failing does not stop the
-      # other or the pull request for what did succeed. This step fails the
-      # run only when every sync failed.
+      # others or the pull request for what did succeed. This step then fails
+      # the run when any sync failed: passing over a single failure once hid a
+      # sync that had parsed nothing for weeks behind green runs.
       - name: Report failed syncs
-        if: always() && steps.sync.outcome == 'failure' && steps.sync_spur.outcome == 'failure' && steps.sync_iproyal.outcome == 'failure'
+        if: always() && (steps.sync.outcome == 'failure' || steps.sync_spur.outcome == 'failure' || steps.sync_iproyal.outcome == 'failure')
+        env:
+          DTEX: ${{ steps.sync.outcome }}
+          SPUR: ${{ steps.sync_spur.outcome }}
+          IPROYAL: ${{ steps.sync_iproyal.outcome }}
         run: |
-          echo "::error::The DTEX, Spur and IPRoyal syncs all failed; see the step logs."
+          echo "::error::Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL; see the failed step's log."
           echo "### Sync run failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "The DTEX, Spur and IPRoyal syncs all failed." >> "$GITHUB_STEP_SUMMARY"
+          echo "Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL." >> "$GITHUB_STEP_SUMMARY"
           exit 1
