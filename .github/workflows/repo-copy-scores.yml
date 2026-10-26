@@ -4,6 +4,11 @@ name: Copied repository scores
 # batch of GitHub accounts in the index plus a fixed control set, and opens a
 # pull request with scripts/data/repo-copy-scores.json. Nothing here reaches the
 # site. See docs/repo-copy-scores.md.
+#
+# Two jobs. `score` reads GitHub with a read-only token and no git
+# credentials, and hands its result on as an artifact. `propose` holds the
+# write permissions, runs no script that fetches anything, and opens the pull
+# request.
 
 on:
   workflow_dispatch:
@@ -30,12 +35,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 350
     permissions:
-      contents: write
-      pull-requests: write
-      actions: write
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
@@ -67,13 +72,47 @@ jobs:
             echo '```'
           } > pr-body.md
 
+      - name: Stage results for the pull request
+        run: |
+          mkdir proposal
+          cp scripts/data/repo-copy-scores.json pr-body.md proposal/
+
+      - name: Upload results
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: repo-copy-scores-proposal
+          path: proposal/
+          retention-days: 1
+          if-no-files-found: error
+
+  propose:
+    needs: score
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download results
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: repo-copy-scores-proposal
+          path: proposal
+
+      - name: Put results in place
+        run: cp proposal/repo-copy-scores.json scripts/data/repo-copy-scores.json
+
       - name: Open pull request
         id: cpr
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           commit-message: "chore: repository copy scores"
           title: "Copied-repository scores"
-          body-path: pr-body.md
+          body-path: proposal/pr-body.md
           branch: repo-copy-scores/results
           add-paths: |
             scripts/data/repo-copy-scores.json

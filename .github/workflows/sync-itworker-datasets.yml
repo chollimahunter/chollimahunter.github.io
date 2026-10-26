@@ -7,6 +7,11 @@ name: Sync IT Worker Datasets
 # source data actually changed, so a human reviews any new/removed
 # entries before they go live, same as every other content change on
 # this site.
+#
+# Two jobs. `sync` fetches the public datasets with a read-only token and no
+# git credentials, and hands the changed files on as an artifact. `propose`
+# holds the write permissions, runs no script that fetches anything, and opens
+# the pull request.
 
 on:
   schedule:
@@ -14,9 +19,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
-  pull-requests: write
-  actions: write
+  contents: read
 
 # One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
 # on manual review; no step reads the value until a merge step is added.
@@ -33,9 +36,16 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    permissions:
+      contents: read
+    outputs:
+      staged: ${{ steps.stage.outputs.staged }}
+      summary: ${{ steps.status.outputs.summary }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
@@ -85,9 +95,69 @@ jobs:
             echo "SYNC_SUMMARY_EOF"
           } >> "$GITHUB_OUTPUT"
 
+      - name: Stage results for the pull request
+        id: stage
+        if: steps.status.outputs.changed == 'true'
+        run: |
+          mkdir -p proposal
+          for f in src/_data/iocs/itworker-datasets.json scripts/data/ip-lookups.json; do
+            [ -f "$f" ] && cp "$f" proposal/
+          done
+          echo "staged=true" >> "$GITHUB_OUTPUT"
+
+      - name: Upload results
+        if: steps.stage.outputs.staged == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: itworker-datasets-proposal
+          path: proposal/
+          retention-days: 1
+          if-no-files-found: error
+
+      # Each sync carries continue-on-error so one failing does not stop the
+      # others or the pull request for what did succeed. This step then fails
+      # the run when any sync failed: passing over a single failure once hid a
+      # sync that had parsed nothing for weeks behind green runs.
+      - name: Report failed syncs
+        if: always() && (steps.sync.outcome == 'failure' || steps.sync_spur.outcome == 'failure' || steps.sync_iproyal.outcome == 'failure')
+        env:
+          DTEX: ${{ steps.sync.outcome }}
+          SPUR: ${{ steps.sync_spur.outcome }}
+          IPROYAL: ${{ steps.sync_iproyal.outcome }}
+        run: |
+          echo "::error::Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL; see the failed step's log."
+          echo "### Sync run failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  # Runs when the sync staged a change, even if the run is later marked failed
+  # by the step above, as the single job did before the split.
+  propose:
+    needs: sync
+    if: ${{ !cancelled() && needs.sync.outputs.staged == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download results
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: itworker-datasets-proposal
+          path: proposal
+
+      - name: Put results in place
+        run: |
+          cp proposal/itworker-datasets.json src/_data/iocs/itworker-datasets.json
+          if [ -f proposal/ip-lookups.json ]; then cp proposal/ip-lookups.json scripts/data/ip-lookups.json; fi
+
       - name: Open pull request with updated dataset
         id: cpr
-        if: steps.status.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
         with:
           commit-message: "chore: sync IT-worker identifier datasets"
@@ -111,7 +181,7 @@ jobs:
             pull request can be merged once it is green.
 
             ```
-            ${{ steps.status.outputs.summary }}
+            ${{ needs.sync.outputs.summary }}
             ```
           branch: sync/itworker-datasets
           delete-branch: true
@@ -130,19 +200,3 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
         run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
-
-      # Each sync carries continue-on-error so one failing does not stop the
-      # others or the pull request for what did succeed. This step then fails
-      # the run when any sync failed: passing over a single failure once hid a
-      # sync that had parsed nothing for weeks behind green runs.
-      - name: Report failed syncs
-        if: always() && (steps.sync.outcome == 'failure' || steps.sync_spur.outcome == 'failure' || steps.sync_iproyal.outcome == 'failure')
-        env:
-          DTEX: ${{ steps.sync.outcome }}
-          SPUR: ${{ steps.sync_spur.outcome }}
-          IPROYAL: ${{ steps.sync_iproyal.outcome }}
-        run: |
-          echo "::error::Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL; see the failed step's log."
-          echo "### Sync run failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "Sync outcomes: DTEX $DTEX, Spur $SPUR, IPRoyal $IPROYAL." >> "$GITHUB_STEP_SUMMARY"
-          exit 1
