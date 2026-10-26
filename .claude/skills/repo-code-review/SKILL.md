@@ -5,7 +5,7 @@ description: Reviews code changes in this Eleventy/Nunjucks static-site repo (Ch
 
 # Code review for Chollima Hunter
 
-This repo is a static Eleventy 2.x site with Nunjucks templates and no backend, database, or API — every page is generated at build time from files under `src/`. The general `code-review` and `security-guidance` plugins already cover broad correctness, efficiency, and security practice; this skill exists to catch the things specific to how this particular repo is put together, which a generic reviewer wouldn't know to look for.
+This repo is a static Eleventy 3.x site with Nunjucks templates and no backend, database, or API — every page is generated at build time from files under `src/`. The general `code-review` and `security-guidance` plugins already cover broad correctness, efficiency, and security practice; this skill exists to catch the things specific to how this particular repo is put together, which a generic reviewer wouldn't know to look for.
 
 ## No backend exists — treat that as a fact to protect, not assume away
 
@@ -13,7 +13,7 @@ If a change introduces a server, an API route, a database client, or anything th
 
 ## Utility scripts (scripts/*.js)
 
-The one real script in this repo, `scripts/sync-dtex-itworker-emails.js`, establishes the pattern any sibling script should follow:
+The operational scripts (the syncs, scraper, enrichers and checkers that the workflows run) follow one pattern, first set by `scripts/sync-dtex-itworker-emails.js`, and any new script should too:
 
 - Resolve paths relative to the script's own location with `path.join(__dirname, ...)`, never a hardcoded absolute path or an assumption about the current working directory. A script that's one level deep in `scripts/` reaches `src/_data/...` with a single `".."`, not several — get this arithmetic right, since a wrong relative path fails silently or writes to the wrong place rather than raising an obvious error.
 - If a script feeds a GitHub Actions workflow, preserve whatever stdout contract the workflow parses — for the sync script, that's a final `CHANGED=true` or `CHANGED=false` line the workflow's `grep` branches on. Changing that output format without updating the workflow breaks the automation invisibly (it'll "succeed" while doing nothing).
