@@ -12237,7 +12237,51 @@
       ],
       "original_url": "https://github.com/JPCERTCC/Contagious-Interview-IoCs",
       "keyword_exempt": "The file is a bare column of addresses with a one-word header and no prose, so the keyword net can never match it. The attribution is the repository it sits in: JPCERT/CC publish it as Contagious-Interview-IoCs, and the README says it automatically collects IoCs from Contagious Interview. Checked 2026-09-18.",
-      "note": "Japan national CERT, machine-maintained and updated continuously, which is why it is registered as the raw file rather than as a report: re-reading it is how later additions arrive."
+      "note": "Japan national CERT, machine-maintained and updated continuously, which is why it is registered as the raw file rather than as a report: re-reading it is how later additions arrive.",
+      "exclude": [
+        {
+          "sealed": "0558d3e2a3a36a18c223375bdfb01aadc9e1674674bab4dcac1c129fb7a6aeea"
+        },
+        {
+          "sealed": "5485a8013f21ad7e4b6238fc321e3c8ca1f401ff8107a10350410ab9bfd42f3e"
+        },
+        {
+          "sealed": "5635460dbb185f4f37d85e84b962c3271baf25b38d50101610498828fe1bf523"
+        },
+        {
+          "sealed": "56dcc92d49241c0e9193a2c5845d4895585e66e6d63b05d7dd5780fdea3b1b59"
+        },
+        {
+          "sealed": "80f4727da2204007a2a5c731fc38f4dc2bd9a89d2af0574216b7fb2d7b23e6bb"
+        },
+        {
+          "sealed": "a6d9243ea776d2e9159d4b6798180260b1247dcfcd0e646bad9add572423ca2b"
+        },
+        {
+          "sealed": "ad754b3cdaad9067c9dc459764f236f1bf84ed66587cad40dd5a2f3314d16874"
+        },
+        {
+          "sealed": "adee500d2b9518fbccd1599cd37eb63cc0eb30614a4aea7d614fdab8e9270388"
+        },
+        {
+          "sealed": "b5cedd369c99bf3685f723c0cf2f58606e1c7c1e8d43ea791add35a244a213b7"
+        },
+        {
+          "sealed": "b77462e27a6d13ad2510258070c2bade53bb7ef58010b1880d24b8aff3b95c01"
+        },
+        {
+          "sealed": "b8531bd31afa614179c516409f8e00f6ecda98df147f0903d55a15b42e5de582"
+        },
+        {
+          "sealed": "b8e8cd5ebb51a5ea55f716030b8805bfc7c258e0e5458a4b8668efbc167c62b3"
+        },
+        {
+          "sealed": "e14759884124ebda2598c31b6398bac1aa681bec9f10cf3937df021c72e9ea91"
+        },
+        {
+          "sealed": "fb0aa83bda811ab460a787d11daf554108b87eb5f11358361916b87db6f5c9ea"
+        }
+      ]
     },
     {
       "url": "https://raw.githubusercontent.com/PaloAltoNetworks/Unit42-timely-threat-intel/main/2026-02-04-IOCs-for-December-2025-Contagious-Interview-activity.txt",
@@ -13980,6 +14024,115 @@
       "title": "김수키(Kimsuky)에서 만든 악성코드-강X철(주)디x에이컨설팅_자사양식",
       "campaign": [
         "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429903",
+      "publisher": "wezard4u",
+      "title": "김수키(Kimsuky)삼X자동화 견적서 드론 자율비행 기술기업을 노린 악성코드 분석",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+      "publisher": "Cyfirma",
+      "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "note": "Cyfirma assesses a North Korean state-nexus actor with high confidence and a Lazarus-ecosystem link with moderate confidence, resting on language and tradecraft rather than shared infrastructure, so it is labelled unattributed DPRK."
+    },
+    {
+      "url": "https://securelist.com/lazarus-operation-flashhole/121541/",
+      "publisher": "Kaspersky Securelist",
+      "title": "Operation FlashHole: Lazarus breaks security, defies control",
+      "campaign": [
+        "Lazarus Group"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+      "publisher": "Nextron Systems",
+      "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "original_url": "https://github.com/NextronSystems/iocs/tree/master/reports/Hunting%20Kimsuky:%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors"
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-13-20-oct-2026",
+      "publisher": "Security Alliance",
+      "title": "SEAL weekly stats: 13-20 Oct, 2026",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "06a3befca7ca6b4f6f3028e33f43989906dc7fd2732569d9852ec6e482692731"
+        },
+        {
+          "sealed": "07ca9ccf2c0d2262beab37e84e5a8760c09c19125807177db118b4e6c7c89e55"
+        },
+        {
+          "sealed": "3817e44744162aef1d94b8524fd23c8ef8fc5ac7c5155f2d488761d425df60a0"
+        },
+        {
+          "sealed": "3906718d977940b93bf53e2a99b673c9491c8c62d45765a1c10c7c23766c4756"
+        },
+        {
+          "sealed": "3b4774f1cf04cdf3c1380be49684625a45d9a7c85c5cef373db54957b25b62fb"
+        },
+        {
+          "sealed": "4d15f46220ad051e5b704f1c09d551aed9798d5a0e2c8796d6b64d29cdd4d056"
+        },
+        {
+          "sealed": "5ab4422067e98c7a18269a1ad8843aa1a3aeba60cb00c2ca1cbfc6c87d63c8d4"
+        },
+        {
+          "sealed": "61f492575fe4f66c08cee182d4d47968c6dbb3abb91d31a4f4f6d5f9771c5f68"
+        },
+        {
+          "sealed": "636daed460316d025a32d7803cdcdcbabe98950ebe3d2a187bc5e3892baa6a52"
+        },
+        {
+          "sealed": "64d6ecc690fc117f251ffed9fe6fe54739d90e8db55def5e37fd44985d262c3f"
+        },
+        {
+          "sealed": "72e906f1a2a47743636fe190208edcecca06070007130ad3a41bc8850ed95717"
+        },
+        {
+          "sealed": "9e8e2bb1a4768866bd7db00e349a8cc3a0871a79014d77a5bbfa1938140b449a"
+        },
+        {
+          "sealed": "a69c9682c4222976e56589a38bed78788da6c3a54af69f64d90f8afd88a3c387"
+        },
+        {
+          "sealed": "e73505aedb0199da332d3be34153f7b3495204bab508085b10d652459478c69c"
+        }
+      ]
+    },
+    {
+      "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+      "publisher": "BlueCyber",
+      "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+      "campaign": [
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
+      ],
+      "note": "The authors' own decoding of the v7.msi EtherRAT sample, starting from Unit 42's published indicators; its NullReceiver section summarises OpenSourceMalware's research with credit.",
+      "exclude": [
+        {
+          "sealed": "6eabbca7b37852e973ed9fbf780498d125687bd2de55dc6b7b2116a5501bf3a1"
+        },
+        {
+          "sealed": "9c30859938083cbc2de4f03d489bc6ed136f036415b86e710499d52e9196670e"
+        },
+        {
+          "sealed": "e55eb95b4bb2103137ccc25194d1d5e8a74029c365db87f6d0f0081df952a7c0"
+        }
       ]
     }
   ],
@@ -19206,34 +19359,49 @@
       "reason": "declined",
       "checked": "2026-10-19",
       "notes": "A white paper behind a download form; the landing page carries no indicators."
-    }
-  ],
-  "discovered": [
+    },
     {
-      "url": "https://nkinternet.com/2026/10/06/north-korea-company-tracker/",
-      "publisher": "NKInternet",
-      "title": "Explore the New DPRK Trade Directory for Companies and Contacts",
-      "published": "2026-10-06",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korea",
-        "North Korean",
-        "DPRK"
-      ],
-      "discovered": "2026-10-12"
+      "url": "https://www.wiz.io/blog/gheist-attempted-scaled-abuse-of-stolen-github-tokens-stumbles",
+      "publisher": "Wiz",
+      "reason": "declined",
+      "notes": "Wiz does not attribute Gheist to DPRK; it notes only that some victims were also infected with PolinRider. Its indicators are workflow blob hashes and strings, with no network or account values.",
+      "checked": "2026-10-26"
+    },
+    {
+      "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6860024_37004.html",
+      "publisher": "MBC",
+      "reason": "declined",
+      "notes": "A news report of a police investigation into a North Korean IT worker hired by a South Korean company; it names no company, account or other identifier.",
+      "checked": "2026-10-26"
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/the-opensourcemalwareshow-episode26",
+      "publisher": "OpenSourceMalware",
+      "reason": "declined",
+      "notes": "An episode of the publisher's video show; the page carries no indicator text of its own.",
+      "checked": "2026-10-26"
+    },
+    {
+      "url": "https://medium.com/@tarunrd77/north-korea-backdoored-their-vs-code-npm-kept-bringing-it-back-6371da5e74c4",
+      "publisher": "tarunrd77",
+      "reason": "blocked",
+      "notes": "Medium answered 403 to the fetch.",
+      "checked": "2026-10-26"
     },
     {
       "url": "https://x.com/zachxbt/status/2107081638073319437",
       "publisher": "ZachXBT",
-      "title": "How I infiltrated a Chinese organized crime syndicate that has laundered $1B+ across multiple exploits for Lazarus Group",
-      "published": "2026-10-05",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "Lazarus",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-10-12"
+      "reason": "declined",
+      "notes": "X answers the scraper with HTTP 402; the thread was read in a browser and its addresses transcribed by hand into x-dossiers.json on 26 October 2026.",
+      "checked": "2026-10-26"
+    },
+    {
+      "url": "https://nkinternet.com/2026/10/06/north-korea-company-tracker/",
+      "publisher": "NKInternet",
+      "reason": "declined",
+      "notes": "Announces a directory of North Korean trading companies scraped from the Foreign Trade of the DPRK magazine, with the companies' trade contacts and UN sanctions matches; nothing in it is a cyber indicator. Read in a browser on 26 October 2026, since the site refuses the scraper's TLS handshake.",
+      "checked": "2026-10-26"
     }
-  ]
+  ],
+  "discovered": []
 }

@@ -9940,6 +9940,44 @@
     "date_added": "2026-10-18"
   },
   {
+    "id": "nullreceiver-c2-ip-91-218-183-174",
+    "ioc_type": "ip_address",
+    "value": "91.218.183.174",
+    "campaign": [
+      "EtherHiding",
+      "NullReceiver",
+      "Contagious Interview",
+      "PolinRider"
+    ],
+    "description": "Command-and-control IP decoded from the NullReceiver destination address 0x5bdab7ae5bdab7ae68656c6c6f6970626f742121 that the watchlisted resolver wallet pointed to from 2026-09-28 to 2026-10-06, across 67 transactions. SafeDep's PolinRider report of 30 September 2026 names the same address as the current C2 read from the same wallet. It is recorded as the address the malware resolves to, not as a host this site has observed serving anything.",
+    "malware_family": "NullReceiver",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x38f67c5ef7c3b017eac85ce8a2dda420921461852e74febda440ce73d482cfef",
+        "url": "https://etherscan.io/tx/0x38f67c5ef7c3b017eac85ce8a2dda420921461852e74febda440ce73d482cfef",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-09-28",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "PolinRider Switches to Ethereum C2 in 30+ Repositories",
+        "url": "https://safedep.io/polinrider-ethereum-c2-github-repositories",
+        "publisher": "SafeDep",
+        "date": "2026-09-30",
+        "type": "threat_intel_report"
+      },
+      {
+        "title": "NullReceiver's Blank Crypto Transfers Solves the Challenges of EtherHiding",
+        "url": "https://opensourcemalware.com/blog/nullreceiver-dprk-c2-technique",
+        "publisher": "OpenSourceMalware",
+        "date": "2026-08-02",
+        "type": "threat_intel_report"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
     "id": "xctdh-c2-ip-111-90-143-39",
     "ioc_type": "ip_address",
     "value": "111.90.143.39",
@@ -10677,6 +10715,83 @@
       }
     ],
     "date_added": "2026-10-20"
+  },
+  {
+    "id": "remus-stealer-contract-999941b7",
+    "ioc_type": "smart_contract_address",
+    "value": "0x999941b74f6bbc921d5174a5b29911562cd2d7cf",
+    "chain": "ethereum",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Ethereum contract the Remus infostealer queries through public RPC endpoints to resolve its C2 URL, in a Turkish-language fake cracked-software campaign Unit 42 reported in July 2026; Unit 42 had named the same contract in a May 2026 RemusStealer note.",
+    "malware_family": "RemusStealer",
+    "confidence_level": "low",
+    "attribution_doubt": "Unit 42 reports RemusStealer as commodity infostealer activity spread through SEO-poisoned warez sites and ties it to no state actor. No published source ties it to North Korea.",
+    "sources": [
+      {
+        "title": "Remus Info-Stealer Uses Blockchain-Anchored C2 and Fake Cracked Software Lures",
+        "url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-30-Remus-Info-Stealer-Uses-Blockchain-Anchored-C2.txt",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2026-07-30",
+        "type": "threat_intel_report",
+        "quote": "0x999941b74F6bbc921D5174A5b29911562cd2D7CF (smart contract queried to resolve the C2 URL)"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
+    "id": "tsundere-npm-dropper-contract-a1b40044",
+    "ioc_type": "smart_contract_address",
+    "value": "0xa1b40044ebc2794f207d45143bd82a1b86156c6b",
+    "chain": "ethereum",
+    "onchain_role": "mapping_c2_contract",
+    "operators": [
+      "0x52221c293a21d8ca7afd01ac6bfac7175d590a84"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Ethereum contract malicious npm packages call with getString(address) to read the server they download a node binary from, passing the key 0x52221c293a21D8CA7AFD01Ac6bFAC7175D590A84; Unit 42 listed both in July 2026.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Unit 42 lists this among npm and PyPI packages from \"multiple distinct threat actors\" and names none; the same contract and key are the Tsundere botnet's, which Kaspersky reported in November 2025 with no North Korean link. No published source ties it to North Korea.",
+    "sources": [
+      {
+        "title": "Further malicious infrastructure from npm and PyPI supply chain packages",
+        "url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-21-Malicious-npm-PyPI-Supply-Chain-packages.txt",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2026-07-21",
+        "type": "threat_intel_report",
+        "quote": "0xa1b40044EBc2794f207D45143Bd82a1B86156c6b"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
+    "id": "tsundere-npm-dropper-key-52221c29",
+    "ioc_type": "wallet_address",
+    "value": "0x52221c293a21d8ca7afd01ac6bfac7175d590a84",
+    "chain": "ethereum",
+    "onchain_role": "owner_eoa",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Lookup key the npm droppers pass to the resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b to read their download server.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Unit 42 lists this among npm and PyPI packages from \"multiple distinct threat actors\" and names none; the same contract and key are the Tsundere botnet's, which Kaspersky reported in November 2025 with no North Korean link. No published source ties it to North Korea.",
+    "sources": [
+      {
+        "title": "Further malicious infrastructure from npm and PyPI supply chain packages",
+        "url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-21-Malicious-npm-PyPI-Supply-Chain-packages.txt",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2026-07-21",
+        "type": "threat_intel_report",
+        "quote": "0x52221c293a21D8CA7AFD01Ac6bFAC7175D590A84"
+      }
+    ],
+    "date_added": "2026-10-26"
   },
   {
     "id": "xctdh-c2-ip-95-135-181-15",

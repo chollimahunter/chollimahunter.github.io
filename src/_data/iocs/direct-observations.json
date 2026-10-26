@@ -21669,6 +21669,52 @@
         }
       ],
       "note": "SOCRadar's Operation Conflict Compass report (28 September 2026) names this GitHub account as the threat actor's and lists its four repositories as the VelvetCake staging infrastructure: the first-stage okay.md and the task-scheduling script history, the two zipped LNK lures (A_Century_Long_Peace_Architecture_for_Russia-Ukraine_Introduction.pdf and CV_OlesiaTsvientukh_SocialResearcher_Sociologist_Qualitative), and the trojanized zoominstaller.exe. Read through the GitHub API on 1 October 2026: the account was created on 18 August 2026, all four repositories were still public, and every commit is authored as omski00@outlook.com, the address SOCRadar gives for the actor. Nothing was downloaded."
+    },
+    {
+      "label": "Trojanized palooza repository on the togetherlabsinchub account and its BeaverTail C2",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-10-26",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/togetherlabsinchub/palooza",
+          "date": "2026-10-26"
+        },
+        {
+          "url": "https://github.com/stamparm/trails/blob/b258350295e9871463f30ca09a0adcc6e5566021/malware/apt_lazarus.txt",
+          "date": "2026-10-26"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "malicious_repository",
+          "value": "togetherlabsinchub/palooza",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/togetherlabsinchub",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "151.80.76.64",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "151.80.76.66",
+          "post": 1
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "151.80.76.67",
+          "post": 1
+        }
+      ],
+      "note": "Endpoint telemetry from a developer who downloaded the main-branch archive of togetherlabsinchub/palooza from GitHub, reported to this site in October 2026, shows the project started with node server.js and then a Node.js child process run inline with node -e, carrying a campaign identifier, a numeric key and the C2 address http://151.80.76.64:1224/. That shape, an inline loader calling back to port 1224 and identifying itself to the server, is the BeaverTail first stage of the Contagious Interview campaign, delivered as a coding exercise in a fake job interview. The account name borrows that of Together Labs, Inc., a real company with no part in this; impersonating a real employer is the campaign's usual lure. By 26 October 2026 the account and the repository both returned not found through the GitHub API, and the Wayback Machine holds no capture of either, so the repository is listed as a removed link. Nothing from it was downloaded or run. Maltrail's Lazarus trail list carries 151.80.76.64 on ports 1224 and 3333 (the BeaverTail and InvisibleFerret ports), together with 151.80.76.66 and 151.80.76.67 on the same two ports. All three sit on OVH in Roubaix, rented through the Windows VPS reseller RDP Quick with remote desktop open. Shodan's InternetDB on 26 October 2026 showed a Node.js Express server on 151.80.76.64 port 3333 and on 151.80.76.66 port 1224, so at least two of the three were serving that day."
     }
   ]
 }

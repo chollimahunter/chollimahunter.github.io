@@ -9,7 +9,7 @@
  *
  * Run manually:
  *   node scripts/sync-iproyal-free-proxies.js
- *   node scripts/sync-iproyal-free-proxies.js --from saved-page.html
+ *   node scripts/sync-iproyal-free-proxies.js --from saved-records.json
  *
  * Run on a schedule: see .github/workflows/sync-itworker-datasets.yml,
  * which runs this weekly next to the DTEX and Spur syncs and opens a PULL
@@ -22,12 +22,11 @@
  * disclaimer says so, and a match means "a connection through a public
  * proxy on IPRoyal's list", nothing about who was behind it.
  *
- * The page is HTML rather than a plain list, and its markup is not under
- * this repository's control, so the parser is deliberately loose: it takes
- * every IPv4 address that is followed, within a few characters, by a port
- * number, whether the pair sits in table cells or in an embedded JSON state
- * object, and also follows any .txt/.csv/.json download link the page offers
- * on the same host. It refuses to write when it parses fewer than
+ * The page fills its table in the browser from IPRoyal's CMS
+ * (api/free-proxy-records), so the script reads the same records: it finds
+ * the table component the page loads, takes the CMS address and the
+ * read-only token from it, and pages through every record. It refuses to
+ * write when it parses fewer than
  * MIN_ADDRESSES, or fewer than half the entries already stored, so a layout
  * change produces a failed run and not a pull request that empties the list.
  *
@@ -61,6 +60,8 @@ const DATA_PATH = path.join(__dirname, "..", "src", "_data", "iocs", "itworker-d
 const DATASET_ID = "iproyal-free-proxy-ips";
 const MAX_BYTES = 10 * 1024 * 1024;
 const MIN_ADDRESSES = 20;
+const PAGE_SIZE = 1000;
+const MAX_PAGES = 50;
 const USER_AGENT = "Mozilla/5.0 (compatible; ChollimaHunterSync/1.0)";
 
 async function fetchText(url) {
@@ -74,60 +75,61 @@ async function fetchText(url) {
 }
 
 /**
- * Every IPv4 address followed, with no other digit in between, by a 1-5 digit
- * port within 60 characters. The gap allows a closing and opening table cell,
- * a colon, or JSON punctuation such as `","port":`. The port must not be the
- * first octet of the next address, so an address with no port of its own (the
- * visitor's IP in a banner, say) pairs with nothing and is dropped.
+ * The page renders its table in the browser from IPRoyal's CMS, through a
+ * script component that carries the CMS address and a read-only access token
+ * every visitor's browser receives. Both are read from the live script on each
+ * run rather than stored here, so a rotated token or a moved component is
+ * picked up without a code change. The token is never printed.
  */
-const PAIR = /\b(\d{1,3}(?:\.\d{1,3}){3})\b[^0-9]{1,60}?(\d{1,5})\b(?!\.\d)/g;
+async function cmsAccess() {
+  const html = await fetchText(PAGE_URL);
+  const component = html.match(/component-url="([^"]*FreeProxyListTable[^"]*\.js)"/);
+  if (!component) throw new Error("the page no longer loads a FreeProxyListTable component");
+  const script = await fetchText(new URL(component[1], PAGE_URL).href);
+  const base = script.match(/baseURL:\s*[`"'](https:\/\/[^`"']+)[`"']/);
+  const token = script.match(/Bearer ([0-9a-f]{32,})/);
+  if (!base || !token) throw new Error("the table component no longer names a CMS address and access token");
+  if (!script.includes("api/free-proxy-records")) throw new Error("the table component no longer reads api/free-proxy-records");
+  return { base: base[1], token: token[1] };
+}
 
-function extractAddresses(text) {
+/** Every record the CMS holds, a page of PAGE_SIZE at a time. */
+async function fetchRecords() {
+  const { base, token } = await cmsAccess();
+  const records = [];
+  for (let page = 1, pageCount = 1; page <= pageCount && page <= MAX_PAGES; page++) {
+    const url = `${base}/api/free-proxy-records?fields[0]=ip&fields[1]=port&pagination[page]=${page}&pagination[pageSize]=${PAGE_SIZE}`;
+    const res = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT, Authorization: `Bearer ${token}` },
+      signal: AbortSignal.timeout(60000),
+    });
+    if (!res.ok) throw new Error(`CMS page ${page} failed: ${res.status} ${res.statusText}`);
+    const body = await res.json();
+    if (!Array.isArray(body.data)) throw new Error(`CMS page ${page} has no data array`);
+    records.push(...body.data);
+    pageCount = Number(body.meta?.pagination?.pageCount) || 1;
+  }
+  return records;
+}
+
+function extractAddresses(records) {
   const valid = [];
   let malformed = 0;
   const seen = new Set();
-  for (const m of text.matchAll(PAIR)) {
-    const port = Number(m[2]);
-    if (port < 1 || port > 65535) continue;
-    const value = normalizeIpv4(m[1]);
+  for (const r of records) {
+    const port = Number(r.port);
+    const value = Number.isInteger(port) && port >= 1 && port <= 65535 ? normalizeIpv4(String(r.ip ?? "")) : null;
     if (!value) { malformed++; continue; }
     if (!seen.has(value)) { seen.add(value); valid.push(value); }
   }
   return { valid, malformed };
 }
 
-/** A .txt/.csv/.json link on the same host, if the page offers a download. */
-function downloadLinks(html) {
-  const out = new Set();
-  for (const m of html.matchAll(/href="([^"]+\.(?:txt|csv|json)(?:\?[^"]*)?)"/gi)) {
-    try {
-      const u = new URL(m[1], PAGE_URL);
-      if (u.hostname === new URL(PAGE_URL).hostname) out.add(u.href);
-    } catch {}
-  }
-  return [...out].slice(0, 3);
-}
-
 async function fetchList() {
   const fromIdx = process.argv.indexOf("--from");
-  const html = fromIdx >= 0 ? fs.readFileSync(process.argv[fromIdx + 1], "utf8") : await fetchText(PAGE_URL);
-  let { valid, malformed } = extractAddresses(html);
-  if (fromIdx < 0) {
-    for (const link of downloadLinks(html)) {
-      try {
-        const more = extractAddresses(await fetchText(link));
-        for (const v of more.valid) if (!valid.includes(v)) valid.push(v);
-        malformed += more.malformed;
-        console.log(`Followed download link ${link}: ${more.valid.length} address(es).`);
-      } catch (err) {
-        console.log(`Download link ${link} skipped: ${err.message}`);
-      }
-    }
-  }
+  const records = fromIdx >= 0 ? JSON.parse(fs.readFileSync(process.argv[fromIdx + 1], "utf8")) : await fetchRecords();
+  const { valid, malformed } = extractAddresses(Array.isArray(records) ? records : records.data ?? []);
   if (valid.length < MIN_ADDRESSES) {
-    // Print the shape of what came back, so a layout change is diagnosable
-    // from the workflow log without re-fetching the page by hand.
-    console.error(`page yielded ${valid.length} address(es); first 400 characters of the body:\n${html.slice(0, 400)}`);
     throw new Error(`only ${valid.length} addresses parsed; refusing to overwrite the dataset`);
   }
   const key = (ip) => ip.split(".").map((n) => n.padStart(3, "0")).join(".");
@@ -179,7 +181,7 @@ async function main() {
     excluded_count: malformed,
     excluded_notes:
       malformed > 0
-        ? `${malformed} address(es) on the page were not a single routable IPv4 host address and were excluded rather than guessed at.`
+        ? `${malformed} record(s) on the list were excluded because the index does not carry the address: CDN edge addresses (most of them Cloudflare's, shared by millions of sites), network or reserved addresses, public resolvers, or a value that is not a dotted IPv4 address with a valid port.`
         : undefined,
     entries: unique,
   };

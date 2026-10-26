@@ -18,18 +18,21 @@ day the list was read, and nothing about who was behind it.
 
 ## How it works
 
-1. Fetches the page and takes every IPv4 address that is followed, with no
-   other digit in between, by a port number, whether the pair sits in table
-   cells or in an embedded JSON state object. It also follows up to three
-   `.txt`, `.csv` or `.json` download links on the same host, if the page
-   offers any.
+1. The page renders its table in the browser from IPRoyal's CMS
+   (`api/free-proxy-records`), so the script reads the same records. It
+   fetches the page, finds the `FreeProxyListTable` script component it loads,
+   and takes the CMS address and the read-only access token from that script,
+   the same token every visitor's browser receives. Both are read on each run
+   and never stored or printed, so a rotated token needs no code change. It
+   then pages through every record, a thousand at a time.
 2. Keeps every address the index's own normaliser accepts and counts the rest
-   as excluded, never guessed at.
+   as excluded, never guessed at. About one record in eight is excluded, nearly
+   all of them Cloudflare edge addresses and network (`.0`) addresses.
 3. Refuses to write if fewer than 20 addresses parsed, or fewer than half the
-   entries already stored. The page's markup is not under this repository's
-   control, so a layout change produces a failed run with the first 400
-   characters of the body in the log, not a pull request that empties the
-   list.
+   entries already stored, and fails with a named reason if the page stops
+   loading the component or the component stops naming the CMS and token. A
+   change on IPRoyal's side produces a failed run, not a pull request that
+   empties the list.
 4. Deduplicates, sorts numerically, diffs against what is stored, and
    overwrites the dataset object in place with a fresh `sync.last_synced`.
 5. Prints `CHANGED=true` or `CHANGED=false` as its last line; the workflow
@@ -39,11 +42,11 @@ day the list was read, and nothing about who was behind it.
 
 ```
 node scripts/sync-iproyal-free-proxies.js
-node scripts/sync-iproyal-free-proxies.js --from saved-page.html
+node scripts/sync-iproyal-free-proxies.js --from saved-records.json
 ```
 
-The `--from` form parses a saved copy of the page, for a machine that cannot
-reach the site. The weekly run is `.github/workflows/sync-itworker-datasets.yml`;
+The `--from` form reads a saved CMS response (or a plain array of its
+records), for a machine that cannot reach the site. The weekly run is `.github/workflows/sync-itworker-datasets.yml`;
 a manual dispatch of that workflow runs it at once. The first run creates the
 dataset object, so it is absent until then.
 
