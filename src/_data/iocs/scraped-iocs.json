@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T04:14:28Z",
-  "record_count": 11982,
+  "generated_at": "2026-10-26T04:49:27Z",
+  "record_count": 12050,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -4471,6 +4471,36 @@
       ]
     },
     {
+      "id": "domain-928ba628093c",
+      "ioc_type": "domain",
+      "value": "javadevhouse.co.kr",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Lazarus Group"
+      ],
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://securelist.com/lazarus-operation-flashhole/121541/",
+          "title": "Operation FlashHole: Lazarus breaks security, defies control",
+          "publisher": "Kaspersky Securelist",
+          "published": "2026-10-21",
+          "context": "…Files\\Common Files\\System\\msadc\\msadc.inc C:\\ProgramData\\desktops.ini C2 servers javadevhouse.co.kr pythonapischool.com https://cubedesign.co.kr/news C2 of Cubridge https://cubedesign.co.kr/mobile/fashion C2…",
+          "context_origin": "text",
+          "section": "C2 servers",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "620830e29d04d47502a4ca9f7da0371f28a5a031b839524e75ab873b4dca573b"
+        }
+      ]
+    },
+    {
       "id": "domain-4cb6ba0e81b8",
       "ioc_type": "domain",
       "value": "jennifer998.lookin.at",
@@ -5784,6 +5814,36 @@
           "section": "C2",
           "pulled_at": "2026-09-12",
           "source_sha256": "64b0af984dd0d3c6c3dfd3a9fb3aaa98ffba569970c2f34fefb0985a67822d21"
+        }
+      ]
+    },
+    {
+      "id": "domain-9b1794b585d8",
+      "ioc_type": "domain",
+      "value": "pythonapischool.com",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Lazarus Group"
+      ],
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://securelist.com/lazarus-operation-flashhole/121541/",
+          "title": "Operation FlashHole: Lazarus breaks security, defies control",
+          "publisher": "Kaspersky Securelist",
+          "published": "2026-10-21",
+          "context": "…Files\\Common Files\\System\\msadc\\msadc.inc C:\\ProgramData\\desktops.ini C2 servers javadevhouse.co.kr pythonapischool.com https://cubedesign.co.kr/news C2 of Cubridge https://cubedesign.co.kr/mobile/fashion C2 of Cubridge…",
+          "context_origin": "text",
+          "section": "C2 servers",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "620830e29d04d47502a4ca9f7da0371f28a5a031b839524e75ab873b4dca573b"
         }
       ]
     },
@@ -51371,6 +51431,70 @@
           "section": "Summary",
           "pulled_at": "2026-10-01",
           "source_sha256": "2956b43a924f00d53e3680f9f6107100e6067c1d2d03f1f1388f85de51c16818"
+        }
+      ]
+    },
+    {
+      "id": "email-address-5dd03faf8adb",
+      "ioc_type": "email_address",
+      "value": "helpdesk@progressive934.onmicrosoft",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
+      ],
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…Tài khoản của kẻ tấn công helpdesk@Progressive934.onmicrosoft .com - Tài khoản của kẻ tấn công (tên hiển thị \"System Administrator\") Progressive934.onmicrosoft.com - Tên miền tenant của kẻ tấn…",
+          "context_origin": "text",
+          "section": "Tài khoản của kẻ tấn công",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
+        }
+      ]
+    },
+    {
+      "id": "email-address-2a4c68d31e06",
+      "ioc_type": "email_address",
+      "value": "helpdesk@progressive934.onmicrosoft.com",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
+      ],
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…kiểm toán (audit log) của Teams xác nhận một cuộc trò chuyện OneOnOne xuyên tenant được khởi tạo từ tài khoản do kẻ tấn công kiểm soát: helpdesk@Progressive934.onmicrosoft.com (tài khoản của kẻ tấn công) 310e9ead-4f6f-491e-aafe-feb08c8d17a4 (tenant ID của kẻ tấn công) HasForeignTenantUsers: true Phiên làm việc…",
+          "context_origin": "text",
+          "section": "2.1. Truy cập ban đầu qua giả mạo hỗ trợ IT trên Microsoft Teams",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -136903,6 +137027,36 @@
       ]
     },
     {
+      "id": "file-hash-4a84573c59dc",
+      "ioc_type": "file_hash",
+      "value": "01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149",
+      "display": "01f1a70bfc00...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…IOCs ### File Hashes (SHA-256) **Malicious LNK Files** ``` 0fc425836eb854914525302b59cb8300b709c3e51ad776455a7eb5e29356d4f3 01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149 c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df 8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef 4555744f4…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
+        }
+      ]
+    },
+    {
       "id": "file-hash-236c502c25e0",
       "ioc_type": "file_hash",
       "value": "01f3a22bf3e409154e79e067370ed98a",
@@ -144186,6 +144340,36 @@
       ]
     },
     {
+      "id": "file-hash-dd4df9269d9e",
+      "ioc_type": "file_hash",
+      "value": "0c5486f06620e26e316f4b33f318b0d646d5e1133789331aa2fed012360d1486",
+      "display": "0c5486f06620...",
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…Malware hashes HASH TYPE FAMILY / NOTE 0c5486f06620e26e316f4b33f318b0d646d5e1133789331aa2fed012360d1486 SHA-256 ‘nfs’ second stage (ELF x86-64, stripped, 179,632 bytes); single honeypot vendor report, not independently corroborated…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "file-hash-2cb863d01b91",
       "ioc_type": "file_hash",
       "value": "0c5b6081e73a500825eae5687961565bf0e918e91002ce5ff10185ac969a792b",
@@ -146289,6 +146473,36 @@
           "section": "Details",
           "pulled_at": "2026-09-12",
           "source_sha256": "683387ef0ab32a1241333bcc866b28b10fb9e956f852260304a30614a5e9bd3c"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-4d24624ad0c5",
+      "ioc_type": "file_hash",
+      "value": "0fc425836eb854914525302b59cb8300b709c3e51ad776455a7eb5e29356d4f3",
+      "display": "0fc425836eb8...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…Stacked together, they're a high-confidence detection. ## IOCs ### File Hashes (SHA-256) **Malicious LNK Files** ``` 0fc425836eb854914525302b59cb8300b709c3e51ad776455a7eb5e29356d4f3 01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149 c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df 8fb56f3d6…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -157679,6 +157893,36 @@
           "section": "3. Conclusion",
           "pulled_at": "2026-09-12",
           "source_sha256": "a59c6bea60d59aecd385bbaff71ff35415d3a2560eb8bf520d3c15e2d7bcf4e3"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-b0fe6c7b7fcc",
+      "ioc_type": "file_hash",
+      "value": "2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562",
+      "display": "270544175888...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…1a6540eef 4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c 85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4 2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562 50de7ddaf89d5aec643a449f7bb20e3b3ab5321bba1444a5c746ca4187170777 52fd47ca5f9a4bd2f5a87b4e9de502a93b1eaecdb3e4bf4a3fede0c34e01ab26 ``` ###…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -170605,6 +170849,36 @@
       ]
     },
     {
+      "id": "file-hash-b22d927c40f2",
+      "ioc_type": "file_hash",
+      "value": "43898a0a53bbd25d31ad9f5018ed3182be98a66109b22c9cab545a9fc447992a",
+      "display": "43898a0a53bb...",
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…A.4 is the durable alternative” condition: filesize < 2MB and ( hash.sha256(0, filesize) == “43898a0a53bbd25d31ad9f5018ed3182be98a66109b22c9cab545a9fc447992a” or hash.sha256(0, filesize) == “7bc41ed79a9ae909927a9e40701736460a8cb70fca16ce1510e58677aca764b6” ) } rule…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "file-hash-e5e4c5570986",
       "ioc_type": "file_hash",
       "value": "43d1ef55c9d33472a5532de5bbe814fefa5205297653201c30fdc91b8f21a0ed",
@@ -171137,6 +171411,36 @@
           "section": "POOLRAT ...seen before? rule MTI_Hunting_POOLRAT { meta: author",
           "pulled_at": "2026-09-12",
           "source_sha256": "cc22e7aecbe3c08fff85433c64d45365ec11b9e3521daf62df460c72eca09325"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-23e1cd72d477",
+      "ioc_type": "file_hash",
+      "value": "4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c",
+      "display": "4555744f4a32...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…f9aad2149 c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df 8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef 4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c 85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4 2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562 50de7ddaf…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -176050,6 +176354,36 @@
       ]
     },
     {
+      "id": "file-hash-637273259adc",
+      "ioc_type": "file_hash",
+      "value": "50de7ddaf89d5aec643a449f7bb20e3b3ab5321bba1444a5c746ca4187170777",
+      "display": "50de7ddaf89d...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…536ee667c 85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4 2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562 50de7ddaf89d5aec643a449f7bb20e3b3ab5321bba1444a5c746ca4187170777 52fd47ca5f9a4bd2f5a87b4e9de502a93b1eaecdb3e4bf4a3fede0c34e01ab26 ``` ### Staging Paths | Path | Purpose | |------|---------| |…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
+        }
+      ]
+    },
+    {
       "id": "file-hash-8964bc64b038",
       "ioc_type": "file_hash",
       "value": "50e4d8a112e4aad2c984d22f83c80c8723f232da",
@@ -176914,6 +177248,36 @@
           "section": "IOCs",
           "pulled_at": "2026-10-01",
           "source_sha256": "6218d861a2766a09d7748c2d072ea9aaada6b29076336dda352dd0a72ce96b75"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-7da77d24ae3d",
+      "ioc_type": "file_hash",
+      "value": "52fd47ca5f9a4bd2f5a87b4e9de502a93b1eaecdb3e4bf4a3fede0c34e01ab26",
+      "display": "52fd47ca5f9a...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…1480745b4 2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562 50de7ddaf89d5aec643a449f7bb20e3b3ab5321bba1444a5c746ca4187170777 52fd47ca5f9a4bd2f5a87b4e9de502a93b1eaecdb3e4bf4a3fede0c34e01ab26 ``` ### Staging Paths | Path | Purpose | |------|---------| | `C:\\Users\\Public\\Videos\\Samples\\` | Primary staging directory | |…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -193743,6 +194107,36 @@
       ]
     },
     {
+      "id": "file-hash-042cab667fa3",
+      "ioc_type": "file_hash",
+      "value": "7bc41ed79a9ae909927a9e40701736460a8cb70fca16ce1510e58677aca764b6",
+      "display": "7bc41ed79a9a...",
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…and ( hash.sha256(0, filesize) == “43898a0a53bbd25d31ad9f5018ed3182be98a66109b22c9cab545a9fc447992a” or hash.sha256(0, filesize) == “7bc41ed79a9ae909927a9e40701736460a8cb70fca16ce1510e58677aca764b6” ) } rule PHP2Shell_Infrastructure_IPs_In_Content { meta: description = “Finds PHP2Shell-associated IPs (six anonymisation-network…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "file-hash-c003298db38d",
       "ioc_type": "file_hash",
       "value": "7bc4b78001434b68355e9b57a822b9c1",
@@ -198198,6 +198592,36 @@
       ]
     },
     {
+      "id": "file-hash-958b1dd0561b",
+      "ioc_type": "file_hash",
+      "value": "85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4",
+      "display": "85d3c1500e80...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…a4d37f7df 8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef 4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c 85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4 2705441758889528e6cf333182799b2e51b458546e7706858e8789eaedb52562 50de7ddaf89d5aec643a449f7bb20e3b3ab5321bba1444a5c746ca4187170777 52fd47ca5…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
+        }
+      ]
+    },
+    {
       "id": "file-hash-014343299415",
       "ioc_type": "file_hash",
       "value": "85db55aab78103f7c2d536ce79e923c5fd9af14a2683f8bf290993828bddeb50",
@@ -202437,6 +202861,36 @@
           "section": "IOC's & Artifacts",
           "pulled_at": "2026-09-12",
           "source_sha256": "b3d1866c0e43914ec757cd34d8e3c2ba1986267dc1a174064102caf35a671f1c"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-bc5c304fc86e",
+      "ioc_type": "file_hash",
+      "value": "8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef",
+      "display": "8fb56f3d63e5...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…29356d4f3 01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149 c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df 8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef 4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c 85d3c1500e80b4782f3c1488adacfd14668ad99f3b4f01da3b0c4f31480745b4 270544175…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -217082,6 +217536,36 @@
       ]
     },
     {
+      "id": "file-hash-6c143bd8959e",
+      "ioc_type": "file_hash",
+      "value": "b61a098fc62a2c2696e196dca78da71a",
+      "display": "b61a098fc62a...",
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…SHA-256 ‘nfs’ second stage (ELF x86-64, stripped, 179,632 bytes); single honeypot vendor report, not independently corroborated b61a098fc62a2c2696e196dca78da71a MD5 ‘nfs’ second stage E.…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "file-hash-a59bafdecaef",
       "ioc_type": "file_hash",
       "value": "b63e8d4277b190e2e3f5236f07f89eee",
@@ -222277,6 +222761,36 @@
           "section": "PE Metadata",
           "pulled_at": "2026-10-01",
           "source_sha256": "8f01ab7ee849de92eb5506f66f312374190e75ec4f77929c24f033a7ce3cc40f"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-cafbbf99f75d",
+      "ioc_type": "file_hash",
+      "value": "c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df",
+      "display": "c470bef11578...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-10-26",
+      "last_seen": "2026-10-26",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md",
+          "title": "Hunting Kimsuky: Multi-Language LNK Lures Delivering Persistent Backdoors",
+          "publisher": "Nextron Systems",
+          "published": null,
+          "context": "…les** ``` 0fc425836eb854914525302b59cb8300b709c3e51ad776455a7eb5e29356d4f3 01f1a70bfc0016d3fceefb3b2133977a6a9649ad1c54280fcbbe1a8f9aad2149 c470bef115787abcc9a1d1df9213a072ab2b6daea5eaaa18a4378bca4d37f7df 8fb56f3d63e5dbc55695fe6e043707a933116ace43db4d3d67f42341a6540eef 4555744f4a328cddca885938f8fee83133be93c59be33a3e0b2906b536ee667c 85d3c1500…",
+          "context_origin": "text",
+          "section": "File Hashes (SHA-256)",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "f419c2978cf3f6fd59a764456a16c27d5138b039783dbd7a658e223e14741ba9"
         }
       ]
     },
@@ -274386,6 +274900,36 @@
       ]
     },
     {
+      "id": "ip-address-f745b7f958ee",
+      "ioc_type": "ip_address",
+      "value": "102.207.250.188",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…Priority: BLOCK / MONITOR; hunt in logs for prior contact. # IPV4 ACTIVITY PRIORITY 1 102.207.250.188 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 2 94.154.43.185 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-43b36eb0bb24",
       "ioc_type": "ip_address",
       "value": "102.215.28.11",
@@ -274597,6 +275141,36 @@
           "section": "Recommended by LinkedIn",
           "pulled_at": "2026-09-12",
           "source_sha256": "bcaa427624e2fba8bac0cdb8710d0f78cbc40d16ca82ba3f907396a4bf3bf8ae"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-cc97096896dd",
+      "ioc_type": "ip_address",
+      "value": "103.114.163.188",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “31.223.184.166” ascii wide fullword $ip3 = “37.19.200.5” ascii wide fullword $ip4 = “134.209.159.64” ascii wide fullword $ip5 = “103.114.163.188” ascii wide fullword $ip6 = “95.217.98.37” ascii wide fullword $ip7 = “92.118.112.100” ascii wide fullword $ip8 = “85.11.167.243” ascii…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -275860,6 +276434,36 @@
       ]
     },
     {
+      "id": "ip-address-64a0fa8678fa",
+      "ioc_type": "ip_address",
+      "value": "103.21.161.105",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 13 95.216.5.90 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 14 103.21.161.105 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 15 115.96.27.126 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-592d4b4a01ec",
       "ioc_type": "ip_address",
       "value": "103.212.120.253",
@@ -275980,6 +276584,36 @@
           "section": "Appendix C: Astrill VPN Nodes",
           "pulled_at": "2026-09-12",
           "source_sha256": "cf19e2de6b1cbccb8d5a118a487f8b2f94cb85661360e29ae1fb7332929ebba8"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-7eed83deb0bb",
+      "ioc_type": "ip_address",
+      "value": "103.216.220.92",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…(egress) http://92.118.112.100/nfs URL / staging Mirai-style loader fetched to /tmp, run with arg ‘php’ BLOCK FIRST (egress) 103.216.220.92 IPv4 Pre-disclosure exploit attempt, 17 Oct (Amazon MadPot) MONITOR & HUNT php2shell-scan/109618 User-Agent Leak-derived…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -276946,6 +277580,36 @@
           "section": "본문",
           "pulled_at": "2026-09-12",
           "source_sha256": "41300054ebe8ed18f89da9e5f0ca040b608d8cc7c00432a4a2247c31dfb844b6"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-1a3c24af85f8",
+      "ioc_type": "ip_address",
+      "value": "103.77.210.80",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 8 185.235.212.105 Staging / target-list hosting / launch MONITOR & HUNT 9 103.77.210.80 Staging / target-list hosting / launch MONITOR & HUNT 10 128.90.176.13 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -282701,6 +283365,66 @@
       ]
     },
     {
+      "id": "ip-address-36b6e864e55a",
+      "ioc_type": "ip_address",
+      "value": "109.56.219.150",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 4 147.78.168.57 Staging / target-list hosting / launch MONITOR & HUNT 5 109.56.219.150 Staging / target-list hosting / launch MONITOR & HUNT 6 158.173.75.178 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-0d38df981b5f",
+      "ioc_type": "ip_address",
+      "value": "109.71.252.97",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “92.118.112.100” ascii wide fullword $ip8 = “85.11.167.243” ascii wide fullword $ip9 = “45.198.224.169” ascii wide fullword $ip10 = “109.71.252.97” ascii wide fullword condition: any of them } rule PHP2Shell_Request_Shape_In_Capture { meta: description = “PHP2Shell scanner/PoC…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-e486ee4ee8e7",
       "ioc_type": "ip_address",
       "value": "109.82.113.75",
@@ -284799,6 +285523,36 @@
       ]
     },
     {
+      "id": "ip-address-c1dd22bfcf2f",
+      "ioc_type": "ip_address",
+      "value": "115.96.27.126",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 14 103.21.161.105 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 15 115.96.27.126 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 16 185.207.232.121 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-e363922c8af0",
       "ioc_type": "ip_address",
       "value": "116.125.126.38",
@@ -285132,6 +285886,36 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "5de6d43fffdb8763bb0d776b5dca7ceb2b5af61547634a85ac9aa3c98b05f35d"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-cd04af79dd30",
+      "ioc_type": "ip_address",
+      "value": "117.203.73.63",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 3 75.119.143.189 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 4 117.203.73.63 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 5 146.190.107.103 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -286757,6 +287541,36 @@
       ]
     },
     {
+      "id": "ip-address-ba1880dd8347",
+      "ioc_type": "ip_address",
+      "value": "119.63.72.54",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 10 134.209.252.157 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 11 119.63.72.54 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 12 138.68.161.170 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-9a3fd84927b3",
       "ioc_type": "ip_address",
       "value": "119.8.26.163",
@@ -286787,36 +287601,6 @@
       ]
     },
     {
-      "id": "ip-address-92c6c58c909d",
-      "ioc_type": "ip_address",
-      "value": "12.1.5.3",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "….1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 185.159.158.42 198.…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
-        }
-      ]
-    },
-    {
       "id": "ip-address-4f612d7b00f4",
       "ioc_type": "ip_address",
       "value": "12.101.97.71",
@@ -286843,66 +287627,6 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-86367ccc51b0",
-      "ioc_type": "ip_address",
-      "value": "12.2.1.3",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "….1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 185.159.15…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-53f581a2a7cc",
-      "ioc_type": "ip_address",
-      "value": "12.2.1.4",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 185.159.158.42 198.51.100.42 1.127.0.0 203.45.67.89 194.87.95.123 91.92.241.15 100.100…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -288220,6 +288944,36 @@
       ]
     },
     {
+      "id": "ip-address-f49d9ddc70ec",
+      "ioc_type": "ip_address",
+      "value": "124.122.142.142",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 6 95.217.164.124 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 7 124.122.142.142 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 8 188.80.228.122 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-ecbff7ce33b6",
       "ioc_type": "ip_address",
       "value": "124.217.209.11",
@@ -288901,6 +289655,36 @@
       ]
     },
     {
+      "id": "ip-address-e2258afbd14a",
+      "ioc_type": "ip_address",
+      "value": "128.90.176.13",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 9 103.77.210.80 Staging / target-list hosting / launch MONITOR & HUNT 10 128.90.176.13 Staging / target-list hosting / launch MONITOR & HUNT 11 138.199.34.201 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-763811abd44c",
       "ioc_type": "ip_address",
       "value": "129.2.4.2",
@@ -289010,36 +289794,6 @@
           "section": "Indicators Of Compromise (IoCs)",
           "pulled_at": "2026-09-27",
           "source_sha256": "526c0139a8511775b1aa84f27407d074e19d1795250fd7bd4a266bf0c6261210"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-3a07601afd40",
-      "ioc_type": "ip_address",
-      "value": "13.1.3.6",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…11.17.201 08.178.42.114 194.195.209.88 212.192.241.94 192.3.22.5 21.12.170.42 20.206.200.95 95.214.24.37 46.4.198.55 203.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 17…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -289655,6 +290409,36 @@
       ]
     },
     {
+      "id": "ip-address-a9a8c37a2151",
+      "ioc_type": "ip_address",
+      "value": "134.122.38.73",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…# IPV4 ACTIVITY PRIORITY 1 142.93.155.162 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 2 134.122.38.73 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 3 5.255.114.109 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-3b18ac7530b5",
       "ioc_type": "ip_address",
       "value": "134.175.236.132",
@@ -289722,6 +290506,96 @@
           "section": "Astrill VPN IP Bulk Data Feed",
           "pulled_at": "2026-09-12",
           "source_sha256": "4bf9cf0ba6bf4f929c3fc691de05fdc09abbe7b9baed8218f0f684040ffbe73a"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-5fe1f23ea410",
+      "ioc_type": "ip_address",
+      "value": "134.209.159.64",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “103.216.220.92” ascii wide fullword $ip2 = “31.223.184.166” ascii wide fullword $ip3 = “37.19.200.5” ascii wide fullword $ip4 = “134.209.159.64” ascii wide fullword $ip5 = “103.114.163.188” ascii wide fullword $ip6 = “95.217.98.37” ascii wide fullword $ip7 = “92.118.112.100”…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-5f2f4090e28f",
+      "ioc_type": "ip_address",
+      "value": "134.209.181.133",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 8 188.80.228.122 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 9 134.209.181.133 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 10 134.209.252.157 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-4642d34427dc",
+      "ioc_type": "ip_address",
+      "value": "134.209.252.157",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 9 134.209.181.133 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 10 134.209.252.157 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 11 119.63.72.54 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -290936,6 +291810,36 @@
       ]
     },
     {
+      "id": "ip-address-a275489536ad",
+      "ioc_type": "ip_address",
+      "value": "138.199.34.201",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 10 128.90.176.13 Staging / target-list hosting / launch MONITOR & HUNT 11 138.199.34.201 Staging / target-list hosting / launch MONITOR & HUNT 12 145.255.150.25 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-ec512323c7dc",
       "ioc_type": "ip_address",
       "value": "138.201.125.58",
@@ -291201,6 +292105,36 @@
           "section": "Indicators of Compromise (IOCs)",
           "pulled_at": "2026-09-10",
           "source_sha256": "fd46059a667dfe9ca83e1f97ebb87da05cb361155a0958b3546ebe7366b02187"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-c42930c5c301",
+      "ioc_type": "ip_address",
+      "value": "138.68.161.170",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 11 119.63.72.54 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 12 138.68.161.170 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 13 95.216.5.90 PHP web shell tooling / upload-progress…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -291584,36 +292518,6 @@
           "section": "Indicators of Compromise",
           "pulled_at": "2026-09-12",
           "source_sha256": "cbdade83c69fde3289cbc6d2fde2f0ab7e080a5ea642ac6daa53347858bd162d"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-43735c30aac6",
-      "ioc_type": "ip_address",
-      "value": "14.1.4.6",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…03.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -293477,6 +294381,36 @@
       ]
     },
     {
+      "id": "ip-address-e5f99313a920",
+      "ioc_type": "ip_address",
+      "value": "142.93.155.162",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…Indicators are defanged. # IPV4 ACTIVITY PRIORITY 1 142.93.155.162 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 2 134.122.38.73 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-0143a2350b9a",
       "ioc_type": "ip_address",
       "value": "143.110.226.180",
@@ -293594,6 +294528,36 @@
           "section": "Infrastructure",
           "pulled_at": "2026-09-12",
           "source_sha256": "93fbf7a4eaa03a1e2933b37632a338c0361eb79c2d9331f988ef862818f3639f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-112f102f9550",
+      "ioc_type": "ip_address",
+      "value": "143.246.213.138",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 14 185.157.109.60 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 15 143.246.213.138 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 16 144.91.70.51 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -296074,6 +297038,36 @@
       ]
     },
     {
+      "id": "ip-address-4ca6bc2c6a74",
+      "ioc_type": "ip_address",
+      "value": "144.91.70.51",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 15 143.246.213.138 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 16 144.91.70.51 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 17 217.60.196.124 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-524f2f8de6d9",
       "ioc_type": "ip_address",
       "value": "145.108.194.10",
@@ -296356,6 +297350,36 @@
       ]
     },
     {
+      "id": "ip-address-8ee3467c6478",
+      "ioc_type": "ip_address",
+      "value": "145.255.150.25",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 11 138.199.34.201 Staging / target-list hosting / launch MONITOR & HUNT 12 145.255.150.25 Staging / target-list hosting / launch MONITOR & HUNT 13 149.102.232.44 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-929f18b1a246",
       "ioc_type": "ip_address",
       "value": "146.112.61.107",
@@ -296481,6 +297505,36 @@
       ]
     },
     {
+      "id": "ip-address-3f1c30cb529a",
+      "ioc_type": "ip_address",
+      "value": "146.190.107.103",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 4 117.203.73.63 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 5 146.190.107.103 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 6 95.217.164.124 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-75af72ef81d0",
       "ioc_type": "ip_address",
       "value": "146.190.114.113",
@@ -296597,6 +297651,66 @@
       ]
     },
     {
+      "id": "ip-address-130fbbcb8f8a",
+      "ioc_type": "ip_address",
+      "value": "146.70.114.180",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…Priority: MONITOR & HUNT. # IPV4 ROLE PRIORITY 1 146.70.114.180 Staging / target-list hosting / launch MONITOR & HUNT 2 146.70.114.182 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-e54ec1efbff2",
+      "ioc_type": "ip_address",
+      "value": "146.70.114.182",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…MONITOR & HUNT. # IPV4 ROLE PRIORITY 1 146.70.114.180 Staging / target-list hosting / launch MONITOR & HUNT 2 146.70.114.182 Staging / target-list hosting / launch MONITOR & HUNT 3 147.175.149.67 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-68cfef031fe6",
       "ioc_type": "ip_address",
       "value": "146.70.124.70",
@@ -296685,6 +297799,36 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "5de6d43fffdb8763bb0d776b5dca7ceb2b5af61547634a85ac9aa3c98b05f35d"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-10fe6c745239",
+      "ioc_type": "ip_address",
+      "value": "146.70.194.93",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 12 152.237.230.29 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 13 146.70.194.93 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 14 185.157.109.60 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -298062,6 +299206,36 @@
       ]
     },
     {
+      "id": "ip-address-19c2d06727de",
+      "ioc_type": "ip_address",
+      "value": "147.175.149.67",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 2 146.70.114.182 Staging / target-list hosting / launch MONITOR & HUNT 3 147.175.149.67 Staging / target-list hosting / launch MONITOR & HUNT 4 147.78.168.57 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-d4e85ac9d085",
       "ioc_type": "ip_address",
       "value": "147.182.237.105",
@@ -298179,6 +299353,66 @@
           "section": "Microsoft Sentinel queries",
           "pulled_at": "2026-09-12",
           "source_sha256": "4874d6fa5b0ade3ed1ec9f534f548926c5ca8ff9aac5d638fb681965d2889068"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-c116b48e69ba",
+      "ioc_type": "ip_address",
+      "value": "147.78.168.57",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 3 147.175.149.67 Staging / target-list hosting / launch MONITOR & HUNT 4 147.78.168.57 Staging / target-list hosting / launch MONITOR & HUNT 5 109.56.219.150 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-e1de349e3f47",
+      "ioc_type": "ip_address",
+      "value": "147.78.168.67",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 15 158.173.242.133 Staging / target-list hosting / launch MONITOR & HUNT 16 147.78.168.67 Staging / target-list hosting / launch (DM only; possible actor typo) MONITOR & HUNT B.…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -298341,6 +299575,66 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-29195d1671b2",
+      "ioc_type": "ip_address",
+      "value": "149.102.232.44",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 12 145.255.150.25 Staging / target-list hosting / launch MONITOR & HUNT 13 149.102.232.44 Staging / target-list hosting / launch MONITOR & HUNT 14 149.102.232.93 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-45182c4b06e4",
+      "ioc_type": "ip_address",
+      "value": "149.102.232.93",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 13 149.102.232.44 Staging / target-list hosting / launch MONITOR & HUNT 14 149.102.232.93 Staging / target-list hosting / launch MONITOR & HUNT 15 158.173.242.133 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -298596,66 +299890,6 @@
           "section": "Phase 3: Testing (May 15–16, 2025)",
           "pulled_at": "2026-09-12",
           "source_sha256": "dfb75ffc6bfdd920ba5dc9db7f90da24002c6c86751549b5bf895b2b3fc3758e"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-3fe8ea47cca5",
-      "ioc_type": "ip_address",
-      "value": "15.1.2.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…241.94 192.3.22.5 21.12.170.42 20.206.200.95 95.214.24.37 46.4.198.55 203.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-42cea48103f8",
-      "ioc_type": "ip_address",
-      "value": "15.1.5.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…08.178.42.114 194.195.209.88 212.192.241.94 192.3.22.5 21.12.170.42 20.206.200.95 95.214.24.37 46.4.198.55 203.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -299015,6 +300249,36 @@
       ]
     },
     {
+      "id": "ip-address-21a59a5ef315",
+      "ioc_type": "ip_address",
+      "value": "151.253.243.219",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 17 217.60.196.124 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 18 151.253.243.219 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 19 23.106.131.214 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-7a1fdf1fe96c",
       "ioc_type": "ip_address",
       "value": "152.199.19.74",
@@ -299042,6 +300306,36 @@
           "section": "IP 트래픽",
           "pulled_at": "2026-09-12",
           "source_sha256": "a51da69f13e948ed4c7953c08bae156de0f4c4bda50518c00b8f8c3812e972e6"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-9f6147b862bb",
+      "ioc_type": "ip_address",
+      "value": "152.237.230.29",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 11 45.148.10.80 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 12 152.237.230.29 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 13 146.70.194.93 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -302239,6 +303533,66 @@
       ]
     },
     {
+      "id": "ip-address-9c49cc3a6eee",
+      "ioc_type": "ip_address",
+      "value": "158.173.242.133",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 14 149.102.232.93 Staging / target-list hosting / launch MONITOR & HUNT 15 158.173.242.133 Staging / target-list hosting / launch MONITOR & HUNT 16 147.78.168.67 Staging / target-list hosting / launch (DM only; possible…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-acaab479862a",
+      "ioc_type": "ip_address",
+      "value": "158.173.75.178",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 5 109.56.219.150 Staging / target-list hosting / launch MONITOR & HUNT 6 158.173.75.178 Staging / target-list hosting / launch MONITOR & HUNT 7 185.203.18.54 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-088c90f7f339",
       "ioc_type": "ip_address",
       "value": "158.247.192.226",
@@ -303465,6 +304819,36 @@
       ]
     },
     {
+      "id": "ip-address-7ef0c5a1269d",
+      "ioc_type": "ip_address",
+      "value": "159.223.59.200",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 4 165.22.232.198 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 5 159.223.59.200 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 6 192.177.131.13 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-7900f690781e",
       "ioc_type": "ip_address",
       "value": "159.253.4.64",
@@ -303641,66 +305025,6 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-f6c9cde8bb40",
-      "ioc_type": "ip_address",
-      "value": "16.0.1.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…5.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-d3209c01d132",
-      "ioc_type": "ip_address",
-      "value": "16.1.2.2",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…0.42 20.206.200.95 95.214.24.37 46.4.198.55 203.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -306265,6 +307589,36 @@
       ]
     },
     {
+      "id": "ip-address-1b26bb573db0",
+      "ioc_type": "ip_address",
+      "value": "165.22.232.198",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 3 5.255.114.109 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 4 165.22.232.198 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 5 159.223.59.200 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-8bd659ed92c2",
       "ioc_type": "ip_address",
       "value": "166.0.132.184",
@@ -306694,10 +308048,12 @@
       "campaign": [
         "NullReceiver",
         "PolinRider",
-        "DPRK (cluster unattributed)"
+        "DPRK (cluster unattributed)",
+        "Contagious Interview",
+        "EtherHiding"
       ],
       "first_seen": "2026-07-28",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -306791,6 +308147,17 @@
           "section": "Key findings",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…a658863e a658863e 68656c6c6f6970626f742121 │ │ └─ \"helloipbot!!\" (chuỗi chữ ký của kẻ tấn công) │ └─ lặp lại 4 byte IP └─ a6.58.86.3e = 166.88.134.62 (IP C&C) Phía nạn nhân chỉ đọc dữ liệu blockchain: không gọi contract, không tạo giao dịch và không trả gas. 7.2.…",
+          "context_origin": "text",
+          "section": "7.1. Cơ chế hoạt động",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -306801,10 +308168,13 @@
       "display": null,
       "persona": null,
       "campaign": [
-        "PolinRider"
+        "PolinRider",
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
       ],
       "first_seen": "2026-09-21",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -306832,6 +308202,17 @@
           "section": "The second Ethereum wallet",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…Ví của kẻ tấn công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -307521,10 +308902,13 @@
       "persona": null,
       "campaign": [
         "DPRK (cluster unattributed)",
-        "PolinRider"
+        "PolinRider",
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -307574,6 +308958,17 @@
           "section": "The second Ethereum wallet",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…npm: npmuser1101 , npmuser3002 Ví của kẻ tấn công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -309415,6 +310810,66 @@
       ]
     },
     {
+      "id": "ip-address-32c7fb0ee39c",
+      "ioc_type": "ip_address",
+      "value": "170.64.224.137",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 8 173.249.16.178 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 9 170.64.224.137 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 10 170.64.226.40 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-8ff1b0af33de",
+      "ioc_type": "ip_address",
+      "value": "170.64.226.40",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 9 170.64.224.137 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 10 170.64.226.40 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 11 45.148.10.80 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-d158387cd846",
       "ioc_type": "ip_address",
       "value": "170.85.221.107",
@@ -309895,36 +311350,6 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-685198cdbfd7",
-      "ioc_type": "ip_address",
-      "value": "172.32.0.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "….6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -312694,6 +314119,66 @@
       ]
     },
     {
+      "id": "ip-address-6d6ee582b439",
+      "ioc_type": "ip_address",
+      "value": "173.249.16.178",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 7 94.154.42.149 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 8 173.249.16.178 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 9 170.64.224.137 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-cfc8d68ff57e",
+      "ioc_type": "ip_address",
+      "value": "173.249.16.192",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 19 23.106.131.214 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 20 173.249.16.192 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 21 45.148.10.201 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-ec20cc078b6d",
       "ioc_type": "ip_address",
       "value": "173.249.33.80",
@@ -314804,36 +316289,6 @@
           "section": "Infection Timeline",
           "pulled_at": "2026-10-01",
           "source_sha256": "3ee6d7128defbde8c5ddc8147c9ea4a0d5b57f8683c0d9650834aec8bdfc8a09"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-34575f7a0631",
-      "ioc_type": "ip_address",
-      "value": "177.0.0.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…03.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 185.159.158.42 198.51.100.42 1.127.0.0 203.45.67.89…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -318171,6 +319626,36 @@
       ]
     },
     {
+      "id": "ip-address-62b84613de0b",
+      "ioc_type": "ip_address",
+      "value": "185.157.109.60",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 13 146.70.194.93 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 14 185.157.109.60 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 15 143.246.213.138 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-3cb0c9567a1b",
       "ioc_type": "ip_address",
       "value": "185.159.158.42",
@@ -318730,6 +320215,36 @@
       ]
     },
     {
+      "id": "ip-address-2c4690d41768",
+      "ioc_type": "ip_address",
+      "value": "185.203.18.54",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 6 158.173.75.178 Staging / target-list hosting / launch MONITOR & HUNT 7 185.203.18.54 Staging / target-list hosting / launch MONITOR & HUNT 8 185.235.212.105 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-53284d1dac18",
       "ioc_type": "ip_address",
       "value": "185.204.1.184",
@@ -318756,6 +320271,36 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "5de6d43fffdb8763bb0d776b5dca7ceb2b5af61547634a85ac9aa3c98b05f35d"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-6c0176608c98",
+      "ioc_type": "ip_address",
+      "value": "185.207.232.121",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 15 115.96.27.126 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 16 185.207.232.121 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 17 78.47.85.99 PHP web shell tooling / upload-progress…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -319381,6 +320926,36 @@
           "section": "Connection (C2 Communication)",
           "pulled_at": "2026-09-12",
           "source_sha256": "7d1445fccaa64c6c6412a87de591c7e02e5e63147762b126dd6041c0fb25faa9"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-00eb5be87528",
+      "ioc_type": "ip_address",
+      "value": "185.235.212.105",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…/ target-list hosting / launch MONITOR & HUNT 7 185.203.18.54 Staging / target-list hosting / launch MONITOR & HUNT 8 185.235.212.105 Staging / target-list hosting / launch MONITOR & HUNT 9 103.77.210.80 Staging / target-list hosting / launch MONITOR & HUNT…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -322289,6 +323864,36 @@
       ]
     },
     {
+      "id": "ip-address-6ff70b4770e7",
+      "ioc_type": "ip_address",
+      "value": "188.80.228.122",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 7 124.122.142.142 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 8 188.80.228.122 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 9 134.209.181.133 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-f0c771ac8344",
       "ioc_type": "ip_address",
       "value": "189.1.170.50",
@@ -323245,6 +324850,36 @@
           "section": "Infrastructure Analysis",
           "pulled_at": "2026-09-12",
           "source_sha256": "8709f9a20b31a9a53a2116752fe148f23e4160bd783bca65e0a5a6078bd89c88"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-c0d3618ec905",
+      "ioc_type": "ip_address",
+      "value": "192.177.131.13",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 5 159.223.59.200 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 6 192.177.131.13 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 7 94.154.42.149 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -325440,10 +327075,13 @@
       "persona": null,
       "campaign": [
         "DPRK (cluster unattributed)",
-        "PolinRider"
+        "PolinRider",
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -325493,6 +327131,17 @@
           "section": "The second Ethereum wallet",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…, npmuser3002 Ví của kẻ tấn công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -331687,36 +333336,6 @@
           "section": "1.4.2. SPAWN Family Client",
           "pulled_at": "2026-09-12",
           "source_sha256": "c52a520dce0c4136a2924fb5e4b5af85d633ef63b13aad1f2eacf5e1991397cf"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-31dcdef4c393",
-      "ioc_type": "ip_address",
-      "value": "203.45.67.89",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 185.159.158.42 198.51.100.42 1.127.0.0 203.45.67.89 194.87.95.123 91.92.241.15 100.100.100.200 91.92.242.30 1.2.4.0 155.94.0.7",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -339076,6 +340695,36 @@
       ]
     },
     {
+      "id": "ip-address-4fdd68df64db",
+      "ioc_type": "ip_address",
+      "value": "217.60.196.124",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 16 144.91.70.51 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 17 217.60.196.124 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 18 151.253.243.219 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-6ec90f25f25e",
       "ioc_type": "ip_address",
       "value": "217.60.37.55",
@@ -341029,6 +342678,36 @@
           "section": "Network IOCs",
           "pulled_at": "2026-09-01",
           "source_sha256": "d17485878bfca5b6bad0a38bed43d9be2154f38c9bcdf970e96f883650108a0f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-20a5dc0cb69e",
+      "ioc_type": "ip_address",
+      "value": "23.106.131.214",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 18 151.253.243.219 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 19 23.106.131.214 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 20 173.249.16.192 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -344327,10 +346006,12 @@
       "campaign": [
         "Contagious Interview",
         "DPRK (cluster unattributed)",
-        "PolinRider"
+        "PolinRider",
+        "EtherHiding",
+        "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -344391,6 +346072,17 @@
           "section": "The second Ethereum wallet",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…Tài khoản npm: npmuser1101 , npmuser3002 Ví của kẻ tấn công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -344473,6 +346165,38 @@
           "section": "4. Block known indicators at the network layer",
           "pulled_at": "2026-09-12",
           "source_sha256": "5dbc17fa49a20258ad66b0a801696980baf32b13e33a3821d319022491743d98"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-cefb931052a3",
+      "ioc_type": "ip_address",
+      "value": "23.27.13.72",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
+      ],
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -348490,6 +350214,36 @@
       ]
     },
     {
+      "id": "ip-address-dd3b0981449f",
+      "ioc_type": "ip_address",
+      "value": "31.223.184.166",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…Will also match threat-intel feeds and exit-node lists stored on disk” strings: $ip1 = “103.216.220.92” ascii wide fullword $ip2 = “31.223.184.166” ascii wide fullword $ip3 = “37.19.200.5” ascii wide fullword $ip4 = “134.209.159.64” ascii wide fullword $ip5 = “103.114.163.188” ascii…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-769785393e46",
       "ioc_type": "ip_address",
       "value": "31.41.216.122",
@@ -349692,6 +351446,36 @@
           "section": "Hunting Lazarus, Part 5: Eleven Hours on His Disk",
           "pulled_at": "2026-09-12",
           "source_sha256": "6d3cd79c813276f9dec740004ae576f732fa47b65238b91473498a7029f16474"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-8311ac20d104",
+      "ioc_type": "ip_address",
+      "value": "37.19.200.5",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…lists stored on disk” strings: $ip1 = “103.216.220.92” ascii wide fullword $ip2 = “31.223.184.166” ascii wide fullword $ip3 = “37.19.200.5” ascii wide fullword $ip4 = “134.209.159.64” ascii wide fullword $ip5 = “103.114.163.188” ascii wide fullword $ip6 = “95.217.98.37”…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -354103,6 +355887,66 @@
       ]
     },
     {
+      "id": "ip-address-62eb128ffaf4",
+      "ioc_type": "ip_address",
+      "value": "45.148.10.201",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 20 173.249.16.192 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 21 45.148.10.201 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR CHANNEL INTELLIGENCE · 24 OCTOBER 2026 CONVERSATION…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-74fa4c1a5017",
+      "ioc_type": "ip_address",
+      "value": "45.148.10.80",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 10 170.64.226.40 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 11 45.148.10.80 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 12 152.237.230.29 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-e0cd435f53bd",
       "ioc_type": "ip_address",
       "value": "45.148.29.122",
@@ -354522,6 +356366,36 @@
           "section": "1. ASN IOCs (High-Medium Degree of Confidence)",
           "pulled_at": "2026-09-12",
           "source_sha256": "75c2c6e7333ce4b23877b93dfce834bfb3bd12db10afe277136189c3ab13be6b"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-fec87df9ebd1",
+      "ioc_type": "ip_address",
+      "value": "45.198.224.169",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “95.217.98.37” ascii wide fullword $ip7 = “92.118.112.100” ascii wide fullword $ip8 = “85.11.167.243” ascii wide fullword $ip9 = “45.198.224.169” ascii wide fullword $ip10 = “109.71.252.97” ascii wide fullword condition: any of them } rule…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -360794,6 +362668,36 @@
           "section": "👾 Koi Stealer",
           "pulled_at": "2026-09-12",
           "source_sha256": "24835ca7536ad8ea0647a673adf3b2776c1894c16674dea81356b9efadb5e4e9"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-981e9dbb3a2a",
+      "ioc_type": "ip_address",
+      "value": "5.255.114.109",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 2 134.122.38.73 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 3 5.255.114.109 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 4 165.22.232.198 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -371947,6 +373851,36 @@
       ]
     },
     {
+      "id": "ip-address-a691cd569e57",
+      "ioc_type": "ip_address",
+      "value": "75.119.143.189",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 2 94.154.43.185 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 3 75.119.143.189 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 4 117.203.73.63 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-046a81c932a0",
       "ioc_type": "ip_address",
       "value": "75.127.1.211",
@@ -373156,6 +375090,36 @@
           "section": "Say Cheese, Comrade: OtterCookie’s C2 Exposed",
           "pulled_at": "2026-09-12",
           "source_sha256": "b10279cd432ee51c3c5f699f415c106a07326b77d7f47406b3f538535865f67c"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-6912f481ce0c",
+      "ioc_type": "ip_address",
+      "value": "78.47.85.99",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 16 185.207.232.121 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 17 78.47.85.99 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR C.…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -377440,6 +379404,36 @@
       ]
     },
     {
+      "id": "ip-address-9d3bac5a1591",
+      "ioc_type": "ip_address",
+      "value": "85.11.167.243",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “103.114.163.188” ascii wide fullword $ip6 = “95.217.98.37” ascii wide fullword $ip7 = “92.118.112.100” ascii wide fullword $ip8 = “85.11.167.243” ascii wide fullword $ip9 = “45.198.224.169” ascii wide fullword $ip10 = “109.71.252.97” ascii wide fullword condition: any of…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-abd43f409af6",
       "ioc_type": "ip_address",
       "value": "85.11.187.28",
@@ -381074,10 +383068,13 @@
       "display": null,
       "persona": null,
       "campaign": [
-        "PolinRider"
+        "PolinRider",
+        "Contagious Interview",
+        "EtherHiding",
+        "NullReceiver"
       ],
       "first_seen": "2026-09-30",
-      "last_seen": "2026-09-30",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -381094,6 +383091,17 @@
           "section": "The second Ethereum wallet",
           "pulled_at": "2026-10-02",
           "source_sha256": "a884a0288a9cdfa075fb5f5031615f5156fbe6829f7f1bd71454f0ec64eb6283"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh: A10-npm3! , helloipbot!! 7.6.…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },
@@ -382312,6 +384320,36 @@
       ]
     },
     {
+      "id": "ip-address-916091afb99f",
+      "ioc_type": "ip_address",
+      "value": "92.118.112.100",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…as a supplement; lock origins to CDN/WAF ranges so attackers cannot bypass to the origin IP; egress-filter web workers and block 92.118.112.100 / http://92.118.112.100/nfs. INDICATORS OF COMPROMISE INFRASTRUCTURE · C2 & PAYLOAD · HASHES · HOST BEHAVIOUR Deploy to perimeter, EDR…",
+          "context_origin": "text",
+          "section": "RECOMMENDED ACTIONS",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-afc42d891d26",
       "ioc_type": "ip_address",
       "value": "92.119.114.128",
@@ -382647,36 +384685,6 @@
           "section": "3.2 Detailed Analysis",
           "pulled_at": "2026-10-01",
           "source_sha256": "2e114ae2cc46f5245e19d85c3f512e25eaa75eee1f9fdb425224fa8f313feaa7"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-6afc5083d012",
-      "ioc_type": "ip_address",
-      "value": "93.184.216.34",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "…95.214.24.37 46.4.198.55 203.0.113.8 100.64.0.1 13.1.3.6 15.1.5.1 14.1.1.0 5.6.7.8 203.0.113.4 15.1.2.1 4.4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -383130,6 +385138,66 @@
           "section": "Indicators of Compromise (IOCs)",
           "pulled_at": "2026-09-10",
           "source_sha256": "fd46059a667dfe9ca83e1f97ebb87da05cb361155a0958b3546ebe7366b02187"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-8039b70c0a7d",
+      "ioc_type": "ip_address",
+      "value": "94.154.42.149",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 6 192.177.131.13 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 7 94.154.42.149 PHP web shell tooling / upload progress session poisoning BLOCK / MONITOR 8 173.249.16.178 PHP web shell tooling / upload…",
+          "context_origin": "text",
+          "section": "NEW SOURCE IP ADDRESSES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-4b3c2bb3a06b",
+      "ioc_type": "ip_address",
+      "value": "94.154.43.185",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…# IPV4 ACTIVITY PRIORITY 1 102.207.250.188 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 2 94.154.43.185 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 3 75.119.143.189 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -384637,6 +386705,36 @@
       ]
     },
     {
+      "id": "ip-address-5dee2a994c95",
+      "ioc_type": "ip_address",
+      "value": "95.216.5.90",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 12 138.68.161.170 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 13 95.216.5.90 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 14 103.21.161.105 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
       "id": "ip-address-a5088af92046",
       "ioc_type": "ip_address",
       "value": "95.216.64.240",
@@ -384723,6 +386821,66 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-90f701ad361c",
+      "ioc_type": "ip_address",
+      "value": "95.217.164.124",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…poisoning BLOCK / MONITOR 5 146.190.107.103 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 6 95.217.164.124 PHP web shell tooling / upload-progress session poisoning BLOCK / MONITOR 7 124.122.142.142 PHP web shell tooling /…",
+          "context_origin": "text",
+          "section": "INDICATORS OF COMPROMISE",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-3af71dd6c51d",
+      "ioc_type": "ip_address",
+      "value": "95.217.98.37",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ],
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure",
+          "title": "Suspected DPRK Campaign staging PHP2Shell Targeting against Global PHP infrastructure",
+          "publisher": "Cyfirma",
+          "published": "2026-10-23",
+          "context": "…= “37.19.200.5” ascii wide fullword $ip4 = “134.209.159.64” ascii wide fullword $ip5 = “103.114.163.188” ascii wide fullword $ip6 = “95.217.98.37” ascii wide fullword $ip7 = “92.118.112.100” ascii wide fullword $ip8 = “85.11.167.243” ascii wide fullword $ip9 = “45.198.224.169”…",
+          "context_origin": "text",
+          "section": "1.1 APPENDIX · PHP2SHELL YARA RULES",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "7de64966378af87f6a554ed836df3d2f254ef72930a06ce7c81fb3631386c5cc"
         }
       ]
     },
@@ -385148,36 +387306,6 @@
           "section": "Network IOCs",
           "pulled_at": "2026-09-01",
           "source_sha256": "d17485878bfca5b6bad0a38bed43d9be2154f38c9bcdf970e96f883650108a0f"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-79b313892e29",
-      "ioc_type": "ip_address",
-      "value": "99.1.1.1",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-10-26",
-      "last_seen": "2026-10-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt",
-          "title": "Contagious Interview IoCs",
-          "publisher": "JPCERT/CC",
-          "published": "2025-08-25",
-          "context": "….4.8.8 12.1.3.0 16.1.2.2 224.0.0.1 93.184.216.34 203.0.113.1 14.1.4.6 120.0.0.0 56.0.0.0 172.32.0.1 255.255.255.0 3.7.1.0 2.5.10.1 16.0.1.1 99.1.1.1 12.2.1.3 12.1.5.3 203.0.113.15 255.0.0.0 177.0.0.1 203.0.113.16 224.0.1.187 12.2.1.4 8.8.4.4 1.2.0.3 203.0.113.9 203.0.113.50 203.0.113.5 1…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-10-26",
-          "source_sha256": "b9aaaf449730bacae24283a51e4542e432c2c42f97df9329f3ea2258678b4837"
         }
       ]
     },
@@ -399441,10 +401569,11 @@
       "campaign": [
         "Contagious Interview",
         "NullReceiver",
-        "PolinRider"
+        "PolinRider",
+        "EtherHiding"
       ],
       "first_seen": "2026-08-02",
-      "last_seen": "2026-09-21",
+      "last_seen": "2026-10-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -399494,6 +401623,17 @@
           "section": "From a Single Line of Configuration to On-Chain Resolution",
           "pulled_at": "2026-10-01",
           "source_sha256": "cd15b39bd94a4a149ef770a3057fe3f4a9099a019fa2c7d2ee23b26e4dee4176"
+        },
+        {
+          "url": "https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026",
+          "title": "EtherRAT phát tán qua giả mạo hỗ trợ IT trên Microsoft Teams: Smart contract Ethereum làm cơ chế phân giải C&C",
+          "publisher": "BlueCyber",
+          "published": "2026-10-18",
+          "context": "…, post-css-transfer , scrollbar-hide-plugin , tailwind-animation-founder Tài khoản npm: npmuser1101 , npmuser3002 Ví của kẻ tấn công: 0xa322e5f3d311d3080e6f0121063e9adc2490ef1a IP C&C: 166.88.134.62 , 23.27.13.135 , 166.88.73.46 , 193.247.144.38 , 166.88.134.75 , 91.218.183.174 , 23.27.13.72 Chuỗi tĩnh:…",
+          "context_origin": "text",
+          "section": "7.5. IoC",
+          "pulled_at": "2026-10-26",
+          "source_sha256": "84437ffaa67f0e9d634ccce84b2045e9f3e074b55240b90af201084c23a75344"
         }
       ]
     },

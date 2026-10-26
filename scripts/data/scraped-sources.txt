@@ -2285,3 +2285,9 @@ https://opensourcemalware.com/blog/how-to-investigate-a-github-repos-real-histor
 https://haydenmckenzie.com/research/Daily+Life+Inside+North+Korea&#x27;s+IT+Worker+Compounds
 https://www.silentpush.com/white-papers-and-reports/proactively-defending-financial-institutions-against-north-korean-remote-it-workers/
 https://wezard4u.tistory.com/429898
+https://wezard4u.tistory.com/429903
+https://securelist.com/lazarus-operation-flashhole/121541/
+https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign-staging-php2shell-targeting-against-global-php-infrastructure
+https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026
+https://radar.securityalliance.org/seal-weekly-stats-13-20-oct-2026
+https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md

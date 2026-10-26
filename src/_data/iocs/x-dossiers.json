@@ -8865,7 +8865,9 @@
       "persona": "Tec Guru",
       "researcher": "silentpush",
       "transcribed": "2026-09-18",
-      "aliases": ["tecguru113"],
+      "aliases": [
+        "tecguru113"
+      ],
       "posts": [
         {
           "url": "https://www.silentpush.com/blog/nk-it-worker/",
@@ -15889,6 +15891,80 @@
         }
       ],
       "note": "TRM Labs' analysis of the Bitget hot-wallet theft of 24 September 2026 names this as the second Ethereum wallet the stolen funds passed through, which distributed its balance to newly created wallets over about two hours; the first, 0x770b10b273fc44fe9197d6bf20f145c2e98463ee, is on Bitget's own list of attacker receiving addresses. The scraper read the report but the sentence carries none of the words its wallet guard requires, so the address is recorded here. TRM called the attribution likely but not definitive; Chainalysis attributed the theft to DPRK actors on 1 October 2026 (https://www.chainalysis.com/blog/387m-bitget-theft-2026)."
+    },
+    {
+      "researcher": "zachxbt",
+      "label": "Addresses of the 'Jimmy Green' laundering contact for the Bybit exploit funds",
+      "transcribed": "2026-10-26",
+      "campaign": [
+        "APT38"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/zachxbt/status/2107081638073319437",
+          "date": "2026-10-05"
+        },
+        {
+          "url": "https://x.com/zachxbt/status/2107081652631712160",
+          "date": "2026-10-05"
+        },
+        {
+          "url": "https://x.com/zachxbt/status/2107081656050106519",
+          "date": "2026-10-05"
+        },
+        {
+          "url": "https://x.com/zachxbt/status/2107081665873146347",
+          "date": "2026-10-05"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xbaa551da0ae0c93025d9a983a68025a27dc15337",
+          "post": 1
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "TPwXAPwYaDCm7GrzNFiMmNnofrxEVURXRM",
+          "post": 1
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1893ef01e700b1359280e11736d1b89fe97ed216",
+          "post": 2
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "TS5hY6mm6UsCLNdVDWnsRA69LuAwfdn158",
+          "post": 2
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "TMGjdFeBf9T6kGB9ZmLzeaAPYWBokuyTuS",
+          "post": 2
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "9gSwa2Mew9P21Wxs8nFgDujTurKZx1nBEVRv6K5sJP6e",
+          "post": 3
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "EvZJGsDymrSUQyF23HLKEgUpjfd9XN1GTmm8AG6pFS7H",
+          "post": 3
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "8S6T5gL2w5z4M9TCehMgQjxVm3Q6R7WDHp6WFfbtZSAy",
+          "post": 3
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x652d7f9edaaa8891be2de74ea568d70af823d89e",
+          "post": 3
+        }
+      ],
+      "note": "The researcher describes posing as a client, from March 2025, of a Chinese over-the-counter laundering syndicate that told him it had moved most of the $1.5B taken from Bybit in February 2025, an exploit attributed to the North Korean group TraderTraitor. His contact used the alias Jimmy Green on Telegram (account ID 7635649994) and gave him these Ethereum, Tron and Solana addresses for the swaps; the first Ethereum address was funded with gas from an address on the public Bybit exploit blacklist, the three Solana addresses exposed a cluster of more than $12M of exploit funds swapped from Bitcoin through Ethereum and Solana to Tron, and 0x652d7f9e... is the address Tether froze 442K USDT at. The addresses belong to the launderers rather than to North Korean operators, which is why they are recorded without a persona. The Telegram username printed in the thread is not carried: in a reply the researcher says the account was deleted earlier in 2026 and someone else has since claimed the username, so it would now point at an unrelated account. His own funding address in the fourth post is not an indicator and is not carried either. Read on 26 October 2026, all 12 posts of the thread and the 121 replies; no reply adds a value."
     }
   ],
   "unattributed_photos": [
