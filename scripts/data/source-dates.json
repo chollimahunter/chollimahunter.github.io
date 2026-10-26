@@ -1,0 +1,1111 @@
+{
+  "_comment": "Publication dates for cited pages whose citation carries none, found on 24 September 2026. method: meta (the page's own date metadata), visible (a date printed as the publication date), url (a date in the URL path), document (a PDF's date or a file's first commit). First-archived dates and registry field dates were not accepted: the first is only an upper bound and the second is not a publication date. src/_data/sources.js and scripts/ingest-scraped-iocs.js read this, and a date here wins over one on the citation, because a scraped citation's date is whatever the extractor last read. A second pass on 4 October 2026 dated the remaining citations behind the Report date column of the indicator search; a citation of an account or repository page, a registry profile or a LinkedIn profile has no publication date and was left without one. For this site's own candidate pages, the date is the row's first_seen in candidates.json.",
+  "checked": "2026-10-12",
+  "dates": {
+    "https://raw.githubusercontent.com/OpenSourceMalware/WeaselBiscuit/main/README.md": {
+      "date": "2026-09-16",
+      "method": "document",
+      "evidence": "gh api oldest commit touching README.md: 2026-09-16T23:38:42Z"
+    },
+    "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md": {
+      "date": "2025-06-19",
+      "method": "document",
+      "evidence": "gh api oldest commit touching dprk-it-workers/readme.md: 2025-06-19T18:39:05Z"
+    },
+    "https://raw.githubusercontent.com/JPCERTCC/Contagious-Interview-IoCs/main/ioc.txt": {
+      "date": "2025-08-25",
+      "method": "document",
+      "evidence": "gh api oldest commit touching ioc.txt: 2025-08-25T00:56:19Z"
+    },
+    "https://www.welivesecurity.com/2023/04/20/linux-malware-strengthens-links-lazarus-3cx-supply-chain-attack": {
+      "date": "2023-04-20",
+      "method": "url",
+      "evidence": "date segment /2023/04/20/ in URL path"
+    },
+    "https://www.welivesecurity.com/2020/11/16/lazarus-supply-chain-attack-south-korea/": {
+      "date": "2020-11-16",
+      "method": "url",
+      "evidence": "date segment /2020/11/16/ in URL path"
+    },
+    "https://www.welivesecurity.com/2022/09/30/amazon-themed-campaigns-lazarus-netherlands-belgium": {
+      "date": "2022-09-30",
+      "method": "url",
+      "evidence": "date segment /2022/09/30/ in URL path"
+    },
+    "https://www.welivesecurity.com/2017/02/16/demystifying-targeted-malware-used-polish-banks": {
+      "date": "2017-02-16",
+      "method": "url",
+      "evidence": "date segment /2017/02/16/ in URL path"
+    },
+    "https://www.welivesecurity.com/2022/11/30/whos-swimming-south-korean-waters-meet-scarcrufts-dolphin": {
+      "date": "2022-11-30",
+      "method": "url",
+      "evidence": "date segment /2022/11/30/ in URL path"
+    },
+    "https://www.welivesecurity.com/2023/02/23/winordll64-backdoor-vast-lazarus-arsenal": {
+      "date": "2023-02-23",
+      "method": "url",
+      "evidence": "date segment /2023/02/23/ in URL path"
+    },
+    "https://haydenmckenzie.com/research/dprk-it-worker-operation-part-one": {
+      "date": "2026-05-19",
+      "method": "meta",
+      "evidence": "Obsidian Publish markdown frontmatter date: 2026-05-19, matches visible byline '19 May 2026'"
+    },
+    "https://haydenmckenzie.com/research/eleven-stages-five-observed-live": {
+      "date": "2026-08-19",
+      "method": "meta",
+      "evidence": "Obsidian Publish markdown frontmatter date: 2026-08-19"
+    },
+    "https://www.recordedfuture.com/research/purplebravos-targeting-it-software-supply-chain": {
+      "date": "2026-01-21",
+      "method": "meta",
+      "evidence": "<meta name=\"published-date\" content=\"2026-01-21\">"
+    },
+    "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat": {
+      "date": "2025-02-13",
+      "method": "meta",
+      "evidence": "<meta name=\"published-date\" content=\"2025-02-13\">"
+    },
+    "https://research.kudelskisecurity.com/2025/03/05/tracking-threat-actors-how-infrastructure-analysis-reveals-cyber-attack-patterns/": {
+      "date": "2025-03-05",
+      "method": "url",
+      "evidence": "date segment /2025/03/05/ in URL path"
+    },
+    "https://kudelskisecurity.com/research/dprk-fake-it-workers-inside-their-evolving-network-infrastructure": {
+      "date": "2026-07-17",
+      "method": "visible",
+      "evidence": "page hero: class=\"post-content-hero-date\">July 17, 2026"
+    },
+    "https://kudelskisecurity.com/research/inside-north-koreas-cybercrime-ecosystem-fake-it-workers-gambling-networks-and-malware": {
+      "date": "2026-08-12",
+      "method": "visible",
+      "evidence": "page hero: class=\"post-content-hero-date\">August 12, 2026"
+    },
+    "https://kudelskisecurity.com/research/inside-the-cyber-infrastructure-behind-dprk-fake-it-worker-operations": {
+      "date": "2026-03-23",
+      "method": "visible",
+      "evidence": "page hero: class=\"post-content-hero-date\">March 23, 2026"
+    },
+    "https://kudelskisecurity.com/research/how-dprks-contagious-interview-campaign-targets-developers": {
+      "date": "2026-06-30",
+      "method": "visible",
+      "evidence": "page hero: class=\"post-content-hero-date\">June 30, 2026"
+    },
+    "https://www.igloopedia.com/1caf216a-760c-80f7-8328-d581057c6277": {
+      "date": "2025-05-19",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-05-19 (embedded recordMap JSON; 'Creation Date' property = 2025-02-20)"
+    },
+    "https://www.igloopedia.com/1edf216a-760c-80ef-8341-fe6774dc1467": {
+      "date": "2025-05-13",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-05-13 (embedded recordMap JSON; 'Creation Date' property = 2025-04-07)"
+    },
+    "https://www.igloopedia.com/1edf216a-760c-8003-bb0a-c065e469a3c2": {
+      "date": "2025-05-19",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-05-19 (embedded recordMap JSON; 'Creation Date' property = 2025-04-24)"
+    },
+    "https://www.igloopedia.com/345f216a-760c-8003-9c12-ecd7dfe4f1b6": {
+      "date": "2026-04-17",
+      "method": "meta",
+      "evidence": "Notion page property (unlabeled date field 'P}oj') = 2026-04-17 (embedded recordMap JSON; 'Creation Date' property = 2026-04-03); no 'Release Date' field on thi"
+    },
+    "https://www.igloopedia.com/181f216a-760c-8026-8c0a-ce31a25bbb11": {
+      "date": "2025-02-03",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-02-03 (embedded recordMap JSON; 'Creation Date' property = 2025-01-14)"
+    },
+    "https://www.igloopedia.com/19ef216a-760c-8008-a248-dde97abdadf3": {
+      "date": "2025-02-18",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-02-18 (embedded recordMap JSON; 'Creation Date' property also 2025-02-18)"
+    },
+    "https://www.igloopedia.com/1caf216a-760c-807e-8aef-daa4cb009201": {
+      "date": "2025-05-16",
+      "method": "meta",
+      "evidence": "Notion page property 'Release Date' = 2025-05-16 (embedded recordMap JSON; 'Creation Date' property = 2025-02-04)"
+    },
+    "https://www.logpresso.com/en/blog/2026-03-10-dprk-remote-it-worker-osint": {
+      "date": "2026-03-10",
+      "method": "url",
+      "evidence": "date segment /2026-03-10- in URL path"
+    },
+    "https://logpresso.com/en/blog/2025-10-13-lazarus-apt-attack-en": {
+      "date": "2025-10-13",
+      "method": "visible",
+      "evidence": "post-date class: \"Oct 13, 2025\""
+    },
+    "https://logpresso.com/en/blog/2025-09-22-kimsuky-attack": {
+      "date": "2025-09-22",
+      "method": "visible",
+      "evidence": "post-date class: \"Sep 22, 2025\""
+    },
+    "https://logpresso.com/en/blog/2025-11-06-healthcheckup-malware": {
+      "date": "2025-11-06",
+      "method": "visible",
+      "evidence": "post-date class: \"Nov 06, 2025\""
+    },
+    "https://cloud.google.com/blog/topics/threat-intelligence/dprk-it-workers-expanding-scope-scale": {
+      "date": "2025-04-01",
+      "method": "meta",
+      "evidence": "\"datePublished\":\"2025-04-01\""
+    },
+    "https://raw.githubusercontent.com/TheRavenFile/THREAT-ACTORS/main/DPRK%20GitHub%20Accounts": {
+      "date": "2025-08-31",
+      "method": "document",
+      "evidence": "only commit touching this path, gh api commits: 2025-08-31T15:37:42Z"
+    },
+    "https://web.archive.org/web/20241114101027/https://threatbook.io/blog/id/1093": {
+      "date": "2024-10-23",
+      "method": "visible",
+      "evidence": "page text \"Posted: Oct 23,2024\""
+    },
+    "https://web.archive.org/web/20250717192036/https://redalert.nshc.net/2019/01/30/operation-kitty-phishing/": {
+      "date": "2019-01-30",
+      "method": "url",
+      "evidence": "WordPress permalink date /2019/01/30/; no meta or visible date in archived snapshot"
+    },
+    "https://redalert.nshc.net/2019/01/23/sectora01-custom-proxy-utility-tool-analysis": {
+      "date": "2019-01-23",
+      "method": "url",
+      "evidence": "WordPress permalink date /2019/01/23/; no meta or visible date on live page"
+    },
+    "https://northscan.co/articles/github-diaries.html": {
+      "date": "2026-06",
+      "method": "visible",
+      "evidence": "byline text \"DPRK GitHub OSINT June 2026\" near article title"
+    },
+    "https://northscan.co/articles/beejern-full-report.html": {
+      "date": "2026-05-19",
+      "method": "document",
+      "evidence": "linked PDF (Beejer-dprk-itw-2026-NORTHSCAN...) CreationDate D:20260519221348"
+    },
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-dream-job-chemical": {
+      "date": "2022-04-14",
+      "method": "visible",
+      "evidence": "byline under title: \"Threat Intelligence 14 Apr 2022 9 Min Read\""
+    },
+    "https://symantec-enterprise-blogs.security.com/threat-intelligence/stonefly-north-korea-extortion": {
+      "date": "2024-10-02",
+      "method": "visible",
+      "evidence": "byline under title: \"Threat Intelligence 2 Oct 2024 5 Min Read\""
+    },
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/xtrader-3cx-supply-chain": {
+      "date": "2023-04-21",
+      "method": "visible",
+      "evidence": "byline under title: \"Threat Intelligence 21 Apr 2023 4 Min Read\""
+    },
+    "https://www.security.com/threat-intelligence/lazarus-medusa-ransomware": {
+      "date": "2026-02-24",
+      "method": "visible",
+      "evidence": "byline under title: \"Threat Intelligence 24 Feb 2026 7 Min Read\""
+    },
+    "https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/lazarus-north-korea-indictment": {
+      "date": "2021-02-18",
+      "method": "visible",
+      "evidence": "byline under title: \"Threat Intelligence 18 Feb 2021 4 Min Read\""
+    },
+    "https://ofac.treasury.gov/media/923126/download?inline": {
+      "date": "2022-05-12",
+      "method": "document",
+      "evidence": "PDF CreationDate D:20220512210755-04'00'"
+    },
+    "https://ti.qianxin.com/blog/articles/Cloud-Spy-Analysis-of-Recent-Attack-Activities-by-Group123-CN/": {
+      "date": "2023-07-11",
+      "method": "meta",
+      "evidence": "embedded page state: publish_time=\"2023-07-11T16:32:05.000Z\""
+    },
+    "https://ti.qianxin.com/blog/articles/Analysis-of-attack-activities-of-Kimsuky-APT-group-using-blogspot-to-distribute-malicious-payloads/": {
+      "date": "2021-07-26",
+      "method": "meta",
+      "evidence": "embedded page state: publish_time=\"2021-07-26T10:30:00.000Z\""
+    },
+    "https://ti.qianxin.com/blog/articles/Kimsuky-Weapon-Update:-Analysis-of-Attack-Activity-Targeting-Korean-Region/": {
+      "date": "2021-10-12",
+      "method": "meta",
+      "evidence": "embedded page state: publish_time=\"2021-10-12T14:00:00.000Z\""
+    },
+    "https://ti.qianxin.com/blog/articles/Analysis-on-the-attack-activities-of-Kimsuky-APT-using-the-Foreign-Ministry-of-South-Korea-as-bait/": {
+      "date": "2021-05-06",
+      "method": "meta",
+      "evidence": "embedded page state: publish_time=\"2021-05-06T14:37:24.000Z\""
+    },
+    "https://web.archive.org/web/20260517212517/https://www.trellix.com/blogs/research/dprk-linked-github-c2-espionage-campaign/": {
+      "date": "2025-08-18",
+      "method": "visible",
+      "evidence": "byline: \"By Pham Duy Phuc and Alex Lanstein · August 18, 2025\""
+    },
+    "https://web.archive.org/web/20250611150238/https://zachxbt.mirror.xyz/B0-UJtxN41cJhpPtKv0v2LZ8u-0PwZ4ecMPEdX4l8vE": {
+      "date": "2024-04-29",
+      "method": "visible",
+      "evidence": "byline: \"Investigations By ZachXBT ... April 29th, 2024\""
+    },
+    "https://thehackernews.com/2026/03/north-korean-hackers-publish-26-npm.html": {
+      "date": "2026-03-02",
+      "method": "meta",
+      "evidence": "meta itemprop=\"datePublished\" content=\"2026-03-02T14:14:00+05:30\""
+    },
+    "https://i.blackhat.com/briefings/asia/2018/asia-18-shen-kwak-jang-nation-state-moneymule-hunting-season-thursday.pdf": {
+      "date": "2018-03-22",
+      "method": "document",
+      "evidence": "PDF CreationDate D:20180322185439+08'00'"
+    },
+    "https://i.blackhat.com/Asia-23/AS-23-Chen-Operation-Clairvoyance-How-APT-Groups-Spy-on-the-Media-Industry.pdf": {
+      "date": "2023-04-28",
+      "method": "document",
+      "evidence": "PDF CreationDate D:20230428181623+08'00'"
+    },
+    "https://web.archive.org/web/20231003080554/https://www.ironnet.com/blog/a-view-from-the-black-hat-noc-key-findings": {
+      "date": "2022-08-24",
+      "method": "visible",
+      "evidence": "byline: \"By IronNet Threat Research ... Aug 24, 2022\""
+    },
+    "https://www.ironnet.com/blog/a-view-from-the-black-hat-noc-key-findings": {
+      "date": "2022-08-24",
+      "method": "visible",
+      "evidence": "live URL now 404 (IronNet ceased operations); date taken from same article's byline in the Wayback copy: \"Aug 24, 2022\""
+    },
+    "https://cyber.gc.ca/en/news-events/etherhiding-trojan-your-toolchain": {
+      "date": "2026-03-31",
+      "method": "visible",
+      "evidence": "updated: page footer \"Date modified: 2026-03-31\" (no separate publish date found); matches earliest Wayback capture 2026-03-31"
+    },
+    "https://blog.virustotal.com/2022/11/not-dream-job-hunting-for-malicious-job.html": {
+      "date": "2022-11-03",
+      "method": "visible",
+      "evidence": "Blogger dateline \"Thursday, November 03, 2022\""
+    },
+    "https://www.virusbulletin.com/uploads/pdf/conference_slides/2019/VB2019-Kim.pdf": {
+      "date": "2019-10-08",
+      "method": "document",
+      "evidence": "PDF CreationDate D:20191008050006Z; internal /Title also begins \"20191004_Kimsuky Group...\""
+    },
+    "https://www.jamf.com/blog/contagious-interview-trojanized-macos-installers": {
+      "date": "2026-09-03",
+      "method": "visible",
+      "evidence": "byline: \"September 3 2026 by Jamf Threat Labs\""
+    },
+    "https://www.jamf.com/blog/flexibleferret-malware-continues-to-adapt/": {
+      "date": "2025-11-25",
+      "method": "meta",
+      "evidence": "JSON-LD BlogPosting dateCreated: 2025-11-25T06:00:00-06:00"
+    },
+    "https://github.com/birminghamcyberarms/QRLog": {
+      "date": "2023-02-08",
+      "method": "document",
+      "evidence": "gh api repos created_at=2023-02-08 (README also states malware first found Feb 2023)"
+    },
+    "https://m.blog.naver.com/nurilab1/223493365290": {
+      "date": "2024-06-27",
+      "method": "meta",
+      "evidence": "og:image thumbnail filename base64-decodes to 20240627_164 (upload date)"
+    },
+    "https://jillvalentine-design.github.io/Stealthmole_int/": {
+      "date": "2025-12-12",
+      "method": "document",
+      "evidence": "gh api repos/jillvalentine-design/Stealthmole_int created_at=2025-12-12 (single-purpose Pages repo, pushed same day)"
+    },
+    "https://www.cybereason.com/blog/back-to-the-future-inside-the-kimsuky-kgh-spyware-suite": {
+      "date": "2020-11-02",
+      "method": "visible",
+      "evidence": "Live URL now 301->404 (site rebranded to LevelBlue); earliest Wayback capture (2020-11-02) shows post-date \"Nov 2, 2020\""
+    },
+    "https://www.verfassungsschutz.de/SharedDocs/kurzmeldungen/DE/2023/2023-03-20-sicherheitshinweis-zu-cyberaktivitaeten.html": {
+      "date": "2023-03-20",
+      "method": "visible",
+      "evidence": "Page shows \"Erscheinungstag: 20.03.2023\"; matches URL date"
+    },
+    "https://labs.withsecure.com/publications/catching-lazarus-threat-intelligence-to-real-detection-logic-part-one": {
+      "date": "2020-09-25",
+      "method": "visible",
+      "evidence": "Current page only has og:updated_time (2026, a migration artifact); 2022 Wayback capture of the original /blog/ URL shows byline \"on 25 September, 2020\""
+    },
+    "https://research.jfrog.com/post/rollup-polyfill-masquerading/": {
+      "date": "2026-06-30",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2026-06-30"
+    },
+    "https://blog.polyswarm.io/ricochet-chollima-using-kospy-android-spyware": {
+      "date": "2025-03-17",
+      "method": "visible",
+      "evidence": "Byline: \"Mar 17, 2025 1:34:36 PM / by The Hivemind\""
+    },
+    "https://github.com/hacksider/Deep-Live-Cam": {
+      "date": "2023-09-24",
+      "method": "document",
+      "evidence": "gh api repos/hacksider/Deep-Live-Cam created_at=2023-09-24"
+    },
+    "https://www.ic3.gov/PSA/2024/PSA240516": {
+      "date": "2024-05-16",
+      "method": "visible",
+      "evidence": "<time datetime=\"2024-05-16T12:00:00.000-04:00\">May 16, 2024</time>; matches PSA240516 URL encoding"
+    },
+    "https://www.techtarget.com/searchsecurity/feature/How-to-spot-and-expose-fraudulent-North-Korean-IT-workers": {
+      "date": "2025-05-08",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2025-05-08T13:20Z"
+    },
+    "https://registry.npmjs.org/logs-bin": {
+      "date": "2025-06-04",
+      "method": "document",
+      "evidence": "npm registry time.created = 2025-06-04T14:18:39.482Z (first published version)"
+    },
+    "https://registry.npmjs.org/logs-dump": {
+      "date": "2025-06-04",
+      "method": "document",
+      "evidence": "npm registry time.created = 2025-06-04T12:24:58.339Z (first published version)"
+    },
+    "https://registry.npmjs.org/node-global-key-listener": {
+      "date": "2021-05-11",
+      "method": "document",
+      "evidence": "npm registry time.created = 2021-05-11T10:57:26.705Z (first published version)"
+    },
+    "https://github.com/steveseguin/vdo.ninja": {
+      "date": "2020-03-22",
+      "method": "document",
+      "evidence": "gh api repos/steveseguin/vdo.ninja created_at=2020-03-22; no API-exposed rename-event timestamp for the obs.ninja->vdo.ninja rebrand (old obs.ninja repo path no"
+    },
+    "https://www.fbi.gov/wanted/cyber/dprk-it-workers/dprk-wanted-8-5x11-korean-final.pdf/@@download/file/DPRK-Wanted-8.5x11.Korean.final.pdf": {
+      "date": "2024-12",
+      "method": "visible",
+      "evidence": "PDF has no CreationDate/ModDate metadata; page text states arrest warrants issued December 2024 (\"2024년 12월에 ... 연방 체포 영장이 발부되었습니다\")"
+    },
+    "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk/itworkerskorean.pdf/@@download/file/ITWorkersKorean.pdf": {
+      "date": "2025-06-24",
+      "method": "visible",
+      "evidence": "PDF has no CreationDate/ModDate metadata; page text states federal arrest warrant issued June 24, 2025 (\"2025년 6월 24일 ... 연방 체포영장을 발부하였습니다\")"
+    },
+    "https://www.fbi.gov/wanted/cyber/jin-sung-il": {
+      "date": "2025-02-03",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2025-02-03T08:11:00+00:00"
+    },
+    "https://www.fbi.gov/wanted/cyber/jon-chang-hyok": {
+      "date": "2021-02-05",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2021-02-05T16:04:00+00:00 (DC.date.created also 2021-02-05)"
+    },
+    "https://www.fbi.gov/wanted/cyber/kim-il": {
+      "date": "2021-02-05",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2021-02-05T16:17:00+00:00"
+    },
+    "https://www.fbi.gov/wanted/cyber/pak-jin-song": {
+      "date": "2025-02-03",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2025-02-03T11:20:00+00:00 (DC.date.created also 2025-02-03)"
+    },
+    "https://www.fbi.gov/wanted/cyber/park-jin-hyok": {
+      "date": "2018-08-30",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2018-08-30T09:36:00+00:00 (DC.date.created also 2018-08-30)"
+    },
+    "https://www.fbi.gov/wanted/cyber/rim-jong-hyok": {
+      "date": "2024-07-08",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2024-07-08T09:28:00+00:00"
+    },
+    "https://www.fbi.gov/wanted/counterintelligence/sim-hyon-sop": {
+      "date": "2023-03-13",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2023-03-13T16:17:00+00:00"
+    },
+    "https://any.run/cybersecurity-blog/how-to-protect-organization-against-north-korean-it-workers": {
+      "date": "2026-08-20",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2026-08-20T07:58:36+00:00"
+    },
+    "https://blog.deception.pro/blog/hok-dprk-polinrider-sep-2026": {
+      "date": "2026-09-09",
+      "method": "meta",
+      "evidence": "itemprop datePublished and JSON-LD datePublished: 2026-09-09T09:03:57-0400"
+    },
+    "https://daylight.ai/blog/prospect-call-microsoft-teams-meetings": {
+      "date": "2026-09-02",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2026-09-02T13:54:24.088Z"
+    },
+    "https://isotope13.ai/compendium/2026/arrayref/": {
+      "date": "2026-08-20",
+      "method": "visible",
+      "evidence": "time element datetime on the page: 2026-08-20"
+    },
+    "https://safedep.io/ulid-xyz-transitive-dependency-delivery-chain": {
+      "date": "2026-09-01",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-09-01T10:00:00.000Z"
+    },
+    "https://www.silentpush.com/blog/nk-it-worker/": {
+      "date": "2026-09-14",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-09-14T09:59:29+00:00"
+    },
+    "https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html": {
+      "date": "2026-04-08",
+      "method": "meta",
+      "evidence": "itemprop datePublished: 2026-04-08T13:17:00+05:30"
+    },
+    "https://www.jamf.com/blog/bluenoroff-strikes-again-with-new-macos-malware/": {
+      "date": "2023-11-06",
+      "method": "visible",
+      "evidence": "byline printed on the page: \"November 6 2023\""
+    },
+    "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-targets-freelance-developers": {
+      "date": "2025-02-20",
+      "method": "visible",
+      "evidence": "date printed on the page: \"20 Feb 2025\""
+    },
+    "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception": {
+      "date": "2025-09-25",
+      "method": "visible",
+      "evidence": "date printed on the page: \"25 Sep 2025\""
+    },
+    "https://opensourcemalware.com/blog/chainveil-and-vitevenom-dprk-polinrider-campaign": {
+      "date": "2026-07-17",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-07-17T23:29:00.000Z"
+    },
+    "https://opensourcemalware.com/blog/developer-guide-getting-over-polinrider": {
+      "date": "2026-08-13",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-08-13T21:13:00.000Z"
+    },
+    "https://opensourcemalware.com/blog/introducing-weaselbiscuit": {
+      "date": "2026-09-17",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-09-17T08:08:00.000Z"
+    },
+    "https://opensourcemalware.com/blog/polinrider-npm-case-study-dprk-attack": {
+      "date": "2026-08-25",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished: 2026-08-25T00:23:00.000Z"
+    },
+    "https://www.hackingbutlegal.com/p/north-korea-is-hiring": {
+      "date": "2026-07-15",
+      "method": "meta",
+      "evidence": "JSON-LD datePublished: 2026-07-15T21:12:09+00:00"
+    },
+    "https://haydenmckenzie.com/research/dprk-it-worker-cell-part-one": {
+      "date": "2026-09-23",
+      "method": "meta",
+      "evidence": "Obsidian Publish markdown frontmatter date: 2026-09-23"
+    },
+    "https://haydenmckenzie.com/research/dprk-it-worker-operation-part-two": {
+      "date": "2026-08-13",
+      "method": "meta",
+      "evidence": "Obsidian Publish markdown frontmatter date: 2026-08-13"
+    },
+    "https://github.com/0xdanieltran/0xdanieltran/blob/d7fc09f7c421737dd66df73a6bd746c8a3a0bda1/README.md": {
+      "date": "2021-11-19",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2021-11-19T03:32:48Z"
+    },
+    "https://github.com/BitFancy/Solana-Mev-Bot-Optimize/blob/2a94be8cc7ce3c163a21e30365015a8a85691042/README.md": {
+      "date": "2025-02-21",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-02-21T18:37:54Z"
+    },
+    "https://github.com/bs7745-y/fourmef/blob/996c776652a070555440fa5488b91419a56fbd62/readme.md": {
+      "date": "2025-04-14",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-04-14T10:39:05Z"
+    },
+    "https://github.com/cutupdev/Crypto-AI-Agent/blob/0baa5fbd47e1b551cd599f7b0a727eb0b19f0648/smart_contract/README.md": {
+      "date": "2025-04-21",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-04-21T17:38:11Z"
+    },
+    "https://github.com/ChangeYourself0613/My-Website/blob/a13cd8ef00ea35452a0712adf2db7f9383508f54/src/components/Contact.jsx": {
+      "date": "2023-03-04",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-03-04T04:08:28Z"
+    },
+    "https://github.com/starhelios/Portfolio-Gatsby/blob/b825d67e5accef664e5ea25c77e262e4addc63b2/src/data/social.js": {
+      "date": "2021-08-24",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2021-08-24T13:03:05Z"
+    },
+    "https://github.com/James92612/portfolio-james/blob/c3f15bca43b4c686019cda61d0769e44336dbfda/pages/contact.jsx": {
+      "date": "2024-05-13",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-05-13T02:42:50Z"
+    },
+    "https://github.com/shortdoom/gh-fake-analyzer/tree/db-updates/profiles/INVESTIGATIONS": {
+      "date": "2024-08-15",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-08-15T13:15:57Z"
+    },
+    "https://github.com/0xTan1319/hyperliquid-trading-bot-rust/blob/5852e4c15b683329da78b099268e1309c2908c64/README.md": {
+      "date": "2025-09-22",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-09-22T08:49:44Z"
+    },
+    "https://github.com/warmth1224/engine/blob/fbc572c3942f31245e4fb183177753e918f8ac56/utils/data/personal-data.js": {
+      "date": "2025-06-18",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-06-18T20:33:13Z"
+    },
+    "https://github.com/kanbei65/code-0605/blob/81f4cb1f433d5149ef781ad6820341983b0cab42/README.md": {
+      "date": "2024-03-07",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-03-07T18:17:40Z"
+    },
+    "https://github.com/yeshealer/yeshealer/blob/302b30a3f7dd33a2538bdaabd34ed61f810a75ea/README.md": {
+      "date": "2022-05-15",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2022-05-15T04:16:13Z"
+    },
+    "https://github.com/0xalberto/Sui-nft-launchpad/blob/481ba647e98e019a3d7320cc76b6c187a99da7da/README.md": {
+      "date": "2024-11-16",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-11-16T17:53:37Z"
+    },
+    "https://x.com/Narcass3/status/2094245634882851116": {
+      "date": "2026-08-31",
+      "method": "url",
+      "evidence": "snowflake post ID 2094245634882851116: (id >> 22) + 1288834974657 ms = 2026-08-31T02:07:23.215Z"
+    },
+    "https://github.com/YouthDream0925/YouthDream0925/blob/3088ff9cffbbde83d6496c78636a0bef113499bd/README1.md": {
+      "date": "2023-02-11",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-02-11T10:03:57Z"
+    },
+    "https://github.com/marksantiago290/Ethereum-MEV-BOT/blob/db787bfec2aff77f6f572f5d6a5aec4b2abadae9/README.md": {
+      "date": "2025-04-09",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-04-09T11:03:43Z"
+    },
+    "https://github.com/svendotdev/WanderMind/blob/ff1a19f1723328bb44cb84d6e8c181ef6a1a9665/README.md": {
+      "date": "2025-03-22",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-03-22T06:44:39Z"
+    },
+    "https://github.com/kanbei65/jab-p/blob/c5b028516e1adcd20a3d7219c082368c6b680723/index.html": {
+      "date": "2023-11-30",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-11-30T08:04:34Z"
+    },
+    "https://github.com/katlogic/solana-trading-bot/blob/0604df653106bb168a0c7b9d4c58f17c8d5fdaaf/README.md": {
+      "date": "2026-02-26",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2026-02-26T15:44:22Z"
+    },
+    "https://github.com/apollon282/portfolio/blob/4d312c10cb9730b1abfc208d97d1911d32766948/index.html": {
+      "date": "2025-04-11",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-04-11T12:23:36Z"
+    },
+    "https://raw.githubusercontent.com/Kawaii-Jong-UWUn/post-minions-assessment/main/README.md": {
+      "date": "2025-07-26",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-07-26T20:12:47Z"
+    },
+    "https://github.com/topsecretagent007/BNB-Bundler-Bot-Fourmeme/blob/dcb3bee98ec410409e7e0a003ca7560531d79add/README.md": {
+      "date": "2025-10-08",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-10-08T15:02:17Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4407": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4821": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-aasma-yasmeen-337285321": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4366": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-5189": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-alexander-tamian": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4701": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-5246": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-kaspar-kruus": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-3658": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-brandon-teng": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-gh-0xsid0703": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-kristin-meeler": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-darius-wilson-prince": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-dennis-lee-mandroill": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-developstuff93": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-devin-wright-resume": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-gh-dwaynewe": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-einar-montalvo-4247a1338": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-erick-barreiro-06847a206": {
+      "date": "2026-09-18",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-sergey-gubarev": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-3693": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-victor-fernandez": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://github.com/James92612/portfolio-james/blob/c3f15bca43b4c686019cda61d0769e44336dbfda/.eslintrc.json": {
+      "date": "2024-05-13",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-05-13T02:42:50Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-eric-dev-stevens": {
+      "date": "2026-09-11",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4875": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-donnel-ferguson": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-jesus-ustariz": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-4409": {
+      "date": "2026-09-12",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-joshua-thao": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-gerson-stuva": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://github.com/0xTan1319/mev-bot-ether/blob/81188bae86adb91694ed6fc50c1b9940cd7a725d/README.md": {
+      "date": "2025-02-03",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-02-03T20:48:20Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-lucas-lee-dtex": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-michael-bum": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-oladimeji-oladipo-744579399": {
+      "date": "2026-09-16",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-michael-leal": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-matthew-shepherd": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-phillip-gideon-109495433": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-3729": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-renz-patdu": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-rob-park-robpark04": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-3657": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-rusell-soriano-b3894934a": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-orlando-bonilla": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-pipu-3570": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://ofac.treasury.gov/recent-actions/20250708_33": {
+      "date": "2025-07-08",
+      "method": "url",
+      "evidence": "date segment 20250708 in URL path"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-yesiree-cano-432459341": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2025/10/beavertail-and-ottercookie.txt": {
+      "date": "2025-10-16",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-10-16T09:31:56Z"
+    },
+    "https://web.archive.org/web/20250721110728/https://www.enki.co.kr/en/media-center/tech-blog/an-attacker-disguised-as-a-job-seeker-distributing-malware-on-github": {
+      "date": "2025-06-04",
+      "method": "visible",
+      "evidence": "date printed in the original article header (time element datetime 2025-06-04, \"Jun 4, 2025\"); the capture date was not used"
+    },
+    "https://raw.githubusercontent.com/elastic/labs-releases/main/indicators/ref7001/ecs-indicators.ndjson": {
+      "date": "2023-10-25",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-10-25T18:47:08Z"
+    },
+    "https://web.archive.org/web/20260923080047/https://slowmist.medium.com/threat-intelligence-polinrider-poisons-nova-using-on-chain-transactions-as-a-c2-manager-5357a9d0222e": {
+      "date": "2026-09-21",
+      "method": "meta",
+      "evidence": "article:published_time and JSON-LD datePublished on the original Medium article: 2026-09-21T08:33:41Z; the capture date was not used"
+    },
+    "https://raw.githubusercontent.com/elastic/labs-releases/main/indicators/rustbucket/ecs-indicators.ndjson": {
+      "date": "2023-06-29",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-06-29T18:12:14Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-jemelito-constantino-a525b9187": {
+      "date": "2026-09-18",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://raw.githubusercontent.com/OpenSourceMalware/WeaselBiscuit/HEAD/README.md": {
+      "date": "2026-09-16",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2026-09-16T23:38:42Z"
+    },
+    "https://github.com/0xdanieltran/0xdanieltran-portfolio/blob/c5b683972df8be5357e65751e69b5ba84217628e/src/features/portfolio/data/social-links.ts": {
+      "date": "2025-11-12",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-11-12T15:52:43Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-abidd-malik": {
+      "date": "2026-09-23",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://github.com/ChavisYang/portfolio/blob/54a8927406264a950428bbf3c1457285c32a5a42/components/screen/booting_screen.js": {
+      "date": "2025-05-29",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-05-29T12:46:30Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-alan-goldman": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-andrew-mooney-76a144332": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-ashley-johnson-575706369": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-dan-daniel-sadq-a06416428": {
+      "date": "2026-09-13",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-felix-martel-5690283a1": {
+      "date": "2026-09-18",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-john-nagy-a05299296": {
+      "date": "2026-09-18",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-jacob-miles-haigis": {
+      "date": "2026-09-18",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-kamil-toporek-014935395": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-levente-bajusz-3525323b0": {
+      "date": "2026-09-16",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-marius-repede-3a1351395": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-mariusz-wekwejt-5055863aa": {
+      "date": "2026-09-21",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://github.com/marksantiago290/Mark-Santiago/blob/cc4b653dc2fb0df42d3dd721e451f7998d19dbfb/frontend/lib/Meta.ts": {
+      "date": "2024-11-21",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-11-21T21:22:47Z"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-marra-hassan-37457a416": {
+      "date": "2026-09-13",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-ranjith-bantu-276177408": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-rex-blank-4b5ab8361": {
+      "date": "2026-09-13",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-rex-blank-75496930a": {
+      "date": "2026-09-16",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-roman-mcauley-4687293b0": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-sana-omair-442160393": {
+      "date": "2026-09-13",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-sana-umair-325359427": {
+      "date": "2026-09-13",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-tooba-basharat-0a774531b": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-zuriel-hiram-landa-guzman-256a682aa": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-andrew-beard": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-guinouss-kobra-rene": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://chollimahunter.github.io/remote-workers/candidates/#candidate-brian-irving": {
+      "date": "2026-10-03",
+      "method": "visible",
+      "evidence": "own research: the candidate row's first_seen in candidates.json, the day the lead was first recorded; not last_checked, which is a read date"
+    },
+    "https://github.com/marksantiago290/ERC20-Token-Presale/blob/32d81213a2768193c0060851141463a595123c23/components/Footer.tsx": {
+      "date": "2025-08-21",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2025-08-21T09:13:41Z"
+    },
+    "https://github.com/sallamy2580/instagram-mern-awss3/blob/fc517096b5b72ef65468345cf186683167870980/README.md": {
+      "date": "2022-03-19",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2022-03-19T09:44:37Z"
+    },
+    "https://github.com/oblzh/Solana-trading-cli/blob/2188b8943f2660ee32efc119f6f45ab118730b22/README.md": {
+      "date": "2024-05-29",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-05-29T12:12:23Z"
+    },
+    "https://ofac.treasury.gov/recent-actions/20260312": {
+      "date": "2026-03-12",
+      "method": "url",
+      "evidence": "date segment 20260312 in URL path"
+    },
+    "https://ofac.treasury.gov/recent-actions/20230523": {
+      "date": "2023-05-23",
+      "method": "url",
+      "evidence": "date segment 20230523 in URL path"
+    },
+    "https://ofac.treasury.gov/recent-actions/20250827": {
+      "date": "2025-08-27",
+      "method": "url",
+      "evidence": "date segment 20250827 in URL path"
+    },
+    "https://ofac.treasury.gov/recent-actions/20251104": {
+      "date": "2025-11-04",
+      "method": "url",
+      "evidence": "date segment 20251104 in URL path"
+    },
+    "https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector": {
+      "date": "2025-10-23",
+      "method": "meta",
+      "evidence": "page data layer date 2025/10/23"
+    },
+    "https://www.welivesecurity.com/en/eset-research/lazarus-luring-employees-trojanized-coding-challenges-case-spanish-aerospace-company": {
+      "date": "2023-09-29",
+      "method": "meta",
+      "evidence": "page data layer date 2023/09/29"
+    },
+    "https://www.welivesecurity.com/en/eset-research/shifting-sands-ransomhub-edrkillshifter/": {
+      "date": "2025-03-26",
+      "method": "meta",
+      "evidence": "page data layer date 2025/03/26"
+    },
+    "https://ti.qianxin.com/blog/articles/Espionage-Operation-Disguised-as-Software-Installers-by-Kimsuky-APT-Q-2-EN/": {
+      "date": "2024-03-05",
+      "method": "meta",
+      "evidence": "embedded article data publish_time 2024-03-05T16:57:20Z"
+    },
+    "https://www.igloopedia.com/128f216a-760c-81d3-99d1-c5918596ab01": {
+      "date": "2024-10-23",
+      "method": "meta",
+      "evidence": "Notion page property Release Date 2024-10-23"
+    },
+    "https://web.archive.org/web/20260909002201/https://s2w.inc/en/resource/detail/920": {
+      "date": "2025-09-09",
+      "method": "visible",
+      "evidence": "board-title date 2025.09.09 on the archived page"
+    },
+    "https://web.archive.org/web/20240618224017/https://interlab.or.kr/archives/19416": {
+      "date": "2023-09-01",
+      "method": "visible",
+      "evidence": "post date September 1, 2023 on the archived page (updated 9/18/2023)"
+    },
+    "https://web.archive.org/web/20250214080808/https://s2w.inc/en/resource/detail/758": {
+      "date": "2025-02-14",
+      "method": "visible",
+      "evidence": "board-title date 2025.02.14 on the archived page"
+    },
+    "https://web.archive.org/web/20260909105242/https://s2w.inc/en/resource/detail/751": {
+      "date": "2025-01-22",
+      "method": "visible",
+      "evidence": "board-title date 2025.01.22 on the archived page"
+    },
+    "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2024/08/moonpeak-infrastructure-north-korea.txt": {
+      "date": "2024-08-21",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2024-08-21T13:38:36Z"
+    },
+    "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2022/09/lazarus-three-rats.txt": {
+      "date": "2022-09-08",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2022-09-08T11:58:34Z"
+    },
+    "https://raw.githubusercontent.com/Cisco-Talos/IOCs/main/2023/08/lazarus-collectionrat.txt": {
+      "date": "2023-08-24",
+      "method": "document",
+      "evidence": "gh api oldest commit touching the file: 2023-08-24T12:11:26Z"
+    }
+  }
+}

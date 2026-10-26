@@ -1,0 +1,21 @@
+{#
+  partials/profile-tile.njk — one actor profile in a .profile-grid
+
+  Usage: set `tileProfile` before including.
+    {% set tileProfile = profile %}
+    {% include "partials/profile-tile.njk" %}
+
+  A thin wrapper over partials/tile.njk, which is the site's one tile design and
+  carries the markup. This exists only to say what a profile puts in each slot:
+  its photograph, its display name, and its Korean name underneath.
+
+  The include stays on one line for the same reason tile.njk does — see the note
+  there about markdown-it splitting an anchor that contains blank lines.
+#}
+{%- set tile = {
+  href: "/profiles/" + tileProfile.slug + "/",
+  photo: tileProfile.photo_slot.image_path if (tileProfile.photo_slot and tileProfile.photo_slot.image_path) else null,
+  name: tileProfile.display_name,
+  sub: tileProfile.name_korean
+} -%}
+{% include "partials/tile.njk" %}

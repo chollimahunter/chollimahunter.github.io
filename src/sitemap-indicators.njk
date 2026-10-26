@@ -1,0 +1,25 @@
+---
+pagination:
+  data: iocIndex.indicator_sitemaps
+  size: 1
+  alias: run
+permalink: "/sitemap-indicators-{{ pagination.pageNumber + 1 }}.xml"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/sitemap-indicators.njk — one sitemap file per run of 5,000 indicator
+  pages. The runs are cut in src/_data/iocIndex.js and the index at
+  src/sitemap.njk names each file, so adding an indicator never needs a
+  template change here. Under `eleventy --serve` the data is a slice and
+  there is one short file.
+
+  <lastmod> is the record's `lastmod` from indicatorPageData() in iocIndex.js:
+  the latest date a citation was pulled, a source was published, or an account
+  was checked. Not the build date, which would claim every page changed on
+  every deploy and teach Google to ignore the field.
+#}<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for ioc in run %}
+  <url><loc>{{ site.url }}/indicators/{{ ioc.id }}/</loc>{% if ioc.lastmod %}<lastmod>{{ ioc.lastmod }}</lastmod>{% endif %}</url>
+{%- endfor %}
+</urlset>

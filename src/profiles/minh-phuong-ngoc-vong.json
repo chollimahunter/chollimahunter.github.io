@@ -1,0 +1,62 @@
+{
+  "slug": "minh-phuong-ngoc-vong",
+  "display_name": "Minh Phuong Ngoc Vong",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Sentenced December 4, 2025, District of Maryland",
+    "details": [
+      {
+        "label": "Age at sentencing",
+        "value": "40"
+      },
+      {
+        "label": "Residence",
+        "value": "Bowie, Maryland"
+      },
+      {
+        "label": "Plea",
+        "value": "Guilty to conspiracy to commit wire fraud"
+      },
+      {
+        "label": "Sentence",
+        "value": "15 months in prison and three years of supervised release"
+      },
+      {
+        "label": "Co-conspirator",
+        "value": "John Doe, aka William James, a foreign national living in Shenyang, China"
+      }
+    ],
+    "caution": "According to court documents, Vong conspired with others, including John Doe, aka William James, a foreign national living in Shenyang, China, to defraud U.S. companies into hiring Vong as a remote software developer. After securing these jobs through materially false statements about his education, training, and experience, Vong allowed Doe and others to use his computer access credentials to perform the remote software development work and receive payment for that work. According to court documents, Vong knew that Doe was located next to North Korea. Additionally, Doe’s communications indicate that he is likely a North Korean national who was working to generate revenue for the North Korean government. According to the plea agreement, on Jan. 30, 2023, Doe submitted a fraudulent resume in Vong’s name to a Virginia-based technology company for a web application developer position that required U.S. citizenship as a condition of employment. The resume falsely represented that Vong possessed a Bachelor of Science degree and 16 years of experience as a software developer. In fact, Vong did not have a college degree or experience in software development. On March 28, 2023, Vong participated in an online job interview with the CEO of a Virginia-based company. Vong verified his identity and citizenship by showing his Maryland driver’s license and U.S. Passport. Following the interview, the Virginia-based company hired Vong and assigned him to work on a contract for the Federal Aviation Administration (FAA) involving a particular software application used by various U.S. government agencies to manage sensitive information regarding national defense matters. The Virginia-based company provided Vong with a laptop to use in connection with his employment and the FAA authorized Vong to receive a Personal Identity Verification card to access government facilities and systems. Vong installed remote access software on the laptop to facilitate Doe’s access to it and conceal his location in China. Between March 2023 and July 2023, Doe used Vong’s credentials to perform the software development work from his location in China. The Virginia-based company paid Vong more than $28,000 in wages for work he performed, portions of which Vong then sent overseas to Doe and other conspirators. As part of his guilty plea, Vong admitted that the Virginia-based company was not the only company he and his co-conspirators defrauded. Between 2021 and 2024, Vong used fraudulent misrepresentations to obtain employment with at least 13 different U.S. companies, who collectively paid Vong more than $970,000 in salary for software development services that were, unbeknownst to them, performed by Doe or other overseas conspirators."
+  },
+  "sources": [
+    {
+      "title": "Maryland Man Sentenced for Conspiracy to Commit Wire Fraud",
+      "url": "https://www.justice.gov/opa/pr/maryland-man-sentenced-conspiracy-commit-wire-fraud",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-12-04",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Minh Phuong Ngoc Vong is a United States resident of Bowie, Maryland, not a DPRK national, and is profiled here as a domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice he let a foreign national in Shenyang, China, whom court documents call John Doe and who used the name William James, obtain remote software-development jobs in Vong's name at at least thirteen companies between 2021 and 2024, then handed over his credentials and a share of more than $970,000 in salary; one of those jobs placed the co-conspirator on a Federal Aviation Administration contract with a Personal Identity Verification card.",
+    "He pleaded guilty to conspiracy to commit wire fraud and on December 4, 2025 was sentenced to 15 months in prison and three years of supervised release. The Department states that Doe's communications indicate he is likely a North Korean national working to generate revenue for the North Korean government.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

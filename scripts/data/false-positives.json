@@ -1,0 +1,147 @@
+{
+  "_comment": "Values judged to be false positives, so the judgement is not re-made and the value never re-enters the index: scripts/ingest-scraped-iocs.js prunes them on every run. Sealed: each entry is a hash of the value, never the value, because a false positive is usually somebody who has done nothing. See scripts/seal-private-lists.js.",
+  "checked": "2026-09-27",
+  "values": [
+    {
+      "sealed": "00e72852545cb692b0f54887210226251cc5aae9b27df0ef98ae39edccec1ea8"
+    },
+    {
+      "sealed": "0434e805cdbe9cebd43937d6cde73760c918f4281b8944e485f0da6576d92836"
+    },
+    {
+      "sealed": "0968fd7a8577f69abf6eff96cf02bd1652952230a0a883efc8b2b70af6d454fe"
+    },
+    {
+      "sealed": "0c95ff4a29972e157119e75189d502b410884f50cbe6df1acb512ccd7b60ac9c"
+    },
+    {
+      "sealed": "121ca30c44cec472c549f846f3d4ce559c297f160e64eb19f5853afa141399d8"
+    },
+    {
+      "sealed": "18617b0777548e20c258facef437e460669b2e04a8ecc2d42ebaba02e25136bc"
+    },
+    {
+      "sealed": "1e0bbfd93ebfee66001f2adb6cbc628d625f6470996456a725501673b423be2e"
+    },
+    {
+      "sealed": "209edb37e06af9f98b7c7824d8ac7c6615bd671a4fdc2a85077ed6c9e7b5d6dd"
+    },
+    {
+      "sealed": "230dd4f5e56161492e7e3319bd367322cf1597607b2ef87316c1b70d082f3727"
+    },
+    {
+      "sealed": "236d1c2349dcbf080a5ee149888b545ecad6b43dc560360f06be2aac4069e5ce"
+    },
+    {
+      "sealed": "2c316a38854c703ce2f83875eb779d20582989542e5e87429e33915549cc7115"
+    },
+    {
+      "sealed": "2c9ad4c0832a8533e37822aaef0372d99b07b126e2ed15bc8551ac15eee97e5f"
+    },
+    {
+      "sealed": "2e6a27c524e757d96d599b33c3ff70f0e352b16b6946cc9fa761b52b95271e0c"
+    },
+    {
+      "sealed": "36b61d6f256fe179450bbb62e1672f3e9fba892d4400ffe1df57d5f856f66ccf"
+    },
+    {
+      "sealed": "3701b2348be445b028fc2fedd3ff56ed63b27bce8e073464dafd5fb2d2db9e21"
+    },
+    {
+      "sealed": "3aca9e0e73822b21e1fa9a84afbfff0a0a7f1e332314be3769ba4e039f4761c6"
+    },
+    {
+      "sealed": "41005e481eec2ce48d0d37c1bcc3b35eeb54b39da55c0ad6a4fd3c66c9ef980e"
+    },
+    {
+      "sealed": "44e1b9b2f59142df0aaedb10e72bfc7f445e5742a07507d9f6b3c3b97d252a70"
+    },
+    {
+      "sealed": "457bbba6087abd61ed26c6db18f9258fdcd508b3ad34481afef7a7d49ae44ea7"
+    },
+    {
+      "sealed": "4c0328aae9d0a4251e906e3eaaf7d269843c4771b2bfab6fe88ccaca87b6cd7f"
+    },
+    {
+      "sealed": "518186ecd21ccd078fa384175b5b634b498b619df4eb1a8bb9394d0d790bde2a"
+    },
+    {
+      "sealed": "5e9853ca650790e8740825f19461f0653d1ac26e7b4de0942292e6e954483cb8"
+    },
+    {
+      "sealed": "5ead2b689f993a076d1d906ade0c894b57d0b70d2b84938afe59c6befb7e7c49"
+    },
+    {
+      "sealed": "678d01e720b92bd774d687a85ff6973e6f44a0bbc1d5c887a6deb7d0018ce388"
+    },
+    {
+      "sealed": "6c77888d7a8eb5be815c4b44b8ad07bacd353042f92f4a9c5c53d8a3ac305650"
+    },
+    {
+      "sealed": "7262c2accf215029b329943f8a30b1a74621cbb4af6d27c1898bdc655d1fb620"
+    },
+    {
+      "sealed": "7504c9d0f2af43a9431893b0062b22616c9b1bfc37740cf7829ca13312b86ca2"
+    },
+    {
+      "sealed": "7938374b69e546be8e18bb4e97d661e7f7ff7f409b9ce8d72acc2563b3c7fca5"
+    },
+    {
+      "sealed": "7b31c45ec10be5a6cbffee67882cc74dc729914ff661e6a93ce4dd26934d90d0"
+    },
+    {
+      "sealed": "7db355cd3f07eb9b261a4d74a6ba88f2d8b40bd7e31c3417bc7cf14bb7097ede"
+    },
+    {
+      "sealed": "825bdfa7628cadb1ba2bf4b95fc8041e5e723ab137eb3737d203b3d5ceacd2c7"
+    },
+    {
+      "sealed": "86658b24215c0dfeb502d44830967fb58222fb00c18bfc7c9781a93cd976e9be"
+    },
+    {
+      "sealed": "907977707f3b309b92c2fa6f1e97d272406ad1037a74bb4310e47bb078890100"
+    },
+    {
+      "sealed": "9142ec311bdfc171bf7d040c61a4bd6c042eb2faf7b96cfc62d2df004e2beb76"
+    },
+    {
+      "sealed": "9232089a80e761c2915fdd011084675d41d06c824e780113c935295e025ef776"
+    },
+    {
+      "sealed": "a0744f60ea9c0c1d1fe932e8305576d90103e6f789fc0aecea210fcc9ffcbf60"
+    },
+    {
+      "sealed": "a786b41edd4858b8531e552e410c094c519567a01291f4226739f0445fef7fe9"
+    },
+    {
+      "sealed": "ac2395cbdd420fd2efd742ab3e40234f9ec10eda7549dc8a5c24aae85c60a41c"
+    },
+    {
+      "sealed": "b6658095d0df567933df427a405c68864d681ccf325f2fca61d3fca62a88a607"
+    },
+    {
+      "sealed": "bc0147c1759f7a7a97174e97a69821b56f39728de44b1a3cc093a3bf31e94770"
+    },
+    {
+      "sealed": "c1f549064c12495b2c0570743582a9a7f21ac436332b6b29678fcfd50100c069"
+    },
+    {
+      "sealed": "c25dea98d72d5a217dfd9f74b860d95ccae203f0cf9e034b4472cfcf159282cf"
+    },
+    {
+      "sealed": "d7c7dcd6b212ad8eaa5aacef394e491daaa510680bf770245bf8065ed13e5908"
+    },
+    {
+      "sealed": "ef8caa27b8c9300192b79e479f21abada61b42fa5058cea48dfbf67672f600db"
+    },
+    {
+      "sealed": "efd496ecb75f1a2e79056aaffed8fbdbb0682403797d78fe42d92a1e181ed60f"
+    },
+    {
+      "sealed": "f6388717f3ce5c2c66291c9dd2f5491fc7417292d45159e92b628fd923cddd71"
+    },
+    {
+      "sealed": "fc8ce12304ff312ab7aecaea7f750719c459208fee46b0b04e82534916f5d83d"
+    }
+  ]
+}

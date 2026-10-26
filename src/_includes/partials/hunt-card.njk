@@ -1,0 +1,49 @@
+{#
+  partials/hunt-card.njk — one hunt as a tile in the .hunt-grid
+
+  Usage: set `cardHunt` before including.
+    {% set cardHunt = hunt %}
+    {% include "partials/hunt-card.njk" %}
+
+  The whole tile is a single link to the hunt's own page at /hunts/{id}/,
+  which is where the full description, the indicator table, every query and
+  the citations live. Nothing here duplicates that page: the tile carries only
+  what someone scans a library for — what the hunt looks for, what kind of
+  hunt it is, which operating systems and log planes it covers (the chips),
+  and which query languages it ships in (the line under the chips).
+
+  data-hunt-type, data-os, data-platforms and data-search are read by
+  src/assets/js/hunt-filter.js, which filters the grid in place. Changing any
+  of those attribute names means changing that script too.
+#}
+{# `platforms` (Windows, macOS, Linux, Identity / cloud, Network) is what the
+   hunt covers; each query's `platform` is the technology it is written for.
+   data-os is pipe-separated because an OS value can contain spaces. A hunt
+   carries one query per technology, but the list still runs through `unique`
+   (registered in .eleventy.js) so a repeated value never doubles up. #}
+{% set cardPlatforms = [] %}
+{% for query in cardHunt.queries %}{% set cardPlatforms = (cardPlatforms.push(query.platform), cardPlatforms) %}{% endfor %}
+{% set cardPlatforms = cardPlatforms | unique %}
+{# The text the library's search box matches against. It deliberately reaches
+   past what the tile displays and into the hunt's indicator table, because the
+   thing someone types into a hunt library is usually an artefact rather than a
+   title: "NetKey", "Astrill", "TinyPilot", a Chrome extension id. The long
+   prose fields are left out — carrying every description here would add tens
+   of kilobytes to this page to make the least distinctive text searchable. #}
+{% set cardSearch = [cardHunt.title, cardHunt.summary, cardHunt.hunt_type, cardHunt.confidence_level] %}
+{% for tag in cardHunt.campaign_tags %}{% set cardSearch = (cardSearch.push(tag), cardSearch) %}{% endfor %}
+{% for indicator in cardHunt.indicators %}{% set cardSearch = (cardSearch.push(indicator.type + " " + indicator.value), cardSearch) %}{% endfor %}
+<li data-hunt-type="{{ cardHunt.hunt_type }}" data-os="{{ (cardHunt.platforms or []) | join("|") }}" data-platforms="{{ cardPlatforms | join(",") }}" data-search="{{ cardSearch | join(' ') | lower }}">
+  <a class="card hunt-tile" href="/hunts/{{ cardHunt.id }}/">
+    <span class="hunt-tile__badges">
+      <span class="badge badge--hunt-type">{{ cardHunt.hunt_type }}</span>
+      {% set confidenceLevel = cardHunt.confidence_level %}{% include "partials/confidence-badge.njk" %}
+    </span>
+    <span class="hunt-tile__title">{{ cardHunt.title }}</span>
+    <span class="hunt-tile__summary">{{ cardHunt.summary }}</span>
+    <span class="hunt-tile__meta">
+      {% for os in cardHunt.platforms %}<span class="tag-chip">{{ os }}</span>{% endfor %}
+    </span>
+    <span class="hunt-tile__langs">{{ cardPlatforms | join(" · ") }}</span>
+  </a>
+</li>

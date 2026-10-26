@@ -1,0 +1,81 @@
+{
+  "slug": "christina-chapman",
+  "display_name": "Christina Marie Chapman",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/christina-chapman.jpg",
+    "caption": "Still from a video posted to TikTok, carrying the watermark of the account it was posted from. Reporting on the case describes Chapman as a TikTok personality who posted about her circumstances before and during the scheme. Unlike the law-enforcement portraits elsewhere on this site, this is not a government work: it is reproduced here as a frame from a social-media video whose copyright rests with whoever recorded it.",
+    "source": "https://decrypt.co/331771/arizona-tiktoker-sentenced-17m-north-korean-worker-scheme"
+  },
+  "fake_ids": [],
+  "sources": [
+    {
+      "title": "Arizona Woman Sentenced for $17M IT Worker Fraud Scheme that Illegally Generated Revenue for North Korea",
+      "url": "https://www.justice.gov/usao-dc/pr/arizona-woman-sentenced-17m-it-worker-fraud-scheme-illegally-generated-revenue-north",
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office for the District of Columbia",
+      "date": "2025-07-24",
+      "type": "press_release"
+    },
+    {
+      "title": "Arizona Woman Pleads Guilty to Fraud Scheme that Illegally Generated $17 Million in Revenue for North Korea",
+      "url": "https://www.justice.gov/usao-dc/pr/arizona-woman-pleads-guilty-fraud-scheme-illegally-generated-17-million-revenue-north",
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office for the District of Columbia",
+      "date": "2025-02-11",
+      "type": "press_release"
+    },
+    {
+      "title": "Charges and Seizures Brought in Fraud Scheme Aimed at Denying Revenue for Workers Associated with North Korea",
+      "url": "https://www.justice.gov/usao-dc/pr/charges-and-seizures-brought-fraud-scheme-aimed-denying-revenue-workers-associated-north",
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office for the District of Columbia",
+      "date": "2024-05-16",
+      "type": "indictment"
+    },
+    {
+      "title": "North Korea Infiltrated America by Taking Remote US IT Jobs",
+      "url": "https://www.bloomberg.com/news/features/2025-07-24/north-korea-infiltrated-america-by-taking-remote-us-it-jobs",
+      "publisher": "Bloomberg Businessweek",
+      "date": "2025-07-24",
+      "type": "reference"
+    },
+    {
+      "title": "Arizona TikToker Sentenced for Aiding $17M North Korean IT Worker Scheme",
+      "url": "https://decrypt.co/331771/arizona-tiktoker-sentenced-17m-north-korean-worker-scheme",
+      "publisher": "Decrypt",
+      "date": "2025-07-24",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "Christina Marie Chapman is a United States citizen, not a DPRK national, and is profiled here as the domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice she operated a so-called laptop farm from her home in Arizona, hosting computers issued by U.S. employers so that North Korean IT workers abroad could appear to work from inside the United States.",
+    "She was charged in May 2024, pleaded guilty on 11 February 2025 to conspiracy to commit wire fraud, aggravated identity theft and conspiracy to launder monetary instruments, and on 24 July 2025 was sentenced to 102 months in prison and three years of supervised release, with forfeiture of $284,555.92 and a judgment of $176,850.",
+    "The Department of Justice states that the scheme used the stolen identities of 68 U.S. persons, defrauded 309 U.S. businesses and two international businesses, and generated at least $17.1 million in revenue for North Korea.",
+    "Every factual claim on this profile is drawn from the three Department of Justice releases cited below. The Bloomberg and Decrypt pieces are cited for their coverage of the case and for what they establish about her social-media presence, not for any of the figures above. The photographs are not law-enforcement portraits, and each carries its own note on what it is and where it came from. The confidence level of 'confirmed' reflects that she was named in a federal indictment and has since been convicted on her own plea."
+  ],
+  "last_updated": "2026-09-03",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies.",
+  "additional_photos": [
+    {
+      "image_path": "/assets/img/profiles/christina-chapman-laptop-farm.jpg",
+      "caption": "The laptop farm itself: wire shelving racked with employer-issued laptops, each screen live and each machine labelled with a sticky note naming the identity it was running under. The Department of Justice states that more than ninety laptops were recovered, and that the scheme placed workers at 309 United States businesses. This photograph has been reproduced across reporting on the case; this site has not established which agency released it.",
+      "source": "https://www.justice.gov/usao-dc/pr/arizona-woman-sentenced-17m-it-worker-fraud-scheme-illegally-generated-revenue-north"
+    },
+    {
+      "image_path": "/assets/img/profiles/christina-chapman-laptop-farm-tiktok-1.jpg",
+      "caption": "A still from the same TikTok account as the portrait above, in which the racks appear behind everyday content. The teal bag hanging from the shelving is the one visible in the photograph of the seized farm, which is this site's own observation rather than a claim any cited source makes.",
+      "source": ""
+    },
+    {
+      "image_path": "/assets/img/profiles/christina-chapman-laptop-farm-tiktok-2.jpg",
+      "caption": "A second still from that account. Several laptops sit powered on across the shelving in the background, which matches the racked, powered machines the Department of Justice describes at the farm; that reading is this site's own and not a claim any cited source makes.",
+      "source": ""
+    }
+  ]
+}

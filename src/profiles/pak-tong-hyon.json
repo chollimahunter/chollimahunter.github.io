@@ -1,0 +1,62 @@
+{
+  "slug": "pak-tong-hyon",
+  "display_name": "Pak Tong Hyon",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by the Republic of Korea on December 26, 2024, in force from December 30, 2024, as a member of a DPRK IT organisation earning foreign currency abroad for the nuclear and missile programmes",
+    "details": [
+      {
+        "label": "Post, per the designation annex",
+        "value": "chief of the 313 General Bureau's IT delegation in Equatorial Guinea (313총국 적도기니주재 IT대표단 단장)"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "September 15, 1975"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      }
+    ],
+    "caution": "이번에 제재대상으로 지정되는 박흥룡, 윤정식, 리일진, 김경일, 강현철, 김철민, 리금형, 김류성, 황철, 안광일, 한일남, 승철범, 리영림, 박동현은 조선노동당 군수공업부 산하기관인 313총국에 소속되어 해외에 주재하면서 IT 외화벌이 활동을 해왔다. 군수공업부는 탄도미사일 프로그램을 포함한 북한의 무기 생산 및 연구개발을 총괄하는 기관으로서 안보리 제재(2016.3.2.) 대상이다. 그 산하기관인 313총국은 북한 해외 IT 인력 다수를 파견하고 벌어들인 외화로 핵‧미사일 개발 자금을 마련하고 있으며, 군수 부문 소프트웨어 개발에도 관여하고 있다."
+  },
+  "sources": [
+    {
+      "title": "우리 정부의 대북 독자제재 지정 (Republic of Korea unilateral sanctions designation of fifteen DPRK IT-worker organisation members and one entity)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375771",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2024-12-26",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "금융위원회 고시 제2024-57호, 금융거래등제한대상자 지정 및 지정 취소에 관한 규정 일부개정 (Financial Services Commission Notice 2024-57, consolidated list of restricted counterparties, entries 900 to 915)",
+      "url": "https://www.fsc.go.kr/po040200/83752",
+      "publisher": "Financial Services Commission, Republic of Korea",
+      "date": "2024-12-30",
+      "type": "sanctions_designation"
+    }
+  ],
+  "disclaimer": [
+    "Pak Tong Hyon is profiled here as a member of the 313 General Bureau of the Munitions Industry Department, which the Republic of Korea's foreign ministry describes as the body that sends many of the DPRK's IT workers abroad and funds nuclear and missile development from what they earn. The ministry's annex gives his post as chief of the bureau's IT delegation stationed in Equatorial Guinea; the Financial Services Commission's register gives his English name and date of birth.",
+    "The Korean quotation under the designation details is the ministry's own wording.",
+    "The confidence level of 'confirmed' reflects that this individual is named on a Republic of Korea government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "박동현",
+  "name_korean_provenance": "cited"
+}

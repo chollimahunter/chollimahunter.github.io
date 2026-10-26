@@ -1,0 +1,31 @@
+{#
+  partials/ioc-table.njk — the indicator table on every page with an indicator
+  search (/remote-workers/, a cluster page, /repo-scanner/, the home page).
+
+  Usage: set `iocTable` before including.
+    {% set iocTable = { results: true } %}                  the search's results
+    {% set iocTable = { records: iocIndex.remote_workers.recent } %}  the no-JS rows
+
+  The results table starts empty and hidden; src/assets/js/ioc-search.js fills
+  its body, sorts it over the whole result set from its own header buttons
+  (data-no-sort keeps table-sort.js, which sees only the rendered rows, off it)
+  and hides the build-time table. The build-time table is the fallback a reader
+  without JavaScript, or whose index fetch failed, keeps; table-sort.js sorts
+  its rows. Keep the header here and COLUMNS in ioc-search.js in step.
+  No blank line anywhere in the output: the home page includes this from
+  Markdown, where a blank line would end the HTML block.
+#}
+<div class="table-scroll"{% if iocTable.results %} data-ioc-results hidden{% else %} data-ioc-fallback{% endif %}>
+  <table class="results-table"{% if iocTable.results %} data-no-sort{% endif %}>
+    <thead>
+      <tr>
+        <th scope="col">Indicator</th>
+        <th scope="col">Type</th>
+        <th scope="col">Persona and cluster</th>
+        <th scope="col">Report date</th>
+        <th scope="col">Sources</th>
+      </tr>
+    </thead>
+    <tbody>{% for record in iocTable.records %}{% set iocRecord = record %}{% include "partials/ioc-result.njk" %}{% endfor %}</tbody>
+  </table>
+</div>

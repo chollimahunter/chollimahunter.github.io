@@ -1,0 +1,127 @@
+[
+  {
+    "dataset_id": "osm-polinrider-npm-versions",
+    "title": "PolinRider: malicious npm releases",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "confidence_level": "medium",
+    "description": "Releases OpenSourceMalware inventoried as malicious in its PolinRider case study, where a maintainer account was used to ship BeaverTail through ordinary-looking package updates. The report notes that at the time of writing only one of these releases had been pulled from the registry. Each entry is a specific published version, in name@version form.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These are version-pinned indicators on purpose: for a compromised legitimate package the name identifies the victim project, not the threat, so a bare package name is not carried here and inclusion of a version says only that the cited report describes that release as malicious. Check the cited post before acting on any single entry.",
+    "source": {
+      "title": "PolinRider: malicious npm releases",
+      "url": "https://opensourcemalware.com/blog/polinrider-npm-case-study-dprk-attack",
+      "publisher": "OpenSourceMalware",
+      "date": "2026-08-24",
+      "type": "threat_intel_report"
+    },
+    "entry_count": 10,
+    "entries": [
+      "@lambda-platform/lambda-vue@3.3.24",
+      "@syncraft-labs/core@0.4.1",
+      "@syncraft-labs/react@0.4.1",
+      "@syncraft-labs/vue@0.4.1",
+      "fetch-page-assets@1.2.10",
+      "fetch-page-assets@1.2.11",
+      "fetch-page-assets@1.2.12",
+      "fetch-page-assets@1.2.13",
+      "fetch-page-assets@1.2.14",
+      "fetch-page-assets@1.2.9"
+    ]
+  },
+  {
+    "dataset_id": "osm-chainveil-vitevenom-versions",
+    "title": "ChainVeil and ViteVenom: malicious npm releases",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "confidence_level": "medium",
+    "description": "Releases OpenSourceMalware attributes to the ChainVeil and ViteVenom clusters of the same campaign. Most are typosquats of build-tooling packages -- names one character or one word away from tailwind-merge, sass-format, rate-limiter-flexible and the Vite ecosystem -- published by the operator rather than injected into anyone else's project. Each entry is a specific published version, in name@version form.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These are version-pinned indicators on purpose: for a compromised legitimate package the name identifies the victim project, not the threat, so a bare package name is not carried here and inclusion of a version says only that the cited report describes that release as malicious. Check the cited post before acting on any single entry.",
+    "source": {
+      "title": "ChainVeil and ViteVenom: malicious npm releases",
+      "url": "https://opensourcemalware.com/blog/chainveil-and-vitevenom-dprk-polinrider-campaign",
+      "publisher": "OpenSourceMalware",
+      "date": "2026-08-31",
+      "type": "threat_intel_report"
+    },
+    "entry_count": 22,
+    "entries": [
+      "@vite-ln/build-ts@5.15.10",
+      "@vite-mcp/vite-type@6.44.1",
+      "@vite-pro/vite-ui@2.5.10",
+      "@vite-tab/tab@3.15.10",
+      "@vite-ts/vite-ui@6.44.1",
+      "@vitets/vite-ts@1.5.10",
+      "clsx-tailwind@1.0.1",
+      "rate-limit-flexible@1.0.1",
+      "rate-limit-flexible@1.0.2",
+      "rate-limits-flexible@1.0.1",
+      "sass-format@1.0.1",
+      "sass-formats@1.0.2",
+      "sass-formats@1.0.3",
+      "sass-formats@1.0.4",
+      "sass-formats@1.0.5",
+      "tailwindcss-animates-kit@1.0.1",
+      "tailwindcss-animatics@1.0.1",
+      "tailwindcss-merge@1.0.1",
+      "tailwindcss-merge@1.0.2",
+      "tailwindcss-merge@1.0.3",
+      "tailwindcss-merge@1.0.4",
+      "typeorm-encrypt@1.0.1"
+    ]
+  },
+  {
+    "dataset_id": "osm-axios-compromise-versions",
+    "title": "axios compromise: affected releases",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "medium",
+    "description": "Releases of axios, and of the transitive dependency used to reach it, that OpenSourceMalware reports as carrying malicious code. axios is a legitimate package with roughly 100 million weekly downloads; these version numbers identify the compromised releases, and the package itself is the victim. Each entry is a specific published version, in name@version form. The report relays Google Threat Intelligence Group's attribution of the compromise to UNC1069 and Microsoft's to Sapphire Sleet, names this site files under the APT38 cluster; it does not tie the activity to Contagious Interview, so the releases carry the APT38 label here.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These are version-pinned indicators on purpose: for a compromised legitimate package the name identifies the victim project, not the threat, so a bare package name is not carried here and inclusion of a version says only that the cited report describes that release as malicious. Check the cited post before acting on any single entry.",
+    "source": {
+      "title": "axios compromise: affected releases",
+      "url": "https://opensourcemalware.com/blog/axios-compromise-transitive-dependency",
+      "publisher": "OpenSourceMalware",
+      "date": "2026-08-20",
+      "type": "threat_intel_report"
+    },
+    "entry_count": 4,
+    "entries": [
+      "axios@0.30.4",
+      "axios@1.14.1",
+      "plain-crypto-js@4.2.0",
+      "plain-crypto-js@4.2.1"
+    ]
+  },
+  {
+    "dataset_id": "osm-axios-second-wave-versions",
+    "title": "axios attacker second wave: malicious npm releases",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "medium",
+    "description": "Releases OpenSourceMalware attributes to the same operator in a follow-up wave after the axios compromise. The report cites Google Threat Intelligence Group and Microsoft attributions of the earlier activity to a DPRK-nexus actor. Each entry is a specific published version, in name@version form. The report relays Google Threat Intelligence Group's attribution of the compromise to UNC1069 and Microsoft's to Sapphire Sleet, names this site files under the APT38 cluster; it does not tie the activity to Contagious Interview, so the releases carry the APT38 label here.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These are version-pinned indicators on purpose: for a compromised legitimate package the name identifies the victim project, not the threat, so a bare package name is not carried here and inclusion of a version says only that the cited report describes that release as malicious. Check the cited post before acting on any single entry.",
+    "source": {
+      "title": "axios attacker second wave: malicious npm releases",
+      "url": "https://opensourcemalware.com/blog/axios-attacker-strikes-again",
+      "publisher": "OpenSourceMalware",
+      "date": "2026-08-27",
+      "type": "threat_intel_report"
+    },
+    "entry_count": 3,
+    "entries": [
+      "nicegui@0.1.4",
+      "period-newline@0.1.0",
+      "redeem-onchain-sdk@1.0.7"
+    ]
+  }
+]

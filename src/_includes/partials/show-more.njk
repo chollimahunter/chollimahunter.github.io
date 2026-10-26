@@ -1,0 +1,12 @@
+{#
+  partials/show-more.njk — the "Show more results" control under an indicator
+  search, driven by src/assets/js/ioc-search.js.
+
+  Usage: include it directly after the search's results list.
+    {% include "partials/show-more.njk" %}
+
+  Hidden until ioc-search.js reveals it, so a reader without JavaScript does
+  not see a button that does nothing. The home page's search has none;
+  ioc-search.js adds one there.
+#}
+<p class="form-hint" hidden data-ioc-more><button type="button" class="btn btn--secondary" data-ioc-more-button>Show more results</button></p>

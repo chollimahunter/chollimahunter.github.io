@@ -1,0 +1,23 @@
+{#
+  partials/profile-disclaimer.njk — the sourcing and confidence banner
+
+  Required on every profile page. Its position is not fixed: layouts/profile.njk
+  puts it at the foot of a confirmed profile and at the head of anything less,
+  because a caveat a reader needs before believing the page has to come first,
+  while on a confirmed profile it is the closing note on a record the page has
+  already made its case for.
+
+  Usage: set `disclaimerProfile` before including.
+    {% set disclaimerProfile = profile %}
+    {% include "partials/profile-disclaimer.njk" %}
+#}
+<div class="disclaimer-banner">
+  <strong>Sourcing &amp; confidence disclaimer</strong>
+  <p>Every claim on this profile comes from the sources cited on it. Nothing has been added or inferred.</p>
+  {% for paragraph in disclaimerProfile.disclaimer | paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+  <p>
+    Attribution confidence:
+    {% set confidenceLevel = disclaimerProfile.confidence_level %}{% include "partials/confidence-badge.njk" %}
+  </p>
+  <p>If this entry concerns you, see <a href="/guidance/#listed">If you are listed on this site</a>.</p>
+</div>

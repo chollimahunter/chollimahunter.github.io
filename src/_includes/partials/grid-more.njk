@@ -1,0 +1,25 @@
+{#
+  partials/grid-more.njk — the "show the rest" control for a card grid,
+  read by src/assets/js/grid-more.js.
+
+  Usage: give the grid an id and data-grid-limit, then include this after it.
+    <ul class="profile-grid" id="all-profiles" data-grid-limit="{{ limits.list }}">…</ul>
+    {% set gridMore = { target: "#all-profiles", noun: "profiles" } %}
+    {% include "partials/grid-more.njk" %}
+
+  Fields:
+    target  the grid's own CSS selector, passed through as data-grid-more
+    noun    plural noun for the button text and the status line
+
+  An optional status line elsewhere on the page carries
+  data-grid-count="{{ gridMore.target }}" and is rewritten to "Showing N of M".
+
+  Hidden until grid-more.js runs, so a reader without JavaScript gets the
+  whole grid rather than a button that does nothing. The page must load
+  /assets/js/grid-more.js through extra_head.
+
+  DELIBERATELY ON ONE LINE: src/index.md includes this through Nunjucks and
+  then Markdown, and a raw HTML block containing blank lines is handed back
+  to markdown-it — see the matching comment in partials/tile.njk.
+#}
+<p data-grid-more="{{ gridMore.target }}" data-grid-more-noun="{{ gridMore.noun }}" hidden><button type="button" class="btn btn--secondary" data-grid-more-button>Show the remaining {{ gridMore.noun }}</button></p>

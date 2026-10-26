@@ -1,0 +1,258 @@
+---
+layout: base.njk
+title: "Sources"
+description: "Every public record this site cites — indictments, sanctions records, wanted notices, threat-intelligence advisories and bulk identifier datasets — with what each one accounts for."
+permalink: "/sources/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src="/assets/js/grid-more.js" defer></script>'
+---
+{#
+  src/sources/index.njk — the site-wide citation registry
+
+  Reads src/_data/sources.js, which aggregates every `sources[]` and `source{}`
+  on the site — profiles, hunts, the repo-scan ruleset, the EtherHiding
+  watchlist, the bulk identifier datasets and the scraped indicators — and
+  deduplicates them by URL.
+
+  There is no hand-maintained list behind this page, deliberately. Adding a
+  citation anywhere is what puts it here; a parallel list would drift from the
+  real one the moment either was edited.
+
+  The Bulk datasets section below carries the wholesale identifier lists in
+  iocs/itworker-datasets.json, which need more room than a registry row: each
+  has its own entry count, sync state and source-authored caveat.
+#}
+<section>
+  <h1>Sources</h1>
+  <p>
+    Every public record this site cites, linked so a reader can check what the
+    source said. Claims about named individuals come from these records;
+    entries published under the site&rsquo;s own name record its own research.
+  </p>
+
+  {% if sources.total %}
+  <p class="form-hint">
+    <strong>{{ sources.total }}</strong> distinct sources from
+    <strong>{{ sources.publisher_count }}</strong> publishers.
+    {% for area, count in sources.counts_by_area %}{{ area }} ({{ count }}){% if not loop.last %} &middot; {% endif %}{% endfor %}
+  </p>
+
+  {% set tableFilter = { target: "#sources-table", noun: "sources", page: limits.list, id: "source-search-input", label: "Search sources", placeholder: "Publisher, title, year, or what it is cited by" } %}
+  {% include "partials/table-filter.njk" %}
+
+  <div class="table-scroll">
+    <table class="results-table" id="sources-table">
+      <thead>
+        <tr>
+          <th scope="col">Source</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Published</th>
+          <th scope="col">Cited by</th>
+          <th scope="col">Indicators</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for source in sources.all %}
+        <tr>
+          <td>
+            {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
+            {% if source.items.length %}
+            <span class="ioc-result__meta">{{ source.items | join(", ") | truncate(160) }}</span>
+            {% endif %}
+            {# A grouped source carries its pages here rather than as a row
+               each. An X post is named by its date, because status URLs
+               distinguish themselves by nothing else; a page by its title. #}
+            {% if source.posts.length %}
+            {% set noun = source.post_noun | default("post", true) %}
+            <details class="source-posts">
+              <summary>{{ source.posts.length }} {{ noun }}{% if source.posts.length != 1 %}s{% endif %} cited</summary>
+              <ul class="source-posts__list" id="source-posts-{{ loop.index }}" data-grid-limit="{{ limits.list }}">
+                {% for post in source.posts %}
+                <li>{% set externalLink = { url: post.url, text: (post.title | truncate(90)) if (post.title and post.title != post.url) else (post.published | default("undated", true)) } %}{% include "partials/external-link.njk" %}{% if post.title and post.published %} <span class="ioc-result__meta">{{ post.published }}</span>{% endif %}{% if post.indicator_count %} <span class="source-posts__count">{{ post.indicator_count }}</span>{% endif %}</li>
+                {% endfor %}
+              </ul>
+              {% set gridMore = { target: "#source-posts-" + loop.index, noun: noun + "s" } %}{% include "partials/grid-more.njk" %}
+            </details>
+            {% endif %}
+          </td>
+          <td>{{ source.publisher | default("—", true) }}</td>
+          <td class="cell-date">{{ source.published | default("—", true) }}</td>
+          <td>
+            {% for area in source.areas %}<span class="tag-chip">{{ area }}</span>{% endfor %}
+          </td>
+          <td>{{ source.indicator_count | thousands }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% include "partials/table-filter-more.njk" %}
+  {% else %}
+  <p><em>No sources cited yet.</em></p>
+  {% endif %}
+</section>
+
+<section>
+  <h2 id="sourcing-methodology">Sourcing methodology</h2>
+  <p>
+    No claim about a named individual is published without a public citation,
+    and each profile&rsquo;s confidence level is taken from the cited
+    source&rsquo;s own characterisation. The full rules are under
+    <a href="/about/#sourcing">Sourcing and confidence</a>.
+  </p>
+</section>
+
+<section>
+  <h2>Bulk datasets</h2>
+  <p>
+    Some sources publish an identifier list wholesale. Each is ingested under
+    one dataset-level citation, with the source&rsquo;s own caveat below.
+  </p>
+
+  {% set bulkDatasets = iocs["itworker-datasets"].concat(iocs["malicious-package-versions"], iocs["osm-malicious-package-versions"]) %}
+  {% for dataset in bulkDatasets %}
+  <div class="card" id="{{ dataset.dataset_id }}">
+    <h3>{{ dataset.title }}</h3>
+    <p>
+      <span class="badge badge--{{ dataset.confidence_level }}">{{ dataset.confidence_level }} confidence</span>
+      {% for tag in dataset.campaign %}<span class="tag-chip">{{ tag }}</span>{% endfor %}
+    </p>
+    {% for paragraph in dataset.description | paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+    <p>
+      <strong>Source:</strong>
+      {% set externalLink = { url: dataset.source.url, text: dataset.source.title } %}{% include "partials/external-link.njk" %}
+      &mdash; {{ dataset.source.publisher }}{% if dataset.source.date %}, {{ dataset.source.date }}{% endif %}
+    </p>
+    <p>
+      <strong>{{ dataset.entry_count | thousands }}</strong> entries
+      {% if dataset.excluded_count %}({{ dataset.excluded_count }} excluded &mdash; {{ dataset.excluded_notes }}){% endif %}
+      {% if dataset.sync %}
+      &nbsp;&middot;&nbsp; last synced <strong>{{ dataset.sync.last_synced }}</strong>
+      ({{ dataset.sync.method }})
+      {% endif %}
+    </p>
+
+    {% set disclaimer = { title: "Dataset-specific caveat", body: dataset.disclaimer | escape } %}{% include "partials/disclaimer.njk" %}
+  </div>
+  {% else %}
+  <p><em>No bulk datasets ingested yet.</em></p>
+  {% endfor %}
+</section>
+
+{#
+  Folded in from the former /resources/ page, which had a top-level nav slot
+  and thirteen outbound links in it. Nothing below is a citation for a claim on
+  this site — the registry above is that. This is the standing reference
+  material a reader needs alongside it: where to report what this site cannot
+  act on, the advisories most of the content traces back to, and the vendor
+  naming the cluster pages follow. Keep it to material that is authoritative
+  and stable; anything cited for a fact belongs in the registry instead.
+#}
+<section>
+  <h2 id="first-party-research">First-party research</h2>
+  <p>
+    A few indicators cite this site itself, under the publisher name Chollima
+    Hunter: values the maintainer read from a live account or listing on the
+    date recorded. Each is an observation, not an attribution; anyone who
+    believes one concerns their own identity can ask for review through the
+    <a href="/submit/">submission page</a>.
+  </p>
+</section>
+
+<section>
+  <h2 id="reference">Reference material</h2>
+  <p>
+    Standing reference material, not cited for any claim on this site.
+  </p>
+
+  <h3 id="reporting">Reporting</h3>
+  <p>
+    A suspected DPRK IT worker, a malware-delivering interview or a
+    cryptocurrency theft is a matter for law enforcement. This site takes
+    indicators and corrections only, through its
+    <a href="/submit/">submission page</a>.
+  </p>
+  <ul class="reading-list">
+    <li>
+      {% set externalLink = { url: "https://www.ic3.gov/", text: "FBI Internet Crime Complaint Center (IC3)" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Federal Bureau of Investigation</span>
+      <p class="reading-list__note">The FBI&rsquo;s intake point for cyber-enabled crime, including suspected DPRK IT workers.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.ic3.gov/PSA/2025/PSA250123", text: "North Korean IT Workers Conducting Data Extortion" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">FBI public service announcement &middot; 2025-01-23</span>
+      <p class="reading-list__note">Discovered IT workers have begun holding stolen source code and data for ransom.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.ic3.gov/PSA/2023/PSA231018", text: "Additional Guidance on the Democratic People's Republic of Korea Information Technology Workers" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">FBI public service announcement &middot; 2023-10-18</span>
+      <p class="reading-list__note">Red flags for hiring managers and freelance platforms.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://ofac.treasury.gov/media/923126/download", text: "Guidance on the Democratic People's Republic of Korea Information Technology Workers" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">U.S. Departments of State and the Treasury and the FBI &middot; 2022-05-16 &middot; PDF</span>
+      <p class="reading-list__note">The original joint advisory on how IT workers operate and the sanctions exposure of paying them.</p>
+    </li>
+  </ul>
+
+  <h3 id="rewards">Reward offers</h3>
+  <p>
+    The U.S. State Department&rsquo;s Rewards for Justice program offers
+    rewards on two sets of actors this site tracks.
+  </p>
+  <ul class="reading-list">
+    <li>
+      {% set externalLink = { url: "https://rewardsforjustice.net/rewards/north-korean-information-technology-it-workers/", text: "North Korean Information Technology (IT) Workers" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Rewards for Justice &middot; 2024-05-16 &middot; up to $5 million</span>
+      <p class="reading-list__note">Covers Jiho Han, Chunji Jin, Haoran Xu and their manager, known as Zhonghua, for a scheme the program says used the identities of more than sixty real U.S. persons.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://rewardsforjustice.net/rewards/rim-jong-hyok-%EB%A6%BC%EC%A2%85%ED%98%81/", text: "Rim Jong Hyok" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Rewards for Justice &middot; 2024-07-25 &middot; up to $10 million</span>
+      <p class="reading-list__note">For the Andariel operator charged over Maui ransomware attacks on U.S. hospitals; see the <a href="/profiles/rim-jong-hyok/">profile</a>.</p>
+    </li>
+  </ul>
+
+  <h3 id="advisories">Government advisories and enforcement</h3>
+  <ul class="reading-list">
+    <li>
+      {% set externalLink = { url: "https://www.cisa.gov/topics/cyber-threats-and-advisories/advanced-persistent-threats/north-korea", text: "North Korea Threat Overview and Advisories" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Cybersecurity and Infrastructure Security Agency</span>
+      <p class="reading-list__note">Index of joint advisories on DPRK activity.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote", text: "Justice Department Announces Coordinated, Nationwide Actions to Combat North Korean Remote Information Technology Workers' Illicit Revenue Generation Schemes" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">U.S. Department of Justice &middot; 2025-06-30</span>
+      <p class="reading-list__note">Indictments, arrests and laptop-farm searches across sixteen states.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.justice.gov/opa/pr/justice-department-announces-nationwide-actions-combat-illicit-north-korean-government", text: "Justice Department Announces Nationwide Actions to Combat Illicit North Korean Government Revenue Generation" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">U.S. Department of Justice &middot; 2025-11-14</span>
+      <p class="reading-list__note">Further guilty pleas, forfeitures and charges against U.S.-based facilitators.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://home.treasury.gov/news/press-releases/jy1498", text: "Treasury Targets DPRK's International Agents and Illicit Cyber Intrusion Group" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">U.S. Department of the Treasury &middot; 2023-05-23</span>
+      <p class="reading-list__note">The designation setting out how the Reconnaissance General Bureau and its front companies fit together.</p>
+    </li>
+  </ul>
+
+  <h3 id="naming">Naming and reference</h3>
+  <ul class="reading-list">
+    <li>
+      {% set externalLink = { url: "https://attack.mitre.org/groups/", text: "MITRE ATT&CK Groups" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">MITRE</span>
+      <p class="reading-list__note">Lists the DPRK groups; each cluster page links to its entry.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://learn.microsoft.com/en-us/unified-secops-platform/microsoft-threat-actor-naming", text: "How Microsoft names threat actors" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Microsoft</span>
+      <p class="reading-list__note">Maps Sleet names to the older Storm and chemical-element names.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.crowdstrike.com/en-us/adversary-hub/", text: "CrowdStrike Adversary Hub" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">CrowdStrike</span>
+      <p class="reading-list__note">Profiles for each Chollima-suffixed adversary, the naming this site follows.</p>
+    </li>
+  </ul>
+</section>

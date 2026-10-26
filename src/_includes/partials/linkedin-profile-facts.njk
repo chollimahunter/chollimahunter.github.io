@@ -1,0 +1,209 @@
+{#
+  partials/linkedin-profile-facts.njk — what LinkedIn records about an account
+  and what the account claims about itself, laid out as tables.
+
+  Usage: set `liStatus` to an account_status block (state, checked, avatar,
+  profile) before including. Renders nothing without a profile block, except
+  the "Account history, per LinkedIn" table, which needs profile.joined.
+    {% set liStatus = account.status %}
+    {% include "partials/linkedin-profile-facts.njk" %}
+
+  Shared by the persona page (every LinkedIn account a persona holds) and
+  ioc-detail.njk (the indicator page of a LinkedIn account no persona holds),
+  so a first-hand read renders the same way wherever the account appears. The
+  profile block itself comes from scripts/data/linkedin-account-status.json,
+  attached at build time by scripts/lib/dossiers.js or by
+  scripts/enrich-linkedin-accounts.js; see the field list in the latter.
+
+  Its headings follow `iocDetailHeading` (h4 unless set), the same variable
+  partials/ioc-detail.njk reads, so the outline stays in order on a page that
+  gives the indicator an h1.
+#}
+{# LinkedIn's own record of the account, from the "About this member"
+   panel behind the profile's More menu. This is the one part of a
+   profile that is not the account's own claim about itself, which is
+   what makes it the most useful block on the page: an account created
+   months ago while claiming years of employment is a discrepancy the
+   profile cannot explain away. #}
+{% if liStatus and liStatus.profile and liStatus.profile.joined %}
+{% set history = liStatus.profile %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Account history, per LinkedIn</{{ iocDetailHeading | default("h4") }}>
+<div class="table-scroll">
+  <table class="results-table">
+    <tbody>
+      <tr><th scope="row">Joined LinkedIn</th><td>{{ history.joined }}</td></tr>
+      {% if history.contact_info_updated %}<tr><th scope="row">Contact info</th><td>{{ history.contact_info_updated }}</td></tr>{% endif %}
+      {% if history.photo_updated %}<tr><th scope="row">Profile photo</th><td>{{ history.photo_updated }}</td></tr>{% endif %}
+      {% if history.verifications %}<tr><th scope="row">Verifications</th><td>{{ history.verifications }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</div>
+
+{# A LinkedIn verification weighs against the account being fabricated,
+   which is a material fact about an entry on a page about fabricated
+   identities — so it is stated plainly rather than left as one row in a
+   table a reader may skim.
+
+   Two things this block has to get right, because both of them state
+   something about a named person.
+
+   First, what counts as absent. The captures write "None listed", but a
+   single sentinel string is a trap: `verifications: "none"` was recorded
+   once and published the banner below on an account carrying no
+   verification at all. Every spelling that means nothing was listed is
+   matched here, case-insensitively.
+
+   Second, what kind of check LinkedIn actually ran. Verifying a work
+   email address proves control of a mailbox at the employer; verifying a
+   government identity document is a different claim of a different
+   weight, and only the second is evidence about who the person is. The
+   banner used to assert the second for both. #}
+{% set verification = history.verifications | default("") | trim %}
+{% set verificationKey = verification | lower %}
+{% set hasVerification = verification
+   and verificationKey != "none"
+   and verificationKey != "none listed"
+   and verificationKey != "no"
+   and verificationKey != "n/a" %}
+{% set identityVerified = hasVerification
+   and ("government id" in verificationKey or "identity" in verificationKey) %}
+{% if identityVerified %}
+{% set disclaimer = {
+  title: "This account carries a LinkedIn identity verification",
+  body: 'LinkedIn records a government identity document check. That counts against a fabricated account and fits a documented pattern of operations using the identity of a real, uninvolved person, so the person named is a likely victim of identity misuse unless a source says otherwise.'
+} %}{% include "partials/disclaimer.njk" %}
+{% elif hasVerification %}
+{% set disclaimer = {
+  title: "This account carries a LinkedIn verification, but not of an identity document",
+  body: 'The verification rests on something other than an identity document, typically control of an email address at a named employer. It shows the account reached a mailbox, not who holds it.'
+} %}{% include "partials/disclaimer.njk" %}
+{% endif %}
+{% endif %}
+
+{# What the profile itself claims. Present only for accounts that were
+   still up when they were read, and reproduced as the account words it:
+   a claimed job title is a claim the operator made, not a fact about
+   them, and paraphrasing it would put the paraphrase beyond the record. #}
+{% if liStatus and liStatus.profile %}
+{% set claimed = liStatus.profile %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">What this profile claims</{{ iocDetailHeading | default("h4") }}>
+<div class="table-scroll">
+  <table class="results-table">
+    <tbody>
+      {% if claimed.name %}<tr><th scope="row">Name shown</th><td>{{ claimed.name }}</td></tr>{% endif %}
+      {% if claimed.headline %}<tr><th scope="row">Headline</th><td>{{ claimed.headline }}</td></tr>{% endif %}
+      {% if claimed.current_role %}<tr><th scope="row">Current role</th><td>{{ claimed.current_role }}</td></tr>{% endif %}
+      {% if claimed.location %}<tr><th scope="row">Location</th><td>{{ claimed.location }}</td></tr>{% endif %}
+      {% if claimed.connections %}<tr><th scope="row">Connections</th><td>{{ claimed.connections }}</td></tr>{% endif %}
+      {% if claimed.followers %}<tr><th scope="row">Followers</th><td>{{ claimed.followers }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</div>
+
+{% if claimed.about %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">About, as the profile words it</{{ iocDetailHeading | default("h4") }}>
+<blockquote class="notice-quote notice-quote--verbatim">{{ claimed.about }}</blockquote>
+{% endif %}
+
+{% if claimed.experience and claimed.experience.length %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Claimed experience</{{ iocDetailHeading | default("h4") }}>
+<div class="table-scroll">
+  <table class="results-table">
+    <thead>
+      <tr><th scope="col">Role</th><th scope="col">Organisation</th><th scope="col">Dates</th></tr>
+    </thead>
+    <tbody>
+      {% for role in claimed.experience %}
+      <tr>
+        <td>{{ role.title }}</td>
+        <td>{{ role.organization }}{% if role.location %} <span class="ioc-result__meta">{{ role.location }}</span>{% endif %}</td>
+        <td>{{ role.dates }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endif %}
+
+{# An account with no employment history at all is a finding, not an
+   absence: these profiles are built to be read by a recruiter, and one
+   that never filled the section in is either very new or was never meant
+   to survive a second look. Stated only where the section was actually
+   checked and found missing, never inferred from an empty list. #}
+{% if claimed.no_experience_section %}
+<p class="ioc-result__meta">
+  This profile carries no experience section at all — not an empty one, but
+  none: the page goes from the summary straight to its activity feed.
+</p>
+{% endif %}
+
+{% if claimed.education and claimed.education.length %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Claimed education</{{ iocDetailHeading | default("h4") }}>
+<ul>
+  {% for school in claimed.education %}
+  <li>{{ school.institution }}{% if school.programme %} — {{ school.programme }}{% endif %}{% if school.dates %} <span class="ioc-result__meta">{{ school.dates }}</span>{% endif %}{% if school.note %} <span class="ioc-result__meta">{{ school.note }}</span>{% endif %}</li>
+  {% endfor %}
+  {% if claimed.education_count and claimed.education_count > claimed.education.length %}
+  <li class="ioc-result__meta">{{ claimed.education_count - claimed.education.length }} further entr{% if claimed.education_count - claimed.education.length == 1 %}y{% else %}ies{% endif %} behind the profile's own "show all".</li>
+  {% endif %}
+</ul>
+{% endif %}
+
+{# The sections below the fold. A CV-shaped profile fills them in, and what
+   it fills them with is the operator's own choice of detail: a claimed
+   publication with a real DOI, a project associated with a named employer,
+   a language proficiency. Each is reproduced as the profile words it. #}
+{% if claimed.projects and claimed.projects.length %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Claimed projects</{{ iocDetailHeading | default("h4") }}>
+<ul>
+  {% for project in claimed.projects %}
+  <li>{{ project.name }}{% if project.dates %} <span class="ioc-result__meta">{{ project.dates }}</span>{% endif %}{% if project.summary %} — {{ project.summary }}{% endif %}</li>
+  {% endfor %}
+  {% if claimed.project_count and claimed.project_count > claimed.projects.length %}
+  <li class="ioc-result__meta">{{ claimed.project_count }} projects listed in total.</li>
+  {% endif %}
+</ul>
+{% endif %}
+
+{% if claimed.publications and claimed.publications.length %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Claimed publications</{{ iocDetailHeading | default("h4") }}>
+<ul>
+  {% for paper in claimed.publications %}
+  <li>{{ paper.title }}{% if paper.published_in %} — {{ paper.published_in }}{% endif %}{% if paper.date %} <span class="ioc-result__meta">{{ paper.date }}</span>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if claimed.licenses and claimed.licenses.length %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Claimed licences and certifications</{{ iocDetailHeading | default("h4") }}>
+<ul>
+  {% for licence in claimed.licenses %}
+  <li>{{ licence.name }}{% if licence.issuer %} — {{ licence.issuer }}{% endif %}{% if licence.dates %} <span class="ioc-result__meta">{{ licence.dates }}</span>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if claimed.languages and claimed.languages.length %}
+<p><strong>Languages</strong> {{ claimed.languages | join("; ") }}</p>
+{% endif %}
+
+{% set profileSkills = claimed.skills if (claimed.skills and claimed.skills.length) else claimed.top_skills %}
+{% if profileSkills and profileSkills.length %}
+<p>
+  <strong>Skills</strong> {{ profileSkills | join(", ") }}{% if claimed.skill_count and claimed.skill_count > profileSkills.length %}, and {{ claimed.skill_count - profileSkills.length }} more the profile lists{% endif %}.
+</p>
+{% endif %}
+
+{% if claimed.open_to_work %}
+<p>
+  <strong>Open to work</strong> {{ claimed.open_to_work }}
+  <span class="ioc-result__meta">— the banner the account displays on its own photograph.</span>
+</p>
+{% endif %}
+
+<p class="ioc-result__meta">
+  Read from the live profile on {{ claimed.observed | default(liStatus.checked, true) }}. Everything in
+  this block is the account's own claim about itself, reproduced as
+  written and not verified.
+</p>
+{% endif %}

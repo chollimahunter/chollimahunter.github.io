@@ -1,0 +1,37 @@
+{#
+  layouts/redirect.njk — a static redirect stub
+
+  GitHub Pages serves files, not rules: there is no .htaccess or redirect map.
+  A page whose URL has moved therefore needs a real file at the old path that
+  sends the reader on. This does it two ways so it works regardless of how
+  the request arrives:
+
+    - <meta http-equiv="refresh"> for browsers
+    - a visible link, so the page still works if the refresh is blocked
+
+  The stub is noindex and carries no canonical: the target can be a relative
+  address with a fragment, and a canonical beside noindex sends a search
+  engine two contradicting signals.
+
+  Usage: front matter sets `layout: layouts/redirect.njk`, a `permalink` for
+  the OLD path, and `redirect_to` for the new one.
+#}<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("Page moved") }} — Chollima Hunter</title>
+  <meta http-equiv="refresh" content="0; url={{ redirect_to }}">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+</head>
+<body>
+  <main id="main-content" class="site-main">
+    <h1>This page has moved</h1>
+    <p>
+      It now lives at <a href="{{ redirect_to }}">{{ redirect_to }}</a>.
+      It should redirect automatically.
+    </p>
+  </main>
+</body>
+</html>

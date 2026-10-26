@@ -1,0 +1,64 @@
+{
+  "slug": "song-min-kim",
+  "display_name": "Song Min Kim",
+  "aliases": [
+    "Chengmin Jin",
+    "Allen Kim",
+    "Kim Song Min"
+  ],
+  "confidence_level": "high",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "The Rewards for Justice notice shows a silhouette placeholder in place of a photograph for this individual, so none is published here.",
+    "source": "https://rewardsforjustice.net/rewards/north-korea-money-laundering-9-individuals/"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Subject of a Rewards for Justice reward offer of up to $5 million, published April 2026; identified by the Justice Department as a suspected DPRK IT worker in the District of Massachusetts case, not among the defendants charged in it",
+    "details": [
+      {
+        "label": "Role",
+        "value": "Managed an information technology company based in the DPRK, per the Rewards for Justice notice"
+      }
+    ],
+    "caution": "Song Min Kim (a.k.a. Chengmin Jin): Managed an information technology company based in DPRK and assisted in the creation of a U.S. company through which his employees could obtain remote IT work with other U.S. companies. From 2021 to late 2024, these individuals compromised the identities of more than 80 U.S. persons to obtain remote jobs at over 100 U.S. companies. They participated in a scheme to create credible fake American citizenship documents, register U.S. shell companies and bank accounts, gain technical employment with U.S. companies, receive wages, launder and remit that money to banks and individuals in China, and ultimately facilitate the transmission of the illicit funds to the DPRK regime. The scheme involved assistance from at least four U.S. citizens who hosted employer laptops in the United States through which the DPRK IT workers could, without authorization, remotely access company networks and perform work.",
+    "reward": "Rewards for Justice is offering a reward of up to $5 million for information that leads to the disruption of financial mechanisms of persons engaged in certain activities that support North Korea (Democratic People’s Republic of Korea, DPRK), including money laundering, exportation of luxury goods to North Korea, specified cyber-activity and actions that support weapons of mass destruction (WMD) proliferation. Such activities include work by highly skilled North Korean nationals sent abroad whose income generates funds for the DPRK regime."
+  },
+  "sources": [
+    {
+      "title": "North Korea Money Laundering - 9 Individuals: Rewards for Justice reward offer of up to $5 million",
+      "url": "https://rewardsforjustice.net/rewards/north-korea-money-laundering-9-individuals/",
+      "publisher": "Rewards for Justice, U.S. Department of State",
+      "date": "2026-04-23",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Two U.S. Nationals Sentenced for Facilitating Fraudulent Remote Information Technology Worker Scheme that Generated $5M in Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2026-04-15",
+      "type": "press_release"
+    },
+    {
+      "title": "Justice Department Announces Coordinated, Nationwide Actions to Combat North Korean Remote Information Technology Workers' Illicit Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-06-30",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "Song Min Kim is profiled here as the DPRK-side manager in the IT-worker scheme run through Kejia Wang and Zhenxing Wang's New Jersey laptop farms and shell companies. According to the Rewards for Justice notice he managed an information technology company based in the DPRK and helped set up a United States company through which his employees obtained remote IT work; the Justice Department's April 15, 2026 release names him, as Song Min Kim, as the one suspected IT worker covered by the reward offer alongside the eight charged defendants, and neither Justice Department release lists him among the persons charged, and the notice's image file names a third form, Allen Kim, which is kept as an alias. The Rewards for Justice notice prints the name in Western order, given names first, and the alias Chengmin Jin and the file name Allen Kim both make Kim the family name, so the Korean rendering below is the conventional Hangul for Kim Song Min and is not printed by either source.",
+    "The confidence level of 'high' reflects that this individual is named on a State Department reward notice and in a Justice Department release as a suspected IT worker, but has not been publicly charged in the cited records; the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean": "김성민",
+  "name_korean_provenance": "reconstructed"
+}

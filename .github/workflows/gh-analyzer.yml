@@ -1,0 +1,224 @@
+name: GitHub account analysis
+
+# Runs gh-fake-analyzer (the Ketman Project's GitHub OSINT tool) over the next
+# batch of GitHub accounts in the index and summarizes its findings into
+# scripts/data/gh-analyzer.json, which the indicator pages render. Never commits
+# to main: each run updates one standing pull request. The job's own
+# GITHUB_TOKEN is enough, since every call reads public data. See
+# docs/gh-fake-analyzer.md.
+#
+# Two jobs. `analyze` runs the third-party tool with a read-only token and no
+# git credentials, and hands its results on as an artifact. `propose` holds the
+# write permissions, runs no third-party code other than the pinned actions,
+# and opens the pull request.
+
+on:
+  schedule:
+    - cron: "40 7 * * *" # daily 07:40 UTC
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many accounts to analyze"
+        required: false
+        default: "20"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gh-analyzer
+  cancel-in-progress: false
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md): "true" merges this
+# workflow's pull request once its dispatched ci run is green; "false" leaves
+# every pull request for manual review.
+env:
+  AUTO_MERGE: "true"
+  GH_FAKE_ANALYZER_VERSION: "1.0.2"
+
+jobs:
+  analyze:
+    # Pinned until a dispatch passes on Ubuntu 26, which became ubuntu-latest on
+    # 2026-10-19; this is the only job that installs Python packages.
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      # Results from a run whose pull request is not merged yet, so the next
+      # batch continues from there rather than analyzing the same accounts.
+      - name: Carry over unmerged results
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh api -H "Accept: application/vnd.github.raw" \
+              "repos/${GITHUB_REPOSITORY}/contents/scripts/data/gh-analyzer.json?ref=gh-analyzer/results" \
+              > carried.json 2>/dev/null; then
+            mv carried.json scripts/data/gh-analyzer.json
+          else
+            rm -f carried.json
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+
+      # Every package in the dependency tree is pinned to a version and to the
+      # published sha256 digests of its files; pip refuses anything else.
+      - name: Install gh-fake-analyzer
+        run: |
+          grep -q "^gh-fake-analyzer==${GH_FAKE_ANALYZER_VERSION} " .github/requirements/gh-fake-analyzer.txt
+          pip install --require-hashes -r .github/requirements/gh-fake-analyzer.txt
+
+      - name: Pick accounts
+        shell: bash
+        env:
+          COUNT: ${{ github.event.inputs.count || '20' }}
+        run: |
+          if ! [[ "$COUNT" =~ ^[1-9][0-9]*$ ]]; then
+            echo "::error::count must be a positive integer, got '$COUNT'"
+            exit 1
+          fi
+          node scripts/gh-analyzer-targets.js "$COUNT" > targets.txt
+          wc -l < targets.txt
+          cat targets.txt
+
+      - name: Analyze
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        # A failed account must not fail the batch; the summarizer records it,
+        # and fails the job itself when no account produced a report.
+        run: gh-analyze --targets targets.txt --out_path gh-out || true
+
+      - name: Summarize
+        shell: bash
+        run: node scripts/gh-analyzer-summarize.js gh-out targets.txt "${GH_FAKE_ANALYZER_VERSION}" | tee summary.txt
+
+      - name: Keep full reports
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: gh-analyzer-reports
+          path: gh-out/*/report.json
+          retention-days: 3
+          if-no-files-found: ignore
+
+      - name: Pull request body
+        run: |
+          {
+            echo "gh-fake-analyzer ${GH_FAKE_ANALYZER_VERSION} over the next batch of GitHub accounts in the index."
+            echo
+            echo "The flags are signals, not attribution: a backdated repository or several commit identities is common among ordinary developers too. Review scripts/data/gh-analyzer.json before merging. Addresses under commit_emails that the index does not hold are leads for review; nothing here files them as indicators."
+            echo
+            echo 'Validation runs as a dispatched `ci` check on this branch; the pull request can be merged once it is green.'
+            echo
+            echo '```'
+            cat summary.txt
+            echo '```'
+          } > pr-body.md
+
+      - name: Stage results for the pull request
+        run: |
+          mkdir proposal
+          cp scripts/data/gh-analyzer.json pr-body.md proposal/
+
+      - name: Upload results
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: gh-analyzer-proposal
+          path: proposal/
+          retention-days: 1
+          if-no-files-found: error
+
+  propose:
+    needs: analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    outputs:
+      merge-reason: ${{ steps.merge.outputs.reason }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Download results
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: gh-analyzer-proposal
+          path: proposal
+
+      - name: Put results in place
+        run: cp proposal/gh-analyzer.json scripts/data/gh-analyzer.json
+
+      - name: Open or update pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: gh-fake-analyzer results"
+          title: "GitHub account analysis (gh-fake-analyzer)"
+          body-path: proposal/pr-body.md
+          branch: gh-analyzer/results
+          add-paths: |
+            scripts/data/gh-analyzer.json
+          labels: automated,data-sync
+
+      # Pull requests opened with GITHUB_TOKEN trigger no pull_request runs, so
+      # the validation workflow is dispatched on the branch instead.
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+
+      # The scheduled run opens a pull request with GITHUB_TOKEN, which triggers
+      # no push run when merged, so the action also dispatches deploy.yml.
+      - name: Return to the base commit
+        if: env.AUTO_MERGE == 'true' && (steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated')
+        run: git checkout --quiet "$GITHUB_SHA"
+
+      - name: Merge when ci is green
+        id: merge
+        if: env.AUTO_MERGE == 'true' && (steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated')
+        uses: ./.github/actions/merge-when-green
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          branch: ${{ steps.cpr.outputs.pull-request-branch }}
+          expected-branch: gh-analyzer/results
+
+  notify-failure:
+    needs: [analyze, propose]
+    if: failure() || needs.propose.outputs.merge-reason == 'ci-failure' || needs.propose.outputs.merge-reason == 'merge-refused'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/actions
+
+      - name: Open or update the failure issue
+        uses: ./.github/actions/notify-failure
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          message: ${{ (needs.propose.outputs.merge-reason == 'merge-refused' && 'GitHub refused the automatic merge, so the pull request is waiting for you. Approve its pending ci run if one is waiting, then merge it; see the Auto-merge section of docs/ci.md.') || 'The scheduled run failed.' }}

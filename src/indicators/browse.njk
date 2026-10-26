@@ -1,0 +1,85 @@
+---
+pagination:
+  data: iocIndex.indicator_browse_pages
+  size: 1
+  alias: run
+permalink: "{{ run.url }}"
+layout: base.njk
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ run.kind.plural | safe }}{% if run.of > 1 %}, page {{ run.number | safe }} of {{ run.of | safe }}{% endif %}"
+  head_title: "{{ run.kind.plural | safe }} in DPRK threat reporting{% if run.of > 1 %}, page {{ run.number | safe }} of {{ run.of | safe }}{% endif %}"
+  description: "{{ run.kind.plural | safe }} reported in published sources on North Korean (DPRK) cyber operations{% if run.of > 1 %}, {{ run.first | safe }} to {{ run.last | safe }} (page {{ run.number | safe }} of {{ run.of | safe }}){% endif %}. Each links to its own page with every citation."
+---
+{#
+  src/indicators/browse.njk — a rendered link to every /indicators/{id}/ page
+
+  The searches on /remote-workers/ and the cluster pages build their results
+  in the browser from a downloaded index, so nothing in the built HTML linked
+  to most indicator pages: a search engine knew them only from the sitemap,
+  and a page with no link pointing at it is the one it fetches last, if at
+  all. These pages exist to give each indicator page an ordinary link whose
+  anchor text is the value itself. They are also the only way through the
+  full set without JavaScript.
+
+  One run of pages per indicator type, at /indicators/browse/{type}/ and
+  /indicators/browse/{type}/{n}/, so a page holds one kind of value and says
+  so in its title. The runs are cut in src/_data/iocIndex.js (browseRuns), and
+  /indicators/ and /indicators/browse/ both link to every one of them, which
+  keeps any indicator page three clicks from the home page.
+
+  The rows link to /indicators/{id}/ even for a value that also sits on a
+  persona page, rather than using partials/ioc-result.njk, whose rows go to
+  the persona page: this listing exists to reach the indicator pages.
+#}
+<section>
+  {% set backLink = { url: "/indicators/browse/", text: "Browse indicators" } %}{% include "partials/back-link.njk" %}
+  <h1>{{ run.kind.plural }}</h1>
+  <p>
+    {{ run.total | thousands }} {% if run.total == 1 %}{{ run.kind.label }}{% else %}{{ run.kind.plural_text }}{% endif %}
+    reported in published sources on North Korean (DPRK) cyber operations,
+    ordered by value{% if run.of > 1 %}, {{ run.records.length }} to a page. This
+    is page {{ run.number }} of {{ run.of }}, from <code>{{ run.first }}</code>
+    to <code>{{ run.last }}</code>{% endif %}. Each value links to its own page,
+    which carries every source that reported it and the text around it. Other
+    types are listed in the <a href="/indicators/browse/">browse directory</a>.
+  </p>
+  {% if run.of > 1 %}
+  <nav class="pagination" aria-label="{{ run.kind.plural }} pages, before the table">
+    {% if run.prev %}<a class="btn btn--secondary" href="{{ run.prev }}" rel="prev">&larr; Previous</a>{% endif %}
+    <span>Page {{ run.number }} of {{ run.of }}</span>
+    {% if run.next %}<a class="btn btn--secondary" href="{{ run.next }}" rel="next">Next &rarr;</a>{% endif %}
+  </nav>
+  {% endif %}
+  <div class="table-scroll">
+    <table class="results-table">
+      <thead>
+        <tr><th scope="col">Value</th><th scope="col">Campaign</th><th scope="col">Filed under</th><th scope="col">Sources</th></tr>
+      </thead>
+      <tbody>
+        {% for record in run.records %}
+        <tr>
+          <td><a href="/indicators/{{ record.id }}/"><code>{{ record | iocLabel }}</code></a></td>
+          <td>{% for campaign in record.campaign %}<span class="tag-chip">{{ campaign }}</span>{% endfor %}</td>
+          <td>{% for owner in record.personas %}<a href="/remote-workers/personas/{{ owner.slug }}/">{{ owner.name | default(owner.slug) }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</td>
+          <td>{{ record.sources.length }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if run.of > 1 %}
+  <nav class="pagination" aria-label="{{ run.kind.plural }} pages, after the table">
+    {% if run.prev %}<a class="btn btn--secondary" href="{{ run.prev }}" rel="prev">&larr; Previous</a>{% endif %}
+    <span>Page {{ run.number }} of {{ run.of }}</span>
+    {% if run.next %}<a class="btn btn--secondary" href="{{ run.next }}" rel="next">Next &rarr;</a>{% endif %}
+  </nav>
+  {% endif %}
+</section>
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    preset: "not-proof",
+    body: 'Compromised packages and repositories name victims. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

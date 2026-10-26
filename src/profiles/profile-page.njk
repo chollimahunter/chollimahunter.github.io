@@ -1,0 +1,28 @@
+---
+pagination:
+  data: collections.profiles
+  size: 1
+  alias: profile
+permalink: "/profiles/{{ profile.slug }}/"
+layout: layouts/profile.njk
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ profile.display_name | safe }}"
+  description: "Profile of {{ profile.display_name | safe }}, named in public records on DPRK cyber operations, at confidence level {{ profile.confidence_level | safe }}. All claims sourced to the records cited on this page."
+---
+{#
+  src/profiles/profile-page.njk — thin pagination shim
+  ======================================================
+
+  This file has (deliberately) almost no body. Its only job is to paginate
+  over the `profiles` collection (registered in .eleventy.js via
+  eleventyConfig.addCollection("profiles", ...), which reads every
+  src/profiles/*.json file)
+  and, for each one, render src/_includes/layouts/profile.njk with that
+  profile bound to the `profile` variable. All actual profile-page markup
+  lives in layouts/profile.njk, not here.
+
+  `eleventyExcludeFromCollections: true` keeps this template file itself
+  out of any 11ty tag-based collection (it is not itself a profile - it is
+  the generator of N profile pages).
+#}

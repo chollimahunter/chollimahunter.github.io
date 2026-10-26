@@ -1,0 +1,15 @@
+---
+permalink: "/assets/data/repo-scanner-index.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/repo-scanner-index.njk — the index the repository-indicator search fetches
+  ============================================================================
+  Emits iocIndex.repo_scanner.compact at /assets/data/repo-scanner-index.json:
+  the repo-scan ruleset entries and the PolinRider affected-repository list in
+  the same compact shape as /assets/data/ioc-search.json, with the context
+  quotes inline. src/assets/js/ioc-search.js loads it when the panel on
+  /repo-scanner/ names it in data-ioc-index. Not layout-wrapped, same reasoning
+  as src/ioc-index.njk.
+#}
+{{ iocIndex.repo_scanner.compact | dump | safe }}

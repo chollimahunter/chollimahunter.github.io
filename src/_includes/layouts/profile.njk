@@ -1,0 +1,297 @@
+---
+layout: base.njk
+---
+{#
+  layouts/profile.njk — DPRK actor-profile page layout
+  =====================================================
+
+  Used as the 11ty `layout` for src/profiles/profile-page.njk, which
+  paginates over the `profiles` collection (one item per src/profiles/*.json
+  file, see .eleventy.js's addCollection("profiles", ...) for the data
+  shape). Each generated
+  page has the current profile bound to the `profile` variable via the
+  pagination alias.
+
+  Front matter chains this layout to base.njk (`layout: base.njk`). 11ty's
+  Nunjucks layout system resolves {% block %} tags across a `layout:` chain
+  automatically (this is a documented 11ty+Nunjucks feature, distinct from
+  hand-writing {% extends %} yourself) - so this file just needs to declare
+  {% block content %} matching base.njk's block name, NOT its own
+  {% extends %} tag. (A plain HTML body with no {% block %} at all - as
+  seen elsewhere on this site, e.g. src/index.njk/src/about/index.njk -
+  does NOT get injected into base.njk's {% block content %}{% endblock %}:
+  confirmed by building this site and inspecting output before landing on
+  this pattern. Declaring the block explicitly is required.)
+#}
+{% block content %}
+{#
+  Tag -> cluster-page id lookup is resolved via the findTaxonomy filter
+  against src/_data/taxonomy.json, the single source of truth for actor-cluster
+  tags (shared with the home page's own listing). Adding a new cluster tag only
+  requires editing taxonomy.json — nothing here needs to change, and the
+  cluster page at /clusters/{id}/ is generated from the same entry.
+#}
+<article>
+
+  {% set backLink = { url: "/profiles/", text: "All profiles" } %}{% include "partials/back-link.njk" %}
+
+  {# --- Confidence / sourcing disclaimer banner (REQUIRED on every profile page)
+       On a confirmed profile it sits at the foot instead, after the sources it
+       is a note on; below anything less it stays here, ahead of the claims,
+       because a reader needs that caveat before the page and not after it.
+       The confidence badge itself moves to the header either way — it is a
+       fact about the record, not part of the caveat. --- #}
+  {% set disclaimerProfile = profile %}
+  {% if profile.confidence_level != "confirmed" %}
+  {% include "partials/profile-disclaimer.njk" %}
+  {% endif %}
+
+  {# --- Display name + aliases --- #}
+  <header>
+    <h1>{{ profile.display_name }}{% if profile.name_korean %} <span class="profile-name-ko" lang="ko">{{ profile.name_korean }}</span>{% endif %} {% set confidenceLevel = profile.confidence_level %}{% include "partials/confidence-badge.njk" %}</h1>
+    {% if profile.name_korean and profile.name_korean_provenance == "reconstructed" %}
+    <p class="ioc-result__meta">The Korean rendering above follows the conventional spelling of the romanized name; it is not taken from a source that publishes the Hangul.</p>
+    {% endif %}
+    {% if profile.aliases and profile.aliases.length %}
+    <p>
+      <strong>Also known as:</strong>
+      {% for alias in profile.aliases %}<span class="tag-chip">{{ alias }}</span>{% endfor %}
+    </p>
+    {% endif %}
+    {% set namedPersonas = personas | personasNamed(profile) %}
+    {% if namedPersonas.length %}
+    <p class="ioc-result__meta">
+      Researchers have also filed indicators under this name as a persona:
+      {% for persona in namedPersonas %}<a href="/remote-workers/personas/{{ persona.slug }}/">{{ persona.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.
+      The filing is the researcher&rsquo;s and is matched here by name alone.
+    </p>
+    {% endif %}
+  </header>
+
+  {# --- Cluster taxonomy tags, linked to their own cluster pages --- #}
+  {% if profile.cluster_taxonomy and profile.cluster_taxonomy.length %}
+  <section>
+    <h2>Actor-cluster tags</h2>
+    <p>
+      {# A tag that matches no taxonomy entry has no cluster page to link to,
+         so it falls back to the taxonomy grid rather than emitting
+         /clusters//. CONTENT_GUIDE.md requires the labels to match exactly;
+         this is the safety net for when one does not. #}
+      {% for tag in profile.cluster_taxonomy %}{% set tagId = (taxonomy | findTaxonomy(tag)).id %}<a
+        class="tag-chip"
+        href="{% if tagId %}/clusters/{{ tagId }}/{% else %}/#actor-cluster-taxonomy{% endif %}"
+      >{{ tag }}</a>{% endfor %}
+    </p>
+  </section>
+  {% endif %}
+
+  {# --- Photo slot: never render a placeholder/stock image --- #}
+  <section>
+    <h2>Photo</h2>
+    {% if profile.photo_slot and profile.photo_slot.image_path %}
+    <div class="profile-photos">
+    <figure class="profile-photo">
+      {# The alt text stays short and descriptive; the provenance and copyright
+         note belong in the visible caption, not read out before every other
+         element on the page. #}
+      {# No width/height attributes: these images come from the source at
+         several different intrinsic sizes, and a wrong pair is worse than
+         none. .profile-photo reserves the space with an aspect-ratio instead. #}
+      <img src="{{ profile.photo_slot.image_path }}"
+           alt="Photograph of {{ profile.display_name }}" fetchpriority="high" decoding="async">
+      {% if profile.photo_slot.caption or profile.photo_slot.source %}<figcaption>{% if profile.photo_slot.caption %}<span>{{ profile.photo_slot.caption }}</span>{% endif %}{% if profile.photo_slot.source %}<span class="profile-photo__source">Source: {% set externalLink = { url: profile.photo_slot.source, text: profile.photo_slot.source | hostname } %}{% include "partials/external-link.njk" %}</span>{% endif %}</figcaption>{% endif %}
+    </figure>
+    {# A notice sometimes publishes more than one photograph of the same person.
+       photo_slot stays the primary — it is what the tile grids show —
+       and any others follow it here. #}
+    {% for extra in profile.additional_photos %}
+    <figure class="profile-photo">
+      <img src="{{ extra.image_path }}"
+           alt="Additional photograph of {{ profile.display_name }}" loading="lazy" decoding="async">
+      {% if extra.caption or extra.source %}<figcaption>{% if extra.caption %}<span>{{ extra.caption }}</span>{% endif %}{% if extra.source %}<span class="profile-photo__source">Source: {% set externalLink = { url: extra.source, text: extra.source | hostname } %}{% include "partials/external-link.njk" %}</span>{% endif %}</figcaption>{% endif %}
+    </figure>
+    {% endfor %}
+    </div>
+    {% elif profile.photo_slot and profile.photo_slot.caption %}
+    {# The publisher has a photograph but this site does not mirror it. Say so
+       and point at the source, rather than claiming no image exists. #}
+    <p>
+      <em>{{ profile.photo_slot.caption }}</em>
+      {% if profile.photo_slot.source %}
+      {% set externalLink = { url: profile.photo_slot.source, text: "View it at the source" } %}{% include "partials/external-link.njk" %}.
+      {% endif %}
+    </p>
+    {% else %}
+    <p><em>No verified public image available.</em></p>
+    {% endif %}
+  </section>
+
+  {# --- Wanted-notice details -------------------------------------------
+       Everything the issuing agency publishes on its own notice, transcribed
+       rather than summarized. The details list is ordered label/value pairs
+       rather than fixed keys, because notices differ in which fields they carry — one
+       has a date of birth, another an occupation or scars and marks — and this
+       way whatever the notice publishes renders without the template needing to
+       know the vocabulary. A profile whose record is a sanctions designation
+       rather than a wanted notice sets `heading` so the section is not
+       mislabelled. --- #}
+  {% if profile.wanted_details %}
+  <section>
+    <h2>{{ profile.wanted_details.heading or "Wanted-notice details" }}</h2>
+
+    {% if profile.wanted_details.status %}
+    <p><strong>Status:</strong> {{ profile.wanted_details.status }}</p>
+    {% endif %}
+
+    {% if profile.wanted_details.details and profile.wanted_details.details.length %}
+    <div class="table-scroll">
+      <table class="results-table">
+        <tbody>
+          {% for row in profile.wanted_details.details %}
+          <tr><th scope="row">{{ row.label }}</th><td>{{ row.value }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+
+    {# Quoted in full and unedited; over 60 words it collapses behind its first sentence. #}
+    {% if profile.wanted_details.caution %}
+    <h3 class="ioc-result__heading">Caution</h3>
+    {% if profile.wanted_details.caution | wordCount > 60 %}
+    <details class="source-posts source-posts--quote">
+      <summary>{{ profile.wanted_details.caution | firstSentence }}</summary>
+      <blockquote class="notice-quote">{{ profile.wanted_details.caution }}</blockquote>
+    </details>
+    {% else %}
+    <blockquote class="notice-quote">{{ profile.wanted_details.caution }}</blockquote>
+    {% endif %}
+    {% endif %}
+
+    {% if profile.wanted_details.remarks %}
+    <h3 class="ioc-result__heading">Remarks</h3>
+    <blockquote class="notice-quote">{{ profile.wanted_details.remarks }}</blockquote>
+    {% endif %}
+
+    {% if profile.wanted_details.reward %}
+    <h3 class="ioc-result__heading">Reward</h3>
+    <blockquote class="notice-quote">{{ profile.wanted_details.reward }}</blockquote>
+    {% endif %}
+
+    {% if profile.wanted_details.field_offices %}
+    <p class="ioc-result__meta"><strong>Field office:</strong> {{ profile.wanted_details.field_offices }}</p>
+    {% endif %}
+
+    {% if profile.wanted_details.related_cases and profile.wanted_details.related_cases.length %}
+    <h3 class="ioc-result__heading">Related cases</h3>
+    <ul>
+      {% for related in profile.wanted_details.related_cases %}
+      <li>{% set externalLink = { url: related.url, text: related.title } %}{% include "partials/external-link.njk" %}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if profile.wanted_details.poster_url %}
+    <p>{% set externalLink = { url: profile.wanted_details.poster_url, text: "Download the official wanted poster (PDF)" } %}{% include "partials/external-link.njk" %}</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {# --- Personas (fabricated identities), each with its own citations --- #}
+  {% if profile.personas and profile.personas.length %}
+  <section>
+    <h2>Known personas</h2>
+    <div class="card-grid">
+      {% for persona in profile.personas %}
+      <div class="card">
+        <h3>{{ persona.name }}</h3>
+        <p>{{ persona.context }}</p>
+        {% if persona.sources and persona.sources.length %}
+        <p>
+          Cited in:
+          {% for src in persona.sources %}<sup>{% set externalLink = { url: src.url, text: "[" + (src.title or src.url) + "]" } %}{% include "partials/external-link.njk" %}</sup>{% if not loop.last %} {% endif %}{% endfor %}
+        </p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {# --- Contact artefacts: emails / phone numbers, each with an inline citation marker --- #}
+  {% if (profile.emails and profile.emails.length) or (profile.phone_numbers and profile.phone_numbers.length) %}
+  <section>
+    <h2>Contact artefacts</h2>
+    {% if profile.emails and profile.emails.length %}
+    <h3>Emails</h3>
+    <ul>
+      {% for email in profile.emails %}
+      <li><code>{{ email }}</code> <sup><a href="#sources-list">[sourced, see Sources]</a></sup></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    {% if profile.phone_numbers and profile.phone_numbers.length %}
+    <h3>Phone numbers</h3>
+    <ul>
+      {% for phone in profile.phone_numbers %}
+      <li><code>{{ phone }}</code> <sup><a href="#sources-list">[sourced, see Sources]</a></sup></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {# --- GitHub repos --- #}
+  {% if profile.github_repos and profile.github_repos.length %}
+  <section>
+    <h2>Associated GitHub repos / accounts</h2>
+    <ul>
+      {% for repo in profile.github_repos %}
+      <li>{% set externalLink = { url: repo, sameTab: true } %}{% include "partials/external-link.njk" %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {# --- Fake IDs --- #}
+  {% if profile.fake_ids and profile.fake_ids.length %}
+  <section>
+    <h2>Known fraudulent identity documents</h2>
+    <div class="table-scroll">
+      <table class="results-table">
+        <thead>
+          <tr><th scope="col">Type</th><th scope="col">Value</th></tr>
+        </thead>
+        <tbody>
+          {% for fid in profile.fake_ids %}
+          <tr><td>{{ fid.id_type }}</td><td><code>{{ fid.value }}</code></td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endif %}
+
+  {# --- Sources: every citation, clickable --- #}
+  <section>
+    <h2>Sources</h2>
+    <p>Every factual claim on this page is drawn from the public records listed below.</p>
+    <ul id="sources-list">
+      {% for source in profile.sources %}
+      <li id="source-{{ loop.index0 }}">
+        {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
+        &mdash; {{ source.publisher }}{% if source.date %}, {{ source.date }}{% endif %}
+        {% if source.type %}<span class="tag-chip">{{ source.type | replace('_', ' ') }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% if profile.confidence_level == "confirmed" %}
+  {% include "partials/profile-disclaimer.njk" %}
+  {% endif %}
+
+  <p class="profile-meta"><em>Profile last updated {{ profile.last_updated }}.</em></p>
+
+</article>
+{% endblock %}

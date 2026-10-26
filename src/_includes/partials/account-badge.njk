@@ -1,0 +1,11 @@
+{#
+  partials/account-badge.njk — whether an account on a third-party platform is
+  still up, with the date that was established, from an account_status block
+  (scripts/enrich-platform-accounts.js and the LinkedIn and GitHub checks).
+  The date is printed beside the badge rather than kept in a tooltip, because
+  a liveness reading means nothing without it. partials/malware-badge.njk
+  carries its date the same way, and ioc-search.js builds the same markup for
+  search results; change all three together.
+
+  Usage: set `accountStatus` before including.
+#}{% if accountStatus %}<span class="badge badge--{{ 'high' if accountStatus.state == 'live' else 'low' }}">{{ accountStatus.state }}</span>{% if accountStatus.checked %} <span class="ioc-result__meta">checked {{ accountStatus.checked }}</span>{% endif %}{% endif -%}

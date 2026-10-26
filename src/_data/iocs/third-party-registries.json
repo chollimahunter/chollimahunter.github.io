@@ -1,0 +1,4428 @@
+{
+  "_comment": "Third-party indicator registries that publish per-persona dossiers. Same schema as x-dossiers.json and loaded by the same code (scripts/lib/dossiers.js), kept separate because the provenance differs: an X post is one researcher's public claim, a registry is a standing database. See docs/third-party-registries.md.",
+  "defaults": {
+    "campaign": [
+      "IT Worker Fraud"
+    ],
+    "transcribed": "2026-09-09",
+    "method": "registry"
+  },
+  "researchers": {
+    "lazarusgroup": {
+      "publisher": "Lazarus Group DPRK IT-Worker Registry (lazarus.group)",
+      "account": "https://lazarus.group/team"
+    },
+    "zeusdev919": {
+      "publisher": "ZEUS-DEV-919 working document",
+      "account": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit"
+    }
+  },
+  "dossiers": [
+    {
+      "persona": "Kazune Takeda",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Greg Takeo",
+        "Rey Santana Socorro",
+        "Joe Hisaishi"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/kazune-takeda",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-kazune-takeda.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Kazune on call with company X”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Kazune on call with company Y”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Kazune celebrating New Year's Eve”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-4.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Kazune being a good boy”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-passport.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “ID document scan”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "attachments": [
+        {
+          "file": "/assets/files/lazarus-group/kazune-takeda--resume-1.pdf",
+          "title": "Kazune's Resume 1",
+          "description": "Old resume (2022)",
+          "bytes": 632744,
+          "post": 0
+        },
+        {
+          "file": "/assets/files/lazarus-group/kazune-takeda--resume-2.pdf",
+          "title": "Kazune's Resume 2",
+          "description": "Updated resume (2025)",
+          "bytes": 92058,
+          "post": 0
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "kazune.takeda@yahoo.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "greg.takeo@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/kazunetakeda25"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kazunetakeda25"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "zhmolly@proton.me"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zhmolly"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/kazunetakeda25/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/ethfuji"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/kazunetakeda25"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jwtradera@outlook.com"
+        }
+      ]
+    },
+    {
+      "persona": "Damian Mularz",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Tony Guo",
+        "Sergio Ramos",
+        "DreamHigh",
+        "Netdragon986",
+        "0xwhiz"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/damian-mularz",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-damian-mularz.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Screenshot”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-damian-mularz--damian-mularz-2.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Front of fake Polish ID card”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-damian-mularz--damian-mularz-3.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Back of fake Polish ID card”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "attachments": [
+        {
+          "file": "/assets/files/lazarus-group/damian-mularz--damian-mularz-cv.pdf",
+          "title": "damian_mularz_cv.pdf",
+          "description": "Damian Mularz CV",
+          "bytes": 101589,
+          "post": 0
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "damian.mularz.725@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cuiguo23@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "evgenpan228@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "netdragon986@gmail.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+48667729989"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xwhiz"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/evgpan"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/damianmularz"
+        }
+      ]
+    },
+    {
+      "persona": "Naoki Murano",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Supermutecx"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/naoki-murano",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-1.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Naoki dining with his friends”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-0.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Naoki waving the flag of North Korea”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Naoki with an American Jeep”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Naoki with his friends”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-4.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Naoki KYC”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-5.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Happy Naoki”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-6.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Naoki with his friend Jenson Collins”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "naokimurano@outlook.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "murano@outlook.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "mutano1996@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/xcristian88"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/supermutecx"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kenji@dev-email.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ccristian88"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ccristian88@outlook.com"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xca3b78831a101a6d6d0a153653483e3c9a90948f"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x85e0504fcd7981baa68774431099c5e2dcf074dd"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x6188a9e76794e7cb337b8e5a2b91808ce34fc6d1"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x44a33a4a822194d3c8402629932dd88b0ff49b09"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xe6c2d1d7f6ee9e4ee9f8b865d9b5931c06c9c7d1"
+        }
+      ]
+    },
+    {
+      "persona": "Jenson Collins",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "JCollinsX",
+        "JensonUZ",
+        "nonfungiblejc"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jenson-collins",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-2.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Jenson Collins (right) and his friend (Seo Sigoto)”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-1.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Jenson Collins and Minions”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Jenson Collins (first on the left) and his friends (Keisuke Watanabe and Kazune Takeda)”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "jenson.collins@hotmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "nonfungiblejc@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/nonfungiblejc"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/jcollinsx"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nonfungiblejc"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/akcgjc007"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "akcgjc007@gmail.com"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x44c2ab7db5299e008c586d52e9b6b193e4173471"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xaa166aa0b46fb42fdaafb7ac351a00186d684837"
+        }
+      ]
+    },
+    {
+      "persona": "Leon Lin",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Leon Lowden",
+        "Abe Sinjiro",
+        "Bernard Shibata"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/leon-lin",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-leon-lin.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Leon Lin chilling”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-leon-lin--leon-lin-2.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “KYC Leon Lin”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-leon-lin--leon-lin-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Leon Lin with his friends (Kazune Takeda and Sadao Murano)”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-leon-lin--cv-1.jpg",
+          "post": 0,
+          "caption": "Resume published by the registry under this persona, captioned there as “Part 1 of Leon's Resume”. Every employer, degree and skill in it is the document's own claim.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-leon-lin--cv-2.jpg",
+          "post": 0,
+          "caption": "Resume published by the registry under this persona, captioned there as “Part 2 of Leon's Resume”. Every employer, degree and skill in it is the document's own claim.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "leonxdev1@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "leon.lowden7@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "abe.sinjiro7@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "0xl2@proton.me"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "bernard.shibata@hotmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "real_striver@outlook.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+66863146268"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/zeroxjoe"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mmsys34"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xhiler"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/prodigy205"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/moreleon"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x64d668978ddd6145d4f192eefb03691b75f65096"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x90a8974ed484da8e209e6db7b2f84c1b5be345d0"
+        }
+      ]
+    },
+    {
+      "persona": "Keisuke Watanabe",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "kAsky53",
+        "kdevdivvy",
+        "dev4all.sol",
+        "dev4alldotsol",
+        "keisukew53",
+        "0xWoo",
+        "hirayama1534"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/keisuke-watanabe",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-keisuke-watanabe.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Keisuke Watanabe headshot”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-keisuke-watanabe--keisuke-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Younger Keisuke Watanabe”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator and gives their real citizenship as North Korea. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "keisukew53@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/kasky53"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kasky53"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "92731202+0xwoo@users.noreply.github.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "92731202+kasky53@users.noreply.github.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "92731202+keisukew53@users.noreply.github.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "isaac.wolinsky@gmail.com"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/keisuke-watanabe-357298224/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/kasky53"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "JBxidGWnhtPTGg8xw7sFT9tF4cfGtHnjYNp5GDJvGveh"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "8mdfRML7z3s8gqDYd72bywcEgQtcvkoJCw2bukv8X71R"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1b89aecc0f8c128150db67d7d0c4b1daeb43eda4"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x3af73294445e5f49e19a7a224d2e157a15128735"
+        }
+      ]
+    },
+    {
+      "persona": "Benjamin Nguyen",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "ponyjackal"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/benjamin-nguyen",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-benjamin-nguyen.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Benjamin Nguyen on call.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "benguyen0214@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "pony1125@outlook.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "vladimiru1125@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/ponyjackalx"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ponyjackal"
+        },
+        {
+          "ioc_type": "ens_name",
+          "value": "ponyjackal.eth"
+        }
+      ]
+    },
+    {
+      "persona": "Andy Bell",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "bbshark99",
+        "SharkDev99",
+        "andy-solution"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/andy-bell",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-andy-bell.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Andy Bell on call.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/kevin83191687"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bbshark99"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "andy.solution99@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "blue.shark99@outlook.com"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x241d2b20f2c26a2541a0f121d6a33c29cb4cfe69"
+        },
+        {
+          "ioc_type": "ens_name",
+          "value": "bbshark.eth"
+        }
+      ]
+    },
+    {
+      "persona": "Danny Jin",
+      "researcher": "lazarusgroup",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/danny-jin",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-danny-jin.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Danny Jin on call”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "dannyjin117@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/codecarrier1"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "as5179000@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "webninja16@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "danny.jin@biztree.com"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/danny-9458141b0/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xacb8ba726c04408aecacd6794b4c9dc59652203d"
+        }
+      ]
+    },
+    {
+      "persona": "Muhammad Abdullah",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "polartar",
+        "talentdev2020",
+        "aristidesgpg",
+        "WebExpert2000"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/muhammad-abdullah",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-muhammad-abdullah.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Muhammad Abdullah on call”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "polaris.center@outlook.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/m_polartar"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/talentdev2020"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/polartar"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/aristidesgpg"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xf7f89251eaa664993893efea0e55d8ec3306d959"
+        }
+      ]
+    },
+    {
+      "persona": "Eric Andrade",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Josh Thomas",
+        "gsofter",
+        "Guru2921",
+        "Adelin Ionut",
+        "GuruSoftwareMaster",
+        "gurusoft13"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/eric-andrade",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-eric-andrade.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Eric Andrade headshot”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-eric-andrade--eric-andrade-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Second profile picture of Eric Andrade.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "guru.softwaremaster@mail.ru"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ivanromanov1771@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "real.kingstar@outlook.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/ggsofter"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gsofter"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "eric@gsofter.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/guru2921"
+        },
+        {
+          "ioc_type": "ens_name",
+          "value": "gsofter.eth"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xfff50b1b9154b0631591dab746c5fc8f41dc44bd"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xe2becede47e8cba800b42323117a15399a6b5334"
+        }
+      ]
+    },
+    {
+      "persona": "Sandy Nguyen",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "xgracias",
+        "smarterdegen",
+        "bullishgopher",
+        "versatile-programmer"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/sandy-nguyen",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-sandy-nguyen.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Sandy Nguyen.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-sandy-nguyen--1937972789497168329.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Image of Sandy Nguyen.”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "superwebdev0330@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "wictor95@bk.ru"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/bullishgopher"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bullishgopher"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "tkcong@gmail.com"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/tkcong/"
+        },
+        {
+          "ioc_type": "ens_name",
+          "value": "smarterdegen.eth"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xb2c681b80ca1f35bf379a3fd44b0eaed032c982a"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x5fdd9679b656e48c7f899c65a47503ec8732fc6c"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x7af7a8e4a0190bf3e48f3a021fb9251ea915e4d8"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xe1157497de4d4b0780474da85990ece6ccb0ad36"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x2a8f7065eccfa6d8ee49ea9a256315fb6374ee2e"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "79Jqz5La12SVDZKJD9YRiP9s39W3NEtki7PUdF3CPWzJ"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "EW8oTqNfWi2eQZPqDSG6YqJJnGb6rL4DvDukW421Fzc"
+        }
+      ]
+    },
+    {
+      "persona": "Kang Tae Bok",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Joshua Palmer",
+        "0xjsmart",
+        "call-by",
+        "jp-smart",
+        "wewecalibrate",
+        "joshupgig"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/joshua-palmer",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-wanted.jpg",
+        "post": 0,
+        "caption": "Photograph the registry publishes for this persona, captioned there as “Profile picture of Joshua Palmer.”, with the name printed beneath it. The photograph and name are the registry's attribution of who operated the identity."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-wong-shao-onn.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Joshua Palmer with Wong Shao Onn.”, kept as a record of the profile it shows.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-id.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “ID of Joshua Palmer.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-primorye.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Joshua Palmer in Primorye.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "joshupgig@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "smart.solidity@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/jp-smart"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/call-by"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/wewecalibrate"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x06f90983cd2215379e440fc525e441d6a5fc3fba"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xa6afe0290fb6f2f7ced0a2753de57f9fa7c9c9dd"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xfa802d9b33ed74baff62b189875c2b2d192874eb"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x7654e18ff3495675606c008a39b6264da5d0e8a7"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "5Jfb3n8eW4JyQrKJktMNBFXnC1zx2YHjRSkzRrTT5QHh"
+        }
+      ]
+    },
+    {
+      "persona": "Jong Pong Ju",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Bryan Cho",
+        "Chris Yu",
+        "atroboj",
+        "bugarnet"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/bryan-cho",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-wanted.jpg",
+        "post": 0,
+        "caption": "Photograph the registry publishes for this persona, captioned there as “Wanted poster for Bryan Cho.”, with the name printed beneath it. The photograph and name are the registry's attribution of who operated the identity."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-bryan-cho.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Bryan Cho from Despace.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-id.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “ID of Bryan Cho.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-chris-yu-1.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Bryan Cho as Chris Yu.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-chris-yu-2.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Second image of Bryan Cho as Chris Yu.”, kept as a record of the profile it shows.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "atroboj@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/atroboj"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bugarnet"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/atroobj"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x3b9a870c24905256de10863cb360f4b93c7cc60f"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xc2b2a9c05740eeb7ee7ba7eb3ab11ec8bebcb1d1"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1043efee936903951b88db23551873bb67292e95"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "ESSfP3aAcW6Z59ozut9Jkqy9btaX5YTHt25b3Vhs2hsf"
+        }
+      ]
+    },
+    {
+      "persona": "Chang Nam Il",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Alex Shen",
+        "devneser"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/bong-chee-shen",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-bong-chee-shen--bong-chee-wanted.jpg",
+        "post": 0,
+        "caption": "Photograph the registry publishes for this persona, captioned there as “Wanted poster for Bong Chee Shen.”, with the name printed beneath it. The photograph and name are the registry's attribution of who operated the identity."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-bong-chee-shen--bong-chee-shen.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Profile picture of Bong Chee Shen.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-bong-chee-shen--1939838063192285351.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Image related to Bong Chee Shen.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "alexzh.dev@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devneser"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x164729e00e8d0f871189160f36dee4398cade1f2"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x2efe21f4fef7e737c0a3491c93be7d696038b6f5"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x65b4ba828f85ac429d6a02db1304065a819a53f4"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xd9054f484ed98a7dd632eb9c09644616db3dea8c"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x06f90983cd2215379e440fc525e441d6a5fc3fba"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "GrXoxqM2a6QFKSBdZ9RLWJCBVTFvuuH8eCjjsLbjhpiR"
+        }
+      ]
+    },
+    {
+      "persona": "Kim Kwang Jin",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Pemba Sherpa",
+        "Pemba Gulu",
+        "paladin-120"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/pemba-sherpa",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-pemba-sherpa--pemba-sherpa-wanted.jpg",
+        "post": 0,
+        "caption": "Photograph the registry publishes for this persona, captioned there as “Wanted poster for Pemba Sherpa.”, with the name printed beneath it. The photograph and name are the registry's attribution of who operated the identity."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "pemba.sherpa5232@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "pemba.gelu5232@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/paladin-120"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xfb5d591e8216f5d0964286f09b1f61114c16aab0"
+        }
+      ]
+    },
+    {
+      "persona": "Alex Hong",
+      "researcher": "lazarusgroup",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/alex-hong",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-alex-hong.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Alex Hong profile picture from DEPO project.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-alex-hong--alex-hong-despace.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Alex Hong profile picture from DeSpace project.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-alex-hong--alex-hong.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Profile picture of Alex Hong.”, kept as a record of the profile it shows.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/musectech"
+        }
+      ]
+    },
+    {
+      "persona": "Jason Kwon",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "0xMoon",
+        "0xm00n",
+        "0xm00n.eth",
+        "0xm00neth",
+        "cryptonerd_",
+        "0xlock"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jason-kwon",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-jason-kwon--jason-kwon-despace.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Jason Kwon from the DeSpace team page.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jason-kwon--jason-kwon.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Profile picture of Jason Kwon.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "0xm00neth@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/0xm00neth"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xm00neth"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xlock"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1e5c29702b770d5519932367129973bd63740392"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x03e6adb71ec39af3d68733f1c3f5e54e6e55b7d2"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xa771609c5c56048f146d2c794c87db946bff27cf"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1075e62bfacbb44e31d7a5719e55c7d16fe7d35d"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4b94ba1528636a699dab486a217d39bb7ce21d75"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x72c70980acdde7a5c9437050e73e7d07fbf21d25"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x7969b188f7dc6bf80d68f224ac3454dafe6f6d5d"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x90cf352ddaf171d41a6ded1d54ceda4005047c93"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xcdee5da607ad96e966df82dbc3f004ce44859c6f"
+        }
+      ]
+    },
+    {
+      "persona": "Jason Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "punk1004",
+        "jasonlee9627",
+        "0xJason"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jason-lee",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-jason-lee.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Jason Lee related to Party Doge project.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jason-lee--jason-lee-party-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Jason Lee related to Party Doge project.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "jasonlee9627@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "0xm00neth@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/0xm00neth"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xm00neth"
+        }
+      ]
+    },
+    {
+      "persona": "ChienHui Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Gary Lee",
+        "Light Fury",
+        "Leech Developer",
+        "lightfury",
+        "light-fury",
+        "leech.developer",
+        "leech_dev"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/gary-lee",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-1292049042562834432.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Gary Lee.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-chien-hui-lee.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Profile picture of Gary Lee (ChienHui Lee).”, kept as a record of the profile it shows.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-karlo-lee-chan.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Gary Lee with Karlo Lee Chan.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "leech.developer@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ddpuppy42@yahoo.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/lee_chienhui"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/light-fury"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/lee-chien-hui-50b157157/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xfcd4e8c84afd221d3b8c9c8c374a7784b314d230"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x390ed16a3e85758597db7452998d3ea66b65fd84"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4ab0eac00d1a5b05e7a484f8678dce68b849545a"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xe8a06462628b49eb70dbf114ea510eb3bbbdf559"
+        }
+      ]
+    },
+    {
+      "persona": "Jikun Liao",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "James Lee",
+        "Justin Lim",
+        "The OG",
+        "altp!",
+        "altpl",
+        "jikun",
+        "jliao",
+        "peezenut",
+        "altbee",
+        "zerobit417",
+        "liaojikunwork",
+        "JL"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jikun-liao",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-jikun-liao.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Jikun Liao.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jikun-liao--james-lee-coindesk.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Jikun Liao as 'James Lee' in a CoinDesk article.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "jikun@mygameswap.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jliao@mygameswap.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "peezenut@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "james117lee@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "zerobit417@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "liaojikundever@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "34900782+liaojikunwork@users.noreply.github.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/jnuon"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/altbee"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/jikun-liao-794b61162/"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/james-lee-0977a0217/"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/justin-lim-14664a324/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/altpl"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/zerobit417"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xc43b1f4e7e47be5d5663c3b26e4fb3fe7e217f90"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xb9451049310053b29e5dd98c54bff37a5e38819c"
+        }
+      ]
+    },
+    {
+      "persona": "Mauro Liu",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Xu Liu",
+        "0xchamel",
+        "0xllaCh",
+        "blueChamel",
+        "chamel92",
+        "daiki-iu",
+        "Gornutz",
+        "lmauro77",
+        "mauroh.perk",
+        "mauroliu77",
+        "zhChamel",
+        "zhChameleon",
+        "bitbaby888",
+        "imyugioh",
+        "zhExcal",
+        "0xlocker",
+        "ethlocker",
+        "raptor1001"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/mauro-liu",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-mauro-liu.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Mauro Liu from the DEPO project.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-mauro-liu--mauroliu-magiccraft-01.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Mauro Liu from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-mauro-liu--mauroliu-magiccraft-02.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Mauro Liu from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-mauro-liu--magiccraft.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “MagicCraft team picture including Mauro Liu.”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "mauro@blueberry.garden"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "pwongexcal@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "zhaoa4317@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "blueraptor1001@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "choi.link227@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "bitbaby888@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/0xchamel"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/zhexcal"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xchamel"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zhchameleon"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xllach"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bluechamel"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/imyugioh"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xlocker"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ethlocker"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/raptor1001"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/lmauro77/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/chamel92"
+        }
+      ]
+    },
+    {
+      "persona": "Eric Liu",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "vigorousdeveloper",
+        "top-dev-mania",
+        "VigorousDevelopment524",
+        "Vigorous Developer",
+        "supervenus0725",
+        "SuperDev",
+        "Jason07250000",
+        "venus07250000"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/eric-liu",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-eric-liu.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Eric Liu from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-eric-liu--eric-liu-magiccraft-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Eric Liu from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "vigorousdevelopment524@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dev.mania.639@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "venus07250000@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/vigorousdeveloper"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/top-dev-mania"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/supervenus0725"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/jason07250000"
+        }
+      ]
+    },
+    {
+      "persona": "Daiki Saito",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Anthony Keller",
+        "James Ling",
+        "Smart Ninja",
+        "DevSCNinja",
+        "coppn",
+        "lcoppn",
+        "0x.bejaxer",
+        "eratos1123",
+        "eratos1122",
+        "cobang",
+        "bejaxer"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/daiki-saito",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-daiki-saito.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Daiki Saito from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-daiki-saito--daiki-saito-magiccraft-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Daiki Saito from MagicCraft team.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-daiki-saito--1439093300242239490.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Daiki Saito.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "0x.bejaxer@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "eratos1123@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/cobang"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bejaxer"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/anthony-keller-022486183/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/lcoppn"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4717af66032b1dbc35d9b1182f9240994a11bf01"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x482c9f85644f1686c490d38291511657da767e61"
+        }
+      ]
+    },
+    {
+      "persona": "Lucas Wong",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "cox1118",
+        "superlwclx",
+        "LucasWongC",
+        "c__x__"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/lucas-wong",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-lucas-wong.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Lucas Wong.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "lucas.wong.1118@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "wm111898@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/superlwclx"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/lucaswongc"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/cox1118"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xee52717e6da13499a3c4ba803e4d952cf052704e"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x94a8518b76a3c45f5387b521695024379d43d715"
+        }
+      ]
+    },
+    {
+      "persona": "Chai Somsri",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "ChaiSomsri96",
+        "George Capraroiu",
+        "george19871205"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/chai-somsri",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-chai-somsri--chai-somsri.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “KYC photo of Chai Somsri.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "chaisomsri96@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "georgecapraroiu1205@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "melonman913@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/chaisomsri96"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/chaisomsri96"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/chai-somsri/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/chaisomsri"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xe5a86c150ac44ab8f8b2661c9e8d8b13887360f0"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x9ce96e07c091662c2605eaae9180de22aad6e8db"
+        }
+      ]
+    },
+    {
+      "persona": "Motoki Masuo",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Hiroto Iwaki",
+        "mymiracle0118",
+        "iwakihiroto",
+        "noahsflood908",
+        "Taku Yamamoto"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/hiroto-iwaki",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-hiroto-iwaki.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Profile picture of Hiroto Iwaki.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-hiroto-iwaki--1913290058670416183-02.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Profile picture of Hiroto Iwaki.”, kept as a record of the profile it shows.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which publishes this identity on a page of its own and also lists Hiroto Iwaki as a fake name on its Motoki Masuo page, filing the same address under both. It is carried here as one persona on the registry's own assertion that the two names belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "noahsflood908@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mymiracle0118"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/hiroto-iwaki-54b207306/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/iwakihiroto"
+        }
+      ]
+    },
+    {
+      "persona": "Motoki Masuo",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Hiroto Iwaki",
+        "bestselection18",
+        "noahsflood908"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/motoki-masuo",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-motoki-masuo.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Motoki Masuo on call”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "noahsflood908@gmail.com"
+        }
+      ]
+    },
+    {
+      "persona": "Bram Chan",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Bram Chen",
+        "gejeduck"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/bram-chan",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-bram-chan--bram-chen.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Profile picture of Bram Chen.”, kept as a record of the profile it shows.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gejeduck"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x91689cf1c6cb61aa3d6663ffc74c9f689809af91"
+        }
+      ]
+    },
+    {
+      "persona": "Nelson Murua",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Alberto Mira",
+        "Jackson Bill",
+        "NelsonMurua913",
+        "albertomira1114",
+        "super1114dev"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/nelson-murua",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-nelson-murua.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Alberto Mira profile picture.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-alberto-mira-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Alberto Mira profile picture.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-nelson-murua-alberto-mira.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Nelson Murua / Alberto Mira profile picture.”, kept as a record of the profile it shows.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-super1114.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “super1114 profile picture.”, kept as a record of the profile it shows.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "sr.muruanelson@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "albertomira1114@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "super1114dev@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nelsonmurua913"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/super1114"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x6be96b68a46879305c905ccafff02b2519e78055"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x9976fe30dac6063666eea87133dfad1d5ec27c5e"
+        }
+      ]
+    },
+    {
+      "persona": "Paul Martin",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Werewolves0493"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/paul-martin-werewolves",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-paul-martin-werewolves.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Paul Song, senior dev at Munchables.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-paul-martin-werewolves--munchables-paul-martin.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Paul Martin profile picture.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/werewolves0493"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4890e32a6a631ba451b7823dad39e88614f59c97"
+        }
+      ]
+    },
+    {
+      "persona": "Paul Martin",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "cryptopunk",
+        "gru1125",
+        "FeloniousGru-Super"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/paul-martin-cryptopunk",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-paul-martin-cryptopunk.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Paul Martin / Ivar profile picture.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "paulmartin.pm1125@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/gru1125"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/feloniousgru-super"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x19899a49704c7890febc139b4efa4de24d88d425"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1caa50f7fc5c02925ad98624b12635d11f281a00"
+        }
+      ]
+    },
+    {
+      "persona": "Pete Yama",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Bill Tovitt",
+        "cryptopunk",
+        "cryptopunkclan",
+        "bestsilvertiger",
+        "brightdragon0719",
+        "btcwhiz",
+        "abcd_0621_",
+        "hunter0409",
+        "building_jk"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/pete-yama",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-pete-yama.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Bill Tovitt / Pete Yama profile picture.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/cryptopunkclan"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/abcd_0621_"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bestsilvertiger"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/brightdragon0719"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/btcwhiz"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/hunter0409"
+        }
+      ]
+    },
+    {
+      "persona": "Quinn Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "QuinnDuck",
+        "letteldream",
+        "rustumatizon",
+        "0xkonka",
+        "0xfury"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/quinn-lee",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-quinn-lee--quinn-lee-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Quinn Lee avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "letteldream@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/rustumatizon"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/quinnduck"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xf9adac8658e08893fb4e91c1062e471eb11cb6c7"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x9de5d3158b0b83e9211c7444c94ce0c53763f574"
+        }
+      ]
+    },
+    {
+      "persona": "Ryuhei Matsuda",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "ryuhei.eth",
+        "ryuheimat",
+        "ryuheimat3",
+        "akame.eth",
+        "0xhiros"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/ryuhei-matsuda",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Picture of Ryuhei”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei-matsuda-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Ryuhei Matsuda profile picture.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei-passport.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Ryuhei's fake passport”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "ryuheimat3@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ryuheimat"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/ryuhei-matsuda/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x36c67d5ce9e2e4a919f568fc33657fcad0030880"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x6fb678b2dd9d2ff50ee9ecf774251dcceb7a2da8"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xa71b641a498e33bb13548a01eca5e20e083e637b"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xd97729eef14c189144adb0591e4ddb1a66ce22af"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x86fce1a6cbaaf0d0d7cb727e9b9eac5ed4150a5b"
+        }
+      ]
+    },
+    {
+      "persona": "Kei Nakano",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "smartcoding51",
+        "Jin Wang",
+        "fantasticfullstackdev",
+        "webdevninja",
+        "Jinathin",
+        "kei-tren",
+        "0xachilles509"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/kei-nakano",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-kei-nakano.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Kei Nakano 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Kei Nakano 2.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Kei Nakano 3.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Kei Nakano avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "keinakano415@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/kn_amm51"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/smartcoding51"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kei-tren"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/kn_amm"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x21e5d5a6e40b32cff77cfe77dca034d6d410131d"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x452f205c6c3872691fbce7ce8438370466d55f76"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xff22be4f00b937dade564bd9659e265f92afa620"
+        }
+      ]
+    },
+    {
+      "persona": "Matias Diaz",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Kei Nakano",
+        "mndiaz27",
+        "0xdefilover"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/matias-diaz",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-matias-diaz--matias-diaz-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Matias Diaz avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xdefilover"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x9d66bea448eed9bdbb5f1acf032767b11fc78dcf"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x961194d781623ebf5ce43087d85d2731cf1e7d1c"
+        }
+      ]
+    },
+    {
+      "persona": "Russell Hieu",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Shota Nakamura",
+        "Nakamura Shota",
+        "John Patch",
+        "Helme0315",
+        "johnpatch0502",
+        "0xRUS38",
+        "0xdoccer",
+        "russellhieu",
+        "0xhawkk"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/russell-hieu",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-russell-hieu.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Russell Hieu 1.”, kept as a record of the profile it shows.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-russell-hieu--russell-hieu-twitter.jpg",
+          "post": 0,
+          "caption": "Screenshot published by the registry under this persona, captioned there as “Russell Hieu twitter.”, kept as a record of the profile it shows.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-russell-hieu--russell-hieu-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Russell Hieu avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "johnpatch0502@outlook.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "russellhieu@outlook.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/helme0315"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x97467ea9bef1c925e9d8e2e65932d066869b7f13"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xff6d86807b3387e10dde52697c3bd7f59b6a145f"
+        }
+      ]
+    },
+    {
+      "persona": "James Zook",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Russel Hieu"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/james-zook",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-james-zook--james-zook-1.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “James Zook 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-james-zook--james-zook-team.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “James Zook team.”. Others in it are shown as published; only the persona is attributed by the registry.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x38037c0fafae5c97d411c0460c5f0af40f82b7bd"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4480206854d67338c8b792a1db2a9189ee75d813"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xb5bcb3935e0b3e6a581fba37f40d0f472ccf378a"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1cf9a8fc7a5568b6dca9f5f73200bc1de69e3ece"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "BaHNYFQYsBKX541kjEB9sgoHCc7NQdwc16S5ZE9bmYYv"
+        }
+      ]
+    },
+    {
+      "persona": "Jannik Villostas",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "0xtomoon",
+        "mrcontract17877",
+        "Henry Amin",
+        "gonzalodecruz",
+        "shoyano",
+        "vaccode365"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jannik-villostas",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jannik-villostas--jannik-villostas-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Jannik Villostas avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "melonman913@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/mrcontract17877"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xtomoon"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/janbuidl"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1febc069606abfba5d021ed3768cb5d90c9407d5"
+        }
+      ]
+    },
+    {
+      "persona": "Janul Azwan",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "0xtomoon",
+        "ethprotector"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/janul-azwan",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-janul-azwan.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Janul Azwan 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-janul-azwan--janul-azwan-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Janul Azwan avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "melonman913@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xtomoon"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/janul-azwan-7b1612361/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/janbuidl"
+        }
+      ]
+    },
+    {
+      "persona": "Peter Wang",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "hapetherw",
+        "pethercap",
+        "baymax586"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/peter-wang",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-peter-wang.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Peter Wang 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-peter-wang--peter-wang-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Peter Wang playing soccer.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-peter-wang--peter-wang-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Peter Wang avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "petherwang@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/hapetherw"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/hapetherw"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/peter-wang-780259a3/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/pethercap"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/baymax586"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x74bc47ea5201a61c7c9a366bb62ecae2713602a1"
+        }
+      ]
+    },
+    {
+      "persona": "Milan Zubic",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Patrick Kishi",
+        "icetrust0212",
+        "icebera"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/milan-zubic",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-milan-zubic--milan-zubic-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Milan Zubic avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "zaza.liveedu@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/icebera"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x35fcb352027cddc632b7ae8a50a0410c5bf36248"
+        }
+      ]
+    },
+    {
+      "persona": "Scott Brown",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Kyle Larsen",
+        "Sean Day",
+        "breavedev",
+        "braverdever",
+        "nevermindhim",
+        "verytinydever",
+        "scott.brown0629"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/scott-brown",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-scott-brown--scott-brown-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Scott Brown avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "scott.brown0629@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "what.a.fabulous1@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "sct.brown0629@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/breavedev"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nevermindhim"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/verytinydever"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/scott-brown-b947ba29a/"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/scott-brown-813445279/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x3b8cc82f5d3ec89d88c58504ecfefe4597020840"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xa8cb25ddf0a7195bdc3232ac6e1d812c8a4713fe"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x368a337dcdec5cf9849a7563538f03b1516a3f7d"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xb25a0580ddf68d4aea11d83f1655016e9520f51a"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x38a35ab4235ce7c8b5c4733cee7de9e28e348acb"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xce0113e71ce0273d0504a7ef1cd4f0e6e4d196bc"
+        }
+      ]
+    },
+    {
+      "persona": "Artur Dranhoi",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "artur.dranhoi1025",
+        "Prince Charming",
+        "princecharming0915"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/artur-dranhoi",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-artur-dranhoi--artur-dranhoi-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Artur Dranhoi avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "artur.dranhoi1025@gmail.com"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/incredible823"
+        }
+      ]
+    },
+    {
+      "persona": "Joel Kursala",
+      "researcher": "lazarusgroup",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/joel-kursala",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-joel-kursala--joel-kursala-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Joel Kursala avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xa8cb25ddf0a7195bdc3232ac6e1d812c8a4713fe"
+        }
+      ]
+    },
+    {
+      "persona": "Anderson Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "aleson092325",
+        "good725",
+        "andersonlee111",
+        "smartdev0725"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/anderson-lee",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-anderson-lee.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Anderson Lee 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-anderson-lee--anderson-lee-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Anderson Lee 2.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-anderson-lee--anderson-lee-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Anderson Lee avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "cetbdb23@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "firly.larly0430@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "aleson092325@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/good725"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/andersonlee111"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/smartdev0725"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/anderson-lee-9550381a5/"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/anderson-lee-0130801a3/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x541fb82d870d6287a9553920a72edeb0e9877d57"
+        }
+      ]
+    },
+    {
+      "persona": "Oleksandr Muravskyi",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Artur Dranhoi",
+        "oleksandr-muravskyi",
+        "PrinceCharming0115"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/oleksandr-muravskyi",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-oleksandr-muravskyi--oleksandr-muravskyi-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Oleksandr Muravskyi avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "artur.dranhoi@exiod.io"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "coolprince0115@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ole.dev300@hotmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "olek.muravskyi@outlook.com"
+        }
+      ]
+    },
+    {
+      "persona": "Dan Mao",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "solcrazy910",
+        "cryptospaceboy00",
+        "alexwork455",
+        "ananphoon823",
+        "andika.riyan",
+        "billyrowan1980",
+        "blockchainlover2019",
+        "maodan466",
+        "putnikdeveloperbg",
+        "spaceboy00",
+        "topstack2021a",
+        "0xquantech"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/solcrazy910",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-solcrazy910--dan-mao-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Dan Mao avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "cryptospaceboy00@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "alexwork455@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ananphoon823@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "andika.riyan@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "billyrowan1980@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "blockchainlover2019@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "maodan466@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "putnikdeveloperbg@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "spaceboy00@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "topstack2021a@gmail.com"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/maodan007"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x67aa2f9d362fda4395f53133929e9017b35be0ae"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x5149a7696188f083297281d10293a20476252cdd"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x82be4fe84c2790023906c1648e0836ada67714d9"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x8148c4243f8cb49fe80d9e23df0bafc1c6732f3e"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x5a94a3a114cf01f6a703dd8b840cf0a97cdf1434"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x2446f9528fbf55ccf5b3e7a22fc058bda7a12131"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4b82e3485d33544561cd9a48410a605aa8892fb1"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x140592a83052b3a432b6d70fb90764612ce41ab1"
+        }
+      ]
+    },
+    {
+      "persona": "Aleksandar Jovanovic",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "alek806",
+        "truecode112",
+        "masterscent913",
+        "bigforniture1126",
+        "truecoder112",
+        "dar_winpizza",
+        "jaleksandar806",
+        "putnikdeveloperbg"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/alek806",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-alek806--aleksandar-jovanovic-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Aleksandar Jovanovic avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "truecoder112@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dar_winpizza@hotmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jaleksandar806@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "putnikdeveloperbg@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/truecode112"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/masterscent913"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/bigforniture1126"
+        }
+      ]
+    },
+    {
+      "persona": "Andy Hoog",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "toparc077",
+        "andyhoglet",
+        "andy-hoog",
+        "andyhoogup",
+        "T077"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/andy-hoog",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-andy-hoog--andy-hoog-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Andy Hoog avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "andyhoogup@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/andyhoglet"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/toparc077"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/andy-hoog/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1043efee936903951b88db23551873bb67292e95"
+        }
+      ]
+    },
+    {
+      "persona": "Eric Low",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Arkned",
+        "wooark",
+        "wootark.soft"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/eric-low",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/eric-low-a5795033b/"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x954f20665bcccf58587b49ffee2e593c19c79267"
+        }
+      ]
+    },
+    {
+      "persona": "Gabriel Yiu",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "gabrielyiu"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/gabriel-yiu",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-gabriel-yiu--gabriel-yiu-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Gabriel Yiu avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gabrielyiu"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xd80614feb54d49cf46cc861fc549fae0a05b3f7e"
+        }
+      ]
+    },
+    {
+      "persona": "Jack Li",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "jackli16",
+        "zeus16",
+        "dream0239",
+        "jacky864"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jack-li",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jack-li--jack-li-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Jack Li avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x605ca6fb59211d13b369e54a273a42538b087c36"
+        }
+      ]
+    },
+    {
+      "persona": "Jordan Lopez",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Nemanja Djordjevic",
+        "firstninja111"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jordan-lopez",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-jordan-lopez--jordan-lopez-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Jordan Lopez avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "cloudrider.m92@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/firstninja111"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x92cd7363c5b1853bc8fe6b5ae269836fc508ca73"
+        }
+      ]
+    },
+    {
+      "persona": "Mike Willie Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "keizir",
+        "willie.lee226"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/mike-willie-lee",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-mike-willie-lee--mike-willie-lee-1.jpg",
+          "post": 0,
+          "caption": "Identity document published by the registry under this persona, captioned there as “Mike Willie Lee 1.”. The registry presents it as a document used for this identity. Its name, number and photograph are the document's own and may belong to a real person whose identity was stolen to build the persona.",
+          "face": false
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-mike-willie-lee--mike-willie-lee-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Mike Willie Lee avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "willie.lee226@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/keizir"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x97e36fae76cd7ef7cc1213927a9a4e10a61cdd8d"
+        }
+      ]
+    },
+    {
+      "persona": "Peter Xiao",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Brian Cho",
+        "assasinooz77"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/peter-xiao",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/assasinooz77"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x5d8335834bfdf4c746e277e5100d7c778c807356"
+        }
+      ]
+    },
+    {
+      "persona": "Wubone",
+      "researcher": "lazarusgroup",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/wubone",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x0db9e27060b7f8258448aa31c36e7c0937fd5fd7"
+        }
+      ]
+    },
+    {
+      "persona": "Eric 'Monkey' Manager",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Monkey"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/eric-manager",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-eric-manager--monkey-1.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Monkey 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x57b9f721411fabe61ac61cca8eaf926a726a70cc"
+        }
+      ]
+    },
+    {
+      "persona": "Jing Zhao",
+      "researcher": "lazarusgroup",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/jing-zhao",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xcf6e6021b8e519c0695cea6b3541556dc798f0dc"
+        }
+      ]
+    },
+    {
+      "persona": "Kaiming Hong",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Warren Sinclair",
+        "devkitty803",
+        "warrensinclair744"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/kaiming-hong",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/devkitty803"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xf69201aa19c540b74c170a545fc6d8805e0ee9b1"
+        }
+      ]
+    },
+    {
+      "persona": "Paul Song",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "grudev325",
+        "seniordev",
+        "drujustine0122",
+        "snowdev1205",
+        "BestSilverTiger"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/paul-song",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-paul-song.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Paul Song 1.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-2.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Paul Song 2.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-3.jpg",
+          "post": 0,
+          "caption": "Photograph published by the registry under this persona, captioned there as “Paul Song 3.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+        },
+        {
+          "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Paul Song avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "sr.paul.song@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "seniordev1225@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "snowdev1205@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/drujustine0122"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/grudev325"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/paul-song-225505224/"
+        }
+      ]
+    },
+    {
+      "persona": "Dustin Lee",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Timothy Morris",
+        "Jonathan Willis",
+        "0xguardstate",
+        "guardstates"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/dustin-lee",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-dustin-lee.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Dustin Lee on a video call.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "dustinleecog@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "0xguardstate@proton.me"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ijonathanwillis@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "timmorrisdefi@outlook.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+18033390164"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xguardstate"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/dustinleecog/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/guardstates"
+        }
+      ]
+    },
+    {
+      "persona": "Cutupdev",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Conrad Takasi",
+        "DevCutup",
+        "devcutup"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/cutupdev",
+          "date": null
+        }
+      ],
+      "photos": [
+        {
+          "file": "/assets/img/personas/lazarus-group-cutupdev--cutupdev-av.jpg",
+          "post": 0,
+          "caption": "Avatar published by the registry under this persona, captioned there as “Cutupdev avatar.”. It is the picture the identity presented, not a likeness of anyone.",
+          "face": false
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "devcutup@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "takasi75926@gmail.com"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/devcutup"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/cutupdev"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/devcutup"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/cutupdev"
+        }
+      ]
+    },
+    {
+      "persona": "Ming Cheng",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "Nikolic Chirag",
+        "hodlwarden",
+        "hodl_warden"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/ming-cheng",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-ming-cheng--ming-cheng-1.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Ming Cheng on a video call.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "attachments": [
+        {
+          "file": "/assets/files/lazarus-group/ming-cheng--ming-cheng-cv.pdf",
+          "title": "ming_cheng_cv.pdf",
+          "description": "Ming Cheng CV",
+          "bytes": 26440,
+          "post": 0
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "hodlwarden@gmail.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+17745166548"
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/hodlwarden"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/hodlwarden"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/hodlwarden"
+        }
+      ]
+    },
+    {
+      "persona": "Mario Yi",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "ethhandy"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/mario-yi",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-mario-yi.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Mario Yi.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ethhandy"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x86562ecfd557487612c55260fca5fed7c960504e"
+        }
+      ]
+    },
+    {
+      "persona": "Pham Hoang Quy",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "neverm25",
+        "angler0825"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/pham-hoang-quy",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-pham-hoang-quy.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Pham Hoang Quy.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "p.hongquy.eth@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/neverm25"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/angler0825"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xc5077eb65e6ec48d6e17d42a779e2677005aec87"
+        }
+      ]
+    },
+    {
+      "persona": "Kevin Tan",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "diamondyhand",
+        "cruzlp#7997"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/kevin-tan",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-kevin-tan.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Kevin Tan.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "masterdevv278@gmail.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+6542982608"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/diamondyhand"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x44dc0a034e096b471a8ef899d71d1d3c8f19890a"
+        }
+      ]
+    },
+    {
+      "persona": "Pavel Yamato",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "cutelocker"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/pavel-yamato",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-pavel-yamato.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Pavel Yamato.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/cutelocker"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xbc02773dc075fb3734152eb5964c67e69fe305d6"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xc62598078589b0f65a20e934f4d397d1e50f21d2"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xd040ff8d66c01029205d4a3cd7909c119666a122"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x128b782b94168ad9dcb8c7ad6cb2703f3105e687"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x4819f3508a35e0f92a6c9d5b6b8bbada6024c32a"
+        }
+      ]
+    },
+    {
+      "persona": "Khanh Nguyen",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "DevCrown333"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/khanh-nguyen",
+          "date": null
+        }
+      ],
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "christinejurich17@gmail.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dev.tianlong33@gmail.com"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devcrown333"
+        }
+      ]
+    },
+    {
+      "persona": "Andy Cho",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "hashbirdcho"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/andy-cho",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-andy-cho.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Andy Cho.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "eweubr3289@gmail.com"
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+8618642583550"
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/andy-cho-6ba380309/"
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/hashbirdcho"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0xd85e7eb377635517eba5310591f68f4771da9523"
+        }
+      ]
+    },
+    {
+      "persona": "Sadao Eiichi Murano",
+      "researcher": "lazarusgroup",
+      "aliases": [
+        "John Wilhelmsson",
+        "zhmolly",
+        "zhmoly",
+        "dainmoly",
+        "9omo6"
+      ],
+      "posts": [
+        {
+          "url": "https://lazarus.group/team/john-wilhelmsson",
+          "date": null
+        }
+      ],
+      "photo": {
+        "file": "/assets/img/personas/lazarus-group-john-wilhelmsson.jpg",
+        "post": 0,
+        "caption": "Photograph published by the registry under this persona, captioned there as “Sadao Eiichi Murano.”. It shows whoever appeared under this identity, which is not necessarily the person whose details the identity was assembled from — these operations routinely build a persona around a real, uninvolved person."
+      },
+      "note": "Entry in the lazarus.group DPRK IT-worker registry, which asserts that these accounts belong to one operator. The registry publishes no methodology, so this is recorded as its claim and not as a finding of this site. Its evidence links and its cross-references to other operators in the same registry are deliberately not reproduced as indicators.",
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "zhmolly@proton.me"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jwtradera@outlook.com"
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dainsm@proton.me"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zhmolly"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/dainmoly"
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zhmoly"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "AVXF5qTa937CZ9nuL2M9J2MieYRL5bw8DEXr5QnvwN9L"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "GUrBkpnjmxz6ZLBjkd8jMkkrShsYXKropKSes8UCWdqw"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "LAcNUB7p2VYNA8gEkmPSTdsrDBSwBjzymw5Dbt7UMvB"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "BrbAo3gtStKPxUbdomd14WUUAFv5QSBnFqp6NRD6TBGC"
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "2c5gD79Um49VmLCx54a89vVL84kFCiWmj82Zyg8QVVWi"
+        }
+      ]
+    },
+    {
+      "persona": "Takuma Miyake",
+      "researcher": "zeusdev919",
+      "aliases": [
+        "Lionel Grace",
+        "Carter Walker",
+        "Michael Adams",
+        "Liam Lio",
+        "Angel Hernandez",
+        "Alfred Waris",
+        "Brian Cook"
+      ],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "cccodechef@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "skype_account",
+          "value": "live:.cid.29aa320ea3be94b2",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+17655701757",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. Eight names in that table share one address and one Skype identifier, which is why they are one entry here rather than eight. The telephone number is the one the table gives against the Brian Cook row, on a line that otherwise carries the same Skype identifier as the rest."
+    },
+    {
+      "persona": "Yanming Michel",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "greatyanming0106@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+14197460450",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The number is given as a Skype contact rather than a Skype identifier. The number is the same one the table gives against two other names, a link the document does not draw itself."
+    },
+    {
+      "persona": "Takashi Hitachi",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "takashi.hitachi.susano@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+17655701757",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The Skype number here is the same one the table gives against Brian Cook, which is a link the document does not itself draw and is recorded only as the coincidence of values that it is."
+    },
+    {
+      "persona": "Spencer Duncan",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "timdonerpower@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+13522344952",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used."
+    },
+    {
+      "persona": "Robert Miller",
+      "researcher": "zeusdev919",
+      "aliases": [
+        "Bernard Panek"
+      ],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "aiengineer1990@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+18143314968",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. Two names in the table share this address."
+    },
+    {
+      "persona": "James Murray",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "jameswithmail@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+19103840615",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used."
+    },
+    {
+      "persona": "Layton Hart",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "layton.hart.cool@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+14197460450",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The number is the same one the table gives against two other names, a link the document does not draw itself."
+    },
+    {
+      "persona": "Yano Aki",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "drehworld.1994@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used."
+    },
+    {
+      "persona": "Bettie Black",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "bettie@hiration.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+14131131213",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The address is on the domain of a resume-building service rather than a mail provider, which is where this persona's resume was assembled. The document marks the telephone number as fabricated."
+    },
+    {
+      "persona": "Adam Jones",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "smartadamjones@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+14197460450",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The Skype number is the same one the table gives against Layton Hart, a link the document does not draw itself."
+    },
+    {
+      "persona": "Bob Quinn",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "phone_number",
+          "value": "+12222841219",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The document marks this number as fabricated. No address is given for this name."
+    },
+    {
+      "persona": "Michael Watkins",
+      "researcher": "zeusdev919",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "phone_number",
+          "value": "+12228544879",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. The document marks this number as fabricated. No address is given for this name."
+    },
+    {
+      "persona": "zeus-dev919",
+      "researcher": "zeusdev919",
+      "aliases": [
+        "zeus-dev907",
+        "SuperStar"
+      ],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zeus-dev919",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zeus-dev907",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "angelhernandez919919@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. This is the account the whole compilation is built around. The document reads its repositories as publishing the personas, cover letters, resumes and operating procedures the rest of the table is drawn from, and notes the SuperStar moniker as one it says recurs across DPRK accounts. The Drive folder it names is attributed to the address here."
+    },
+    {
+      "persona": "Rui Kishimoto",
+      "researcher": "zeusdev919",
+      "aliases": [
+        "Hot Cappuchino",
+        "Ronnie Holt"
+      ],
+      "posts": [
+        {
+          "url": "https://docs.google.com/document/d/1IdVIzSr5NOi76ugu67Ob3t39K6b4Rz_P7an0Q0M9HWo/edit",
+          "date": null
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "ruikishimoto99@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "hotcappuchino99@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ronnieholt.pro@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/hotcappuccinodev",
+          "post": 0
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/HotCappuchino",
+          "post": 0
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "https://medium.com/@ruikishimoto99",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the ZEUS-DEV-919 working document, an unsigned compilation published as a Google Doc and linked from a repository on the zeus-dev919 GitHub account. The document describes itself as raw data with no filtering applied and asks a reader to verify every linkage before acting on it, so it is carried here as that compilation's claim and not as a finding of this site. Its persona table pairs each name with the address and Skype identifier the application used. This persona is documented elsewhere in the repository already and the document is a second, independent compilation of the same accounts. It adds that the identity's profile pictures are photographs of a South Korean actor, which is why that actor stays in the held-back list: he is the subject of stolen images and is not accused of anything.",
+      "photo": {
+        "file": "/assets/img/personas/rui-kishimoto.png",
+        "post": 0,
+        "caption": "The profile photograph the document publishes against one of this identity's addresses. The document also states that the identity uses photographs of a South Korean actor as its profile pictures, which is what this is: it shows the image the persona presented as itself and not the person operating it. The actor is not accused of anything and his name is deliberately not recorded as an indicator."
+      }
+    }
+  ],
+  "unattributed": []
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "yun-song-guk",
+  "display_name": "Yun Song Guk",
+  "aliases": [
+    "Yun So'ng-kuk"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on March 12, 2026 under Executive Order 13810, program tag DPRK4, as a North Korean person engaged in commercial activity that generates revenue for the Government of North Korea",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Boten, Laos"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "July 27, 1969"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "180131469 (North Korea)"
+      },
+      {
+        "label": "Digital currency addresses, per OFAC",
+        "value": "ETH 0xb637f84b66876ebf609c2a4208905f9ddac9d075; ETH 0x95584C303FCd48AF5c6B9873015f2AD0ca84EaE3"
+      }
+    ],
+    "caution": "Since at least 2023, DPRK national Yun Song Guk (Yun) led a group of North Korean IT workers that conduct freelance IT work operating out of Boten, Laos. Yun coordinated several dozen financial transactions totaling more than $70,000 with Hoang Minh Quang (Minh) relating to IT services performed by Yun. Since at least 2024, Yun also worked with York Louis Celestino Herrera (Celestino) to develop freelance IT service contracts for Yun."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, March 12, 2026: North Korea Designations (Yun Song Guk, Amnokgang Technology Development Company and facilitators in Vietnam, Laos and Spain)",
+      "url": "https://ofac.treasury.gov/recent-actions/20260312",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-03-12",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Key Enablers of DPRK IT Worker Networks",
+      "url": "https://home.treasury.gov/news/press-releases/sb0416",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-03-12",
+      "type": "press_release"
+    },
+    {
+      "title": "미 재무부, 북 IT 관련 6명과 단체 2곳 추가 제재 (U.S. Treasury sanctions six more people and two entities over DPRK IT work)",
+      "url": "https://www.tongilnews.com/news/articleView.html?idxno=216026",
+      "publisher": "Tongil News",
+      "date": "2026-03-13",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "Yun Song Guk is profiled here as the leader of a group of DPRK IT workers doing freelance work from Boten, Laos, since at least 2023, per the Treasury, with Hoang Minh Quang handling his payments and York Louis Celestino Herrera developing his contracts. OFAC's entry lists two Ethereum addresses, which the scraper carries.",
+    "OFAC prints no Hangul for this name and the entry carries no photograph, so no Korean rendering is published rather than a reconstructed one.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-19",
+  "name_korean": "윤성국",
+  "name_korean_provenance": "cited"
+}

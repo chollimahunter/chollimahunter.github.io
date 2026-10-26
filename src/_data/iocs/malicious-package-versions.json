@@ -1,0 +1,34 @@
+[
+  {
+    "dataset_id": "sonatype-nullreceiver-npm-versions",
+    "title": "NullReceiver: npm releases retrieving payloads through Ethereum transactions",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "NullReceiver"
+    ],
+    "confidence_level": "medium",
+    "description": "Releases Sonatype identified as malicious in its analysis of a technique that hides the command-and-control address inside an Ethereum transaction: the package reads the recipient of a zero-value transfer and decodes the server address from it, so the address can be rotated on-chain without republishing the package. Each entry is a specific published version, in name@version form.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These are version-pinned indicators on purpose: for a compromised legitimate package the name identifies the victim project rather than the threat, so a bare package name is not carried here, and the inclusion of a version says only that the cited report describes that release as malicious. Check the cited post before acting on any single entry.",
+    "source": {
+      "title": "Six npm Packages Use Ethereum Transactions to Retrieve Malicious Payloads",
+      "url": "https://www.sonatype.com/blog/six-npm-packages-use-ethereum-transactions-to-retrieve-malicious-payloads",
+      "publisher": "Sonatype",
+      "date": "2026-08-10",
+      "type": "threat_intel_report"
+    },
+    "sync": {
+      "method": "manual",
+      "last_synced": "2026-09-09",
+      "tool_path": null
+    },
+    "entry_count": 6,
+    "entries": [
+      "@kolbo/mcp@1.57.1",
+      "agentgui@1.0.1127",
+      "godot-kit@1.0.1786316795",
+      "envpack-conf@1.0.1",
+      "postcss-initial-provider@3.0.4",
+      "tailwindcss-motion-advanced@1.0.1"
+    ]
+  }
+]

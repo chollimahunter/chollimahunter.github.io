@@ -1,0 +1,853 @@
+{
+  "_comment": "The observable-indicator register on /remote-workers/red-flags/. Kept short: only observations that are hard to explain innocently, not every service an operation touches. One line per row plus its sources; the reports carry the explanation, so the page links to them rather than paraphrasing. Sources are keyed into `sources` so each is written once; src/_data/sources.js resolves them into the site-wide registry.",
+  "sources": {
+    "hayden-p1": {
+      "url": "https://haydenmckenzie.com/research/dprk-it-worker-operation-part-one",
+      "title": "How North Korea Outsources Job Fraud at Scale",
+      "publisher": "Hayden McKenzie",
+      "label": "HM1"
+    },
+    "hayden-p2": {
+      "url": "https://haydenmckenzie.com/research/dprk-it-worker-operation-part-two",
+      "title": "Dissecting the Identity Lifecycle",
+      "publisher": "Hayden McKenzie",
+      "label": "HM2"
+    },
+    "hayden-p3": {
+      "url": "https://haydenmckenzie.com/research/eleven-stages-five-observed-live",
+      "title": "North Korea's Desperate Methods of Recruitment",
+      "publisher": "Hayden McKenzie",
+      "label": "HM3"
+    },
+    "nisos": {
+      "url": "https://nisos.com/research/dprk-employment-fraud-operation/",
+      "title": "Exposing DPRK Employment Fraud Operations",
+      "publisher": "Nisos",
+      "label": "Nisos"
+    },
+    "group-ib": {
+      "url": "https://www.group-ib.com/blog/dprk-fake-remote-developers/",
+      "title": "Cyber Saga: In the Footsteps of the DPRK IT Workers",
+      "publisher": "Group-IB",
+      "label": "Group-IB"
+    },
+    "gtig": {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat",
+      "title": "Staying a Step Ahead: Mitigating the DPRK IT Worker Threat",
+      "publisher": "Google Threat Intelligence Group (GTIG) / Mandiant",
+      "label": "GTIG"
+    },
+    "flare": {
+      "url": "https://flare.io/learn/resources/north-korean-infiltrator-threat",
+      "title": "Inside the North Korean Infiltrator Threat",
+      "publisher": "Flare and IBM X-Force",
+      "label": "Flare"
+    },
+    "spur": {
+      "url": "https://spur.us/blog/astrill-vpn-and-dprk-remote-worker-fraud",
+      "title": "Astrill VPN and DPRK Remote Worker Fraud",
+      "publisher": "Spur",
+      "label": "Spur"
+    },
+    "gtig-2025": {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/dprk-it-workers-expanding-scope-scale",
+      "title": "DPRK IT Workers Expanding in Scope and Scale",
+      "publisher": "Google Threat Intelligence Group (GTIG)",
+      "label": "GTIG 2025"
+    },
+    "fbi-2023": {
+      "url": "https://www.ic3.gov/PSA/2023/PSA231018",
+      "title": "Additional Guidance on the Democratic People's Republic of Korea Information Technology Workers",
+      "publisher": "FBI / U.S. Department of State / Republic of Korea",
+      "label": "FBI 2023"
+    },
+    "fbi-2024": {
+      "url": "https://www.ic3.gov/PSA/2024/PSA240516",
+      "title": "North Korea Leverages U.S.-Based Individuals to Conduct IT Worker Scheme",
+      "publisher": "FBI",
+      "label": "FBI 2024"
+    },
+    "advisory-2022": {
+      "url": "https://ofac.treasury.gov/media/923126/download?inline",
+      "title": "Guidance on the Democratic People's Republic of Korea Information Technology Workers",
+      "publisher": "U.S. Department of State, Treasury and FBI",
+      "label": "US 2022"
+    },
+    "techtarget": {
+      "url": "https://www.techtarget.com/searchsecurity/feature/How-to-spot-and-expose-fraudulent-North-Korean-IT-workers",
+      "title": "How to spot and expose fraudulent North Korean IT workers",
+      "publisher": "TechTarget",
+      "label": "TechTarget"
+    },
+    "site-candidates": {
+      "url": "https://chollimahunter.github.io/remote-workers/candidates/",
+      "title": "Potential DPRK Profiles",
+      "publisher": "Chollima Hunter",
+      "label": "Candidates"
+    },
+    "grumpygoose": {
+      "url": "https://blog.grumpygoose.io/be-kvm-do-fraud-8ab523d26c9d",
+      "title": "Be KVM, Do Fraud",
+      "publisher": "GrumpyGoose Labs",
+      "label": "GrumpyGoose"
+    },
+    "dtex": {
+      "url": "https://www.dtex.ai/resources/i3-threat-advisory-inside-the-dprk/",
+      "title": "i3 Threat Advisory: Identifying North Korean IT Workers",
+      "publisher": "DTEX Systems",
+      "label": "DTEX"
+    },
+    "huntress": {
+      "url": "https://www.huntress.com/blog/huntress-dprk-remote-worker-investigation",
+      "title": "Insights into Suspected DPRK Workers: Red Flags to Look Out For",
+      "publisher": "Huntress",
+      "label": "Huntress"
+    },
+    "reliaquest": {
+      "url": "https://reliaquest.com/blog/threat-spotlight-identifying-north-korean-insider-threats",
+      "title": "Red Flags for Red Star Hackers: Hunting for North Korean Insiders",
+      "publisher": "ReliaQuest",
+      "label": "ReliaQuest"
+    },
+    "chollima-group-logs": {
+      "url": "https://chollima-group.io/posts/analysis-of-it-worker-logs",
+      "title": "Analysis of DPRK IT Worker Stealer Logs",
+      "publisher": "Chollima Group",
+      "label": "Chollima Group"
+    },
+    "fbi-2025": {
+      "url": "https://www.ic3.gov/PSA/2025/PSA250123",
+      "title": "North Korean IT Workers Conducting Data Extortion",
+      "publisher": "FBI",
+      "label": "FBI 2025"
+    },
+    "microsoft-jasper": {
+      "url": "https://www.microsoft.com/en-us/security/blog/2025/06/30/jasper-sleet-north-korean-remote-it-workers-evolving-tactics-to-infiltrate-organizations/",
+      "title": "Jasper Sleet: North Korean remote IT workers' evolving tactics",
+      "publisher": "Microsoft",
+      "label": "Microsoft"
+    },
+    "doj-chapman": {
+      "url": "https://www.justice.gov/usao-dc/pr/arizona-woman-sentenced-17m-it-worker-fraud-scheme-illegally-generated-revenue-north",
+      "title": "Arizona Woman Sentenced for $17M IT Worker Fraud Scheme",
+      "publisher": "U.S. Department of Justice",
+      "label": "DOJ"
+    },
+    "hayden-p4": {
+      "url": "https://haydenmckenzie.com/research/dprk-it-worker-cell-part-one",
+      "title": "The Women Behind North Korea's IT Worker Operations",
+      "publisher": "Hayden McKenzie",
+      "label": "HM4"
+    },
+    "seal-ttp": {
+      "url": "https://frameworks.securityalliance.org/dprk-it-workers/techniques-tactics-and-procedures",
+      "title": "DPRK IT Workers: Techniques, Tactics and Procedures",
+      "publisher": "Security Alliance (SEAL)",
+      "label": "SEAL"
+    },
+    "seal-mitigating": {
+      "url": "https://frameworks.securityalliance.org/dprk-it-workers/mitigating-dprk-it-workers",
+      "title": "DPRK IT Workers: Mitigating DPRK IT Workers",
+      "publisher": "Security Alliance (SEAL)",
+      "label": "SEAL"
+    },
+    "seal-cases": {
+      "url": "https://frameworks.securityalliance.org/dprk-it-workers/case-studies",
+      "title": "DPRK IT Workers: Case Studies",
+      "publisher": "Security Alliance (SEAL)",
+      "label": "SEAL"
+    },
+    "seal-summary": {
+      "url": "https://frameworks.securityalliance.org/dprk-it-workers/summary",
+      "title": "DPRK IT Workers: Summary",
+      "publisher": "Security Alliance (SEAL)",
+      "label": "SEAL"
+    },
+    "site-phone-lines": {
+      "url": "https://chollimahunter.github.io/remote-workers/",
+      "title": "Telephone indicators by line type",
+      "publisher": "Chollima Hunter",
+      "label": "Phone lines"
+    }
+  },
+  "categories": [
+    {
+      "name": "Hiring and onboarding",
+      "indicators": [
+        {
+          "indicator": "The shipping address changes after hire",
+          "detail": "Often to another state, with a family emergency as the reason",
+          "sources": [
+            "gtig",
+            "fbi-2024",
+            "techtarget"
+          ],
+          "priority": 1,
+          "hunts": [
+            "laptop-shipping-and-first-sign-in-geolocation-mismatch"
+          ]
+        },
+        {
+          "indicator": "Camera off, or a face that does not match the profile",
+          "detail": "Or text chat in place of a video call",
+          "sources": [
+            "fbi-2023",
+            "advisory-2022",
+            "seal-ttp"
+          ],
+          "priority": 2,
+          "hunts": [
+            "virtual-camera-and-video-call-obfuscation"
+          ]
+        },
+        {
+          "indicator": "A small staffing vendor vouching for the candidate",
+          "detail": "The vendor itself can be the front",
+          "sources": [
+            "hayden-p4"
+          ],
+          "link": {
+            "href": "/indicators/domain-9605ae22e613/",
+            "label": "MageHire"
+          },
+          "priority": 2
+        },
+        {
+          "indicator": "A contractor role, fully remote",
+          "detail": "Avoids in-person onboarding",
+          "sources": [
+            "gtig",
+            "advisory-2022"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A senior engineer with a long U.S. history and a template CV",
+          "detail": "Software, full-stack or blockchain",
+          "sources": [
+            "gtig",
+            "advisory-2022"
+          ],
+          "priority": 3,
+          "hunts": [
+            "dprk-it-worker-persona-and-portfolio-infrastructure"
+          ]
+        },
+        {
+          "indicator": "Working hours that fit East Asia, not the claimed location",
+          "sources": [
+            "advisory-2022",
+            "seal-summary"
+          ],
+          "priority": 3,
+          "hunts": [
+            "working-hour-and-session-length-anomalies"
+          ]
+        },
+        {
+          "indicator": "A work history with no U.S. employers",
+          "detail": "Written into the persona prompt so references cannot be checked domestically",
+          "sources": [
+            "hayden-p4",
+            "hayden-p2"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "Recommends other candidates once hired",
+          "detail": "Common among genuine hires; SEAL reports it used to place more workers",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "Accepts a rate well below market without negotiating",
+          "detail": "SEAL cites a 25 to 50 percent discount",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "Output that swings sharply from one week to the next",
+          "detail": "Consistent with one seat shared by several workers",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "The CV's work history does not appear on GitHub",
+          "detail": "No commits or repositories from the employers it names",
+          "sources": [
+            "seal-mitigating"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "The employer's endpoint",
+      "indicators": [
+        {
+          "indicator": "A hardware KVM on the issued machine",
+          "detail": "PiKVM, TinyPilot, GLKVM",
+          "sources": [
+            "hayden-p2",
+            "hayden-p3",
+            "nisos",
+            "grumpygoose"
+          ],
+          "priority": 1,
+          "hunts": [
+            "ip-kvm-hardware-on-endpoint-and-network",
+            "spoofed-ip-kvm-usb-descriptors",
+            "glinet-comet-ip-kvm-fingerprints"
+          ]
+        },
+        {
+          "indicator": "An EDID emulator or dummy HDMI plug",
+          "detail": "Fitted alongside the KVM",
+          "sources": [
+            "hayden-p3"
+          ],
+          "priority": 1,
+          "hunts": [
+            "ip-kvm-hardware-on-endpoint-and-network"
+          ]
+        },
+        {
+          "indicator": "North Korean internal-network clients on the machine",
+          "detail": "NetKey, OConnect",
+          "sources": [
+            "flare",
+            "chollima-group-logs"
+          ],
+          "hunts": [
+            "dprk-internal-netkey-oconnect-clients"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Remote-access software on the corporate endpoint",
+          "detail": "RustDesk, AnyDesk, TeamViewer, Google Remote Desktop",
+          "sources": [
+            "hayden-p1",
+            "hayden-p2",
+            "gtig"
+          ],
+          "priority": 2,
+          "hunts": [
+            "rmm-remote-access-tool-sweep",
+            "rdp-vnc-listener-on-employee-endpoint",
+            "vs-code-dev-tunnel-abuse"
+          ]
+        },
+        {
+          "indicator": "Conferencing remote control used as the access path",
+          "detail": "Zoom or Webex remote control; the Zoom artifact saveUserDisclaimer",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "A virtual desktop or personal device in place of a shipped laptop",
+          "detail": "BYOD access through a virtual machine",
+          "sources": [
+            "gtig-2025"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "The endpoint or SASE agent disabled by the employee",
+          "sources": [
+            "dtex",
+            "huntress"
+          ],
+          "hunts": [
+            "security-agent-tampering-on-employee-endpoint"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "Anti-idle or mouse-jiggling software",
+          "detail": "Keeps an unattended laptop showing as active",
+          "sources": [
+            "gtig",
+            "dtex",
+            "reliaquest"
+          ],
+          "hunts": [
+            "anti-idle-and-mouse-jiggler-tooling"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "The network path",
+      "indicators": [
+        {
+          "indicator": "Unrelated employees signing in from one address",
+          "detail": "A laptop farm's shared line",
+          "sources": [
+            "reliaquest",
+            "doj-chapman",
+            "gtig",
+            "seal-ttp",
+            "seal-cases"
+          ],
+          "hunts": [
+            "laptop-farm-shared-egress-address"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Astrill VPN exit addresses",
+          "detail": "About 2,400 published by Spur; also hosting ranges or a country other than the claimed one",
+          "sources": [
+            "gtig",
+            "hayden-p2",
+            "spur",
+            "seal-summary"
+          ],
+          "priority": 2,
+          "link": {
+            "href": "/remote-workers/",
+            "label": "Search the IPs"
+          },
+          "hunts": [
+            "astrill-vpn-egress"
+          ]
+        },
+        {
+          "indicator": "A proxy server on a United States VPS fronting the whole team",
+          "detail": "CCProxy, HTTP and SOCKS5 with per-user authentication",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 2,
+          "hunts": [
+            "laptop-farm-shared-egress-address"
+          ]
+        },
+        {
+          "indicator": "One identity in sessions from two countries at once",
+          "sources": [
+            "gtig",
+            "microsoft-jasper",
+            "reliaquest"
+          ],
+          "hunts": [
+            "laptop-farm-concurrent-remote-access"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "Residential proxy egress near the address of record",
+          "detail": "IPRoyal and comparable services",
+          "sources": [
+            "hayden-p2",
+            "gtig"
+          ],
+          "priority": 3,
+          "hunts": [
+            "dprk-linked-isp-and-proxy-egress"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Identity verification",
+      "indicators": [
+        {
+          "indicator": "An Android emulator answering a verification challenge",
+          "detail": "LDPlayer, with ShareX capturing the QR code off the screen",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 1,
+          "hunts": [
+            "persona-management-tooling-on-employee-endpoint"
+          ]
+        },
+        {
+          "indicator": "A virtual camera in place of a physical one",
+          "detail": "VCAM, OBS virtual camera",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 1,
+          "hunts": [
+            "virtual-camera-and-video-call-obfuscation"
+          ]
+        },
+        {
+          "indicator": "A persona photograph that has been face-swapped or generated",
+          "detail": "faceswapper.ai, instant-portrait.com",
+          "sources": [
+            "hayden-p2",
+            "nisos",
+            "flare",
+            "seal-ttp"
+          ],
+          "priority": 2,
+          "hunts": [
+            "dprk-it-worker-persona-and-portfolio-infrastructure"
+          ]
+        },
+        {
+          "indicator": "A history of changing legal names",
+          "detail": "Identity rotation across documents and accounts",
+          "sources": [
+            "seal-cases"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "The interview",
+      "indicators": [
+        {
+          "indicator": "One person's voice on another person's call",
+          "detail": "Voicemeeter Banana routing audio between two machines in the same meeting",
+          "sources": [
+            "hayden-p2",
+            "group-ib"
+          ],
+          "priority": 1,
+          "hunts": [
+            "vdo-ninja-screen-and-webcam-relay"
+          ]
+        },
+        {
+          "indicator": "References who are other personas",
+          "detail": "Assigned in advance in the identity dossier",
+          "sources": [
+            "hayden-p2",
+            "nisos"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Teammates assisting a live interview off camera",
+          "detail": "Three behind one caller, with live transcription",
+          "sources": [
+            "hayden-p4"
+          ],
+          "hunts": [
+            "vdo-ninja-screen-and-webcam-relay"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "Different people attending as the same employee",
+          "detail": "Client meetings handed between operatives",
+          "sources": [
+            "hayden-p4"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "Scripted answers read aloud",
+          "detail": "An answer bank carrying phonetic pronunciation guides",
+          "sources": [
+            "hayden-p2",
+            "group-ib"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A CV fitted too exactly to the job requirement",
+          "detail": "Written within hours of the requirement being shared",
+          "sources": [
+            "hayden-p4"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A biography rehearsed on an AI interview tool",
+          "detail": "ChatGPT script, MockWise practice",
+          "sources": [
+            "hayden-p4"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A different GitHub, email or social profile visible on a shared screen",
+          "detail": "Not the one the CV gives",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Resigns and blocks every account rather than send a verification selfie",
+          "detail": "Asked for a photograph taken where the candidate claims to live",
+          "sources": [
+            "seal-cases"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Can't speak their claimed native language",
+          "detail": "A candidate presenting as Japanese, asked in Japanese",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Refuses to repeat a phrase critical of Kim Jong Un",
+          "detail": "And ends the call rather than say it",
+          "sources": [
+            "seal-mitigating"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "A stock video background, often the Golden Gate Bridge",
+          "detail": "The backdrop recurs across unrelated candidates",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "Keeps avoiding in-person meetings",
+          "detail": "Repeated excuses, and reluctance to accept a promotion or an on-site invitation",
+          "sources": [
+            "seal-summary",
+            "seal-cases"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "Accounts and contact details",
+      "indicators": [
+        {
+          "indicator": "One-time codes relayed by someone else",
+          "detail": "The second factor sits with a facilitator, who posts codes in team chat",
+          "sources": [
+            "hayden-p4"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Multi-factor codes generated in a browser",
+          "detail": "2fa.live and comparable sites",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 2,
+          "hunts": [
+            "account-verification-and-browser-otp-services"
+          ]
+        },
+        {
+          "indicator": "A professional-network session moved between machines",
+          "detail": "The Cookie-Editor extension, used to import LinkedIn session cookies",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 2,
+          "hunts": [
+            "persona-management-tooling-on-employee-endpoint"
+          ]
+        },
+        {
+          "indicator": "A forwarding rule pointing outside the persona",
+          "detail": "Configured before the account is handed over",
+          "sources": [
+            "hayden-p1"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "LinkedIn or GitHub accounts a few months old",
+          "detail": "Against a decade of claimed experience",
+          "sources": [
+            "site-candidates",
+            "seal-summary"
+          ],
+          "link": {
+            "href": "/remote-workers/candidates/",
+            "label": "See the queue"
+          },
+          "priority": 2,
+          "hunts": [
+            "dprk-it-worker-persona-and-portfolio-infrastructure"
+          ]
+        },
+        {
+          "indicator": "Accounts stood up on bulk verification services",
+          "detail": "sms-man.com, sms-activate.org, mailforspam.com",
+          "sources": [
+            "hayden-p2"
+          ],
+          "priority": 3,
+          "hunts": [
+            "account-verification-and-browser-otp-services"
+          ]
+        },
+        {
+          "indicator": "A VoIP line in place of a carrier number",
+          "detail": "Google Voice, slynumber.com, hushed.com; Skype historically",
+          "sources": [
+            "hayden-p2",
+            "fbi-2025",
+            "gtig",
+            "site-phone-lines"
+          ],
+          "priority": 1,
+          "hunts": [
+            "dprk-it-worker-persona-and-portfolio-infrastructure",
+            "account-verification-and-browser-otp-services"
+          ]
+        },
+        {
+          "indicator": "The address on the CV is not the address that applied",
+          "detail": "An older address on the resume PDF, a fresh Gmail on the application",
+          "sources": [
+            "hayden-p1",
+            "hayden-p2"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "An anti-detect browser holding one profile per persona",
+          "detail": "ixBrowser, each profile behind its own proxy",
+          "sources": [
+            "hayden-p4"
+          ],
+          "priority": 3,
+          "hunts": [
+            "persona-management-tooling-on-employee-endpoint"
+          ]
+        },
+        {
+          "indicator": "A GitHub account created after the commits it hosts",
+          "detail": "Years of history predate the account, often cloned with the .git author data edited",
+          "sources": [
+            "seal-ttp",
+            "seal-summary"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A sudden change of name or GitHub handle, or deleted social accounts",
+          "detail": "Especially after questions start",
+          "sources": [
+            "seal-summary"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A pull request pushed from a different account than usual",
+          "detail": "Another worker on the same seat",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "A dormant or taken-over account that suddenly builds activity",
+          "detail": "Often about two years of history before the first application",
+          "sources": [
+            "seal-cases"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "Data access",
+      "indicators": [
+        {
+          "indicator": "Company source code pushed to personal repositories",
+          "detail": "Precedes extortion when a placement ends",
+          "sources": [
+            "fbi-2025"
+          ],
+          "hunts": [
+            "source-code-copied-to-personal-repositories"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Company source code cloned to a personal computer or cloud account",
+          "detail": "Repositories copied off company systems to a machine or account the worker controls",
+          "sources": [
+            "fbi-2025"
+          ],
+          "priority": 1
+        },
+        {
+          "indicator": "Password notes and broad file browsing",
+          "sources": [
+            "dtex",
+            "huntress"
+          ],
+          "hunts": [
+            "credential-notes-and-repository-reconnaissance"
+          ],
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "name": "Payment and paperwork",
+      "indicators": [
+        {
+          "indicator": "Pay split or redirected after hire",
+          "detail": "To a third party, a wallet, an account in another name, or through a \"manager\"",
+          "sources": [
+            "hayden-p2",
+            "nisos",
+            "advisory-2022",
+            "fbi-2024"
+          ],
+          "priority": 1,
+          "hunts": [
+            "dprk-it-worker-identity-payroll-fraud"
+          ]
+        },
+        {
+          "indicator": "Payroll into a stablecoin-backed virtual account",
+          "detail": "HuruPay and comparable services",
+          "sources": [
+            "hayden-p2",
+            "group-ib"
+          ],
+          "priority": 2
+        },
+        {
+          "indicator": "A corp-to-corp engagement through an entity formed around an American",
+          "detail": "A certificate of formation and a W-9 where an I-9 and a licence would be",
+          "sources": [
+            "hayden-p2",
+            "gtig"
+          ],
+          "priority": 3
+        },
+        {
+          "indicator": "Asks to be paid in cryptocurrency",
+          "sources": [
+            "seal-ttp"
+          ],
+          "priority": 3
+        }
+      ]
+    }
+  ],
+  "priorities": {
+    "1": "Hard to explain innocently. Escalate on this alone.",
+    "2": "Strong. Investigate, and look for a second signal.",
+    "3": "Common on its own. Counts only alongside others."
+  }
+}

@@ -1,0 +1,53 @@
+---
+layout: base.njk
+title: "Named IT Workers"
+description: "The real people publicly named in law-enforcement notices in connection with DPRK IT-worker and Contagious Interview operations, as distinct from the fabricated personas they operated behind."
+permalink: "/remote-workers/pictures/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
+---
+{#
+  src/remote-workers/pictures/index.njk: profiles tagged with the IT-worker
+  cluster, titled "Named IT Workers" to set it against Personas. The permalink
+  keeps its first-published URL. /profiles/ lists every cluster. Tiles come
+  from partials/profile-tile.njk.
+#}
+{% set active_tab = "pictures" %}
+{% set worker_profiles = [] %}
+{% for profile in collections.profiles %}
+  {% if "Remote Worker Fraud / Contagious Interview" in profile.cluster_taxonomy %}
+    {% set worker_profiles = (worker_profiles.push(profile), worker_profiles) %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <h1>Named IT Workers</h1>
+  {% include "partials/profiles-tab-bar.njk" %}
+  <p>
+    The real people named in law-enforcement notices in connection with DPRK
+    remote IT-worker operations, as distinct from the fabricated identities
+    under <a href="/remote-workers/personas/">Personas</a>. Every profile is at
+    <a href="/profiles/">Named Individuals</a>.
+  </p>
+
+  {% if worker_profiles.length %}
+  <p class="form-hint" role="status" aria-live="polite" data-grid-count="#worker-profiles">
+    {{ worker_profiles.length }} individual{% if worker_profiles.length != 1 %}s{% endif %}.
+    Select any one for the full record.
+  </p>
+  <ul class="profile-grid" id="worker-profiles" data-grid-limit="{{ limits.list }}">
+    {% for profile in worker_profiles %}{% set tileProfile = profile %}{% include "partials/profile-tile.njk" %}{% endfor %}
+  </ul>
+  {% set gridMore = { target: "#worker-profiles", noun: "individuals" } %}
+  {% include "partials/grid-more.njk" %}
+  {% else %}
+  <p><em>No profiles published yet.</em></p>
+  {% endif %}
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    body: 'Each person is drawn from a law-enforcement wanted notice in which the conduct is alleged, and is presumed innocent unless proven guilty in court. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>, or <a href="/about/#corrections">ask for a correction or removal</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

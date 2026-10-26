@@ -1,0 +1,219 @@
+{#
+  NOTE: this documentation is a Nunjucks comment, not an HTML one. It used
+  to be a rendered <!-- --> block, which put ~3.5KB of prose into every page
+  on the site — 16MB of it once /indicators/ started generating a page per
+  indicator. Keep it as a Nunjucks comment so it stays in the source and out
+  of the output. Nothing inside may contain a Nunjucks comment-close sequence,
+  which would end this block early and spill the rest into every page.
+
+  base.njk — Chollima Hunter base layout
+    =======================================
+    All other pages on the site MUST extend this layout via front matter:
+  
+        ---
+        layout: base.njk
+        title: "Page Title"
+        ---
+  
+    EXTENSION POINTS (documented — do not rename without updating every
+    downstream expert's templates):
+  
+    IMPORTANT — how this actually works: pages set `layout: base.njk` in
+    front matter (as shown above) rather than using a Nunjucks {% extends %}
+    tag, so Nunjucks never establishes a real extends/block-override chain
+    here. Content injection instead relies on 11ty's own layout data cascade,
+    which exposes the rendered page body as a `content` variable to the
+    layout, and passes through any other front-matter/data keys the page
+    defines (e.g. `extra_head`) the same way.
+  
+    (An earlier version of this file used {% block content %}{% endblock %}
+    here, which silently rendered EMPTY on every page: with no {% extends %}
+    in the child template, Nunjucks never overrides the layout's block, and a
+    bare, never-overridden {% block %} in a standalone-rendered template just
+    renders its own empty default. This broke every page's main content
+    without causing a build error. Found and fixed by submission-intake
+    during its build — see that expert's result notes for details.)
+  
+      content
+        The main page body. Just write plain markup under your front matter
+        in your own page template (see src/about/index.njk or
+        src/submit/index.njk for examples). Rendered inside
+        <main id="main-content"> via {{ content | safe }} below.
+  
+      extra_head
+        Optional. Injects extra <head> content (e.g. a page-specific
+        stylesheet link, extra meta tags). Set it as a plain front-matter key
+        on your page, e.g.:
+  
+          ---
+          layout: base.njk
+          title: "Page Title"
+          extra_head: "<link rel=\"stylesheet\" href=\"/assets/css/my-page.css\">"
+          ---
+  
+        Rendered via {{ extra_head | safe }} just before </head> below. Leave
+        it unset if you don't need it.
+
+      noindex
+        Optional. Set `noindex: true` in front matter to emit a robots
+        noindex meta tag, as the 404 page does.
+  
+    NAV PATTERN:
+      Nav items are data-driven from src/_data/nav.json, an array of
+      { "label": string, "url": string } objects, looped with
+      {% for item in nav %}. To add a nav item, edit nav.json — do NOT hardcode
+      additional <li> elements in this file. All 6 non-home routes that other
+      experts populate (Remote Workers, DPRK Hunting, Repo Scanner,
+      EtherHiding, Sources, Submit IOCs) are already listed there, so nothing
+      here needs to change when those experts run.
+  
+    BRAND MARK / SVG MOTIFS:
+      The header brand mark is the Chollima pegasus raster asset (transparent) at
+      src/assets/img/logo-mark.webp, rendered as an <img class="site-brand__mark">
+      and sized by tokens.css. It is decorative — the surrounding <a> already
+      carries the accessible name — so its alt is intentionally empty.
+  
+      A reusable inline SVG partial lives at src/_includes/svg/star.njk.
+      Include it anywhere with:
+        {% include "svg/star.njk" %}
+      It is fully self-contained (no external image/CDN references).
+  
+    DESIGN TOKENS:
+      CSS custom properties (palette, spacing, typography) are defined in
+      src/assets/css/tokens.css, passed through untouched by 11ty and linked
+      below. Reusable utility classes defined there include:
+        .disclaimer-banner  — sourcing/attribution disclaimer banner
+        .query-block        — copy-paste-able code/query block
+#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {#- Every script, style, font and image on the site is served from the site
+      itself, and nothing is inline, so the policy can say exactly that. It is
+      defence in depth for a site that renders scraped text: markup that slipped
+      through escaping still could not load a script. GitHub Pages sets no
+      response headers, hence a meta tag; frame-ancestors cannot be set here. #}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'">
+  {#- Outbound links already carry rel="noreferrer"; this covers everything
+      else that leaves the site, such as an image or feed request. #}
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  {#- The home page leads with the site name and what it is, rather than the
+      word "Home", since that title is what a search result shows. A page can
+      set `head_title` to give the result a longer title than its heading and
+      breadcrumb carry; an indicator page does, so the title names what kind
+      of value it is as well as the value. #}
+  {%- set pageTitle = "Chollima Hunter — DPRK cyber threat-intelligence tracker" if page.url == "/" else (head_title or title) + " — Chollima Hunter" %}
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  {%- if noindex %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Chollima Hunter">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/icon-512.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  <meta name="twitter:description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  <link rel="alternate" type="application/atom+xml" title="Chollima Hunter updates" href="/feed.xml">
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0A0A0F">
+  {#- Google Search Console ownership token for the chollimahunter@gmail.com
+      property; the sitemap is submitted there. Removing it drops verification. #}
+  <meta name="google-site-verification" content="BufHXHMNW6G5aUeRkSAhEBqnuohm5WVG-JFfMtzXbyE">
+  {#- GitHub Pages sets no Cache-Control the site can tune, so the scripts that
+      fetch the indicator indexes append this as a query string: a rebuild
+      changes it, and a returning reader gets the new data instead of whatever
+      their browser cached last month. #}
+  <meta name="ioc-index-version" content="{{ iocIndex.generated_at }}">
+  {#- The three faces every page paints first: body copy, the heading and the
+      nav. Preloading them starts the fetch before the stylesheet is parsed,
+      which is what turns the swap from fallback text into a flash instead of
+      a visible reflow. The other weights load on demand as before. #}
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/space-grotesk-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/jetbrains-mono-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  {#- JSON-LD: breadcrumbs on every page, the site and organisation on the
+      home page. A data block is not executed, so the CSP above does not
+      apply to it. See partials/structured-data.njk. #}
+  {% include "partials/structured-data.njk" %}
+  {#- The site-wide scripts, loaded from the layout rather than per page
+      because the elements they enhance sit in a dozen layouts and partials;
+      each does nothing on a page without its element. site-utils.js holds
+      the helpers the others call, so it loads first. table-sort.js makes
+      every table with a header row sort by column on a click. #}
+  <script src="/assets/js/site-utils.js" defer></script>
+  <script src="/assets/js/table-sort.js" defer></script>
+  <script src="/assets/js/table-stack.js" defer></script>
+  <script src="/assets/js/result-tools.js" defer></script>
+  <script src="/assets/js/filter-dropdown.js" defer></script>
+  {{ extra_head | safe }}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-brand" href="/" aria-label="Chollima Hunter home">
+        <img class="site-brand__mark" src="/assets/img/logo-mark.webp" alt="" width="136" height="128" decoding="async">
+        <span class="site-brand__names">
+          <span class="site-brand__text">Chollima Hunter</span>
+          {# The Korean is set one character per span so it can be spread
+             edge to edge under the English name whatever Hangul font the
+             reader's system falls back to; the whole name is read once, from
+             the visually hidden copy. #}
+          <span class="site-brand__ko" lang="ko">{% include "partials/ko-spread.njk" %}</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="site-nav__list">
+          {% for item in nav %}
+          <li>
+            <a href="{{ item.url }}" class="site-nav__link"{% if page.url == item.url %} aria-current="page"{% elif item.url != "/" and page.url and page.url.startsWith(item.url) %} aria-current="true"{% endif %}>{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        {% set star_decorative = true %}{% include "svg/star.njk" %}
+        <span>&copy; 2026 Chollima Hunter — a public DPRK cyber threat-intelligence tracker.</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="/about/">About and policies</a>
+        <a href="/guidance/">If you find a match</a>
+        <a href="/data/">Data and downloads</a>
+        <a href="/glossary/">Glossary</a>
+        {%- if site.repoUrl %}
+        <a href="{{ site.repoUrl }}" rel="noopener noreferrer">Source on GitHub</a>
+        {%- endif %}
+        {%- if site.businessEmail and "TODO" not in site.businessEmail %}
+        <a href="mailto:{{ site.businessEmail }}">Contact</a>
+        {%- endif %}
+        {%- if site.kofiUrl %}
+        <a class="donate-button" href="{{ site.kofiUrl }}" rel="noopener noreferrer">Support this project</a>
+        {%- endif %}
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

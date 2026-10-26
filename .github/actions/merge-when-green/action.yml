@@ -1,0 +1,179 @@
+name: Merge when ci is green
+description: Squash-merges a data pull request once its dispatched ci run succeeds, then dispatches the deploy; otherwise leaves the pull request open.
+
+# For the trusted scheduled data workflows only. A pull request opened with
+# GITHUB_TOKEN triggers no pull_request run, and a merge made with GITHUB_TOKEN
+# triggers no push run, so the caller has already dispatched ci.yml on the
+# branch and this action dispatches deploy.yml on main after merging.
+#
+# The calling job needs contents: write, pull-requests: write and actions:
+# write. Every value reaches the shell through env, never through
+# interpolation into the script. The action always exits 0: when it does not
+# merge it prints a warning, sets merged=false and gives a reason, and the pull
+# request stays open for a person. Reasons: ci-failure, ci-not-successful,
+# ci-timeout, no-ci-run, branch-mismatch, sha-mismatch, pr-not-open,
+# invalid-input, merge-refused (branch protection or a conflict). Callers
+# notify a person only on ci-failure.
+
+inputs:
+  token:
+    description: Token that can merge and dispatch workflows, normally secrets.GITHUB_TOKEN.
+    required: true
+  pull-request-number:
+    description: Number of the pull request to merge.
+    required: true
+  branch:
+    description: Head branch of the pull request, as reported by the pull-request step.
+    required: true
+  expected-branch:
+    description: The one branch the calling workflow owns. Any other head branch is refused.
+    required: true
+  timeout-minutes:
+    description: How long to wait for the ci run to finish.
+    required: false
+    default: "25"
+
+outputs:
+  merged:
+    description: '"true" when the pull request was merged, otherwise "false".'
+    value: ${{ steps.merge.outputs.merged }}
+  reason:
+    description: Why the pull request was left open; empty when merged.
+    value: ${{ steps.merge.outputs.reason }}
+
+runs:
+  using: composite
+  steps:
+    - name: Wait for ci, then merge
+      id: merge
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        REPO: ${{ github.repository }}
+        PR: ${{ inputs.pull-request-number }}
+        BRANCH: ${{ inputs.branch }}
+        EXPECTED_BRANCH: ${{ inputs.expected-branch }}
+        TIMEOUT_MINUTES: ${{ inputs.timeout-minutes }}
+        POLL_SECONDS: "30"
+        NO_RUN_GRACE_SECONDS: "180"
+      run: |
+        set -uo pipefail
+
+        finish() {
+          echo "merged=$1" >> "$GITHUB_OUTPUT"
+          echo "reason=$2" >> "$GITHUB_OUTPUT"
+          if [ "$1" != "true" ]; then
+            echo "::warning title=Auto-merge skipped::$3 Pull request #$PR stays open for review ($2)."
+            echo "Auto-merge skipped for #$PR: $3 ($2)" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit 0
+        }
+
+        if ! [[ "$PR" =~ ^[0-9]+$ ]] || ! [[ "$TIMEOUT_MINUTES" =~ ^[0-9]+$ ]]; then
+          finish false invalid-input "The pull request number or the timeout is not a number."
+        fi
+        if [ -z "$EXPECTED_BRANCH" ] || [ "$BRANCH" != "$EXPECTED_BRANCH" ]; then
+          finish false branch-mismatch "The branch is not the one this workflow owns."
+        fi
+
+        pr_json=$(gh pr view "$PR" --repo "$REPO" --json state,headRefName,headRefOid,isCrossRepository 2>/dev/null) \
+          || finish false pr-not-open "The pull request could not be read."
+        if [ "$(jq -r '.state' <<<"$pr_json")" != "OPEN" ] \
+            || [ "$(jq -r '.headRefName' <<<"$pr_json")" != "$EXPECTED_BRANCH" ] \
+            || [ "$(jq -r '.isCrossRepository' <<<"$pr_json")" != "false" ]; then
+          finish false pr-not-open "The pull request is not open, or its head is not $EXPECTED_BRANCH in this repository."
+        fi
+
+        # The dispatch ran in an earlier step of this job; allow for clock skew.
+        since=$(date -u -d "@$(( $(date +%s) - 120 ))" +%Y-%m-%dT%H:%M:%SZ)
+        deadline=$(( SECONDS + TIMEOUT_MINUTES * 60 ))
+        grace=$(( SECONDS + NO_RUN_GRACE_SECONDS ))
+        redispatched=false
+        run_id=""
+        status=""
+        while :; do
+          runs=$(gh run list --repo "$REPO" --workflow ci.yml --branch "$BRANCH" --event workflow_dispatch \
+            --limit 5 --json databaseId,status,conclusion,createdAt 2>/dev/null) || runs="[]"
+          row=$(jq -c --arg s "$since" '[.[] | select(.createdAt >= $s)] | sort_by(.createdAt) | last // empty' <<<"$runs")
+          if [ -n "$row" ]; then
+            run_id=$(jq -r '.databaseId' <<<"$row")
+            status=$(jq -r '.status' <<<"$row")
+            [ "$status" = "completed" ] && break
+          elif [ "$redispatched" = "false" ] && [ "$SECONDS" -ge "$grace" ]; then
+            echo "No ci run appeared; dispatching ci.yml once more."
+            gh workflow run ci.yml --repo "$REPO" --ref "$BRANCH" || true
+            redispatched=true
+          fi
+          if [ "$SECONDS" -ge "$deadline" ]; then
+            if [ -z "$run_id" ]; then
+              finish false no-ci-run "No ci run appeared for the branch."
+            fi
+            finish false ci-timeout "The ci run did not finish within $TIMEOUT_MINUTES minutes."
+          fi
+          sleep "$POLL_SECONDS"
+        done
+
+        run_json=$(gh run view "$run_id" --repo "$REPO" --json headSha,conclusion 2>/dev/null) \
+          || finish false ci-not-successful "The ci run could not be read."
+        conclusion=$(jq -r '.conclusion' <<<"$run_json")
+        run_sha=$(jq -r '.headSha' <<<"$run_json")
+        case "$conclusion" in
+          success) ;;
+          failure|timed_out|startup_failure)
+            finish false ci-failure "The ci run ended with $conclusion." ;;
+          *)
+            finish false ci-not-successful "The ci run ended with $conclusion." ;;
+        esac
+
+        pr_sha=$(gh pr view "$PR" --repo "$REPO" --json headRefOid --jq '.headRefOid' 2>/dev/null) \
+          || finish false pr-not-open "The pull request could not be read again."
+        if [ -z "$run_sha" ] || [ "$run_sha" != "$pr_sha" ]; then
+          finish false sha-mismatch "The ci run tested ${run_sha:-an unknown commit}, but the pull request head is $pr_sha."
+        fi
+
+        # The pull request also gets its own pull_request run of ci, which
+        # GitHub holds at "action_required" because a workflow opened it, and
+        # main's required ci check is not met until that run passes. Approve
+        # it and wait for it on the same head.
+        pr_runs() {
+          gh api "repos/$REPO/actions/runs?head_sha=$pr_sha&event=pull_request" \
+            --jq '[.workflow_runs[] | select(.path == ".github/workflows/ci.yml")] | sort_by(.created_at)' 2>/dev/null || echo "[]"
+        }
+        for id in $(pr_runs | jq -r '.[] | select(.conclusion == "action_required") | .id'); do
+          if gh api -X POST "repos/$REPO/actions/runs/$id/approve" >/dev/null 2>&1; then
+            echo "Approved the pull_request ci run $id."
+          else
+            echo "::warning title=Approval failed::The pull_request ci run $id could not be approved."
+          fi
+        done
+        if [ "$(pr_runs | jq 'length')" != "0" ]; then
+          while :; do
+            last=$(pr_runs | jq -c 'last')
+            if [ "$(jq -r '.status' <<<"$last")" = "completed" ]; then
+              case "$(jq -r '.conclusion' <<<"$last")" in
+                success) break ;;
+                action_required) finish false merge-refused "The pull_request ci run is still waiting for approval." ;;
+                *) finish false ci-failure "The pull_request ci run ended with $(jq -r '.conclusion' <<<"$last")." ;;
+              esac
+            fi
+            if [ "$SECONDS" -ge "$deadline" ]; then
+              finish false ci-timeout "The pull_request ci run did not finish within $TIMEOUT_MINUTES minutes."
+            fi
+            sleep "$POLL_SECONDS"
+          done
+        fi
+
+        if ! out=$(gh pr merge "$PR" --repo "$REPO" --squash --delete-branch --match-head-commit "$pr_sha" 2>&1); then
+          detail=$(printf '%s' "$out" | tr '\r\n' '  ' | cut -c1-200)
+          finish false merge-refused "The merge was refused: $detail"
+        fi
+
+        merged_sha=$(gh pr view "$PR" --repo "$REPO" --json mergeCommit --jq '.mergeCommit.oid // empty' 2>/dev/null || true)
+        echo "Merged pull request #$PR as ${merged_sha:-an unknown commit}."
+        echo "Auto-merged #$PR as ${merged_sha:-unknown}." >> "$GITHUB_STEP_SUMMARY"
+
+        # A merge made with GITHUB_TOKEN triggers no push run, so deploy explicitly.
+        if ! gh workflow run deploy.yml --repo "$REPO" --ref main; then
+          echo "::warning title=Deploy not dispatched::Pull request #$PR was merged but deploy.yml could not be dispatched; run it by hand from the Actions tab."
+        fi
+        finish true ""

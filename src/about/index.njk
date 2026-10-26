@@ -1,0 +1,100 @@
+---
+layout: base.njk
+title: "About"
+description: "What Chollima Hunter is, how it sources what it publishes, how to request a correction or removal, and how the site handles visitor data."
+permalink: "/about/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/about/index.njk — About and site policies
+
+  The background on DPRK cyber operations and the actor-cluster taxonomy live
+  on the home page (src/index.md, anchor #about-dprk-cyber-operations) and are
+  linked from here rather than duplicated. This page holds what a reader,
+  a journalist, or a person who finds their own name in the index needs to
+  know about the site itself: sourcing, disclaimers, corrections, privacy,
+  and reuse.
+#}
+<section>
+  <h1>About Chollima Hunter</h1>
+  <p>
+    Chollima Hunter is a static threat-intelligence tracker for cyber
+    operations attributed to the Democratic People&rsquo;s Republic of Korea
+    (DPRK): people named in indictments and sanctions, the identities behind
+    remote-work schemes, reported indicators, and hunting guidance. Every claim
+    about a named individual links to a public record. Background is on the
+    home page under
+    <a href="/#about-dprk-cyber-operations">DPRK cyber operations</a>.
+  </p>
+  <p>
+    An independent researcher maintains the site, which is not affiliated with
+    any government or vendor.
+    {%- if site.repoUrl %}
+    The source code and data files are in the
+    {% set externalLink = { url: site.repoUrl, text: "GitHub repository" } %}{% include "partials/external-link.njk" %}.
+    {%- else %}
+    <a href="/data/">Data and downloads</a> lists the published files; reuse
+    terms are under <a href="/data/#licence">Licence</a>.
+    {%- endif %}
+  </p>
+</section>
+
+<section>
+  <h2 id="sourcing">Sourcing and confidence</h2>
+  <p>
+    No claim about a named individual is published without a public citation,
+    such as an indictment, sanctions designation, court filing, agency press
+    release or named threat-intelligence report. A profile is
+    <a href="/glossary/#label-confirmed">confirmed</a> only when its subject is
+    named in a charging document, wanted notice, guilty plea, conviction or
+    sentence, or a government sanctions designation. Every record is listed on
+    <a href="/sources/">Sources</a>.
+  </p>
+</section>
+
+<section>
+  <h2 id="disclaimer">What inclusion does and does not mean</h2>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    body: '<ul><li>Presence is not proof of DPRK affiliation or wrongdoing. Operations often use the identity of a real, uninvolved person, so a listed name, photograph, email address or account may belong to someone with no connection.</li><li>People named in law-enforcement notices are alleged to have done what the agency says, and are presumed innocent unless proven guilty in court.</li><li>Confidence levels reflect the cited source, not this site. Every entry is a lead to verify, not a basis on its own for a decision about a person.</li></ul>'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>
+
+<section>
+  <h2 id="corrections">Corrections and removal requests</h2>
+  <p>
+    Anyone who believes an entry is inaccurate or concerns an identity stolen
+    from them can ask for a correction or removal. Send it by the <a href="/submit/">submission email</a>
+    {%- if site.repoUrl %} or an issue on the
+    {% set externalLink = { url: site.repoUrl + "/issues", text: "GitHub repository" } %}{% include "partials/external-link.njk" %}
+    {%- endif %}
+    {%- if site.businessEmail and "TODO" not in site.businessEmail %}
+    or privately to
+    <a href="mailto:{{ site.businessEmail }}">{{ site.businessEmail }}</a>
+    {%- endif %}, with the page address, what is wrong and, if possible, a
+    public record supporting the correction.
+    <a href="/guidance/#listed">If you are listed on this site</a> covers the
+    rest.
+  </p>
+</section>
+
+<section>
+  <h2 id="privacy">Privacy and personal data</h2>
+  <p>
+    The site is static files on GitHub Pages. It sets no cookies, runs no
+    analytics and loads no third-party scripts, and GitHub keeps the ordinary
+    server logs described in its
+    {% set externalLink = { url: "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement", text: "privacy statement" } %}{% include "partials/external-link.njk" %}.
+    Search runs in the browser, and the <a href="/submit/">submission page</a>
+    opens an ordinary email with no form service involved.
+  </p>
+
+  <h3 id="personal-data">Personal data the site publishes</h3>
+  <p>
+    The site publishes names, aliases, photographs, email addresses, telephone
+    numbers and account handles from government records, published research
+    and its own examination of accounts, so that others can recognise a pattern
+    of fraud and intrusion. Values belonging to victims or uninvolved people
+    are held back, and a wrong entry is corrected or withdrawn.
+  </p>
+</section>

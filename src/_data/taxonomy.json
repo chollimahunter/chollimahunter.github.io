@@ -1,0 +1,776 @@
+[
+  {
+    "id": "lazarus-group",
+    "label": "Lazarus Group",
+    "description": "A broad, long-running DPRK intrusion cluster active since at least the early 2010s, spanning financial theft, destructive attacks, and espionage. Often used as an umbrella label for RGB-linked activity that doesn't fit a narrower named cluster.",
+    "also_known_as": [
+      "Hidden Cobra",
+      "Labyrinth Chollima",
+      "Diamond Sleet",
+      "TEMP.Hermit",
+      "Guardians of Peace",
+      "NICKEL ACADEMY",
+      "ZINC",
+      "Jade Sleet (overlaps)",
+      "UNC4899",
+      "Slow Pisces"
+    ],
+    "attack_group": {
+      "id": "G0032",
+      "url": "https://attack.mitre.org/groups/G0032/"
+    },
+    "indicator_campaigns": [
+      "Lazarus Group"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "Individuals profiled under this label are charged in one U.S. case covering the 2014 destruction of Sony Pictures' network, the 2016 theft of $81 million from Bangladesh Bank through fraudulent SWIFT messages, and the 2017 WannaCry worm.",
+      "\"Lazarus\" is also the loosest label here: coined for the Sony intrusion, it now covers most RGB-linked activity that fits no narrower name. This site applies it only where the cited source does. MITRE tracks AppleJeus separately (G1049), so it is not listed as an alias."
+    ],
+    "tradecraft": [
+      "Unlike <a href=\"/clusters/apt38/\">APT38</a> or the <a href=\"/clusters/contagious-interview/\">IT-worker cluster</a>, it need not stay quiet: Sony saw wiper malware, published stolen email and an invented hacktivist claim.",
+      "WannaCry spread indiscriminately enough to disrupt hospitals in countries with no connection to any dispute.",
+      "The charging documents attribute through overlapping malware code, shared build artefacts, reused accounts and infrastructure; a Lazarus claim should offer similar evidence."
+    ],
+    "defender_view": [
+      "Nothing under this label is a live indicator; most reported infrastructure is long dead and shows past use, not current activity.",
+      "Use the label for corroboration: a sound report argues shared code, build environments and reused accounts, not just a synonym for North Korea."
+    ],
+    "further_reading": [
+      {
+        "title": "Three North Korean Military Hackers Indicted in Wide-Ranging Scheme to Commit Cyberattacks and Financial Crimes Across the Globe",
+        "url": "https://www.justice.gov/archives/opa/pr/three-north-korean-military-hackers-indicted-wide-ranging-scheme-commit-cyberattacks-and",
+        "publisher": "U.S. Department of Justice",
+        "date": "2021-02-17",
+        "note": "The charging document behind all three individuals profiled here, and the clearest single account of how one indictment came to cover Sony, Bangladesh Bank and WannaCry at once."
+      },
+      {
+        "title": "North Korean Regime-Backed Programmer Charged With Conspiracy to Conduct Multiple Cyber Attacks and Intrusions",
+        "url": "https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and",
+        "publisher": "U.S. Department of Justice",
+        "date": "2018-09-06",
+        "note": "The 2018 Park Jin Hyok complaint and its press release. Worth reading for the attribution method rather than the outcome: the linked complaint sets out at length the shared accounts, code and infrastructure the case is built on."
+      },
+      {
+        "title": "North Korea Designations — SDN List additions for Park Jin Hyok and Chosun Expo Joint Venture",
+        "url": "https://ofac.treasury.gov/recent-actions/20180906_33",
+        "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+        "date": "2018-09-06",
+        "note": "The sanctions action taken the same day. Short, and useful for the named front company, which is the thread much of the later reporting on this cluster picks up."
+      },
+      {
+        "title": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-108a",
+        "publisher": "FBI, CISA and U.S. Treasury",
+        "date": "2022-04-18",
+        "note": "How the label is applied after 2022. Reads as a direct continuation of the bank-heist tradecraft moved onto cryptocurrency firms, which is the argument for treating the umbrella as one lineage rather than a catch-all."
+      },
+      {
+        "title": "AppleJeus, Gleaming Pisces, Citrine Sleet, UNC1720, UNC4736: MITRE ATT&CK group entry (G1049)",
+        "url": "https://attack.mitre.org/groups/G1049/",
+        "publisher": "MITRE",
+        "date": "2026-07-31",
+        "note": "The separate MITRE group ID behind the note above. States plainly that this activity is associated with the broader Lazarus Group umbrella and closely aligned with TEMP.Hermit, while still tracking it under its own ID."
+      },
+      {
+        "title": "North Korean threat actor Citrine Sleet exploiting Chromium zero-day",
+        "url": "https://www.microsoft.com/en-us/security/blog/2024/08/30/north-korean-threat-actor-citrine-sleet-exploiting-chromium-zero-day/",
+        "publisher": "Microsoft Threat Intelligence",
+        "date": "2024-08-30",
+        "note": "Microsoft's own reporting on the Citrine Sleet name, which its naming page separately maps to Labyrinth Chollima rather than to a Sapphire Sleet/BlueNoroff lineage."
+      },
+      {
+        "title": "Gleaming Pisces Poisoned Python Packages Campaign Delivers PondRAT Linux and macOS Backdoors",
+        "url": "https://unit42.paloaltonetworks.com/gleaming-pisces-applejeus-poolrat-and-pondrat/",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2024-09-18",
+        "note": "The source for Unit 42's own description of Gleaming Pisces/AppleJeus as \"a sub-cluster within the Lazarus Group\", and for the PondRAT and POOLRAT backdoors tying it to the wider umbrella."
+      },
+      {
+        "title": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware",
+        "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2025-04-14",
+        "note": "Unit 42's own name for the Jade Sleet/UNC4899/TraderTraitor activity, and the source for its alias list."
+      },
+      {
+        "title": "Assessed Cyber Structure and Alignments of North Korea in 2023",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-cyber-structure-alignment-2023",
+        "publisher": "Mandiant (Google Cloud)",
+        "date": "2023-10-10",
+        "note": "The source for Mandiant's hedged language on UNC4736, UNC4899 and UNC1069 &mdash; \"overlaps with\", \"may be the work of\", \"may include individuals or units previously tracked as\" &mdash; which is the level of confidence this site tries to preserve rather than round up."
+      },
+      {
+        "title": "How Microsoft names threat actors",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming",
+        "publisher": "Microsoft Learn",
+        "date": "2026-08-18",
+        "note": "Microsoft's own alias table, and the source for filing both Citrine Sleet and Jade Sleet under this cluster's Labyrinth Chollima and Diamond Sleet lineage rather than under Sapphire Sleet."
+      }
+    ]
+  },
+  {
+    "id": "apt38",
+    "label": "APT38",
+    "description": "A financially motivated DPRK cluster focused on large-scale bank heists and fraudulent SWIFT transactions — distinct in tradecraft from more espionage-focused clusters despite overlapping RGB attribution.",
+    "also_known_as": [
+      "Bluenoroff",
+      "BeagleBoyz",
+      "Stardust Chollima",
+      "Sapphire Sleet",
+      "TraderTraitor",
+      "NICKEL GLADSTONE",
+      "COPERNICIUM",
+      "UNC1069",
+      "TA444",
+      "Alluring Pisces",
+      "CageyChameleon",
+      "CryptoCore"
+    ],
+    "attack_group": {
+      "id": "G0082",
+      "url": "https://attack.mitre.org/groups/G0082/"
+    },
+    "indicator_campaigns": [
+      "APT38"
+    ],
+    "hunt_tags": [
+      "Sapphire Sleet"
+    ],
+    "overview": [
+      "APT38 is Mandiant's name for the part of DPRK financial operations that robs institutions. Against banks in Bangladesh, Vietnam, Poland, Mexico, Chile and elsewhere, operators spend months learning one bank's payment workflow, issue fraudulent transfers inside it, then destroy the systems that would reveal it.",
+      "A second line, FASTCash, compromises the card payment switch so intruders approve withdrawals and empty ATMs across many countries within hours. Whether APT38 is a subset of <a href=\"/clusters/lazarus-group/\">Lazarus</a> or a peer cluster is disputed; Mandiant also hedges that UNC4899 (TraderTraitor) may be former APT38 operators."
+    ],
+    "tradecraft": [
+      "Dwell time is the distinguishing feature: months of reconnaissance precede any theft, which must be executed as a valid transaction.",
+      "Understanding the target's business process is the operation; the intrusion is preparation.",
+      "It ends loudly, with wiper malware or log destruction against systems that would evidence the transfer, unlike the <a href=\"/clusters/contagious-interview/\">IT-worker cluster</a> approach of staying unremarkable."
+    ],
+    "defender_view": [
+      "Relevant only to a narrow set of organisations, whose key telemetry is the interbank messaging environment rather than the endpoint estate.",
+      "Watch SWIFT-originating workstations, the local Alliance software and database, reconciliation reports and the card payment switch.",
+      "The practical signal is a mismatch between systems that should agree, such as a transfer in the network's records but not the bank's own.",
+      "Likewise a switch approving withdrawals the core system has no record of, or a reconciliation report that stopped covering an account."
+    ],
+    "further_reading": [
+      {
+        "title": "APT38: Un-usual Suspects",
+        "url": "https://services.google.com/fh/files/misc/apt38-un-usual-suspects.pdf",
+        "publisher": "FireEye, now Mandiant at Google Cloud",
+        "date": "2018-10-01",
+        "note": "The report that separated this cluster from Lazarus in the first place, and still the best account of the operational sequence: reconnaissance, months inside the payment workflow, fraudulent transfer, destruction. A PDF."
+      },
+      {
+        "title": "FASTCash 2.0: North Korea's BeagleBoyz Robbing Banks (AA20-239A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-239a",
+        "publisher": "CISA, U.S. Treasury, FBI and U.S. Cyber Command",
+        "date": "2020-08-26",
+        "note": "The government account of the ATM cash-out scheme, and the place to read about the payment-switch compromise specifically. Marked as archived content, but it remains the reference description of how switch responses are forged."
+      },
+      {
+        "title": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-108a",
+        "publisher": "FBI, CISA and U.S. Treasury",
+        "date": "2022-04-18",
+        "note": "Where the same financial mission went once banks hardened: cryptocurrency exchanges and blockchain firms, reached by social-engineering their employees rather than through the interbank network."
+      },
+      {
+        "title": "Three North Korean Military Hackers Indicted in Wide-Ranging Scheme to Commit Cyberattacks and Financial Crimes Across the Globe",
+        "url": "https://www.justice.gov/archives/opa/pr/three-north-korean-military-hackers-indicted-wide-ranging-scheme-commit-cyberattacks-and",
+        "publisher": "U.S. Department of Justice",
+        "date": "2021-02-17",
+        "note": "The U.S. charging account of the Bangladesh Bank theft and the attempts that followed it, useful as the prosecution's version of the story the vendor reporting tells."
+      },
+      {
+        "title": "TA444: APT Startup Aimed at Acquisition (of Your Funds)",
+        "url": "https://www.proofpoint.com/us/blog/threat-insight/ta444-apt-startup-aimed-at-your-funds",
+        "publisher": "Proofpoint",
+        "date": "2023-01-25",
+        "note": "Proofpoint's own designation for this cluster, stated to overlap with APT38, BlueNoroff, Stardust Chollima and COPERNICIUM. Good on the phishing and credential-theft side of the operation rather than the SWIFT-fraud side."
+      },
+      {
+        "title": "Dissecting Sapphire Sleet's macOS intrusion from lure to compromise",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/04/16/dissecting-sapphire-sleets-macos-intrusion-from-lure-to-compromise/",
+        "publisher": "Microsoft Threat Intelligence",
+        "date": "2026-04-16",
+        "note": "Microsoft's current reporting on the name it now uses for this cluster, including the fake-recruiter and fake-investor lures aimed at individual cryptocurrency holders rather than institutions."
+      },
+      {
+        "title": "How Microsoft names threat actors",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming",
+        "publisher": "Microsoft Learn",
+        "date": "2026-08-18",
+        "note": "The source for the Sapphire Sleet alias table used above: COPERNICIUM, UNC1069, Stardust Chollima, Alluring Pisces, BlueNoroff, CageyChameleon and CryptoCore, listed together as one name's other names."
+      },
+      {
+        "title": "Assessed Cyber Structure and Alignments of North Korea in 2023",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-cyber-structure-alignment-2023",
+        "publisher": "Mandiant (Google Cloud)",
+        "date": "2023-10-10",
+        "note": "The source for Mandiant's hedged UNC1069/UNC4899 language quoted above, and the clearest published account of how these financially-motivated clusters relate to APT38 without being asserted as identical to it."
+      }
+    ]
+  },
+  {
+    "id": "kimsuky",
+    "label": "Kimsuky",
+    "description": "A DPRK cluster focused on intelligence collection: phishing and social-engineering campaigns aimed at government, academic, and think-tank targets, particularly around Korean Peninsula policy topics.",
+    "also_known_as": [
+      "Velvet Chollima",
+      "Emerald Sleet",
+      "THALLIUM",
+      "Black Banshee",
+      "APT43 (in part)",
+      "TA406 (in part)",
+      "TA427",
+      "Springtail",
+      "Earth Kumiho",
+      "PatheticSlug",
+      "Sparkling Pisces"
+    ],
+    "attack_group": {
+      "id": "G0094",
+      "url": "https://attack.mitre.org/groups/G0094/"
+    },
+    "indicator_campaigns": [
+      "Kimsuky"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "Kimsuky is the only cluster documented here that is not trying to make money. Its product is correspondence, and its targets are the people who write about, negotiate with or advise governments on North Korea: think-tank researchers, academics, journalists, defectors and foreign-ministry staff.",
+      "The approach is patient: a first message asks for nothing, from an address impersonating a real journalist or academic. The payload comes later, usually as a webmail-lookalike credential page, since a mailbox password gives lasting access to a correspondence network."
+    ],
+    "tradecraft": [
+      "Like the <a href=\"/clusters/contagious-interview/\">IT-worker cluster</a>, Kimsuky builds rapport with a stranger under a fabricated identity, but the personas differ sharply.",
+      "IT-worker personas must survive hiring and employment, so are heavily documented; Kimsuky personas need only survive one exchange, so are thin and disposable.",
+      "Collection has no moment of theft to hunt for, unlike <a href=\"/clusters/apt38/\">APT38</a>: success is a mailbox that works normally while someone else also reads it."
+    ],
+    "defender_view": [
+      "The observable is rarely malware but identity and mail configuration: forwarding rules, OAuth grants to unfamiliar applications, or app passwords nobody recognises.",
+      "A first-attempt sign-in from an unexpected location may follow a password typed into a lookalike login page days earlier.",
+      "Staff on Korean Peninsula policy should verify unsolicited, well-informed approaches from journalists or academics out of band before opening attachments or links."
+    ],
+    "further_reading": [
+      {
+        "title": "North Korean Advanced Persistent Threat Focus: Kimsuky (AA20-301A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa20-301a",
+        "publisher": "CISA, FBI and U.S. Cyber Command",
+        "date": "2020-10-27",
+        "note": "The baseline description of the cluster's targeting and technique set. Marked as archived and dated in its indicators, but the account of the social-engineering approach and the interest in mail configuration has held up."
+      },
+      {
+        "title": "U.S., ROK Agencies Alert: DPRK Cyber Actors Impersonating Targets to Collect Intelligence",
+        "url": "https://www.nsa.gov/Press-Room/Press-Releases-Statements/Press-Release-View/Article/3413621/us-rok-agencies-alert-dprk-cyber-actors-impersonating-targets-to-collect-intell/",
+        "publisher": "NSA, FBI, U.S. Department of State and Republic of Korea agencies",
+        "date": "2023-06-01",
+        "note": "The joint advisory on impersonation of journalists and academics, and the one to hand to a think-tank or newsroom audience: it is written for the people being targeted rather than for their security team."
+      },
+      {
+        "title": "Unraveling Sparkling Pisces's Tool Set: KLogEXE and FPSpy",
+        "url": "https://unit42.paloaltonetworks.com/kimsuky-new-keylogger-backdoor-variant/",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2024-09-26",
+        "note": "Unit 42's own name for this cluster and the source for two malware families added to its arsenal since the CISA and NSA advisories above."
+      }
+    ]
+  },
+  {
+    "id": "rgb-reconnaissance-general-bureau",
+    "label": "RGB (Reconnaissance General Bureau)",
+    "description": "Used as a profile tag when the citing source (e.g. a DOJ indictment) attributes an individual directly to the RGB without a more specific named sub-cluster.",
+    "also_known_as": [],
+    "indicator_campaigns": [
+      "Kimsuky",
+      "Lazarus Group",
+      "APT38",
+      "Andariel",
+      "APT37",
+      "Konni",
+      "Moonstone Sleet",
+      "IT Worker Fraud",
+      "Contagious Interview"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "This is not a behavioural cluster. The Reconnaissance General Bureau is North Korea's foreign intelligence organisation, and the tag records only that a source, such as an FBI wanted notice or U.S. charging document, places an individual inside it without naming a narrower group.",
+      "It is a strong attribution to a state organisation, made by a government that must defend it in court, but it says nothing about what the person did. Those carrying it were charged in unrelated operations."
+    ],
+    "tradecraft": [
+      "There is no RGB tradecraft to describe: the RGB is the employer, and every technique documented elsewhere sits under it.",
+      "Public reporting most often names Bureau 121; Mandiant's 2022 mapping assesses Lab 110 as its expanded form under the 3rd Bureau.",
+      "Mandiant assesses Lazarus Group, APT38 and Andariel as likely subordinate to it, though North Korea's command structure is opaque and unsettled.",
+      "The tag shows which individuals a government source places inside the state apparatus, as distinct from a vendor cluster name."
+    ],
+    "defender_view": [
+      "Nothing here is hunted directly; follow the behavioural cluster a profile also carries.",
+      "<a href=\"/clusters/lazarus-group/\">Lazarus Group</a> covers destructive and financial intrusions, <a href=\"/clusters/andariel/\">Andariel</a> ransomware-funded espionage, and <a href=\"/clusters/contagious-interview/\">Contagious Interview and IT-worker fraud</a> the employment and fake-recruiter schemes.",
+      "An attribution to \"the RGB\" claims sponsorship, not tradecraft."
+    ],
+    "further_reading": [
+      {
+        "title": "Three North Korean Military Hackers Indicted in Wide-Ranging Scheme to Commit Cyberattacks and Financial Crimes Across the Globe",
+        "url": "https://www.justice.gov/archives/opa/pr/three-north-korean-military-hackers-indicted-wide-ranging-scheme-commit-cyberattacks-and",
+        "publisher": "U.S. Department of Justice",
+        "date": "2021-02-17",
+        "note": "The fullest public statement of how the U.S. government describes RGB personnel and their placement, and the source of the attribution carried by three of the profiles on this page."
+      },
+      {
+        "title": "North Korea Cyber Group Conducts Global Espionage Campaign to Advance Regime's Military and Nuclear Programs (AA24-207A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a",
+        "publisher": "CISA, FBI, NSA and partner agencies",
+        "date": "2024-07-25",
+        "note": "An advisory that names a specific element of the bureau rather than the bureau in general, which is what makes it a useful counter-example: it shows what a narrower attribution looks like when a source can make one."
+      },
+      {
+        "title": "The DPRK's Violation and Evasion of UN Sanctions through Cyber and Information Technology Worker Activities (MSMT 2025/2)",
+        "url": "https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf",
+        "publisher": "Multilateral Sanctions Monitoring Team",
+        "date": "2025-10-22",
+        "note": "A multi-government report on the revenue side of the same apparatus. Long, but its account of how earnings are moved is the clearest published explanation of what the intrusion and employment operations are ultimately for."
+      },
+      {
+        "title": "Not So Lazarus: Mapping DPRK Cyber Threat Groups to Government Organizations",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/mapping-dprk-groups-to-government",
+        "publisher": "Mandiant",
+        "date": "2022-03-22",
+        "note": "The organisational chart most of the vendor cluster names on this site are mapped against: which bureau each group is assessed to sit under, and why Lab 110 is treated as the successor to Bureau 121."
+      }
+    ]
+  },
+  {
+    "id": "contagious-interview",
+    "label": "Remote Worker Fraud / Contagious Interview",
+    "description": "DPRK-linked fraudulent IT-worker and fake-recruiter schemes: fraudulent remote-developer employment and fake job-interview malware delivery (\"Contagious Interview\").",
+    "also_known_as": [
+      "Famous Chollima",
+      "Wagemole",
+      "UNC5267",
+      "Jasper Sleet",
+      "Nickel Tapestry",
+      "DeceptiveDevelopment",
+      "UNC5342",
+      "Void Dokkaebi",
+      "WaterPlum",
+      "PurpleBravo",
+      "Gwisin Gang",
+      "Tenacious Pungsan",
+      "DEV#POPPER",
+      "TAG-121",
+      "Coral Sleet",
+      "Storm-1877"
+    ],
+    "indicator_campaigns": [
+      "IT Worker Fraud",
+      "Contagious Interview"
+    ],
+    "hunt_tags": [
+      "DPRK IT Worker Fraud",
+      "Contagious Interview",
+      "Famous Chollima",
+      "DeceptiveDevelopment",
+      "Laptop Farm",
+      "ClickFix",
+      "BeaverTail",
+      "InvisibleFerret",
+      "OtterCookie",
+      "GolangGhost",
+      "EtherHiding"
+    ],
+    "overview": [
+      "Two halves run through the same hiring process. In the IT-worker scheme the operator is the candidate: hired under a fabricated or stolen identity, paid a salary remitted to the DPRK, and reaching a company laptop through a facilitator who keeps it powered on with remote access running.",
+      "In Contagious Interview the operator is the interviewer: a recruiter sends a developer a coding assignment whose dependencies install BeaverTail, InvisibleFerret or OtterCookie. The halves share personas, freelance platforms, GitHub histories and some infrastructure, so one tag covers both. Vendor names for it overlap rather than coincide."
+    ],
+    "tradecraft": [
+      "Access is granted rather than taken: no exploit, phishing or access broker, only a job offer, onboarding and a laptop couriered to a given address.",
+      "The operator holds legitimate credentials, an approved device and a reason to read source code, a position <a href=\"/clusters/apt38/\">APT38</a> spends months reaching.",
+      "Persistence is employment, not implants; the longest-running risk is an insider with commit access, and reporting documents extortion using data taken during a contract.",
+      "Contagious Interview targets individual developers, reaching organisations through their credentials; malware repeatedly targets browser credential stores, wallet extensions and development tooling.",
+      "On-chain delivery, where a smart contract holds the loader stage, is tracked on the <a href=\"/etherhiding/\">EtherHiding Tracker</a>."
+    ],
+    "defender_view": [
+      "Employment side: remote-access tools installed in the first days and never removed, or several on one machine.",
+      "Also an IP-KVM device, a VS Code dev tunnel, an RDP or VNC listener, or anti-idle utilities on an employee endpoint.",
+      "At the network edge: commercial VPN egress (Astrill recurs) and one address serving several unconnected employees, which is what a laptop farm looks like.",
+      "Identity signals appear first: a camera that stays off or composited video, and an address or phone number shared across applicants.",
+      "A shallow, quickly built portfolio and GitHub history, or a payroll redirect request soon after onboarding.",
+      "The <a href=\"/hunts/\">hunt library</a> has a query for each, with telemetry and false positives.",
+      "Interview side: a repo cloned from a recruiter's link, a package install, then an outbound Node or Python connection to an unseen host."
+    ],
+    "further_reading": [
+      {
+        "title": "The DPRK's Violation and Evasion of UN Sanctions through Cyber and Information Technology Worker Activities (MSMT 2025/2)",
+        "url": "https://msmt.info/view/save/2025/10/22/26294780-c396-407d-bb33-88afe988cd96-The_DPRK%E2%80%99s_Violation_and_Evasion_of_UN_Sanctions_through_Cyber_and_Information_Technology_Worker_Activities_(MSMT_2025_2).pdf",
+        "publisher": "Multilateral Sanctions Monitoring Team",
+        "date": "2025-10-22",
+        "note": "The broadest official account of the IT-worker scheme. Start here for scale, for the money flow and for the sanctions context; it is a long PDF and not a technical read."
+      },
+      {
+        "title": "Staying a Step Ahead: Mitigating the DPRK IT Worker Threat",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/mitigating-dprk-it-worker-threat",
+        "publisher": "Google Cloud (Mandiant)",
+        "date": "2024-09-23",
+        "note": "The best single starting point on how one worker gets hired and stays hired, and on what a facilitator in the hiring country actually does. Ends with hiring and endpoint controls worth acting on directly."
+      },
+      {
+        "title": "North Korea's Fraudulent IT Employment Scheme: A Cybersecurity Threat",
+        "url": "https://www.recordedfuture.com/research/inside-the-scam-north-koreas-it-worker-threat",
+        "publisher": "Recorded Future (Insikt Group)",
+        "date": "2025-02-13",
+        "note": "The persona and infrastructure side: how identities are constructed, which platforms they are staged on, and how the supporting websites cluster together."
+      },
+      {
+        "title": "Likely DPRK Network Backstops on GitHub, Targets Companies Globally",
+        "url": "https://nisos.com/research/dprk-github-employment-fraud/",
+        "publisher": "Nisos",
+        "date": "2025-03-04",
+        "note": "On how personas vouch for one another. Explains why a candidate's GitHub history can look busy and collaborative and still be almost entirely self-referential, which is the failure mode most hiring checks have."
+      },
+      {
+        "title": "Ketman's Guide to Identifying a Suspicious Github Account Associated with DPRK",
+        "url": "https://www.ketman.org/identifying-suspicious-gh-accounts.html",
+        "publisher": "ketman.org",
+        "date": "2024-11-01",
+        "note": "The practical triage guide: what to look at on an account, in what order, and what each signal is and is not worth. The most directly usable item on this list if you are reviewing one specific candidate."
+      },
+      {
+        "title": "i3 Threat Advisory: Identifying North Korean IT Workers: Key Threat Indicators",
+        "url": "https://www.dtex.ai/resources/i3-threat-advisory-inside-the-dprk/",
+        "publisher": "DTEX Systems (i3)",
+        "date": "2025-05-14",
+        "note": "The source of the bulk email dataset that makes up most of this site's index. Read its own caveats about false positives before treating any address drawn from it as an identification."
+      },
+      {
+        "title": "Unmasking the DPRK Remote Worker Problem",
+        "url": "https://www.silentpush.com/blog/unmasking-the-dprk-remote-worker-problem/",
+        "publisher": "Silent Push",
+        "date": "2026-01-12",
+        "note": "Infrastructure pivoting rather than persona analysis: how portfolio sites, recruitment fronts and supporting domains connect, and what to pivot on when you have one host and want the rest."
+      },
+      {
+        "title": "Fake North Korean IT Worker Linked to BeaverTail Video Conference App Phishing Attack",
+        "url": "https://unit42.paloaltonetworks.com/fake-north-korean-it-worker-activity-cluster/",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2024-11-14",
+        "note": "A published case of the two halves of this cluster touching: infrastructure tied to an IT-worker persona overlapping with Contagious Interview malware delivery. Read it if the merged tag on this page looks arbitrary."
+      },
+      {
+        "title": "North Korea's Contagious Interview Campaign Escalates: 338 Malicious npm Packages, 50,000 Downloads",
+        "url": "https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages",
+        "publisher": "Socket",
+        "date": "2025-10-10",
+        "note": "The scale of the package side in one place, with the naming and typosquatting patterns laid out. Useful mainly for understanding why blocking individual package names does not work as a control."
+      },
+      {
+        "title": "Tenacious Pungsan: A DPRK threat actor linked to Contagious Interview",
+        "url": "https://securitylabs.datadoghq.com/articles/tenacious-pungsan-dprk-threat-actor-contagious-interview/",
+        "publisher": "Datadog Security Labs",
+        "date": "2024-10-24",
+        "note": "A close technical read of what a malicious package does once installed, at the level of the loader and its staging. The counterpart to the Socket report's breadth."
+      },
+      {
+        "title": "New North Korean campaign uses fake coding interviews to steal developer credentials",
+        "url": "https://www.elastic.co/security-labs/contagious-interview-malware-svg-steganography",
+        "publisher": "Elastic Security Labs",
+        "date": "2026-07-18",
+        "note": "How the delivery chain has moved away from an obviously malicious dependency, in this case hiding stages inside image files. Read alongside the older analyses to see what has and has not changed."
+      },
+      {
+        "title": "Contagious Interview | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms",
+        "url": "https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops/",
+        "publisher": "SentinelOne (SentinelLABS)",
+        "date": "2025-09-04",
+        "note": "An unusual angle: what the operators looked up about themselves on threat-intelligence platforms, and what that shows about their staging and their awareness of being tracked."
+      },
+      {
+        "title": "DPRK Adopts EtherHiding: Nation-State Malware Hiding on Blockchains",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/dprk-adopts-etherhiding",
+        "publisher": "Google Threat Intelligence Group",
+        "date": "2025-10-16",
+        "note": "The reporting behind this site's EtherHiding Tracker: a loader stage held in a smart contract, which cannot be taken down the way a hosting account can."
+      },
+      {
+        "title": "Publication of North Korea Information Technology Workers Advisory",
+        "url": "https://ofac.treasury.gov/recent-actions/20220516",
+        "publisher": "U.S. Department of State, Treasury and FBI",
+        "date": "2022-05-16",
+        "note": "The original joint guidance, written for employers and freelance platforms rather than for analysts. Dated in its specifics, but still the document to point a hiring or payroll team at."
+      },
+      {
+        "title": "Contagious Interview: MITRE ATT&CK group entry (G1052)",
+        "url": "https://attack.mitre.org/groups/G1052/",
+        "publisher": "MITRE",
+        "date": "2026-07-31",
+        "note": "MITRE's own tracking of this name, active since 2023 and covering both cyberespionage and financially motivated operations. Its alias list (DeceptiveDevelopment, Gwisin Gang, Tenacious Pungsan, DEV#POPPER, PurpleBravo, TAG-121) matches the malware-delivery names above rather than the employment-fraud ones."
+      },
+      {
+        "title": "How Microsoft names threat actors",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming",
+        "publisher": "Microsoft Learn",
+        "date": "2026-08-18",
+        "note": "The source for Coral Sleet and its prior Storm-1877 designation, and for Jasper Sleet's own entry, both listed as Microsoft's names for slices of this cluster."
+      }
+    ]
+  },
+  {
+    "id": "andariel",
+    "label": "Andariel",
+    "description": "A DPRK cluster the FBI identifies as a unit of the Reconnaissance General Bureau, named in U.S. charging documents over ransomware intrusions against healthcare and defence targets — distinct from the financially-motivated bank-heist activity tracked under APT38.",
+    "also_known_as": [
+      "Onyx Sleet",
+      "Silent Chollima",
+      "PLUTONIUM",
+      "Stonefly",
+      "DarkSeoul",
+      "APT45",
+      "Jumpy Pisces"
+    ],
+    "attack_group": {
+      "id": "G0138",
+      "url": "https://attack.mitre.org/groups/G0138/"
+    },
+    "indicator_campaigns": [
+      "Andariel"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "Andariel pays for its own espionage. A 2024 U.S. indictment describes ransomware against American hospitals and healthcare providers, with the proceeds funding intrusions into defence contractors, aerospace firms and energy and nuclear engineering organisations.",
+      "The victim list therefore looks unrelated, a hospital system and a nuclear engineering firm, and a sector lens will call the group unfocused. It is not: one set of victims pays for access to the other."
+    ],
+    "tradecraft": [
+      "Other clusters keep money and intelligence separate; in Andariel a ransom note and the theft of engineering documentation belong to the same operation.",
+      "Initial access differs: the joint U.S. and allied advisory emphasises exploitation of known vulnerabilities in internet-facing systems, not persuading a person.",
+      "The exposure is a patch level, which changes who owns the risk and what a defender can do in advance."
+    ],
+    "defender_view": [
+      "For healthcare and critical-infrastructure operators, the sequence is ordinary: an unpatched internet-facing system, a web shell, then lateral movement with harvested credentials.",
+      "Nothing in it is DPRK-specific; the hygiene that stops a criminal ransomware affiliate stops this.",
+      "Staging of documents and engineering data before encryption is not incidental, since the intrusion is also a collection operation.",
+      "If ransomware hits a defence, aerospace, energy or nuclear supply-chain organisation, ask the exfiltration question independently of the ransom question."
+    ],
+    "further_reading": [
+      {
+        "title": "North Korea Cyber Group Conducts Global Espionage Campaign to Advance Regime's Military and Nuclear Programs (AA24-207A)",
+        "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa24-207a",
+        "publisher": "CISA, FBI, NSA and partner agencies",
+        "date": "2024-07-25",
+        "note": "The joint advisory on this group, and the item to read first. It sets out the dual mission plainly and lists the initial-access vulnerabilities and post-exploitation behaviour the partner agencies observed."
+      },
+      {
+        "title": "North Korean Government Hacker Charged for Involvement in Ransomware Attacks Targeting U.S. Hospitals and Health Care Providers",
+        "url": "https://www.justice.gov/archives/opa/pr/north-korean-government-hacker-charged-involvement-ransomware-attacks-targeting-us-hospitals",
+        "publisher": "U.S. Department of Justice",
+        "date": "2024-07-25",
+        "note": "The indictment of Rim Jong Hyok, published the same day as the advisory. This is where the funding relationship is stated as a charge: ransom proceeds paying for the infrastructure used against defence and energy targets."
+      },
+      {
+        "title": "Jumpy Pisces Engages in Play Ransomware",
+        "url": "https://unit42.paloaltonetworks.com/north-korean-threat-group-play-ransomware/",
+        "publisher": "Unit 42 (Palo Alto Networks)",
+        "date": "2024-10-30",
+        "note": "Unit 42's own name for this cluster, and a documented case &mdash; assessed with moderate confidence &mdash; of it collaborating with or acting as an affiliate of the criminal Play ransomware operation rather than deploying its own encryptor."
+      }
+    ]
+  },
+  {
+    "id": "apt37",
+    "label": "APT37",
+    "description": "A DPRK espionage cluster working against South Korean targets and the diaspora around them, distinguished by a long-running custom implant, RokRAT, and by delivery that leans on shortcut files and document formats specific to the Korean desktop.",
+    "also_known_as": [
+      "ScarCruft",
+      "Reaper",
+      "Group123",
+      "InkySquid",
+      "Ricochet Chollima",
+      "TEMP.Reaper",
+      "RedEyes"
+    ],
+    "attack_group": {
+      "id": "G0067",
+      "url": "https://attack.mitre.org/groups/G0067/"
+    },
+    "indicator_campaigns": [
+      "APT37"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "APT37 targets journalists and researchers working on North Korea, defectors, human-rights organisations and the South Korean public sector, overlapping with <a href=\"/clusters/kimsuky/\">Kimsuky</a>. Its distinguishing feature is continuity of tooling: RokRAT has been attributed to it since 2016 and is still found in campaigns reported this year, rebuilt but recognisably the same.",
+      "Its reporting yields file hashes, command-and-control domains and addresses, unlike the email addresses, GitHub accounts and personas of the revenue-generating clusters. Both sit in the same index deliberately, since a defender holding one of these values does not care which side of the regime's ledger it came from."
+    ],
+    "tradecraft": [
+      "Delivery suits a Korean desktop: shortcut files with oversized embedded payloads, Hancom Office documents, and Korean-language lures about Korean policy.",
+      "Cloud storage and ordinary developer services carry command and control, so traffic looks like services the endpoint already uses.",
+      "It adopts whatever is newly ordinary, such as steganographic image loaders and commodity artificial-intelligence tooling, with the same implant underneath."
+    ],
+    "defender_view": [
+      "An oversized shortcut file is the most useful signal: genuine ones are a few kilobytes, those with an embedded script and decoy hundreds or more.",
+      "That size difference survives repeated retooling of the rest of the chain.",
+      "Otherwise watch for unfamiliar document formats, an office application spawning a scripting host, and unexpected outbound cloud-storage connections.",
+      "Hashes and infrastructure age quickly; these behavioural shapes do not."
+    ],
+    "further_reading": [
+      {
+        "title": "APT37: Mitre ATT&CK group entry",
+        "url": "https://attack.mitre.org/groups/G0067/",
+        "publisher": "MITRE",
+        "date": "2026-07-31",
+        "note": "Dated to the entry's last modification on ATT&CK."
+      }
+    ]
+  },
+  {
+    "id": "konni",
+    "label": "Konni",
+    "description": "A DPRK cluster named for the malware family it runs, reported alongside Kimsuky often enough that several vendors treat the two as one and others keep them apart; this site indexes it under its own label and says so where a source disagrees.",
+    "also_known_as": [
+      "Opal Sleet",
+      "OSMIUM",
+      "TA406 (in part)",
+      "APT43 (in part)",
+      "Planedown",
+      "Vedalia"
+    ],
+    "attack_group": {
+      "id": "S0356",
+      "url": "https://attack.mitre.org/software/S0356/",
+      "type": "software"
+    },
+    "indicator_campaigns": [
+      "Konni"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "Konni is the least settled label on this site. The name comes from a malware family first reported in 2017, and activity around it has been attributed to a cluster of its own, to <a href=\"/clusters/kimsuky/\">Kimsuky</a>, and to a toolset shared by more than one team.",
+      "Targets are Korean-peninsula policy work, Russian diplomatic entities and, more recently, developers. Microsoft's current designation, Opal Sleet, is listed alongside both Konni and APT43, though APT43 is also an alias of Kimsuky here. Many sources carry two campaign labels."
+    ],
+    "tradecraft": [
+      "Delivery is by document: archives with a shortcut or macro-bearing file, a decoy that opens correctly, and a script chain fetching the real payload.",
+      "Reporting documents lures disguised as Hangul documents and malware generated with commodity artificial-intelligence tooling.",
+      "Staging uses services already allowed, usually a cloud storage provider or developer platform, rather than infrastructure the operator must register."
+    ],
+    "defender_view": [
+      "Treat a Konni indicator like a Kimsuky one and do not spend effort on the boundary between them.",
+      "The generalising parts are archive-with-shortcut delivery, a decoy that opens correctly, and a script host launched from a document directory.",
+      "Where a source names both clusters, this site records both labels, so filtering by either returns the shared reporting."
+    ],
+    "further_reading": [
+      {
+        "title": "KONNI: MITRE ATT&CK software entry",
+        "url": "https://attack.mitre.org/software/S0356/",
+        "publisher": "MITRE",
+        "date": "2025-10-21",
+        "note": "Dated to the entry's last modification on ATT&CK."
+      },
+      {
+        "title": "How Microsoft names threat actors",
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/microsoft-threat-actor-naming",
+        "publisher": "Microsoft Learn",
+        "date": "2026-08-18",
+        "note": "The source for Opal Sleet's alias row, which lists OSMIUM, Velvet Chollima, Planedown, Konni and APT43 together &mdash; the clearest single illustration of how far this boundary problem extends into Microsoft's own taxonomy."
+      },
+      {
+        "title": "Vedalia APT Group Exploits Oversized LNK Files to Deliver Malware",
+        "url": "https://gbhackers.com/vedalia-apt-group-exploits/",
+        "publisher": "GBHackers",
+        "date": "2024-04-08",
+        "note": "The dated report behind the Vedalia alias added above, which it states plainly is \"also known by its alias Konni.\" This site could not trace which vendor coined Vedalia first, and Malpedia's Konni entry (credited to the MISP Project) corroborates the name without dating it, so it is listed as documented rather than attributed to a specific naming scheme."
+      }
+    ]
+  },
+  {
+    "id": "moonstone-sleet",
+    "label": "Moonstone Sleet",
+    "description": "A DPRK cluster that stands up whole fake software companies rather than only fake employees, and the only one on this site reported to have run its own ransomware against a target it had already been paid by.",
+    "also_known_as": [
+      "Storm-1789"
+    ],
+    "attack_group": {
+      "id": "G1036",
+      "url": "https://attack.mitre.org/groups/G1036/"
+    },
+    "indicator_campaigns": [
+      "Moonstone Sleet"
+    ],
+    "hunt_tags": [],
+    "overview": [
+      "Moonstone Sleet is the <a href=\"/clusters/contagious-interview/\">IT-worker and Contagious Interview</a> playbook scaled up: instead of a fabricated engineer, the cluster registers a company with a website, staff profiles and a product, which approaches targets as a vendor or partner. Reporting describes trojanised games, npm packages and a bespoke tank-battle game lure.",
+      "It is also where revenue lines otherwise kept apart run together: it has been reported taking a salary as a contractor, selling software and deploying ransomware against an organisation it already worked inside. That mixture is why it is a separate cluster rather than under Lazarus Group."
+    ],
+    "tradecraft": [
+      "The fabricated company is the tradecraft: a target that would refuse a stranger's archive accepts a build from a vendor it believes it contracted.",
+      "The indicators that follow are ordinary (package names, hashes, infrastructure); the thing to recognise is the shell in front of them.",
+      "The cluster is also placed on the fraudulent-employment side, so an organisation can meet it twice, as applicant and as supplier."
+    ],
+    "defender_view": [
+      "Diligence on a small software vendor is the control, and a procurement question before a security one.",
+      "Ask how old the company is, who its named staff are elsewhere on the web, and whether anything existed before first contact.",
+      "After first contact, observables are those described elsewhere on this site: a package pulled from a registry, an unexpected build, an unusual outbound connection."
+    ],
+    "further_reading": [
+      {
+        "title": "Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks",
+        "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/",
+        "publisher": "Microsoft",
+        "date": "2024-05-28"
+      },
+      {
+        "title": "Moonstone Sleet: MITRE ATT&CK group entry",
+        "url": "https://attack.mitre.org/groups/G1036/",
+        "publisher": "MITRE",
+        "date": "2026-07-31",
+        "note": "Dated to the entry's last modification on ATT&CK."
+      }
+    ]
+  },
+  {
+    "id": "polinrider",
+    "label": "PolinRider",
+    "description": "A DPRK/Lazarus-attributed campaign, documented by OpenSourceMalware, that injects malicious code into config files inside compromised legitimate GitHub repositories rather than through a fake-interview lure — reported as operationally merged with the Contagious Interview cluster.",
+    "indicator_campaigns": [
+      "PolinRider"
+    ],
+    "hunt_tags": [
+      "PolinRider"
+    ],
+    "overview": [
+      "PolinRider is the cluster where nobody is tricked. A legitimate repository has malicious code written into configuration files developers rarely read, such as <code>postcss.config.mjs</code>, <code>tailwind.config.js</code>, <code>eslint.config.mjs</code> and <code>.vscode/tasks.json</code>, and the project builds and runs as before.",
+      "OpenSourceMalware reports more than 2,400 affected repositories across over a thousand owners, almost all of them victims of a compromised account, a merged malicious pull request or a tampered dependency. The list is published as a hunting aid and carries that warning on every page."
+    ],
+    "tradecraft": [
+      "The payload is the one <a href=\"/clusters/contagious-interview/\">Contagious Interview</a> delivers, reported by OpenSourceMalware as operationally merged; the difference is delivery.",
+      "Removing the lure removes every social signal: no recruiter to check, no interview, no application to correlate.",
+      "A developer pulling a tampered dependency is compromised without being contacted.",
+      "Command and control is reported to read encrypted instructions from TRON and Aptos wallet addresses, which cannot be seized or sinkholed.",
+      "This resembles the <a href=\"/etherhiding/\">EtherHiding tracker</a> and OtterCookie's reported smart-contract reads, but the three are related in approach, not confirmed as one technique."
+    ],
+    "defender_view": [
+      "The observable is a configuration file changing when nothing about the project's configuration did, such as <code>postcss.config.mjs</code> or <code>tailwind.config.js</code> in an unrelated pull request.",
+      "<code>.vscode/tasks.json</code> executes on folder open, so it belongs in review scope.",
+      "On the dependency side, lockfile discipline and review of transitive updates do more than any endpoint control.",
+      "The <a href=\"/repo-scanner/\">DPRK Repo Scanner</a> offers a remote GitHub search and a local signature scan of a checkout; treat results as leads.",
+      "An affected repository is far more likely a victim than a participant, and nothing on that page accuses its owner."
+    ],
+    "further_reading": [
+      {
+        "title": "PolinRider",
+        "url": "https://github.com/OpenSourceMalware/PolinRider",
+        "publisher": "OpenSourceMalware",
+        "date": "2026-07-10",
+        "note": "The primary source for the campaign and the origin of the compromised-repository list this site republishes. Read it first: it carries the injection signatures, the config files targeted, and the per-snapshot repository counts."
+      },
+      {
+        "title": "North Korea's Contagious Interview Campaign Escalates: 338 Malicious npm Packages, 50,000 Downloads",
+        "url": "https://socket.dev/blog/north-korea-contagious-interview-campaign-338-malicious-npm-packages",
+        "publisher": "Socket.dev",
+        "date": "2025-10-10",
+        "note": "The registry side of the same problem. Useful here because the npm packages in this site's ruleset for this campaign impersonate Tailwind and PostCSS utilities, which is what makes a tampered config file look unremarkable."
+      },
+      {
+        "title": "Lazarus-Linked npm Malware Masquerades as Rollup Polyfills",
+        "url": "https://research.jfrog.com/post/rollup-polyfill-masquerading/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-06-30",
+        "note": "A worked example of build tooling used as the hiding place rather than the target. Read it for what a malicious package pretending to be part of the toolchain actually looks like in a project tree."
+      }
+    ]
+  }
+]

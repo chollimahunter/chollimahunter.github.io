@@ -1,0 +1,80 @@
+{
+  "slug": "kim-il",
+  "display_name": "Kim Il",
+  "aliases": [
+    "Julien Kim",
+    "Tony Walker"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Lazarus Group",
+    "RGB (Reconnaissance General Bureau)"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/kim-il.png",
+    "caption": "Photograph published by the FBI on its wanted notice for Kim Il. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/kim-il"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Cyber's Most Wanted",
+    "details": [
+      {
+        "label": "Place of Birth",
+        "value": "Democratic People’s Republic of Korea (North Korea)"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Languages",
+        "value": "English, Korean, Mandarin Chinese"
+      }
+    ],
+    "caution": "Kim Il is allegedly a state-sponsored North Korean hacker who is part of an alleged criminal conspiracy responsible for some of the costliest computer intrusions in history. These intrusions caused damage to computer systems of, and stole currency and virtual currency from, numerous victims. Kim was alleged to be a participant in a wide-ranging criminal conspiracy undertaken by a group of hackers of the North Korean government’s Reconnaissance General Bureau (RGB). The conspiracy comprised North Korean hacking groups that some private cybersecurity researchers have labeled the “Lazarus Group” and Advanced Persistent Threat 38 (APT38). For his part in the conspiracy, Kim is alleged to have been directly involved in the development and dissemination of a malicious cryptocurrency application, in cyber-enabled heists from financial institutions, and in the Marine Chain initial coin offering. On December 8, 2020, a federal arrest warrant was issued for Kim in the United States District Court, Central District of California, after he was charged with one count of conspiracy to commit wire fraud and bank fraud, and one count of conspiracy to commit computer fraud (computer intrusions).",
+    "remarks": "Kim is a North Korean citizen last known to be in North Korea. Kim has traveled to Singapore and Russia in the past and has reported a date of birth in 1994.",
+    "related_cases": [
+      {
+        "title": "PARK JIN HYOK",
+        "url": "https://www.fbi.gov/wanted/cyber/park-jin-hyok"
+      },
+      {
+        "title": "JON CHANG HYOK",
+        "url": "https://www.fbi.gov/wanted/cyber/jon-chang-hyok"
+      }
+    ],
+    "poster_url": "https://www.fbi.gov/wanted/cyber/kim-il/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "KIM IL — FBI Wanted",
+      "url": "https://www.fbi.gov/wanted/cyber/kim-il",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    }
+  ],
+  "disclaimer": [
+    "Named by the FBI as an alleged state-sponsored North Korean hacker within a conspiracy the notice describes as responsible for some of the costliest computer intrusions in history, run by hackers of the DPRK government's Reconnaissance General Bureau.",
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean_provenance": "reconstructed",
+  "name_korean": "김일"
+}

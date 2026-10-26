@@ -1,0 +1,907 @@
+{
+  "_comment": "Every image and attachment the lazarus.group registry publishes, keyed by the registry's own path, with how the site shows it. On 28 September 2026 the maintainer decided to carry all of them, identity documents included, so every image is use:true. kind says what it is (photo, wanted, screenshot, group, document, resume, avatar) and sets the caption; face:false keeps it out of the face grid and out of the card portrait. file is the mirrored copy. attachments are the registry's files[] (CVs as PDF), mirrored under /assets/files/lazarus-group/. An image or file with no entry here is not shown: a refresh that finds new ones leaves them off until they are added.",
+  "reviewed": "2026-09-28",
+  "images": {
+    "/team-images/kazune-takeda/kazune_takeda_1.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-kazune-takeda.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kazune-takeda/kazune_takeda_2.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kazune-takeda/kazune_takeda_3.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "single person (a shoulder at the edge, no face)",
+      "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-3.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kazune-takeda/kazune_takeda_4.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "portrait",
+      "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-4.jpg",
+      "kind": "photo"
+    },
+    "/team-images/damian-mularz/damian_mularz_1.png": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-damian-mularz.jpg",
+      "kind": "photo"
+    },
+    "/team-images/naoki-murano/naoki_murano_0.jpg": {
+      "use": true,
+      "reason": "crowd of bystanders",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-0.jpg"
+    },
+    "/team-images/naoki-murano/naoki_murano_1.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "single person",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-1.jpg",
+      "kind": "photo"
+    },
+    "/team-images/naoki-murano/naoki_murano_2.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "single person",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/naoki-murano/naoki_murano_3.jpg": {
+      "use": true,
+      "reason": "group row, unnamed others",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-3.jpg"
+    },
+    "/team-images/naoki-murano/naoki_murano_5.jpg": {
+      "use": true,
+      "reason": "contains a passport scan",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-5.jpg"
+    },
+    "/team-images/naoki-murano/naoki_murano_6.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "both people are registry personas (Naoki Murano, Jenson Collins)",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-6.jpg",
+      "kind": "photo"
+    },
+    "/team-images/jenson-collins/jenson_collins_1.jpg": {
+      "use": true,
+      "reason": "child bystander",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-1.jpg"
+    },
+    "/team-images/jenson-collins/jenson_collins_2.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "both people are filed personas (Jenson Collins, Seo Sigoto)",
+      "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/jenson-collins/jenson_collins_3.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "all three are registry personas (Jenson Collins, Keisuke Watanabe, Kazune Takeda)",
+      "file": "/assets/img/personas/lazarus-group-jenson-collins--jenson-collins-3.jpg",
+      "kind": "photo"
+    },
+    "/team-images/leon-lin/leon_lin_1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-leon-lin.jpg",
+      "kind": "photo"
+    },
+    "/team-images/leon-lin/leon_lin_3.jpg": {
+      "use": true,
+      "reason": "collage includes stadium crowd",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-leon-lin--leon-lin-3.jpg"
+    },
+    "/team-images/keisuke-watanabe/keisuke_1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-keisuke-watanabe.jpg",
+      "kind": "photo"
+    },
+    "/team-images/benjamin-nguyen/benjamin-nguyen.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-benjamin-nguyen.jpg",
+      "kind": "photo"
+    },
+    "/team-images/andy-bell/andy-bell.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-andy-bell.jpg",
+      "kind": "photo"
+    },
+    "/team-images/danny-jin/danny-jin.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-danny-jin.jpg",
+      "kind": "photo"
+    },
+    "/team-images/muhammad-abdullah/muhammad-abdullah.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-muhammad-abdullah.jpg",
+      "kind": "photo"
+    },
+    "/team-images/eric-andrade/eric-andrade.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-eric-andrade.jpg",
+      "kind": "photo"
+    },
+    "/team-images/eric-andrade/eric-andrade-2.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-eric-andrade--eric-andrade-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/sandy-nguyen/sandy-nguyen.png": {
+      "use": true,
+      "face": true,
+      "reason": "profile card",
+      "file": "/assets/img/personas/lazarus-group-sandy-nguyen.jpg",
+      "kind": "photo"
+    },
+    "/team-images/sandy-nguyen/1937972789497168329.jpeg": {
+      "use": true,
+      "reason": "collage includes crowds",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-sandy-nguyen--1937972789497168329.jpg"
+    },
+    "/team-images/joshua-palmer/joshua-palmer-wanted.png": {
+      "use": true,
+      "face": true,
+      "kind": "wanted",
+      "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-wanted.jpg",
+      "reason": "Wanted poster for Joshua Palmer."
+    },
+    "/team-images/joshua-palmer/joshua-palmer-wong-shao-onn.png": {
+      "use": true,
+      "face": false,
+      "reason": "profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-wong-shao-onn.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/joshua-palmer/joshua-palmer-primorye.png": {
+      "use": true,
+      "face": true,
+      "reason": "portrait",
+      "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-primorye.jpg",
+      "kind": "photo"
+    },
+    "/team-images/bryan-cho/bryan-cho-despace.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-bryan-cho.jpg",
+      "kind": "photo"
+    },
+    "/team-images/bryan-cho/bryan-cho-chris-yu-1.png": {
+      "use": true,
+      "reason": "passport",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-chris-yu-1.jpg"
+    },
+    "/team-images/bryan-cho/bryan-cho-chris-yu-2.png": {
+      "use": true,
+      "face": false,
+      "reason": "profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-chris-yu-2.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/bong-chee-shen/bong-chee-shen.png": {
+      "use": true,
+      "reason": "identity card",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-bong-chee-shen--bong-chee-shen.jpg"
+    },
+    "/team-images/bong-chee-shen/1939838063192285351.jpeg": {
+      "use": true,
+      "face": true,
+      "reason": "selfie",
+      "file": "/assets/img/personas/lazarus-group-bong-chee-shen--1939838063192285351.jpg",
+      "kind": "photo"
+    },
+    "/team-images/alex-hong/alex-hong-depo.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-alex-hong.jpg",
+      "kind": "photo"
+    },
+    "/team-images/alex-hong/alex-hong-despace.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-alex-hong--alex-hong-despace.jpg",
+      "kind": "photo"
+    },
+    "/team-images/alex-hong/alex-hong.png": {
+      "use": true,
+      "face": false,
+      "reason": "profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-alex-hong--alex-hong.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/jason-kwon/jason-kwon.png": {
+      "use": true,
+      "reason": "crowd and identity document",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-jason-kwon--jason-kwon.jpg"
+    },
+    "/team-images/jason-kwon/jason-kwon-despace.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-jason-kwon--jason-kwon-despace.jpg",
+      "kind": "photo"
+    },
+    "/team-images/jason-lee/jason-lee-party-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-jason-lee.jpg",
+      "kind": "photo"
+    },
+    "/team-images/jason-lee/jason-lee-party-2.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-jason-lee--jason-lee-party-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/gary-lee/gary-lee-1292049042562834432.png": {
+      "use": true,
+      "face": true,
+      "reason": "promo card",
+      "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-1292049042562834432.jpg",
+      "kind": "photo"
+    },
+    "/team-images/gary-lee/gary-lee-chien-hui-lee.png": {
+      "use": true,
+      "face": false,
+      "reason": "profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-chien-hui-lee.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/gary-lee/gary-lee-karlo-lee-chan.png": {
+      "use": true,
+      "reason": "identity card",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-gary-lee--gary-lee-karlo-lee-chan.jpg"
+    },
+    "/team-images/jikun-liao/jikun-liao.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-jikun-liao.jpg",
+      "kind": "photo"
+    },
+    "/team-images/jikun-liao/james-lee-coindesk.jpg": {
+      "use": true,
+      "reason": "driving licence",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-jikun-liao--james-lee-coindesk.jpg"
+    },
+    "/team-images/mauro-liu/mauro-liu-depo.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-mauro-liu.jpg",
+      "kind": "photo"
+    },
+    "/team-images/mauro-liu/mauroliu-magiccraft-01.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-mauro-liu--mauroliu-magiccraft-01.jpg",
+      "kind": "photo"
+    },
+    "/team-images/mauro-liu/mauroliu-magiccraft-02.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-mauro-liu--mauroliu-magiccraft-02.jpg",
+      "kind": "photo"
+    },
+    "/team-images/mauro-liu/magiccraft.png": {
+      "use": true,
+      "reason": "video call of a whole team, uninvolved faces",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-mauro-liu--magiccraft.jpg"
+    },
+    "/team-images/eric-liu/eric-liu-magiccraft-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-eric-liu.jpg",
+      "kind": "photo"
+    },
+    "/team-images/eric-liu/eric-liu-magiccraft-2.jpeg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-eric-liu--eric-liu-magiccraft-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/daiki-saito/daiki-saito-magiccraft-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-daiki-saito.jpg",
+      "kind": "photo"
+    },
+    "/team-images/daiki-saito/daiki-saito-magiccraft-2.jpeg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-daiki-saito--daiki-saito-magiccraft-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/daiki-saito/1439093300242239490.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-daiki-saito--1439093300242239490.jpg",
+      "kind": "photo"
+    },
+    "/team-images/lucas-wong/lucas-wong.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-lucas-wong.jpg",
+      "kind": "photo"
+    },
+    "/team-images/hiroto-iwaki/1913290058670416183-01.jpeg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-hiroto-iwaki.jpg",
+      "kind": "photo"
+    },
+    "/team-images/hiroto-iwaki/1913290058670416183-02.png": {
+      "use": true,
+      "face": false,
+      "reason": "portfolio screenshot",
+      "file": "/assets/img/personas/lazarus-group-hiroto-iwaki--1913290058670416183-02.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/motoki-masuo/1912647965505736753.png": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-motoki-masuo.jpg",
+      "kind": "photo"
+    },
+    "/team-images/bram-chan/bram-chen.png": {
+      "use": true,
+      "face": false,
+      "reason": "profile screenshot (the black box covers the employer, not the face)",
+      "file": "/assets/img/personas/lazarus-group-bram-chan--bram-chen.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/nelson-murua/munchables-alberto-mira-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-nelson-murua.jpg",
+      "kind": "photo"
+    },
+    "/team-images/nelson-murua/munchables-alberto-mira-2.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-alberto-mira-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/nelson-murua/munchables-nelson-murua-alberto-mira.jpeg": {
+      "use": true,
+      "face": false,
+      "reason": "GitHub profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-nelson-murua-alberto-mira.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/nelson-murua/munchables-super1114.jpeg": {
+      "use": true,
+      "face": false,
+      "reason": "GitHub profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-nelson-murua--munchables-super1114.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/paul-martin-werewolves/munchables-paul-song-senior-dev.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-martin-werewolves.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-martin-werewolves/munchables-paul-martin.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-martin-werewolves--munchables-paul-martin.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-martin-cryptopunk/munchables-paul-martin-ivar.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-martin-cryptopunk.jpg",
+      "kind": "photo"
+    },
+    "/team-images/pete-yama/bill-tovitt-pete-yama.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-pete-yama.jpg",
+      "kind": "photo"
+    },
+    "/team-images/quinn-lee/quinn-lee-av.png": {
+      "use": true,
+      "reason": "decorative, a toy",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-quinn-lee--quinn-lee-av.jpg"
+    },
+    "/team-images/ryuhei-matsuda/ryuhei-matsuda-av.png": {
+      "use": true,
+      "reason": "decorative cartoon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei-matsuda-av.jpg"
+    },
+    "/team-images/ryuhei-matsuda/ryuhei.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei.jpg",
+      "kind": "photo"
+    },
+    "/team-images/ryuhei-matsuda/ryuhei_passport.jpeg": {
+      "use": true,
+      "reason": "passport",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-ryuhei-matsuda--ryuhei-passport.jpg"
+    },
+    "/team-images/kei-nakano/kei-nakano-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-kei-nakano.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kei-nakano/kei-nakano-2.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kei-nakano/kei-nakano-3.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-3.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kei-nakano/kei-nakano-av.png": {
+      "use": true,
+      "reason": "a film actor's likeness",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-kei-nakano--kei-nakano-av.jpg"
+    },
+    "/team-images/matias-diaz/matias-diaz-av.png": {
+      "use": true,
+      "reason": "a car",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-matias-diaz--matias-diaz-av.jpg"
+    },
+    "/team-images/russell-hieu/russell-hieu-1.jpg": {
+      "use": true,
+      "face": false,
+      "reason": "search-result screenshot",
+      "file": "/assets/img/personas/lazarus-group-russell-hieu.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/russell-hieu/russell-hieu-twitter.jpg": {
+      "use": true,
+      "face": false,
+      "reason": "X profile screenshot",
+      "file": "/assets/img/personas/lazarus-group-russell-hieu--russell-hieu-twitter.jpg",
+      "kind": "screenshot"
+    },
+    "/team-images/russell-hieu/russell-hieu-av.png": {
+      "use": true,
+      "reason": "identicon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-russell-hieu--russell-hieu-av.jpg"
+    },
+    "/team-images/james-zook/james-zook-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-james-zook--james-zook-1.jpg",
+      "kind": "photo"
+    },
+    "/team-images/james-zook/james-zook-team.jpg": {
+      "use": true,
+      "reason": "crowd",
+      "face": false,
+      "kind": "group",
+      "file": "/assets/img/personas/lazarus-group-james-zook--james-zook-team.jpg"
+    },
+    "/team-images/jannik-villostas/jannik-villostas-av.png": {
+      "use": true,
+      "reason": "pixel graphic",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-jannik-villostas--jannik-villostas-av.jpg"
+    },
+    "/team-images/janul-azwan/janul-azwan-1.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-janul-azwan.jpg",
+      "kind": "photo"
+    },
+    "/team-images/janul-azwan/janul-azwan-av.png": {
+      "use": true,
+      "reason": "pixel graphic",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-janul-azwan--janul-azwan-av.jpg"
+    },
+    "/team-images/peter-wang/peter-wang-1.png": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-peter-wang.jpg",
+      "kind": "photo"
+    },
+    "/team-images/peter-wang/peter-wang-2.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "single person",
+      "file": "/assets/img/personas/lazarus-group-peter-wang--peter-wang-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/peter-wang/peter-wang-av.png": {
+      "use": true,
+      "reason": "cartoon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-peter-wang--peter-wang-av.jpg"
+    },
+    "/team-images/milan-zubic/milan-zubic-av.png": {
+      "use": true,
+      "reason": "illustration",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-milan-zubic--milan-zubic-av.jpg"
+    },
+    "/team-images/scott-brown/scott-brown-av.png": {
+      "use": true,
+      "reason": "coin",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-scott-brown--scott-brown-av.jpg"
+    },
+    "/team-images/artur-dranhoi/artur-dranhoi-av.png": {
+      "use": true,
+      "reason": "coin",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-artur-dranhoi--artur-dranhoi-av.jpg"
+    },
+    "/team-images/joel-kursala/joel-kursala-av.png": {
+      "use": true,
+      "reason": "clip art",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-joel-kursala--joel-kursala-av.jpg"
+    },
+    "/team-images/anderson-lee/anderson-lee-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-anderson-lee.jpg",
+      "kind": "photo"
+    },
+    "/team-images/anderson-lee/anderson-lee-2.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-anderson-lee--anderson-lee-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/anderson-lee/anderson-lee-av.png": {
+      "use": true,
+      "reason": "identicon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-anderson-lee--anderson-lee-av.jpg"
+    },
+    "/team-images/oleksandr-muravskyi/oleksandr-muravskyi-av.png": {
+      "use": true,
+      "reason": "coin",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-oleksandr-muravskyi--oleksandr-muravskyi-av.jpg"
+    },
+    "/team-images/dan-mao/dan-mao-av.png": {
+      "use": true,
+      "reason": "cartoon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-solcrazy910--dan-mao-av.jpg"
+    },
+    "/team-images/aleksandar-jovanovic/aleksandar-jovanovic-av.png": {
+      "use": true,
+      "reason": "stock image of code",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-alek806--aleksandar-jovanovic-av.jpg"
+    },
+    "/team-images/andy-hoog/andy-hoog-av.jpg": {
+      "use": true,
+      "reason": "illustration",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-andy-hoog--andy-hoog-av.jpg"
+    },
+    "/team-images/gabriel-yiu/gabriel-yiu-av.png": {
+      "use": true,
+      "reason": "identicon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-gabriel-yiu--gabriel-yiu-av.jpg"
+    },
+    "/team-images/jack-li/jack-li-av.png": {
+      "use": true,
+      "reason": "identicon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-jack-li--jack-li-av.jpg"
+    },
+    "/team-images/jordan-lopez/jordan-lopez-av.png": {
+      "use": true,
+      "reason": "Octocat",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-jordan-lopez--jordan-lopez-av.jpg"
+    },
+    "/team-images/mike-willie-lee/mike-willie-lee-1.jpg": {
+      "use": true,
+      "reason": "crop of an identity-document photo (number stamped across it)",
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-mike-willie-lee--mike-willie-lee-1.jpg"
+    },
+    "/team-images/mike-willie-lee/mike-willie-lee-av.png": {
+      "use": true,
+      "reason": "identicon",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-mike-willie-lee--mike-willie-lee-av.jpg"
+    },
+    "/team-images/monkey/monkey-1.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "single person",
+      "file": "/assets/img/personas/lazarus-group-eric-manager--monkey-1.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-song/paul-song-1.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-song.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-song/paul-song-2.png": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-2.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-song/paul-song-3.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-3.jpg",
+      "kind": "photo"
+    },
+    "/team-images/paul-song/paul-song-av.png": {
+      "use": true,
+      "reason": "cartoon still",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-paul-song--paul-song-av.jpg"
+    },
+    "/team-images/dustin-lee/dustin-lee.png": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-dustin-lee.jpg",
+      "kind": "photo"
+    },
+    "/team-images/cutupdev/cutupdev-av.jpg": {
+      "use": true,
+      "reason": "engraving",
+      "face": false,
+      "kind": "avatar",
+      "file": "/assets/img/personas/lazarus-group-cutupdev--cutupdev-av.jpg"
+    },
+    "/team-images/ming-cheng/ming-cheng-1.png": {
+      "use": true,
+      "face": true,
+      "reason": "on call (registry now serves a photo; the 9 Sept exclusion was for a graphic)",
+      "file": "/assets/img/personas/lazarus-group-ming-cheng--ming-cheng-1.jpg",
+      "kind": "photo"
+    },
+    "/team-images/mario-yi/mario-yi-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-mario-yi.jpg",
+      "kind": "photo"
+    },
+    "/team-images/pham-hoang-quy/pham-hoang-quy-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-pham-hoang-quy.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kevin-tan/kevin-tan-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-kevin-tan.jpg",
+      "kind": "photo"
+    },
+    "/team-images/pavel-yamato/pavel-yamato-1.jpg": {
+      "use": true,
+      "face": true,
+      "reason": "on call",
+      "file": "/assets/img/personas/lazarus-group-pavel-yamato.jpg",
+      "kind": "photo"
+    },
+    "/team-images/andy-cho/andy-cho-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-andy-cho.jpg",
+      "kind": "photo"
+    },
+    "/team-images/john-wilhelmsson/john-wilhelmsson-1.jpg": {
+      "use": true,
+      "face": true,
+      "file": "/assets/img/personas/lazarus-group-john-wilhelmsson.jpg",
+      "kind": "photo"
+    },
+    "/team-images/kazune-takeda/kazune_takeda_passport.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-kazune-takeda--kazune-takeda-passport.jpg",
+      "reason": "ID document scan"
+    },
+    "/team-images/damian-mularz/damian_mularz_2.png": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-damian-mularz--damian-mularz-2.jpg",
+      "reason": "Front of fake Polish ID card"
+    },
+    "/team-images/damian-mularz/damian_mularz_3.png": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-damian-mularz--damian-mularz-3.jpg",
+      "reason": "Back of fake Polish ID card"
+    },
+    "/team-images/naoki-murano/naoki_murano_4.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-naoki-murano--naoki-murano-4.jpg",
+      "reason": "Naoki KYC"
+    },
+    "/team-images/leon-lin/leon_lin_2.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-leon-lin--leon-lin-2.jpg",
+      "reason": "KYC Leon Lin"
+    },
+    "/team-images/leon-lin/CV_1.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "resume",
+      "file": "/assets/img/personas/lazarus-group-leon-lin--cv-1.jpg",
+      "reason": "Part 1 of Leon's Resume"
+    },
+    "/team-images/leon-lin/CV_2.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "resume",
+      "file": "/assets/img/personas/lazarus-group-leon-lin--cv-2.jpg",
+      "reason": "Part 2 of Leon's Resume"
+    },
+    "/team-images/keisuke-watanabe/keisuke_2.png": {
+      "use": true,
+      "face": true,
+      "kind": "photo",
+      "file": "/assets/img/personas/lazarus-group-keisuke-watanabe--keisuke-2.jpg",
+      "reason": "Younger Keisuke Watanabe"
+    },
+    "/team-images/joshua-palmer/joshua-palmer-id.png": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-joshua-palmer--joshua-palmer-id.jpg",
+      "reason": "ID of Joshua Palmer."
+    },
+    "/team-images/bryan-cho/bryan-cho-wanted.png": {
+      "use": true,
+      "face": true,
+      "kind": "wanted",
+      "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-wanted.jpg",
+      "reason": "Wanted poster for Bryan Cho."
+    },
+    "/team-images/bryan-cho/bryan-cho-id.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-bryan-cho--bryan-cho-id.jpg",
+      "reason": "ID of Bryan Cho."
+    },
+    "/team-images/bong-chee-shen/bong-chee-wanted.png": {
+      "use": true,
+      "face": true,
+      "kind": "wanted",
+      "file": "/assets/img/personas/lazarus-group-bong-chee-shen--bong-chee-wanted.jpg",
+      "reason": "Wanted poster for Bong Chee Shen."
+    },
+    "/team-images/pemba-sherpa/pemba-sherpa-wanted.jpeg": {
+      "use": true,
+      "face": true,
+      "kind": "wanted",
+      "file": "/assets/img/personas/lazarus-group-pemba-sherpa--pemba-sherpa-wanted.jpg",
+      "reason": "Wanted poster for Pemba Sherpa."
+    },
+    "/team-images/chai-somsri/chai-somsri.jpg": {
+      "use": true,
+      "face": false,
+      "kind": "document",
+      "file": "/assets/img/personas/lazarus-group-chai-somsri--chai-somsri.jpg",
+      "reason": "KYC photo of Chai Somsri."
+    }
+  },
+  "attachments": {
+    "/team-images/kazune-takeda/Resume_1.pdf": {
+      "file": "/assets/files/lazarus-group/kazune-takeda--resume-1.pdf",
+      "bytes": 632744,
+      "name": "Kazune's Resume 1",
+      "description": "Old resume (2022)"
+    },
+    "/team-images/kazune-takeda/Resume_2.pdf": {
+      "file": "/assets/files/lazarus-group/kazune-takeda--resume-2.pdf",
+      "bytes": 92058,
+      "name": "Kazune's Resume 2",
+      "description": "Updated resume (2025)"
+    },
+    "/team-images/damian-mularz/damian_mularz_cv.pdf": {
+      "file": "/assets/files/lazarus-group/damian-mularz--damian-mularz-cv.pdf",
+      "bytes": 101589,
+      "name": "damian_mularz_cv.pdf",
+      "description": "Damian Mularz CV"
+    },
+    "/team-images/ming-cheng/ming_cheng_cv.pdf": {
+      "file": "/assets/files/lazarus-group/ming-cheng--ming-cheng-cv.pdf",
+      "bytes": 26440,
+      "name": "ming_cheng_cv.pdf",
+      "description": "Ming Cheng CV"
+    }
+  }
+}

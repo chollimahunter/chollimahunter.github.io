@@ -1,0 +1,88 @@
+name: Copied repository scores
+
+# Dispatch only, no schedule. Runs scripts/score-copied-repos.js over the next
+# batch of GitHub accounts in the index plus a fixed control set, and opens a
+# pull request with scripts/data/repo-copy-scores.json. Nothing here reaches the
+# site. See docs/repo-copy-scores.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many accounts to score"
+        required: false
+        default: "10"
+
+permissions:
+  contents: read
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
+# on manual review; no step reads the value until a merge step is added.
+env:
+  AUTO_MERGE: "false"
+
+concurrency:
+  group: repo-copy-scores
+  cancel-in-progress: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Score
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT: ${{ github.event.inputs.count || '10' }}
+        run: |
+          if ! [[ "$COUNT" =~ ^[1-9][0-9]*$ ]]; then
+            echo "::error::count must be a positive integer, got '$COUNT'"
+            exit 1
+          fi
+          node scripts/score-copied-repos.js --limit "$COUNT" | tee summary.txt
+
+      - name: Pull request body
+        run: |
+          {
+            echo "Copied-repository similarity scores for the next batch of GitHub accounts in the index, with the control set. A flag is a measurement, not attribution; compare against the control rate. See docs/repo-copy-scores.md."
+            echo
+            echo '```'
+            cat summary.txt
+            echo '```'
+          } > pr-body.md
+
+      - name: Open pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: repository copy scores"
+          title: "Copied-repository scores"
+          body-path: pr-body.md
+          branch: repo-copy-scores/results
+          add-paths: |
+            scripts/data/repo-copy-scores.json
+          labels: automated,data-sync
+
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"

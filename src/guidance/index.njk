@@ -1,0 +1,143 @@
+---
+layout: base.njk
+title: "If you find a match"
+description: "What to do when a hire or applicant matches an indicator on this site, and what to do if your own name, photograph or account is listed here."
+permalink: "/guidance/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/guidance/index.njk — guidance for the two readers a match affects
+
+  #employers: every step is attributed to cited public guidance (FBI PSAs,
+  the 2022 State/Treasury/FBI advisory, SEAL). Do not add an unsupported step.
+  #listed: promises nothing the About page (#corrections) does not: no response
+  time, no retention period. Contact routes come from src/_data/site.json.
+#}
+<section>
+  <h1>If you find a match</h1>
+  <p>
+    A match is the start of an inquiry, not its conclusion. This page covers
+    <a href="#employers">an organisation whose hire or applicant matches</a>
+    and <a href="#listed">a person who finds their own details listed here</a>.
+  </p>
+</section>
+
+<section>
+  <h2 id="employers">If a hire or an applicant matches</h2>
+  {% set disclaimer = {
+    title: "Not legal advice",
+    body: 'This page summarises public guidance. An organisation acting on a match should involve its own legal counsel.'
+  } %}{% include "partials/disclaimer.njk" %}
+
+  <ol class="steps">
+    <li class="card step" id="employers-what-a-match-means">
+      <span class="step__number">1</span>
+      <h3 class="step__title">Read what the match establishes</h3>
+      <p>
+        An indicator is a value a cited source reported in connection with DPRK
+        activity, not a finding about its holder. It may belong to a victim or
+        be a coincidence; the <a href="/glossary/#labels">labels</a> show how
+        strongly the source put it.
+      </p>
+    </li>
+    <li class="card step" id="employers-check-the-source">
+      <span class="step__number">2</span>
+      <h3 class="step__title">Check it against the cited source</h3>
+      <p>
+        Confirm the cited record says what the entry says about the same value.
+        If it does not, report it by <a href="/submit/">submission email</a>.
+      </p>
+    </li>
+    <li class="card step" id="employers-preserve-evidence">
+      <span class="step__number">3</span>
+      <h3 class="step__title">Preserve evidence, and do not alert the person yet</h3>
+      <ul>
+        <li>The FBI&rsquo;s {% set externalLink = { url: "https://www.ic3.gov/PSA/2024/PSA240516", text: "announcement of 16 May 2024" } %}{% include "partials/external-link.njk" %} recommends evaluating the suspect&rsquo;s network activity.</li>
+        <li>SEAL&rsquo;s {% set externalLink = { url: "https://frameworks.securityalliance.org/dprk-it-workers/mitigating-dprk-it-workers", text: "guidance on mitigating DPRK IT workers" } %}{% include "partials/external-link.njk" %} advises against ending the engagement abruptly.</li>
+        <li>The FBI&rsquo;s {% set externalLink = { url: "https://www.ic3.gov/PSA/2025/PSA250123", text: "announcement of 23 January 2025" } %}{% include "partials/external-link.njk" %} notes that discovered workers have held stolen data for ransom.</li>
+      </ul>
+    </li>
+    <li class="card step" id="employers-involve-counsel">
+      <span class="step__number">4</span>
+      <h3 class="step__title">Bring in counsel, HR and security together</h3>
+      <p>
+        The {% set externalLink = { url: "https://ofac.treasury.gov/media/923126/download", text: "May 2022 State, Treasury and FBI guidance" } %}{% include "partials/external-link.njk" %} warns of legal consequences, including
+        sanctions designation, for involvement in DPRK IT-worker activity.
+      </p>
+    </li>
+    <li class="card step" id="employers-verify">
+      <span class="step__number">5</span>
+      <h3 class="step__title">Verify the person, not only the value</h3>
+      <p>
+        The same guidance recommends verifying employment and education history
+        through independently found contacts.
+      </p>
+    </li>
+    <li class="card step" id="employers-report">
+      <span class="step__number">6</span>
+      <h3 class="step__title">Report it</h3>
+      <p>
+        In the United States, report to the {% set externalLink = { url: "https://www.ic3.gov/", text: "Internet Crime Complaint Center (IC3)" } %}{% include "partials/external-link.njk" %} or the local FBI field
+        office. Elsewhere, use the national cyber security authority. The
+        <a href="/sources/#reporting">reporting list</a> gathers these
+        documents.
+      </p>
+    </li>
+  </ol>
+
+  <h3 id="fair-treatment">Fair treatment</h3>
+  <p>
+    Screening must rest on verifiable conduct and documents, never on
+    nationality, ethnicity, name, accent or appearance. Many
+    <a href="/remote-workers/red-flags/">red flags</a> are common among genuine
+    hires.
+  </p>
+</section>
+
+<section>
+  <h2 id="listed">If you are listed on this site</h2>
+
+  <h3 id="listed-why">Why a real person&rsquo;s details can appear</h3>
+  <p>
+    The operators use stolen and borrowed names, documents, photographs and
+    accounts, so your details can appear without any involvement on your part.
+  </p>
+
+  <h3 id="listed-what-an-entry-says">What an entry does and does not say</h3>
+  <p>
+    An indicator entry says only that a cited source reported the value in
+    connection with DPRK activity. See the <a href="/about/#disclaimer">disclaimer</a>.
+  </p>
+
+  <h3 id="listed-request">How to ask for a correction or removal</h3>
+  <p>
+    Use the <a href="/submit/">submission email</a>
+    {%- if site.repoUrl %} or open an issue on the
+    {% set externalLink = { url: site.repoUrl + "/issues", text: "GitHub repository" } %}{% include "partials/external-link.njk" %}
+    {%- endif %}.
+    {%- if site.businessEmail and "TODO" not in site.businessEmail %}
+    A request that should not be public can be sent to
+    <a href="mailto:{{ site.businessEmail }}">{{ site.businessEmail }}</a>.
+    {%- endif %}
+    Include:
+  </p>
+  <ul>
+    <li>the address of the page and the identifier as it appears there;</li>
+    <li>what is wrong, such as a stolen identity or a value the source did not print;</li>
+    <li>a link to a public record that supports the correction, if one exists.</li>
+  </ul>
+  <p>Do not send identity documents; email is not a secure channel.</p>
+
+  <h3 id="listed-what-happens">What happens to a request</h3>
+  <p>
+    A person reads every request. An entry its cited source does not support is
+    corrected or withdrawn. Copies already taken, including search engine
+    caches, are outside the site&rsquo;s control.
+  </p>
+
+  <p id="listed-government-records">
+    Where an entry rests on an indictment, sanctions designation or wanted
+    notice, contest the record with the issuing authority; the site corrects
+    only its own misstatements.
+  </p>
+</section>

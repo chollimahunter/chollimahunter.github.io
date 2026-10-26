@@ -1,0 +1,83 @@
+{
+  "slug": "ho-jong-son",
+  "display_name": "Ho Jong Son",
+  "aliases": [
+    "Ho' Cho'ng So'n"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on November 4, 2025 under Executive Orders 13694 as amended and 13810, program tags CYBER4 and DPRK4",
+    "details": [
+      {
+        "label": "Location",
+        "value": "North Korea"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "November 21, 1964"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Japan"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "754120050 (North Korea)"
+      }
+    ],
+    "caution": "Jang Kuk Chol (Jang) and Ho Jong Son are North Korean bankers who have helped manage funds, including $5.3 million in cryptocurrency, on behalf of OFAC-designated First Credit Bank. A portion of these funds can be linked to a DPRK ransomware actor that has previously targeted U.S. victims and handled revenue from DPRK IT workers."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, November 4, 2025: North Korea and Cyber-related Designations (bankers, Korea Mangyongdae Computer Technology Corporation, Ryujong Credit Bank)",
+      "url": "https://ofac.treasury.gov/recent-actions/20251104",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-11-04",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions DPRK Bankers and Institutions Involved in Laundering Cybercrime Proceeds and IT Worker Funds",
+      "url": "https://home.treasury.gov/news/press-releases/sb0302",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-11-04",
+      "type": "press_release"
+    },
+    {
+      "title": "美 “자금세탁 北 개인·기관 신규 제재” (United States sanctions further DPRK individuals and entities over money laundering)",
+      "url": "https://www.segye.com/newsView/20251105516968",
+      "publisher": "Segye Ilbo",
+      "date": "2025-11-05",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "Ho Jong Son is profiled here as one of two North Korean bankers the Treasury says managed $5.3 million in cryptocurrency for First Credit Bank, part of it traceable to a ransomware actor that also handled DPRK IT workers' revenue.",
+    "OFAC prints no Hangul for this name and the entry carries no photograph, so no Korean rendering is published rather than a reconstructed one.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-19",
+  "name_korean": "허정선",
+  "name_korean_provenance": "cited"
+}

@@ -1,0 +1,32 @@
+{#
+  partials/ioc-download-controls.njk — export the current search results
+  ==========================================================================
+  Included inside a `.ioc-search` panel (immediately after the filter chips,
+  before the results count) on /remote-workers/, a cluster page and
+  /repo-scanner/. Lives inside that panel on purpose: the panel itself starts
+  `hidden` and is revealed only once ioc-search.js has loaded the index, so a
+  reader without JavaScript never sees a control that could not work for them
+  — the static whole-index and per-type CSV/JSON links in the page's
+  <noscript> block are the export path for that reader instead. On
+  /remote-workers/ this is the only download control a reader with
+  JavaScript sees.
+
+  ioc-search.js reads [data-ioc-download-format] and wires
+  [data-ioc-download-button] to build a file client-side from whatever the
+  current search text and filters have narrowed the result list to (`matches`
+  in that script), not the full dataset. The only choice here is the format:
+  the type filter above already narrows by type, so a second type control here
+  only duplicated it.
+#}
+<div class="filter-chips" data-ioc-download>
+  <span class="filter-chips__label">Download these results</span>
+  <select data-ioc-download-format aria-label="Download format" data-short-label="Format">
+    <option value="stix">STIX 2.1 bundle (JSON)</option>
+    <option value="misp">MISP event (JSON)</option>
+    <option value="csv">CSV</option>
+    <option value="txt">Plain text (values only)</option>
+    <option value="json">JSON</option>
+  </select>
+  <button type="button" class="btn btn--secondary" data-ioc-download-button>Download</button>
+</div>
+<p class="form-hint" data-ioc-download-status role="status" aria-live="polite"></p>

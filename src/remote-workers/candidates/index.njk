@@ -1,0 +1,119 @@
+---
+layout: base.njk
+title: "Potential DPRK Profiles"
+description: "LinkedIn profiles matching heuristic signals associated with DPRK IT-worker persona accounts, held under human review before any connection to these operations is stated."
+permalink: "/remote-workers/candidates/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
+---
+{#
+  src/remote-workers/candidates/index.njk — the public face of the
+  candidate-generation workflow in scripts/scan-candidates.js and
+  src/_data/iocs/candidates.json.
+
+  THIS PAGE DOES NOT NAME A LEAD. It renders only candidates whose `status` is
+  "under-review": a human opened the profile under an authenticated session
+  and judged it worth continued attention. Entries at "lead" (heuristic match
+  only, not yet opened) and "false-positive" (checked and cleared) are read
+  from the same file for the summary counts below but never rendered: a lead
+  is a real person's name attached to nothing but a title and a URL pattern,
+  and publishing that list would be exactly the weak-heuristic accusation this
+  workflow exists to prevent. A "confirmed" row is no longer a potential
+  profile and is not listed here either; its indicators stay in the Remote
+  Workers search (scripts/lib/candidates.js).
+
+  The rows come from the candidatePages global, already in the page's default
+  order: highest confidence first, then by name. Each row's name opens its own
+  page (candidate-page.njk), which carries the review note and sources the
+  table has no room for.
+#}
+{% set active_tab = "candidates" %}
+{% set queue = iocs["candidates"] %}
+{% set published_candidates = candidatePages %}
+{% set lead_count = 0 %}
+{% set fp_count = 0 %}
+{% for candidate in queue.candidates %}
+  {% if candidate.status == "lead" %}
+    {% set lead_count = lead_count + 1 %}
+  {% elif candidate.status == "false-positive" %}
+    {% set fp_count = fp_count + 1 %}
+  {% endif %}
+{% endfor %}
+
+<section>
+  <h1>Potential DPRK Profiles</h1>
+  {% include "partials/profiles-tab-bar.njk" %}
+  <p>
+    Profiles that match the screening signals of DPRK IT-worker personas and
+    have been opened by a reviewer. None is presented as a confirmed operator;
+    see the note below the table.
+  </p>
+  <p class="form-hint">
+    {{ published_candidates | length }} published{% if lead_count %}, {{ lead_count }} awaiting review{% endif %}{% if fp_count %}, {{ fp_count }} cleared{% endif %}.
+  </p>
+</section>
+
+<section>
+  {% if published_candidates.length %}
+  {% set tableFilter = { target: "#candidates-table", noun: "profiles", page: limits.list, id: "candidate-search-input", label: "Search profiles", placeholder: "Name, account, indicator or signal" } %}
+  {% include "partials/table-filter.njk" %}
+  <div class="table-scroll">
+    <table class="results-table" id="candidates-table">
+      <thead>
+        <tr>
+          <th scope="col">Persona name</th>
+          <th scope="col">Profile</th>
+          <th scope="col">Indicators</th>
+          <th scope="col">Confidence</th>
+          <th scope="col">Account created</th>
+          <th scope="col">Network</th>
+          <th scope="col">Claims</th>
+          <th scope="col">Line type</th>
+          <th scope="col">Photograph</th>
+          <th scope="col">Signals</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for candidate in published_candidates %}
+        {% set facts = candidate.facts | default({}, true) %}
+        <tr id="candidate-{{ candidate.slug }}">
+          <td><a href="{{ candidate.path }}">{{ candidate.display_name }}</a></td>
+          <td class="candidate-links">{% set candidateFact = "profile" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "indicators" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "confidence" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td class="cell-date">{% if facts.account_created %}{{ facts.account_created }}{% else %}&mdash;{% endif %}</td>
+          <td>{% set candidateFact = "network" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "claims" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "line" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "photo" %}{% include "partials/candidate-fact.njk" %}</td>
+          <td>{% set candidateFact = "signals" %}{% include "partials/candidate-fact.njk" %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% include "partials/table-filter-more.njk" %}
+  {% else %}
+  <p><em>No candidate has cleared authenticated review yet.</em></p>
+  {% endif %}
+</section>
+
+<section>
+  <h2>How a profile ends up here</h2>
+  <p>
+    Candidates are surfaced by search queries and marketplace scans, recorded
+    as unconfirmed leads, and published here only after a reviewer opens the
+    profile in a signed-in session and reads the details that distinguish a thin
+    persona from a real applicant. A profile that is confirmed leaves this list;
+    its indicators stay in the <a href="/remote-workers/">Remote Workers</a>
+    search.
+  </p>
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Unconfirmed leads under review",
+    preset: "not-proof",
+    body: 'Each row was read by a reviewer, and its confidence is this site&rsquo;s own screening score, not a source&rsquo;s. If an entry concerns you, see <a href="/guidance/#listed">the guidance for listed people</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

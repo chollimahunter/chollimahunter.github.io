@@ -1,0 +1,114 @@
+{
+  "slug": "park-jin-hyok",
+  "display_name": "Park Jin Hyok",
+  "aliases": [
+    "Jin Hyok Park",
+    "Pak Jin Hek",
+    "Pak Kwang Jin"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Lazarus Group",
+    "RGB (Reconnaissance General Bureau)"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/park-jin-hyok.jpg",
+    "caption": "Photograph of Park Jin Hyok published by the FBI on its wanted notice, shown here in the upscaled derivative hosted on Wikimedia Commons (a fourfold enlargement of a 301x400 source produced with Picsart), at that file's 960px rendition. Detail visible at this resolution is interpolated rather than photographic; the FBI original is linked in Sources. Both are public domain as works of the U.S. federal government.",
+    "source": "https://commons.wikimedia.org/wiki/File:Park_Jin_Hyok_(Upscaled).jpg"
+  },
+  "fake_ids": [],
+  "sources": [
+    {
+      "title": "North Korean Regime-Backed Programmer Charged With Conspiracy to Conduct Multiple Cyber Attacks and Intrusions",
+      "url": "https://www.justice.gov/archives/opa/pr/north-korean-regime-backed-programmer-charged-conspiracy-conduct-multiple-cyber-attacks-and",
+      "publisher": "U.S. Department of Justice",
+      "date": "2018-09-06",
+      "type": "press_release"
+    },
+    {
+      "title": "United States v. Park Jin Hyok — Criminal Complaint (filed June 8, 2018; unsealed September 6, 2018)",
+      "url": "https://www.justice.gov/opa/press-release/file/1092091/download",
+      "publisher": "U.S. Department of Justice",
+      "date": "2018-09-06",
+      "type": "court_filing"
+    },
+    {
+      "title": "Treasury Targets North Korea for Multiple Cyber-Attacks",
+      "url": "https://home.treasury.gov/news/press-releases/sm473",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2018-09-06",
+      "type": "press_release"
+    },
+    {
+      "title": "OFAC Recent Actions — SDN List Additions: Park Jin Hyok and Chosun Expo Joint Venture (September 6, 2018)",
+      "url": "https://ofac.treasury.gov/recent-actions/20180906_33",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2018-09-06",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "PARK JIN HYOK — FBI Wanted, Cyber",
+      "url": "https://www.fbi.gov/wanted/cyber/park-jin-hyok",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Park Jin Hyok — Wikipedia (cited for the Korean-script rendering of the name only)",
+      "url": "https://en.wikipedia.org/wiki/Park_Jin_Hyok",
+      "publisher": "Wikipedia",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual was formally named in a U.S. federal criminal complaint and an OFAC sanctions designation — it reflects the cited sources' own characterisation, not an independent determination by this site."
+  ],
+  "last_updated": "2026-08-30",
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Cyber's Most Wanted",
+    "details": [
+      {
+        "label": "Place of Birth",
+        "value": "Democratic People's Republic of Korea (North Korea)"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Languages",
+        "value": "English, Korean, Mandarin Chinese"
+      }
+    ],
+    "caution": "Park Jin Hyok is allegedly a state-sponsored North Korean computer programmer who is part of an alleged criminal conspiracy responsible for some of the costliest computer intrusions in history. These intrusions caused damage to computer systems of, and stole currency and virtual currency from, numerous victims. Park was alleged to be a participant in a wide-ranging criminal conspiracy undertaken by a group of hackers of the North Korean government’s Reconnaissance General Bureau (RGB). The conspiracy comprised North Korean hacking groups that some private cybersecurity researchers have labeled the “Lazarus Group” and Advanced Persistent Threat 38 (APT38). On December 8, 2020, a federal arrest warrant was issued for Park in the United States District Court, Central District of California, after he was charged with one count of conspiracy to commit wire fraud and bank fraud, and one count of conspiracy to commit computer fraud (computer intrusions). A federal arrest warrant was previously issued for Park on June 8, 2018, after he was charged with one count of conspiracy to commit wire fraud and one count of conspiracy to commit computer-related fraud (computer intrusion) in a federal criminal complaint.",
+    "remarks": "Park is a North Korean citizen last known to be in North Korea. Park has traveled to China in the past and has reported dates of birth in 1984 and 1981.",
+    "related_cases": [
+      {
+        "title": "KIM IL",
+        "url": "https://www.fbi.gov/wanted/cyber/kim-il"
+      },
+      {
+        "title": "JON CHANG HYOK",
+        "url": "https://www.fbi.gov/wanted/cyber/jon-chang-hyok"
+      }
+    ],
+    "poster_url": "https://www.fbi.gov/wanted/cyber/park-jin-hyok/@@download.pdf"
+  },
+  "name_korean": "박진혁",
+  "name_korean_provenance": "cited"
+}

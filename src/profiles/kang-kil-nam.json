@@ -1,0 +1,57 @@
+{
+  "slug": "kang-kil-nam",
+  "display_name": "Kang Kil Nam",
+  "aliases": [
+    "Kil-Nam Kang"
+  ],
+  "confidence_level": "high",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/kang-kil-nam.jpg",
+    "caption": "Identity photograph shown above the name Kil-Nam Kang on the organization chart of the Beijing cell published in the cited GitLab Threat Intelligence report, which GitLab describes as its assessment. Cropped from the report's image and reproduced for identification.",
+    "source": "https://about.gitlab.com/blog/gitlab-threat-intelligence-reveals-north-korean-tradecraft/"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Threat-intelligence report details",
+    "status": "Named by GitLab Threat Intelligence as the manager of a North Korean IT-worker cell in Beijing, in a report published on February 19, 2026",
+    "details": [
+      {
+        "label": "Name as printed",
+        "value": "Kil-Nam Kang in the report's text and chart; 강길남, given in Hangul in the report's text"
+      },
+      {
+        "label": "Role on GitLab's assessed organization chart",
+        "value": "Cell Manager"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean, per the report"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "GitLab Threat Intelligence Team reveals North Korean tradecraft",
+      "url": "https://about.gitlab.com/blog/gitlab-threat-intelligence-reveals-north-korean-tradecraft/",
+      "publisher": "GitLab Threat Intelligence",
+      "date": "2026-02-19",
+      "type": "threat_intel_report"
+    }
+  ],
+  "disclaimer": [
+    "Kang Kil Nam (강길남; Kil-Nam Kang in the report) is profiled here as the North Korean national whom GitLab Threat Intelligence assesses almost certainly controlled a private GitLab.com project holding the financial and administrative records of a North Korean IT-worker cell. GitLab assesses that the cell is highly likely colocated and operating from Beijing, that it currently includes seven other North Korean nationals, and that it earns revenue through freelance software development under false identities. The detailed records report income of more than US$1.64 million between the first quarter of 2022 and the third quarter of 2025, against a target of US$1.88 million, and less detailed records indicate the cell was operating as early as 2019.",
+    "GitLab reports that Kang managed the cell as two subteams in 2022 and tracked performance individually from 2023; kept a dossier on each member with performance reviews and copies of passports; held credentials to remotely access each member's workstation; and kept records of the facilitators the cell worked through. GitLab reports that Kang generally reached GitLab.com through Astrill VPN, and also from China Unicom addresses geolocated to Beijing, most recently 111.197.183.74.",
+    "GitLab reports that the cell's personnel dossiers describe every member as a researcher at the Kim Il-sung University Joint Research Center in Beijing (베이징주재 김일성종합대학 공동연구중심 연구사), and suggests the cell's presence in China may be under an academic pretext.",
+    "The confidence level of 'high' reflects GitLab's own wording, that the project is almost certainly controlled by Kang. It is a private company's assessment, not a criminal charge, a sanctions designation or a court finding."
+  ],
+  "last_updated": "2026-10-02",
+  "name_korean": "강길남",
+  "name_korean_provenance": "cited"
+}

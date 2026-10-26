@@ -1,0 +1,2550 @@
+/*
+  tokens.css — Chollima Hunter global design system
+  ==================================================
+  This is the single global stylesheet linked from base.njk
+  (<link rel="stylesheet" href="/assets/css/tokens.css">). Every page reuses
+  the classes/tokens defined here rather than inventing parallel ones. In
+  particular:
+
+    .disclaimer-banner  — sourcing/attribution disclaimer banner
+                           (used on profile pages, hunt pages, scan-result
+                           pages, EtherHiding result pages — anywhere a
+                           "claims are sourced / matches require manual
+                           review" notice is needed)
+    .query-block         — copy-paste-able code/query block (used for
+                           hunt queries, IOC lists, scan commands, etc.)
+
+  FONTS: Inter, Space Grotesk, and JetBrains Mono are self-hosted from
+  src/assets/fonts/ (SIL OFL-licensed static .woff2 weights) and loaded via
+  the @font-face block below — no external font CDN request at runtime.
+  See src/assets/fonts/LICENSE-fonts.txt for provenance.
+
+  DESIGN LANGUAGE: "Minimalist Dark, DPRK flag palette" — atmospheric depth
+  built from layered slate darkness (three visible tones: #0A0A0F ->
+  #12121A -> #1A1A24) rather than pure black, carrying the flag's red and
+  blue as two functional accents against a white/near-white foreground:
+  red (--accent, a brightened take on the flag's red so it clears AA
+  contrast on a near-black background) marks resting-state brand elements
+  — links, buttons, glows, badges, the footer star — while blue
+  (--accent-blue) is reserved for interactive-focus states — keyboard
+  focus rings, form-field focus, visited links, and the "medium
+  confidence" badge tier — so the two hues read as distinct signals rather
+  than competing for the same attention. Depth comes from soft ambient red
+  glows and semi-transparent "glass" card surfaces (backdrop-blur,
+  low-opacity borders), not hard shadows. Space Grotesk carries
+  headlines/display text, Inter carries body copy, JetBrains Mono carries
+  code and small metadata/label chrome (nav links, badges, tag chips).
+  Motion is smooth and restrained: 200ms ease-out for buttons/links, 300ms
+  ease-out for cards, subtle scale on hover/active — nothing bouncy or
+  dramatic. Borders stay very subtle (8-15% white opacity) throughout.
+*/
+
+/* ------------------------------------------------------------------ */
+/* Self-hosted fonts                                                    */
+/* ------------------------------------------------------------------ */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/space-grotesk-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-500.woff2") format("woff2");
+}
+
+/* ------------------------------------------------------------------ */
+/* Design tokens                                                       */
+/* ------------------------------------------------------------------ */
+:root {
+  /* DPRK flag palette — canonical hex values, kept for reference. The
+     active UI accents below (--accent, --accent-blue) are brightened
+     derivatives of --dprk-red / --dprk-blue rather than these literal
+     values, because the flag's actual red and blue are both too dark to
+     clear WCAG AA text contrast against a near-black background. */
+  --dprk-red: #C60C30;
+  --dprk-blue: #024FA2;
+  --dprk-white: #FFFFFF;
+  --dprk-near-black: #171717;
+
+  /* Layered slate ground, red + blue accent palette */
+  --background: #0A0A0F;
+  --background-alt: #12121A;
+  --foreground: #FAFAFA;
+  --muted: #1A1A24;
+  /* The design system's literal zinc-500 (#71717A) only measures 4.09:1
+     against --background (#0A0A0F) — short of the WCAG AA 4.5:1 the spec
+     itself claims for this pairing. Nudged one step lighter (still the
+     same muted zinc hue family) to actually hit ~5.77:1 and honor the
+     spec's stated accessibility intent rather than its literal hex value. */
+  --muted-foreground: #8A8A93;
+  /* Brightened from --dprk-red (#C60C30, ~2.4:1 on this background) to
+     clear AA's 4.5:1 for normal text while staying unmistakably red. */
+  --accent: #FF3B4E;
+  --accent-foreground: #0A0A0F;
+  /* 0.15 left the red badge text at 4.48:1 on the card surface, a hair under
+     AA; 0.10 clears it without changing the hue. */
+  --accent-muted: rgba(255, 59, 78, 0.10);
+  /* Borders, underlines and glows drawn in the accent hue — distinct from
+     --accent-muted (a fill) and merged from three near-identical opacities
+     (0.35, 0.4, 0.45) that were never meant to read as different strengths. */
+  --accent-line: rgba(255, 59, 78, 0.4);
+  --accent-line-soft: rgba(255, 59, 78, 0.25);
+  /* Brightened from --dprk-blue (#024FA2) the same way, for the same
+     reason. Reserved for interactive-focus signals — see the design-
+     language note at the top of this file. */
+  --accent-blue: #60A5FA;
+  --accent-blue-muted: rgba(96, 165, 250, 0.15);
+  --accent-blue-line: rgba(96, 165, 250, 0.3);
+  --accent-blue-line-strong: rgba(96, 165, 250, 0.5);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --border-strong: rgba(255, 255, 255, 0.25);
+  /* The boundary of an interactive control (a text input, a select, the
+     dropdown trigger, a filter chip). WCAG 1.4.11 wants 3:1 for the edge
+     that shows where a control is; --border is 1.19:1 and is kept for
+     surfaces that are not controls. This measures 3.75:1 on --background,
+     3.54:1 on --background-alt and 3.27:1 on --card-solid. */
+  --control-border: #6B6B75;
+  /* Faint white washes for a hovered row/link over a dark surface — two
+     strengths, not a severity scale. */
+  --surface-hover: rgba(255, 255, 255, 0.05);
+  --surface-hover-faint: rgba(255, 255, 255, 0.03);
+  --card: rgba(26, 26, 36, 0.6);
+  --card-hover: rgba(26, 26, 36, 0.8);
+  --card-solid: #1A1A24;
+  /* Deliberately the least transparent surface on the site — see .query-block. */
+  --surface-code: rgba(10, 10, 15, 0.7);
+  --ring: var(--accent-blue);
+  /* The focus-visible glow on text inputs, one declaration instead of the
+     ring + halo pair repeated wherever a field needs it. */
+  --focus-ring: 0 0 0 3px rgba(96, 165, 250, 0.2), 0 0 20px rgba(96, 165, 250, 0.1);
+
+  /* Back-compat aliases so every existing selector below keeps working */
+  --color-bg: var(--background);
+  --color-bg-alt: var(--background-alt);
+  --color-text: var(--foreground);
+  --color-text-muted: var(--muted-foreground);
+  --color-link: var(--accent);
+  --color-link-visited: var(--accent-blue);
+  --color-accent: var(--accent);
+  --color-focus-ring: var(--ring);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-hover);
+  --color-surface: var(--card);
+
+  /* Disclaimer / warning surfaces — pushed to a higher red intensity
+     (border + glow) than a plain card, the same visual language as a
+     highlighted card, rather than introducing a third hue. */
+  --color-disclaimer-bg: rgba(255, 59, 78, 0.08);
+  --color-disclaimer-border: var(--accent-line);
+  --color-disclaimer-text: #ffd0d6;
+
+  /* .badge--high's text color — a pale rose tint of --accent, legible at the
+     badge's low background opacity where --accent itself reads too dark. */
+  --badge-high-foreground: #ffb3ba;
+
+  /* Typography */
+  --font-display: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Type scale. Every literal font-size in the file below resolves to one of
+     these; values in em or "inherit" stay literal on purpose (relative to
+     whatever they sit inside). The four clamp() entries are the size-critical
+     display headings, kept fluid rather than snapping at a breakpoint. */
+  --text-xs: 0.72rem;
+  --text-sm: 0.8rem;
+  --text-md: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.15rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.4rem;
+  --text-h1: clamp(2rem, 4vw, 3rem);
+  --text-h1-sub: clamp(1.25rem, 2.5vw, 1.75rem);
+  --text-display: clamp(2.75rem, 7vw, 4.5rem);
+  --font-size-base: var(--text-base); /* alias — pre-dates the scale above, kept for callers that reach for it by this name */
+  --line-height-base: 1.65;
+  --tracking-tight: -0.025em;
+  --tracking-wide: 0.025em;
+
+  /* Motion — smooth and restrained, not bouncy */
+  --transition-fast: 200ms ease-out;
+  --transition-card: 300ms ease-out;
+
+  /* Shadows & glows — the signature effect: soft red light in the dark,
+     not hard drop shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.4);
+  --glow-sm: 0 0 20px rgba(255, 59, 78, 0.15);
+  --glow-md: 0 0 40px rgba(255, 59, 78, 0.2);
+  --glow-lg: 0 0 60px rgba(255, 59, 78, 0.25);
+  --border-glow: 0 0 0 1px rgba(255, 59, 78, 0.3), 0 0 20px rgba(255, 59, 78, 0.15);
+
+  /* Spacing scale */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4.5rem;
+
+  /* Layout */
+  --content-max-width: 80rem;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+}
+/* ------------------------------------------------------------------ */
+/* Breakpoint scale                                                    */
+/* ------------------------------------------------------------------ */
+/* Custom properties can't be referenced inside a media-query condition, so
+   this comment is the source of truth: every media query in this file
+   (besides prefers-reduced-motion) uses one of these four widths.
+
+     36rem  phone landscape / small tablet — first breakpoint off the
+            single-column phone default
+     48rem  tablet
+     64rem  desktop
+     72rem  wide
+*/
+
+
+/* ------------------------------------------------------------------ */
+/* Reset / base                                                        */
+/* ------------------------------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { color-scheme: dark; }
+
+body {
+  position: relative;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  /* A long unbroken word in prose wraps rather than running under the
+     overflow-x clip below; links and code break more eagerly still. */
+  overflow-wrap: break-word;
+  /* A safety net, not a layout tool: it stops a stray wide element from
+     scrolling the page sideways. Fix the element itself, never rely on this. */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ambient backdrop: three layered slate tones plus two soft, oversized
+   red glows (the "embers in the night" effect), fixed behind all
+   content. Kept extremely subtle — this is atmosphere, not decoration. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: 0;
+  pointer-events: none;
+  /* These two opacities stay literal — one-off ambient atmosphere, not a
+     reusable accent strength. */
+  background-image:
+    radial-gradient(55rem 42rem at 18% -8%, rgba(255, 59, 78, 0.055), transparent 55%),
+    radial-gradient(48rem 40rem at 100% 92%, rgba(255, 59, 78, 0.035), transparent 55%),
+    linear-gradient(180deg, var(--background) 0%, var(--background-alt) 55%, var(--background) 100%);
+}
+
+/* A very faint grain, for the tactile quality of a well-crafted dark UI
+   rather than a flat gradient. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body::before { animation: drift 50s ease-in-out infinite alternate; }
+}
+/* A reader who asks for less motion gets no hover lift, no press shrink and
+   no transitions, anywhere on the site. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+  }
+  .card:hover, .profile-card:hover, .profile-card:focus-visible,
+  .btn:active, .btn--secondary:active, .donate-button:active {
+    transform: none !important;
+  }
+}
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0) scale(1); }
+  to { transform: translate3d(-1%, 0.6%, 0) scale(1.02); }
+}
+
+.site-header, .site-main, .site-footer { position: relative; z-index: 1; }
+
+img, svg { max-width: 100%; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--accent-line);
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
+}
+/* A link is the same colour before and after it is visited. */
+a:link, a:visited { color: var(--color-link-visited); }
+a:hover { text-decoration-color: var(--accent); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  letter-spacing: var(--tracking-tight);
+  font-weight: 700;
+  color: var(--foreground);
+}
+h2, h3, h4 { font-weight: 600; }
+
+code, pre { font-family: var(--font-mono); }
+/* A contract address or a bare URL is one unbreakable word; let it wrap at
+   any character rather than run past a phone screen. */
+a, code { overflow-wrap: anywhere; }
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--card-solid);
+  border: 1px solid var(--border-hover);
+  color: var(--foreground);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  z-index: 100;
+  font-weight: 600;
+}
+.skip-link:focus { left: var(--space-2); top: var(--space-2); }
+
+/* ------------------------------------------------------------------ */
+/* Header / nav                                                        */
+/* ------------------------------------------------------------------ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--card);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.site-header__inner {
+  /* Wider than --content-max-width on purpose: the nav is chrome, not prose,
+     and the 80rem cap left it 138px short of fitting at any viewport width. */
+  max-width: 92rem;
+  margin: 0 auto;
+  /* Vertical padding trimmed as the brand mark grew, so the header keeps its
+     previous height. */
+  padding: var(--space-2) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-3);
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+  text-decoration: none;
+  color: var(--foreground);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-xl);
+  letter-spacing: var(--tracking-tight);
+}
+.site-brand__mark {
+  /* The pegasus is wider than tall; height sets the size. */
+  height: 4em;
+  width: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 0 transparent);
+  transition: filter var(--transition-card);
+}
+.site-brand:hover .site-brand__mark {
+  filter: drop-shadow(0 0 10px var(--accent-line));
+}
+.site-brand:hover .site-brand__text { color: var(--accent); }
+.site-brand__text {
+  transition: color var(--transition-fast);
+  word-spacing: 0.2em;
+}
+/* The English name and its Korean rendering stacked in the masthead, the
+   Korean spread to exactly the English name's width: the column is as wide
+   as its widest line, the English, and the Korean characters are laid out
+   across it with space-between, so the two lines share both edges on any
+   system font. */
+.site-brand__names {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.3em;
+  line-height: 1;
+}
+.site-brand__ko {
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: normal;
+}
+/* Korean set one character per span and spread across its container's
+   width (partials/ko-spread.njk): the masthead logo and the home title. */
+.ko-spread {
+  display: flex;
+  justify-content: space-between;
+}
+.ko-spread__gap {
+  width: 0.4em;
+}
+
+/* On a wide viewport the links wrap onto a second row when they do not fit
+   beside the brand; below 48rem they become one row that scrolls within
+   itself (see the media query below). min-width: 0 is required for a flex
+   child to shrink below its content size instead of forcing the row (and
+   the site-brand next to it) to overflow. */
+.site-nav {
+  min-width: 0;
+}
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-1) var(--space-2);
+  margin: 0;
+  padding: 0 var(--space-1);
+}
+.site-nav__link {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: var(--text-md);
+  letter-spacing: var(--tracking-wide);
+  padding: var(--space-2);
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+  color: var(--foreground);
+  background: var(--surface-hover);
+  border-color: var(--border);
+}
+/* The page or section the reader is in, set by base.njk from the page URL:
+   aria-current="page" on an exact match, "true" on an ancestor section. */
+.site-nav__link[aria-current] {
+  color: var(--foreground);
+  border-color: var(--border-hover);
+}
+
+/* Narrow viewports: the seven links wrapped onto four rows under the brand and
+   the sticky header stood 280px tall on a 390px phone, pinning a third of the
+   screen. The nav becomes a single row that scrolls sideways within itself,
+   under a smaller brand mark, so the header stays about 100px tall. */
+@media (max-width: 47.99rem) {
+  .site-header__inner {
+    padding: var(--space-2) var(--space-3);
+    gap: var(--space-1) var(--space-3);
+  }
+  .site-brand { font-size: var(--text-lg); }
+  .site-brand__mark { height: 3em; }
+  .site-nav {
+    flex-basis: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* Bleed to the header's edge so the last link is not clipped by padding. */
+    margin: 0 calc(-1 * var(--space-3));
+    padding: 0 var(--space-3);
+    /* Fade the trailing edge so the row visibly continues past the screen;
+       without a cue, three visible links read as the whole nav. */
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent); /* css-allow */
+    mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent); /* css-allow */
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav__list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  .site-nav__link { padding: var(--space-1) var(--space-2); }
+}
+
+/* ------------------------------------------------------------------ */
+/* Main content                                                         */
+/* ------------------------------------------------------------------ */
+.site-main {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  /* Top gap deliberately smaller than the side/bottom rhythm: 4.5rem left the
+     first heading floating well below the header on every page. Any block that
+     leads a page (.hero, .hero--home) zeroes its own top padding so this is the
+     only thing contributing, and the gap stays identical site-wide. */
+  padding: var(--space-5) var(--space-4) var(--space-6);
+}
+
+/* The page's leading heading contributes no margin of its own, so the gap under
+   the header is .site-main's padding and nothing else — identical on every
+   page. Without this, .hero h1 (margin-top: 0) sat 40px down while every other
+   page's h1 sat at 61px. */
+.site-main > :first-child > h1:first-child,
+.site-main > h1:first-child {
+  margin-top: 0;
+}
+
+/* Section separation. 4.5rem read as a page break rather than a section
+   break — enough dead space that the next heading looked detached from the
+   page. 2.5rem still separates clearly at these heading sizes. */
+section + section { margin-top: var(--space-5); }
+
+/* Hero content floats directly on the ambient background rather than
+   sitting inside its own bordered card — "content doesn't crowd, it
+   floats in space" per the design system's spacing philosophy. The warm
+   glow already fixed behind the page (body::before) is what lights it. */
+.hero {
+  padding: 0;
+  margin: 0 0 var(--space-5);
+  max-width: 46rem;
+}
+.hero h1 {
+  margin-top: 0;
+  font-size: var(--text-h1);
+}
+.hero p:last-child { margin-bottom: 0; }
+.hero p { color: var(--muted-foreground); font-size: var(--text-lg); }
+
+/* Home page only: a true centered hero rather than a left-hugging intro
+   block, so the page reads as centered on wide viewports instead of
+   floating against the left edge of the (already-centered) content
+   column. */
+.hero--home {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 54rem;
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Home page: the headline counts under the hero                        */
+/* ------------------------------------------------------------------ */
+
+/* The four counts under the hero. Each is a link to the section it counts,
+   so the row doubles as the page's primary navigation and the reader gets a
+   sense of the site's size before reading a word of prose.
+
+   Explicit column counts rather than auto-fit: the lead tile is double-width,
+   and auto-fit picks a track count from the container without knowing that,
+   which lands the fourth tile alone on a second row at common widths. Three
+   stated layouts (one column, 2x2, then 2fr + three 1fr) are predictable at
+   every width instead. */
+.stat-row {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+@media (min-width: 36rem) {
+  .stat-row { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 64rem) {
+  .stat-row { grid-template-columns: 2fr 1fr 1fr 1fr; }
+}
+/* The <li> is the grid item; the <a> inside it is what's painted, so the item
+   stretches the link to the row's full height rather than letting each tile
+   size to its own text. */
+.stat-row > li { display: flex; }
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* The tile is the click target, so its own text carries no underline; the
+     border and the hover lift are what mark it as interactive. */
+  text-decoration: none;
+  padding: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background-color var(--transition-card), border-color var(--transition-card),
+    box-shadow var(--transition-card);
+}
+.stat, .stat:link, .stat:visited { color: var(--foreground); }
+.stat:hover, .stat:focus-visible {
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-lg);
+  text-decoration: none;
+}
+
+.stat__figure {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-h1);
+  line-height: 1.05;
+  letter-spacing: var(--tracking-tight);
+  font-variant-numeric: tabular-nums;
+}
+.stat__label {
+  margin-top: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.stat__note {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.45;
+  color: var(--muted-foreground);
+}
+
+/* The indicator count is what this site is for, so it gets the row's only red
+   figure and the widest track. */
+.stat--lead .stat__figure {
+  font-size: var(--text-display);
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------------ */
+/* Footer                                                               */
+/* ------------------------------------------------------------------ */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--background-alt);
+  /* .site-main already pads its own bottom; stacking 4.5rem here on top of
+     that left a 170px void under the last section of every page. */
+  margin-top: var(--space-4);
+}
+.site-footer__inner {
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: var(--text-md);
+  color: var(--muted-foreground);
+}
+.site-footer__brand { display: flex; align-items: center; gap: var(--space-2); }
+.site-footer__brand .icon-star {
+  width: 1.25em;
+  height: 1.25em;
+  color: var(--accent);
+  filter: drop-shadow(0 0 6px var(--accent-line));
+}
+.site-footer__links { display: flex; align-items: center; gap: var(--space-3); }
+
+.donate-button {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  padding: 0.55em 1.25em;
+  border: none;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: 600;
+  transition: filter var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+.donate-button:link, .donate-button:visited { color: var(--accent-foreground); }
+.donate-button:hover, .donate-button:focus-visible {
+  filter: brightness(1.1);
+  box-shadow: var(--glow-md);
+}
+.donate-button:active { transform: scale(0.98); }
+
+/* ------------------------------------------------------------------ */
+/* Buttons / links                                                      */
+/* ------------------------------------------------------------------ */
+.btn {
+  background: var(--accent);
+  color: var(--accent-foreground);
+  padding: 0.75em 1.5em;
+  min-height: 44px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: filter var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast);
+}
+.btn:link, .btn:visited { color: var(--accent-foreground); }
+.btn:hover, .btn:focus-visible {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px var(--accent-line);
+}
+.btn:active { transform: scale(0.98); }
+.btn--secondary {
+  background: transparent;
+  color: var(--foreground);
+  border: 1px solid var(--border-hover);
+}
+.btn--secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+  filter: none;
+  box-shadow: none;
+}
+.btn--secondary:active { transform: scale(0.98); }
+/* A compact button for a control that sits inside a heading row rather than
+   standing on its own, such as the copy control on a hunt query. */
+.btn--small {
+  padding: 0.4em 0.9em;
+  min-height: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+/* Off-screen but selectable, for a scratch element a script needs the
+   browser to see without the reader seeing it. */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* ------------------------------------------------------------------ */
+/* Reusable content components                                         */
+/* ------------------------------------------------------------------ */
+
+/* Sourcing / attribution disclaimer banner — reused across profile,
+   hunt, scan-result, and EtherHiding-result pages. A disclaimer is a card
+   pushed to a higher red intensity (border + glow), the same visual
+   language as a highlighted card, rather than a separate warning hue. */
+.disclaimer-banner {
+  position: relative;
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--accent-line-soft);
+  box-shadow: var(--border-glow);
+  color: var(--foreground);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-base);
+  margin: var(--space-4) 0;
+}
+/* Only the banner's leading <strong> is its title. Emphasis inside the body
+   copy ("does <em>not</em> establish") stays inline. */
+.disclaimer-banner > strong:first-child {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-bottom: var(--space-1);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-size: var(--text-sm);
+}
+.disclaimer-banner > strong:first-child::before {
+  content: "\26A0";
+  font-size: 1em;
+}
+.disclaimer-banner p { color: var(--muted-foreground); }
+
+/* Copy-paste-able code/query block — hunt queries, IOC lists, commands.
+   Deliberately the least transparent surface on the site so code stays
+   crisply legible. */
+.query-block {
+  display: block;
+  max-width: 100%;
+  background: var(--surface-code);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  white-space: pre;
+  margin: var(--space-3) 0;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Badges (e.g. confidence_level indicators on profile/hunt cards) — a
+   four-step scale running hot (red) to cool (blue) to neutral, using the
+   site's two accent hues as the "high confidence" and "medium confidence"
+   signals respectively rather than intensity steps of one color. */
+.badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  padding: 0.2em 0.75em;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.badge--confirmed {
+  background: var(--accent-muted);
+  color: var(--accent);
+  border-color: var(--accent-line);
+  box-shadow: var(--glow-sm);
+}
+.badge--high {
+  background: var(--accent-muted);
+  color: var(--badge-high-foreground);
+  border-color: var(--accent-line-soft);
+}
+.badge--medium {
+  background: var(--accent-blue-muted);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue-line);
+}
+.badge--low {
+  background: transparent;
+  color: var(--muted-foreground);
+}
+
+/* Simple card grid, reusable by listing pages (profiles/, hunts/, etc.) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background-color var(--transition-card), border-color var(--transition-card),
+    box-shadow var(--transition-card), transform var(--transition-card);
+}
+.card:hover {
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.02);
+}
+
+/* Home page cluster cards, replacing what was a <dl> of six long definitions:
+   at that length the descriptions ran together into one block a reader
+   skipped whole. Cards give each cluster its own edge and let the profile
+   count sit beside the name.
+
+   Kept below .card-grid deliberately. .cluster-grid rides on that class in
+   the markup and overrides its track sizing, and at equal specificity the
+   later rule is the one that wins — placed above it, the override is dead. */
+.cluster-grid {
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+}
+/* The whole card is one link to /clusters/{id}/, the same construction as
+   .profile-card and .hunt-tile: the accessible name comes from
+   the card's own text, so the children are spans rather than a heading and
+   paragraphs inside an anchor. */
+.cluster-card__link {
+  display: block;
+  text-decoration: none;
+}
+.cluster-card__link,
+.cluster-card__link:link, .cluster-card__link:visited { color: var(--foreground); }
+.cluster-card__link:hover,
+.cluster-card__link:focus-visible { text-decoration: none; }
+.cluster-card__name {
+  display: block;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--text-lg);
+}
+.cluster-card__count {
+  display: block;
+  margin: var(--space-1) 0 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+/* The indicator tally sits directly under the profile count and carries the
+   gap before the description, so the two counts read as one stacked block. */
+.cluster-card__count--iocs {
+  margin-bottom: var(--space-3);
+}
+/* The figure, and only the figure. A whole line in accent red read as a status
+   — every cluster shouting — where what a reader is actually scanning for is
+   the number. The word beside it stays quiet, and a count of none carries no
+   figure at all, so "No profiles yet" is not highlighted as though it were one. */
+.count-figure {
+  color: var(--accent);
+  font-weight: 600;
+}
+.cluster-card__body {
+  display: block;
+  margin: 0;
+  font-size: var(--text-md);
+  color: var(--muted-foreground);
+}
+
+/* Simple results table, reusable by repo-scanner/etherhiding results
+   pages, rendered as a single card-like surface. border-collapse:
+   separate (rather than collapse) lets the table's own rounded corners
+   clip cleanly without changing any row/cell markup. */
+.results-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: var(--space-3) 0;
+  font-size: var(--text-md);
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.results-table th, .results-table td {
+  text-align: left;
+  padding: var(--space-3) var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+/* A date in a table cell stays on one line. */
+.results-table .cell-date {
+  white-space: nowrap;
+}
+/* Marks a date that is the day this site first recorded a value, not a
+   report's publication date. */
+.date-note {
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.results-table th {
+  border-bottom: 2px solid var(--accent-line);
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  font-weight: 500;
+  overflow-wrap: break-word;
+}
+.results-table tbody tr { transition: background-color var(--transition-fast); }
+.results-table tbody tr:hover { background: var(--surface-hover-faint); }
+.results-table tbody tr:last-child td { border-bottom: none; }
+/* A column header table-sort.js has made clickable. The button inherits the
+   header's own type so the table looks the same with the script absent; the
+   arrow is drawn from aria-sort, which the script keeps current. */
+.table-sort__button {
+  all: unset;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+.table-sort__button:hover, .table-sort__button:focus-visible { color: var(--foreground); }
+.table-sort__button:focus-visible { outline: 2px solid var(--accent-blue); outline-offset: 2px; }
+.results-table th[aria-sort="ascending"] .table-sort__button::after { content: " \2191"; }
+.results-table th[aria-sort="descending"] .table-sort__button::after { content: " \2193"; }
+.results-table th[aria-sort="none"] .table-sort__button::after { content: " \2195"; opacity: 0.45; }
+
+/* Horizontal-scroll wrapper for wide tables on narrow viewports. */
+.table-scroll { overflow-x: auto; }
+
+/* Repo-scanner match table: fixed column proportions so "Matched IOC"
+   (short identifiers) isn't squeezed by "Context" (long free text) fighting
+   for the same auto-sized column, and long unbroken values (a URL, a raw
+   query string) wrap instead of forcing the table wider than the page. */
+.results-table--scan {
+  table-layout: fixed;
+  min-width: 48rem;
+}
+.results-table--scan th:nth-child(1), .results-table--scan td:nth-child(1) { width: 18%; }
+.results-table--scan th:nth-child(2), .results-table--scan td:nth-child(2) { width: 26%; }
+.results-table--scan th:nth-child(3), .results-table--scan td:nth-child(3) { width: 14%; }
+.results-table--scan th:nth-child(4), .results-table--scan td:nth-child(4) { width: 42%; }
+.results-table--scan td { overflow-wrap: anywhere; }
+
+/* A collapsed-by-default <details> for secondary/diagnostic page content
+   (run metadata, raw query log, run history) that a reader can open but
+   doesn't need in front of them by default. Native <details> handles the
+   open/close state and keyboard behavior; this just makes the closed
+   <summary> read as an inline, clickable label rather than a bullet. */
+.disclosure { margin: var(--space-3) 0; }
+.disclosure > summary {
+  cursor: pointer;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  padding: var(--space-2) 0;
+}
+.disclosure > summary:hover { color: var(--foreground); }
+.disclosure[open] > summary { margin-bottom: var(--space-2); }
+
+/* Prev/next pager between the build-time pages of /indicators/browse/. */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+}
+
+/* Search box above a build-time table (the source registry). Matches the
+   indicator search's field width so the two read as the same control. */
+.table-filter { margin: 0 0 var(--space-3); }
+.table-filter .form-field { max-width: 32rem; margin-top: 0; }
+
+/* Tab bar (e.g. DPRK Profiles: Individual Profiles vs IT Worker
+   Identifiers) — plain linked pages styled as tabs, no JS. */
+.tab-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+.tab-bar__link {
+  display: inline-block;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-decoration: none;
+  color: var(--muted-foreground);
+  border: 1px solid transparent;
+  transition: color var(--transition-fast), background-color var(--transition-fast), border-color var(--transition-fast);
+}
+.tab-bar__link:hover {
+  color: var(--foreground);
+  background: var(--surface-hover);
+}
+/* Used from profiles-tab-bar.njk (the "active tab"
+   class Nunjucks adds conditionally), not from any markup in this repo's
+   templates directly. */
+.tab-bar__link--active {
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-color: var(--accent-line);
+}
+
+
+/* Taxonomy / tag chips (cluster_taxonomy on profile pages/About page) */
+.tag-chip {
+  display: inline-block;
+  background: var(--background-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.2em 0.75em;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-decoration: none;
+  color: var(--muted-foreground);
+  margin: 0 var(--space-1) var(--space-1) 0;
+  transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast);
+}
+.tag-chip:hover {
+  color: var(--foreground);
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Form controls. Named for the /submit/ intake form they were written   */
+/* for; that page now hands the reader a mailto template and holds no     */
+/* inputs at all, so what survives here is what the search and filter     */
+/* controls on the listing pages use.                                     */
+/* ------------------------------------------------------------------ */
+.form-fieldset {
+  /* A fieldset defaults to min-width: min-content, so the email template inside
+     it forced the whole Submit page to 720px on a phone. */
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  margin: 0 0 var(--space-4) 0;
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.form-fieldset legend {
+  font-weight: 600;
+  padding: 0 var(--space-2);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.form-hint {
+  color: var(--muted-foreground);
+  font-size: var(--text-md);
+  margin: var(--space-1) 0 var(--space-2) 0;
+}
+
+.form-field { margin: var(--space-3) 0; }
+.form-field label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: var(--space-1);
+}
+.form-field input[type="text"],
+.form-field select {
+  width: 100%;
+  min-height: 44px;
+  font: inherit;
+  color: var(--foreground);
+  background: var(--card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2) var(--space-3);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.form-field input[type="text"]:focus,
+.form-field select:focus {
+  border-color: var(--accent-blue);
+  box-shadow: var(--focus-ring);
+}
+
+/* ------------------------------------------------------------------ */
+/* Indicator index (/remote-workers/)                                  */
+/* ------------------------------------------------------------------ */
+
+/* The stylesheet had no hide utility before this. It needs to be explicit
+   rather than relying on the browser default for [hidden], because author
+   rules beat the UA sheet, and the search UI toggles `hidden` on elements
+   that carry a display of their own. */
+[hidden] { display: none !important; }
+
+.ioc-search { margin: 0 0 var(--space-4); }
+.ioc-search .form-field { max-width: 32rem; }
+/* The home page search: centred under the hero and made the page's most
+   prominent control, with a larger field and an accent edge. */
+.ioc-search--compact { margin-top: calc(var(--space-4) * -1); }
+.ioc-search--compact .form-field { max-width: 46rem; margin-left: auto; margin-right: auto; }
+.ioc-search--compact .search-box__head label { font-size: var(--text-lg); }
+.ioc-search--compact input[type="text"] {
+  padding: 0.9em 1.1em;
+  font-size: var(--text-lg);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-lg);
+  background: var(--card-solid);
+  box-shadow: var(--border-glow);
+}
+.ioc-search--compact input[type="text"]:focus {
+  border-color: var(--accent);
+}
+.ioc-search__tagline {
+  max-width: 46rem;
+  margin: var(--space-2) auto var(--space-4);
+  text-align: center;
+  color: var(--muted-foreground);
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+/* Shares the visual language of .tag-chip, with the pressed state borrowed
+   from .tab-bar__link--active so a selected filter reads the same way as a
+   selected tab. */
+.filter-chip {
+  display: inline-block;
+  background: var(--background-alt);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-full);
+  padding: 0.35em 0.9em;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+  cursor: pointer;
+  transition: color var(--transition-fast), border-color var(--transition-fast),
+    background-color var(--transition-fast);
+}
+.filter-chip:hover {
+  color: var(--foreground);
+  border-color: var(--muted-foreground);
+  background: var(--surface-hover);
+}
+.filter-chip[aria-pressed="true"] {
+  color: var(--accent);
+  background: var(--accent-muted);
+  border-color: var(--accent-line);
+}
+
+/* A sort <select> sitting in a .filter-chips bar (the /hunts/ library):
+   same pill shape and type scale as .filter-chip, so choosing a sort order
+   reads as part of the same control row rather than a borrowed form field. */
+.filter-chips select {
+  background: var(--background-alt);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-full);
+  padding: 0.35em 0.9em;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+  cursor: pointer;
+}
+.filter-chips select:hover {
+  color: var(--foreground);
+  border-color: var(--muted-foreground);
+}
+
+/* The contents of one cell in the indicator table (partials/ioc-table.njk and
+   ioc-search.js): the value with its status badges, the type with its
+   provenance badge, the persona and cluster chips. They wrap inside the cell
+   rather than widening the column. */
+.cell-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1) var(--space-2);
+  min-width: 0;
+}
+.cell-chips .tag-chip { margin: 0; }
+
+/* The indicator's own page leads on the value, which is monospace and often a
+   long URL, so it wraps rather than pushing the page sideways. */
+.indicator-value {
+  overflow-wrap: anywhere;
+  font-size: var(--text-2xl);
+}
+.indicator-value code { font-size: inherit; }
+
+/* Other indicator pages an indicator page links to: the values filed under the
+   same persona and the ones beside it in the same source. Columns rather than
+   a long single file, because the values are short and there can be fifty. */
+.related-values {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-3);
+  columns: 18rem;
+  column-gap: var(--space-4);
+}
+.related-values > li {
+  break-inside: avoid;
+  padding: var(--space-1) 0;
+  overflow-wrap: anywhere;
+}
+.related-values code { font-size: var(--text-sm); }
+
+.ioc-result__heading {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+  font-weight: 500;
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+.ioc-result__meta {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+
+/* The post list inside a collapsed X-account row on /sources/. Collapsed by
+   default because 23 dates would otherwise be the tallest cell on the page,
+   but the markup is always present, so the table filter still matches on a
+   post date the reader has not expanded. */
+.source-posts {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+}
+.source-posts > summary {
+  cursor: pointer;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+}
+.source-posts > summary:hover { color: var(--foreground); }
+/* A collapsed quotation: the summary is the quote's first sentence, so it reads
+   as body text rather than as the small mono label above. */
+.source-posts--quote > summary {
+  font-family: var(--font-body);
+  letter-spacing: normal;
+  color: var(--foreground);
+}
+.source-posts--quote > .notice-quote { margin-top: var(--space-2); }
+.source-posts__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+}
+/* A title wraps at a word, or anywhere if it is one long token, so an item
+   never runs past a phone screen. */
+.source-posts__list li { max-width: 100%; overflow-wrap: anywhere; }
+/* How many indicators that one post accounts for — the reason it is cited at
+   all, and the only thing separating a load-bearing post from a passing one. */
+.source-posts__count {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--muted-foreground);
+}
+
+.ioc-result__sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ioc-result__sources > li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+.ioc-result__sources > li:last-child { border-bottom: none; }
+
+.ioc-result__context {
+  margin: 0 0 var(--space-2);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--accent-line);
+  color: var(--muted-foreground);
+  font-style: italic;
+}
+
+/* The indicator itself inside the quoted passage, so it stands out from
+   the neighbouring values in an appendix run. */
+.ioc-result__match {
+  color: var(--foreground);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ */
+/* Profile photograph (law-enforcement wanted-notice portraits)        */
+/* ------------------------------------------------------------------ */
+
+/* Constrains a portrait to a sensible column width. The source images arrive
+   at several intrinsic ratios (0.66 to 0.84), so nothing here forces an
+   aspect-ratio and nothing crops: object-fit: cover would slice the sides off
+   the two widest photographs, and these are evidentiary images reproduced from
+   a law-enforcement notice — they get displayed as published, not recomposed. */
+.profile-photo {
+  margin: var(--space-3) 0 var(--space-4);
+  max-width: 18rem;
+}
+.profile-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background-alt);
+}
+.profile-photo figcaption {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+}
+.profile-photo figcaption a { overflow-wrap: anywhere; }
+/* The credit line sits under the caption inside the one figcaption a figure
+   may hold. */
+.profile-photo__source { display: block; margin-top: var(--space-1); }
+
+/* A researcher's image on a hunt page: wider than a profile photo, since
+   these are diagrams and setup photographs meant to be read. */
+.hunt-figure {
+  margin: var(--space-4) 0;
+  max-width: 40rem;
+}
+.hunt-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--background-alt);
+}
+.hunt-figure figcaption {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+}
+
+/* ------------------------------------------------------------------ */
+/* Profile tile grid (home + /remote-workers/pictures/)                      */
+/* ------------------------------------------------------------------ */
+
+/* Explicit column counts rather than auto-fill: the wide-viewport layout is
+   meant to land on exactly six across, which auto-fill can't guarantee. Two,
+   three, five and six across. A listing that caps this grid at limits.list
+   and offers a "show the rest" control needs no particular cap: grid-more.js
+   and persona-filter.js round it up to the end of the row it falls in.
+   minmax(0, 1fr) rather than 1fr, so a long unbroken name cannot widen its
+   column past the grid. */
+.profile-grid {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+@media (min-width: 36rem) {
+  .profile-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (min-width: 48rem) {
+  .profile-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
+/* Six across, not seven. These tiles carry a full three-part Korean name, and
+   at seven "Jang Chol Myong" wraps onto a second line — which then grows every
+   tile in that row to match it. */
+@media (min-width: 64rem) {
+  .profile-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+}
+
+.profile-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--card);
+  transition: border-color var(--transition-card), transform var(--transition-card),
+    box-shadow var(--transition-card);
+}
+.profile-card,
+.profile-card:link, .profile-card:visited { color: var(--foreground); }
+/* The same hover as .card, declaration for declaration. A tile that lifted with
+   an extra glow while every other clickable card on the site lifted without one
+   is the kind of difference nobody can name and everybody notices. */
+.profile-card:hover,
+.profile-card:focus-visible {
+  background: var(--card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-lg);
+  transform: scale(1.02);
+  text-decoration: none;
+}
+
+/* Thumbnails are cropped to a uniform 3:4 so the grid lines up. The profile
+   page itself shows each photograph uncropped at its published proportions —
+   see .profile-photo — so nothing is only ever seen recomposed. */
+.profile-card__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background: var(--background-alt);
+}
+.profile-card__photo--empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+}
+
+.profile-card__name {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-family: var(--font-display);
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+}
+
+/* A wanted notice may publish more than one photograph; they sit side by
+   side and wrap on a narrow viewport. */
+.profile-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+.profile-photos .profile-photo { margin-bottom: 0; }
+
+/* Korean name, rendered beside or beneath the romanized one. */
+.profile-card__name-ko {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.8em;
+  color: var(--muted-foreground);
+}
+.profile-name-ko {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
+
+/* Verbatim quotation from a law-enforcement notice (Caution / Remarks /
+   Reward). Visually distinct from site prose so a reader can tell what the
+   agency wrote from what this site wrote. */
+.notice-quote {
+  margin: 0 0 var(--space-3);
+  padding: var(--space-3);
+  border-left: 3px solid var(--accent-line);
+  background: var(--card);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  color: var(--foreground);
+  overflow-wrap: anywhere;
+}
+
+/* A section heading with an action sitting opposite it. Wraps to two rows on
+   narrow viewports rather than crushing the button. */
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.section-head > h2 { margin: 0; }
+
+.ioc-download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin: 0;
+}
+
+/* Neighbouring appendix text rather than a sentence about the indicator —
+   muted and un-italicised so it does not read as a quotation. */
+/* Used from partials/ioc-detail.njk when a source's context_origin is "list". */
+.ioc-result__context--nearby {
+  font-style: normal;
+  border-left-color: var(--border-hover);
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+
+/* Account liveness block on an indicator result. */
+.account-status {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  margin: 0 0 var(--space-3);
+}
+.account-status__avatar {
+  flex: 0 0 4rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  object-fit: cover;
+  background: var(--background-alt);
+}
+.account-status p { margin: 0 0 var(--space-1); }
+
+/* ------------------------------------------------------------------ */
+/* Personas (/remote-workers/personas/)                                */
+/* ------------------------------------------------------------------ */
+
+/* The kind of network an IP address sits on: fixed line, mobile, data
+   centre, or a named VPN. An anonymised connection (a VPN exit or a known
+   proxy) takes the blue accent so it reads apart from the persona chip's red,
+   which means something else. */
+.tag-chip--network {
+  color: var(--muted-foreground);
+}
+.tag-chip--network-anon {
+  color: var(--foreground);
+  border-color: var(--accent-blue-line);
+  background: var(--accent-blue-muted);
+}
+
+/* The hiring red flags on /remote-workers/. Each item carries a small flag
+   drawn in CSS to its left: a mast (border-left) and a pennant (the ::before
+   box), in the accent colour. Drawn rather than typed so the list carries no
+   emoji, which this site does not use. */
+.red-flags {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-3) 0 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.red-flags li {
+  position: relative;
+  padding-left: 2rem;
+  line-height: 1.5;
+}
+.red-flags li::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2em;
+  width: 0;
+  height: 1.1em;
+  border-left: 2px solid var(--accent);
+}
+.red-flags li::after {
+  content: "";
+  position: absolute;
+  left: 0.32rem;
+  top: 0.2em;
+  width: 0.7em;
+  height: 0.5em;
+  background: var(--accent);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* The persona a search result was reported under. Reads as an identity
+   rather than as one more taxonomy tag, so it takes the accent border the
+   plain .tag-chip deliberately does not. */
+.tag-chip--persona {
+  color: var(--foreground);
+  border-color: var(--accent-line);
+  background: var(--accent-muted);
+}
+
+/* The persona listing and the named IT workers render through the same tile now
+   (partials/tile.njk), so .persona-grid and .persona-card are gone: both pages
+   use .profile-grid and .profile-card. Anything that reads like a person in a
+   grid belongs there too. */
+
+/* The account-status block at reading size rather than thumbnail size. The
+   mirrors are 400px, so this stays sharp; an account whose source image is
+   smaller is scaled up rather than shown at two different sizes down the
+   page. */
+/* Phone default: stacked column, thumbnail-sized avatar. Row layout with the
+   full 12rem avatar is the enhancement, added back in at the 36rem stop. */
+.account-status--large { flex-direction: column; }
+.account-status--large .account-status__avatar { flex-basis: auto; width: 8rem; height: 8rem; }
+@media (min-width: 36rem) {
+  .account-status--large { flex-direction: row; }
+  .account-status--large .account-status__avatar { flex-basis: 12rem; width: 12rem; height: 12rem; }
+}
+
+/* A quotation reproduced exactly as the source wrote it, paragraph breaks
+   included. A LinkedIn About section is written in short stanzas, and folding
+   them into one run-on paragraph would misrepresent how it reads. */
+.notice-quote--verbatim { white-space: pre-line; }
+
+/* One LinkedIn account on a persona page. A .card used as a container rather
+   than as a tile, so it keeps the surface but drops the tile hover-lift. */
+.persona-account { margin: var(--space-4) 0; }
+.persona-account:hover { transform: none; box-shadow: none; }
+.persona-account > :first-child { margin-top: 0; }
+.persona-account code { overflow-wrap: anywhere; }
+
+/* One indicator rendered in full on a persona page, the same construction as
+   .persona-account: a .card used as a container, so it keeps the surface and
+   drops the tile hover-lift. The anchor every link to that indicator points at
+   is on this element, so it needs to be identifiable when the page jumps to it. */
+.ioc-detail { margin: var(--space-4) 0; }
+.ioc-detail:hover { transform: none; box-shadow: none; }
+.ioc-detail > :first-child { margin-top: 0; }
+.ioc-detail code { overflow-wrap: anywhere; }
+.ioc-detail:target { border-color: var(--accent); }
+
+/* ------------------------------------------------------------------ */
+/* DPRK Hunting — library grid (/hunts/) and hunt pages (/hunts/{id}/) */
+/* ------------------------------------------------------------------ */
+
+/* Explicit column counts rather than auto-fill, matching .profile-grid: the
+   library is meant to land on four across on a wide viewport, and a tile
+   carries a title plus a two-line summary, so a fill-driven count would
+   produce a different reading width at every browser size. */
+.hunt-grid {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+@media (min-width: 36rem) { .hunt-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64rem) { .hunt-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 72rem) { .hunt-grid { grid-template-columns: repeat(4, 1fr); } }
+
+/* A .card that is entirely one link, the same construction as .cluster-card:
+   the surface, hover and transition come from .card, and this adds the block
+   layout and strips the link's own color and underline. A hunt is the one thing
+   in a grid here that is not a person, which is why it is a text card rather
+   than the tile in partials/tile.njk. */
+.hunt-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-3);
+  text-decoration: none;
+}
+.hunt-tile,
+.hunt-tile:link, .hunt-tile:visited { color: var(--foreground); }
+.hunt-tile:hover,
+.hunt-tile:focus-visible { text-decoration: none; }
+
+.hunt-tile__title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.hunt-tile__summary {
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--muted-foreground);
+}
+/* Pinned to the foot so the chip rows line up across a row of tiles whose
+   summaries run to different lengths. */
+.hunt-tile__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--border);
+}
+.hunt-tile__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  align-items: center;
+}
+/* .tag-chip carries its own bottom margin for flowing inline runs; inside a
+   flex row with a gap that margin only makes the row ragged. */
+.hunt-tile__meta .tag-chip,
+.hunt-tile__badges .tag-chip { margin: 0; }
+
+/* The hunt-type tag (IOC / TTP / behavioral / hardware / malware). One
+   treatment for every type rather than five colors: the palette carries two
+   functional accents and adding three more hues to it would make the type
+   read as a severity. The word is the signal. */
+.badge--hunt-type {
+  background: var(--muted);
+  color: var(--foreground);
+  border-color: var(--border-hover);
+}
+
+/* --- Hunt detail page --- */
+.hunt-page__header { margin-bottom: var(--space-4); }
+
+/* A wrapping run of badges and chips on its own line. Named generically
+   because several pages want it — the hunt header, the cluster header, and
+   the cluster page's "compare" row — and .tag-chip's own bottom margin, which
+   exists for chips flowing inside a paragraph, has to be cancelled in all
+   of them or the row sits crooked. */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  align-items: center;
+  margin: var(--space-2) 0;
+}
+.chip-row .tag-chip { margin: 0; }
+
+/* The link at the head of a detail page back to its list
+   (partials/back-link.njk). */
+.back-link { margin: 0 0 var(--space-3); }
+
+/* The "last updated" line at the foot of a profile. */
+.profile-meta {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+
+/* Key/value facts (data sources, technique scope, last updated) as a
+   two-column definition list that stacks on a narrow viewport. */
+.hunt-facts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1) var(--space-3);
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--card);
+}
+@media (min-width: 36rem) {
+  .hunt-facts { grid-template-columns: max-content 1fr; }
+}
+.hunt-facts dt {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  padding-top: 0.15rem;
+}
+.hunt-facts dd { margin: 0 0 var(--space-2) 0; }
+@media (min-width: 36rem) { .hunt-facts dd { margin-bottom: 0; } }
+
+/* One query, its platform label and its provenance line. The <pre> itself
+   keeps .query-block; this is the frame around it. */
+.hunt-query { margin: var(--space-4) 0; }
+.hunt-query__head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+.hunt-query__platform {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-base);
+  margin: 0;
+}
+.hunt-query__origin {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+}
+.hunt-query__copy { margin-left: auto; }
+.hunt-query .query-block { margin-top: var(--space-2); }
+
+/* A value in a table (an address, a hash, a URL) wraps anywhere rather than
+   widening its column. */
+.results-table code { overflow-wrap: anywhere; }
+
+/* Group label inside a .filter-chips row, so a bar carrying two independent
+   groups of chips reads as two groups rather than one long run. */
+.filter-chips__label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  align-self: center;
+}
+
+/* An opt-in beside Download, e.g. "Include decoys" (result-tools.js). */
+.result-tools__option {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+  align-self: center;
+  cursor: pointer;
+}
+
+/* A caveat on one query — what was normalised from the source, or a
+   platform-specific gotcha — sitting between the provenance line and the
+   code block it applies to. */
+.hunt-query__note {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+  border-left: 2px solid var(--border-hover);
+  padding-left: var(--space-3);
+}
+
+/* The hunt's pseudo-logic (numbered steps) and, under each query, the list of
+   its lower-fidelity clauses. Both are short prose lists, so they take the
+   body size and a tight rhythm rather than the default list margins. */
+.hunt-logic,
+.hunt-query__tuning {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-4);
+}
+.hunt-logic li,
+.hunt-query__tuning li { margin: var(--space-1) 0; overflow-wrap: anywhere; }
+.hunt-query__tuning { font-size: var(--text-sm); }
+
+/* The query technologies a tile ships in, under its OS chips. */
+.hunt-tile__langs {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+}
+
+/* --- Actor cluster page (/clusters/{id}/) --- */
+
+/* Label introducing a run of chips ("Also tracked as", "Compare"). Same
+   treatment as .filter-chips__label, which does the same job inside a filter
+   bar; kept as its own name because that one is scoped to .filter-chips and a
+   .chip-row is not a filter bar. */
+.cluster-page__label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+/* Curated further reading: a recommendation per item rather than a link dump,
+   so each entry is a title, the publisher and date under it, and a line saying
+   what the report is good for. Left border rather than a card, because a run
+   of eight cards reads as a grid to skim and this is a list to work down. */
+.reading-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+}
+.reading-list > li {
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-3);
+  border-left: 2px solid var(--border);
+}
+.reading-list > li:hover { border-left-color: var(--border-hover); }
+.reading-list__meta {
+  display: block;
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.reading-list__note {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-md);
+  color: var(--muted-foreground);
+}
+
+/* A list inside body prose, for the places where a paragraph was genuinely
+   enumerating things (a set of ports, a run of file paths, the stages of a
+   chain). Distinct from .reading-list, which is the citation list and carries
+   its own left border and per-item spacing. */
+/* Used from hunt body HTML authored in src/_data/hunts/hunts.json, not from a
+   template — a hunt's <div> description embeds this class directly. */
+.prose-list {
+  margin: var(--space-3) 0;
+  padding-left: var(--space-4);
+  list-style: disc;
+}
+.prose-list > li {
+  margin-bottom: var(--space-2);
+  padding-left: var(--space-1);
+}
+.prose-list > li:last-child { margin-bottom: 0; }
+.prose-list > li::marker { color: var(--muted-foreground); }
+
+/* Glossary entries reuse .reading-list; the term is a heading for anchor
+   links and outline, sized to sit inside the list rather than as a page
+   section. */
+.glossary__term {
+  font-size: var(--text-lg);
+  margin: 0 0 var(--space-2);
+}
+
+/* The candidate table's first column carries the row id and then every page the
+   candidate can be read on. Without a floor the links wrap one word per line. */
+.candidate-links {
+  min-width: 9rem;
+}
+.candidate-links ul {
+  margin: var(--space-2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+.candidate-links li { margin-top: var(--space-1); }
+
+/* The indicator inventory beside the link list: what the row actually rests on,
+   one typed value per line. The type label is a chip so the eye can find the
+   phone number among four addresses, and the value is monospace because most of
+   these are strings a reader will copy rather than read. */
+.candidate-indicators {
+  min-width: 12rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.candidate-indicators li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1);
+  margin-bottom: var(--space-2);
+}
+.candidate-indicators li:last-child { margin-bottom: 0; }
+.candidate-indicators code,
+.candidate-indicators a {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+
+/* A chip that names an indicator type rather than linking to a tag. Shares
+   .tag-chip's shape but sits tighter, because it is a label on a value rather
+   than a control. */
+.indicator-type {
+  display: inline-block;
+  background: var(--background-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.05em 0.55em;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--muted-foreground);
+  white-space: nowrap;
+}
+
+/* Why a cell is empty, said out loud. "No number on the source", "looked up and
+   nothing came back" and "nobody has looked" are three different answers and an
+   em dash gave all three the same face. */
+.fact-absent {
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+  font-style: italic;
+}
+
+/* The observable-indicator register on /remote-workers/red-flags/. Four
+   columns of prose need fixed proportions for the same reason the scanner
+   table does: "Indicator" is two or three words and "Why it carries weight"
+   is a paragraph, and auto sizing lets the paragraph squeeze the name to one
+   word per line. */
+.register-table {
+  table-layout: fixed;
+  min-width: 32rem;
+}
+.register-table th:nth-child(1), .register-table td:nth-child(1) { width: 6rem; }
+.register-table th:nth-child(3), .register-table td:nth-child(3) { width: 8rem; }
+.register-table th:nth-child(4), .register-table td:nth-child(4) { width: 10rem; }
+.register-table td {
+  overflow-wrap: anywhere;
+  vertical-align: top;
+}
+
+/* The products or services a row is about, under the name it is filed under.
+   A reader scanning for "is this what I am looking at" wants the product name
+   beside the behaviour rather than a sentence into the prose. */
+.register-detail {
+  display: block;
+  margin-top: var(--space-1);
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+
+/* The citation column: short source labels, expanded in the legend above the
+   first table. Wrapping is per label rather than mid-label. */
+.register-cite {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+}
+.register-cite a { white-space: nowrap; }
+
+/* A row header in the register is the indicator's name — a phrase, not a
+   field label — so it keeps the body type rather than the uppercase mono
+   .results-table gives every th. The scope stays on the cell because it is
+   still what the row is about. */
+.register-table th[scope="row"] {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--foreground);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.register-table tbody tr:last-child th { border-bottom: none; }
+
+/* Print. A defender printing a profile or a hunt for a case file wants the
+   content, not the chrome: the dark theme would print as full-page ink, and
+   the header, navigation, search panels and buttons mean nothing on paper.
+   Links keep their text; the address is printed after external ones so a
+   citation survives the trip. */
+@media print {
+  :root { --background: white; --foreground: #000; --muted-foreground: #000; }
+  body { background: white; color: #000; } /* css-allow */
+  body::before, .site-header, .site-nav, .site-footer, .skip-link, .ioc-search,
+  .grid-more, .btn, .tab-bar, .table-filter, .filter-chips, button { display: none !important; }
+  .site-main { max-width: none; padding: 0; }
+  .card, .disclaimer-banner, .results-table, .query-block { box-shadow: none; break-inside: avoid; }
+  * { text-shadow: none !important; backdrop-filter: none !important; }
+  a { color: #000; text-decoration: underline; } /* css-allow */
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; word-break: break-all; }
+  [hidden] { display: none !important; }
+}
+
+/* ------------------------------------------------------------------ */
+/* Dropdowns (filter-dropdown.js): every filter group and <select>      */
+/* ------------------------------------------------------------------ */
+
+/* The row the script gathers adjacent dropdowns into. Columns of a fixed
+   minimum, so one dropdown on a page is the same width as three on another. */
+.filter-dropdowns {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.filter-dropdown {
+  position: relative;
+  min-width: 0;
+}
+/* A lone dropdown inside a line of other controls (the download format). */
+.filter-chips > .filter-dropdown {
+  flex: 0 1 16rem;
+}
+
+/* Styled as a wide .filter-chip so it reads as the same control. */
+.filter-dropdown__button {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  width: 100%;
+  background: var(--background-alt);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-md);
+  padding: 0.55em 2.2em 0.55em 0.9em;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--foreground);
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+.filter-dropdown__button:hover,
+.filter-dropdown__button[aria-expanded="true"] {
+  border-color: var(--accent);
+  background: var(--surface-hover);
+}
+.filter-dropdown__button::after {
+  content: "";
+  position: absolute;
+  right: 0.9em;
+  top: 50%;
+  width: 0.45em;
+  height: 0.45em;
+  border-right: 2px solid var(--muted-foreground);
+  border-bottom: 2px solid var(--muted-foreground);
+  transform: translateY(-70%) rotate(45deg);
+}
+.filter-dropdown__name {
+  color: var(--muted-foreground);
+  letter-spacing: var(--tracking-wide);
+  flex: none;
+}
+.filter-dropdown__value {
+  color: var(--accent);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.filter-dropdown__panel {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + var(--space-1));
+  left: 0;
+  right: 0;
+  background: var(--card-solid);
+  border: 1px solid var(--border-hover);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2);
+}
+.filter-dropdown__search {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--background);
+  border: 1px solid var(--control-border);
+  border-radius: var(--radius-sm);
+  padding: 0.45em 0.7em;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--foreground);
+  margin-bottom: var(--space-2);
+}
+.filter-dropdown__search:focus {
+  border-color: var(--accent);
+}
+.filter-dropdown__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 18rem;
+  overflow-y: auto;
+}
+.filter-dropdown__option {
+  padding: 0.4em 0.6em;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+  cursor: pointer;
+}
+.filter-dropdown__option:hover,
+.filter-dropdown__option--active {
+  color: var(--foreground);
+  background: var(--surface-hover);
+}
+.filter-dropdown__option[aria-selected="true"] {
+  color: var(--accent);
+}
+.filter-dropdown__empty {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+}
+
+/* ------------------------------------------------------------------ */
+/* Tables: never wider than the page                                    */
+/* ------------------------------------------------------------------ */
+
+/* A table of eight or more columns (marked by table-stack.js) extends past
+   the reading column on a wide screen, centred on it, while the page keeps its
+   usual column. 100vw counts the scrollbar, so the width leaves a 5rem margin
+   a side and the table never reaches the edge.
+   Its .table-scroll wrapper stops clipping so the table can spill over. */
+@media (min-width: 64rem) {
+  .table-scroll:has(> .results-table--wide:not(.results-table--stacked)) {
+    overflow: visible;
+  }
+  /* Tighter side padding: eleven columns of 8px a side cost as much width
+     as a column. */
+  .results-table--wide:not(.results-table--stacked) th,
+  .results-table--wide:not(.results-table--stacked) td {
+    padding-left: var(--space-1);
+    padding-right: var(--space-1);
+  }
+  .results-table--wide:not(.results-table--stacked) {
+    width: min(96rem, calc(100vw - 10rem));
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* No page scrolls sideways. A cell's long tokens (URLs, addresses, hashes),
+   which always sit in a link or <code>, may break anywhere, so every column
+   can shrink and a table always fits its column; ordinary words break only
+   between words, so "connection" never splits in a narrow column. (The
+   header cells' own break-word is in their rule above.) */
+.results-table td {
+  overflow-wrap: break-word;
+}
+.results-table td code,
+.results-table td a {
+  overflow-wrap: anywhere;
+}
+
+/* A table table-stack.js marks .results-table--stacked (below 64rem, or
+   whenever it would be wider than the window) becomes a card of
+   label-and-value lines per row, the labels drawn from its header. */
+.results-table--stacked thead {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.results-table--stacked,
+.results-table--stacked tbody,
+.results-table--stacked tr,
+.results-table--stacked td {
+  display: block;
+}
+.results-table--stacked tr {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border);
+}
+.results-table--stacked tbody tr:last-child { border-bottom: none; }
+/* A table with fixed column proportions (.results-table--scan,
+   .register-table) drops them once stacked: each row is a card as wide as
+   its wrapper, not a 48rem table squeezed into a phone. */
+.results-table--stacked {
+  min-width: 0;
+  table-layout: auto;
+}
+.results-table--stacked th:nth-child(n),
+.results-table--stacked td:nth-child(n) {
+  width: auto;
+}
+/* The label sits in a fixed column to the left and the cell's own content
+   flows normally beside it, whatever mix of text, badges and line breaks
+   the cell holds (a grid here would make each child its own grid item). */
+.results-table--stacked td {
+  position: relative;
+  padding: var(--space-1) var(--space-3) var(--space-1) calc(8rem + var(--space-3) + var(--space-2));
+  min-height: 1.5em;
+  border-bottom: none;
+}
+.results-table--stacked td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: var(--space-3);
+  width: 8rem;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+
+/* The search box's label line: the label on the left, the live result count
+   on the right (partials/search-box.njk). Wraps under the label when narrow. */
+.search-box__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1) var(--space-3);
+}
+.search-box__count {
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Home page: the title, the Chollima explainer and the scheme steps    */
+/* ------------------------------------------------------------------ */
+
+/* The home title: the English name with "천리마 사냥꾼" spread under it to the
+   same width, in the accent colour, the same lockup as the masthead logo. */
+.hero__wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: 0 auto var(--space-4);
+}
+.hero__wordmark h1 { margin: 0; }
+.hero .hero__wordmark-ko {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: var(--text-h1-sub);
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* "What's a Chollima?": the name taken apart, one card per character. */
+.glyphs {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+.glyph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-1);
+}
+.glyph__char {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+.glyph__roman {
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  color: var(--foreground);
+}
+.glyph__meaning {
+  font-size: var(--text-md);
+  color: var(--muted-foreground);
+}
+
+/* "How the scheme works": three numbered cards in a row. */
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: var(--space-4);
+}
+.step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-full);
+  background: var(--accent-muted);
+  border: 1px solid var(--accent-line);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+.step__title {
+  margin: var(--space-2) 0 var(--space-1);
+  font-size: var(--text-lg);
+}
+.step p { margin: 0; color: var(--muted-foreground); }
+
+/* ------------------------------------------------------------------ */
+/* Home page: "Who's behind it", the state organisations and their groups */
+/* ------------------------------------------------------------------ */
+
+/* The one-line hook under a home page heading. */
+.section-lede {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--foreground);
+}
+
+/* One root box, a short trunk, then one card per parent organisation side by
+   side, each listing its groups as chips. Below 48rem the cards stack. */
+.org-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.org-tree__root {
+  text-align: center;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+.org-tree__trunk {
+  display: block;
+  width: 2px;
+  height: var(--space-4);
+  background: var(--accent-line);
+}
+.org-tree__branches {
+  list-style: none;
+  padding: var(--space-4) 0 0;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--space-3);
+  border-top: 2px solid var(--accent-line);
+}
+.org-tree__branch {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.org-tree__branch--main { border-color: var(--accent-line); }
+.org-tree__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--foreground);
+}
+a.org-tree__name { text-decoration: none; }
+a.org-tree__name:hover { color: var(--accent); }
+.org-tree__note {
+  font-size: var(--text-md);
+  color: var(--muted-foreground);
+}
+.org-tree__groups {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.org-tree__unplaced,
+.org-tree__source {
+  margin: var(--space-3) 0 0;
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--muted-foreground);
+}
+.org-tree__source { max-width: 44rem; margin-left: auto; margin-right: auto; }
+@media (max-width: 47.99rem) {
+  .org-tree__branches { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* An auto-layout table sizes its columns from everything in them, so a
+   <details> opened in a cell used to widen its column and re-wrap the rows
+   above it, moving the reader's place on the page. Disclosed content takes
+   no part in that sizing: it fills the column as it already is and wraps
+   inside it. */
+.results-table details > :not(summary) {
+  contain: inline-size;
+  overflow-wrap: anywhere;
+}

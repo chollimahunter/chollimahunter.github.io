@@ -1,0 +1,12 @@
+{#
+  partials/back-link.njk — the link at the head of a detail page that leads
+  back to the list it came from.
+
+  Usage: set `backLink` before including.
+    {% set backLink = { url: "/hunts/", text: "DPRK Hunting library" } %}
+    {% include "partials/back-link.njk" %}
+
+  Fields:
+    url   the list page's address
+    text  the list's name; the arrow is added here, so every page has the same
+#}<p class="back-link"><a href="{{ backLink.url }}">&larr; {{ backLink.text }}</a></p>

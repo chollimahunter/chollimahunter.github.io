@@ -1,0 +1,224 @@
+---
+layout: base.njk
+title: "Data and downloads"
+description: "Every machine-readable file the site publishes: what each holds, its columns or keys, when it changes, and the licence and citation terms."
+permalink: "/data/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/data/index.njk: reference for every machine-readable output. Written from
+  compactIndex(), toCsv() and the area split in src/_data/iocIndex.js and the
+  templates that emit each file (src/ioc-*.njk, src/repo-scanner-index.njk,
+  src/feed.njk, src/sitemap*.njk). If one of those changes a column, a key or
+  which records a file holds, this page changes in the same commit. Counts are
+  read from iocIndex.
+#}
+{% set t = iocIndex.totals %}
+<section>
+  <h1>Data and downloads</h1>
+  <p>
+    Indicators can be downloaded in bulk in four areas: remote workers
+    ({{ t.remote_workers | thousands }}), espionage ({{ t.espionage | thousands }}),
+    PolinRider repositories ({{ t.polinrider | thousands }}) and EtherHiding
+    ({{ t.etherhiding | thousands }}).
+  </p>
+</section>
+
+<section>
+  <h2 id="files">Files</h2>
+  <div class="table-scroll">
+    <table class="results-table" data-no-sort>
+      <thead>
+        <tr>
+          <th scope="col">File</th>
+          <th scope="col">Format</th>
+          <th scope="col">Records</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><a href="/assets/data/ioc-index.csv">/assets/data/ioc-index.csv</a></th>
+          <td>CSV</td>
+          <td>Remote workers only ({{ iocIndex.remote_workers.total | thousands }}). See <a href="#csv">CSV columns</a>.</td>
+        </tr>
+        <tr>
+          <th scope="row">/assets/data/ioc-index-<em>type</em>.csv</th>
+          <td>CSV</td>
+          <td>One file per indicator type; see <a href="#csv-by-type">files by type</a>.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/assets/data/ioc-index.json">/assets/data/ioc-index.json</a></th>
+          <td>JSON</td>
+          <td>Remote workers, espionage and PolinRider ({{ (t.remote_workers + t.espionage + t.polinrider) | thousands }}). See <a href="#json">JSON keys</a>.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/assets/data/ioc-search.json">/assets/data/ioc-search.json</a></th>
+          <td>JSON</td>
+          <td>Records without <code>contexts</code>.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/assets/data/ioc-contexts.json">/assets/data/ioc-contexts.json</a></th>
+          <td>JSON</td>
+          <td>The <code>contexts</code> table alone.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/assets/data/repo-scanner-index.json">/assets/data/repo-scanner-index.json</a></th>
+          <td>JSON</td>
+          <td>Scan rules and compromised repositories ({{ iocIndex.repo_scanner.total | thousands }}).</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/feed.xml">/feed.xml</a></th>
+          <td>Atom</td>
+          <td>Profiles and hunts; no indicators.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/sitemap.xml">/sitemap.xml</a></th>
+          <td>XML sitemap index</td>
+          <td>Every page address.</td>
+        </tr>
+        <tr>
+          <th scope="row"><a href="/license.txt">/license.txt</a></th>
+          <td>Text</td>
+          <td>Licence terms; see <a href="#licence">below</a>.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    EtherHiding records have no bulk file; use the
+    <a href="/etherhiding/#watchlist">watchlist table</a>. Every record has a
+    page under <a href="/indicators/browse/">Browse indicators</a>.
+  </p>
+</section>
+
+<section>
+  <h2 id="updates">When the files change</h2>
+  <p>
+    Files are regenerated on each build. The JSON files carry a
+    <code>generated_at</code> timestamp, currently
+    {% if iocIndex.generated_at %}<code>{{ iocIndex.generated_at }}</code>{% else %}not set{% endif %}.
+    The CSV files carry no date.
+  </p>
+</section>
+
+<section>
+  <h2 id="csv">CSV columns</h2>
+  <p>
+    One row per indicator. Cells that read as formulas are prefixed with an
+    apostrophe.
+  </p>
+  <div class="table-scroll">
+    <table class="results-table" data-no-sort>
+      <thead>
+        <tr><th scope="col">Column</th><th scope="col">Meaning</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row"><code>value</code></th><td>The normalised indicator.</td></tr>
+        <tr><th scope="row"><code>ioc_type</code></th><td>The type, such as <code>email_address</code>.</td></tr>
+        <tr><th scope="row"><code>persona</code></th><td>The fabricated identity the value was filed under.</td></tr>
+        <tr><th scope="row"><code>account_status</code></th><td><code>live</code>, <code>removed</code> or <code>recycled</code> for a checked account. See <a href="/glossary/#label-account-status">account status</a>.</td></tr>
+        <tr><th scope="row"><code>network</code></th><td>The network kind or VPN provider, for a looked-up IP address. See <a href="/glossary/#label-network-kind">network kinds</a>.</td></tr>
+        <tr><th scope="row"><code>campaigns</code></th><td>The tagged activity clusters, joined with <code>; </code>.</td></tr>
+        <tr><th scope="row"><code>first_seen</code></th><td>The earliest citing-source date.</td></tr>
+        <tr><th scope="row"><code>last_seen</code></th><td>The latest citing-source date.</td></tr>
+        <tr><th scope="row"><code>provenance</code></th><td>How the value reached the index, as a code. See <a href="/glossary/#labels-provenance">provenance labels</a>.</td></tr>
+        <tr><th scope="row"><code>model</code></th><td>The extracting model, for <code>llm</code> provenance.</td></tr>
+        <tr><th scope="row"><code>source_urls</code></th><td>The citing sources, joined with <code> | </code>.</td></tr>
+        <tr><th scope="row"><code>source_titles</code></th><td>Their titles, in the same order.</td></tr>
+        <tr><th scope="row"><code>context</code></th><td>The passage around the value in each source.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 id="csv-by-type">Files by type</h3>
+  <p>The same columns, one file per type for remote workers:</p>
+  <p class="chip-row">
+    {% for type, count in iocIndex.remote_workers.counts_by_type %}
+    <a class="tag-chip" href="/assets/data/ioc-index-{{ type }}.csv" download>{{ type | replace("_", " ") }} ({{ count | thousands }})</a>
+    {% endfor %}
+  </p>
+</section>
+
+<section>
+  <h2 id="json">JSON keys</h2>
+  <p>
+    ioc-index.json and repo-scanner-index.json share one compact shape. The
+    top level holds:
+  </p>
+  <ul>
+    <li><code>v</code>, the format version (currently 2), and <code>generated_at</code>;</li>
+    <li>the lookup tables <code>types</code>, <code>methods</code>, <code>sources</code> and <code>contexts</code>, referred to by position;</li>
+    <li><code>records</code>, with the keys below; absent values are <code>null</code>.</li>
+  </ul>
+  <div class="table-scroll">
+    <table class="results-table" data-no-sort>
+      <thead>
+        <tr><th scope="col">Key</th><th scope="col">Meaning</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row"><code>i</code></th><td>The record id.</td></tr>
+        <tr><th scope="row"><code>t</code></th><td>Position in <code>types</code>.</td></tr>
+        <tr><th scope="row"><code>v</code></th><td>The normalised value.</td></tr>
+        <tr><th scope="row"><code>d</code></th><td>The value as printed, where it differs.</td></tr>
+        <tr><th scope="row"><code>r</code></th><td>The area, such as <code>remote-workers</code>.</td></tr>
+        <tr><th scope="row"><code>p</code></th><td>The persona name.</td></tr>
+        <tr><th scope="row"><code>h</code></th><td>The persona page slug, for a single persona.</td></tr>
+        <tr><th scope="row"><code>c</code></th><td>Reserved; empty.</td></tr>
+        <tr><th scope="row"><code>k</code></th><td>The activity clusters, as a list.</td></tr>
+        <tr><th scope="row"><code>e</code></th><td>Position in <code>methods</code>.</td></tr>
+        <tr><th scope="row"><code>g</code></th><td><code>1</code> if found in the source text, otherwise <code>0</code>.</td></tr>
+        <tr><th scope="row"><code>m</code></th><td><code>live</code> or <code>removed</code>, for a checked repository or package.</td></tr>
+        <tr><th scope="row"><code>a</code></th><td>For a checked account, its <code>state</code> and <code>checked</code> date.</td></tr>
+        <tr><th scope="row"><code>n</code></th><td>For an IP address, the network kind and its label.</td></tr>
+        <tr><th scope="row"><code>w</code></th><td>For an email address, the reported password and reuse-group id.</td></tr>
+        <tr><th scope="row"><code>f</code>, <code>l</code></th><td>First and last seen.</td></tr>
+        <tr><th scope="row"><code>rr</code>, <code>rk</code></th><td>For a value no dated source names: the creation date of the account, or of the persona's LinkedIn or GitHub account (<code>rk</code> is <code>linkedin</code> or <code>github</code>), else the day this site first recorded it. The Report date column shows which.</td></tr>
+        <tr><th scope="row"><code>s</code></th><td>The citations, each a list of source position, context position, retrieval date, section heading and passage origin.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    ioc-search.json omits <code>contexts</code> and any key that is
+    <code>null</code>, <code>0</code>, an empty list or an <code>r</code> of
+    <code>remote-workers</code>; a missing key means that value.
+    ioc-contexts.json holds only <code>v</code>, <code>generated_at</code> and
+    <code>contexts</code>.
+  </p>
+</section>
+
+<section>
+  <h2 id="stix-misp">STIX 2.1, MISP and other result downloads</h2>
+  <p>
+    The indicator searches on <a href="/remote-workers/">Remote Workers</a>,
+    each cluster page and the <a href="/repo-scanner/">Repo Scanner</a> download
+    current results as STIX 2.1, MISP, CSV, text or JSON. These files are built
+    in the browser and have no fixed address.
+  </p>
+</section>
+
+<section>
+  <h2 id="licence">Licence, marking and citation</h2>
+  <p>
+    Prose and data are licensed under
+    {% set externalLink = { url: "https://creativecommons.org/licenses/by/4.0/", text: "CC BY 4.0" } %}{% include "partials/external-link.njk" %}
+    and code under the MIT licence. Photographs and quoted vendor passages
+    remain with their publishers; see the <a href="/license.txt">licence file</a>.
+  </p>
+  <p>
+    Indicators are marked <strong>TLP:CLEAR</strong>; CSV and JSON files carry
+    no marking.
+  </p>
+  <p>
+    Suggested citation: Chollima Hunter, "Data and downloads",
+    {{ site.url }}/data/, accessed 28 September 2026.
+  </p>
+</section>
+
+<section>
+  <h2 id="limits">What the data is not</h2>
+  <p>
+    The files are not a blocklist to apply unreviewed: many indicators are
+    shared infrastructure or belong to people whose identities were stolen. See
+    <a href="/guidance/#employers">If you find a match</a> first.
+  </p>
+</section>

@@ -1,0 +1,58 @@
+{
+  "slug": "rim-jong-hyok",
+  "display_name": "Rim Jong Hyok",
+  "aliases": [
+    "Rim Chong-Hyo'k"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "RGB (Reconnaissance General Bureau)",
+    "Andariel"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/rim-jong-hyok.jpg",
+    "caption": "Photograph published by the FBI on its wanted notice for Rim Jong Hyok. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/rim-jong-hyok"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Cyber's Most Wanted",
+    "details": [
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Languages",
+        "value": "English, Korean"
+      }
+    ],
+    "caution": "Rim Jong Hyok, a member of the Andariel Unit of the North Korean Government’s Reconnaissance General Bureau (RGB), a North Korean military intelligence agency, is wanted for allegedly conspiring to violate the Computer Fraud and Abuse Act. Acting on behalf of North Korea’s RGB, Rim Jong Hyok allegedly conspired to use the Maui ransomware software to conduct computer intrusions against U.S. hospitals and healthcare companies, extort ransoms, launder the proceeds, and purchase additional internet servers to conduct cyber espionage hacks against government and technology victims in the United States, South Korea, and China. On July 24, 2024, a federal arrest warrant was issued for Rim Jong Hyok in the United States District Court, District of Kansas, after he was charged with conspiracy to commit computer hacking and conspiracy to commit promotion money laundering.",
+    "remarks": "Rim Jong Hyok is a North Korean citizen last known to be in North Korea.",
+    "reward": "The Rewards For Justice Program, United States Department of State, is offering a reward of up to $10 million for information leading to the identification or location of any person who, while acting at the direction or under the control of a foreign government, engages in certain malicious cyber activities against U.S. critical infrastructure in violation of the Computer Fraud and Abuse Act, to include Rim Jong Hyok.",
+    "poster_url": "https://www.fbi.gov/wanted/cyber/rim-jong-hyok/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "RIM JONG HYOK — FBI Wanted",
+      "url": "https://www.fbi.gov/wanted/cyber/rim-jong-hyok",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    }
+  ],
+  "disclaimer": [
+    "Described by the FBI as a member of the Andariel unit of the DPRK government's Reconnaissance General Bureau, wanted for allegedly conspiring to violate the Computer Fraud and Abuse Act by using Maui ransomware against U.S. hospitals and healthcare companies, extorting ransoms and laundering the proceeds.",
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-08-30",
+  "name_korean": "림종혁",
+  "name_korean_provenance": "reconstructed"
+}

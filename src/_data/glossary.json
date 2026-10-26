@@ -1,0 +1,336 @@
+[
+  {
+    "term": "Chollima",
+    "definition": "The winged horse of Korean legend, adopted by the DPRK as a national symbol of speed and effort. CrowdStrike uses it as the animal suffix for every adversary it attributes to North Korea, which is why names such as Famous Chollima, Labyrinth Chollima and Stardust Chollima recur across vendor reporting. This site takes its name from that convention.",
+    "source": { "title": "Adversary Hub", "publisher": "CrowdStrike", "url": "https://www.crowdstrike.com/en-us/adversary-hub/" }
+  },
+  {
+    "term": "Sleet",
+    "definition": "The weather-themed suffix Microsoft assigns to threat actors it attributes to North Korea, in the same way it uses Typhoon for China and Blizzard for Russia. Diamond Sleet, Sapphire Sleet, Emerald Sleet, Onyx Sleet, Jasper Sleet, Citrine Sleet and Moonstone Sleet are all DPRK-attributed clusters under this scheme.",
+    "source": { "title": "How Microsoft names threat actors", "publisher": "Microsoft Learn", "date": "2026-08-18", "url": "https://learn.microsoft.com/en-us/unified-secops-platform/microsoft-threat-actor-naming" }
+  },
+  {
+    "term": "Pisces",
+    "definition": "The constellation Palo Alto Networks Unit 42 assigns to threat groups it attributes to North Korea, paired with a modifier word to distinguish clusters within it &mdash; the same scheme that gives China Taurus and Russia Ursa. Gleaming Pisces, Slow Pisces, Jumpy Pisces, Alluring Pisces and Sparkling Pisces are all DPRK-attributed clusters this site cross-references against other vendors' names.",
+    "source": { "title": "Unit 42 Threat Group Naming Update", "publisher": "Unit 42 (Palo Alto Networks)", "date": "2022-07-18", "url": "https://unit42.paloaltonetworks.com/unit-42-threat-group-naming-update/" }
+  },
+  {
+    "term": "UNC and APT designations",
+    "definition": "Mandiant's numbering for the clusters it tracks. A UNC (\"uncategorized\") number labels intrusion activity not yet classified further, and may later graduate into an APTn (nation-state) or FINn (financially motivated) group. UNC1069, UNC4736 and UNC4899 are cited as the report names them.",
+    "source": { "title": "How Mandiant Tracks Uncategorized Threat Actors", "publisher": "Mandiant (Google Cloud)", "date": "2020-12-17", "url": "https://cloud.google.com/blog/topics/threat-intelligence/how-mandiant-tracks-uncategorized-threat-actors" }
+  },
+  {
+    "term": "Reconnaissance General Bureau (RGB)",
+    "definition": "North Korea's principal foreign intelligence agency, which the U.S. Treasury identifies as the body chiefly responsible for the country's cyber operations through its subordinate units. Most of the clusters on this site are described in their citations as sitting under the RGB in some form.",
+    "source": { "title": "Treasury Targets DPRK Malicious Cyber and Illicit IT Worker Activities", "publisher": "U.S. Department of the Treasury", "date": "2023-05-23", "url": "https://home.treasury.gov/news/press-releases/jy1498" },
+    "see": { "label": "RGB cluster page", "url": "/clusters/rgb-reconnaissance-general-bureau/" }
+  },
+  {
+    "term": "Lab 110 and Bureau 121",
+    "definition": "Cyber units named in U.S. reporting as parts of the RGB. Bureau 121 was long reported as North Korea's primary hacking unit; Mandiant's 2022 mapping assesses Lab 110 as its expanded form under the 3rd Bureau. A profile's citation is the authority for any claim.",
+    "source": { "title": "North Korean Cyber Capabilities: In Brief (R44912)", "publisher": "Congressional Research Service", "date": "2017-08-03", "url": "https://www.everycrsreport.com/reports/R44912.html" }
+  },
+  {
+    "term": "Contagious Interview",
+    "definition": "A campaign in which DPRK operators pose as recruiters and steer software developers into a fake interview process that ends with the candidate running malware, typically a trojanized coding assignment or a bogus video-call fix. Named by Palo Alto Networks Unit 42, which reported it alongside Wagemole.",
+    "source": { "title": "Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors", "publisher": "Palo Alto Networks Unit 42", "date": "2023-11-21", "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/" },
+    "see": { "label": "Contagious Interview cluster page", "url": "/clusters/contagious-interview/" }
+  },
+  {
+    "term": "Wagemole",
+    "definition": "Unit 42's name for the other half of the same activity: DPRK operatives using fabricated identities to obtain remote IT jobs at foreign companies and route the salaries back to the regime. The personas and identifiers indexed on this site's Remote Workers pages are the residue of this campaign.",
+    "source": { "title": "Hacking Employers and Seeking Employment: Two Job-Related Campaigns Bear Hallmarks of North Korean Threat Actors", "publisher": "Palo Alto Networks Unit 42", "date": "2023-11-21", "url": "https://unit42.paloaltonetworks.com/two-campaigns-by-north-korea-bad-actors-target-job-hunters/" },
+    "see": { "label": "Remote Workers index", "url": "/remote-workers/" }
+  },
+  {
+    "term": "BeaverTail",
+    "definition": "A JavaScript downloader and information stealer delivered through trojanized applications and npm packages in Contagious Interview lures. It harvests browser data and cryptocurrency-wallet extensions and stages the follow-on payload, usually InvisibleFerret.",
+    "source": { "title": "Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware", "publisher": "Palo Alto Networks Unit 42", "date": "2024-10-09", "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/" },
+    "see": { "label": "BeaverTail and InvisibleFerret hunt", "url": "/hunts/contagious-interview-beavertail-invisibleferret-chain/" }
+  },
+  {
+    "term": "InvisibleFerret",
+    "definition": "A cross-platform Python backdoor typically dropped by BeaverTail, giving the operator remote control of the developer's machine along with keylogging and credential theft.",
+    "source": { "title": "Contagious Interview: DPRK Threat Actors Lure Tech Industry Job Seekers to Install New Variants of BeaverTail and InvisibleFerret Malware", "publisher": "Palo Alto Networks Unit 42", "date": "2024-10-09", "url": "https://unit42.paloaltonetworks.com/north-korean-threat-actors-lure-tech-job-seekers-as-fake-recruiters/" },
+    "see": { "label": "BeaverTail and InvisibleFerret hunt", "url": "/hunts/contagious-interview-beavertail-invisibleferret-chain/" }
+  },
+  {
+    "term": "OtterCookie",
+    "definition": "A JavaScript implant observed in the Contagious Interview campaign from late 2024, using Socket.IO for command and control and exfiltrating clipboard contents, files and wallet keys.",
+    "source": { "title": "OtterCookie, new malware used in Contagious Interview campaign", "publisher": "NTT Security Japan", "date": "2025-01-16", "url": "https://jp.security.ntt/tech_blog/en-contagious-interview-ottercookie" },
+    "see": { "label": "OtterCookie hunt", "url": "/hunts/ottercookie-module-indicators/" }
+  },
+  {
+    "term": "ClickFake Interview and GolangGhost",
+    "definition": "A 2025 evolution of Contagious Interview aimed at cryptocurrency-industry staff, in which a fake interview site shows a bogus camera or microphone error and instructs the target to paste a fix into a terminal. The command installs GolangGhost, a Go backdoor.",
+    "source": { "title": "From Contagious to ClickFake Interview: Lazarus leveraging the ClickFix tactic", "publisher": "Sekoia", "date": "2025-03-31", "url": "https://www.sekoia.com/blog/clickfake-interview-campaign-by-lazarus" },
+    "see": { "label": "ClickFake Interview hunt", "url": "/hunts/clickfake-interview-clickfix-execution/" }
+  },
+  {
+    "term": "WeaselStore",
+    "definition": "ESET's name for a cross-platform Go information stealer and backdoor used in the same fake-interview lures, overlapping with what other vendors track as GolangGhost and FlexibleFerret. ESET tracks the wider campaign as DeceptiveDevelopment.",
+    "source": { "title": "DeceptiveDevelopment: From primitive crypto theft to sophisticated AI-based deception", "publisher": "ESET", "date": "2025-09-25", "url": "https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception/" }
+  },
+  {
+    "term": "Laptop farm",
+    "definition": "A residence or office, usually in the United States, where a paid facilitator keeps the company-issued laptops of remote employees who are in fact DPRK IT workers abroad. The workers reach the machines over remote-access software or KVM-over-IP hardware so their traffic appears to come from a domestic address.",
+    "source": { "title": "Ukrainian National Sentenced in 'Laptop Farm' Scheme That Generated Income for North Korean IT Workers", "publisher": "U.S. Department of Justice", "url": "https://www.justice.gov/usao-dc/pr/ukrainian-national-sentenced-laptop-farm-scheme-generated-income-north-korean-it-workers" },
+    "see": { "label": "Laptop-farm hunts", "url": "/hunts/laptop-farm-concurrent-remote-access/" }
+  },
+  {
+    "term": "IP-KVM",
+    "definition": "A small device that plugs into a laptop's HDMI and USB ports and exposes its screen, keyboard and mouse over the network, so a distant operator controls the machine below the operating system without installing remote-access software the employer could detect. The hardware hunts on this site look for the USB descriptors and network presence these devices leave behind.",
+    "source": { "title": "Ukrainian National Sentenced in 'Laptop Farm' Scheme That Generated Income for North Korean IT Workers", "publisher": "U.S. Department of Justice", "url": "https://www.justice.gov/usao-dc/pr/ukrainian-national-sentenced-laptop-farm-scheme-generated-income-north-korean-it-workers" },
+    "see": { "label": "IP-KVM hardware hunts", "url": "/hunts/ip-kvm-hardware-on-endpoint-and-network/" }
+  },
+  {
+    "term": "Freelance account fraud",
+    "definition": "The practice of renting, buying or fabricating accounts on freelance marketplaces so that a DPRK worker can bid for contract work behind the verified identity of someone else, often a person in the same country as the client.",
+    "source": { "title": "The Global Threat of DPRK IT Workers", "publisher": "38 North, Stimson Center", "date": "2025-10-07", "url": "https://www.38north.org/2025/10/the-global-threat-of-dprk-it-workers/" }
+  },
+  {
+    "term": "Famous Chollima",
+    "definition": "CrowdStrike's name for the North Korea-nexus adversary behind the fraudulent freelance and full-time IT employment schemes, which it also links to the BeaverTail and InvisibleFerret malware.",
+    "source": { "title": "Famous Chollima Adversary Profile", "publisher": "CrowdStrike", "url": "https://www.crowdstrike.com/en-us/adversaries/famous-chollima/" },
+    "see": { "label": "Contagious Interview cluster page", "url": "/clusters/contagious-interview/" }
+  },
+  {
+    "term": "Moonstone Sleet",
+    "definition": "A North Korean actor Microsoft described in 2024 as blending espionage with revenue generation: fake software companies, trojanized tools, a custom ransomware family, and job-seeking approaches that overlap with the IT-worker schemes.",
+    "source": { "title": "Moonstone Sleet emerges as new North Korean threat actor with new bag of tricks", "publisher": "Microsoft Threat Intelligence", "date": "2024-05-28", "url": "https://www.microsoft.com/en-us/security/blog/2024/05/28/moonstone-sleet-emerges-as-new-north-korean-threat-actor-with-new-bag-of-tricks/" }
+  },
+  {
+    "term": "Operation In(ter)ception and Operation Dream Job",
+    "definition": "The names ESET and ClearSky gave in 2020 to a Lazarus-linked espionage campaign that approached aerospace and defence employees through fake recruiter profiles on LinkedIn and delivered malware inside job documents. The recruiter lure that Contagious Interview later turned on software developers was refined here.",
+    "source": { "title": "Operation In(ter)ception: Aerospace and military companies in the crosshairs of cyberspies", "publisher": "ESET", "date": "2020-06-17", "url": "https://www.welivesecurity.com/2020/06/17/operation-interception-aerospace-military-companies-cyberspies/" }
+  },
+  {
+    "term": "TraderTraitor",
+    "definition": "The U.S. government's name for a set of trojanized cryptocurrency-trading applications, distributed to exchange and finance staff, that a North Korean state group used to steal cryptocurrency. Later reporting applies the name to the cluster itself.",
+    "source": { "title": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A)", "publisher": "CISA, FBI and U.S. Treasury", "date": "2022-04-18", "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-108a" },
+    "see": { "label": "APT38 cluster page", "url": "/clusters/apt38/" }
+  },
+  {
+    "term": "AppleJeus",
+    "definition": "A family of trojanized cryptocurrency-trading applications that Lazarus Group has distributed since at least 2018, each a working trading client with a backdoor inside, used to steal cryptocurrency from individuals and companies.",
+    "source": { "title": "AppleJeus: Analysis of North Korea's Cryptocurrency Malware (AA21-048A)", "publisher": "CISA, FBI and U.S. Treasury", "date": "2021-02-17", "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-048a" }
+  },
+  {
+    "term": "EtherHiding",
+    "definition": "Storing a malicious payload inside a smart contract on a public blockchain so that compromised websites fetch it from the chain rather than from a server that can be taken down. Google Threat Intelligence Group reported DPRK-linked UNC5342 using it in 2025, the first nation-state use it had seen.",
+    "source": { "title": "DPRK Adopts EtherHiding: Nation-State Malware Hiding on Blockchains", "publisher": "Google Threat Intelligence Group", "date": "2025-10-16", "url": "https://cloud.google.com/blog/topics/threat-intelligence/dprk-adopts-etherhiding" },
+    "see": { "label": "EtherHiding Tracker", "url": "/etherhiding/" }
+  },
+  {
+    "term": "DPRK RevGen: Domestic Enabler Initiative",
+    "definition": "A U.S. Department of Justice effort, led by its National Security Division with the FBI, to identify and prosecute the people and businesses inside the United States that enable North Korean revenue generation, including the facilitators who run laptop farms for IT workers.",
+    "source": { "title": "Justice Department Announces Nationwide Actions to Combat Illicit North Korean Government Revenue Generation", "publisher": "U.S. Department of Justice", "date": "2025-11-14", "url": "https://www.justice.gov/opa/pr/justice-department-announces-nationwide-actions-combat-illicit-north-korean-government" }
+  },
+  {
+    "term": "Mixers and OTC laundering",
+    "definition": "Stolen cryptocurrency is moved through mixing services that pool and redistribute funds to break the on-chain trail, then converted to cash through over-the-counter traders. OFAC's designation of the mixer Sinbad describes it as a key laundering tool for Lazarus Group proceeds from the Horizon Bridge and Axie Infinity thefts.",
+    "source": { "title": "Treasury Sanctions Mixer Used by the DPRK to Launder Stolen Virtual Currency", "publisher": "U.S. Department of the Treasury", "date": "2023-11-29", "url": "https://home.treasury.gov/news/press-releases/jy1933" }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confirmed",
+    "term": "Confirmed",
+    "definition": "The highest confidence level on a named individual's profile, used only when a government record names the person: a charging document, wanted notice, plea, conviction, or sanctions designation. It is not a finding by this site; a person charged is presumed innocent.",
+    "see": {
+      "label": "Sourcing methodology",
+      "url": "/sources/#sourcing-methodology"
+    }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confidence-profile",
+    "term": "High, medium and low on a profile",
+    "definition": "On a named individual's profile, a level below confirmed reflects how the cited source itself characterises the attribution. The site neither raises nor lowers it: a source that states moderate confidence produces a medium entry, whatever the site's own view.",
+    "see": {
+      "label": "Named individuals",
+      "url": "/profiles/"
+    }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confidence-hunt",
+    "term": "Confidence on a hunt",
+    "definition": "A hunt's HIGH, MEDIUM or LOW CONFIDENCE badge describes the hunt, not a person: how closely a match on it points to the activity its sources describe. Behaviour that is common in ordinary environments, such as mouse-jiggling software, keeps a hunt low however strong its sources are. Each hunt's false-positive notes say what else triggers it.",
+    "see": {
+      "label": "Hunt library",
+      "url": "/hunts/"
+    }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confidence-dataset",
+    "term": "Confidence on a bulk dataset",
+    "definition": "One level applies to every entry in a list ingested wholesale, reflecting the source's own caveats. A list of shared VPN exit addresses is low, because a match is a reason to look at the account, not evidence about a person.",
+    "see": {
+      "label": "Bulk datasets on the Sources page",
+      "url": "/sources/"
+    }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confidence-etherhiding",
+    "term": "Confidence on an EtherHiding entry",
+    "definition": "Each entry on the EtherHiding watchlist carries the level its cited source gives to the connection between that contract, address or detection string and the campaign.",
+    "see": {
+      "label": "EtherHiding watchlist",
+      "url": "/etherhiding/#watchlist"
+    }
+  },
+  {
+    "group": "confidence",
+    "id": "label-confidence-candidate",
+    "term": "Confidence on a candidate profile",
+    "definition": "On Potential DPRK Profiles, this site's own assessment of the screening signals a profile matches, such as a VoIP number, CV text shared with another listing, or an account under a different name. High requires several signals, one strong. It measures a pattern match only.",
+    "see": {
+      "label": "Potential DPRK Profiles",
+      "url": "/remote-workers/candidates/"
+    }
+  },
+  {
+    "group": "provenance",
+    "id": "label-curated",
+    "term": "CURATED",
+    "definition": "Entered by hand: a repository-scan ruleset or EtherHiding watchlist entry cited to its source, or a value read directly from a live account or listing, cited to the page and date. Such an observation states what the account showed that day, not who operates it.",
+    "see": {
+      "label": "First-party research",
+      "url": "/sources/#first-party-research"
+    }
+  },
+  {
+    "group": "provenance",
+    "id": "label-matched-in-source",
+    "term": "MATCHED IN SOURCE",
+    "definition": "Found by the site's scraper as a literal match in the text of the cited report, with the surrounding passage kept as a quote. The value appears in the source exactly as indexed; the quote shows what the source says about it."
+  },
+  {
+    "group": "provenance",
+    "id": "label-ai-extracted",
+    "term": "AI-EXTRACTED",
+    "definition": "Asserted by a language model reading the cited report, rather than matched literally in its text. Where the value could not then be found in the source, the entry says that it was not verified against its source."
+  },
+  {
+    "group": "provenance",
+    "id": "label-researcher-post",
+    "term": "RESEARCHER POST",
+    "definition": "Transcribed by hand from a named researcher's public post, usually on X. A person stands behind the value, but there is no published methodology to check it against.",
+    "see": {
+      "label": "Personas",
+      "url": "/remote-workers/personas/"
+    }
+  },
+  {
+    "group": "provenance",
+    "id": "label-third-party-registry",
+    "term": "THIRD-PARTY REGISTRY",
+    "definition": "Taken from a standing registry that publishes identities and their identifiers persona by persona. The registry made the attribution, not this site, and it has no byline or methodology to check."
+  },
+  {
+    "group": "provenance",
+    "id": "label-bulk-dataset",
+    "term": "BULK DATASET",
+    "definition": "One entry in a list a source published wholesale, such as a report appendix, ingested under a single citation for the whole list. The source did not discuss the entry individually, and the dataset's own caveat applies to it. The same label is shown for a record whose route into the index is not otherwise recorded.",
+    "see": {
+      "label": "Sources",
+      "url": "/sources/"
+    }
+  },
+  {
+    "group": "provenance",
+    "id": "label-under-review",
+    "term": "UNDER REVIEW",
+    "definition": "A value from a profile on Potential DPRK Profiles that a reviewer has opened and rated medium or high on the site's own screening signals. It is not confirmed. It ranks below every other route, so a value that any source also reports carries that source's label instead.",
+    "see": {
+      "label": "Potential DPRK Profiles",
+      "url": "/remote-workers/candidates/"
+    }
+  },
+  {
+    "group": "status",
+    "id": "label-account-status",
+    "term": "LIVE and REMOVED",
+    "definition": "Whether an account still existed at the address the source gave when last checked. GitHub is read directly, LinkedIn checked by hand, and other platforms only where a missing profile is reported honestly. LIVE says nothing about who operates the account."
+  },
+  {
+    "group": "status",
+    "id": "label-recycled",
+    "term": "RECYCLED",
+    "definition": "A GitHub login that now belongs to a different account from the one reported: the original was deleted and the name was registered again after the identifier was published. The present holder is unconnected to the entry, and no picture or detail of it is shown."
+  },
+  {
+    "group": "status",
+    "id": "label-malware-status",
+    "term": "LIVE MALWARE and TAKEN DOWN",
+    "definition": "For a malicious repository or an npm or PyPI package. LIVE MALWARE means it could still be fetched when last checked; TAKEN DOWN means it had been removed from the platform. Both are set by scripts/enrich-malware-status.js."
+  },
+  {
+    "group": "status",
+    "id": "label-network-kind",
+    "term": "Network kinds",
+    "definition": "The kind of network an IP address sits on: a named VPN (on Spur's published list), proxy or VPN, data centre, mobile carrier, fixed line (an ordinary subscriber range) or unresolved. The country shown is where the range is registered, not where any person was.",
+    "see": {
+      "label": "Remote Workers",
+      "url": "/remote-workers/"
+    }
+  },
+  {
+    "group": "status",
+    "id": "label-line-type",
+    "term": "Line types",
+    "definition": "For a telephone number, the kind of line a lookup returned: VoIP, wireless, landline or not assigned. On Potential DPRK Profiles, NO MATCH means nothing came back, Not checked means no lookup was run, and N/A means no number was published."
+  },
+  {
+    "group": "status",
+    "id": "label-photo-check",
+    "term": "Photograph checks",
+    "definition": "On Potential DPRK Profiles, what the account's picture turned out to be. AI and CAMERA record a detector's score for a generated or photographed face; FACE, UNSCORED awaits a detector; the other labels had no face to score. A score is not a finding.",
+    "see": {
+      "label": "Potential DPRK Profiles",
+      "url": "/remote-workers/candidates/"
+    }
+  },
+  {
+    "group": "status",
+    "id": "label-candidate-status",
+    "term": "UNDER REVIEW and CONFIRMED on a candidate",
+    "definition": "The review state of a row on Potential DPRK Profiles. UNDER REVIEW means a reviewer found it worth continued attention but not enough to state a DPRK connection. CONFIRMED means independent corroboration, such as a cited report, shared indicator, or password or infrastructure link.",
+    "see": {
+      "label": "Potential DPRK Profiles",
+      "url": "/remote-workers/candidates/"
+    }
+  },
+  {
+    "group": "status",
+    "id": "label-research-repository",
+    "term": "Detection or research repository",
+    "definition": "On the Repo Scanner's match table, a match inside a repository that appears to publish detection rules or an indicator list on purpose, such as a YARA ruleset or a cleanup scanner, which is the opposite of a compromised project. The tag is a heuristic on the matched file path and repository name, not a verified classification.",
+    "see": {
+      "label": "Repo Scanner",
+      "url": "/repo-scanner/"
+    }
+  },
+  {
+    "group": "other",
+    "id": "label-priority",
+    "term": "P1, P2 and P3",
+    "definition": "The priority of a pattern in the red-flags register. P1 is hard to explain innocently and warrants escalation on its own. P2 is strong: investigate, and look for a second signal. P3 is common on its own and counts only alongside others.",
+    "see": {
+      "label": "Red Flags",
+      "url": "/remote-workers/red-flags/"
+    }
+  },
+  {
+    "group": "other",
+    "id": "label-hunt-type",
+    "term": "IOC Hunt, TTP Hunt and Behavioral Hunt",
+    "definition": "The kind of detection a hunt performs. An IOC hunt matches specific values a report published, such as addresses, domains, hashes or package names. A TTP hunt matches the behaviour, tooling or artefacts of a technique whatever the specific values. A behavioural hunt is statistical, looking for a pattern across sessions or records rather than any single event.",
+    "see": {
+      "label": "Hunt library",
+      "url": "/hunts/"
+    }
+  }
+]

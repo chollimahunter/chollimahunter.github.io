@@ -1,0 +1,90 @@
+{
+  "note": "Hosts read from EtherHiding contracts and wallets that were reviewed and are not command-and-control. scripts/lib/etherhiding-addresses.js leaves them out of the /etherhiding/ address table. Every other host read on-chain is either on the watchlist or already in the index.",
+  "hosts": {
+    "canal.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "ag.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "entered.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "estimation.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "trust.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "alphabet.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "w.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "web.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "work.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "yco.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "microsoft.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "advocacy.microsoft.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "5ppljcs.microsoft.com": {
+      "verdict": "parked",
+      "reviewed": "2026-10-04",
+      "note": "a well-known or dictionary domain the operator wrote to park the resolver between sessions: on the contracts read on 2026-10-11 each real C2 host stays minutes to hours, a parked value fills every gap of days or weeks, and every contract's current value is a parked one, so an implant polling while the operator is idle reaches an ordinary site"
+    },
+    "a9": {
+      "verdict": "placeholder",
+      "reviewed": "2026-10-04",
+      "note": "not a host; a malformed value written once between real values"
+    },
+    "grabify.link": {
+      "verdict": "service",
+      "reviewed": "2026-10-04",
+      "note": "a public IP-logging link service the operator wrote while testing on 2025-12-08, between real C2 values; a third-party service, not operator infrastructure"
+    },
+    "mymexico.socia": {
+      "verdict": "placeholder",
+      "reviewed": "2026-10-04",
+      "note": "not a host; mymexico.social cut short, written once on 2026-01-12 between two writes of the full value"
+    },
+    "xmr-eu1.nanopool.org": {
+      "verdict": "service",
+      "reviewed": "2026-10-20",
+      "note": "a public Monero mining pool the cryptominer configurations on Polygon point at; a third-party service, not operator infrastructure"
+    }
+  }
+}

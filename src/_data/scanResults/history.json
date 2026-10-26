@@ -1,0 +1,34 @@
+[
+  {
+    "scan_id": "repo-scan-2026-10-03T04-17-40Z-117885",
+    "ran_at": "2026-10-03T04:17:40Z",
+    "ruleset_version": "repo-scan-ruleset.json @ 2026-09-21 (810 entries)",
+    "match_count": 993,
+    "query_count": 1423,
+    "mode": "live"
+  },
+  {
+    "scan_id": "repo-scan-2026-09-20T04-34-21Z-74921e",
+    "ran_at": "2026-09-20T04:34:21Z",
+    "ruleset_version": "repo-scan-ruleset.json @ 2026-08-30 (117 entries)",
+    "match_count": 514,
+    "query_count": 169,
+    "mode": "live"
+  },
+  {
+    "scan_id": "repo-scan-2026-09-01T04-01-59Z-928637",
+    "ran_at": "2026-09-01T04:01:59Z",
+    "ruleset_version": "repo-scan-ruleset.json @ 2026-08-30 (117 entries)",
+    "match_count": 506,
+    "query_count": 169,
+    "mode": "live"
+  },
+  {
+    "scan_id": "repo-scan-2026-09-01T03-39-12Z-3299d8",
+    "ran_at": "2026-09-01T03:39:12Z",
+    "ruleset_version": "repo-scan-ruleset.json @ 2026-08-30 (117 entries)",
+    "match_count": 12,
+    "query_count": 11,
+    "mode": "live"
+  }
+]

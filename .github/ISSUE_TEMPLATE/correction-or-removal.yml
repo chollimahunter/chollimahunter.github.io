@@ -1,0 +1,56 @@
+name: Correction or removal request
+description: Ask for an entry to be corrected or taken down, including when it concerns you or an identity stolen from you.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Anyone can ask for an entry to be corrected or removed. Requests are
+        reviewed by a person, and an entry whose cited source does not support
+        what this site says about it is corrected or withdrawn.
+
+        DPRK remote-work operations routinely apply for jobs under the identity
+        of a real, uninvolved person. If a name, photograph, address or account
+        here belongs to you and you have no connection to any of this, say so
+        below. You do not need to prove anything beyond what is reasonable to
+        show the identity is yours, and you do not need to explain yourself at
+        length.
+
+        Please do not post identity documents, government identifiers, or other
+        sensitive personal data in this issue. It is public. Say what is wrong
+        and, if proof is needed, ask for a private route.
+  - type: input
+    id: page
+    attributes:
+      label: Page address
+      description: The URL of the page the entry appears on.
+      placeholder: https://chollimahunter.github.io/...
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: What is your connection to this entry?
+      options:
+        - It concerns me, and I have no connection to this activity
+        - It concerns me, and I am asking for a factual correction
+        - I represent the person or organisation it concerns
+        - I am a researcher or reader reporting an error
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what_is_wrong
+    attributes:
+      label: What is wrong
+      description: Which detail is inaccurate, unfairly sourced, or should not be published, and what the correct position is.
+    validations:
+      required: true
+  - type: textarea
+    id: supporting
+    attributes:
+      label: Supporting record, if you have one
+      description: A public record that supports the correction. This is optional and is not required for a removal request about a stolen identity.
+    validations:
+      required: false

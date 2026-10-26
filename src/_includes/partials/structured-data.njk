@@ -1,0 +1,80 @@
+{#
+  partials/structured-data.njk — the JSON-LD a search engine reads from every
+  page. Included from base.njk.
+
+  Every page gets a BreadcrumbList derived from its URL, so a result can show
+  "Chollima Hunter › Remote Workers › Personas" rather than a bare address.
+  The home page also declares the site and the organisation behind it, with
+  the home page search, which covers every area of the shared index, as the
+  site's search action.
+
+  Nothing here makes a claim about a person. A profile page is a WebPage in a
+  breadcrumb trail, not a Person entity: a schema.org Person record for
+  someone named in an indictment would be read by an engine as a fact about
+  them, and the site's position is that it cites public records rather than
+  asserting identities itself.
+
+  An indicator page gets the breadcrumb and nothing more. A schema.org Dataset
+  describes a downloadable collection, which one value is not, and Google's
+  Dataset rich result would point at the CSV rather than at the page; there is
+  no Google feature that reads DataFeedItem. Markup no engine consumes would be
+  weight on 20,000 pages with nothing gained.
+
+  Sections not in the primary nav are named here; anything else falls back to
+  its path segment. Every item URL ends in a slash, as the page's canonical
+  does, except a file such as /404.html. The output is JSON, so it is escaped with `dump`, and the
+  one character that could end the script block early is escaped by hand.
+#}
+{%- set sectionTitles = {
+  "about": "About",
+  "profiles": "Named Individuals",
+  "clusters": "Actor clusters",
+  "hunts": "DPRK Hunting",
+  "remote-workers": "Remote Workers",
+  "personas": "Personas",
+  "pictures": "Named IT Workers",
+  "candidates": "Potential DPRK Profiles",
+  "red-flags": "Red Flags",
+  "repo-scanner": "DPRK Repo Scanner",
+  "results": "Results",
+  "etherhiding": "EtherHiding Tracker",
+  "sources": "Sources",
+  "submit": "Submit IOC/Profile",
+  "glossary": "Glossary",
+  "indicators": "Indicators",
+  "browse": "Browse indicators"
+} -%}
+{%- set crumbs = [{ "@type": "ListItem", "position": 1, "name": "Chollima Hunter", "item": site.url + "/" }] -%}
+{%- for crumb in page.url | pathCrumbs -%}
+  {%- set crumbName = title if loop.last else (sectionTitles[crumb.segment] or crumb.segment) -%}
+  {%- set crumbPath = crumb.path if (crumb.path.endsWith("/") or crumb.path.endsWith(".html")) else crumb.path + "/" -%}
+  {%- set crumbs = (crumbs.push({ "@type": "ListItem", "position": loop.index + 1, "name": crumbName, "item": site.url + crumbPath }), crumbs) -%}
+{%- endfor -%}
+{%- set graph = [] -%}
+{%- if page.url == "/" -%}
+  {%- set graph = (graph.push({
+    "@type": "WebSite",
+    "@id": site.url + "/#website",
+    "url": site.url + "/",
+    "name": "Chollima Hunter",
+    "description": "Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure from public records.",
+    "inLanguage": "en",
+    "publisher": { "@id": site.url + "/#organization" },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": { "@type": "EntryPoint", "urlTemplate": site.url + "/?q={search_term_string}" },
+      "query-input": "required name=search_term_string"
+    }
+  }), graph) -%}
+  {%- set graph = (graph.push({
+    "@type": "Organization",
+    "@id": site.url + "/#organization",
+    "name": "Chollima Hunter",
+    "url": site.url + "/",
+    "logo": site.url + "/assets/img/icon-512.png",
+    "email": site.businessEmail
+  }), graph) -%}
+{%- else -%}
+  {%- set graph = (graph.push({ "@type": "BreadcrumbList", "itemListElement": crumbs }), graph) -%}
+{%- endif -%}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@graph": graph } | dump | replace("<", "\\u003c") | safe }}</script>

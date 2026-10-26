@@ -1,0 +1,25 @@
+{#
+  partials/ioc-result.njk — one indicator row in the identifier index table
+  (partials/ioc-table.njk, which includes it).
+
+  Usage: set `iocRecord` before including.
+    {% set iocRecord = record %}
+    {% include "partials/ioc-result.njk" %}
+
+  The value links to wherever the indicator is shown in full, which is the
+  persona page holding it where one does (`persona_home`, see
+  src/_data/iocIndex.js) and /indicators/{id}/ otherwise. Either way that is
+  where every field, citation and context quote lives; nothing here duplicates
+  it — the row carries only what a person scans a result list for.
+
+  src/assets/js/ioc-search.js builds the same row in the DOM for search
+  results. If this markup changes, change renderResult() there to match, or the
+  page will look different depending on whether JavaScript ran.
+#}
+<tr data-type="{{ iocRecord.ioc_type }}">
+  <td><span class="cell-chips"><a href="{{ iocRecord.persona_home | default('/indicators/' + iocRecord.id + '/', true) }}"><code>{{ iocRecord | iocLabel }}</code></a>{% if iocRecord.network_status %} <span class="tag-chip tag-chip--network{% if iocRecord.network_status.kind == 'vpn' or iocRecord.network_status.kind == 'proxy' %} tag-chip--network-anon{% endif %}">{{ iocRecord.network_status.label }}</span>{% endif %}{% set malwareRecord = iocRecord %} {% include "partials/malware-badge.njk" %}{% set accountStatus = iocRecord.account_status %} {% include "partials/account-badge.njk" %}</span></td>
+  <td><span class="cell-chips">{{ iocRecord.ioc_type | replace("_", " ") }} <span class="badge badge--{{ iocRecord.extraction.method | badgeForMethod }}">{{ iocRecord.extraction.method | labelForMethod }}</span></span></td>
+  <td><span class="cell-chips">{% if iocRecord.persona %}<span class="tag-chip tag-chip--persona">{{ iocRecord.persona.name }}</span>{% endif %}{% for campaign in iocRecord.campaign %} <span class="tag-chip">{{ campaign }}</span>{% endfor %}</span></td>
+  <td class="cell-date">{% if iocRecord.report_date %}{{ iocRecord.report_date }}{% elif iocRecord.account_date %}{{ iocRecord.account_date }} <span class="date-note">{% if iocRecord.account_kind == "linkedin" %}LinkedIn joined{% else %}GitHub created{% endif %}</span>{% elif iocRecord.recorded_date or iocRecord.first_seen %}{{ iocRecord.recorded_date or iocRecord.first_seen }} <span class="date-note">recorded</span>{% else %}—{% endif %}</td>
+  <td>{{ iocRecord.source_count }}</td>
+</tr>

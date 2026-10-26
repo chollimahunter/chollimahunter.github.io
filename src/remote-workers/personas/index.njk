@@ -1,0 +1,90 @@
+---
+layout: base.njk
+title: "Personas"
+description: "The fabricated identities behind the LinkedIn accounts reported in connection with DPRK remote IT-worker operations, each gathering the indicators one report filed under that identity."
+permalink: "/remote-workers/personas/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/persona-filter.js" defer></script>'
+---
+{#
+  src/remote-workers/personas/index.njk — the persona listing
+
+  One card per persona, each card a single link to its own page. The grouping
+  and the reasoning behind it live in scripts/lib/personas.js, surfaced here
+  through the `personas` global data file; cards come from
+  partials/persona-card.njk.
+#}
+{% set active_tab = "personas" %}
+{% set loosePhotos = iocs["x-dossiers"].unattributed_photos %}
+
+<section>
+  <h1>Personas</h1>
+  {% include "partials/profiles-tab-bar.njk" %}
+  <p>
+    A DPRK IT-worker operation does not apply for work as a person; it applies
+    as a persona — a fabricated professional identity with a name, a headshot,
+    an employment history and the accounts to hold them. This page gathers the
+    identifiers in the <a href="/remote-workers/">indicator index</a> into the
+    persona each was reported under. The grouping is the reporting's own: two
+    indicators appear together here only where one report, or one researcher,
+    filed them under the same identity. A tile under a publisher's name rather
+    than a person's is a photograph published with no address, account or name
+    attached to it, and leads out to the page that published it.
+  </p>
+  {# Hidden in the markup and revealed by persona-filter.js, the same
+     progressive-enhancement pattern as the /sources/ and /hunts/ filters.
+     data-persona-limit caps the listing at that many cards until the reader
+     asks for the rest; without JavaScript every card renders. The script
+     rounds the cap up to the end of the row it falls in, so the last row
+     before the button is a full one at every one of .profile-grid's column
+     counts.
+     Searching reaches into each persona's indicator list as well as its name,
+     so an address or a handle finds the persona holding it — see the
+     data-search attribute in partials/persona-card.njk. #}
+  <div class="table-filter" data-persona-search data-persona-limit="{{ limits.list }}" hidden>
+    {% set personaCountText %}{{ personas.length }} persona{% if personas.length != 1 %}s{% endif %}{% if loosePhotos.length %}, and {{ loosePhotos.length }} photograph{% if loosePhotos.length != 1 %}s{% endif %} published without an identifier{% endif %}. Select any one for the full record.{% endset %}{% set searchBox = { id: "persona-search-input", label: "Search personas", placeholder: "Name, alias, or an indicator such as an address or GitHub handle", attr: "data-persona-search-input", count: "data-persona-count", countText: personaCountText } %}{% include "partials/search-box.njk" %}
+    {% set resultTools = { target: "[data-persona-grid]", noun: "personas", sort: true } %}{% include "partials/result-tools.njk" %}
+  </div>
+
+
+  <p data-persona-empty hidden role="status" aria-live="polite"><em>No persona matches that search.</em></p>
+</section>
+
+{# Faces a researcher or a vendor published with no identifier attached to any
+   of them. They have no persona and cannot have one — there is nothing to
+   attach a picture to but the post it came from — and they are kept because a
+   published photograph of an operator's profile is a durable record of
+   something the account itself will not keep. They sit at the end of the one
+   grid, after everything that has an identity to be listed under, and their
+   tiles link out to the publisher rather than inward to a page, which is the
+   one place on this site a tile leaves it. #}
+<section data-persona-section>
+  <ul class="profile-grid" data-persona-grid>
+    {% for persona in personas %}{% set cardPersona = persona %}{% include "partials/persona-card.njk" %}{% endfor %}
+    {% for photo in loosePhotos %}
+    {% set tile = {
+      href: photo.post.url,
+      photo: photo.file,
+      name: photo.credit,
+      sub: "Published " + photo.post.date,
+      lang: "en",
+      attrs: 'data-photograph data-search="' + (photo.credit | lower | escape) + ' photograph published without an identifier"'
+    } %}
+    {% include "partials/tile.njk" %}
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <p data-persona-more hidden>
+    <button type="button" class="btn btn--secondary" data-persona-more-button>Show the remaining personas</button>
+  </p>
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    preset: "not-proof",
+    body: 'A persona name is the name an account presented under in the cited report, not necessarily the name of its operator.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

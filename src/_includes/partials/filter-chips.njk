@@ -1,0 +1,45 @@
+{#
+  partials/filter-chips.njk — one role="group" row of indicator filter-chip
+  buttons, read by src/assets/js/ioc-search.js.
+
+  Usage: set `filterChips` before including.
+    {% set filterChips = {
+      dimension: "type",
+      label: "Filter by indicator type",
+      allLabel: "All types (" + (iocIndex.remote_workers.total | thousands) + ")",
+      counts: iocIndex.remote_workers.counts_by_type,
+      formatValue: "replace-underscore",
+      suffix: ""
+    } %}
+    {% include "partials/filter-chips.njk" %}
+
+  Fields:
+    dimension    what data-filter="…" names on every chip in the group —
+                 "type", "campaign" or "status"
+    label        the group's aria-label
+    allLabel     the first chip's full text, including its own count if the
+                 caller wants one shown there
+    counts       the {value: count} object to render one chip per entry
+    formatValue  "replace-underscore" to show a value's underscores as
+                 spaces (indicator types); omit for the raw value
+    suffix       text appended after the (formatted) value and before its
+                 count, e.g. " accounts" for account-status chips
+    short        optional; the one- or two-word name filter-dropdown.js shows
+                 on the dropdown that replaces the row, e.g. "Type"
+    prefix       optional; text before each value, e.g. "P" for priorities
+    multiple     optional; true lets the reader press several chips at once
+                 (data-multiple), which filter-dropdown.js renders as a
+                 multi-select
+    rows         optional; a CSS selector for register-filter.js, which hides
+                 the rows inside it whose data-{dimension} is not pressed
+
+  The loop trims its own whitespace so the group has no blank line in it:
+  partials/table-filter.njk includes it on Markdown pages, where a blank line
+  would end the raw HTML block.
+#}
+<div class="filter-chips" role="group" aria-label="{{ filterChips.label }}"{% if filterChips.short %} data-short-label="{{ filterChips.short }}"{% endif %}{% if filterChips.multiple %} data-multiple{% endif %}{% if filterChips.rows %} data-row-filter="{{ filterChips.rows }}"{% endif %}>
+  <button type="button" class="filter-chip" aria-pressed="true" data-filter="{{ filterChips.dimension }}" data-value="all">{{ filterChips.allLabel }}</button>
+  {%- for value, count in filterChips.counts %}
+  <button type="button" class="filter-chip" aria-pressed="false" data-filter="{{ filterChips.dimension }}" data-value="{{ value }}">{{ filterChips.prefix }}{% if filterChips.formatValue == "replace-underscore" %}{{ value | replace("_", " ") }}{% else %}{{ value }}{% endif %}{{ filterChips.suffix }} ({{ count | thousands }})</button>
+  {%- endfor %}
+</div>

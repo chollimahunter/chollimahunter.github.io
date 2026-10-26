@@ -1,0 +1,54 @@
+{#
+  partials/persona-card.njk — one persona in a .profile-grid
+
+  Usage: set `cardPersona` before including.
+    {% set cardPersona = persona %}
+    {% include "partials/persona-card.njk" %}
+
+  A thin wrapper over partials/tile.njk, the same tile the named IT workers
+  render through, so the two listings are one design rather than two that nearly
+  match. A persona puts its mirrored avatar in the picture slot, its name on the
+  line below, and LIVE beside that name where it still holds a live account.
+
+  What is deliberately NOT on the card: the alias chips, the indicator counts and
+  the account headline it used to carry. A persona can be reported under a dozen
+  names, and six tiles across a row they swamped the name a reader is scanning
+  for. All of it is on the persona's own page.
+
+  cardPersona.avatar is hoisted onto the persona in scripts/lib/personas.js,
+  because the listing sorts on it as well as rendering it. It is either the
+  avatar a LinkedIn account presents or a mirrored photograph a researcher or
+  registry published. Neither is evidence of who runs the account: an avatar is
+  routinely stock imagery or a picture taken from an uninvolved person, and a
+  published photograph shows whoever appeared under the identity, not
+  necessarily whoever it was built from. That is why it is decorative here with
+  an empty alt, and carries its caveat in full on the persona's own page.
+
+  The text the listing's search box matches against, read by
+  src/assets/js/persona-filter.js, goes in `data-search`. It deliberately reaches
+  past the card into the persona's own indicators, because the useful search on
+  this page is an identifier rather than a name: pasting an address or a GitHub
+  handle should land on the persona holding it. Renaming data-search means
+  changing that script too.
+#}
+{% set cardSearch = [cardPersona.name, cardPersona.slug, cardPersona.heading] %}
+{% for alias in cardPersona.aliases %}{% set cardSearch = (cardSearch.push(alias), cardSearch) %}{% endfor %}
+{% for account in cardPersona.accounts %}{% set cardSearch = (cardSearch.push(account.handle + " " + account.url), cardSearch) %}{% endfor %}
+{% for identifier in cardPersona.identifiers %}{% set cardSearch = (cardSearch.push(identifier.value), cardSearch) %}{% endfor %}
+{% if cardPersona.accounts[0].status and cardPersona.accounts[0].status.profile %}
+  {% set searchProfile = cardPersona.accounts[0].status.profile %}
+  {# Each of these three is optional on a profile record -- a LinkedIn account
+     can display a location and no headline at all -- and Nunjucks renders a
+     missing one as the literal string "undefined", which lands in data-search
+     and trips check-site's template-leak rule. Default them to empty. #}
+  {% set cardSearch = (cardSearch.push((searchProfile.headline | default("")) + " " + (searchProfile.location | default("")) + " " + (searchProfile.current_role | default(""))), cardSearch) %}
+{% endif %}
+{%- set tile = {
+  href: "/remote-workers/personas/" + cardPersona.slug + "/",
+  photo: cardPersona.avatar,
+  empty: "No photograph",
+  name: cardPersona.name if cardPersona.name else (cardPersona.accounts[0].handle if cardPersona.accounts.length else cardPersona.slug),
+  badge: "LIVE" if cardPersona.live_accounts else null,
+  attrs: 'data-search="' + (cardSearch | join(" ") | lower | escape) + '"'
+} -%}
+{% include "partials/tile.njk" %}

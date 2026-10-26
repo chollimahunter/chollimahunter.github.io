@@ -1,0 +1,121 @@
+{
+  "accounts": {
+    "098oiuyt": {
+      "login": "098oiuyt",
+      "checked_at": "2026-10-03",
+      "repos_checked": 1,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": []
+    },
+    "0glabs-solid": {
+      "login": "0glabs-solid",
+      "checked_at": "2026-10-03",
+      "repos_checked": 1,
+      "repos_unreadable": 0,
+      "copies": [
+        {
+          "repo": "0g-play",
+          "origin": "xndbogdan/malicious-repositories",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 0.987,
+          "line_share": 0.814,
+          "identical_files": 305,
+          "files": 309
+        }
+      ],
+      "best_scores": [
+        {
+          "repo": "0g-play",
+          "origin": "xndbogdan/malicious-repositories",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 309,
+          "identical_files": 305,
+          "hash_share": 0.987,
+          "line_share": 0.814
+        }
+      ]
+    }
+  },
+  "control": {
+    "trwng": {
+      "login": "trwng",
+      "checked_at": "2026-10-03",
+      "repos_checked": 9,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "eunoia",
+          "origin": "IslyamMyrzagereyev/Lisma",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 15,
+          "identical_files": 5,
+          "hash_share": 0.333,
+          "line_share": 0
+        },
+        {
+          "repo": "ECOLOCATE",
+          "origin": "mrezkys/mixnmatch",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 21,
+          "identical_files": 3,
+          "hash_share": 0.143,
+          "line_share": 0
+        },
+        {
+          "repo": "numi_app",
+          "origin": "mariarodr1136/EcoHabitTracker",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 37,
+          "identical_files": 4,
+          "hash_share": 0.108,
+          "line_share": 0.008
+        }
+      ]
+    },
+    "cssupport23": {
+      "login": "cssupport23",
+      "checked_at": "2026-10-03",
+      "repos_checked": 5,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "AI-Model---SQL-Injection-Attack-Detector",
+          "origin": "NVIDIA/apex",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 3,
+          "identical_files": 0,
+          "hash_share": 0,
+          "line_share": 0.098
+        }
+      ]
+    }
+  },
+  "_comment": "Likely copied repositories among the indexed GitHub accounts, from scripts/score-copied-repos.js, with a control set of ordinary accounts run through the same code. A flag is a similarity measurement, not attribution. See docs/repo-copy-scores.md.",
+  "thresholds": {
+    "hash_share": 0.5,
+    "min_identical_files": 3,
+    "line_share": 0.8
+  },
+  "control_logins": [
+    "trwng",
+    "cssupport23",
+    "GooseBooze",
+    "cobra225",
+    "RajaSoundari"
+  ]
+}

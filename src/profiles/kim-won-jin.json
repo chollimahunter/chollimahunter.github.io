@@ -1,0 +1,61 @@
+{
+  "slug": "kim-won-jin",
+  "display_name": "Kim Won Jin",
+  "aliases": [
+    "Won-Jin Kim"
+  ],
+  "confidence_level": "medium",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/kim-won-jin.jpg",
+    "caption": "Identity photograph shown above the name Won-Jin Kim on the organization chart of the Beijing cell published in the cited GitLab Threat Intelligence report, which GitLab describes as its assessment. Cropped from the report's image and reproduced for identification.",
+    "source": "https://about.gitlab.com/blog/gitlab-threat-intelligence-reveals-north-korean-tradecraft/"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Threat-intelligence report details",
+    "status": "Named on the organization chart of a North Korean IT-worker cell in Beijing published by GitLab Threat Intelligence on February 19, 2026",
+    "details": [
+      {
+        "label": "Name as printed",
+        "value": "Won-Jin Kim on GitLab's organization chart and in the report's text; no Hangul form is given"
+      },
+      {
+        "label": "Role on GitLab's assessed organization chart",
+        "value": "Cell Member, Working Group Two"
+      },
+      {
+        "label": "Status in the cell's records",
+        "value": "Dropped from tracking in Q3 2025; documentation moved to a directory marked 귀국 (\"return to the home country\")"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean, per the report"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "GitLab Threat Intelligence Team reveals North Korean tradecraft",
+      "url": "https://about.gitlab.com/blog/gitlab-threat-intelligence-reveals-north-korean-tradecraft/",
+      "publisher": "GitLab Threat Intelligence",
+      "date": "2026-02-19",
+      "type": "threat_intel_report"
+    }
+  ],
+  "disclaimer": [
+    "Kim Won Jin (김원진; Won-Jin Kim in the report) is profiled here as a member of the North Korean IT-worker cell that GitLab Threat Intelligence assesses is managed by Kang Kil Nam and is highly likely colocated and operating from Beijing. GitLab's assessed organization chart places Kim Won Jin as a cell member in Working Group Two. GitLab reports that in the third quarter of 2025 Kim Won Jin was dropped from tracking and the related documentation was moved to a directory marked 귀국 (\"return to the home country\"), and assesses that the departure is unlikely to relate to earnings, which had been consistently high relative to other members.",
+    "The report gives this name in romanised form only. The Hangul above is this site's reconstruction from that romanisation and is not cited; search the romanised name.",
+    "GitLab reports that the cell's personnel dossiers describe every member as a researcher at the Kim Il-sung University Joint Research Center in Beijing (베이징주재 김일성종합대학 공동연구중심 연구사), and suggests the cell's presence in China may be under an academic pretext.",
+    "The confidence level of 'medium' reflects that the name comes from GitLab's assessed organization chart and the cell's internal records as GitLab reads them. It is a private company's assessment, not a criminal charge, a sanctions designation or a court finding."
+  ],
+  "last_updated": "2026-10-02",
+  "name_korean": "김원진",
+  "name_korean_provenance": "reconstructed"
+}

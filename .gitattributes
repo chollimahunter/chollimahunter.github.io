@@ -1,0 +1,22 @@
+# Normalize text files to LF in the repository itself. This does not force
+# a particular line ending in anyone's working copy — `eol=lf` only pins
+# what gets stored in the blob and what a fresh `git clone` checks out with
+# on a platform that has no other opinion; a developer's own core.autocrlf
+# still governs conversion on checkout/checkin as usual. Without this file,
+# git falls back to core.autocrlf alone, which is how this repo ended up
+# with tracked files stored with CRLF line endings (see README/CLAUDE.md's
+# Windows dev-server notes) even though every generated page and template
+# is authored assuming LF.
+* text=auto eol=lf
+
+# Fonts and images: binary, never diffed or line-ending-converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff2 binary
+*.woff binary
+*.ttf binary
+*.otf binary

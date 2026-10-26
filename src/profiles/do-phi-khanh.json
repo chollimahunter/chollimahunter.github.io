@@ -1,0 +1,80 @@
+{
+  "slug": "do-phi-khanh",
+  "display_name": "Do Phi Khanh",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on March 12, 2026 under Executive Order 13382, program tag NPWMD, for support to Kim Se Un",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Hanoi, Vietnam"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "March 4, 1980"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Hanoi, Vietnam"
+      },
+      {
+        "label": "Nationality",
+        "value": "Vietnamese"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "B7083978 (Vietnam), issued August 27, 2012, expired August 27, 2022"
+      },
+      {
+        "label": "National ID",
+        "value": "111534690 (Vietnam)"
+      },
+      {
+        "label": "Linked to",
+        "value": "Kim Se Un"
+      }
+    ],
+    "caution": "Do Phi Khanh (Do) is an associate of U.S.-sanctioned DPRK nuclear procurement facilitator Kim Se Un (Kim), who acts as Kim’s proxy and likely allows Kim to use his identity to open bank accounts and launder proceeds from DPRK IT workers. Hoang Van Nguyen (Hoang) also assists Kim in opening bank accounts, as well as enabling cryptocurrency transactions for Kim. Hoang has worked with Kim to procure foreign currency for the DPRK regime; in 2022, Hoang facilitated a counterfeit goods cigarette deal exceeding $200,000 on Kim’s behalf."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, March 12, 2026: North Korea Designations (Yun Song Guk, Amnokgang Technology Development Company and facilitators in Vietnam, Laos and Spain)",
+      "url": "https://ofac.treasury.gov/recent-actions/20260312",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-03-12",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Key Enablers of DPRK IT Worker Networks",
+      "url": "https://home.treasury.gov/news/press-releases/sb0416",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-03-12",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Do Phi Khanh is a Vietnamese national, not a DPRK national, and is profiled here as the proxy the Treasury says lets Kim Se Un use his identity to open bank accounts and launder DPRK IT workers' proceeds.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "Vietnamese national and facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

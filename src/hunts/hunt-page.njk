@@ -1,0 +1,25 @@
+---
+pagination:
+  data: hunts.hunts
+  size: 1
+  alias: hunt
+permalink: "/hunts/{{ hunt.id }}/"
+layout: layouts/hunt.njk
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/query-copy.js" defer></script><script src="/assets/js/table-filter.js" defer></script>'
+eleventyComputed:
+  title: "{{ hunt.title | safe }}"
+  description: "{{ hunt.summary | safe }}"
+---
+{#
+  src/hunts/hunt-page.njk — thin pagination shim
+
+  One page per entry in src/_data/hunts/hunts.json. Because that file sits in
+  the _data directory it is already a global data object — 11ty exposes
+  _data/hunts/hunts.json as `hunts.hunts` (directory name, then filename) —
+  so this paginates the global directly and needs no collection registered in
+  .eleventy.js.
+
+  This file has no body on purpose. All hunt-page markup lives in
+  src/_includes/layouts/hunt.njk.
+#}

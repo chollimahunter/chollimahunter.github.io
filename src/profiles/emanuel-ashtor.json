@@ -1,0 +1,72 @@
+{
+  "slug": "emanuel-ashtor",
+  "display_name": "Emanuel Ashtor",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Charged by indictment announced January 23, 2025; not sentenced as of the Justice Department's May 6, 2026 release",
+    "details": [
+      {
+        "label": "Nationality",
+        "value": "United States"
+      },
+      {
+        "label": "Laptop farm",
+        "value": "A residence in North Carolina, per the release"
+      },
+      {
+        "label": "Co-defendants",
+        "value": "Jin Sung-Il, Pak Jin-Song, Pedro Ernesto Alonso De Los Reyes, Erick Ntekereze Prince"
+      },
+      {
+        "label": "Charges",
+        "value": "Conspiracy to cause damage to a protected computer, conspiracy to commit wire fraud and mail fraud, conspiracy to commit money laundering, and conspiracy to transfer false identification documents"
+      }
+    ],
+    "caution": "According to the indictment, over the course of their scheme, from approximately April 2018 through August 2024, the defendants and their unindicted co-conspirators obtained work from at least sixty-four U.S. companies. Payments from ten of those companies generated at least $866,255 in revenue, most of which the defendants then laundered through a Chinese bank account. As part of this prosecution, the FBI arrested Ntekereze and Ashtor and executed a search of Ashtor’s residence in North Carolina, where he previously operated a “laptop farm” that hosted victim company-provided laptops to deceive companies into thinking they had hired U.S.-located workers. Alonso was arrested in the Netherlands on Jan. 10, pursuant to an arrest warrant from the United States. According to the indictment, the defendants used forged and stolen identity documents, including U.S. passports containing the stolen personally identifiable information of a U.S. person, to conceal the true identities of Jin, Pak, and other North Korean co-conspirators, so that these North Korean nationals could circumvent sanctions and other laws to obtain employment with U.S. companies. Ntekereze and Ashtor received laptops from U.S. company employers at their residences, downloading and installing remote access software on them, without authorization, to facilitate IT worker access and to perpetuate the deception of U.S. companies.",
+    "remarks": "The Justice Department's May 6, 2026 release states: Ashtor is awaiting trial, de los Reyes is in custody in The Netherlands awaiting extradition, and the Sung-il and Jin-Song are fugitives."
+  },
+  "sources": [
+    {
+      "title": "Two North Korean Nationals and Three Facilitators Indicted for Multi-Year Fraudulent Remote Information Technology Worker Scheme that Generated Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-north-korean-nationals-and-three-facilitators-indicted-multi-year-fraudulent-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-01-23",
+      "type": "indictment"
+    },
+    {
+      "title": "United States v. Jin Sung-Il et al., indictment (posted with the January 23, 2025 release)",
+      "url": "https://www.justice.gov/opa/media/1386281/dl",
+      "publisher": "U.S. Department of Justice",
+      "date": "2025-01-23",
+      "type": "indictment"
+    },
+    {
+      "title": "Two U.S. Nationals Sentenced for Facilitating Fraudulent Remote Information Technology Worker Schemes to Generate Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker-0",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2026-05-06",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Emanuel Ashtor is a United States national, not a DPRK national, and is profiled here as a domestic facilitator in the scheme charged in the January 2025 indictment alongside Jin Sung-Il and Pak Jin-Song. According to the Department of Justice he received employer-issued laptops at his residence, installed remote-access software on them without authorisation, and previously ran a laptop farm at a residence in North Carolina that the FBI searched at his arrest; the Department's May 2026 release says he is awaiting trial.",
+    "The confidence level of 'confirmed' reflects that this individual is named in a federal indictment described in Justice Department releases; the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

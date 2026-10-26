@@ -1,0 +1,18 @@
+---
+permalink: "/assets/data/ioc-index.csv"
+eleventyExcludeFromCollections: true
+---
+{#-
+  src/ioc-export.njk — the full indicator index as a downloadable CSV
+
+  Built from src/_data/iocIndex.js's `csv` string (see toCsv there). This is
+  what the download button on /remote-workers/ points at; the JSON alongside it is
+  the compact payload the search UI fetches, which uses one-letter keys and is
+  not meant to be read by a person.
+
+  No `layout` in the front matter, so 11ty writes the body verbatim. The
+  whitespace-control markers matter: without them the comment leaves a blank
+  first line, and a leading empty row breaks the header for anything parsing
+  this strictly.
+-#}
+{{- iocIndex.remote_workers.csv | safe }}

@@ -1,0 +1,2304 @@
+{
+  "_comment": "Written by scripts/enrich-platform-accounts.js: whether each indexed account on a checkable platform still exists (live) or is gone (removed). Accounts the check could not answer are absent and read as not checked.",
+  "checked": "2026-10-19",
+  "accounts": [
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/0xapp123",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/0xm00neth",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/7codewizard",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/akcgjc007",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/andrew_costure_2611",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/apollo0102",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/ashpala",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/bestsilvertiger",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/bluebird912",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/btc415",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/darkbranchcore",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/david_wenske_0b5dfdc82e27",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/dodger213",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/dreamboat999",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/dreamfullstacker",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/elbaable",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/ernestpapyan",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/husreo",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/ichikawa0822",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/jacksonmoridev0507",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/johnfaryno",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/jusdy",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/korvalev234234",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/kstar0102",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/lovelydev829",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/lovetompro",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/loyaldev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/mark_santiago_e06e6e05869",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/may79",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/melodydev0521",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/michael_liang_0208",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/nonfungiblejc",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/pavlo_posternak_4fe8f9439",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/phoenixdevguru",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/polartar",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/rusuland9",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/sallamy2580",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/santiagourregobotero",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/scott_brown_b611d05a865cf",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/sebastian_robinson_64",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/secretariatv",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/spectrecoder",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/steven228312",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/superstar-lucas",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/trentist",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/truecode112",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/trust0212",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/tysonstar912913",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/williamharris0214",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "devto_account",
+      "value": "https://dev.to/youthdream0925",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/0xlock",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/akcgjc007",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/anywhere0811",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/ashpala",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/blackeagle273",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/blinkdev02",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/cobang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/devking0718",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/devneser",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/ernestpapyan",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/fullstackdev3546",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/goldentechie",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/gsofter",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/guru2921",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/highgoal215",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/ican0220",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/jusdy",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/jwtradera",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/kazunetakeda25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/loyaldev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/lucenera75",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/mbenz12",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/midas92",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/nonfungiblejc",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/phoenixfeather0208",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/ryuheimat",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/scottbrown0629",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/secretariatv",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/seniorwebdev215",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/stormrunner06106",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/sunnyskai",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/talentdev2020",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/temunel",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/tinydota9999",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/tortuc",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "dockerhub_account",
+      "value": "https://hub.docker.com/u/whisdev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "freelancermap_account",
+      "value": "https://freelancermap.com/profile/denis-rudink",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "freelancermap_account",
+      "value": "https://freelancermap.com/profile/james-d",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "freelancermap_account",
+      "value": "https://freelancermap.com/profile/jemelito-constantino",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/0xapp123",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/0xm00neth",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/0xnevo",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/accompany1205",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/apollo0102",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/arkiler-group",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/bejaxer",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/benbarker0311",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/big.dreamwork999",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/blackhorse0215",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/brentjeremynel",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/climaxstar",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/codechef730",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/codeknight0707",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/devkitty803",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/devneser",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/donatelo212dunccine",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/dreamboat999",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/dreamfullstacker",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/ernestpapyan",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/ethfuji",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/evgpan",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/fullstackdev3546",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/gitakileus",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/goldencity-group",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/goldentechie",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/good725",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/gsofter",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/guru2921",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/harun961018",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/haruto918miura",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/henryzhang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/hodlwarden",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/hotcappuchino99",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/hunter0409",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/icandev0220",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/jason198511",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/jasonharry1988052",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/joun3910",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/jsreputation",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/jwtradera",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/kazunetakeda25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/keisukew53",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/keizir",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/kevin-group5101713",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/koalah86",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/kstar0102",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/lambook35",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/leech_dev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/liuyuan040620",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/lovelydev829",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/lucaswongc",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/may79",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/mbenz12",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/nextzen247",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/nonfungiblejc",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/okawamasaaki916",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/onetouch0525",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/pauleta0126",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/pedrodiaz417",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/polartar",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/predict-together",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/pulsynk-org",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/rango527",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/real-world-assest-tokenization",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/robertodifiore75",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/ryuheimat",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/ryuheimat3",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/santiagourregobotero",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/scottbrown0629",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/secretariatv",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/skyclean906",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/smartdev914",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/smartdevpro001",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/smartfox1203",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/smith0811",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/springers230",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/starhelios",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/supertalented730",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/talentdev2020",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/technicalmanager-group",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/tomlove223",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/toparc077",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/trixauvex-org",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/truecoder112",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "gitlab_account",
+      "value": "https://gitlab.com/tune247",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "himalayas_account",
+      "value": "https://himalayas.app/@codegenerator1994",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "himalayas_account",
+      "value": "https://himalayas.app/@jacksonmori",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "himalayas_account",
+      "value": "https://himalayas.app/@superbluestar",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/aiden77mori",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/anthon-dev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/bigrocks918",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/cobang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/henryzhang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/jabook425",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/jpeek998",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/juliusmkelly",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/jusdy",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/jwtradera",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/lovelydev829",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/loyaldev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/may79",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/midas92",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/phoenixfeather0208",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/santiagourregobotero",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "huggingface_account",
+      "value": "https://huggingface.co/smartdev0205",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/ashpala",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/cobang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/dreampioneer",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/ggsofter",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/henryzhang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/kazunetakeda25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/keizir",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/ryuheimat",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "keybase_account",
+      "value": "https://keybase.io/zhangguo",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "laborx_account",
+      "value": "https://laborx.com/freelancers/users/id100369",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "laborx_account",
+      "value": "https://laborx.com/freelancers/users/id126269",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "laborx_account",
+      "value": "https://laborx.com/freelancers/users/id32867",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "laborx_account",
+      "value": "https://laborx.com/freelancers/users/id328992",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "linktree_account",
+      "value": "https://linktr.ee/codeninja819",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "linktree_account",
+      "value": "https://linktr.ee/shaorunzhang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "remoteok_account",
+      "value": "https://remoteok.com/@jackson_mori",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "remoteok_account",
+      "value": "https://remoteok.com/@karlchong",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "remoteok_account",
+      "value": "https://remoteok.com/@kodakdominus",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "remoteok_account",
+      "value": "https://remoteok.com/@seniordev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/ai_crypto_guru",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/alexandrs888",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/altpl",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/anotherrusty",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/arbuckle34",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/ares_orb",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/arkysatoshisdog",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/atroobj",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/baymax586",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bcstar18",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bestdiamond9",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bettyjk_0915",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bigdream0925",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bigforniture1126",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bio_1001",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bitfancy",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/blategold",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bluesoft2100",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/bluestar0805",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cdevm",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/chaisomsri",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/chamel92",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cobang",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/codeninja819_eth",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/coinbit25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/compete119",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cooldev_900",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cox1118",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cryptodegen202",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cryptofist1002",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cryptotrading2150",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cupid040620",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/cutupdev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/d0sc4u",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/da1asin",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/damianmularz",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/defiworld_dev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/denis_rudink",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/derekgamedev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/devcutup",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/devkitty803",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/dodger0213",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/dreamy327",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/dredsoft",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/dss2000",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/ee1030109",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/elvencoin",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/ethfuji",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/expertvetted7",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/flashhypo",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/goldboris0622",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/grudev325",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/guardstates",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hades1215",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/haodev007",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hashbirdcho",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/healer365life",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hodlwarden",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hotcappuchino",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hsboris0622",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/hunter0409",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/idiorusty",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/imyugioh",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/incredible823",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/indiaoutbd",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/itloverman",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/itsmyturn93",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/iwakihiroto",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/james50d",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/jamie088",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/janbuidl",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/jankowskimichal",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/jeremymichael0709",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/jjmoliy",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/kanbei0605",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/kasky53",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/kazunetakeda25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/kn_amm",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/komonado",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lcoppn",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/leech_dev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/leonk0804",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/levinelarry",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lhuang0106",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lin_crypto1012",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lladefa",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/logan_lee_c",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/loganworld",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lqna_erc20",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/lucastdev16",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/m4rcu5o",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/maodan007",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/marksantiago02",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/marksantiago290",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/memelove112",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/micry",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/moreleon",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/mutantrolls",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/neverm25",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/newegger",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/newstabled",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/nimbusdev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/oh9898",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/oliparker000",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/onemetafoxx",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/oxcrypoops",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/pacle002",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/peregrine423f",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/pethercap",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/phefuckxiabot",
+      "state": "removed",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/phoenixdevguru",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/phoenixfeather0208",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/pup5ol",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/quinnduck",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/rango527",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/sano1009",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/sasuke310",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/saveen_master",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/sether1009",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/shiny0103",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/silvani777",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/smartdev0205",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/smartdev19961",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/smartdevpro",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/smartwebdev16",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/snipmaxi",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/soladify",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/soladity",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/spmoed",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/steven228312",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/stevendev0822",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/stevenjung",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/stevensprg",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/stormrunner06106",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/superbluestar",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/superdevel0per",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/supernathanliu",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/superpolaris",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/sweet_heart1217",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/systemadminbd",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/tecguru0618",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/toothless128",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/top_329",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/topsecretagent_007",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/tr1030109",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/trust0205",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/trust0212",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/wc117",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/wdev733",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/webtalent0123",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/whatis12354",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/whisdev",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/whitecrow0109",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/xbejaxer",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/xmusenine",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/zerobit417",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/zerox_toml",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/zhmolly",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "telegram_account",
+      "value": "https://t.me/zzmoly",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "torre_account",
+      "value": "https://torre.ai/alexander116gm",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "torre_account",
+      "value": "https://torre.ai/brentjeremynel",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "torre_account",
+      "value": "https://torre.ai/jacksonmori",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "torre_account",
+      "value": "https://torre.ai/nickdev0118",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "torre_account",
+      "value": "https://torre.ai/phantomdev0302",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "xing_account",
+      "value": "https://xing.com/profile/karl_chong",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "xing_account",
+      "value": "https://xing.com/profile/naoyuki_tanaka",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "xing_account",
+      "value": "https://xing.com/profile/paul_martin08403",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "xing_account",
+      "value": "https://xing.com/profile/shaorun_zhang019833",
+      "state": "live",
+      "checked": "2026-10-19"
+    },
+    {
+      "type": "xing_account",
+      "value": "https://xing.com/profile/thomas_mullan081160",
+      "state": "live",
+      "checked": "2026-10-19"
+    }
+  ]
+}

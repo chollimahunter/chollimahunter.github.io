@@ -1,0 +1,76 @@
+{
+  "slug": "nguyen-quang-viet",
+  "display_name": "Nguyen Quang Viet",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on March 12, 2026 under Executive Order 13810, program tag DPRK4, for support to Amnokgang Technology Development Company",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Vietnam"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "October 12, 1993"
+      },
+      {
+        "label": "Nationality",
+        "value": "Vietnamese"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "National ID",
+        "value": "122094898 (Vietnam)"
+      },
+      {
+        "label": "Company",
+        "value": "Chief Executive Officer of Quangvietdnbg International Services Company Limited"
+      },
+      {
+        "label": "Linked to",
+        "value": "Amnokgang Technology Development Company"
+      }
+    ],
+    "caution": "Amnokgang Technology Development Company (Amnokgang) is a DPRK IT company managing delegations of overseas IT workers and conducting other illicit procurement activities to obtain and sell military and commercial technology through their overseas networks. Nguyen Quang Viet (Nguyen) is the Chief Executive Officer (CEO) of Quangvietdnbg International Services Company Limited (Quangvietdnbg), a company based in Vietnam. Nguyen facilitates currency conversion services for North Koreans through his company. Between mid-2023 and mid-2025, Nguyen converted approximately $2.5 million into cryptocurrency for North Koreans, which included converting illicit earnings from IT workers associated with Amnokgang."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, March 12, 2026: North Korea Designations (Yun Song Guk, Amnokgang Technology Development Company and facilitators in Vietnam, Laos and Spain)",
+      "url": "https://ofac.treasury.gov/recent-actions/20260312",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-03-12",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Key Enablers of DPRK IT Worker Networks",
+      "url": "https://home.treasury.gov/news/press-releases/sb0416",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-03-12",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Nguyen Quang Viet is a Vietnamese national, not a DPRK national, and is profiled here as the currency-conversion facilitator the Treasury says turned about $2.5 million into cryptocurrency for North Koreans between mid-2023 and mid-2025, including the earnings of IT workers under Amnokgang Technology Development Company.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "Vietnamese national and facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

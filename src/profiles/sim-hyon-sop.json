@@ -1,0 +1,89 @@
+{
+  "slug": "sim-hyon-sop",
+  "display_name": "Sim Hyon-Sop",
+  "aliases": [
+    "Ali Sim",
+    "Sim Hajim"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "RGB (Reconnaissance General Bureau)"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/sim-hyon-sop.jpg",
+    "caption": "Photograph published by the FBI on its wanted notice for Sim Hyon-Sop. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/counterintelligence/sim-hyon-sop"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Counterintelligence",
+    "details": [
+      {
+        "label": "Date(s) of Birth Used",
+        "value": "November 25, 1983, November 25, 1972"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Pyongyang, North Korea"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Occupation",
+        "value": "Foreign Trade Bank Representative"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Languages",
+        "value": "Korean, English, Chinese"
+      }
+    ],
+    "caution": "Sim Hyon-Sop is a North Korean national who works for the Foreign Trade Bank (FTB) of North Korea, which has been sanctioned by the United States. It is alleged that Sim helped transact with customers that traded with North Korea and ensured money could move in and out of North Korea without interruption, despite U.S. sanctions. For roughly a decade, Sim allegedly played a pivotal role in defrauding U.S. banks by remitting U.S. dollar payments to facilitate trade on behalf of North Korea. On March 21, 2023, a federal arrest warrant was issued for Sim Hyon-Sop in the United States District Court for the District of Columbia, Washington, D.C., after he was charged with Conspiracy to Commit Bank Fraud, Conspiracy to Violate and Violations of International Emergency Economic Powers Act, North Korean Sanctions Regulations, Conspiracy to Launder Monetary Instruments, and Laundering Monetary Instruments.",
+    "remarks": "Sim Hyon-Sop has ties to or may visit North Korea, China, and the United Arab Emirates.",
+    "reward": "The United States Department of State’s Transnational Organized Crime Rewards Program is offering a reward of up to $5 million for information leading to the arrest and conviction of Sim Hyon-Sop.",
+    "poster_url": "https://www.fbi.gov/wanted/counterintelligence/sim-hyon-sop/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "SIM HYON-SOP — FBI Wanted",
+      "url": "https://www.fbi.gov/wanted/counterintelligence/sim-hyon-sop",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Recent Actions, March 12, 2026: North Korea Designations and Designation Update (Sim Hyon Sop entry updated)",
+      "url": "https://ofac.treasury.gov/recent-actions/20260312",
+      "publisher": "Office of Foreign Assets Control, U.S. Department of the Treasury",
+      "date": "2026-03-12",
+      "type": "sanctions_designation"
+    }
+  ],
+  "disclaimer": [
+    "A North Korean national working for the sanctioned Foreign Trade Bank of North Korea. The FBI alleges he helped transact with customers trading with North Korea and kept money moving in and out of the country despite U.S. sanctions, playing a role over roughly a decade in defrauding U.S. banks.",
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean": "심현섭",
+  "name_korean_provenance": "reconstructed"
+}

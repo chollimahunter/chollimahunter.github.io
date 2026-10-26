@@ -1,0 +1,18 @@
+node_modules/
+_site/
+.cache/
+.DS_Store
+Thumbs.db
+*.log
+.playwright-mcp/
+.vscode/
+
+# Local secrets (e.g. GITHUB_TOKEN for scripts/run-repo-scan.js). Never
+# committed — see .env.example for the variables a script actually reads.
+.env
+.env.local
+
+# The maintainer's private working repository, checked out here: staged
+# scraper runs, review pages, research notes and the withheld values in
+# _drafts/private/. None of it belongs in this public repository; see CLAUDE.md.
+_drafts/

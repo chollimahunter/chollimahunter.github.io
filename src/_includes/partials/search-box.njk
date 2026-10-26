@@ -1,0 +1,27 @@
+{#
+  partials/search-box.njk — the site's one search input. Every search on the
+  site renders its box through this, so a change here reaches all of them:
+  /remote-workers/, each cluster page, /repo-scanner/, /hunts/,
+  /remote-workers/personas/, and every table search (partials/table-filter.njk).
+
+  Usage: set `searchBox` before including.
+    {% set searchBox = { id: "hunt-search-input", label: "Search hunts", placeholder: "Title or indicator", attr: "data-hunt-search-input" } %}
+    {% include "partials/search-box.njk" %}
+
+  Fields:
+    id           the <input>'s id, and what its <label for> points at
+    label        the label text
+    labelHidden  optional; keep the label for screen readers but not on
+                 screen, where the placeholder carries the same words
+    placeholder  the input's placeholder text
+    attr         optional; one bare data attribute the page's script finds
+                 the input by (ioc-search.js finds it by id instead)
+    count        optional; the bare data attribute of the live result count
+                 the page's script rewrites (data-ioc-count and the like). It
+                 is set on the label's line, to the right of the label.
+    countText    optional; the count's text before the script runs
+
+  DELIBERATELY ON ONE LINE: partials/table-filter.njk includes it, and that
+  partial reaches src/etherhiding/index.md through Markdown, where a raw HTML
+  block with a line break inside is read as markdown.
+#}<div class="form-field"><div class="search-box__head"><label for="{{ searchBox.id }}"{% if searchBox.labelHidden %} class="visually-hidden"{% endif %}>{{ searchBox.label }}</label>{% if searchBox.count %}<span class="form-hint search-box__count" role="status" aria-live="polite" {{ searchBox.count }}>{{ searchBox.countText | default("") | safe }}</span>{% endif %}</div><input type="text" id="{{ searchBox.id }}" autocomplete="off" spellcheck="false" placeholder="{{ searchBox.placeholder }}"{% if searchBox.attr %} {{ searchBox.attr }}{% endif %}></div>

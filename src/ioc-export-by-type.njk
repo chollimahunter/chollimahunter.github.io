@@ -1,0 +1,25 @@
+---
+pagination:
+  data: iocIndex.remote_workers.type_keys
+  size: 1
+  alias: iocType
+permalink: "/assets/data/ioc-index-{{ iocType }}.csv"
+eleventyExcludeFromCollections: true
+---
+{#-
+  src/ioc-export-by-type.njk — the remote-worker index as CSV, one file per
+  indicator type
+
+  Paginates over iocIndex.remote_workers.type_keys, one page per type, each
+  writing the pre-built string in iocIndex.remote_workers.csv_by_type (see
+  toCsvByType() in src/_data/iocIndex.js). Same columns as
+  /assets/data/ioc-index.csv (src/ioc-export.njk), just pre-filtered to one
+  ioc_type, so a reader who wants only the email addresses or only the IP
+  addresses across the whole dataset — not just what the client-side search
+  has currently matched — gets a static, linkable file with no JavaScript
+  required. Linked from /remote-workers/.
+
+  No `layout`, so 11ty writes the body verbatim; the whitespace-control
+  markers matter the same way they do in src/ioc-export.njk.
+-#}
+{{- iocIndex.remote_workers.csv_by_type[iocType] | safe }}

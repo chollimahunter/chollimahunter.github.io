@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: "Named Individuals"
+description: "Every individual named on this site in a law-enforcement wanted notice, indictment or sanctions designation — DPRK cyber actors and IT-worker operators alike, across every activity cluster."
+permalink: "/profiles/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
+---
+{#
+  src/profiles/index.njk: every named individual, deliberately unfiltered
+  (unlike /remote-workers/pictures/). The permalink keeps its first-published
+  URL. Tiles come from partials/profile-tile.njk.
+#}
+<section>
+  <h1>Named Individuals</h1>
+  <p>
+    Every individual named on this site, across all activity clusters. For the
+    IT-worker cluster on its own, alongside the searchable indicator index, see
+    <a href="/remote-workers/">Remote Workers</a>.
+  </p>
+
+  {% if collections.profiles.length %}
+  <p class="form-hint" role="status" aria-live="polite" data-grid-count="#all-profiles">
+    {{ collections.profiles.length }} profile{% if collections.profiles.length != 1 %}s{% endif %}.
+    Select any one for the full record.
+  </p>
+  <ul class="profile-grid" id="all-profiles" data-grid-limit="{{ limits.list }}">
+    {% for profile in collections.profiles %}{% set tileProfile = profile %}{% include "partials/profile-tile.njk" %}{% endfor %}
+  </ul>
+  {% set gridMore = { target: "#all-profiles", noun: "profiles" } %}
+  {% include "partials/grid-more.njk" %}
+  {% else %}
+  <p><em>No profiles published yet.</em></p>
+  {% endif %}
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    body: 'Each person is drawn from a public wanted notice, indictment or sanctions designation in which the conduct is alleged, and is presumed innocent unless proven guilty in court. Confidence levels reflect the cited source, not a finding of this site. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

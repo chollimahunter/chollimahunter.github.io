@@ -1,0 +1,1536 @@
+{
+  "_comment": "What kind of line each telephone indicator is. See docs/phone-line-types.md for how these were obtained and what each field is allowed to claim. Read at build time by scripts/lib/dossiers.js; nothing here is synthesized, and a number with no entry renders with no line-type block at all.",
+  "checked": "2026-09-30",
+  "numbers": [
+    {
+      "value": "+12016033633",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "BAYONNE, NJ",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12034233572",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "WILTON, CT",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12097895670",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "block_carrier": "ONVOY, LLC - CA",
+      "basis": "number",
+      "location": "MOCCASIN, CA",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "names": []
+    },
+    {
+      "value": "+12098132524",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "ANGELS CAMP, CA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12108073329",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "CELLCO PARTNERSHIP DBA VERIZON WIRELESS - TX",
+      "basis": "number",
+      "location": "SAN ANTONIO, TX",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+12108880596",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "LEVEL 3 COMMUNICATIONS, LLC - TX",
+      "basis": "number",
+      "location": "SAN ANTONIO, TX",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+12142962250",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "DALLAS, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12143771162",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "DALLAS, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12144841926",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "CHARTER FIBERLINK",
+      "location": "DALLAS, TX"
+    },
+    {
+      "value": "+12146666153",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "DALLAS, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12147314674",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "CARROLLTON, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12194763075",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "VALPARAISO, IN",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12222841219",
+      "checked": "2026-09-13",
+      "line_type": "Not assigned",
+      "basis": "number",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "note": "A per-number lookup returns no record and marks the number fabricated: area code 222 is not valid. No carrier holds this block in the North American numbering plan, so the number is not in service and most likely never was, and a per-number lookup returns no record for it either.",
+      "names": []
+    },
+    {
+      "value": "+12228544879",
+      "checked": "2026-09-13",
+      "line_type": "Not assigned",
+      "basis": "number",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "note": "A per-number lookup returns no record and marks the number fabricated: area code 222 is not valid. No carrier holds this block in the North American numbering plan, so the number is not in service and most likely never was, and a per-number lookup returns no record for it either.",
+      "names": []
+    },
+    {
+      "value": "+12299474300",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "CORDELE, GA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12406851440",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "BRANDYWINE, MD",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+12703064686",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "AFFINITYCLICK-INTELIQUENT",
+      "location": "FRANKLIN, KY"
+    },
+    {
+      "value": "+12818167603",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "block_carrier": "LEVEL 3 OF TELECOM OF TEXAS, LLC - TX",
+      "basis": "number",
+      "location": "FRIENDSWOOD, TX",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "names": []
+    },
+    {
+      "value": "+13098071516",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "BLOOMINGTON, IL",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+13187348197",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "block_carrier": "ONVOY, LLC - LA",
+      "basis": "number",
+      "location": "SHREVEPORT, LA",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "names": []
+    },
+    {
+      "value": "+13212806782",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "METROPCS NETWORKS, LLC",
+      "basis": "number",
+      "location": "WINTER PARK, FL",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+13234128387",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "location": "LOS ANGELES, CA"
+    },
+    {
+      "value": "+13236015684",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "block_carrier": "ONVOY, LLC - CA",
+      "basis": "number",
+      "location": "LOS ANGELES, CA",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "names": []
+    },
+    {
+      "value": "+13304490675",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "LEVEL 3 COMMUNICATIONS, LLC - OH",
+      "basis": "number",
+      "location": "BERLIN, OH",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+13365755961",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "AT&T MOBILITY",
+      "location": "WINSTON SALEM, NC"
+    },
+    {
+      "value": "+13477321116",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "NEW YORK CITY, NY",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+13522189664",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "MELROSE, FL"
+    },
+    {
+      "value": "+13522344952",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "block_carrier": "NEW CINGULAR WIRELESS PCS, LLC - GA",
+      "basis": "number",
+      "location": "MICANOPY, FL",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2p as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+13524371007",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "DADE CITY, FL",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+13524486679",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "GAINESVILLE, FL",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+13853917383",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "T-MOBILE",
+      "location": "KAYSVILLE, UT"
+    },
+    {
+      "value": "+14074369174",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "location": "KENANSVILLE, FL"
+    },
+    {
+      "value": "+14086002695",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "LEVEL 3 COMMUNICATIONS, LLC - CA",
+      "basis": "number",
+      "location": "SAN JOSE, CA",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+14109891673",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "location": "FORK, MD"
+    },
+    {
+      "value": "+14125281796",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "PITTSBURGH SUBURBAN, PA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14131131213",
+      "checked": "2026-09-13",
+      "line_type": "Not assigned",
+      "basis": "number",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "note": "A per-number lookup returns no record and marks the number fabricated: prefix 113 is not valid. No carrier holds this block, and an exchange code cannot begin with a 1 under the North American numbering plan, so this is not a dialable number. The registry that published it marks it as fabricated.",
+      "names": []
+    },
+    {
+      "value": "+14195495014",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "AERIAL COMMUNICATIONS, INC.",
+      "basis": "number",
+      "location": "LIMA, OH",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+14197460450",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "basis": "number",
+      "location": "KELLEYS ISLAND, OH",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "001F",
+      "names": []
+    },
+    {
+      "value": "+14197529094",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "GREENWICH, OH",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14326141112",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "ODESSA, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14326141114",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "ODESSA, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "6114",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14696383433",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "DALLAS, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "004F",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14792500880",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "BENTONVILLE, AR",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+14844731213",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "BRIGHTLINK COMMUNICATIONS",
+      "location": "WEST CHESTER, PA"
+    },
+    {
+      "value": "+14848411212",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "PHILADELPHIA SUBURBAN, PA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15083438159",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "basis": "number",
+      "location": "SEEKONK, MA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "990E",
+      "names": []
+    },
+    {
+      "value": "+15103452181",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "TWILIO",
+      "location": "OAKLAND, CA"
+    },
+    {
+      "value": "+15123948556",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "AUSTIN, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "9533",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15124106853",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "AUSTIN, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "6114",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15125614646",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "MILANO, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15127824477",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "AUSTIN, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "6114",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15594218345",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "T-MOBILE",
+      "location": "FRESNO, CA"
+    },
+    {
+      "value": "+15715487151",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "SINCH",
+      "location": "HERNDON, VA",
+      "note": "Sinch is a communications-platform provider selling programmable numbers to software, not a consumer mobile operator, so the wireless label describes the numbering range rather than a handset somebody walked into a shop to buy."
+    },
+    {
+      "value": "+15717621053",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "MANASSAS, VA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+15743327950",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "AFFINITYCLICK-INTELIQUENT",
+      "location": "ARGOS, IN"
+    },
+    {
+      "value": "+15747668586",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "SINCH",
+      "location": "CLAYPOOL, IN",
+      "note": "Sinch is a communications-platform provider selling programmable numbers to software, not a consumer mobile operator, so the wireless label describes the numbering range rather than a handset somebody walked into a shop to buy."
+    },
+    {
+      "value": "+15752238602",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "T-MOBILE",
+      "location": "TRUTH OR CONSEQUENCES, NM"
+    },
+    {
+      "value": "+16094590680",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "DENNISVILLE, NJ",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+16146974328",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "COLUMBUS, OH",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "464C",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+16159530011",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "NASHVILLE, TN",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+16237079078",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "VERIZON WIRELESS",
+      "location": "PHOENIX, AZ"
+    },
+    {
+      "value": "+16312120456",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "COMMACK, NY"
+    },
+    {
+      "value": "+16393899939",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Landline",
+      "basis": "number",
+      "carrier": "IRISTEL INC.",
+      "location": "SK",
+      "country": "CANADA",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "note": "Iristel is a Canadian competitive local exchange carrier whose numbering is widely resold, so the landline label describes the range rather than a fixed line at an address."
+    },
+    {
+      "value": "+16464800703",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "NEW YORK CITY, NY",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "997E",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+16502886662",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "SAN MATEO, CA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "8826",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+16509180424",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "location": "SAN MATEO, CA"
+    },
+    {
+      "value": "+16616414001",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "EDWARDS, CA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+17062373260",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "ROME, GA"
+    },
+    {
+      "value": "+17162266650",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "basis": "number",
+      "location": "BOSTON, NY",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "997E",
+      "names": []
+    },
+    {
+      "value": "+17164268176",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "T-MOBILE",
+      "location": "BUFFALO, NY"
+    },
+    {
+      "value": "+17274569535",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "ST PETERSBURG, FL",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "829J",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+17372051525",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "AUSTIN, TX"
+    },
+    {
+      "value": "+17373582284",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "AUSTIN, TX"
+    },
+    {
+      "value": "+17473165959",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "SINCH",
+      "location": "BURBANK, CA",
+      "note": "Sinch is a communications-platform provider selling programmable numbers to software, not a consumer mobile operator, so the wireless label describes the numbering range rather than a handset somebody walked into a shop to buy."
+    },
+    {
+      "value": "+1753362648",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Not assigned",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "note": "A per-number lookup returns no record and marks the number fabricated: area code 175 is not valid."
+    },
+    {
+      "value": "+17652673627",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "location": "CRAWFORDSVILLE, IN"
+    },
+    {
+      "value": "+17655701757",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "RUSHVILLE, IN",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "6534",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+17738284391",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "CHICAGO, IL",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+17745166548",
+      "checked": "2026-09-13",
+      "line_type": "Wireless",
+      "carrier": "SINCH",
+      "basis": "number",
+      "location": "EAST BRIDGEWATER, MA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "073H",
+      "names": [],
+      "note": "Sinch is a communications-platform provider selling programmable numbers to software, not a consumer mobile operator, so the wireless label describes the numbering range rather than a handset somebody walked into a shop to buy."
+    },
+    {
+      "value": "+17862474921",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "VERIZON WIRELESS",
+      "location": "MIAMI, FL"
+    },
+    {
+      "value": "+17867431332",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "location": "NORTH DADE, FL"
+    },
+    {
+      "value": "+18033390164",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "basis": "number",
+      "location": "MILL CREEK, SC",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "077F",
+      "names": []
+    },
+    {
+      "value": "+18045965909",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "GOOGLE VOICE",
+      "basis": "number",
+      "location": "BOWLING GREEN, VA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "079F",
+      "names": []
+    },
+    {
+      "value": "+18065774400",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "LUBBOCK, TX",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+18143314968",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "BRADFORD, PA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "6392",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+18146194286",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "JOHNSTOWN, PA",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "4007",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+18177788385",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "GRAPEVINE, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "004F",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+18316235660",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "SAN JUAN, CA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+18327063757",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "block_carrier": "BANDWIDTH.COM CLEC, LLC - TX",
+      "basis": "number",
+      "location": "HOUSTON, TX",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows.",
+      "names": []
+    },
+    {
+      "value": "+18482297506",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "location": "METUCHEN, NJ"
+    },
+    {
+      "value": "+18503084867",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "PENSACOLA, FL"
+    },
+    {
+      "value": "+19042569099",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "JACKSONVILLE, FL",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+19049022559",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SINCH",
+      "location": "JACKSONVILLE, FL"
+    },
+    {
+      "value": "+19103840615",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "basis": "number",
+      "location": "LAURINBURG, NC",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "998E",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+19142144549",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "location": "YORKTOWN HEIGHTS, NY",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype Communications as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+19415807652",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "VERIZON WIRELESS",
+      "location": "BRADENTON, FL"
+    },
+    {
+      "value": "+19513796597",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "T-MOBILE",
+      "location": "MORENO, CA"
+    },
+    {
+      "value": "+19713004665",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "location": "PORTLAND, OR"
+    },
+    {
+      "value": "+19728909399",
+      "checked": "2026-09-13",
+      "line_type": "VoIP",
+      "carrier": "SKYPE COMMUNICATIONS",
+      "basis": "number",
+      "location": "GRAND PRAIRIE, TX",
+      "sources": [
+        "localcallingguide.com",
+        "phonevalidator.com"
+      ],
+      "ocn": "7229",
+      "names": [],
+      "note": "phonevalidator.com labels the line LANDLINE while naming SKYPE COMMUNICATIONS as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+19732596343",
+      "checked": "2026-09-12",
+      "line_type": "VoIP",
+      "carrier": "BANDWIDTH.COM",
+      "block_carrier": "VERIZON NEW JERSEY, INC.",
+      "basis": "number",
+      "location": "BLOOMFIELD, NJ",
+      "sources": [
+        "phonevalidator.com",
+        "localcallingguide.com"
+      ],
+      "names": []
+    },
+    {
+      "value": "+19783919978",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "VoIP",
+      "carrier": "SKYPE P2P",
+      "location": "AYER, MA",
+      "note": "phonevalidator.com labels the line LANDLINE while naming Skype P2P as the carrier in the same row. The carrier is an interconnected VoIP provider, which is what the classification here follows."
+    },
+    {
+      "value": "+35312544393",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "UPC COMMUNICATIONS",
+      "location": "DUBLIN",
+      "country": "IRELAND"
+    },
+    {
+      "value": "+3580441576",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Not assigned",
+      "note": "A per-number lookup returns no record and marks the number fabricated: invalid Number. The listing prints it as +358 044 1576, which keeps the domestic trunk 0 after the country code and is too short for a Finnish number."
+    },
+    {
+      "value": "+3584573985503",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "ALANDS MOBILTELEFON",
+      "location": "FINLAND",
+      "country": "FINLAND"
+    },
+    {
+      "value": "+3584573986537",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "ALANDS MOBILTELEFON",
+      "location": "FINLAND",
+      "country": "FINLAND"
+    },
+    {
+      "value": "+3589231651",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "DNA OY",
+      "location": "HELSINKI",
+      "country": "FINLAND"
+    },
+    {
+      "value": "+380934758522",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "ASTELIT (LIFECELL",
+      "location": "UKRAINE",
+      "country": "UKRAINE"
+    },
+    {
+      "value": "+40733200800",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "ORANGE ROMANIA",
+      "location": "ROMANIA",
+      "country": "ROMANIA"
+    },
+    {
+      "value": "+48228472622",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "ORANGE POLSKA",
+      "location": "WARSAW",
+      "country": "POLAND"
+    },
+    {
+      "value": "+48667729989",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Wireless",
+      "basis": "number",
+      "carrier": "POLKOMTEL S.A.",
+      "location": "POLAND",
+      "country": "POLAND",
+      "sources": [
+        "phonevalidator.com"
+      ]
+    },
+    {
+      "value": "+639510832291",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Wireless",
+      "carrier": "SMART COMMUNICATIONS",
+      "location": "PHILIPPINES",
+      "country": "PHILIPPINES"
+    },
+    {
+      "value": "+6542982608",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Not assigned",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "note": "A per-number lookup returns no record and marks the number fabricated: invalid Number."
+    },
+    {
+      "value": "+66863146268",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Wireless",
+      "basis": "number",
+      "carrier": "CAT TELECOM",
+      "location": "THAILAND",
+      "country": "THAILAND",
+      "sources": [
+        "phonevalidator.com"
+      ]
+    },
+    {
+      "value": "+815055326308",
+      "names": [],
+      "checked": "2026-09-30",
+      "basis": "number",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "line_type": "Landline",
+      "carrier": "RAKUTEN COMMUNICATIONS",
+      "location": "JAPAN",
+      "country": "JAPAN"
+    },
+    {
+      "value": "+818027828640",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Wireless",
+      "basis": "number",
+      "carrier": "NTT DOCOMO",
+      "location": "JAPAN",
+      "country": "JAPAN",
+      "sources": [
+        "phonevalidator.com"
+      ]
+    },
+    {
+      "value": "+8618642583550",
+      "names": [],
+      "checked": "2026-09-13",
+      "line_type": "Wireless",
+      "basis": "number",
+      "carrier": "CHINA UNICOM",
+      "location": "DANDONG, LIAONING",
+      "country": "CHINA",
+      "sources": [
+        "phonevalidator.com"
+      ],
+      "note": "A China Unicom mobile number whose registered location is Dandong, Liaoning — the Chinese border city facing Sinuiju, and the crossing through which most DPRK cross-border traffic moves. The location is where the number is registered, not where a handset was when this was looked up."
+    }
+  ]
+}

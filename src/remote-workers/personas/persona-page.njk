@@ -1,0 +1,320 @@
+---
+pagination:
+  data: personas
+  size: 1
+  alias: persona
+permalink: "/remote-workers/personas/{{ persona.slug }}/"
+layout: base.njk
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
+eleventyComputed:
+  title: "{{ persona.name | default(persona.slug) | safe }}"
+  description: "Everything reported under the DPRK IT-worker persona {{ persona.name | default(persona.slug) | safe }}: the accounts attributed to it, the identifiers filed alongside them, and the sources that documented them."
+---
+{#
+  src/remote-workers/personas/persona-page.njk: one page per persona. Paginates
+  over the `personas` global (src/_data/personas.js). Indicators come from
+  iocIndex.persona_indicators[slug], not the persona's own `identifiers`, because
+  those are the merged records with every citation; partials/ioc-detail.njk
+  renders each, and each card heading links to /indicators/{id}/.
+#}
+{% set active_tab = "personas" %}
+{% set persona_name = persona.name | default(persona.slug) %}
+{% set personaScope = persona.slug %}
+{% set personaIocs = iocIndex.persona_indicators[persona.slug] %}
+
+<article>
+  <section>
+    {% set backLink = { url: "/remote-workers/personas/", text: "All personas" } %}{% include "partials/back-link.njk" %}
+    <h1>{{ persona_name }}</h1>
+    {% include "partials/profiles-tab-bar.njk" %}
+
+    {% if persona.aliases.length %}
+    <p class="chip-row">
+      <strong>Also reported as:</strong>
+      {% for alias in persona.aliases %}<span class="tag-chip">{{ alias }}</span>{% endfor %}
+    </p>
+    {% endif %}
+
+    {% set namedProfile = collections.profiles | profileNamed(persona) %}
+    {% if namedProfile %}
+    {% set disclaimer = {
+      title: "Named individual",
+      body: 'A separate profile exists for <a href="/profiles/' ~ namedProfile.slug ~ '/">' ~ (namedProfile.display_name | escape) ~ '</a>, matched by name alone. Whether these identifiers belong to that person is the researcher&rsquo;s attribution, not this site&rsquo;s.'
+    } %}{% include "partials/disclaimer.njk" %}
+    {% endif %}
+
+    <p>
+      {% if persona.role == "facilitator" %}
+      A named person a researcher identifies as the United States facilitator
+      of a DPRK IT-worker cell. The attribution is the researcher's, cited
+      below; this site has not established it.
+      {% elif persona.from_dossier and not persona.reported_by_source %}
+      A professional identity this site read directly, cited below. Whether the
+      name belongs to an operator, an invented persona or a real person whose
+      identity was borrowed is not settled here.
+      {% elif persona.from_registry %}
+      A professional identity listed by a third-party registry of suspected
+      DPRK IT-worker personas, cited below. The registry publishes no byline or
+      methodology, so the attribution is the registry's.{% if persona.observed_directly %}
+      Values this site read from a live account are cited to the page and date.{% endif %}
+      {% elif persona.from_dossier %}
+      A fabricated professional identity used in the DPRK remote IT-worker
+      scheme. {% if persona.observed_directly %}Most of what follows is
+      transcribed{% else %}Everything below is transcribed{% endif %} from the
+      cited post, in which a named researcher attributes these accounts to a
+      single operator{% if persona.name %}, {{ persona.name }}{% endif %}. The
+      attribution is theirs, not this site's.
+      {%- if persona.observed_directly %}
+      </p>
+      <p>
+      The remainder was read by this site from the account itself and is cited
+      to the page and date it was read.
+      {%- endif %}
+      {% elif persona.name_source == "heading" %}
+      A fabricated professional identity used in the DPRK remote IT-worker
+      scheme. Everything below was filed under the heading
+      &ldquo;{{ persona.heading }}&rdquo; by the report that documented it.
+      {% elif persona.name_source == "profile" %}
+      A LinkedIn account reported in connection with the DPRK remote IT-worker
+      scheme. The name above is the one the live profile displays, not an
+      attribution any report made.
+      {% else %}
+      A LinkedIn account reported in connection with the DPRK remote IT-worker
+      scheme. The report attached no persona name and tied no other identifier
+      to it.
+      {% endif %}
+    </p>
+
+    {# Photographs the cited post published of whoever appeared under this identity, with citation. #}
+    {% set allPhotos = persona.photos if (persona.photos and persona.photos.length) else ([persona.photo] if persona.photo else []) %}
+    {% set facePhotos = [] %}
+    {% set evidencePhotos = [] %}
+    {% for photo in allPhotos %}
+      {% if photo.face %}{% set facePhotos = (facePhotos.push(photo), facePhotos) %}
+      {% else %}{% set evidencePhotos = (evidencePhotos.push(photo), evidencePhotos) %}{% endif %}
+    {% endfor %}
+    {% for photo in facePhotos %}
+    <div class="account-status account-status--large">
+      <img class="account-status__avatar" src="{{ photo.src }}" alt="" loading="lazy" decoding="async">
+      <div>
+        {% if photo.caption %}<p>{{ photo.caption }}</p>{% endif %}
+        <p class="ioc-result__meta">
+          Published by {{ photo.publisher }}{% if photo.url %}
+          in {% set externalLink = { url: photo.url, text: "the cited post" } %}{% include "partials/external-link.njk" %}{% endif %}{% if photo.published %}, {{ photo.published }}{% endif %}.
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+
+    <p class="ioc-result__meta">
+      {% for campaign in persona.campaign %}<span class="tag-chip">{{ campaign }}</span>{% endfor %}
+      {% if persona.first_seen %}First reported {{ persona.first_seen }}{% endif %}
+      {% if persona.last_seen and persona.last_seen != persona.first_seen %}&middot; last reported {{ persona.last_seen }}{% endif %}
+    </p>
+  </section>
+
+  {% if evidencePhotos.length %}
+  {# Non-face screenshots (profile pages, resumes, charts), kept beside the identity because the accounts are routinely taken down. #}
+  <section>
+    <h2>Profiles and evidence</h2>
+    {% for photo in evidencePhotos %}
+{# A document takes its caption as alt text; an avatar stays decorative. #}
+    {% set evidenceAlt = photo.caption if (photo.caption and not ("avatar" in (photo.caption | lower))) else "" %}
+    <div class="account-status account-status--large">
+      <img class="account-status__avatar" src="{{ photo.src }}" alt="{{ evidenceAlt }}" loading="lazy" decoding="async">
+      <div>
+        {% if photo.caption %}<p>{{ photo.caption }}</p>{% endif %}
+        <p class="ioc-result__meta">
+          Published by {{ photo.publisher }}{% if photo.url %}
+          in {% set externalLink = { url: photo.url, text: "the cited post" } %}{% include "partials/external-link.njk" %}{% endif %}{% if photo.published %}, {{ photo.published }}{% endif %}.
+        </p>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if persona.resumes and persona.resumes.length %}
+  {# A CV the cited page published under this identity, reproduced as written. #}
+  <section>
+    <h2>Curriculum vitae, as published</h2>
+    {% for cv in persona.resumes %}
+    <div class="table-scroll">
+      <table class="results-table">
+        <tbody>
+          {% if cv.name %}<tr><th scope="row">Name as written</th><td>{{ cv.name }}</td></tr>{% endif %}
+          {% if cv.headline %}<tr><th scope="row">Headline</th><td>{{ cv.headline }}</td></tr>{% endif %}
+          {% if cv.location %}<tr><th scope="row">Location</th><td>{{ cv.location }}</td></tr>{% endif %}
+          {% if cv.published %}<tr><th scope="row">Posted</th><td>{{ cv.published }}</td></tr>{% endif %}
+          <tr><th scope="row">Source</th><td>{% set externalLink = { url: cv.url, text: cv.url | replace("https://", "") } %}{% include "partials/external-link.njk" %}</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <details class="disclosure" open>
+      <summary>Full text, as published</summary>
+      <blockquote class="notice-quote notice-quote--verbatim">{{ cv.text }}</blockquote>
+    </details>
+    <p class="ioc-result__meta">
+      Read from the cited page{% if cv.read %} on {{ cv.read }}{% endif %}, published by {{ cv.publisher }}.
+      Every claim in it is the document's own and not verified; a name or
+      employer it gives may belong to someone with no connection to the
+      operation.
+    </p>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if persona.attachments and persona.attachments.length %}
+  {# Files the cited page published, mirrored because that page can be taken down. #}
+  <section>
+    <h2>Files published with this identity</h2>
+    <div class="table-scroll">
+      <table class="results-table" data-no-sort>
+        <thead><tr><th scope="col">File</th><th scope="col">Description</th><th scope="col">Size</th><th scope="col">Published by</th></tr></thead>
+        <tbody>
+          {% for file in persona.attachments %}
+          <tr>
+            <td><a href="{{ file.src }}">{{ file.title }}</a></td>
+            <td>{{ file.description }}</td>
+            <td>{% if file.bytes %}{{ (file.bytes / 1024) | round }} KB{% endif %}</td>
+            <td>{% if file.url %}{% set externalLink = { url: file.url, text: file.publisher } %}{% include "partials/external-link.njk" %}{% else %}{{ file.publisher }}{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="ioc-result__meta">
+      Each file is the publisher's copy, mirrored unchanged; its claims are not
+      verified.
+    </p>
+  </section>
+  {% endif %}
+
+  {% if persona.accounts.length %}
+  <section>
+    <h2>LinkedIn accounts</h2>
+    {% for account in persona.accounts %}
+{# The merged record carries the citations and the id links point at, so the anchor sits on this block. #}
+    {% set accountIoc = personaIocs.by_value[account.url] if personaIocs else null %}
+    <div class="card persona-account"{% if accountIoc %} id="ioc-{{ accountIoc.id }}"{% endif %}>
+      <h3 class="ioc-result__heading">
+        {% set externalLink = { url: account.url, text: account.handle, rel: "noopener noreferrer nofollow" } %}{% include "partials/external-link.njk" %}
+      </h3>
+
+      {% if account.status %}
+{# An avatar is never evidence of who runs the account; labelled, never captioned as a portrait. #}
+      <div class="account-status account-status--large">
+        {% if account.status.avatar %}
+        <img class="account-status__avatar" src="{{ account.status.avatar }}" alt="" loading="lazy" decoding="async">
+        {% endif %}
+        <div>
+          <p>{% set accountStatus = account.status %}{% include "partials/account-badge.njk" %}</p>
+          {% if account.status.avatar %}
+          <p class="ioc-result__meta">
+            The image is the avatar this account displays, not evidence of who
+            operates it.
+          </p>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+
+      {% set liStatus = account.status %}
+      {% include "partials/linkedin-profile-facts.njk" %}
+      {% if account.status and account.status.state == "live" and not account.status.profile %}
+      <p class="ioc-result__meta">
+        This account was live when last checked; nothing else has been
+        recorded from it.
+      </p>
+      {% endif %}
+
+{# The citation that put this account on the site sits beside it. #}
+      {% if accountIoc %}
+      <p class="ioc-result__meta">Indicator page: <a href="/indicators/{{ accountIoc.id }}/"><code>{{ accountIoc.value }}</code></a></p>
+      {% set iocDetail = accountIoc %}
+      {% set iocDetailSkipStatus = true %}
+      {% include "partials/ioc-detail.njk" %}
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+{% set iocDetailSkipStatus = false %}
+
+  {% if persona.identifiers.length %}
+  {# Every indicator except the LinkedIn accounts, each in full with its citations; the heading links to the value's own page. #}
+  <section>
+    <h2>{% if persona.accounts.length %}Identifiers reported alongside{% else %}Identifiers attributed to this persona{% endif %}</h2>
+    <p>
+      {{ persona.identifiers.length }} indicator{% if persona.identifiers.length != 1 %}s{% endif %}
+      {% if persona.from_dossier %}{% if persona.observed_directly %}the sources below record for this operator{% else %}the source attributes to this operator{% endif %}{% else %}filed under the same heading{% endif %},
+      each with its sources.
+    </p>
+
+    <div class="table-scroll">
+      <table class="results-table">
+        <thead>
+          <tr><th scope="col">Indicator</th><th scope="col">Type</th><th scope="col">Account status</th></tr>
+        </thead>
+        <tbody>
+          {% for identifier in persona.identifiers %}
+          <tr>
+            <td><a href="#ioc-{{ identifier.id }}"><code>{{ identifier.value }}</code></a></td>
+            <td>{{ identifier.ioc_type | replace("_", " ") }}</td>
+            <td>
+              {% if identifier.status %}{% set accountStatus = identifier.status %}{% include "partials/account-badge.njk" %}{% elif identifier.ioc_type == "github_profile" or identifier.ioc_type == "linkedin_profile" or "_account" in identifier.ioc_type %}<span class="ioc-result__meta">not checked</span>{% else %}<span class="ioc-result__meta" title="Not an account, so there is nothing to check">&mdash;</span>{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    {% if personaIocs %}
+    <div id="persona-ioc-cards" data-grid-limit="{{ limits.list }}">
+    {% for record in personaIocs.records %}
+    {% if record.ioc_type != "linkedin_profile" %}
+    <div class="card ioc-detail" id="ioc-{{ record.id }}">
+      <h3 class="ioc-result__heading"><a href="/indicators/{{ record.id }}/"><code>{{ record.value }}</code></a></h3>
+      {% set iocDetail = record %}
+      {% include "partials/ioc-detail.njk" %}
+    </div>
+    {% endif %}
+    {% endfor %}
+    </div>
+    {% set gridMore = { target: "#persona-ioc-cards", noun: "indicators" } %}{% include "partials/grid-more.njk" %}
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>Sources</h2>
+    <ul class="ioc-result__sources">
+      {% for source in persona.sources %}
+      <li>
+        {% if source.url %}
+        {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
+        {% else %}
+        {{ source.title }}
+        {% endif %}
+        {% if source.publisher %}&mdash; {{ source.publisher }}{% endif %}
+        <span class="ioc-result__meta">
+          {% if source.section %}&middot; under &ldquo;{{ source.section }}&rdquo;{% endif %}
+          {% if source.published %}&middot; published {{ source.published }}{% endif %}
+          {% if source.pulled_at %}&middot; pulled {{ source.pulled_at }}{% endif %}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+    <p><a href="/remote-workers/personas/">Back to all personas</a></p>
+  </section>
+
+  <section>
+    {% set disclaimer = {
+      title: "Disclaimer",
+      preset: "not-proof",
+      body: ((persona_name | escape) ~ ' as the name of the operator is the cited researcher&rsquo;s assertion, repeated here as their claim.') if persona.from_dossier else ((persona_name | escape) ~ ' is the name an account presented under, not established to be the name of its operator.')
+    } %}{% include "partials/disclaimer.njk" %}
+  </section>
+</article>

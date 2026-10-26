@@ -1,0 +1,113 @@
+{
+  "slug": "jong-pong-ju",
+  "display_name": "Jong Pong Ju",
+  "aliases": [
+    "Bryan Cho"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [
+    {
+      "name": "Bryan Cho",
+      "context": "The FBI notice records the alias “Bryan Cho”; the Justice Department states that in approximately May 2021 he was hired under that alias by a virtual token company based in Serbia, and that in February 2022 he used his access to steal virtual currency worth approximately $175,000 at the time of the theft.",
+      "sources": [
+        {
+          "title": "FBI wanted notice",
+          "url": "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk"
+        },
+        {
+          "title": "DOJ release, June 30, 2025",
+          "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote"
+        }
+      ]
+    }
+  ],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/jong-pong-ju.jpg",
+    "caption": "Photograph published by the FBI on its wanted notice for the four men, under the name Jong Pong Ju. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; federal arrest warrant issued June 24, 2025, Northern District of Georgia",
+    "details": [
+      {
+        "label": "Date(s) of Birth Used",
+        "value": "January 25, 1997"
+      },
+      {
+        "label": "Hair",
+        "value": "Brown"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Languages",
+        "value": "English, Korean"
+      },
+      {
+        "label": "Alias",
+        "value": "“Bryan Cho”"
+      }
+    ],
+    "caution": "Kim Kwang Jin, Kang Tae Bok, Jong Pong Ju, and Chang Nam Il, are wanted for their alleged involvement with a scheme to steal virtual currency from two companies, valued at over $900,000 at the time of the theft, and to launder the proceeds of those thefts in 2022. Using fraudulent names and identification documents, the men allegedly gained employment at two companies as Remote IT Workers. With these roles, these individuals allegedly abused their access at the companies to steal virtual currency. The individuals worked and travelled together as a team. Federal arrest warrants were issued for the men on June 24, 2025, in the United States District Court, Northern District of Georgia, Atlanta, Georgia, after they were charged with Wire Fraud Conspiracy, Wire Fraud, and Money Laundering Conspiracy.",
+    "remarks": "The men speak English and Korean and have ties to the United Arab Emirates and Laos.",
+    "reward": "The Rewards For Justice Program, United States Department of State, is offering a reward of up to $5 million for information that leads to the disruption of financial mechanisms of persons engaged in certain activities that support North Korea (Democratic People’s Republic of Korea, DPRK), including the exportation of workers from North Korea to generate revenue, money laundering, and specified cyber-activity and actions that support North Korea’s weapons of mass destruction proliferation.",
+    "field_offices": "Atlanta",
+    "poster_url": "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "FRAUDULENT REMOTE IT WORKERS FROM DPRK — FBI Wanted, Cyber",
+      "url": "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "date": "2025-06-30",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "북한 출신 사기성 원격 IT 노동자들 — FBI wanted poster (Korean-language edition)",
+      "url": "https://www.fbi.gov/wanted/cyber/fraudulent-remote-it-workers-from-dprk/itworkerskorean.pdf/@@download/file/ITWorkersKorean.pdf",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Justice Department Announces Coordinated, Nationwide Actions to Combat North Korean Remote Information Technology Workers' Illicit Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-06-30",
+      "type": "indictment"
+    },
+    {
+      "title": "United States v. Kim Kwang Jin et al., Criminal Indictment No. 1:25-CR-291, Northern District of Georgia (unsealed June 30, 2025)",
+      "url": "https://www.justice.gov/opa/media/1406396/dl?inline",
+      "publisher": "U.S. Department of Justice",
+      "date": "2025-06-30",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice with a federal arrest warrant issued in the Northern District of Georgia; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "정봉주",
+  "name_korean_provenance": "cited"
+}

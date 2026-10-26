@@ -1,0 +1,81 @@
+---
+layout: base.njk
+title: "Glossary"
+description: "Definitions of the DPRK campaign, malware and vendor naming terms used across the site, each with its source, and of every label on its badges."
+permalink: "/glossary/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/glossary/index.njk — Glossary
+
+  One entry per record in src/_data/glossary.json, rendered in the file's
+  order. Records with no `group` are the vocabulary of the reporting itself
+  (organisational terms, campaigns, malware, laundering); each definition is
+  written from its cited source and links to it, and an entry with a `see`
+  field also links to the page on this site where the term is used.
+
+  Records with a `group` define the labels this site puts on its own badges,
+  under "Labels used on this site". They carry an explicit `id` rather than a
+  slug of the term, because badges elsewhere link to those anchors and a
+  reworded term must not move one. They have no external `source`: what they
+  define is this site's own vocabulary, and the `see` link names the page that
+  shows it. `labelGroups` below sets the order and headings of the groups; a
+  record whose group is not listed there does not render.
+#}
+{% set labelGroups = [
+  { key: "confidence", id: "labels-confidence", title: "Confidence levels", intro: "A confidence badge means something slightly different depending on what it is attached to. On a named individual's profile it is the cited source's characterisation; elsewhere it is set out below." },
+  { key: "provenance", id: "labels-provenance", title: "Provenance labels", intro: "Every indicator carries one label saying how the value reached the index. Where several sources hold the same value, the label comes from the first route in this order: the hand-curated ruleset and watchlist; researchers' posts, registries and the site's own observations; scraped reports; bulk lists; and candidates under review. Every source is still cited." },
+  { key: "status", id: "labels-status", title: "Status labels", intro: "A status records the result of a check made on a stated date, shown beside it. It is true as of that date only. Accounts are deleted and re-registered, packages are pulled and republished, and addresses change hands, so every status goes stale from the day it is taken." },
+  { key: "other", id: "labels-other", title: "Other labels", intro: "" }
+] %}
+<section>
+  <h1>Glossary</h1>
+  <p>
+    Reporting on DPRK cyber operations uses several overlapping vocabularies
+    at once: the names vendors assign to clusters, the names campaigns and
+    malware families acquire, and the organisational terms from government
+    records. This page defines the ones that appear across this site. Each
+    definition is drawn from the cited source, and the
+    <a href="/#actor-cluster-taxonomy">cluster pages</a> carry the full alias
+    list for each actor. The <a href="#labels">labels</a> this site puts on its
+    badges are defined at the end.
+  </p>
+</section>
+
+<section>
+  <ul class="reading-list">
+    {% for entry in glossary %}{% if not entry.group %}
+    <li id="{{ entry.term | slugify }}">
+      <h2 class="glossary__term">{{ entry.term }}</h2>
+      <p>{{ entry.definition }}</p>
+      <span class="reading-list__meta">
+        Source:
+        {% set externalLink = { url: entry.source.url, text: entry.source.title } %}{% include "partials/external-link.njk" %}
+        &middot; {{ entry.source.publisher }}{% if entry.source.date %} &middot; {{ entry.source.date }}{% endif %}
+        {%- if entry.see %} &middot; <a href="{{ entry.see.url }}">{{ entry.see.label }}</a>{% endif %}
+      </span>
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2 id="labels">Labels used on this site</h2>
+  <p>
+    What each badge on the site means, what was checked to set it, and where
+    it appears.
+  </p>
+  {% for group in labelGroups %}
+  <h3 id="{{ group.id }}">{{ group.title }}</h3>
+  {% if group.intro %}<p>{{ group.intro }}</p>{% endif %}
+  <ul class="reading-list">
+    {% for entry in glossary %}{% if entry.group == group.key %}
+    <li id="{{ entry.id }}">
+      <h4 class="glossary__term">{{ entry.term }}</h4>
+      <p>{{ entry.definition }}</p>
+      {% if entry.see %}<span class="reading-list__meta">See <a href="{{ entry.see.url }}">{{ entry.see.label }}</a></span>{% endif %}
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+  {% endfor %}
+</section>

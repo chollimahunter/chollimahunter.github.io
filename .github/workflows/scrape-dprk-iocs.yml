@@ -1,0 +1,281 @@
+name: Scrape DPRK IOC Sources
+
+# Weekly pass over the curated threat-intelligence sources in
+# src/_data/iocs/scrape-sources.json (see docs/scrape-dprk-iocs.md).
+#
+# Each run first queues newly published articles from the feeds in
+# scripts/data/feeds.json (docs/discover-sources.md), then reads the sources not
+# yet read and rechecks a rotating slice of the rest for changed text; once a
+# month it re-extracts everything instead.
+#
+# Never commits directly to main: opens a pull request only when the ingested
+# indicator set actually changed or discovery queued something, so a human
+# reviews every new identifier and every new source
+# before it goes live — the same gate the DTEX sync uses, and for the same
+# reason. These are unverified leads about identifiers that may belong to real
+# people, not confirmed findings.
+#
+# Runs regex extraction only. Model-assisted extraction is deliberately never
+# run here; see the AI mode section of docs/scrape-dprk-iocs.md.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1" # Monday 07:00 UTC, an hour after the DTEX sync: --changed-only
+    - cron: "0 9 1 * *" # the 1st of each month: --full, so extractor changes reach unchanged pages
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all (new sources only), changed-only (plus a recheck of already-read ones) or full (re-extract everything)"
+        type: choice
+        options: [changed-only, all, full]
+        default: changed-only
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
+# on manual review; no step reads the value until a merge step is added.
+env:
+  AUTO_MERGE: "false"
+
+# So a manual dispatch of this workflow cannot run at the same time as the
+# cron-triggered run on the same branch and race to open two competing PRs.
+concurrency:
+  group: scrape-dprk-iocs
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    # The monthly --full run reads all ~1,280 sources. Hosts are worked four at
+    # a time, each one request at a time with a 1s delay and a 45s timeout, and
+    # the busiest host (asec.ahnlab.com, ~170 sources) sets the floor: a full
+    # local pass at concurrency 6 took about ten minutes on 27 September 2026.
+    # 60 minutes leaves room for a run of slow sources without masking a hang,
+    # and the state file is saved as the run goes.
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      # What a run whose pull request is not merged yet left on its branch: the
+      # sources it read, the indicators it ingested and the rotation state.
+      # Starting from main instead would read those sources again and drop
+      # that week's re-extractions when the next run force-updates the branch.
+      # A file main has changed since the branch was cut (a reviewer's edit to
+      # scrape-sources.json, say) is left as main has it rather than reverted.
+      - name: Carry over unmerged results
+        shell: bash
+        run: |
+          branch=sync/scraped-iocs
+          git ls-remote --exit-code --heads origin "$branch" > /dev/null 2>&1 || exit 0
+          git fetch --no-tags --depth=200 origin "+refs/heads/main:refs/remotes/origin/main" "+refs/heads/$branch:refs/remotes/origin/$branch"
+          base=$(git merge-base origin/main "origin/$branch") || { echo "::notice::$branch shares no recent history with main; starting from main"; exit 0; }
+          for f in src/_data/iocs/scraped-iocs.json src/_data/iocs/scrape-sources.json scripts/data/scrape-state.json scripts/data/scraped-sources.txt; do
+            if git diff --quiet "$base" origin/main -- "$f"; then
+              git restore --source="origin/$branch" --worktree -- "$f"
+            else
+              echo "::notice::$f changed on main since $branch was cut; not carried over"
+            fi
+          done
+
+      # The recheck rotation (scripts/data/scrape-state.json) moves every week
+      # whether or not a pull request opens, so it is carried between runs in
+      # the Actions cache. The checked-in copy, refreshed whenever a sync PR
+      # merges, is the fallback when the cache has been evicted; losing it only
+      # costs a re-baseline, and the monthly --full run covers the gap.
+      - name: Restore scrape state
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: scripts/data/scrape-state.json
+          key: scrape-state-${{ github.run_id }}
+          restore-keys: scrape-state-
+
+      # Finds new articles from the publishers in scripts/data/feeds.json and
+      # queues them in scrape-sources.json `discovered[]`. Nothing queued is
+      # scraped until a reviewer moves it into `sources[]`.
+      - name: Discover new sources
+        id: discover
+        shell: bash
+        run: node scripts/discover-sources.js --summary discovery-summary.md | tee discover-output.txt
+        continue-on-error: true
+
+      - name: Choose scrape mode
+        id: mode
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+          MODE: ${{ inputs.mode }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "flag=--$MODE" >> "$GITHUB_OUTPUT"
+          elif [ "$EVENT_SCHEDULE" = "0 9 1 * *" ]; then
+            echo "flag=--full" >> "$GITHUB_OUTPUT"
+          else
+            echo "flag=--changed-only" >> "$GITHUB_OUTPUT"
+          fi
+
+      # A source that fails to fetch is not recorded as seen, so it is retried
+      # next week rather than silently dropped. Individual failures must not
+      # fail the job — one 403 should not discard the other sources.
+      - name: Scrape sources
+        id: scrape
+        shell: bash
+        env:
+          FLAG: ${{ steps.mode.outputs.flag }}
+        run: node scripts/scrape-dprk-iocs.js "$FLAG" | tee scrape-output.txt
+        continue-on-error: true
+
+      - name: Save scrape state
+        if: always()
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: scripts/data/scrape-state.json
+          key: scrape-state-${{ github.run_id }}
+
+      - name: Ingest staged runs
+        id: ingest
+        shell: bash
+        run: node scripts/ingest-scraped-iocs.js | tee ingest-output.txt
+
+      # Enrichment for what this run just added. Each carries continue-on-error:
+      # a lookup service being down must not discard the ingested indicators.
+      - name: Enrich IP network kinds
+        shell: bash
+        run: node scripts/enrich-ips.js
+        continue-on-error: true
+
+      - name: Cross-check packages against OSV
+        shell: bash
+        run: node scripts/enrich-osv-malicious.js
+        continue-on-error: true
+
+      # Reads GitHub through `gh`, which takes the token from GH_TOKEN.
+      - name: Check whether malware is still online
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/enrich-malware-status.js
+        continue-on-error: true
+
+      # Values from this run that sit beside victim or vendor language in their
+      # source. Listed in the pull request for a person to decide; nothing is
+      # removed automatically. See scripts/audit-indicators.js.
+      - name: Flag values to check before merging
+        shell: bash
+        run: node scripts/audit-indicators.js --since "$(date -u +%F)" > audit-output.txt 2>&1 || true
+
+      - name: Extract change status and summary
+        id: status
+        env:
+          MODE_FLAG: ${{ steps.mode.outputs.flag }}
+        run: |
+          discovered=$(grep -oE "^DISCOVERED=[0-9]+" discover-output.txt | tail -1 | cut -d= -f2 || true)
+          if grep -q "CHANGED=true" ingest-output.txt || [ "${discovered:-0}" -gt 0 ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+          {
+            cat <<'BODY'
+          Automated pass over the sources listed in
+          `src/_data/iocs/scrape-sources.json` (see `docs/scrape-dprk-iocs.md`
+          and `docs/discover-sources.md`).
+
+          This PR opens only when the ingested indicator set differs from what
+          is checked in, or when source discovery queued new articles. Review
+          the diff in `src/_data/iocs/scraped-iocs.json` before merging.
+
+          Every indicator here was matched literally in the prose of the source
+          it cites; the ingest rejects anything it cannot find in the page text
+          it is attributed to. That check confirms a source said the thing; it
+          does not confirm the thing is true. New entries are unverified leads,
+          and an identifier may belong to someone with no connection to these
+          operations. Pay particular attention to any `github_profile` or
+          `linkedin_profile` entries, which name accounts belonging to
+          identifiable people.
+
+          Articles in `discovered[]` are not scraped. Move each one into
+          `sources[]` with a publisher and campaign label, or into
+          `not_scraped[]` with a reason, and the next run acts on it.
+
+          Validation runs as a dispatched `ci` check on this branch; the pull
+          request can be merged once it is green.
+
+          BODY
+            echo '```'
+            echo "Mode: $MODE_FLAG"
+            grep -E "^(Scraped|Ingested|Added:)" scrape-output.txt ingest-output.txt || true
+            echo '```'
+            echo
+            cat discovery-summary.md 2>/dev/null || true
+            if [ -s audit-output.txt ] && ! grep -q "^No flags" audit-output.txt; then
+              echo
+              echo "### Values to check before merging"
+              echo
+              echo "These sit beside victim or vendor language in their source. Decide each: an operator value stays, a victim's or publisher's goes."
+              echo
+              echo '```'
+              head -n 120 audit-output.txt
+              echo '```'
+            fi
+          } | sed 's/^          //' > pr-body.md
+
+      - name: Open pull request with updated indicators
+        id: cpr
+        if: steps.status.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: sync scraped DPRK IT-worker indicator index"
+          title: "Weekly sync: scraped DPRK IT-worker indicators"
+          body-path: pr-body.md
+          branch: sync/scraped-iocs
+          delete-branch: true
+          # Only the data. The run logs and PR body written above would
+          # otherwise be committed alongside it.
+          add-paths: |
+            src/_data/iocs/scraped-iocs.json
+            src/_data/iocs/scrape-sources.json
+            scripts/data/scrape-state.json
+            scripts/data/scraped-sources.txt
+            scripts/data/ip-lookups.json
+            scripts/data/osv-malicious.json
+            scripts/data/malware-status.json
+          labels: automated,data-sync
+
+      # Pull requests opened with GITHUB_TOKEN trigger no pull_request runs, so
+      # the validation workflow is dispatched on the branch instead.
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+
+      # Discovery and scraping carry continue-on-error so that one failing does
+      # not stop the other or the pull request for what did succeed. This step
+      # then fails the run, so an outage is reported rather than passing green.
+      - name: Report failed discovery or scrape
+        if: always()
+        env:
+          DISCOVER_OUTCOME: ${{ steps.discover.outcome }}
+          SCRAPE_OUTCOME: ${{ steps.scrape.outcome }}
+        run: |
+          failed=""
+          if [ "$DISCOVER_OUTCOME" = "failure" ]; then failed="$failed discover-sources.js"; fi
+          if [ "$SCRAPE_OUTCOME" = "failure" ]; then failed="$failed scrape-dprk-iocs.js"; fi
+          if [ -n "$failed" ]; then
+            msg="Failed this run:${failed}. Any pull request above holds only what succeeded; see the step logs."
+            echo "::error::$msg"
+            echo "### Scrape run failed" >> "$GITHUB_STEP_SUMMARY"
+            echo "$msg" >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi

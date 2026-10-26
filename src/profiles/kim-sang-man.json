@@ -1,0 +1,90 @@
+{
+  "slug": "kim-sang-man",
+  "display_name": "Kim Sang Man",
+  "aliases": [
+    "Kim Sangman"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by the Republic of Korea on May 23, 2023, and by OFAC the same day under Executive Order 13810, program tag DPRK4, as a North Korean person engaged in commercial activity that generates revenue for the Government of North Korea",
+    "details": [
+      {
+        "label": "Post, per the identification annex",
+        "value": "General Manager of Jinyong IT Cooperation Company"
+      },
+      {
+        "label": "Location",
+        "value": "Russia; North Korea"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "April 25, 1965"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "109420132 (North Korea), issued October 16, 2019, expires October 16, 2024; alt. 827220538; alt. 563220082, per OFAC"
+      }
+    ],
+    "caution": "이번에 제재대상으로 지정된 개인 7명은 △북한 해외 IT 지부 책임자로서 불법 외화벌이를 주도하였거나1), △자금세탁 등 불법 금융활동을 통해 외화벌이를 도움으로써2) 대북제재 회피와 핵ㆍ미사일 개발 자금 조달에 관여하였다. 특히, 이들 IT 지부 책임자들은 IT 인력에 대한 감시ㆍ통제ㆍ갑질, 임금 미지급 등 강제노동을 강요하여 이들의 인권을 유린해 왔다. 1) 김상만, 김기혁, 김성일, 전연근, 김효동 2) 유성혁, 윤성일 진영정보기술협조회사는 국방성 산하 IT 회사로, 러시아ㆍ중국ㆍ라오스 등지에 IT 인력 파견 DPRK-based Chinyong Information Technology Cooperation Company (Chinyong), also known as Jinyong IT Cooperation Company, is associated with the UN- and U.S.-sanctioned Ministry of Peoples’ Armed Forces. Chinyong, by way of companies under its control and their representatives, employs delegations of DPRK IT workers that operate in Russia and Laos. One such representative of the Chinyong office located in Vladivostok, Russia, DPRK-national Kim Sang Man (Kim), is presumed to be involved in the payment of salaries to family members of Chinyong’s overseas DPRK worker delegations. Furthermore, Kim has been involved in the sale and transfer of IT equipment for the DPRK and, as recently as 2021, received cryptocurrency funds transfers from IT teams located in China and Russia that were valued at more than $2 million USD. Kim maintained awareness of cryptocurrency payments from a company under his leadership that were being sent to the DPRK. Kim has been affiliated with the U.S.-designated Korea Computer Center and worked as an IT developer in the DPRK prior to being selected as an agent of the UN- and U.S.-designated RGB, in order to earn foreign currency."
+  },
+  "sources": [
+    {
+      "title": "한미, 북한 핵･미사일 자금줄 차단을 위해 북한 IT 인력에 대한 연쇄적 공동 조치 단행 (Republic of Korea and United States take successive joint actions against DPRK IT workers; unilateral designation of three entities and seven individuals)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=373689",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2023-05-23",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "대북 독자제재 지정 대상 구체 식별정보 (identification annex to the May 23, 2023 designation)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/down.do?brd_id=235&seq=373689&data_tp=A&file_seq=3",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2023-05-23",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Recent Actions, May 23, 2023: North Korea Designations (Kim Sang Man, Chinyong Information Technology Cooperation Company, 110th Research Center, Pyongyang University of Automation)",
+      "url": "https://ofac.treasury.gov/recent-actions/20230523",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2023-05-23",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Targets DPRK Malicious Cyber and Illicit IT Worker Activities",
+      "url": "https://home.treasury.gov/news/press-releases/jy1498",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2023-05-23",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Kim Sang Man is profiled here as the general manager of Chinyong Information Technology Cooperation Company, also rendered Jinyong IT Cooperation Company (진영정보기술개발협조회사), which the Republic of Korea describes as an IT company under the DPRK Ministry of National Defence that sends IT workers to Russia, China and Laos. He was designated by the Republic of Korea and by OFAC on the same day, May 23, 2023; the Treasury describes him as a representative of Chinyong's Vladivostok office presumed to pay the salaries of overseas delegations' families, who received more than $2 million in cryptocurrency from IT teams in China and Russia as recently as 2021, and OFAC's entry lists his passports and four digital-currency addresses. The Republic of Korea's annex gives his date of birth, which OFAC's entry matches.",
+    "The Korean quotation under the designation details is the ministry's own wording.",
+    "The confidence level of 'confirmed' reflects that this individual is named on a government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "김상만",
+  "name_korean_provenance": "cited"
+}

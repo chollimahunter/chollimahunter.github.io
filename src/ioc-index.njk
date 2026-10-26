@@ -1,0 +1,20 @@
+---
+permalink: "/assets/data/ioc-index.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/ioc-index.njk — the compact search index the browser fetches
+  =================================================================
+  Emits src/_data/iocIndex.js's `compact` payload as a static JSON file at
+  /assets/data/ioc-index.json. This is what src/assets/js/ioc-search.js
+  downloads once and searches client-side.
+
+  Deliberately not a layout-wrapped page: no `layout` in the front matter, so
+  11ty writes the rendered body verbatim. The one-letter keys and the source
+  lookup table are built in iocIndex.js — see compactIndex() there for why.
+
+  The file is also the documented fallback for readers without JavaScript,
+  linked from the <noscript> block on /remote-workers/, so its URL is
+  public API. Don't move it without updating that link.
+#}
+{{ iocIndex.remote_workers.compact | dump | safe }}

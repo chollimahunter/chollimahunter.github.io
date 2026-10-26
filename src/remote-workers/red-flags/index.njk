@@ -1,0 +1,82 @@
+---
+layout: base.njk
+title: "Red Flags"
+description: "The pattern a hiring team sees in DPRK remote IT-worker cases, and a short register of the indicators that are hard to explain any other way."
+permalink: "/remote-workers/red-flags/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/register-filter.js" defer></script>'
+---
+{#
+  src/remote-workers/red-flags/index.njk: rows from src/_data/tradecraft.json,
+  P1 first; register-filter.js narrows every section at once.
+#}
+{% set active_tab = "red-flags" %}
+{% set tier = { "1": "high", "2": "medium", "3": "low" } %}
+
+<section>
+  <h1>Red Flags</h1>
+  {% include "partials/profiles-tab-bar.njk" %}
+  <p>What a hiring or security team can look for. None is proof on its own; follow the source links for the detail.</p>
+  <div class="table-scroll">
+    <table class="results-table" data-no-sort>
+      <thead><tr><th scope="col">Priority</th><th scope="col">Meaning</th></tr></thead>
+      <tbody>
+        {% for level, meaning in tradecraft.priorities %}
+        <tr><th scope="row"><span class="badge badge--{{ tier[level] }}">P{{ level }}</span></th><td>{{ meaning }}</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <div id="red-flag-register">
+  <div data-row-filter-panel hidden>
+    {% set filterChips = {
+      dimension: "priority",
+      label: "Filter red flags by priority",
+      allLabel: "All priorities",
+      counts: tradecraft.categories | flattenKey("indicators") | countBy("priority"),
+      prefix: "P",
+      short: "Priority",
+      multiple: true,
+      rows: "#red-flag-register"
+    } %}
+    {% include "partials/filter-chips.njk" %}
+  </div>
+
+  {% for category in tradecraft.categories %}
+  <div data-row-filter-section>
+  <h2>{{ category.name }}</h2>
+  <div class="table-scroll">
+    <table class="results-table register-table">
+      <thead>
+        <tr>
+          <th scope="col">Priority</th>
+          <th scope="col">Indicator</th>
+          <th scope="col">Hunt query</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in category.indicators | sort(false, false, "priority") %}
+        <tr data-priority="{{ row.priority }}">
+          <td><span class="badge badge--{{ tier[row.priority] }}">P{{ row.priority }}</span></td>
+          <th scope="row">
+            {{ row.indicator }}
+            {% if row.detail %}<span class="register-detail">{{ row.detail }}</span>{% endif %}
+            {% if row.link %}<a class="register-detail" href="{{ row.link.href }}">{{ row.link.label }}</a>{% endif %}
+          </th>
+          <td class="register-cite">
+            {% if row.hunts %}{% for id in row.hunts %}<a href="/hunts/{{ id }}/">{% if row.hunts | length == 1 %}Query{% else %}Query {{ loop.index }}{% endif %}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% else %}&mdash;{% endif %}
+          </td>
+          <td class="register-cite">
+            {% for key in row.sources %}{% set source = tradecraft.sources[key] %}{% set externalLink = { url: source.url, text: source.label, title: source.publisher + ": " + source.title } %}{% include "partials/external-link.njk" %}{% if not loop.last %}, {% endif %}{% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  </div>
+  {% endfor %}
+  </div>
+</section>

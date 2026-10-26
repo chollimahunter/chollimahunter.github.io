@@ -1,0 +1,26 @@
+{
+  "name": "chollimahunter.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "description": "Chollima Hunter — tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.",
+  "scripts": {
+    "build": "eleventy",
+    "check": "node scripts/check-site.js",
+    "check:css": "node scripts/check-css.js",
+    "validate": "node scripts/validate-data.js",
+    "seal": "node scripts/seal-private-lists.js",
+    "test:unit": "node --test \"scripts/lib/**/*.test.js\"",
+    "test": "npm run validate && npm run build && npm run check && npm run check:css && npm run test:unit && npm run audit:integrity",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "pivot:handles": "node scripts/pivot-handles-maigret.js",
+    "preview": "node scripts/serve-built.js",
+    "audit:integrity": "node scripts/audit-integrity.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

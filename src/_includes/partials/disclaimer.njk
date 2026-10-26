@@ -1,0 +1,27 @@
+{#
+  partials/disclaimer.njk — the one disclaimer banner.
+
+  Usage: set `disclaimer` before including.
+    {% set disclaimer = { title: "Disclaimer", preset: "not-proof", body: "One more sentence." } %}
+    {% include "partials/disclaimer.njk" %}
+
+  Fields:
+    title   optional; the bold heading, "Disclaimer" when omitted
+    preset  optional; "not-proof" prints the site's one shared sentence that an
+            entry is not proof and is a lead to verify
+    body    optional; further text, which may contain inline HTML
+    id      optional; an anchor id for the banner
+
+  The markup stays free of blank lines because src/etherhiding/index.md
+  includes it through Markdown, where a blank line ends an HTML block.
+  partials/profile-disclaimer.njk is the separate profile banner.
+#}
+<div class="disclaimer-banner"{% if disclaimer.id %} id="{{ disclaimer.id }}"{% endif %}>
+<strong>{{ disclaimer.title or "Disclaimer" }}</strong>
+{%- if disclaimer.preset == "not-proof" %}
+An entry here is not proof of DPRK affiliation or wrongdoing. A listed name, account or address may belong to an uninvolved person, so each entry is a lead to verify independently. <a href="/about/#disclaimer">What inclusion means</a>.
+{%- endif %}
+{%- if disclaimer.body %}
+{{ disclaimer.body | safe }}
+{%- endif %}
+</div>

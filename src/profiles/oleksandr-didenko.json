@@ -1,0 +1,87 @@
+{
+  "slug": "oleksandr-didenko",
+  "display_name": "Oleksandr Didenko",
+  "aliases": [
+    "Alexander Didenko"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Sentenced February 19, 2026, District of Columbia",
+    "details": [
+      {
+        "label": "Age at sentencing",
+        "value": "29"
+      },
+      {
+        "label": "Residence",
+        "value": "Kyiv, Ukraine"
+      },
+      {
+        "label": "Nationality",
+        "value": "Ukrainian"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the District of Columbia, Judge Randolph D. Moss"
+      },
+      {
+        "label": "Plea",
+        "value": "Guilty, November 10, 2025, to wire fraud conspiracy and aggravated identity theft"
+      },
+      {
+        "label": "Sentence",
+        "value": "60 months in prison and 12 months of supervised release"
+      },
+      {
+        "label": "Forfeiture",
+        "value": "More than $1.4 million, including approximately $181,438 in USD and cryptocurrency seized"
+      },
+      {
+        "label": "Restitution",
+        "value": "$46,547.28"
+      },
+      {
+        "label": "Domain",
+        "value": "Upworksell.com, seized May 16, 2024"
+      }
+    ],
+    "caution": "According to court documents, Didenko ran a website using a U.S.-based domain, \"Upworksell.com,\" designed to help overseas IT workers buy or rent stolen identities. Beginning in 2021, the IT workers used the identities to get hired on online freelance work platforms based in California and Pennsylvania. The work platforms allowed users to advertise themselves as contract gig workers, create free accounts, advertise their skills and bid on IT work contracts. Didenko paid individuals in the United States to receive and host computers at residences in Virginia, Tennessee and California. Through his company, Didenko managed as many as 871 proxy identities and facilitated the operation of at least three U.S.-based “laptop farms.” He enabled his overseas clients to access the U.S. financial system through Money Service Transmitters rather than having to physically open an account at a bank within the United States, which was then used to facilitate the transfer of employment income to foreign bank accounts. The IT worker clients were paid hundreds of thousands of dollars for their work, much of which was falsely reported to the Department of Homeland Security, the IRS and Social Security Administration in the names of actual U.S. persons whose identities had been stolen. On May 16, 2024, the Justice Department seized the online domain, Upworksell.com, and diverted all traffic to the FBI. Polish authorities arrested Didenko and on Dec. 31, 2024, extradited him to the United States."
+  },
+  "sources": [
+    {
+      "title": "Ukrainian National Sentenced in 'Laptop Farm' Scheme That Generated Income for North Korean IT Workers",
+      "url": "https://www.justice.gov/usao-dc/pr/ukrainian-national-sentenced-laptop-farm-scheme-generated-income-north-korean-it-workers",
+      "publisher": "U.S. Attorney's Office, District of Columbia",
+      "date": "2026-02-19",
+      "type": "press_release"
+    },
+    {
+      "title": "Justice Department Announces Nationwide Actions to Combat Illicit North Korean Government Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-nationwide-actions-combat-illicit-north-korean-government",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-11-14",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Oleksandr Didenko is a Ukrainian national from Kyiv, not a DPRK national, and is profiled here as the identity broker behind Upworksell.com, a site the Department of Justice says helped overseas IT workers, including North Korean IT workers, buy or rent stolen United States identities to get hired on freelance platforms and at 40 companies. Through his company he managed as many as 871 proxy identities, paid people in Virginia, Tennessee and California to host company computers, and gave clients a route into the United States financial system through money service transmitters.",
+    "The Justice Department seized the domain on May 16, 2024; Polish authorities arrested him and extradited him on December 31, 2024. He pleaded guilty on November 10, 2025 to wire fraud conspiracy and aggravated identity theft, and on February 19, 2026 was sentenced in the District of Columbia to 60 months in prison and 12 months of supervised release, with forfeiture of more than $1.4 million and $46,547.28 in restitution.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "Ukrainian national and identity broker rather than a DPRK national, so no Korean rendering of the name applies."
+}

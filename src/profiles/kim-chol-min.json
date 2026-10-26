@@ -1,0 +1,69 @@
+{
+  "slug": "kim-chol-min",
+  "display_name": "Kim Chol Min",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by the Republic of Korea on December 26, 2024, in force from December 30, 2024, as a member of a DPRK IT organisation earning foreign currency abroad for the nuclear and missile programmes",
+    "details": [
+      {
+        "label": "Post, per the designation annex",
+        "value": "chief of the 313 General Bureau's IT delegation in Dandong (313총국 단둥주재 IT대표단 단장)"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "October 11, 1978"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      }
+    ],
+    "caution": "이번에 제재대상으로 지정되는 박흥룡, 윤정식, 리일진, 김경일, 강현철, 김철민, 리금형, 김류성, 황철, 안광일, 한일남, 승철범, 리영림, 박동현은 조선노동당 군수공업부 산하기관인 313총국에 소속되어 해외에 주재하면서 IT 외화벌이 활동을 해왔다. 군수공업부는 탄도미사일 프로그램을 포함한 북한의 무기 생산 및 연구개발을 총괄하는 기관으로서 안보리 제재(2016.3.2.) 대상이다. 그 산하기관인 313총국은 북한 해외 IT 인력 다수를 파견하고 벌어들인 외화로 핵‧미사일 개발 자금을 마련하고 있으며, 군수 부문 소프트웨어 개발에도 관여하고 있다. 김철민은 미국과 캐나다 업체들에 위장 취업하여 벌어들인 거액의 외화를 평양에 상납하였으며, 김류성은 수년간 미국 독자제재를 위반하여 12.11(수) 미 법원에 기소되었다."
+  },
+  "sources": [
+    {
+      "title": "우리 정부의 대북 독자제재 지정 (Republic of Korea unilateral sanctions designation of fifteen DPRK IT-worker organisation members and one entity)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375771",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2024-12-26",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "금융위원회 고시 제2024-57호, 금융거래등제한대상자 지정 및 지정 취소에 관한 규정 일부개정 (Financial Services Commission Notice 2024-57, consolidated list of restricted counterparties, entries 900 to 915)",
+      "url": "https://www.fsc.go.kr/po040200/83752",
+      "publisher": "Financial Services Commission, Republic of Korea",
+      "date": "2024-12-30",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Seoul sanctions 15 NK IT workers, 1 entity over illicit funding for nuclear, missile programs",
+      "url": "https://koreatimes.co.kr/www/nation/2024/12/103_389176.html",
+      "publisher": "The Korea Times (Yonhap)",
+      "date": "2024-12-26",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "Kim Chol Min is profiled here as a member of the 313 General Bureau of the Munitions Industry Department, which the Republic of Korea's foreign ministry describes as the body that sends many of the DPRK's IT workers abroad and funds nuclear and missile development from what they earn. The ministry's annex gives his post as chief of the bureau's IT delegation stationed in Dandong, China; the Financial Services Commission's register gives his English name and date of birth. The ministry adds that he obtained work at companies in the United States and Canada under a false identity and remitted large sums to Pyongyang.",
+    "The Korean quotation under the designation details is the ministry's own wording.",
+    "The confidence level of 'confirmed' reflects that this individual is named on a Republic of Korea government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "김철민",
+  "name_korean_provenance": "cited"
+}

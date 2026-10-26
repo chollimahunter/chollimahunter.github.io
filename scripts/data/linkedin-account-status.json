@@ -1,0 +1,1053 @@
+{
+  "_comment": "LinkedIn account liveness observed in a signed-in browser session; see scripts/enrich-linkedin-accounts.js for the method and why it cannot run in CI. state is derived from whether LinkedIn redirected the profile URL to /404/. Re-checked 13 September 2026: all eight live accounts were opened one at a time in a signed-in browser and all eight are still up, none removed since 12 September. Connection and follower counts are refreshed from that pass. The counts are worth watching rather than just recording: eric-low-a5795033b gained nineteen connections and twenty-three followers in a day, which is an account being actively built, while marcin-iwanski-b699b02b8 and yinxing-gao-7b4471189 sit at zero followers and have never posted. NOTE ON COUNTS: the connection and follower figures here are a record, not a test. DPRK IT-worker accounts are regularly found with 500+ connections, so a large network is not evidence that an account is a real person and a small one is weak corroboration at best. The property that discriminates is the join date against the claimed employment history, which is why  is captured for every live account read.",
+  "checked": "2026-09-21",
+  "method": "signed-in browser, iframe final-URL check, LinkedIn Private mode",
+  "accounts": [
+    {
+      "slug": "adam-lee-4162aa1b9",
+      "state": "removed",
+      "checked": "2026-09-01"
+    },
+    {
+      "slug": "adam-lee-942953236",
+      "state": "removed",
+      "checked": "2026-09-01"
+    },
+    {
+      "slug": "aldinosaputra",
+      "state": "removed"
+    },
+    {
+      "slug": "anderson-lee-0130801a3",
+      "state": "removed"
+    },
+    {
+      "slug": "anderson-lee-9550381a5",
+      "state": "removed"
+    },
+    {
+      "slug": "andrew-christopher",
+      "state": "removed"
+    },
+    {
+      "slug": "andy-cho-6ba380309",
+      "state": "removed"
+    },
+    {
+      "slug": "andy-hoog",
+      "state": "removed"
+    },
+    {
+      "slug": "anthony-keller-022486183",
+      "state": "removed"
+    },
+    {
+      "slug": "bill-oneil-1b24a81a9",
+      "state": "removed"
+    },
+    {
+      "slug": "bo-zhang-729781100",
+      "state": "live",
+      "profile": {
+        "name": "Bo Zhang",
+        "headline": "Software Engineer at Stripe",
+        "current_role": "Lead",
+        "location": "New York, United States",
+        "connections": "500+",
+        "followers": "779",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "organization": "Lead · Full-time",
+            "location": "New York, New York, United States",
+            "dates": "Mar 2025 - Present · 1 yr 7 mos"
+          },
+          {
+            "title": "Software Engineer",
+            "organization": "Stripe · Full-time",
+            "location": "New York, New York, United States",
+            "dates": "Nov 2021 - Jan 2025 · 3 yrs 3 mos",
+            "summary": "Backend engineer working on account APIs and risk signal platform"
+          },
+          {
+            "title": "Software Engineer",
+            "organization": "Google",
+            "location": "San Francisco Bay Area",
+            "dates": "Aug 2017 - Nov 2021 · 4 yrs 4 mos",
+            "summary": "Built web apps for customer service in Google Shopping"
+          },
+          {
+            "title": "Software Engineer Internship",
+            "organization": "UTOFUN Inc.",
+            "location": "New York",
+            "dates": "Mar 2016 - Dec 2016 · 10 mos"
+          }
+        ],
+        "education": [
+          {
+            "institution": "NYU Tandon School of Engineering",
+            "programme": "Master of Science (MSc), Computer Science",
+            "dates": "2015 – 2017"
+          },
+          {
+            "institution": "Beihang University",
+            "programme": "Bachelor of Engineering (B.E.), Automation",
+            "dates": "2011 – 2015",
+            "note": "Activities and societies: Formed a band named Wasted Sunday."
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "July 2015",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "Lead, verified using work email in March 2025; Stripe, verified using work email in January 2025",
+        "education_count": 3,
+        "projects": [
+          {
+            "name": "Big Data Analysis and Visualization for Taxi and Uber data in New York City",
+            "dates": "Apr 2016 – May 2016",
+            "summary": "Mapreduce analysis of NYC taxi and Uber data, visualised with D3."
+          }
+        ],
+        "project_count": 6,
+        "publications": [
+          {
+            "title": "Three-Dimensional Path Planning for Uninhabited Combat Aerial Vehicle Based on Predator-Prey Pigeon-Inspired Optimization in Dynamic Environment",
+            "published_in": "Computational Biology and Bioinformatics, IEEE/ACM Transactions on",
+            "date": "Jun 17, 2015"
+          }
+        ],
+        "languages": [
+          "English",
+          "中文"
+        ],
+        "skills": [
+          "Python",
+          "jQuery"
+        ],
+        "skill_count": 16
+      },
+      "checked": "2026-09-13"
+    },
+    {
+      "slug": "brandon-humble-37a28a337",
+      "state": "removed",
+      "checked": "2026-09-18"
+    },
+    {
+      "slug": "brent-jeremy",
+      "state": "removed"
+    },
+    {
+      "slug": "brent-jeremy-47172b22a",
+      "state": "removed"
+    },
+    {
+      "slug": "chai-somsri",
+      "state": "removed"
+    },
+    {
+      "slug": "clark-pickles330",
+      "state": "removed"
+    },
+    {
+      "slug": "codeninja819",
+      "state": "removed"
+    },
+    {
+      "slug": "danny-9458141b0",
+      "state": "removed"
+    },
+    {
+      "slug": "david-lepot",
+      "state": "removed"
+    },
+    {
+      "slug": "dejan-teofilovic",
+      "state": "removed",
+      "checked": "2026-09-10"
+    },
+    {
+      "slug": "dennis-delrosario-8ba062222",
+      "state": "removed"
+    },
+    {
+      "slug": "derrick-davis-602378331",
+      "state": "removed",
+      "checked": "2026-09-10"
+    },
+    {
+      "slug": "dmytro-vivsuk-a568242b6",
+      "state": "removed",
+      "checked": "2026-09-10"
+    },
+    {
+      "slug": "dustinleecog",
+      "state": "removed"
+    },
+    {
+      "slug": "eric-low-a5795033b",
+      "state": "live",
+      "profile": {
+        "name": "Eric Low",
+        "headline": "Blockchain Engineer",
+        "current_role": "Lighter Perps",
+        "location": "Toronto, Ontario, Canada",
+        "connections": "196",
+        "followers": "241",
+        "experience": [
+          {
+            "title": "Blockchain Developer",
+            "organization": "Lighter Perps",
+            "dates": "Oct 2023 - Present · 3 yrs",
+            "summary": "web3.js, Ethereum and 3 further skills listed."
+          },
+          {
+            "title": "Lead Solidity Developer",
+            "organization": "Radiant Capital · Contract Full-time",
+            "dates": "Mar 2022 - Sep 2023 · 1 yr 7 mos",
+            "summary": "Ethereum and Solidity."
+          },
+          {
+            "title": "Blockchain Developer",
+            "organization": "Honey Labs",
+            "dates": "Feb 2021 - Jan 2022 · 1 yr",
+            "summary": "React.js and Solidity."
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of Toronto"
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "December 2024",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated less than 1 year ago",
+        "verifications": "None listed",
+        "skills": [
+          "Ethereum",
+          "React.js"
+        ],
+        "skill_count": 6
+      },
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "hailong-jin-906375118",
+      "state": "live",
+      "checked": "2026-09-13",
+      "profile": {
+        "name": "Hailong Jin",
+        "headline": "Unity programmer with AR | VR",
+        "current_role": "JinCheng",
+        "location": "Jilin, China",
+        "connections": "191",
+        "followers": "198",
+        "about": "VR | AR | App | Game | Web. Desktop App | AR | VR | Game | Web. Goldworld AR / MR / VR provides integrated and robust Augmented Reality (AR), Virtual Reality (VR) and Mixed Reality (MR) solutions with web service. Save time and money by reducing work-hours needed to perform complex tasks. We provide development of cross-platform iOS and Android apps, mostly based on Unity3d environment. Further we provide full web development services, mostly using technologies such as .NET, NodeJS, AngularJs, Wordpress etc. Furthermore, we also provide UI / UX development for all our clients. Goldworld is also very proud of its 2d and 3d modeling and animation services. Especially we have great experience in making 360 Videos based on Unity3D. We have the We are capable of delivering top-notch mobile friendly content for AR and VR projects. You can visit our website to view customer reviews. We are always open to your work.",
+        "experience": [
+          {
+            "title": "Project Manager",
+            "organization": "JinCheng",
+            "location": "Beijing, China",
+            "dates": "May 2014 - Present · 12 yrs 5 mos"
+          },
+          {
+            "title": "Project Manager",
+            "organization": "Disney Interactive",
+            "location": "Beijing, China",
+            "dates": "Mar 2011 - Jul 2014 · 3 yrs 5 mos"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Yanbiandaxue",
+            "programme": "Master's degree, Computer Programming",
+            "dates": "2005 – 2010",
+            "note": "Grade: A"
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "March 2016",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "languages": [
+          "Chinese — native or bilingual proficiency",
+          "English — professional working proficiency"
+        ],
+        "skills": [
+          "Mobile app",
+          "Kinect"
+        ],
+        "skill_count": 10
+      }
+    },
+    {
+      "slug": "hiroto-iwaki-54b207306",
+      "state": "removed"
+    },
+    {
+      "slug": "jackson-kidd-1680b2339",
+      "state": "removed"
+    },
+    {
+      "slug": "james-lee-0977a0217",
+      "state": "removed"
+    },
+    {
+      "slug": "janul-azwan-7b1612361",
+      "state": "removed"
+    },
+    {
+      "slug": "jaron-gaston-7a16a9322",
+      "state": "removed",
+      "checked": "2026-09-10"
+    },
+    {
+      "slug": "jay-software-lead",
+      "state": "removed"
+    },
+    {
+      "slug": "jaycee-tran-a2873230b",
+      "state": "removed"
+    },
+    {
+      "slug": "jikun-liao-794b61162",
+      "state": "removed"
+    },
+    {
+      "slug": "john-wilhelmsson-17b3a0219",
+      "state": "removed"
+    },
+    {
+      "slug": "johnathon-h-teng018",
+      "state": "removed"
+    },
+    {
+      "slug": "joseph-anderson-01b421244",
+      "state": "removed"
+    },
+    {
+      "slug": "joshua-gosney-9538a6352",
+      "state": "removed"
+    },
+    {
+      "slug": "jun-kai-78911a156",
+      "state": "removed"
+    },
+    {
+      "slug": "justin-lim-14664a324",
+      "state": "removed"
+    },
+    {
+      "slug": "kazunetakeda25",
+      "state": "removed"
+    },
+    {
+      "slug": "keisuke-watanabe-357298224",
+      "state": "removed"
+    },
+    {
+      "slug": "kell-daniel-964a49245",
+      "state": "removed"
+    },
+    {
+      "slug": "kevin-tsang-49b77335b",
+      "state": "removed"
+    },
+    {
+      "slug": "kosuke-kobayashi-6b388134b",
+      "state": "removed"
+    },
+    {
+      "slug": "lai-we-wang-ba355a1a2",
+      "state": "removed"
+    },
+    {
+      "slug": "lai-wewang-ba355a1a2",
+      "state": "removed"
+    },
+    {
+      "slug": "lee-chien-hui-50b157157",
+      "state": "removed"
+    },
+    {
+      "slug": "levente-bajusz-15329b368",
+      "state": "live",
+      "profile": {
+        "name": "Levente Bajusz",
+        "headline": "Senior Software Engineer",
+        "current_role": "ThriveCart",
+        "location": "Debrecen, Hajdú-Bihar, Hungary",
+        "connections": "40",
+        "followers": "42",
+        "about": "Senior Full Stack Engineer having experience in Web Development for 10 years. An experienced team player with excellent communication skills and the ability to learn quickly and adapt to new technical environments. Familiar with design, development, testing, and support of various web and mobile applications. Currently on the path towards excellence in skill set and experience, finding better opportunities on the way.",
+        "education": [
+          {
+            "institution": "James Cook University (Singapore Campus)",
+            "programme": "Bachelor's degree, Computer Science",
+            "dates": "Sep 2009 – Jan 2013"
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "May 2025",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "experience": [
+          {
+            "title": "Senior Software Engineer",
+            "organization": "ThriveCart · Contract",
+            "location": "Hungary · Remote",
+            "dates": "Jun 2025 - Present · 1 yr 4 mos"
+          },
+          {
+            "title": "Senior Software Engineer",
+            "organization": "Mautic Community · Contract",
+            "location": "Remote",
+            "dates": "Jan 2025 - Jun 2025 · 6 mos"
+          },
+          {
+            "title": "Senior Software Engineer",
+            "organization": "Creuna · Full-time",
+            "location": "Remote",
+            "dates": "Jan 2021 - Dec 2024 · 4 yrs"
+          },
+          {
+            "title": "Full Stack Engineer",
+            "organization": "Intechnica · Full-time",
+            "dates": "Jan 2017 - Dec 2020 · 4 yrs"
+          },
+          {
+            "title": "Full Stack Engineer",
+            "organization": "Avenis Oy · Full-time",
+            "dates": "Mar 2014 - Dec 2016 · 2 yrs 10 mos"
+          }
+        ],
+        "projects": [
+          {
+            "name": "Open Source Mautic Contributor",
+            "summary": "Associated with Mautic Community."
+          },
+          {
+            "name": "Piktochart",
+            "summary": "Associated with ThriveCart."
+          }
+        ],
+        "open_to_work": "Software Engineer, Back End Developer, Frontend Developer",
+        "backfilled": true
+      },
+      "checked": "2026-09-13"
+    },
+    {
+      "slug": "lian-hung-129b47158",
+      "state": "removed",
+      "checked": "2026-09-10"
+    },
+    {
+      "slug": "liguo-ma-060077205",
+      "state": "removed"
+    },
+    {
+      "slug": "lmauro77",
+      "state": "removed"
+    },
+    {
+      "slug": "louis-egan",
+      "state": "removed"
+    },
+    {
+      "slug": "maksym-poplavskyi-337b782bb",
+      "state": "removed"
+    },
+    {
+      "slug": "marcin-iwanski-b699b02b8",
+      "state": "live",
+      "profile": {
+        "name": "Marcin Iwanski",
+        "headline": "Blockchain Lead at Prolocalize",
+        "current_role": "Prolocalize",
+        "location": "Brok, Mazowieckie, Poland",
+        "followers": "0",
+        "experience": [
+          {
+            "title": "Blockchain Lead",
+            "organization": "Prolocalize · Full-time"
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "March 2024",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed"
+      },
+      "checked": "2026-09-13"
+    },
+    {
+      "slug": "mark-santiago-373172339",
+      "state": "removed"
+    },
+    {
+      "slug": "markus-laan-b03211367",
+      "state": "removed"
+    },
+    {
+      "slug": "mehmet-demir-godev",
+      "state": "removed"
+    },
+    {
+      "slug": "milan-zubic",
+      "state": "removed",
+      "checked": "2026-09-01"
+    },
+    {
+      "slug": "paul-song-225505224",
+      "state": "removed"
+    },
+    {
+      "slug": "peter-wang-780259a3",
+      "state": "removed"
+    },
+    {
+      "slug": "promise-law",
+      "state": "removed"
+    },
+    {
+      "slug": "rui-jin-319400434",
+      "state": "live",
+      "checked": "2026-09-18",
+      "profile": {
+        "name": "Rui Jin",
+        "location": "Moscow, Russia",
+        "experience": [
+          {
+            "organization": "Snorkel AI · Contract",
+            "dates": "May 2026 - Present"
+          },
+          {
+            "organization": "Bittensor",
+            "dates": "Feb 2024 - Apr 2026"
+          },
+          {
+            "organization": "DataAnnotation",
+            "dates": "Jul 2022 - Jan 2024"
+          },
+          {
+            "organization": "Freelancer.com",
+            "dates": "2020 - 2022"
+          }
+        ],
+        "education": [
+          {
+            "institution": "City University of Hong Kong",
+            "programme": "Bachelor of Computer Science",
+            "dates": "2016 – 2020"
+          }
+        ],
+        "observed": "2026-09-18",
+        "joined": "September 2026",
+        "verifications": "None listed",
+        "capture_note": "Employer names and dates were read from the page on 18 September 2026; the role titles were not captured, so the Role column is empty rather than guessed."
+      }
+    },
+    {
+      "slug": "rui-kishimoto-a12b15275",
+      "state": "removed"
+    },
+    {
+      "slug": "ryuhei-matsuda",
+      "state": "removed"
+    },
+    {
+      "slug": "sam-ayorinde-3b1b9a151",
+      "state": "live",
+      "profile": {
+        "name": "Sam Ayorinde",
+        "headline": "Tech Lead at Breeze",
+        "current_role": "Breeze",
+        "location": "Lagos, Lagos State, Nigeria",
+        "connections": "500+",
+        "followers": "1,186",
+        "observed": "2026-09-13",
+        "joined": "October 2017",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated less than 1 year ago",
+        "verifications": "None listed",
+        "about": "A Software Engineer obsessed with blockchain with over five years of experience in writing smart contracts and building blockchain dapps in the areas of DeFi(Staking, NFT), Wallet infrastructure etc.\nProficient in multiple blockchain platforms and protocols, including EVM and Non EVM chains with a strong understanding of decentralized systems.",
+        "experience": [
+          {
+            "title": "Co-Founder and CTO",
+            "organization": "Breeze · Full-time",
+            "location": "Remote",
+            "dates": "Dec 2020 - Present · 5 yrs 10 mos",
+            "summary": "Breeze is described as a platform for financial efficiency and transparency, with Issuer, User and Back Office dashboards for transaction and document management."
+          }
+        ],
+        "projects": [
+          {
+            "name": "Certification Smart Contract for Ethereum Network",
+            "dates": "Feb 2020 – Mar 2020",
+            "summary": "A certificate-issuing contract for participants of #500NigeriaDevs4Eth."
+          }
+        ]
+      },
+      "checked": "2026-09-13"
+    },
+    {
+      "slug": "scott-brown-813445279",
+      "state": "removed"
+    },
+    {
+      "slug": "scott-brown-b947ba29a",
+      "state": "removed"
+    },
+    {
+      "slug": "seo-sigoto-8a063a204",
+      "state": "removed"
+    },
+    {
+      "slug": "taro-aikuchi-36035b384",
+      "state": "removed"
+    },
+    {
+      "slug": "techwhizai",
+      "state": "removed"
+    },
+    {
+      "slug": "thomas-cupples-7051473b0",
+      "state": "removed",
+      "checked": "2026-09-18"
+    },
+    {
+      "slug": "tkcong",
+      "state": "removed"
+    },
+    {
+      "slug": "victor-hazard-77ba40305",
+      "state": "removed"
+    },
+    {
+      "slug": "yin-xing-50b95b186",
+      "state": "removed"
+    },
+    {
+      "slug": "yinxing-gao-7b4471189",
+      "state": "live",
+      "profile": {
+        "name": "Yinxing Gao",
+        "headline": "Developer at LP Team",
+        "current_role": "LP Team",
+        "location": "Hong Kong SAR",
+        "experience": [
+          {
+            "title": "Developer",
+            "organization": "LP Team"
+          }
+        ],
+        "observed": "2026-09-13",
+        "joined": "June 2019",
+        "contact_info_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "followers": "0"
+      },
+      "checked": "2026-09-13"
+    },
+    {
+      "slug": "zhangxu57477",
+      "state": "removed"
+    },
+    {
+      "slug": "ronel-mendoza96",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "m-sarosh",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "ramandeep-goria-436480308",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "jan-garwol-06317b403",
+      "state": "live",
+      "checked": "2026-09-21",
+      "profile": {
+        "name": "Jan Garwol",
+        "headline": "Senior Software Engineer @ BCG",
+        "current_role": "Boston Consulting Group (BCG)",
+        "location": "Poland",
+        "connections": "37",
+        "followers": "37",
+        "observed": "2026-09-21",
+        "joined": "April 2026",
+        "contact_info_updated": "Updated less than 6 months ago",
+        "photo_updated": "Updated less than 6 months ago",
+        "verifications": "None listed",
+        "experience": [
+          {
+            "title": "Senior Software Engineer",
+            "organization": "Boston Consulting Group (BCG) · Full-time",
+            "location": "Remote",
+            "dates": "Sep 2022 - Present · 4 yrs 1 mo"
+          },
+          {
+            "title": "Full Stack Engineer",
+            "organization": "Airwallex · Full-time",
+            "dates": "Apr 2018 - Aug 2022 · 4 yrs 5 mos"
+          },
+          {
+            "title": "Software Engineer",
+            "organization": "Deputy · Full-time",
+            "dates": "Jul 2014 - Jan 2018 · 3 yrs 7 mos"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of Sydney"
+          }
+        ],
+        "open_to_work": "Senior Software Engineer, Full Stack Engineer, Back End Developer and Artificial Intelligence Engineer roles",
+        "no_posts": true
+      }
+    },
+    {
+      "slug": "michael-pantong-2a8a89188",
+      "state": "live",
+      "checked": "2026-09-21",
+      "profile": {
+        "name": "Michael Pantong",
+        "headline": "Engineer at Hatotsusin",
+        "current_role": "Hatotsusin",
+        "location": "Khabarovsk, Russia",
+        "followers": "0",
+        "observed": "2026-09-21",
+        "joined": "June 2019",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "experience": [
+          {
+            "title": "Engineer",
+            "organization": "Hatotsusin"
+          }
+        ],
+        "open_to_work": "Khabarovsk, Russia | On-site · Hybrid",
+        "no_posts": true
+      }
+    },
+    {
+      "slug": "delfino-guzman-1b7620307",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "matthew-sanchez-115300308",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "jamichael-thomas",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "billy-brown-a6678b1b8",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "carter-edwards-a99138204",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "colton-perry-6a8059204",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "evely-burton-204b29207",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "guo-zhang-b152721bb",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "hyungwoo-lee-6985501b9",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "james-williamson-55a9b81a6",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "linshuang-li-aa69391bb",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "linshuang-li-aa696391bb",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "luis-lopeznoguera-colombia",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "mizutani-jun-5b0433168",
+      "state": "live",
+      "checked": "2026-09-21",
+      "profile": {
+        "name": "Mizutani Jun",
+        "headline": "Enginner at Hatotsusin",
+        "current_role": "Hatotsusin",
+        "location": "Changping District, Beijing, China",
+        "connections": "1",
+        "followers": "3",
+        "observed": "2026-09-21",
+        "joined": "July 2018",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "no_posts": true
+      }
+    },
+    {
+      "slug": "sales-hatotsusin-67a2031ab",
+      "state": "live",
+      "checked": "2026-09-21",
+      "profile": {
+        "name": "Sales Hatotsusin",
+        "headline": "Sales Manager at Hatotsusin",
+        "current_role": "Hatotsusin",
+        "location": "Liski, Voronezh, Russia",
+        "followers": "0",
+        "observed": "2026-09-21",
+        "joined": "May 2020",
+        "contact_info_updated": "Updated over 1 year ago",
+        "photo_updated": "Updated over 1 year ago",
+        "verifications": "None listed",
+        "no_posts": true
+      }
+    },
+    {
+      "slug": "onder-kayabasi-772a33302",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "osman-demir-307520209",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "piper-webster-192676203",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "rimmer-trajan-2806b21bb",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "sebastian-lazarescue-456840209",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "pavlo-polishichuk-b68920364",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "kauai-santana-dev",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "santiagourregobotero",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "daniel-jin-dev",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "robert-macon-blockchain-enthusiastic",
+      "state": "removed",
+      "checked": "2026-09-21"
+    },
+    {
+      "slug": "larry-levine-482639111",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "arber-berisha-ba5878116",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "taylor-scott-ba7707381",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "kyle-johnson-836317331",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "jeremy-michael-0709-nyssa",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "ryan-white-410a36350",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "daniel-edwin-59524b331",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "mark-loughlin-381916309",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "daniel-smith-06b95b384",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "isaac-thomas-942274333",
+      "state": "removed",
+      "checked": "2026-09-24"
+    },
+    {
+      "slug": "schmid-payen-17695a120",
+      "state": "live",
+      "checked": "2026-09-24",
+      "profile": {
+        "name": "Schmid Payen",
+        "headline": "Software Engineer",
+        "location": "New York City Metropolitan Area",
+        "connections": "500+",
+        "followers": "1,836",
+        "experience": [
+          {
+            "title": "Software Developer",
+            "organization": "EarthSoft · Full-time",
+            "location": "Pensacola, Florida, United States · Remote",
+            "dates": "Jul 2022 - Aug 2026"
+          },
+          {
+            "title": "Full Stack Engineer",
+            "organization": "Exigo · Contract",
+            "location": "United States · Remote",
+            "dates": "Apr 2021 - Jun 2022"
+          },
+          {
+            "title": "Full-stack Developer",
+            "organization": "CORPSMART · Contract",
+            "location": "Olympia, Washington, United States",
+            "dates": "May 2019 - Feb 2021"
+          },
+          {
+            "title": "Software Engineer",
+            "organization": "Envision Better Health LLC · Full-time",
+            "location": "West Chester, Pennsylvania, United States",
+            "dates": "Apr 2015 - Aug 2017"
+          },
+          {
+            "title": "Junior Software Engineer",
+            "organization": "Bee Mortgage · Full-time",
+            "location": "Jacksonville, Florida, United States",
+            "dates": "Feb 2014 - Apr 2015"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ryota-suzuki-8173a8391",
+      "state": "live",
+      "checked": "2026-09-24",
+      "profile": {
+        "name": "Ryota Suzuki",
+        "headline": "Software Engineer at Amazon Web Services (AWS)",
+        "location": "Bangs, Texas, United States",
+        "connections": "8",
+        "followers": "8",
+        "experience": [
+          {
+            "title": "Software Engineer",
+            "organization": "Amazon Web Services (AWS) · Full-time"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "huigia-diep-670a6628a",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "daniel-jin0811",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "milan-zubic-20a3612a6",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "nikos-amofa",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "superdev0909",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "ryan-c-b8a6711a7",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "yoshiro-morino-25265b222",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "daveescott0509",
+      "state": "removed",
+      "checked": "2026-09-28"
+    },
+    {
+      "slug": "oleh-zamryha-b47960330",
+      "state": "removed",
+      "checked": "2026-09-28"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Self-hosted web fonts used by Chollima Hunter
+===============================================
+
+- Inter (400, 500, 600) — designed by Rasmus Andersson, SIL Open Font License 1.1
+  https://github.com/rsms/inter
+
+- Space Grotesk (500, 700) — designed by Florian Karsten, SIL Open Font License 1.1
+  https://github.com/floriankarsten/space-grotesk
+
+- JetBrains Mono (400, 500) — designed by JetBrains, SIL Open Font License 1.1
+  https://github.com/JetBrains/JetBrainsMono
+
+All three families are distributed by Google Fonts under the SIL Open Font
+License 1.1 (https://openfontlicense.org/), which permits bundling,
+self-hosting, and redistribution. These .woff2 files were sourced from
+Fontsource's font-files repository (https://github.com/fontsource/font-files),
+a repackaging of the same upstream OFL-licensed Google Fonts source files
+into individually-servable static weight files — the OFL license travels
+with the font files themselves regardless of packaging.
+
+Served locally via @font-face in src/assets/css/tokens.css. No runtime
+requests to any external font CDN.

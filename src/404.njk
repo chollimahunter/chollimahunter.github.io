@@ -1,0 +1,30 @@
+---
+layout: base.njk
+title: "Page not found"
+description: "The page requested does not exist on Chollima Hunter."
+permalink: "/404.html"
+eleventyExcludeFromCollections: true
+noindex: true
+---
+{#
+  src/404.njk — GitHub Pages serves /404.html for any path that has no file,
+  so this is the only error page the site can have. Indicator, persona and
+  profile pages are removed when their entries are withdrawn, so a stale link
+  landing here is expected rather than exceptional.
+#}
+<section class="hero">
+  <h1>Page not found</h1>
+  <p>
+    There is no page at this address. Entries are withdrawn when a correction
+    is accepted or a source no longer supports them, so a link that once
+    worked may lead here.
+  </p>
+</section>
+<section>
+  <p>
+    Search the <a href="/remote-workers/">indicator index</a>, browse the
+    <a href="/profiles/">named individuals</a> or the
+    <a href="/#actor-cluster-taxonomy">actor clusters</a>, or return to the
+    <a href="/">home page</a>.
+  </p>
+</section>

@@ -1,0 +1,37 @@
+{#
+  partials/table-filter.njk — the search box for a table already rendered in
+  the page, read by src/assets/js/table-filter.js.
+
+  Usage: set `tableFilter` before including.
+    {% set tableFilter = { target: "#sources-table", noun: "sources", page: limits.list, id: "source-search-input", label: "Search sources", placeholder: "Publisher, title, year, or what it is cited by" } %}
+    {% include "partials/table-filter.njk" %}
+
+  Fields:
+    target      the table's own CSS selector, passed through as
+                 data-table-filter
+    noun        plural noun for data-table-filter-noun, used in the status
+                 text table-filter.js writes into data-table-filter-count
+    page        optional; sets data-table-filter-page, the row count
+                 table-filter.js reveals per "show more" click. Pass
+                 limits.list rather than a number (src/_data/limits.js), and
+                 include partials/table-filter-more.njk after the table for
+                 the button itself. Omit it and the script shows every
+                 matching row at once.
+    id          the <input>'s id, and what its <label for> points at
+    label       the visible label text
+    placeholder the input's placeholder text
+    chips       optional; a list of filterChips objects (partials/filter-chips.njk,
+                without `rows`), one chip group each. table-filter.js hides
+                the rows whose data-{dimension} is not a pressed value, along
+                with the search and the cap, and filter-dropdown.js renders
+                each group as the site dropdown.
+
+  Hidden until table-filter.js runs, so a reader without JavaScript gets the
+  whole table rather than an input that does nothing.
+
+  DELIBERATELY ON ONE LINE, and it must stay that way. src/etherhiding/index.md
+  includes this through Nunjucks and then Markdown, and markdown-it treats a
+  raw HTML block containing blank lines as markdown — see the matching comment
+  in partials/tile.njk for what that does to the markup.
+#}
+<div class="table-filter" hidden data-table-filter="{{ tableFilter.target }}" data-table-filter-noun="{{ tableFilter.noun }}"{% if tableFilter.page %} data-table-filter-page="{{ tableFilter.page }}"{% endif %}>{% set searchBox = { id: tableFilter.id, label: tableFilter.label, placeholder: tableFilter.placeholder, attr: "data-table-filter-input", count: "data-table-filter-count" } %}{% include "partials/search-box.njk" %}{% for chips in tableFilter.chips %}{% set filterChips = chips %}{% include "partials/filter-chips.njk" %}{% endfor %}{% set resultTools = { target: tableFilter.target, noun: tableFilter.noun, table: true } %}{% include "partials/result-tools.njk" %}</div>

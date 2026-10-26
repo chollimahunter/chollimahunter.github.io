@@ -1,0 +1,80 @@
+{
+  "slug": "jon-chang-hyok",
+  "display_name": "Jon Chang Hyok",
+  "aliases": [
+    "Quan Jiang",
+    "Alex Jiang"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Lazarus Group",
+    "RGB (Reconnaissance General Bureau)"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/jon-chang-hyok.png",
+    "caption": "Photograph published by the FBI on its wanted notice for Jon Chang Hyok. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/jon-chang-hyok"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Cyber's Most Wanted",
+    "details": [
+      {
+        "label": "Place of Birth",
+        "value": "Democratic People's Republic of Korea (North Korea)"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Languages",
+        "value": "English, Korean, Mandarin Chinese"
+      }
+    ],
+    "caution": "Jon Chang Hyok is allegedly a state-sponsored North Korean hacker who is part of an alleged criminal conspiracy responsible for some of the costliest computer intrusions in history. These intrusions caused damage to computer systems of, and stole currency and virtual currency from, numerous victims. Jon was alleged to be a participant in a wide-ranging criminal conspiracy undertaken by a group of hackers of the North Korean government’s Reconnaissance General Bureau (RGB). The conspiracy comprised North Korean hacking groups that some private cybersecurity researchers have labeled the “Lazarus Group” and Advanced Persistent Threat 38 (APT38). For his part in the conspiracy, Jon is alleged to have been directly involved in the development and dissemination of malicious cryptocurrency applications targeting numerous cryptocurrency exchanges and other companies. On December 8, 2020, a federal arrest warrant was issued for Jon in the United States District Court, Central District of California, after he was charged with one count of conspiracy to commit wire fraud and bank fraud, and one count of conspiracy to commit computer fraud (computer intrusions).",
+    "remarks": "Jon is a North Korean citizen last known to be in North Korea. Jon has traveled to China in the past and has reported a date of birth in 1989.",
+    "related_cases": [
+      {
+        "title": "PARK JIN HYOK",
+        "url": "https://www.fbi.gov/wanted/cyber/park-jin-hyok"
+      },
+      {
+        "title": "KIM IL",
+        "url": "https://www.fbi.gov/wanted/cyber/kim-il"
+      }
+    ],
+    "poster_url": "https://www.fbi.gov/wanted/cyber/jon-chang-hyok/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "JON CHANG HYOK — FBI Wanted",
+      "url": "https://www.fbi.gov/wanted/cyber/jon-chang-hyok",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    }
+  ],
+  "disclaimer": [
+    "Named by the FBI as an alleged state-sponsored North Korean hacker within the same charged conspiracy as Park Jin Hyok and Kim Il, attributed by the notice to hackers of the DPRK government's Reconnaissance General Bureau.",
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean": "전창혁",
+  "name_korean_provenance": "reconstructed"
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "matthew-isaac-knoot",
+  "display_name": "Matthew Isaac Knoot",
+  "aliases": [
+    "Matthew Issac Knoot"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Sentenced May 1, 2026; announced by the Justice Department on May 6, 2026",
+    "details": [
+      {
+        "label": "Residence",
+        "value": "Nashville, Tennessee"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the Middle District of Tennessee, Judge Eli Richardson"
+      },
+      {
+        "label": "Charged",
+        "value": "By indictment, August 7, 2024"
+      },
+      {
+        "label": "Sentence",
+        "value": "18 months in prison and one year of supervised release"
+      },
+      {
+        "label": "Restitution",
+        "value": "$15,100"
+      },
+      {
+        "label": "Forfeiture",
+        "value": "$15,100"
+      },
+      {
+        "label": "Stolen identity used",
+        "value": "“Andrew M.”"
+      }
+    ],
+    "caution": "According to court documents, Knoot ran a laptop farm from his Nashville residences between approximately July 2022 and August 2023. The victim companies shipped laptops addressed to “Andrew M.” to Knoot’s residences. Following receipt of the laptops, and without authorization, Knoot logged on to the laptops, downloaded and installed unauthorized remote desktop applications, and accessed the victim companies’ networks. The remote desktop applications enabled a North Korean IT worker to work from locations in China, while appearing to the victim companies that “Andrew M.” was working from Knoot’s residences in Nashville. On Aug. 7, 2024, Knoot was charged by indictment alleging his participation in a criminal scheme that obtained work for North Korean IT workers from at least four U.S. companies. The victim companies paid the DPRK IT workers associated with Knoot’s laptop farm more than $250,000 for their work between approximately July 2022 and August 2023. Most, if not all, of this sum was falsely reported to the IRS and Social Security Administration in the name of the actual U.S. person, Andrew M., whose identity the conspirators had stolen. Knoot’s and his conspirators’ actions also caused the victim companies more than $500,000 in costs associated with auditing and remediating their devices, systems, and networks. Knoot and the DPRK IT workers conspired to receive payments from the victim companies and transfer those funds to Knoot and to accounts outside of the United States, including accounts associated with North Korean and Chinese individuals. Knoot’s role in this scheme ended when the FBI executed a court-authorized search of his home on Aug. 8, 2023, after which Knoot made multiple false and misleading statements and destroyed evidence to obstruct the investigation."
+  },
+  "sources": [
+    {
+      "title": "Two U.S. Nationals Sentenced for Facilitating Fraudulent Remote Information Technology Worker Schemes to Generate Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker-0",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2026-05-06",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Matthew Isaac Knoot is a United States national, not a DPRK national, and is profiled here as a domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice he ran a laptop farm from his Nashville residences between about July 2022 and August 2023, receiving laptops that victim companies had addressed to “Andrew M.”, a real United States person whose identity the conspirators had stolen, and installing remote desktop software so that a North Korean IT worker in China appeared to be working from Nashville.",
+    "He was charged by indictment on August 7, 2024, and on May 1, 2026 was sentenced in the Middle District of Tennessee to 18 months in prison and one year of supervised release, with $15,100 in restitution and a further $15,100 forfeited. The Justice Department's May 2026 release spells his middle name Issac in its opening line and Isaac in its case heading; the latter is used here.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

@@ -1,0 +1,57 @@
+name: Indicator or profile submission
+description: Submit an indicator, a hunt, or a lead on a DPRK-linked actor for review.
+title: "Submission: "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Nothing submitted here is published automatically. Every submission is
+        reviewed by a person first.
+
+        Claims about a named individual are not published without a supporting
+        public record: an indictment, a sanctions designation, a court filing,
+        a press release from a named agency, or a named threat-intelligence
+        report. A submission naming a real person with no such source will not
+        be published.
+
+        If you would rather not submit in public, use the
+        [submission form](https://chollimahunter.github.io/submit/).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What are you submitting?
+      options:
+        - An indicator (address, account, package, domain, wallet, hash)
+        - A lead on a named individual
+        - A hunt or detection query
+        - A correction to sourcing or provenance
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: What it is
+      description: The value or the claim, what activity it is tied to, and how it was observed or where it was reported.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Public sources
+      description: One URL per line. Required for anything naming a real person.
+      placeholder: |
+        https://www.justice.gov/...
+        https://home.treasury.gov/...
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: This does not include information about a person that is not already in a public record.
+          required: true
+        - label: I understand that inclusion on this site is not an accusation, and that entries are treated as leads requiring independent verification.
+          required: true

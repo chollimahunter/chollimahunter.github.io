@@ -1,0 +1,123 @@
+{
+  "slug": "kim-ryu-song",
+  "display_name": "Kim Ryu Song",
+  "aliases": [
+    "Jin Liuxing"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/kim-ryu-song.jpg",
+    "caption": "Photograph published by the FBI on its wanted notice for Kim Ryu Song. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/kim-ryu-song"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; federal arrest warrant issued December 2024",
+    "details": [
+      {
+        "label": "Date(s) of Birth Used",
+        "value": "November 6, 1982"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Occupation",
+        "value": "President of Yanbian Silverstar"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Languages",
+        "value": "Korean, English"
+      },
+      {
+        "label": "Role, per Rewards for Justice",
+        "value": "president of Yanbian Silverstar"
+      },
+      {
+        "label": "Associated organizations, per Rewards for Justice",
+        "value": "BabyBox Technology; China Silver Star; China Silver Star Internet Technology Company; Cubix Tech; Eden Programming Solutions; Helix; LJD Tech; Silver Star China; Silver Star internet Technology Corporation; Unsong Internet Technology Corporation; Volasys Silver Star Network Technology Co.; Yanbian Silverstar; Yanbian Silverstar Network Technology Co., Ltd. (Chinese Simplified: 延边银星网络科技有限公司; Korean: 은성인터네트기술회사); Yanji Silver Star Network Technology Co. Ltd."
+      },
+      {
+        "label": "Republic of Korea designation, December 26, 2024",
+        "value": "Named as 김류성, chief of the 313 General Bureau's IT delegation in Yanji (313총국 옌지주재 IT대표단 단장), the bureau being subordinate to the Munitions Industry Department; the announcement notes his indictment in a U.S. court on December 11, 2024"
+      }
+    ],
+    "caution": "Kim Ryu Song is wanted for his alleged involvement in a conspiracy to generate revenue and launder it for the North Korean regime from approximately April 2017 to approximately March 2023 in violation of United States and international sanctions. A federal arrest warrant was issued for Kim Ryu Song in the United States District Court, Eastern District of Missouri, Eastern Division, St. Louis, Missouri, in December 2024.",
+    "remarks": "Kim Ryu Song has ties to or may visit China.",
+    "reward": "The Rewards For Justice Program, United States Department of State, is offering a reward of up to $5 million for information that leads to the disruption of financial mechanisms of persons engaged in certain activities that support North Korea (Democratic People’s Republic of Korea, DPRK), including the exportation of workers from North Korea to generate revenue, money laundering, and specified cyber activity and actions that support North Korea’s weapons of mass destruction proliferation.",
+    "poster_url": "https://www.fbi.gov/wanted/cyber/kim-ryu-song/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "KIM RYU SONG — FBI Wanted, Cyber",
+      "url": "https://www.fbi.gov/wanted/cyber/kim-ryu-song",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "date": "2024-12-01",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "DPRK IT WORKERS — FBI Wanted poster (Rewards for Justice, up to $5 million)",
+      "url": "https://www.fbi.gov/wanted/cyber/dprk-it-workers",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "date": "2024-12-01",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "DPRK IT WORKERS — FBI wanted poster (Korean-language edition)",
+      "url": "https://www.fbi.gov/wanted/cyber/dprk-it-workers/dprk-wanted-8-5x11-korean-final.pdf/@@download/file/DPRK-Wanted-8.5x11.Korean.final.pdf",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Yanbian Silverstar and Volasys Silverstar: Rewards for Justice reward offer of up to $5 million",
+      "url": "https://rewardsforjustice.net/rewards/yanbian-silverstar-and-volasys-silverstar/",
+      "publisher": "Rewards for Justice, U.S. Department of State",
+      "date": "2024-12-12",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "우리 정부의 대북 독자제재 지정 (Republic of Korea unilateral sanctions designation of fifteen DPRK IT-worker organisation members and one entity)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375771",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2024-12-26",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "금융위원회 고시 제2024-57호, 금융거래등제한대상자 지정 및 지정 취소에 관한 규정 일부개정 (Financial Services Commission Notice 2024-57, consolidated list of restricted counterparties, entries 900 to 915)",
+      "url": "https://www.fsc.go.kr/po040200/83752",
+      "publisher": "Financial Services Commission, Republic of Korea",
+      "date": "2024-12-30",
+      "type": "sanctions_designation"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice with a federal arrest warrant issued in the Eastern District of Missouri; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "김류성",
+  "name_korean_provenance": "cited"
+}

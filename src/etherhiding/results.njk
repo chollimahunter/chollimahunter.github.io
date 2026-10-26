@@ -1,0 +1,84 @@
+---
+layout: base.njk
+title: "EtherHiding Checker Results"
+description: "Latest findings from the EtherHiding contract-watchlist checker tool, with sourced watchlist entries and a manual-review disclaimer."
+extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
+---
+<section>
+  <h1>EtherHiding Checker Results</h1>
+  <p>
+    The latest output of the on-demand checker tool, which tests a supplied
+    contract address or address list against the watchlist of publicly reported
+    indicators on the <a href="/etherhiding/">EtherHiding Tracker</a>. Design
+    notes are in <code>docs/etherhiding-contract-check.md</code>.
+  </p>
+</section>
+
+<section>
+  <h2>Last checked</h2>
+  <p><strong>{{ etherhidingFindings.latest.ran_at | truncate(10, true, "") }}</strong> &mdash; scan id
+    <code>{{ etherhidingFindings.latest.scan_id }}</code>, ruleset
+    <code>{{ etherhidingFindings.latest.ruleset_version }}</code>.
+  </p>
+  {% if etherhidingFindings.latest.status_note %}
+  <p><em>{{ etherhidingFindings.latest.status_note }}</em></p>
+  {% endif %}
+</section>
+
+{% set disclaimer = {
+  title: "Manual review required",
+  body: 'A row means an address or contract data matched a cited EtherHiding indicator. It is a starting point for review, not a finding that the contract is malicious or its owner affiliated with any threat actor. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+} %}{% include "partials/disclaimer.njk" %}
+
+<section>
+  <h2>Findings</h2>
+  {% if etherhidingFindings.latest.matches and etherhidingFindings.latest.matches.length %}
+  {% set tableFilter = { target: "#findings-table", noun: "findings", page: limits.list, id: "findings-search-input", label: "Search findings", placeholder: "Watchlist entry, address, chain, or what matched" } %}
+  {% include "partials/table-filter.njk" %}
+
+  <div class="table-scroll">
+    <table class="results-table" id="findings-table">
+      <thead>
+        <tr>
+          <th scope="col">Watchlist entry (ioc_id)</th>
+          <th scope="col">Matched value</th>
+          <th scope="col">Location</th>
+          <th scope="col">Matched at</th>
+          <th scope="col">Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for m in etherhidingFindings.latest.matches %}
+        <tr>
+          <td><code>{{ m.ioc_id }}</code></td>
+          <td><code>{{ m.matched_value }}</code></td>
+          <td>{{ m.location }}</td>
+          <td class="cell-date">{{ m.matched_at | truncate(10, true, "") }}</td>
+          <td>{{ m.context }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% include "partials/table-filter-more.njk" %}
+  {% else %}
+  <p>No matches recorded in the latest run.</p>
+  {% endif %}
+
+  {% if etherhidingFindings.latest.queries_executed and etherhidingFindings.latest.queries_executed.length %}
+  <h3>Queries executed</h3>
+  <pre class="query-block">{% for q in etherhidingFindings.latest.queries_executed %}{{ q }}
+{% endfor %}</pre>
+  {% endif %}
+</section>
+
+<section>
+  <h2>Current watchlist</h2>
+  <p>
+    The checker tool tests candidates against the
+    {{ iocIndex.etherhiding.watchlist | length }} sourced indicator(s) listed
+    and searchable on the <a href="/etherhiding/">EtherHiding Tracker</a>.
+    They are kept there rather than duplicated here so the two cannot drift
+    apart.
+  </p>
+</section>

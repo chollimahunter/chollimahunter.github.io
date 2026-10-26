@@ -1,0 +1,273 @@
+---
+pagination:
+  data: iocIndex.indicator_pages
+  size: 1
+  alias: ioc
+permalink: "/indicators/{{ ioc.id }}/"
+layout: base.njk
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  extra_head: "{% if etherhidingAddresses.writes[ioc.id] %}<script src=\"/assets/js/table-filter.js\" defer></script>{% endif %}"
+  title: "{{ ioc | iocLabel | safe }}"
+  head_title: "{{ ioc | iocLabel | safe }} — {{ ioc.kind.label | safe }}{% if not ioc.attribution_doubt %} (DPRK){% endif %}"
+  description: "{% set full %}{{ ioc | iocLabel | safe }}: {{ ioc.kind.article | safe }} {{ ioc.kind.label | safe }} reported in {{ (ioc.source_count or ioc.sources.length) | safe }} source{% if (ioc.source_count or ioc.sources.length) != 1 %}s{% endif %} on {{ ioc.campaign_text | safe }} activity {% if ioc.attribution_doubt %}not tied to North Korea (DPRK){% else %}attributed to North Korea (DPRK){% endif %}{% if ioc.publishers.length %}, by {{ ioc.publishers.slice(0, 3) | join(', ') | safe }}{% if ioc.publishers.length > 3 %} and others{% endif %}{% endif %}.{% endset %}{{ full | truncate(157) | safe }}"
+---
+{#
+  src/indicators/indicator-page.njk — one page per indicator
+
+  Paginates over every record in src/_data/iocIndex.js, so each indicator has a
+  URL of its own that a person can link to, cite, or hand to someone, and that
+  a search for the exact value can land on. The title, the heading, the meta
+  description and the first sentence all carry the value; that is what lets a
+  search engine match an email address or a wallet to this page rather than to
+  a longer page that happens to mention it.
+
+  Note the data key: `indicator_pages`, not `records`. They are the same list
+  in a production build; under `eleventy --serve` the former is a slice, so the
+  dev server starts in seconds rather than building 20,000 pages first. Links
+  to an omitted indicator 404 locally — run with ELEVENTY_ALL_INDICATORS=1 when
+  that matters. See indicatorPages() in src/_data/iocIndex.js.
+
+  A value that belongs to a persona is also rendered in full on that persona's
+  page. It used to have only a noindex redirect stub here; it now has a real
+  page, canonical to itself, that summarises the persona and links to it. The
+  fields beyond the record (`kind`, `publishers_text`, `campaign_text`,
+  `related`, `lastmod`) come from indicatorPageData() in iocIndex.js.
+
+  The citations are rendered by partials/ioc-detail.njk, which the persona
+  pages include too, so one value reads the same wherever it is shown.
+#}
+{%- set sourceCount = (ioc.source_count or ioc.sources.length) -%}
+{%- set soleOwner = ioc.personas[0] if (ioc.personas and ioc.personas.length == 1) else null -%}
+<article>
+  <section>
+    {# Back to the page an indicator is listed on, by its area (see
+       src/_data/iocIndex.js): Remote Workers, the actor clusters, the
+       EtherHiding Tracker or the repo scanner; the indicator index otherwise. #}
+    {% set backLinks = { "remote-workers": { url: "/remote-workers/", text: "Remote Workers" }, "espionage": { url: "/#actor-cluster-taxonomy", text: "All actor clusters" }, "etherhiding": { url: "/etherhiding/", text: "EtherHiding Tracker" }, "polinrider": { url: "/repo-scanner/", text: "Repo Scanner" } } %}
+    {% set backLink = backLinks[ioc.area] or { url: "/indicators/", text: "All indicators" } %}{% include "partials/back-link.njk" %}
+    <h1 class="indicator-value"><code>{{ ioc | iocLabel }}</code></h1>
+
+    <p>
+      <code>{{ ioc | iocLabel }}</code> is {{ ioc.kind.article }} {{ ioc.kind.label }}
+      that {% if sourceCount == 1 %}one published source reports{% else %}{{ sourceCount }} published sources report{% endif %}
+      in connection with {{ ioc.campaign_text }} activity{% if ioc.attribution_doubt %}, which no
+      published source ties to North Korea (DPRK){% else %}, which public reporting
+      attributes to North Korea (DPRK){% endif %}.
+      {% if ioc.publishers.length %}It is cited here from {{ ioc.publishers_text }}.{% endif %}
+      {% if ioc.first_seen and ioc.last_seen and ioc.first_seen != ioc.last_seen %}The earliest of those reports is dated {{ ioc.first_seen }} and the most recent {{ ioc.last_seen }}.{% elif ioc.first_seen %}{% if sourceCount == 1 %}The report is{% else %}The reports are{% endif %} dated {{ ioc.first_seen }}.{% endif %}
+    </p>
+
+    {% if ioc.attribution_doubt %}
+    <p>
+      <span class="badge badge--low">DPRK link unconfirmed</span>
+      {{ ioc.attribution_doubt }} The EtherHiding tracker covers every
+      reported EtherHiding contract and wallet, not only North Korean ones, so
+      this value may belong to another actor.
+    </p>
+    {% endif %}
+
+    {% if soleOwner %}
+    {%- set ownerList = ioc.related.personas[0] -%}
+    <p>
+      The reporting files it under the persona
+      <a href="/remote-workers/personas/{{ soleOwner.slug }}/">{{ soleOwner.name | default(soleOwner.slug) }}</a>{% if ioc.persona and ioc.persona.confidence %}
+      {% set confidenceLevel = ioc.persona.confidence %}{% include "partials/confidence-badge.njk" %}{% endif %}{% if ownerList and ownerList.count %},
+      alongside {{ ownerList.count }} other identifier{% if ownerList.count != 1 %}s{% endif %} attributed to the same identity{% endif %}.
+      The persona page shows them together with any accounts, photographs and CV
+      recorded under that name. A persona name is the one an account presented
+      under, and may belong to an uninvolved person whose identity was taken.
+    </p>
+    {% endif %}
+  </section>
+
+  {% set chainLinks = etherhidingAddresses.links[ioc.id] %}
+  {% if chainLinks and chainLinks.length %}
+  {# Ties between EtherHiding addresses and the C2 hosts they served, from
+     scripts/lib/etherhiding-addresses.js: first on the page, since for an
+     address or a host they are the finding. A dated row was read on-chain; an
+     undated one is a tie a cited report states. #}
+  {%- set hostRows = not chainLinks[0].kind -%}
+  {%- set roleNames = { mapping_c2_contract: "mapping contract", owner_eoa: "owner wallet", resolver_wallet: "resolver wallet", pointer_wallet: "pointer wallet", pointer_account: "pointer account" } -%}
+  <section>
+    <h2 id="on-chain-links">On-chain links</h2>
+    <p class="ioc-result__meta">{% if hostRows %}C2 hosts this address pointed malware at{% else %}EtherHiding addresses that pointed malware at this host{% endif %}, newest first. Dates are when the value was written on-chain, and Transaction opens the one that first wrote it; a row without one is a tie a cited report states.{% if hostRows %} A host whose verdict is decoy was written between real values and is not C2.{% endif %} See the <a href="/etherhiding/">EtherHiding Tracker</a>.</p>
+    <div class="table-scroll">
+      <table class="results-table">
+        <thead>
+          {% if hostRows %}
+          <tr><th scope="col">C2 host</th><th scope="col">Transaction</th><th scope="col">Verdict</th><th scope="col">Network</th><th scope="col">Provider</th><th scope="col">Country</th><th scope="col">Registered</th><th scope="col">First written</th><th scope="col">Last written</th></tr>
+          {% else %}
+          <tr><th scope="col">Address</th><th scope="col">Transaction</th><th scope="col">Type</th><th scope="col">Role</th><th scope="col">Malware family</th><th scope="col">First written</th><th scope="col">Last written</th></tr>
+          {% endif %}
+        </thead>
+        <tbody>
+          {% for item in chainLinks %}
+          <tr>
+            <td>{% if item.id %}<a href="/indicators/{{ item.id }}/"><code>{{ item.value }}</code></a>{% else %}<code>{{ item.value }}</code>{% endif %}{% if hostRows and not item.known %} <span class="badge badge--low">unreviewed</span>{% endif %}</td>
+            <td>{% if item.first_tx and (item.first_tx.hash | explorerUrl(item.first_tx.chain, "tx")) %}{% set txLink = { text: item.first_tx.chain | explorerName, tx: item.first_tx } %}{% include "partials/tx-link.njk" %}{% endif %}</td>
+            {% if hostRows %}<td>{% if item.decoy %}<span class="badge badge--low">{{ item.decoy }}</span>{% else %}<span class="badge badge--confirmed">Malicious</span>{% endif %}</td>{% endif %}
+            {% if hostRows %}
+            <td>{{ item.network.label if item.network else "" }}</td>
+            <td>{% if item.network %}{{ item.network.provider or item.network.isp or "" }}{% if item.network.asn %} <span class="ioc-result__meta">{{ item.network.asn.split(" ")[0] }}</span>{% endif %}{% endif %}</td>
+            <td>{{ item.network.country if item.network and item.network.country else "" }}</td>
+            <td class="cell-date"{% if not (item.registration and item.registration.created) %} data-sort-empty{% endif %}>{% if item.registration and item.registration.created %}{{ item.registration.created }}{% elif item.registration and item.registration.registered === false %}<span class="ioc-result__meta">lapsed</span>{% endif %}</td>
+            {% else %}
+            <td>{{ "Contract" if item.kind == "contract" else "Wallet" }}{% if item.chain %}, {{ item.chain }}{% endif %}</td>
+            <td>{{ roleNames[item.role] or "" }}</td>
+            <td>{{ item.malware_family or "" }}</td>
+            {% endif %}
+            <td class="cell-date"{% if not item.first %} data-sort-empty{% endif %}>{% if item.first %}{{ item.first }}{% else %}<span class="ioc-result__meta">reported</span>{% endif %}</td>
+            <td class="cell-date">{{ item.last or "" }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {% endif %}
+
+  {# Every transaction that wrote a string to this contract, from
+     scripts/hunt-etherhiding.js --writes: the operator's values as text,
+     never linked and never decoded. #}
+  {% set chainWrites = etherhidingAddresses.writes[ioc.id] %}
+  {% if chainWrites %}
+  <section>
+    <h2 id="write-transactions">Write transactions</h2>
+    <p class="ioc-result__meta">Every transaction that wrote a value to this contract, newest first, as read from {{ chainWrites[0].chain | explorerName }} on {{ etherhidingAddresses.writes_updated }}. Values are shown as the operator wrote them; an encrypted one has not been decrypted.</p>
+    {% set tableFilter = { target: "#write-transactions-table", noun: "transactions", page: limits.list, id: "write-transactions-input", label: "Search transactions", placeholder: "Date, sender or value" } %}
+    {% include "partials/table-filter.njk" %}
+    <div class="table-scroll">
+      <table class="results-table" id="write-transactions-table">
+        <thead>
+          <tr><th scope="col">Date</th><th scope="col">Transaction</th><th scope="col">Sender</th><th scope="col">Value written</th></tr>
+        </thead>
+        <tbody>
+          {% for w in chainWrites %}
+          <tr>
+            <td class="cell-date">{{ w.date or "" }}</td>
+            <td>{% set txLink = { text: w.tx | truncate(14, true, "…"), tx: { chain: w.chain, hash: w.tx }, code: true } %}{% include "partials/tx-link.njk" %}</td>
+            <td>{% if w.from_id %}<a href="/indicators/{{ w.from_id }}/"><code>{{ w.from | truncate(14, true, "…") }}</code></a>{% elif w.from %}<code>{{ w.from | truncate(14, true, "…") }}</code>{% else %}<span class="ioc-result__meta">{{ w.method }}</span>{% endif %}</td>
+            <td>{% for v in w.values %}<code>{{ v }}</code>{% if not loop.last %}<br>{% endif %}{% endfor %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% include "partials/table-filter-more.njk" %}
+  </section>
+  {% endif %}
+
+  <section>
+    {% set iocDetail = ioc %}{% set iocDetailHeading = "h2" %}
+    {% include "partials/ioc-detail.njk" %}
+
+    {# Each area of the index is searched from a different page (area is set
+       in src/_data/iocIndex.js): /remote-workers/ holds its own area only, the
+       home page search holds it, the espionage and the EtherHiding records,
+       and /repo-scanner/ holds the PolinRider list. #}
+    {% set queryString = "?q=" + (ioc.value | urlencode | replace("'", "%27")) %}
+    {% set indexSearchBase = { "remote-workers": "/remote-workers/", "espionage": "/", "etherhiding": "/", "polinrider": "/repo-scanner/" } %}
+    {% set indexSearch = { "remote-workers": "/remote-workers/" + queryString, "espionage": "/" + queryString, "polinrider": "/repo-scanner/" + queryString, "etherhiding": "/" + queryString } %}
+    <p>
+      <a href="{{ indexSearch[ioc.area] or indexSearch['remote-workers'] }}">Find this indicator in the index</a>,
+      or see every {{ ioc.kind.label }} this site holds under
+      <a href="/indicators/browse/{{ ioc.kind.slug }}/">{{ ioc.kind.plural }}</a> in the browse listing.
+    </p>
+  </section>
+
+  {% if ioc.gh_analysis %}
+  {%- set gha = ioc.gh_analysis -%}
+  {# gh-fake-analyzer's signals for this account; docs/gh-fake-analyzer.md. #}
+  <section>
+    <h2>Account analysis</h2>
+    <div class="table-scroll">
+      <table class="results-table" data-no-sort>
+        <tbody>
+          {% if gha.created_at %}<tr><th scope="row">Account created</th><td>{{ gha.created_at }}</td></tr>{% endif %}
+          <tr><th scope="row">Repositories</th><td>{{ gha.original_repos }} original, {{ gha.forked_repos }} forked</td></tr>
+          <tr><th scope="row">History older than the account</th><td>{{ gha.backdated_repos }} repositor{% if gha.backdated_repos == 1 %}y{% else %}ies{% endif %}{% for ex in gha.backdated_examples %}{% if loop.first %}: {% endif %}<code>{{ ex.repo }}</code> (first commit {{ ex.first_commit }}){% if not loop.last %}, {% endif %}{% endfor %}</td></tr>
+          <tr><th scope="row">Commits copied into others' repositories</th><td>{{ gha.duplicate_commit_repos }}</td></tr>
+          <tr><th scope="row">Commit identities</th><td>{{ gha.identities.emails }} address{% if gha.identities.emails != 1 %}es{% endif %}, {{ gha.identities.names }} name{% if gha.identities.names != 1 %}s{% endif %}{% if gha.names_per_email_max > 1 %}; up to {{ gha.names_per_email_max }} names on one address{% endif %}{% if gha.emails_per_name_max > 1 %}; up to {{ gha.emails_per_name_max }} addresses under one name{% endif %}</td></tr>
+          {% if gha.dprk_naming.length %}<tr><th scope="row">Name then four digits</th><td>{% for n in gha.dprk_naming %}<code>{{ n }}</code>{% if not loop.last %}, {% endif %}{% endfor %}</td></tr>{% endif %}
+        </tbody>
+      </table>
+    </div>
+    {% if gha.emails_indexed.length %}
+    <h3>Commit addresses this index holds</h3>
+    <ul class="related-values">
+      {% for item in gha.emails_indexed %}<li><a href="/indicators/{{ item.id }}/"><code>{{ item.value }}</code></a></li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% for group in [["Follows these indexed accounts", gha.following_indexed], ["Followed by these indexed accounts", gha.followers_indexed]] %}
+    {% if group[1].length %}
+    <h3>{{ group[0] }}</h3>
+    <ul class="related-values">
+      {% for item in group[1] %}<li><a href="/indicators/{{ item.id }}/"><code>{{ item.value | replace("https://github.com/", "") }}</code></a></li>{% endfor %}
+    </ul>
+    {% endif %}
+    {% endfor %}
+    <p class="ioc-result__meta">
+      From {{ gha.tool }}, the Ketman Project's GitHub analysis tool, run on {{ gha.analyzed }}.
+      {% if gha.emails_other %}{{ gha.emails_other }} other commit address{% if gha.emails_other != 1 %}es are{% else %} is{% endif %} held for review rather than listed.{% endif %}
+      These are signals: backdated history and several commit identities are
+      common among ordinary developers too, and an account that shows none of
+      them is not thereby cleared.
+    </p>
+  </section>
+  {% endif %}
+
+  {% if ioc.related.personas.length or ioc.related.sources.length %}
+  {# Ordinary links to other indicator pages, with the value as the anchor text,
+     at most twelve in all: what the same persona record holds first, then what
+     the same reports cite, taken a type at a time so a hash page also shows the
+     sample's addresses and hosts. They give each page text of its own and link
+     the pages to one another beyond the browse listing; see
+     indicatorPageData() in src/_data/iocIndex.js. #}
+  <section>
+    <h2>Related indicators</h2>
+    {% for list in ioc.related.personas %}
+    {% if list.shown %}
+    <h3>Same persona record: {{ list.name }}</h3>
+    <p class="ioc-result__meta">Other identifiers the reporting files under the same persona{% if list.count > list.shown %}; {{ list.shown }} of {{ list.count | thousands }} are shown{% endif %}.</p>
+    <ul class="related-values">
+      {% for group in list.groups %}{% for item in group.items %}<li><a href="/indicators/{{ item.id }}/"><code>{{ item.value }}</code></a> <span class="ioc-result__meta">{{ item.type }}</span></li>{% endfor %}{% endfor %}
+    </ul>
+    {% if list.count > list.shown %}
+    <p><a href="/remote-workers/personas/{{ list.slug }}/">All {{ list.count | thousands }} on the {{ list.name }} page</a></p>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    {% for list in ioc.related.sources %}
+    <h3>Cited by the same report: {{ list.title }}</h3>
+    <p class="ioc-result__meta">
+      {% if list.publisher %}{{ list.publisher }} lists{% else %}This source lists{% endif %}
+      {{ list.count | thousands }} other indicator{% if list.count != 1 %}s{% endif %} in
+      {% if list.url %}{% set externalLink = { url: list.url, text: "this source" } %}{% include "partials/external-link.njk" %}{% else %}this source{% endif %}.
+      {% if list.count > list.shown %}{{ list.shown }} are shown, chosen across types.{% endif %}
+    </p>
+    <ul class="related-values">
+      {% for group in list.groups %}{% for item in group.items %}<li><a href="/indicators/{{ item.id }}/"><code>{{ item.value }}</code></a> <span class="ioc-result__meta">{{ item.type }}</span></li>{% endfor %}{% endfor %}
+    </ul>
+    {% if list.count > list.shown %}
+    {# The index search matches source titles, so a title finds the indicators
+       the source cites. #}
+    {% if list.title %}
+    <p><a href="{{ indexSearchBase[ioc.area] or indexSearchBase['remote-workers'] }}?q={{ list.title | urlencode | replace("'", "%27") }}">All {{ (list.count + 1) | thousands }} indicators from this source</a></p>
+    {% else %}
+    <p><a href="/sources/">All {{ (list.count + 1) | thousands }} indicators from this source, listed on the sources page</a></p>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  <section>
+    {% set disclaimer = {
+      title: "Disclaimer",
+      preset: "not-proof",
+      body: 'See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    } %}{% include "partials/disclaimer.njk" %}
+  </section>
+</article>

@@ -1,0 +1,20 @@
+---
+pagination:
+  data: iocIndex.indicator_redirects
+  size: 1
+  alias: moved
+permalink: "/indicators/{{ moved.from }}/"
+layout: layouts/redirect.njk
+eleventyComputed:
+  title: "Indicator moved"
+  redirect_to: "/indicators/{{ moved.to | safe }}/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/indicators/redirects.njk — stubs for indicator pages whose type was renamed
+
+  An indicator page's address carries its type, so renaming a type moves every
+  page of it. iocIndex.indicator_redirects lists {from, to} id pairs, and each
+  becomes a page at the old address that sends the reader on, the same way
+  src/hunts/redirects.njk does for merged hunts.
+#}

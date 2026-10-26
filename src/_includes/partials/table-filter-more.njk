@@ -1,0 +1,19 @@
+{#
+  partials/table-filter-more.njk — the "show more" control for a table search
+  that sets a page size, read by src/assets/js/table-filter.js.
+
+  Include it straight after the table, with the same `tableFilter` still set
+  that partials/table-filter.njk was given above it:
+    {% include "partials/table-filter.njk" %}
+    <div class="table-scroll"><table id="sources-table"> ... </table></div>
+    {% include "partials/table-filter-more.njk" %}
+
+  Renders nothing when `tableFilter.page` is unset, because the script then
+  shows every matching row and there is nothing more to reveal. The control
+  names its table, so two filtered tables on one page never share a button.
+  Hidden until the script needs it: every row is in the markup, so a reader
+  without JavaScript gets the whole table and never sees the button.
+
+  DELIBERATELY ON ONE LINE, for the same reason as partials/table-filter.njk:
+  src/etherhiding/index.md includes it through Markdown.
+#}{% if tableFilter.page %}<p data-table-filter-more="{{ tableFilter.target }}" hidden><button type="button" class="btn btn--secondary" data-table-filter-more-button>Show {{ tableFilter.page }} more</button></p>{% endif %}

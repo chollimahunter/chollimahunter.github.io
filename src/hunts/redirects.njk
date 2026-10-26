@@ -1,0 +1,19 @@
+---
+pagination:
+  data: hunts.redirects
+  size: 1
+  alias: moved
+permalink: "/hunts/{{ moved.from }}/"
+layout: layouts/redirect.njk
+eleventyComputed:
+  title: "Hunt moved"
+  redirect_to: "/hunts/{{ moved.to | safe }}/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/hunts/redirects.njk — stubs for hunt ids that were merged away
+
+  src/_data/hunts/redirects.json lists {from, to} pairs. Each becomes a page
+  at the old address that sends the reader to the hunt that absorbed it, so
+  links from outside the site keep working after a consolidation.
+#}

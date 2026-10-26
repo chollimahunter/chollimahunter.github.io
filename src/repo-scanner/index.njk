@@ -1,0 +1,216 @@
+---
+layout: base.njk
+title: "DPRK Repo Scanner"
+description: "Repository indicators for BeaverTail, InvisibleFerret and OtterCookie: the searchable ruleset and PolinRider affected-repository list, the latest GitHub scan results, and how the Contagious Interview and PolinRider delivery vectors work."
+permalink: "/repo-scanner/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="/assets/js/table-filter.js" defer></script>'
+---
+{#
+  src/repo-scanner/index.njk: the repository-indicator search (ioc-search.js
+  with data-ioc-index, emitted by src/repo-scanner-index.njk), the latest GitHub
+  scan, and the two delivery vectors. /repo-scanner/results/ redirects to
+  #scan-results.
+#}
+{% set scan = scanResults.latest %}
+{% set polinriderDataset = iocs["polinrider-affected-repos"][0] %}
+{% set repo = iocIndex.repo_scanner %}
+
+<section>
+  <h1>DPRK Repo Scanner</h1>
+  <p>
+    DPRK-linked operators deliver <strong>BeaverTail</strong>,
+    <strong>InvisibleFerret</strong> and <strong>OtterCookie</strong> through
+    source repositories: in a coding assessment sent during a staged job
+    interview, and as code injected into legitimate repositories. This page
+    holds the indicators for both and the latest GitHub scan.
+  </p>
+  {% set disclaimer = {
+    title: "Leads, not verdicts",
+    body: 'A match here means a report associated the value with these campaigns, or GitHub search found the string in a public repository. It does not show that a repository or its author is malicious or DPRK-linked: strings coincide with legitimate code, and a repository on the PolinRider list is almost always a victim. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>
+
+<section id="repository-indicators">
+  <h2>Search repository indicators</h2>
+  <p>
+    {{ repo.total | thousands }} indicators: the curated ruleset, each entry
+    cited to its report, and {{ polinriderDataset.entry_count | thousands }}
+    repositories
+    {% set externalLink = { url: polinriderDataset.source.url, text: "OpenSourceMalware", sameTab: true } %}{% include "partials/external-link.njk" %}
+    reports as compromised by PolinRider as of {{ polinriderDataset.source.date }}.
+    Neither is in the <a href="/remote-workers/">Remote Workers</a> index.
+  </p>
+
+  <div class="ioc-search" hidden data-ioc-search data-ioc-index="/assets/data/repo-scanner-index.json">
+    {% set searchBox = { id: "ioc-search-input", label: "Search repository indicators", placeholder: "Repository owner or name, package name, filename, domain, or wallet address", count: "data-ioc-count" } %}{% include "partials/search-box.njk" %}
+    {% set filterChips = { dimension: "type", short: "Type", label: "Filter by indicator type", allLabel: "All types (" + (repo.total | thousands) + ")", counts: repo.counts_by_type, formatValue: "replace-underscore" } %}
+    {% include "partials/filter-chips.njk" %}
+    {% set filterChips = { dimension: "campaign", short: "Cluster", label: "Filter by DPRK activity cluster", allLabel: "All clusters", counts: repo.counts_by_campaign } %}
+    {% include "partials/filter-chips.njk" %}
+    {% include "partials/ioc-download-controls.njk" %}
+  </div>
+
+  {% set iocTable = { results: true } %}{% include "partials/ioc-table.njk" %}
+
+  {% include "partials/show-more.njk" %}
+
+  <noscript>
+    <p class="form-hint">
+      Searching requires JavaScript. The {{ repo.recent | length }} most recent
+      indicators are listed below; the full set is available as
+      <a href="/assets/data/repo-scanner-index.json">JSON</a> and under
+      <a href="/indicators/browse/">Browse indicators</a>.
+    </p>
+  </noscript>
+
+  {% set iocTable = { records: repo.recent } %}{% include "partials/ioc-table.njk" %}
+</section>
+
+<section id="scan-results">
+  <h2>Latest GitHub scan</h2>
+  <p>
+    Runs are started by hand; this is the last run, not a live feed.
+    {% if scan.ran_at %}
+    It finished on {{ scan.ran_at | truncate(10, true, "") }} against
+    {{ scan.ruleset_version }}, ran
+    {{ (scan.query_count or scan.queries_executed | length) | thousands }} queries and recorded
+    {{ scan.matches | length | thousands }} matches.
+    {% else %}
+    No scan has been run yet.
+    {% endif %}
+    A row tagged <span class="tag-chip">detection or research repository</span>
+    matched in a repository that appears to publish detection rules.
+  </p>
+  {% if scan.status == "no_scan_run_yet" and scan.notes %}
+  <p><em>{{ scan.notes }}</em></p>
+  {% endif %}
+  {% set scannedEntries = scan.ruleset_version | rulesetEntryCount %}
+  {% set liveEntries = iocs["repo-scan-ruleset"] | length %}
+  {% if scannedEntries and liveEntries > scannedEntries %}
+  <p class="form-hint">
+    The last run searched for {{ scannedEntries | thousands }} of
+    {{ liveEntries | thousands }} ruleset entries.
+  </p>
+  {% endif %}
+
+  {% if scan.matches and scan.matches.length > 0 %}
+  {% set tableFilter = { target: "#scan-matches-table", noun: "matches", page: limits.list, id: "scan-search-input", label: "Search scan matches", placeholder: "Indicator id, package name, repository, or file path" } %}
+  {% include "partials/table-filter.njk" %}
+  <div class="table-scroll">
+    <table class="results-table results-table--scan" id="scan-matches-table">
+      <thead>
+        <tr>
+          <th scope="col">Matched IOC</th>
+          <th scope="col">Location</th>
+          <th scope="col">Matched at</th>
+          <th scope="col">Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for match in scan.matches %}
+        {% set matchKind = match.kind or (match | scanMatchKind) %}
+        <tr>
+          <td><code>{{ match.ioc_id }}</code><br>{{ match.matched_value }}</td>
+          <td>{% set externalLink = { url: match.location, text: match.location | githubLocationLabel, rel: "noopener noreferrer nofollow", sameTab: true } %}{% include "partials/external-link.njk" %}</td>
+          <td class="cell-date">{{ match.matched_at | truncate(10, true, "") }}</td>
+          <td>
+            {{ match.context }}
+            {% if matchKind == "research" %}
+            <span class="tag-chip">detection or research repository</span>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% include "partials/table-filter-more.njk" %}
+  {% else %}
+  <p>No matches recorded in the latest scan.</p>
+  {% endif %}
+
+  {% if scan.status_note %}
+  <details class="disclosure">
+    <summary>Run notes</summary>
+    <p>{{ scan.status_note }}</p>
+    <p><strong>Scan ID:</strong> <code>{{ scan.scan_id }}</code></p>
+  </details>
+  {% endif %}
+
+  {% if scan.queries_executed and scan.queries_executed.length > 0 %}
+  <details class="disclosure">
+    <summary>Queries executed ({{ (scan.query_count or scan.queries_executed | length) | thousands }})</summary>
+    <p>Every query the scan ran, then a count of package matches dropped as non-exact dependencies:</p>
+    <pre class="query-block">{% for q in scan.queries_executed %}{{ q }}
+{% endfor %}</pre>
+  </details>
+  {% endif %}
+
+  {% if scanResults.history and scanResults.history.length > 0 %}
+  <details class="disclosure">
+    <summary id="scan-history">Scan history ({{ scanResults.history.length }} run{% if scanResults.history.length != 1 %}s{% endif %})</summary>
+    <p>Most recent first.</p>
+    <div class="table-scroll">
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th scope="col">Ran at</th>
+            <th scope="col">Mode</th>
+            <th scope="col">Ruleset version</th>
+            <th scope="col">Queries</th>
+            <th scope="col">Matches</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for run in scanResults.history %}
+          <tr>
+            <td>{{ run.ran_at | truncate(10, true, "") }}</td>
+            <td>{{ run.mode }}</td>
+            <td>{{ run.ruleset_version }}</td>
+            <td>{{ run.query_count }}</td>
+            <td>{{ run.match_count }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </details>
+  {% endif %}
+</section>
+
+<section id="contagious-interview">
+  <h2>Contagious Interview</h2>
+  <p>
+    Contagious Interview is the public name for fake recruiters who send a
+    developer a coding assessment as a repository. Running it pulls BeaverTail,
+    a JavaScript infostealer that typically fetches the InvisibleFerret
+    backdoor, with OtterCookie increasingly in the same chains. A September 2026
+    joint advisory from Japan&rsquo;s National Police Agency, the FBI and
+    partners put its reach since late 2025 at some thirty thousand infected
+    devices.
+  </p>
+</section>
+
+<section id="polinrider">
+  <h2>The PolinRider vector</h2>
+  <p>
+    {% set externalLink = { url: "https://github.com/OpenSourceMalware/PolinRider", text: "PolinRider" } %}{% include "partials/external-link.njk" %},
+    documented by OpenSourceMalware, injects malicious code into rarely audited
+    configuration files such as <code>postcss.config.mjs</code> in legitimate
+    repositories, reached through compromised maintainer accounts, pull requests
+    and dependencies. The payload is BeaverTail. {{ polinriderDataset.entry_count | thousands }}
+    repositories are affected, most of them victims; they are listed under the
+    <a href="/repo-scanner/?cluster=PolinRider#repository-indicators">PolinRider</a>
+    cluster above.
+  </p>
+</section>
+
+<section id="how-the-scanner-works">
+  <h2>How the scanner works</h2>
+  <p>
+    The scanner is a hunting aid, not a verdict engine. It turns the ruleset
+    into GitHub code-search queries (the <a href="#scan-results">latest scan</a>),
+    and a person reviews every match before anything is published.
+  </p>
+</section>

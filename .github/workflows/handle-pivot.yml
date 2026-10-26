@@ -1,0 +1,105 @@
+name: Handle pivot (GitHub code search)
+
+# Searches GitHub's code for the next batch of persona handles and records the
+# contact values found beside them in scripts/data/handle-pivot-github.json as
+# leads for review. Files nothing: the pull request lists the new leads, and a
+# person files the real ones by hand. See docs/handle-pivot.md.
+#
+# Dispatch only: a pull request on this public repository would publish the
+# unreviewed leads, most of which belong to uninvolved people. The usual run is
+# local (`node scripts/pivot-handles-github.js`), which keeps the leads in the
+# private checkout.
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "How many handles to search"
+        required: false
+        default: "120"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
+# on manual review; no step reads the value until a merge step is added.
+env:
+  AUTO_MERGE: "false"
+
+concurrency:
+  group: handle-pivot
+  cancel-in-progress: false
+
+jobs:
+  pivot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Leads from a run whose pull request is not merged yet, so they are
+      # neither lost nor found twice.
+      - name: Carry over unmerged leads
+        run: |
+          if git fetch --depth=1 origin handle-pivot/leads 2>/dev/null; then
+            git checkout FETCH_HEAD -- scripts/data/handle-pivot-github.json 2>/dev/null || true
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Search handles
+        id: pivot
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COUNT: ${{ github.event.inputs.count || '120' }}
+        run: |
+          if ! [[ "$COUNT" =~ ^[1-9][0-9]*$ ]]; then
+            echo "::error::count must be a positive integer, got '$COUNT'"
+            exit 1
+          fi
+          node scripts/pivot-handles-github.js "$COUNT" | tee pivot-output.txt
+          grep -q "CHANGED=true" pivot-output.txt && echo "changed=true" >> "$GITHUB_OUTPUT" || echo "changed=false" >> "$GITHUB_OUTPUT"
+
+      - name: Pull request body
+        if: steps.pivot.outputs.changed == 'true'
+        run: |
+          node -e '
+            const s = require("./scripts/data/handle-pivot-github.json");
+            const esc = (v) => String(v).replace(/\|/g, "\\|");
+            const rows = s.leads.map((l) => `| ${esc(l.persona)} | ${esc(l.handle)} | ${l.type} | \`${esc(l.value)}\` | [${esc(l.repo)}](${l.file}) |`);
+            console.log(`${s.leads.length} lead(s) awaiting review: values found beside persona handles in GitHub code, not held by the index. **None is an indicator yet.** Merging also records which handles this run searched, so the next run moves on.\n`);
+            console.log("Most hits are forks, copied portfolio templates, client team pages and test data. File a lead only when the file is the persona\x27s own contact block or credits its accounts (docs/handle-pivot.md), then move its key from `leads` to `reviewed`, filed or not.\n");
+            console.log("Validation runs as a dispatched `ci` check on this branch; the pull request can be merged once it is green.\n");
+            console.log("| Persona | Handle | Type | Value | File |\n| --- | --- | --- | --- | --- |");
+            console.log(rows.join("\n"));
+          ' > pr-body.md
+
+      - name: Open or update pull request
+        id: cpr
+        if: steps.pivot.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: handle pivot leads"
+          title: "Handle pivot: leads for review"
+          body-path: pr-body.md
+          branch: handle-pivot/leads
+          add-paths: |
+            scripts/data/handle-pivot-github.json
+          labels: automated,data-sync
+
+      # Pull requests opened with GITHUB_TOKEN trigger no pull_request runs, so
+      # the validation workflow is dispatched on the branch instead.
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"

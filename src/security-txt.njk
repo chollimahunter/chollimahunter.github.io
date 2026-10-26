@@ -1,0 +1,14 @@
+---
+eleventyExcludeFromCollections: true
+---
+{#
+  src/security-txt.njk — RFC 9116 contact file. Only written once a real
+  contact address is set in src/_data/site.json; until then the permalink is
+  false (see security-txt.11tydata.js) and nothing is emitted, since a
+  security.txt without a contact is worse than none.
+#}
+Contact: mailto:{{ site.businessEmail }}
+Expires: {{ expires }}
+Preferred-Languages: en
+Canonical: {{ site.url }}/.well-known/security.txt
+Policy: {{ site.url }}/about/#corrections

@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: "Remote Workers"
+description: "A searchable index of the email addresses, GitHub and LinkedIn accounts, packages and other identifiers reported in connection with DPRK remote IT-worker operations."
+permalink: "/remote-workers/"
+eleventyExcludeFromCollections: true
+extra_head: '<script src="/assets/js/ioc-search.js" defer></script>'
+---
+{#
+  src/remote-workers/index.njk: the searchable index of every indicator. See
+  partials/ioc-table.njk and src/assets/js/ioc-search.js.
+#}
+{% set active_tab = "workers" %}
+
+<section>
+  <h1>Remote Workers</h1>
+  {% include "partials/profiles-tab-bar.njk" %}
+  <p>
+    Indicators from DPRK remote IT-worker schemes and the "Contagious
+    Interview" lure campaigns. Every entry cites the public record it came
+    from.
+  </p>
+  <p>
+    See also <a href="/remote-workers/personas/">Personas</a>,
+    <a href="/remote-workers/pictures/">Named IT Workers</a> and
+    <a href="/remote-workers/red-flags/">Red Flags</a>.
+  </p>
+</section>
+
+<section>
+  {# One download control, inside the search panel. The static files are built for tools and the <noscript> block. #}
+  <div class="ioc-search" hidden data-ioc-search data-ioc-area="remote-workers polinrider">
+    {% set searchBox = { id: "ioc-search-input", label: "Search indicators", placeholder: "Email, GitHub or LinkedIn account, persona, name, or any word from a report", count: "data-ioc-count" } %}{% include "partials/search-box.njk" %}
+    {% set filterChips = { dimension: "type", short: "Type", label: "Filter by indicator type", allLabel: "All types (" + (iocIndex.remote_workers.search_total | thousands) + ")", counts: iocIndex.remote_workers.search_counts_by_type, formatValue: "replace-underscore" } %}
+    {% include "partials/filter-chips.njk" %}
+    {% set filterChips = { dimension: "campaign", short: "Cluster", label: "Filter by DPRK activity cluster", allLabel: "All clusters", counts: iocIndex.remote_workers.search_counts_by_campaign } %}
+    {% include "partials/filter-chips.njk" %}
+    {# Only GitHub and LinkedIn accounts have been checked, so these chips narrow to accounts. #}
+    {% set filterChips = { dimension: "status", short: "Account status", label: "Filter by account status", allLabel: "Any account status", counts: iocIndex.remote_workers.counts_by_status, suffix: " accounts" } %}
+    {% include "partials/filter-chips.njk" %}
+    {% include "partials/ioc-download-controls.njk" %}
+  </div>
+
+  {% set iocTable = { results: true } %}{% include "partials/ioc-table.njk" %}
+
+  {% include "partials/show-more.njk" %}
+
+  <noscript>
+    <p class="form-hint">
+      Searching this index requires JavaScript. The {{ iocIndex.remote_workers.recent | length }}
+      indicators with the most recent source dates are listed below. The complete index is
+      available as <a href="/assets/data/ioc-index.csv">CSV</a> or
+      <a href="/assets/data/ioc-index.json">JSON</a>, or one type at a time:
+    </p>
+    <p class="chip-row">
+      {% for type, count in iocIndex.remote_workers.counts_by_type %}
+      <a class="tag-chip" href="/assets/data/ioc-index-{{ type }}.csv" download>{{ type | replace("_", " ") }} ({{ count | thousands }})</a>
+      {% endfor %}
+    </p>
+  </noscript>
+
+  {% set iocTable = { records: iocIndex.remote_workers.recent } %}{% include "partials/ioc-table.njk" %}
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    preset: "not-proof",
+    body: 'If an entry concerns you, see <a href="/guidance/#listed">the guidance for listed people</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

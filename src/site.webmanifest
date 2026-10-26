@@ -1,0 +1,16 @@
+{
+  "name": "Chollima Hunter",
+  "short_name": "Chollima",
+  "description": "A public index of indicators, personas and hunts drawn from reporting on DPRK state-sponsored cyber activity.",
+  "id": "/",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    { "src": "/assets/img/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/assets/img/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "theme_color": "#0A0A0F",
+  "background_color": "#0A0A0F",
+  "display": "standalone",
+  "start_url": "/"
+}

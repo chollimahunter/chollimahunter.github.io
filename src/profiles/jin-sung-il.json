@@ -1,0 +1,95 @@
+{
+  "slug": "jin-sung-il",
+  "display_name": "Jin Sung-Il",
+  "aliases": [
+    "Jin Song-Il",
+    "Richard Stewart",
+    "Pedro Alonso",
+    "Pedro Alonso de los Reyes",
+    "Stewart Conn"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/jin-sung-il.jpg",
+    "caption": "Photograph published by the FBI on its wanted notice for Jin Sung-Il. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.fbi.gov/wanted/cyber/jin-sung-il"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Wanted by the FBI; listed under Cyber's Most Wanted",
+    "details": [
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Race",
+        "value": "Asian"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Co-defendants",
+        "value": "Pak Jin-Song, Pedro Ernesto Alonso De Los Reyes, Erick Ntekereze Prince, Emanuel Ashtor"
+      }
+    ],
+    "caution": "Jin Sung-Il is wanted for his alleged involvement in a fraudulent scheme to obtain remote information technology (IT) work with U.S. companies that generated revenue for the Democratic People's Republic of Korea (DPRK). It is alleged that from approximately April 2018 through August 2024, Jin Sung-Il and others obtained work from at least sixty-four U.S. companies. Payments from ten of those companies generated at least $866,255 in revenue, most of which was then laundered through a Chinese bank account. Jin Sung-Il and others allegedly used forged and stolen identity documents, including U.S. passports containing the stolen personally identifiable information of a U.S. person, to conceal their true identities so that these North Korean nationals could circumvent sanctions and other laws to obtain employment with U.S. companies. It is further alleged that these individuals conspired to launder payments for the remote IT work through a variety of accounts designed to promote the scheme and conceal its proceeds. On January 21, 2025, a federal arrest warrant was issued for Jin Sung-Il in the United States District Court for the Southern District of Florida, Miami, Florida, after he was charged with Conspiracy to Damage a Protected Computer; Conspiracy to Commit Wire Fraud and Mail Fraud; Conspiracy to Commit Money Laundering; Conspiracy to Transfer False Identification Documents; and Conspiracy to Violate the International Emergency Economic Powers Act.",
+    "related_cases": [
+      {
+        "title": "DPRK IT FRAUD",
+        "url": "https://www.fbi.gov/wanted/cyber/dprk-it-fraud"
+      },
+      {
+        "title": "PAK JIN-SONG",
+        "url": "https://www.fbi.gov/wanted/cyber/pak-jin-song"
+      }
+    ],
+    "poster_url": "https://www.fbi.gov/wanted/cyber/jin-sung-il/@@download.pdf"
+  },
+  "sources": [
+    {
+      "title": "JIN SUNG-IL — FBI Wanted",
+      "url": "https://www.fbi.gov/wanted/cyber/jin-sung-il",
+      "publisher": "U.S. Federal Bureau of Investigation",
+      "type": "wanted_notice"
+    },
+    {
+      "title": "Two North Korean Nationals and Three Facilitators Indicted for Multi-Year Fraudulent Remote Information Technology Worker Scheme that Generated Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-north-korean-nationals-and-three-facilitators-indicted-multi-year-fraudulent-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-01-23",
+      "type": "indictment"
+    },
+    {
+      "title": "United States v. Jin Sung-Il et al., indictment (posted with the January 23, 2025 release)",
+      "url": "https://www.justice.gov/opa/media/1386281/dl",
+      "publisher": "U.S. Department of Justice",
+      "date": "2025-01-23",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "Wanted for alleged involvement in a fraudulent scheme to obtain remote IT work with U.S. companies generating revenue for the DPRK. Per the notice, from approximately April 2018 through August 2024 he and others obtained work from at least sixty-four U.S. companies.",
+    "The confidence level of 'confirmed' reflects that this individual is publicly named on an FBI wanted notice; per the FBI's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean": "진성일",
+  "name_korean_provenance": "reconstructed"
+}

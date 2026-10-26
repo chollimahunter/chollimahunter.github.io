@@ -1,0 +1,92 @@
+{#
+  partials/candidate-fact.njk — one fact about a candidate row, rendered the
+  same way in the table on /remote-workers/candidates/ and on the row's own
+  page at /remote-workers/candidates/{slug}/.
+
+  Usage: set `candidate`, `queue` (the candidates.json document) and
+  `candidateFact` to one of "profile", "indicators", "confidence", "network",
+  "claims", "line", "photo" or "signals" before including.
+    {% set candidateFact = "network" %}{% include "partials/candidate-fact.njk" %}
+
+  A field nobody established renders as an em dash rather than as a zero,
+  because "not looked up" and "none" are different answers.
+#}
+{%- set facts = candidate.facts | default({}, true) -%}
+{%- if candidateFact == "profile" -%}
+  {# A row is rarely one account. The pipu resumes have a marketplace listing,
+     a GitHub account and sometimes a LinkedIn profile, and the cluster rows
+     carry the employee list of the company that joins them. A row resting
+     only on an address or a number has no page to link. #}
+  {% if candidate.url %}{% set externalLink = { url: candidate.url, text: candidate.url | replace("https://", "") | replace("www.", ""), code: true, rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %}{% elif not (facts.links and facts.links.length) %}<span class="fact-absent">None recorded</span>{% endif %}
+  {% if facts.links and facts.links.length %}
+  <ul>
+    {% for link in facts.links %}
+    <li>{% set externalLink = { url: link.url, text: link.label, rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{%- elif candidateFact == "indicators" -%}
+  {# The values the row rests on, typed with the index's vocabulary. An
+     account is a link; an address or a number is not, because a mailto: on a
+     page like this is a trap for the reader. #}
+  {% if facts.indicators and facts.indicators.length %}
+  <ul class="candidate-indicators">
+    {% for indicator in facts.indicators %}
+    <li>
+      <span class="indicator-type">{{ indicator.type | replace("_", " ") | upper }}</span>
+      {% if indicator.type == "github_profile" or indicator.type == "linkedin_profile" %}
+      {% set externalLink = { url: indicator.value, text: indicator.value | replace("https://", "") | replace("www.", ""), rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %}
+      {% else %}
+      <code>{{ indicator.value }}</code>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}<span class="fact-absent">None recorded</span>{% endif %}
+{%- elif candidateFact == "confidence" -%}
+  {% if facts.confidence %}<span class="badge badge--{{ facts.confidence }}">{{ facts.confidence }}</span>{% else %}&mdash;{% endif %}
+{%- elif candidateFact == "network" -%}
+  {# default(none) maps an absent key to none while leaving a real zero alone;
+     `is not none` is true for undefined. #}
+  {% set conns = facts.connections | default(none) %}
+  {% set folls = facts.followers | default(none) %}
+  {% if conns is not none or folls is not none %}
+    {% if conns is not none %}<span class="count-figure">{{ conns }}</span> connection{% if conns != 1 %}s{% endif %}{% endif %}
+    {% if folls is not none %}<br>{{ folls }} follower{% if folls != 1 %}s{% endif %}{% endif %}
+  {% else %}&mdash;{% endif %}
+{%- elif candidateFact == "claims" -%}
+  {% if facts.claimed_years %}{{ facts.claimed_years }} yrs{% endif %}
+  {% if facts.employers_named %}{% if facts.claimed_years %}<br>{% endif %}{{ facts.employers_named }} employer{% if facts.employers_named != 1 %}s{% endif %}{% endif %}
+  {% if not facts.claimed_years and not facts.employers_named %}&mdash;{% endif %}
+{%- elif candidateFact == "line" -%}
+  {# A row whose source published no number is N/A and will never fill in; a
+     number looked up that came back unassigned is a finding; a number nobody
+     has run yet is work outstanding. Derived from the indicator list so the
+     two cannot fall out of step. The carrier says who sold the number. #}
+  {% set phones = facts.indicators | ofType("phone_number") %}
+  {% if facts.line_type == "VoIP" %}<span class="badge badge--high">VOIP</span>
+  {% elif facts.line_type == "no-match" %}<span class="badge badge--medium">NO MATCH</span>
+  {% elif facts.line_type %}<span class="badge badge--low">{{ facts.line_type }}</span>
+  {% elif phones.length %}<span class="fact-absent">Not checked</span>
+  {% else %}<span class="fact-absent">N/A &mdash; none published</span>{% endif %}
+  {% if facts.carrier %}<br><span class="ioc-result__meta">{{ facts.carrier }}</span>{% endif %}
+{%- elif candidateFact == "photo" -%}
+  {# A verdict appears only where a detector actually ran. A pipu.cc
+     listing's product image is drawn from a pool the uploader reused across
+     unrelated CVs; see fact_fields.listing_photo_reuse. #}
+  {% set img = facts.image_check | default(none) %}
+  {% if img %}
+    {% if img.verdict == "ai" %}<span class="badge badge--high">AI {{ img.score }}</span>
+    {% elif img.verdict == "human" %}<span class="badge badge--low">CAMERA {{ img.score }}</span>
+    {% elif img.verdict == "real-face-not-yet-scored" %}<span class="badge badge--medium">FACE, UNSCORED</span>
+    {% elif img.verdict == "not-a-photograph" %}<span class="badge badge--low">NOT A PHOTO</span>
+    {% elif img.verdict == "no-avatar-set" %}<span class="badge badge--low">NO AVATAR</span>
+    {% elif img.verdict %}<span class="badge badge--low">{{ img.verdict | replace("-", " ") }}</span>{% endif %}
+    {% if img.observed %}<br><span class="ioc-result__meta">{{ img.observed }}</span>{% endif %}
+  {% else %}&mdash;{% endif %}
+  {% if facts.listing_photo_reuse %}<br><span class="ioc-result__meta">{{ facts.listing_photo_reuse }}</span>{% endif %}
+{%- elif candidateFact == "signals" -%}
+  {% for id in candidate.matched_indicators %}{% if queue.heuristics[id] %}<span class="tag-chip" title="{{ queue.heuristics[id].label }}">{{ queue.heuristics[id].short or queue.heuristics[id].label }}</span>{% endif %}{% endfor %}
+  {% if facts.linked_account %}<span class="tag-chip" title="An account linked from this profile is registered under a different name">{{ facts.linked_account }}</span>{% endif %}
+  {% if not (candidate.matched_indicators and candidate.matched_indicators.length) and not facts.linked_account %}&mdash;{% endif %}
+{%- endif -%}

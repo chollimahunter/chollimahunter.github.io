@@ -1,0 +1,78 @@
+{
+  "slug": "vitaliy-andreyev",
+  "display_name": "Vitaliy Sergeyevich Andreyev",
+  "aliases": [
+    "АНДРЕЕВ, Виталий Сергеевич"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on August 27, 2025 under Executive Order 13687, program tag DPRK2, for support to Chinyong Information Technology Cooperation Company",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Russia"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "September 29, 1980"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Vladivostok, Russia"
+      },
+      {
+        "label": "Nationality",
+        "value": "Russian"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Tax ID",
+        "value": "253908966176 (Russia)"
+      },
+      {
+        "label": "Digital currency address, per OFAC",
+        "value": "XBT 1HmqvgSXUVES1jn4TQPzk9dxo1NE8wim2T"
+      }
+    ],
+    "caution": "Vitaliy Sergeyevich Andreyev (Andreyev) is a Russian national facilitating payments to U.S.-designated Chinyong Information Technology Cooperation Company (Chinyong), an entity associated with the DPRK defense ministry that employs delegations of IT workers in Russia and Laos. Since at least December 2024, Andreyev has worked with Kim Ung Sun, a Russia-based DPRK economic and trade consular official, to facilitate multiple financial transfers worth a total of nearly $600,000, by converting cryptocurrency to cash in U.S. dollars."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, August 27, 2025: North Korea Designations (Vitaliy Andreyev, Kim Ung Sun, Shenyang Geumpungri Network Technology, Korea Sinjin Trading)",
+      "url": "https://ofac.treasury.gov/recent-actions/20250827",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-08-27",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions DPRK IT Worker Network",
+      "url": "https://home.treasury.gov/news/press-releases/sb0230",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-08-27",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Vitaliy Sergeyevich Andreyev is a Russian national, not a DPRK national, and is profiled here as a payments facilitator for Chinyong's IT-worker delegations: the Treasury says he converted cryptocurrency to nearly $600,000 in cash with Kim Ung Sun from December 2024.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "Russian national and payments facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

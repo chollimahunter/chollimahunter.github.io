@@ -1,0 +1,30 @@
+[
+  {
+    "label": "Home",
+    "url": "/"
+  },
+  {
+    "label": "Remote Workers",
+    "url": "/remote-workers/"
+  },
+  {
+    "label": "DPRK Hunting",
+    "url": "/hunts/"
+  },
+  {
+    "label": "Repo Scanner",
+    "url": "/repo-scanner/"
+  },
+  {
+    "label": "EtherHiding",
+    "url": "/etherhiding/"
+  },
+  {
+    "label": "Sources",
+    "url": "/sources/"
+  },
+  {
+    "label": "Submit IOCs",
+    "url": "/submit/"
+  }
+]

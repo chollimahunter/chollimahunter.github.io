@@ -1,0 +1,79 @@
+{
+  "slug": "zhenxing-wang",
+  "display_name": "Zhenxing Wang",
+  "aliases": [
+    "Danny Wang"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Sentenced; announced by the Justice Department on April 15, 2026",
+    "details": [
+      {
+        "label": "Age at sentencing",
+        "value": "39"
+      },
+      {
+        "label": "Residence",
+        "value": "New Brunswick, New Jersey"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the District of Massachusetts, Judge Nathaniel M. Gorton"
+      },
+      {
+        "label": "Plea",
+        "value": "Guilty, January 2026, to conspiracy to commit wire fraud and conspiracy to commit money laundering"
+      },
+      {
+        "label": "Sentence",
+        "value": "92 months in prison and three years of supervised release"
+      },
+      {
+        "label": "Forfeiture",
+        "value": "$600,000, jointly with Kejia Wang"
+      },
+      {
+        "label": "Front companies",
+        "value": "Hopana Tech LLC, Tony WKJ LLC, Independent Lab LLC"
+      }
+    ],
+    "caution": "According to court documents, from approximately 2021 until October 2024, the defendants and their co-conspirators compromised the identities of more than 80 U.S. persons to obtain remote jobs at more than 100 U.S. companies, including many Fortune 500 companies, and caused U.S. victim companies to incur legal fees, computer network remediation costs, and other damages of at least $3 million. Kejia Wang traveled to Shenyang and Dandong, China on two separate occasions in 2023, to meet with overseas actors about the scheme, including a former classmate that Kejia Wang knew was from North Korea. Kejia Wang went on to serve as the U.S.-based manager for the scheme, supervising at least five facilitators in the United States who collectively hosted hundreds of computers of U.S. victim companies at their residences. Zhenxing Wang was among the U.S. facilitators who received and hosted victim company laptops at his residence. He and the others also enabled overseas IT workers to access the laptops remotely by, among other things, connecting the laptops to hardware devices designed to allow for remote access (referred to as keyboard-video-mouse or “KVM” switches). Kejia Wang and Zhenxing Wang created shell companies with corresponding financial accounts, including Hopana Tech LLC, Tony WKJ LLC, and Independent Lab LLC, to make it appear as though the overseas IT workers were affiliated with legitimate U.S. businesses. In fact, these companies had no employees or operations and existed only to further the scheme and enable the defendants and their co-conspirators to receive proceeds from the scheme."
+  },
+  "sources": [
+    {
+      "title": "Two U.S. Nationals Sentenced for Facilitating Fraudulent Remote Information Technology Worker Scheme that Generated $5M in Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2026-04-15",
+      "type": "press_release"
+    },
+    {
+      "title": "Justice Department Announces Coordinated, Nationwide Actions to Combat North Korean Remote Information Technology Workers' Illicit Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-coordinated-nationwide-actions-combat-north-korean-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-06-30",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "Zhenxing Wang is a United States national, not a DPRK national, and is profiled here as a domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice he was among the facilitators who received and hosted victim-company laptops at his residence, connected them to keyboard-video-mouse switches so overseas IT workers could reach them, and with Kejia Wang set up the shell companies Hopana Tech LLC, Tony WKJ LLC and Independent Lab LLC through which the scheme's proceeds passed.",
+    "He pleaded guilty in the District of Massachusetts in January 2026 to conspiracy to commit wire fraud and conspiracy to commit money laundering, and in April 2026 was sentenced to 92 months in prison and three years of supervised release, with a forfeiture of $600,000 shared with Kejia Wang. The June 2025 charging release rendered his name as Zhenxing “Danny” Wang.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

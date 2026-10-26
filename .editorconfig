@@ -1,0 +1,16 @@
+# EditorConfig helps a wider range of editors agree on the basics for new
+# files, independent of any single developer's Windows/Unix git settings.
+# See .gitattributes for how line endings are normalized once a file is
+# committed; this is what steers an editor while a file is being written.
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false

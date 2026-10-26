@@ -1,0 +1,29 @@
+---
+pagination:
+  data: clusters
+  size: 1
+  alias: cluster
+permalink: "/clusters/{{ cluster.id }}/"
+layout: layouts/cluster.njk
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ cluster.label | safe }}"
+  description: "{{ cluster.description | safe }}"
+  extra_head: '<script src="/assets/js/table-filter.js" defer></script>{% if cluster.indicators.total %}<script src="/assets/js/ioc-search.js" defer></script>{% endif %}'
+---
+{#
+  src/clusters/cluster-page.njk — thin pagination shim
+
+  One page per entry in src/_data/clusters.js, which joins the cluster tags in
+  src/_data/taxonomy.json to the profiles, personas, indicators, hunts and
+  citations already on the site. Because clusters.js sits in the _data
+  directory it is already a global data object, so this paginates the global
+  directly and needs no collection registered in .eleventy.js.
+
+  ioc-search.js is loaded only where the cluster actually has indicators to
+  search; table-filter.js is loaded always, because the citations table is on
+  every cluster page that cites anything.
+
+  This file has no body on purpose. All cluster-page markup lives in
+  src/_includes/layouts/cluster.njk.
+#}

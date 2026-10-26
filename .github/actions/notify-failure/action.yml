@@ -1,0 +1,58 @@
+name: Notify workflow failure
+description: Records the failure in one shared "Scheduled workflows need attention" issue, editing its body in place.
+
+# The calling job needs `issues: write` and nothing more, and must run only
+# when an earlier job failed (`if: failure()`) or the automatic merge did not
+# happen for a reason a person has to fix. Every value reaches the shell
+# through env, never through interpolation into the script.
+#
+# Every workflow shares one issue, and a repeat failure edits that issue's
+# body rather than commenting, because GitHub emails on a new issue or a
+# comment but not on an edit: the maintainer gets one email per open issue,
+# not one per failed run. Each workflow keeps one line in the body, replaced
+# on each failure, so the issue always shows the latest state of each.
+
+inputs:
+  token:
+    description: Token that can write issues, normally secrets.GITHUB_TOKEN.
+    required: true
+  message:
+    description: What happened, posted ahead of the run link.
+    required: false
+    default: The scheduled run failed.
+
+runs:
+  using: composite
+  steps:
+    - name: Open or update the shared failure issue
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.token }}
+        WORKFLOW: ${{ github.workflow }}
+        RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        REPO: ${{ github.repository }}
+        MESSAGE: ${{ inputs.message }}
+      run: |
+        title="Scheduled workflows need attention"
+        marker="<!-- wf: $WORKFLOW -->"
+        now=$(date -u +%Y-%m-%dT%H:%MZ)
+        number=$(gh issue list --repo "$REPO" --state open --search "\"$title\" in:title" --json number,title \
+          | jq -r --arg t "$title" '[.[] | select(.title == $t)][0].number // empty')
+        if [ -n "$number" ]; then
+          gh issue view "$number" --repo "$REPO" --json body --jq .body > body.md
+        else
+          printf '%s\n\n' "Each scheduled workflow that failed, or whose pull request could not merge itself, has one line here, replaced on each new failure. This issue is edited rather than commented on so it sends one email, not one per run. Close it once every line is dealt with." > body.md
+        fi
+        count=$(grep -F -- "$marker" body.md | sed -n 's/.*(\([0-9]*\) runs\{0,1\} since.*/\1/p' | head -n1)
+        since=$(grep -F -- "$marker" body.md | sed -n 's/.* runs\{0,1\} since \([^)]*\)).*/\1/p' | head -n1)
+        count=$(( ${count:-0} + 1 ))
+        since=${since:-$now}
+        unit=runs; [ "$count" = 1 ] && unit=run
+        line="- **$WORKFLOW** ($count $unit since $since): $MESSAGE Latest: $RUN_URL at $now $marker"
+        grep -vF -- "$marker" body.md > body.new || true
+        printf '%s\n' "$line" >> body.new
+        if [ -n "$number" ]; then
+          gh issue edit "$number" --repo "$REPO" --body-file body.new
+        else
+          gh issue create --repo "$REPO" --title "$title" --body-file body.new
+        fi

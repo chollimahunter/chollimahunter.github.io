@@ -1,0 +1,95 @@
+{
+  "slug": "erick-ntekereze-prince",
+  "display_name": "Erick Ntekereze Prince",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Sentenced May 6, 2026, Southern District of Florida",
+    "details": [
+      {
+        "label": "Age at plea",
+        "value": "30"
+      },
+      {
+        "label": "Residence",
+        "value": "New York, per the May 6, 2026 sentencing release; the November 14, 2025 release says he hosted the laptops at Florida residences, and the two releases are not reconciled"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the Southern District of Florida, Judge Darrin P. Gayles"
+      },
+      {
+        "label": "Charged",
+        "value": "By indictment, January 21, 2025"
+      },
+      {
+        "label": "Plea",
+        "value": "Guilty, November 6, 2025, to one count of wire fraud conspiracy"
+      },
+      {
+        "label": "Sentence",
+        "value": "18 months in prison and three years of supervised release"
+      },
+      {
+        "label": "Forfeiture",
+        "value": "$89,000"
+      },
+      {
+        "label": "Front company",
+        "value": "Taggcar Inc."
+      }
+    ],
+    "caution": "According to court documents, Prince enabled at least three DPRK IT workers to obtain remote employment at U.S. companies from approximately June 2020 through August 2024. In furtherance of the scheme, Prince used his company Taggcar Inc. to fraudulently supply “certified” IT workers to victim U.S. companies, knowing that the IT workers were located outside the United States and using false and stolen identities to gain employment. In addition, Prince hosted victim U.S. company-provided laptops at New York residences and installed remote access software on those laptops without authorization so that the DPRK IT workers could create the false appearance that they were remote working from Prince’s residence. On Jan. 21, 2025, Prince, U.S. national Emanuel Ashtor, Mexican national Pedro Ernesto Alonso de los Reyes, and North Korean nationals Jin Sung-il and Pak Jin-Song were charged by indictment alleging their participation in a criminal scheme that obtained work for North Korean IT workers from more than 64 U.S. companies. The victim companies paid the DPRK IT workers associated in this case more than $943,069 in salary payments, the vast majority of which were sent to the IT workers overseas. Prince’s and his conspirators’ actions also caused the victim companies more than $1 million in costs associated with auditing and remediating their devices, systems, and networks."
+  },
+  "sources": [
+    {
+      "title": "Two U.S. Nationals Sentenced for Facilitating Fraudulent Remote Information Technology Worker Schemes to Generate Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-us-nationals-sentenced-facilitating-fraudulent-remote-information-technology-worker-0",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2026-05-06",
+      "type": "press_release"
+    },
+    {
+      "title": "Justice Department Announces Nationwide Actions to Combat Illicit North Korean Government Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-nationwide-actions-combat-illicit-north-korean-government",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-11-14",
+      "type": "press_release"
+    },
+    {
+      "title": "Two North Korean Nationals and Three Facilitators Indicted for Multi-Year Fraudulent Remote Information Technology Worker Scheme that Generated Revenue for the Democratic People's Republic of Korea",
+      "url": "https://www.justice.gov/opa/pr/two-north-korean-nationals-and-three-facilitators-indicted-multi-year-fraudulent-remote",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-01-23",
+      "type": "indictment"
+    },
+    {
+      "title": "United States v. Jin Sung-Il et al., indictment (posted with the January 23, 2025 release)",
+      "url": "https://www.justice.gov/opa/media/1386281/dl",
+      "publisher": "U.S. Department of Justice",
+      "date": "2025-01-23",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "Erick Ntekereze Prince is a United States national, not a DPRK national, and is profiled here as a domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice he used his company Taggcar Inc. to supply supposedly certified IT workers to victim companies from about June 2020 to August 2024, knowing they were outside the United States and using false and stolen identities, and hosted the companies' laptops with unauthorised remote-access software so the workers appeared to be at his residence.",
+    "He was indicted on January 21, 2025 alongside Emanuel Ashtor, Pedro Ernesto Alonso de los Reyes and the North Korean nationals Jin Sung-il and Pak Jin-Song, pleaded guilty on November 6, 2025 to one count of wire fraud conspiracy, and on May 6, 2026 was sentenced in the Southern District of Florida to 18 months in prison and three years of supervised release, with $89,000 forfeited. The two Justice Department releases differ on where he hosted the laptops, New York in the sentencing release and Florida in the earlier one, and both are recorded rather than one chosen.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-24",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

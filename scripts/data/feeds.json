@@ -1,0 +1,635 @@
+{
+  "_comment": "Publisher feeds read by scripts/discover-sources.js. Each entry names a publisher the source list already trusts, the page its feed was found from (site), and the feed itself (RSS or Atom), or null with a sitemap where the publisher has no feed. verified is the last date --probe parsed the feed; status is what the probe saw; note is for a human. keywords and case_sensitive_keywords decide which items become candidates. See docs/discover-sources.md.",
+  "keywords": [
+    "North Korea",
+    "North Korean",
+    "North Koreans",
+    "DPRK",
+    "Lazarus",
+    "BlueNoroff",
+    "Kimsuky",
+    "Andariel",
+    "APT37",
+    "APT38",
+    "APT43",
+    "APT45",
+    "Konni",
+    "ScarCruft",
+    "Hidden Cobra",
+    "Moonstone Sleet",
+    "Sapphire Sleet",
+    "Citrine Sleet",
+    "Jade Sleet",
+    "Emerald Sleet",
+    "Onyx Sleet",
+    "Diamond Sleet",
+    "Jasper Sleet",
+    "Famous Chollima",
+    "Labyrinth Chollima",
+    "Velvet Chollima",
+    "Stardust Chollima",
+    "Chollima",
+    "Contagious Interview",
+    "DeceptiveDevelopment",
+    "Dev#Popper",
+    "BeaverTail",
+    "InvisibleFerret",
+    "OtterCookie",
+    "GolangGhost",
+    "PylangGhost",
+    "WeaselStore",
+    "PolinRider",
+    "NullReceiver",
+    "EtherHiding",
+    "UNC5342",
+    "UNC4899",
+    "UNC1069",
+    "UNC5267",
+    "UNC2970",
+    "TraderTraitor",
+    "AppleJeus",
+    "laptop farm",
+    "laptop farms",
+    "remote worker fraud",
+    "fake IT worker",
+    "fake IT workers",
+    "TA444",
+    "TA406",
+    "TA427",
+    "Wagemole",
+    "Tenacious Pungsan",
+    "Nickel Tapestry",
+    "Void Dokkaebi",
+    "Gwisin",
+    "Reconnaissance General Bureau",
+    "313 General Bureau",
+    "Chinyong",
+    "Sobaeksu",
+    "Silver Star",
+    "Operation Dream Job",
+    "북한",
+    "라자루스",
+    "김수키",
+    "안다리엘",
+    "北朝鮮",
+    "朝鲜"
+  ],
+  "case_sensitive_keywords": [
+    "IT worker",
+    "IT workers",
+    "IT Worker",
+    "IT Workers"
+  ],
+  "feeds": [
+    {
+      "publisher": "AhnLab ASEC",
+      "site": "https://asec.ahnlab.com/en/",
+      "feed": "https://asec.ahnlab.com/en/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 30 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "AhnLab ASEC (Korean)",
+      "site": "https://asec.ahnlab.com/ko/",
+      "feed": "https://asec.ahnlab.com/ko/feed/",
+      "verified": "2026-09-25",
+      "note": "ASEC publishes some Korean posts before, or instead of, the English one.",
+      "status": "ok: rss, 30 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Kaspersky Securelist",
+      "site": "https://securelist.com/",
+      "feed": "https://securelist.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Kaspersky Daily",
+      "site": "https://www.kaspersky.com/blog/",
+      "feed": "https://www.kaspersky.com/blog/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-23"
+    },
+    {
+      "publisher": "ESET WeLiveSecurity",
+      "site": "https://www.welivesecurity.com/en/",
+      "feed": "https://www.welivesecurity.com/en/rss/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 100 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Genians",
+      "site": "https://www.genians.co.kr/blog",
+      "feed": "https://www.genians.co.kr/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-16 (advertised)"
+    },
+    {
+      "publisher": "Cisco Talos",
+      "site": "https://blog.talosintelligence.com/",
+      "feed": "https://blog.talosintelligence.com/rss/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 15 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "SentinelOne Labs",
+      "site": "https://www.sentinelone.com/labs/",
+      "feed": "https://www.sentinelone.com/labs/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-18"
+    },
+    {
+      "publisher": "SentinelOne Blog",
+      "site": "https://www.sentinelone.com/blog/",
+      "feed": "https://www.sentinelone.com/blog/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-08-28"
+    },
+    {
+      "publisher": "Socket",
+      "site": "https://socket.dev/blog",
+      "feed": "https://socket.dev/api/blog/feed.atom",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: atom, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Microsoft Security Blog",
+      "site": "https://www.microsoft.com/en-us/security/blog/",
+      "feed": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Palo Alto Networks Unit 42",
+      "site": "https://unit42.paloaltonetworks.com/",
+      "feed": "https://unit42.paloaltonetworks.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 15 items, newest 2026-09-21"
+    },
+    {
+      "publisher": "JPCERT/CC",
+      "site": "https://blogs.jpcert.or.jp/en/",
+      "feed": "https://blogs.jpcert.or.jp/en/atom.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: atom, 15 items, newest 2026-09-18"
+    },
+    {
+      "publisher": "Nisos",
+      "site": "https://nisos.com/blog/",
+      "feed": "https://nisos.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Elastic Security Labs",
+      "site": "https://www.elastic.co/security-labs",
+      "feed": "https://www.elastic.co/blog/feed",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 40 items, newest 2026-09-24 (known path)"
+    },
+    {
+      "publisher": "Zscaler ThreatLabz",
+      "site": "https://www.zscaler.com/blogs/security-research",
+      "feed": "https://www.zscaler.com/blogs/feeds/security-research",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-21"
+    },
+    {
+      "publisher": "Group-IB",
+      "site": "https://www.group-ib.com/blog/",
+      "feed": "https://www.group-ib.com/feed/blogfeed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 356 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Proofpoint",
+      "site": "https://www.proofpoint.com/us/blog/threat-insight",
+      "feed": "https://www.proofpoint.com/us/threat-insight-blog.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Silent Push",
+      "site": "https://www.silentpush.com/blog/",
+      "feed": "https://www.silentpush.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Hunt.io",
+      "site": "https://hunt.io/blog",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; site body exceeds 8000000 bytes; tried https://hunt.io/rss.xml (HTTP 404), https://hunt.io/blog/feed (body exceeds 8000000 bytes), https://hunt.io/blog/feed/ (body exceeds 8000000 bytes)"
+    },
+    {
+      "publisher": "Validin",
+      "site": "https://www.validin.com/blog/",
+      "feed": "https://www.validin.com/index.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 98 items, newest 2026-08-31 (known path)"
+    },
+    {
+      "publisher": "OpenSourceMalware",
+      "site": "https://opensourcemalware.com/blog",
+      "feed": "https://opensourcemalware.com/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 72 items, newest 2026-09-25 (advertised)"
+    },
+    {
+      "publisher": "Kieran Miyamoto (kmsec)",
+      "site": "https://kmsec.uk/blog/",
+      "feed": "https://kmsec.uk/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 15 items, newest 2026-06-10 (known path)"
+    },
+    {
+      "publisher": "Huntress",
+      "site": "https://www.huntress.com/blog",
+      "feed": "https://www.huntress.com/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 719 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "DTEX Systems",
+      "site": "https://www.dtexsystems.com/blog/",
+      "feed": null,
+      "verified": "2026-09-25",
+      "note": null,
+      "sitemap": "https://www.dtex.ai/sitemap_index.xml",
+      "status": "no feed found; tried https://www.dtexsystems.com/feed/ (rss feed with no items), https://www.dtex.ai/feed/ (rss feed with no items), https://www.dtex.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.dtex.ai%2Fblog%2F&format=xml (not a feed); using sitemap"
+    },
+    {
+      "publisher": "Sekoia",
+      "site": "https://blog.sekoia.io/",
+      "feed": "https://blog.sekoia.io/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 100 items, newest 2026-09-17"
+    },
+    {
+      "publisher": "Google Threat Intelligence Group (GTIG) / Mandiant",
+      "site": "https://cloud.google.com/blog/topics/threat-intelligence",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; tried https://cloud.google.com/blog/topics/threat-intelligence/rss/ (not a feed), https://cloud.google.com/blog/topics/threat-intelligence/feed (not a feed), https://cloud.google.com/blog/topics/threat-intelligence/feed/ (not a feed)"
+    },
+    {
+      "publisher": "CrowdStrike",
+      "site": "https://www.crowdstrike.com/en-us/blog/",
+      "feed": "https://www.crowdstrike.com/en-us/blog/feed",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Recorded Future",
+      "site": "https://www.recordedfuture.com/research",
+      "feed": "https://www.recordedfuture.com/feed",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Trend Micro Research",
+      "site": "https://www.trendmicro.com/en_us/research.html",
+      "feed": null,
+      "verified": "2026-09-25",
+      "note": null,
+      "sitemap": "https://www.trendmicro.com/sitemap.xml",
+      "status": "no feed found; tried https://feeds.trendmicro.com/TrendMicroResearch (fetch failed: ECONNRESET), https://www.trendmicro.com/en_us/research.html/feed (HTTP 403), https://www.trendmicro.com/en_us/research.html/feed/ (HTTP 403); using sitemap"
+    },
+    {
+      "publisher": "Check Point Research",
+      "site": "https://research.checkpoint.com/",
+      "feed": "https://research.checkpoint.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 15 items, newest 2026-09-21"
+    },
+    {
+      "publisher": "Symantec (Broadcom)",
+      "site": "https://www.security.com/threat-intelligence",
+      "feed": "https://sed-cms.broadcom.com/rss/v1/blogs/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-22"
+    },
+    {
+      "publisher": "Fortinet",
+      "site": "https://www.fortinet.com/blog/threat-research",
+      "feed": "https://feeds.fortinet.com/fortinet/blog/threat-research",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Rapid7",
+      "site": "https://www.rapid7.com/blog/",
+      "feed": "https://www.rapid7.com/blog/rss/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 20 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Volexity",
+      "site": "https://www.volexity.com/blog/",
+      "feed": "https://www.volexity.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-21"
+    },
+    {
+      "publisher": "GitLab Threat Intelligence",
+      "site": "https://about.gitlab.com/blog/",
+      "feed": "https://about.gitlab.com/atom.xml",
+      "verified": "2026-09-25",
+      "note": "The whole GitLab blog; the keyword filter does the narrowing.",
+      "status": "ok: atom, 20 items, newest 2026-09-23"
+    },
+    {
+      "publisher": "Datadog Security Labs",
+      "site": "https://securitylabs.datadoghq.com/",
+      "feed": "https://securitylabs.datadoghq.com/rss/feed.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 30 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Veracode (Phylum)",
+      "site": "https://www.veracode.com/blog/",
+      "feed": null,
+      "verified": "2026-09-25",
+      "note": "Phylum's research blog moved to Veracode after the acquisition.",
+      "sitemap": "https://www.veracode.com/sitemap_index.xml",
+      "status": "no feed found; tried https://www.veracode.com/blog/feed/ (rss feed with no items), https://www.veracode.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.veracode.com%2Fblog%2F&format=xml (not a feed), https://www.veracode.com/blog/feed (rss feed with no items); using sitemap"
+    },
+    {
+      "publisher": "ReversingLabs",
+      "site": "https://www.reversinglabs.com/blog",
+      "feed": "https://www.reversinglabs.com/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-23"
+    },
+    {
+      "publisher": "Sonatype",
+      "site": "https://www.sonatype.com/blog",
+      "feed": "https://www.sonatype.com/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Snyk",
+      "site": "https://snyk.io/blog/",
+      "feed": "https://snyk.io/blog/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 1667 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Aikido Security",
+      "site": "https://www.aikido.dev/blog",
+      "feed": "https://www.aikido.dev/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 100 items, newest 2026-09-24 (advertised)"
+    },
+    {
+      "publisher": "StepSecurity",
+      "site": "https://www.stepsecurity.io/blog",
+      "feed": "https://www.stepsecurity.io/blog/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 100 items, newest 2026-09-23 (known path)"
+    },
+    {
+      "publisher": "Objective-See",
+      "site": "https://objective-see.org/blog.html",
+      "feed": "https://objective-see.org/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 136 items, newest 2026-08-23"
+    },
+    {
+      "publisher": "Cyble",
+      "site": "https://cyble.com/blog/",
+      "feed": "https://cyble.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-17"
+    },
+    {
+      "publisher": "Rewterz",
+      "site": "https://www.rewterz.com/threat-advisory",
+      "feed": "https://www.rewterz.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-17"
+    },
+    {
+      "publisher": "S2W",
+      "site": "https://medium.com/s2wblog",
+      "feed": "https://medium.com/feed/s2wblog",
+      "verified": "2026-09-25",
+      "note": "Medium refuses the scraper; a discovered S2W post goes into sources[] as a web.archive.org snapshot, the way the existing Medium sources do.",
+      "status": "ok: rss, 10 items, newest 2026-09-16"
+    },
+    {
+      "publisher": "Palo Alto Networks Unit 42 (timely threat intel)",
+      "site": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel",
+      "feed": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/commits/main.atom",
+      "verified": "2026-09-25",
+      "note": "Commit feed of the repository several plain-text sources come from; a matching commit points at a new file to add.",
+      "status": "ok: atom, 20 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "wezard4u (tistory)",
+      "site": "https://wezard4u.tistory.com/",
+      "feed": "https://wezard4u.tistory.com/rss",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "ESTsecurity ALYac blog",
+      "site": "https://blog.alyac.co.kr/",
+      "feed": "https://blog.alyac.co.kr/rss",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-21"
+    },
+    {
+      "publisher": "Logpresso",
+      "site": "https://logpresso.com/ko/blog",
+      "feed": null,
+      "verified": "2026-09-25",
+      "note": null,
+      "sitemap": "https://logpresso.com/sitemap.xml",
+      "status": "no feed found; tried https://logpresso.com/ko/blog/feed (not a feed), https://logpresso.com/ko/blog/feed/ (HTTP 404), https://logpresso.com/ko/blog/rss (not a feed); using sitemap"
+    },
+    {
+      "publisher": "Rekt News",
+      "site": "https://rekt.news/",
+      "feed": "https://rekt.news/rss/feed.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 7 items, newest 2026-04-09"
+    },
+    {
+      "publisher": "SafeDep",
+      "site": "https://safedep.io/blog/",
+      "feed": "https://safedep.io/rss.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 139 items, newest 2026-09-24 (known path)"
+    },
+    {
+      "publisher": "Chollima Group",
+      "site": "https://chollima-group.io/",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; tried https://chollima-group.io/feed (HTTP 404), https://chollima-group.io/feed/ (HTTP 404), https://chollima-group.io/rss (HTTP 404)"
+    },
+    {
+      "publisher": "NK Internet",
+      "site": "https://nkinternet.com/",
+      "feed": "https://nkinternet.com/feed/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-06"
+    },
+    {
+      "publisher": "Breakglass Intelligence",
+      "site": "https://intel.breakglass.tech/",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; site fetch failed: UND_ERR_CONNECT_TIMEOUT; tried https://intel.breakglass.tech/feed (fetch failed: UND_ERR_CONNECT_TIMEOUT), https://intel.breakglass.tech/feed/ (fetch failed: UND_ERR_CONNECT_TIMEOUT), https://intel.breakglass.tech/rss (fetch failed: UND_ERR_CONNECT_TIMEOUT)"
+    },
+    {
+      "publisher": "Jamf Threat Labs",
+      "site": "https://www.jamf.com/blog/",
+      "feed": "https://www.jamf.com/blog/rss/",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 50 items, newest 2026-09-24 (advertised)"
+    },
+    {
+      "publisher": "U.S. Department of Justice (press releases)",
+      "site": "https://www.justice.gov/news",
+      "feed": "https://www.justice.gov/news/rss?type=press_release&m=1",
+      "verified": "2026-09-25",
+      "note": "Largely narrative; a DOJ release earns a source entry only when it or its charging document carries atomic identifiers.",
+      "status": "ok: rss, 25 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "U.S. Treasury (press releases)",
+      "site": "https://home.treasury.gov/news/press-releases",
+      "feed": "https://home.treasury.gov/news/press-releases/index.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 10 items, newest 2026-09-22 (known path)"
+    },
+    {
+      "publisher": "US Treasury (OFAC)",
+      "site": "https://ofac.treasury.gov/recent-actions",
+      "feed": "https://ofac.treasury.gov/rss.xml",
+      "verified": "2026-09-25",
+      "note": "Recent actions. A DPRK designation goes in as its own recent-actions page, never the index.",
+      "status": "ok: rss, 10 items, newest 2025-07-01 (known path)"
+    },
+    {
+      "publisher": "FBI (Wanted: Cyber)",
+      "site": "https://www.fbi.gov/wanted/cyber",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; site HTTP 403; tried https://www.fbi.gov/feeds/fbi-wanted-cyber/rss.xml (HTTP 403), https://www.fbi.gov/wanted/cyber/feed (HTTP 403), https://www.fbi.gov/wanted/cyber/feed/ (HTTP 403)"
+    },
+    {
+      "publisher": "CISA",
+      "site": "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "feed": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "verified": "2026-09-25",
+      "note": null,
+      "status": "ok: rss, 30 items, newest 2026-09-24"
+    },
+    {
+      "publisher": "Rewards for Justice",
+      "site": "https://rewardsforjustice.net/",
+      "feed": null,
+      "verified": "2026-09-25",
+      "note": null,
+      "sitemap": "https://rewardsforjustice.net/sitemap.xml",
+      "status": "no feed found; tried https://rewardsforjustice.net/feed/ (rss feed with no items), https://rewardsforjustice.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Frewardsforjustice.net%2F&format=xml (not a feed), https://rewardsforjustice.net/feed (rss feed with no items); using sitemap"
+    },
+    {
+      "publisher": "Multilateral Sanctions Monitoring Team (MSMT)",
+      "site": "https://msmt.info/",
+      "feed": null,
+      "verified": null,
+      "note": null,
+      "sitemap": null,
+      "status": "no feed found; tried https://msmt.info/feed (not a feed), https://msmt.info/feed/ (not a feed), https://msmt.info/rss (not a feed)"
+    },
+    {
+      "publisher": "UN Security Council 1718 Committee (Panel of Experts)",
+      "site": "https://main.un.org/securitycouncil/en/sanctions/1718/panel_experts/reports",
+      "feed": null,
+      "verified": null,
+      "note": "The Panel's mandate ended in April 2024; its reports are final. Listed so a new 1718 Committee document is not missed.",
+      "sitemap": null,
+      "status": "no feed found; tried https://main.un.org/securitycouncil/en/sanctions/1718/panel_experts/reports/feed (not a feed), https://main.un.org/securitycouncil/en/sanctions/1718/panel_experts/reports/feed/ (not a feed), https://main.un.org/securitycouncil/en/sanctions/1718/panel_experts/reports/rss (not a feed)"
+    },
+    {
+      "publisher": "The DFIR Report",
+      "site": "https://thedfirreport.com/",
+      "feed": "https://thedfirreport.com/feed/",
+      "verified": "2026-10-12",
+      "note": "Intrusion reports; its 2026-10-12 SectopRAT post named a BNB Smart Chain EtherHiding contract. Most of its reporting is not DPRK, so only keyword matches are queued.",
+      "status": "ok: rss, 2026-10-12"
+    },
+    {
+      "publisher": "lazarus.day",
+      "site": "https://lazarus.day/reports/",
+      "feed": "https://lazarus.day/reports/feed/",
+      "aggregator": true,
+      "verified": "2026-10-01",
+      "note": "An aggregator of DPRK reporting, not a source. Each item is resolved to the original article named in its description (| Source: <url> (<publisher>)) and queued under that publisher; nothing is cited to lazarus.day. Its feed holds only the last ten items, so the year archive is read too and each report page the feed did not carry is opened for its original link. Every item qualifies without a keyword match. See docs/scrape-dprk-iocs.md on lazarus.day.",
+      "status": "ok: rss, 2026-10-01",
+      "archive": "https://lazarus.day/reports/{year}/"
+    }
+  ]
+}

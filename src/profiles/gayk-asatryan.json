@@ -1,0 +1,84 @@
+{
+  "slug": "gayk-asatryan",
+  "display_name": "Gayk Asatryan",
+  "aliases": [
+    "Gaik Asatryan",
+    "Gayk Vanushevich Asatryan",
+    "АСАТРЯН, Гайк"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on July 8, 2025 under Executive Order 13722, program tag DPRK3, for attempting to facilitate the exportation of workers from North Korea",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Russia"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "June 14, 1974"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Abovyan, Armenia"
+      },
+      {
+        "label": "Nationality",
+        "value": "Russian"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "0519689094 (Russia), issued July 1, 2019"
+      },
+      {
+        "label": "Tax ID",
+        "value": "250209385021 (Russia)"
+      },
+      {
+        "label": "Companies",
+        "value": "Asatryan Limited Liability Company; Fortuna Limited Liability Company"
+      }
+    ],
+    "caution": "Gayk Asatryan (Asatryan), a Russian national, has used his Russia-based companies to employ North Korean IT workers. In mid-2024, Asatryan signed a 10-year contract with a DPRK company, Korea Songkwang Trading General Corporation (Songkwang Trading), to dispatch up to 30 DPRK IT workers to work in Russia for his company, Asatryan Limited Liability Company (Asatryan LLC). Asatryan also signed a contract with DPRK company Korea Saenal Trading Corporation (Saenal Trading), in which they planned to dispatch 50 DPRK IT workers to Russia for his company, Fortuna Limited Liability Company (Fortuna LLC)."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, July 8, 2025: Cyber-related and North Korea Designations (Song Kum Hyok, Gayk Asatryan, Asatryan LLC, Fortuna LLC, Korea Songkwang Trading, Korea Saenal Trading)",
+      "url": "https://ofac.treasury.gov/recent-actions/20250708_33",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-07-08",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Sanctions Imposed on DPRK IT Workers Generating Revenue for the Kim Regime",
+      "url": "https://home.treasury.gov/news/press-releases/sb0190",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-07-08",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Gayk Asatryan is a Russian national, not a DPRK national, and is profiled here as the host-side facilitator in a Russia-based IT-worker scheme: the Treasury says his two companies contracted with Korea Songkwang Trading and Korea Saenal Trading in 2024 to take up to eighty DPRK IT workers between them.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "Russian national and host-country facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

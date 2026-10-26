@@ -1,0 +1,30 @@
+[
+  {
+    "from": "ip-kvm-usb-device-artifacts",
+    "to": "ip-kvm-hardware-on-endpoint-and-network"
+  },
+  {
+    "from": "ip-kvm-network-presence",
+    "to": "ip-kvm-hardware-on-endpoint-and-network"
+  },
+  {
+    "from": "multiple-remote-access-tools-one-endpoint",
+    "to": "rmm-remote-access-tool-sweep"
+  },
+  {
+    "from": "suspicious-npm-install-interview-assignment",
+    "to": "suspicious-package-install-interview-assignment"
+  },
+  {
+    "from": "suspicious-pypi-install-interview-assignment",
+    "to": "suspicious-package-install-interview-assignment"
+  },
+  {
+    "from": "beavertail-malware-indicators",
+    "to": "contagious-interview-beavertail-invisibleferret-chain"
+  },
+  {
+    "from": "invisibleferret-malware-indicators",
+    "to": "contagious-interview-beavertail-invisibleferret-chain"
+  }
+]

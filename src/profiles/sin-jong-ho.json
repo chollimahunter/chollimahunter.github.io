@@ -1,0 +1,65 @@
+{
+  "slug": "sin-jong-ho",
+  "display_name": "Sin Jong Ho",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by the Republic of Korea on December 26, 2024, in force from December 30, 2024, as a member of a DPRK IT organisation earning foreign currency abroad for the nuclear and missile programmes",
+    "details": [
+      {
+        "label": "Post, per the designation annex",
+        "value": "chief of Choson Kumjong Economic Information Technology Exchange Company's station in Dandong (조선금정경제정보기술교류사 단둥주재 단장)"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      }
+    ],
+    "caution": "조선금정경제정보기술교류사는 다수의 북한 IT 인력을 해외에 파견하여 북한 정권에 거액의 군수자금을 상납하고 있으며, 신정호는 조선금정경제정보기술교류사 소속으로 해외에 주재하며 IT 외화벌이 활동을 하고 있다."
+  },
+  "sources": [
+    {
+      "title": "우리 정부의 대북 독자제재 지정 (Republic of Korea unilateral sanctions designation of fifteen DPRK IT-worker organisation members and one entity)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=375771",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2024-12-26",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "금융위원회 고시 제2024-57호, 금융거래등제한대상자 지정 및 지정 취소에 관한 규정 일부개정 (Financial Services Commission Notice 2024-57, consolidated list of restricted counterparties, entries 900 to 915)",
+      "url": "https://www.fsc.go.kr/po040200/83752",
+      "publisher": "Financial Services Commission, Republic of Korea",
+      "date": "2024-12-30",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Seoul sanctions 15 NK IT workers, 1 entity over illicit funding for nuclear, missile programs",
+      "url": "https://koreatimes.co.kr/www/nation/2024/12/103_389176.html",
+      "publisher": "The Korea Times (Yonhap)",
+      "date": "2024-12-26",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "Sin Jong Ho is profiled here as the Dandong station chief of Choson Kumjong Economic Information Technology Exchange Company (조선금정경제정보기술교류사), which the Republic of Korea's foreign ministry designated on the same day for sending many DPRK IT workers abroad and remitting large sums to the regime's munitions funds. The Financial Services Commission's register gives his English name but no date of birth; the Korea Times report renders the name Sin Jong-ho.",
+    "The Korean quotation under the designation details is the ministry's own wording.",
+    "The confidence level of 'confirmed' reflects that this individual is named on a Republic of Korea government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "신정호",
+  "name_korean_provenance": "cited"
+}

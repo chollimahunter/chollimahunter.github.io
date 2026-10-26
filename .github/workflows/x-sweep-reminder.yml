@@ -1,0 +1,34 @@
+name: Monthly X sweep reminder
+
+# The weekly scrape cannot read X, so the researcher accounts behind
+# src/_data/iocs/x-dossiers.json are swept by hand in a browser session. This
+# opens an issue on the first of each month so that sweep is not forgotten.
+# It reads nothing and changes nothing in the repository. See
+# _drafts/private/docs/x-source-backlog.md for the method and the per-account sweep state.
+
+on:
+  schedule:
+    - cron: "23 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Open the reminder issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          month="$(date -u +%Y-%m)"
+          title="Monthly X sweep due: ${month}"
+          if gh issue list --state open --search "in:title \"${title}\"" --json number --jq '.[].number' | grep -q .; then
+            echo "An open issue already exists for ${month}."
+            exit 0
+          fi
+          body="The monthly X sweep is due. Ask Claude Code to sweep the X researcher accounts for DPRK indicators posted since the last sweep, replies included, keeping to one pass per date window so X does not throttle the session. The per-account sweep state is in the maintainer's private backlog. Close this issue when the sweep is filed."
+          gh issue create --title "${title}" --body "${body}" --label automated

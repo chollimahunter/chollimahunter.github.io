@@ -1,0 +1,91 @@
+{
+  "slug": "myong-chol-min",
+  "display_name": "Myong Chol Min",
+  "aliases": [
+    "Myong Chol-Min"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": "/assets/img/profiles/myong-chol-min.jpg",
+    "caption": "Photographs published by the U.S. Department of State on its Transnational Organized Crime Rewards Program notice for Myong Chol-Min. Reproduced from the cited notice; works of the U.S. federal government are not subject to copyright protection in the United States.",
+    "source": "https://www.state.gov/myong-chol-min-2"
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "status": "Designated by OFAC on July 24, 2025 under Executive Order 13810, program tag DPRK4, as a North Korean person engaged in commercial activity that generates revenue for the Government of North Korea; subject of a State Department reward offer of up to $3 million",
+    "details": [
+      {
+        "label": "Location",
+        "value": "North Korea"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "September 25, 1966"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Pyongyang, North Korea"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Hair",
+        "value": "Black"
+      },
+      {
+        "label": "Eyes",
+        "value": "Brown"
+      },
+      {
+        "label": "Passport",
+        "value": "745338501 (North Korea), issued September 19, 2015, expires September 19, 2020"
+      }
+    ],
+    "caution": "Myong Chol Min is a North Korea-based trade representative of multiple DPRK-based companies and has worked closely with Kim Se Un in order to facilitate various business deals and avoid sanctions to generate revenue for the DPRK. Myong Chol Min has also attempted to facilitate the import of tobacco and other products to North Korea.",
+    "remarks": "From about August 2007 until about December 2020, Myong Chol-Min and others, both known and unknown, allegedly conspired to import tobacco into North Korea and pay for it in U.S. dollars, in violation of U.S. sanctions against North Korea. The co-conspirators used false shipping records to smuggle tobacco and other goods into North Korea, and front companies to launder U.S. dollar payments related to these shipments. To facilitate these transactions, the co-conspirators deceived correspondent banks in the United States, which would not have processed these transactions had they been aware of the connection to North Korea. It is believed that the imported tobacco was used to manufacture counterfeit cigarettes, with the proceeds from their sales benefiting the North Korean regime. From about April 2021 until about June 2023, Myong Chol-Min and others, both known and unknown, purchased tobacco and tobacco products in U.S. dollars, in violation of U.S. sanctions against North Korea. The co-conspirators discussed ways of circumventing the sanctions to allow the trade to continue, including the use of false shipping records and bulk cash payments. On March 27, 2025, Myong Chol-Min and his co-conspirators were indicted in the U.S. District Court for the District of Columbia and charged with three counts: conspiracy to violate IEEPA, conspiracy to commit bank fraud, and conspiracy to launder monetary instruments.",
+    "reward": "The U.S. Department of State, under the Transnational Organized Crime Rewards Program, is offering a reward of up to $3 million for information leading to the arrest and/or conviction of Myong Chol-Min.",
+    "poster_url": "https://www.state.gov/wp-content/uploads/2025/07/2025-7-18-Reward-Poster-MYONG-CHOL_MIN-DPRK-FBI-TOCRP.pdf"
+  },
+  "name_korean": "명철민",
+  "name_korean_provenance": "cited",
+  "sources": [
+    {
+      "title": "Recent Actions, July 24, 2025: North Korea Designations (Korea Sobaeksu Trading Corporation)",
+      "url": "https://ofac.treasury.gov/recent-actions/20250724",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-07-24",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Clandestine IT Worker Network Funding the DPRK's Weapons Programs",
+      "url": "https://home.treasury.gov/news/press-releases/sb0205",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-07-24",
+      "type": "press_release"
+    },
+    {
+      "title": "Myong Chol-Min: Transnational Organized Crime Rewards Program, reward of up to $3 million",
+      "url": "https://www.state.gov/myong-chol-min-2",
+      "publisher": "U.S. Department of State",
+      "date": "2025-07-24",
+      "type": "wanted_notice"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list and on a State Department reward notice that records a federal indictment. Per the notice's own wording the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-09-24"
+}

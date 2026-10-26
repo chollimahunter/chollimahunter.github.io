@@ -1,0 +1,30 @@
+{#
+  partials/tile.njk — THE tile. One person-shaped thing in a .profile-grid.
+
+  Usage: set `tile` before including.
+    {% set tile = { href: "/profiles/kim-il/", photo: "/assets/img/…", name: "Kim Il" } %}
+    {% include "partials/tile.njk" %}
+
+  Fields, all optional except href and name:
+    href   where the whole tile links
+    photo  image path; without one the tile shows the `empty` label instead
+    empty  what to say in place of a missing photograph (default "No photograph")
+    name   the line under the picture
+    sub    a second line under the name, quieter — a Korean name, a handle
+    lang   the language of `sub`, for screen readers (default "ko")
+    badge  a short status word rendered as a .badge--high chip beside the name
+    attrs  extra attributes for the <li>, as a raw string (search hooks)
+
+  There is one tile design on this site and this is it: the named IT workers,
+  the personas, and the profiles a cluster page previews all render through
+  here. Before adding a card class, check whether this covers it — a second
+  tile that is nearly the same is how a site stops looking like one site.
+
+  DELIBERATELY ON ONE LINE, and it must stay that way. src/index.md includes
+  this through Nunjucks and then Markdown, and markdown-it treats a raw HTML
+  block containing blank lines as markdown: it wraps the pieces in <p> tags,
+  which inside an <a> is invalid markup the browser repairs by splitting the
+  anchor in two, rendering every tile twice. If you reformat this for
+  readability, check the home page still renders one tile per profile.
+#}
+<li{% if tile.attrs %} {{ tile.attrs | safe }}{% endif %}><a class="profile-card" href="{{ tile.href }}">{% if tile.photo %}<img class="profile-card__photo" src="{{ tile.photo }}" alt="" loading="lazy" decoding="async">{% else %}<span class="profile-card__photo profile-card__photo--empty">{{ tile.empty | default("No photograph") }}</span>{% endif %}<span class="profile-card__name">{{ tile.name }}{% if tile.badge %} <span class="badge badge--high">{{ tile.badge }}</span>{% endif %}{% if tile.sub %}<span class="profile-card__name-ko" lang="{{ tile.lang | default("ko") }}">{{ tile.sub }}</span>{% endif %}</span></a></li>

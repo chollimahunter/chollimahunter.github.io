@@ -1,0 +1,257 @@
+---
+layout: base.njk
+---
+{#
+  layouts/cluster.njk — one DPRK actor cluster
+  ============================================
+
+  Used as the 11ty `layout` for src/clusters/cluster-page.njk, which paginates
+  over the global data array `clusters` (src/_data/clusters.js) and binds each
+  entry to `cluster`. Front matter chains this layout to base.njk, and 11ty
+  resolves {% block content %} across a `layout:` chain — so, as in
+  layouts/hunt.njk and layouts/profile.njk, the block has to be declared here
+  explicitly rather than left as a bare HTML body.
+
+  Everything on this page is either written into src/_data/taxonomy.json (the
+  prose, the aliases, the further-reading list) or joined onto it by
+  clusters.js from material the site already holds (profiles, personas,
+  indicators, hunts, citations). Nothing is hand-copied per cluster: adding a
+  tag to taxonomy.json produces a page, and tagging a profile or a hunt puts it
+  on the right one.
+
+  The three prose fields are arrays of paragraphs rendered with `| safe`, so
+  they can carry links into the rest of the site. They are repo-controlled
+  editorial copy in a checked-in data file, not input from anywhere else.
+
+  Two client-side scripts are reused here rather than a third written, and each
+  is used where it fits. ioc-search.js downloads the compact index and is given
+  a `data-ioc-scope` attribute naming this cluster's activity labels, because a
+  cluster can hold thousands of indicators and the page cannot. table-filter.js
+  filters the citations table, which is already rendered in full as real rows.
+  Both hide their own control in the markup and reveal it only when they can
+  work, so a reader without JavaScript gets the whole page rather than a dead
+  widget. The indicator panel is additionally deferred: it shows its input at
+  once and fetches the index on the first keystroke, because this page is read
+  for its prose and the index is measured in megabytes.
+#}
+{% block content %}
+<article>
+
+  {% set backLink = { url: "/#actor-cluster-taxonomy", text: "All actor clusters" } %}{% include "partials/back-link.njk" %}
+
+  <header>
+    <h1>{{ cluster.label }}</h1>
+    {% if cluster.also_known_as and cluster.also_known_as.length %}
+    <p class="chip-row">
+      <span class="cluster-page__label">Also tracked as</span>
+      {% for alias in cluster.also_known_as %}<span class="tag-chip">{{ alias }}</span>{% endfor %}
+    </p>
+    {% endif %}
+    {% if cluster.attack_group %}
+    <p class="chip-row">
+      <span class="cluster-page__label">MITRE ATT&amp;CK{% if cluster.attack_group.type == "software" %} software{% endif %}</span>
+      <a class="tag-chip" href="{{ cluster.attack_group.url }}" rel="noopener noreferrer">{{ cluster.attack_group.id }}</a>
+    </p>
+    {% endif %}
+  </header>
+
+  <section>
+    {% for paragraph in cluster.overview | paragraphs %}
+    {{ paragraph | wrapParagraph | safe }}
+    {% endfor %}
+
+    {# Counts, not claims: each is derived by clusters.js from the tagged
+       content itself, so a figure here can never disagree with the section it
+       links to. A zero is stated rather than hidden — that this site holds no
+       indicators under a cluster is itself worth knowing. #}
+    <dl class="hunt-facts">
+      <dt>Named individuals</dt>
+      <dd>{% if cluster.profiles.length %}<a href="#named-individuals">{{ cluster.profiles.length }}</a> profiled from law-enforcement records{% else %}None profiled on this site yet{% endif %}</dd>
+      <dt>Fabricated personas</dt>
+      <dd>{% if cluster.personas.length %}<a href="#personas">{{ cluster.personas.length }}</a> reconstructed from reported accounts{% else %}None reconstructed under this tag{% endif %}</dd>
+      <dt>Indicators</dt>
+      <dd>{% if cluster.indicators.total %}<a href="#indicators">{{ cluster.indicators.total | thousands }}</a> in the searchable index{% else %}None in the searchable index{% endif %}</dd>
+      <dt>Hunts</dt>
+      <dd>{% if cluster.hunts.length %}<a href="#hunts">{{ cluster.hunts.length }}</a> in the hunt library{% else %}None in the hunt library{% endif %}</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2 id="tradecraft">How it differs from the other clusters here</h2>
+    {% for paragraph in cluster.tradecraft | paragraphs %}
+    {{ paragraph | wrapParagraph | safe }}
+    {% endfor %}
+    <p class="chip-row">
+      <span class="cluster-page__label">Compare</span>
+      {% for other in clusters %}{% if other.id != cluster.id %}<a class="tag-chip" href="{{ other.url }}">{{ other.label }}</a>{% endif %}{% endfor %}
+    </p>
+  </section>
+
+  <section>
+    <h2 id="observables">What a defender would see</h2>
+    {% for paragraph in cluster.defender_view | paragraphs %}
+    {{ paragraph | wrapParagraph | safe }}
+    {% endfor %}
+  </section>
+
+  {% if cluster.profiles.length %}
+  <section>
+    <div class="section-head">
+      <h2 id="named-individuals">Named individuals</h2>
+      {% if cluster.profiles.length > limits.list %}<p class="ioc-download"><a class="btn btn--secondary" href="/profiles/">All {{ cluster.profiles.length }} profiles</a></p>{% endif %}
+    </div>
+    <p>
+      Every person below is named in a public charging document, sanctions
+      record or law-enforcement wanted notice that carries this cluster tag.
+      Each profile lists the records it draws on and nothing beyond them.
+    </p>
+    <ul class="profile-grid">
+      {% for profile in cluster.profiles | limit(limits.list) %}{% set tileProfile = profile %}{% include "partials/profile-tile.njk" %}{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cluster.personas.length %}
+  <section>
+    <div class="section-head">
+      <h2 id="personas">Fabricated personas</h2>
+      <p class="ioc-download"><a class="btn btn--secondary" href="/remote-workers/personas/">All {{ cluster.personas.length }} personas</a></p>
+    </div>
+    <p>
+      Identities assembled from the accounts, addresses and portfolio sites
+      reported under one name. A persona is a reporting artefact rather than a
+      person: several may be run by one operator, and one may be run by
+      several.
+    </p>
+    <ul class="profile-grid">
+      {% for persona in cluster.personas_preview %}{% set cardPersona = persona %}{% include "partials/persona-card.njk" %}{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cluster.hunts.length %}
+  <section>
+    <div class="section-head">
+      <h2 id="hunts">Hunts for this cluster</h2>
+      <p class="ioc-download"><a class="btn btn--secondary" href="/hunts/">Full hunt library</a></p>
+    </div>
+    <ul class="hunt-grid">
+      {% for entry in cluster.hunts | limit(limits.list) %}{% set cardHunt = entry %}{% include "partials/hunt-card.njk" %}{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section>
+    <h2 id="indicators">Indicators</h2>
+    {% if cluster.indicators.total %}
+    <p>
+      The {{ cluster.indicators.total | thousands }} indicators the index holds
+      under this cluster. The complete index is on
+      <a href="/remote-workers/">Remote Workers</a>.
+    </p>
+
+    {# Scoped by data-ioc-scope, read by src/assets/js/ioc-search.js. The type
+       chips below are counted over this cluster alone, so the figure on a chip
+       matches what pressing it returns. Hidden until the index has loaded. #}
+    {# data-ioc-defer: a cluster page is read for its prose, and the index is
+       3.6MB. The fifty indicators rendered below at build time are what most
+       readers want; the download waits until somebody actually searches. #}
+    <div class="ioc-search" hidden data-ioc-search data-ioc-defer data-ioc-scope="{{ cluster.indicators.scope }}">
+      {% set searchBox = { id: "ioc-search-input", label: "Search " + cluster.label + " indicators", placeholder: "Email, GitHub or LinkedIn account, persona, name, or any word from a report", count: "data-ioc-count" } %}{% include "partials/search-box.njk" %}
+      {% set filterChips = { dimension: "type", short: "Type", label: "Filter by indicator type", allLabel: "All types (" + (cluster.indicators.total | thousands) + ")", counts: cluster.indicators.counts_by_type, formatValue: "replace-underscore" } %}
+      {% include "partials/filter-chips.njk" %}
+      {% include "partials/ioc-download-controls.njk" %}
+    </div>
+
+    {% set iocTable = { results: true } %}{% include "partials/ioc-table.njk" %}
+
+    {% include "partials/show-more.njk" %}
+
+    <noscript>
+      <p class="form-hint">
+        Searching requires JavaScript. The
+        {{ cluster.indicators.recent | length }} indicators for this cluster
+        with the most recent source dates are listed below, and the complete index is available
+        as <a href="/assets/data/ioc-index.csv">CSV</a> or
+        <a href="/assets/data/ioc-index.json">JSON</a>.
+      </p>
+    </noscript>
+
+    {% set iocTable = { records: cluster.indicators.recent } %}{% include "partials/ioc-table.njk" %}
+    {% else %}
+    <p>
+      The index holds no indicators under this cluster, whose reporting is
+      mostly narrative; start with the further reading below.
+    </p>
+    {% endif %}
+  </section>
+
+  <section>
+    <h2 id="evidence">Where the evidence comes from</h2>
+    {% if cluster.sources.length %}
+    {% set tableFilter = { target: "#cluster-sources-table", noun: "records", id: "cluster-source-search", label: "Search these records", placeholder: "Publisher, title, year, or the profile or hunt it supports", page: limits.list } %}
+    {% include "partials/table-filter.njk" %}
+
+    <div class="table-scroll">
+      <table class="results-table" id="cluster-sources-table">
+        <thead>
+          <tr>
+            <th scope="col">Record</th>
+            <th scope="col">Publisher</th>
+            <th scope="col">Published</th>
+            <th scope="col">Supports</th>
+            <th scope="col">Indicators</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for source in cluster.sources %}
+          <tr>
+            <td>
+              {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
+              {% if source.items.length %}
+              <span class="ioc-result__meta">{{ source.items | join(", ") | truncate(160) }}</span>
+              {% endif %}
+            </td>
+            <td>{{ source.publisher | default("—", true) }}</td>
+            <td class="cell-date">{{ source.published | default("—", true) }}</td>
+            <td>{% for area in source.areas %}<span class="tag-chip">{{ area }}</span>{% endfor %}</td>
+            <td>{{ source.indicator_count | thousands }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% include "partials/table-filter-more.njk" %}
+    {% else %}
+    <p>
+      Nothing on this site cites a record under this cluster tag. Every source
+      the site cites is on <a href="/sources/">Sources</a>.
+    </p>
+    {% endif %}
+  </section>
+
+  {% if cluster.further_reading and cluster.further_reading.length %}
+  <section>
+    <h2 id="further-reading">Further reading</h2>
+    <p>Published research on this cluster. None of it is this site&rsquo;s work.</p>
+    <ul class="reading-list">
+      {% for item in cluster.further_reading %}
+      <li>
+        {% set externalLink = { url: item.url, text: item.title } %}{% include "partials/external-link.njk" %}
+        <span class="reading-list__meta">{{ item.publisher }}{% if item.date %} &middot; {{ item.date }}{% endif %}</span>
+        <p class="reading-list__note">{{ item.note }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section>
+    {% set disclaimer = {
+      title: "Disclaimer",
+      body: 'Cluster names are labels applied by researchers and agencies, not units North Korea publishes. Vendors draw boundaries differently, so a tag records how the cited sources characterise the activity, not a finding of this site. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    } %}{% include "partials/disclaimer.njk" %}
+  </section>
+
+</article>
+{% endblock %}

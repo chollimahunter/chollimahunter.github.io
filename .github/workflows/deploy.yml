@@ -1,0 +1,153 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: ["main"]
+    # Pushes that touch none of the site's inputs build nothing new. ci.yml has
+    # no such filter: its check is required, and a filtered run would never
+    # report.
+    paths-ignore:
+      - "_drafts/**"
+      - "docs/**"
+      - ".claude/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Only one concurrent deployment, skipping runs queued between an
+# in-progress run and the latest queued one.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # Setup Pages reads the Pages site configuration; writing and the OIDC
+    # token belong to the deploy job alone.
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      # Structural checks over the data files themselves — enums, cross-file
+      # references, normalizer round-trips — before a bad record reaches the
+      # build. See scripts/validate-data.js.
+      - name: Validate data
+        run: npm run validate
+
+      - name: Build site
+        run: npm run build
+
+      # Broken internal links, inline styles, missing h1s, duplicate ids and
+      # leaked template variables do not fail the build; this does. See
+      # scripts/check-site.js.
+      - name: Check built site
+        run: npm run check
+
+      # Duplicate selectors, classes used but undefined, style= attributes and
+      # stray hex colours in tokens.css. See scripts/check-css.js.
+      - name: Check stylesheet
+        run: npm run check:css
+
+      # Table-driven tests for scripts/lib/ioc-normalize.js. See
+      # scripts/lib/ioc-normalize.test.js.
+      - name: Run unit tests
+        run: npm run test:unit
+
+      # Structural consistency of the indicator data and the built payload;
+      # fails on any finding. See scripts/audit-integrity.js.
+      - name: Audit data integrity
+        run: npm run audit:integrity
+
+      # Which URLs this deploy adds or changes, judged against the sitemaps
+      # the live site is serving right now. Submitted to IndexNow after the
+      # deploy job below has published them. See docs/search-indexing.md.
+      - name: Plan IndexNow submission
+        run: node scripts/indexnow-submit.js --plan indexnow-urls.json
+
+      - name: Upload IndexNow plan
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: indexnow-urls
+          path: indexnow-urls.json
+          retention-days: 7
+
+      - name: Setup Pages
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: "_site"
+          # v4 and later leave dotfiles out by default; this keeps
+          # /.well-known/security.txt on the live site.
+          include-hidden-files: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+
+      # Bing, Yandex, Naver and Seznam learn about the changed pages within
+      # minutes instead of on their next crawl. Google does not take IndexNow;
+      # it reads the sitemap. A failure here is logged, not fatal: the deploy
+      # is already live and the next one resubmits anything still changed.
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # Every file the submit path requires. Missing write-atomic.js here
+          # failed every deploy from 25 to 28 September 2026.
+          sparse-checkout: |
+            scripts/indexnow-submit.js
+            scripts/lib/write-atomic.js
+            src/_data/site.json
+          sparse-checkout-cone-mode: false
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Download IndexNow plan
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: indexnow-urls
+        # A missing plan must not turn a finished deploy red.
+        continue-on-error: true
+
+      - name: Submit changed URLs to IndexNow
+        run: node scripts/indexnow-submit.js --submit indexnow-urls.json
+        continue-on-error: true

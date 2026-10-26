@@ -1,0 +1,70 @@
+{
+  "slug": "yun-song-il",
+  "display_name": "Yun Song Il",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by the Republic of Korea on May 23, 2023, for involvement in DPRK IT workers' foreign-currency earning abroad",
+    "details": [
+      {
+        "label": "Post, per the identification annex",
+        "value": "Facilitator of IT workers' foreign-currency earning, operating a North Korean restaurant in Laos (IT 인력 외화벌이 조력자, 라오스 내 북한식당 운영)"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "September 23, 1969"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "927332691 (North Korea)"
+      }
+    ],
+    "caution": "이번에 제재대상으로 지정된 개인 7명은 △북한 해외 IT 지부 책임자로서 불법 외화벌이를 주도하였거나1), △자금세탁 등 불법 금융활동을 통해 외화벌이를 도움으로써2) 대북제재 회피와 핵ㆍ미사일 개발 자금 조달에 관여하였다. 특히, 이들 IT 지부 책임자들은 IT 인력에 대한 감시ㆍ통제ㆍ갑질, 임금 미지급 등 강제노동을 강요하여 이들의 인권을 유린해 왔다. 1) 김상만, 김기혁, 김성일, 전연근, 김효동 2) 유성혁, 윤성일"
+  },
+  "sources": [
+    {
+      "title": "한미, 북한 핵･미사일 자금줄 차단을 위해 북한 IT 인력에 대한 연쇄적 공동 조치 단행 (Republic of Korea and United States take successive joint actions against DPRK IT workers; unilateral designation of three entities and seven individuals)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/view.do?seq=373689",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2023-05-23",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "대북 독자제재 지정 대상 구체 식별정보 (identification annex to the May 23, 2023 designation)",
+      "url": "https://www.mofa.go.kr/www/brd/m_4080/down.do?brd_id=235&seq=373689&data_tp=A&file_seq=3",
+      "publisher": "Ministry of Foreign Affairs, Republic of Korea",
+      "date": "2023-05-23",
+      "type": "sanctions_designation"
+    }
+  ],
+  "disclaimer": [
+    "Yun Song Il is profiled here as a facilitator rather than an IT worker: the Republic of Korea's announcement lists him as an operator of a North Korean restaurant in Laos who helped DPRK IT workers earn foreign currency through illicit financial activity such as money laundering.",
+    "The Korean quotation under the designation details is the ministry's own wording.",
+    "The confidence level of 'confirmed' reflects that this individual is named on a government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean": "윤성일",
+  "name_korean_provenance": "cited"
+}

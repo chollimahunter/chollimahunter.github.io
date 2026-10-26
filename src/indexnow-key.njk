@@ -1,0 +1,11 @@
+---
+permalink: "/{{ site.indexNowKey }}.txt"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/indexnow-key.njk — the IndexNow ownership file. IndexNow accepts a
+  submission for this host only if the key in the request is also served
+  from the site at this path, which is what makes the key public by design
+  rather than a secret. scripts/indexnow-submit.js sends it after each
+  deploy; docs/search-indexing.md covers the whole arrangement.
+#}{{ site.indexNowKey }}

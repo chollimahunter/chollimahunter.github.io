@@ -1,0 +1,103 @@
+---
+pagination:
+  data: candidatePages
+  size: 1
+  alias: candidate
+permalink: "/remote-workers/candidates/{{ candidate.slug }}/"
+layout: base.njk
+eleventyExcludeFromCollections: true
+eleventyComputed:
+  title: "{{ candidate.display_name | safe }}"
+  description: "A profile under review on Potential DPRK Profiles: the accounts and indicators it carries, the reviewer's notes and the sources behind them. Not a confirmed DPRK operator."
+---
+{#
+  src/remote-workers/candidates/candidate-page.njk: one page per row on
+  /remote-workers/candidates/, paginating over the candidatePages global
+  (src/_data/candidatePages.js, rules in scripts/lib/candidates.js). It
+  carries what the table has no room for: the review note, the corroborating
+  sources, the search that found the row, and links to the row's indexed
+  indicators. Only rows under review get a page; a confirmed row has left
+  the candidates list.
+#}
+{% set active_tab = "candidates" %}
+{% set queue = iocs["candidates"] %}
+{% set facts = candidate.facts | default({}, true) %}
+{% set indexed = iocIndex.candidate_indicators[candidate.slug] %}
+
+<article>
+  <section>
+    {% set backLink = { url: "/remote-workers/candidates/", text: "Potential DPRK Profiles" } %}{% include "partials/back-link.njk" %}
+    <h1>{{ candidate.display_name }}</h1>
+    {% include "partials/profiles-tab-bar.njk" %}
+    <p>
+      A profile a reviewer opened and left under review. It matches screening
+      signals of DPRK IT-worker personas; no connection to those operations is
+      stated.
+    </p>
+    <div class="table-scroll">
+      <table class="results-table">
+        <tbody>
+          <tr><th scope="row">Status</th><td><span class="badge badge--medium">{{ candidate.status | replace("-", " ") }}</span></td></tr>
+          <tr><th scope="row">Confidence</th><td>{% set candidateFact = "confidence" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          <tr><th scope="row">Profile</th><td class="candidate-links">{% set candidateFact = "profile" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          <tr><th scope="row">Account created</th><td>{% if facts.account_created %}{{ facts.account_created }}{% else %}&mdash;{% endif %}</td></tr>
+          <tr><th scope="row">Network</th><td>{% set candidateFact = "network" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          <tr><th scope="row">Claims</th><td>{% set candidateFact = "claims" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          {% if facts.verifications %}<tr><th scope="row">Verifications</th><td>{{ facts.verifications }}</td></tr>{% endif %}
+          {% if facts.address_on_cv %}<tr><th scope="row">Address on CV</th><td>{{ facts.address_on_cv }}</td></tr>{% endif %}
+          {% if facts.education_on_cv %}<tr><th scope="row">Education on CV</th><td>{{ facts.education_on_cv }}</td></tr>{% endif %}
+          <tr><th scope="row">Line type</th><td>{% set candidateFact = "line" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          <tr><th scope="row">Photograph</th><td>{% set candidateFact = "photo" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          <tr><th scope="row">Signals</th><td>{% set candidateFact = "signals" %}{% include "partials/candidate-fact.njk" %}</td></tr>
+          {% if facts.source %}<tr><th scope="row">Surfaced by</th><td>{{ facts.source }}</td></tr>{% endif %}
+          {% if candidate.found_by_dork and candidate.found_by_dork != "manual" and queue.dorks[candidate.found_by_dork] %}<tr><th scope="row">Found by</th><td><code>{{ queue.dorks[candidate.found_by_dork].query }}</code></td></tr>{% endif %}
+          {% if candidate.first_seen %}<tr><th scope="row">First seen</th><td>{{ candidate.first_seen }}</td></tr>{% endif %}
+          {% if candidate.last_checked %}<tr><th scope="row">Last checked</th><td>{{ candidate.last_checked }}</td></tr>{% endif %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Indicators</h2>
+    {% set candidateFact = "indicators" %}{% include "partials/candidate-fact.njk" %}
+    {% if indexed and indexed.length %}
+    <p>Indexed in the Remote Workers search, each with its own page:</p>
+    <ul>
+      {% for record in indexed %}
+      <li><a href="/indicators/{{ record.id }}/"><code>{{ record.value }}</code></a> <span class="ioc-result__meta">{{ record.ioc_type | replace("_", " ") }}</span></li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </section>
+
+  {% if candidate.note %}
+  <section>
+    <h2>Review</h2>
+    {% for paragraph in candidate.note | paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>Sources</h2>
+    <ul class="ioc-result__sources">
+      {% for source in candidate.corroboration %}
+      <li>{% set externalLink = { url: source.url, text: source.title or source.url, rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %}{% if source.publisher %} &mdash; {{ source.publisher }}{% endif %}</li>
+      {% endfor %}
+      {% for link in facts.links %}
+      <li>{% set externalLink = { url: link.url, text: link.label, rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %} <span class="ioc-result__meta">read by the reviewer</span></li>
+      {% else %}
+      {% if candidate.url %}<li>{% set externalLink = { url: candidate.url, text: candidate.url | replace("https://", ""), rel: "nofollow noopener noreferrer" } %}{% include "partials/external-link.njk" %} <span class="ioc-result__meta">read by the reviewer</span></li>{% endif %}
+      {% endfor %}
+      <li>Chollima Hunter review{% if candidate.last_checked %}, last checked {{ candidate.last_checked }}{% endif %}</li>
+    </ul>
+  </section>
+
+  <section>
+    {% set disclaimer = {
+      title: "Unconfirmed lead under review",
+      preset: "not-proof",
+      body: 'The heading is the name or account the profile presents under, not established to be the name of whoever operates it. The confidence is this site&rsquo;s own screening score, not a source&rsquo;s. If this entry concerns you, see <a href="/guidance/#listed">the guidance for listed people</a>.'
+    } %}{% include "partials/disclaimer.njk" %}
+  </section>
+</article>

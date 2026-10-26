@@ -1,0 +1,191 @@
+---
+layout: base.njk
+---
+{#
+  layouts/hunt.njk — one hunt from the DPRK Hunting library
+  ==========================================================
+
+  Used as the 11ty `layout` for src/hunts/hunt-page.njk, which paginates over
+  the global data array `hunts.hunts` (src/_data/hunts/hunts.json) and binds
+  each entry to `hunt`. Front matter chains this layout to base.njk, and
+  11ty resolves {% block content %} across a `layout:` chain — so, as in
+  layouts/profile.njk, the block has to be declared here explicitly rather
+  than left as a bare HTML body.
+
+  Data shape, per entry in hunts.json:
+    id, title, hunt_type, summary, description, technique_scope,
+    platforms[], logic[], campaign_tags[], data_sources[], indicators[]
+    (optional: {type, value, note}), queries[] ({platform, language, origin,
+    source, source_url, note, tuning[], query}), confidence_level,
+    false_positive_notes, sources[], last_updated.
+
+  `platforms` (what the hunt covers: Windows, macOS, Linux, Identity / cloud,
+  Network) renders as chips under the title; `logic` as the numbered
+  pseudo-logic every query implements. The schema is enforced by
+  scripts/lib/hunt-schema.js.
+
+  A query's `platform` is the technology it is written for (Defender /
+  Sentinel KQL, Splunk SPL, Sigma, ...), one query per technology per hunt.
+  Its one-sentence `note` renders above its code block, saying what a result
+  means. `tuning` ({part, reason, remove}) renders under the block as the
+  lower-fidelity clauses and how to remove each.
+
+  `origin` on a query is either "reproduced" — the query is published by the
+  cited source and is reproduced here as written — or "authored", meaning
+  this site wrote it against indicators the cited sources document. The
+  distinction is rendered on every query and must not be dropped: it is the
+  difference between citing a vendor's detection and citing a vendor's fact.
+#}
+{% block content %}
+<article>
+
+  {% set backLink = { url: "/hunts/", text: "DPRK Hunting library" } %}{% include "partials/back-link.njk" %}
+
+  <header class="hunt-page__header">
+    <h1>{{ hunt.title }}</h1>
+    <p class="chip-row" role="group" aria-label="Platforms this hunt covers">
+      {% for os in hunt.platforms %}<span class="tag-chip">{{ os }}</span>{% endfor %}
+    </p>
+    <p class="chip-row">
+      <span class="badge badge--hunt-type">{{ hunt.hunt_type }}</span>
+      {% set confidenceLevel = hunt.confidence_level %}{% include "partials/confidence-badge.njk" %}
+      {% for tag in hunt.campaign_tags %}<span class="tag-chip">{{ tag }}</span>{% endfor %}
+    </p>
+    <p>{{ hunt.summary }}</p>
+  </header>
+
+  <section>
+    <h2>What this hunt looks for</h2>
+    {# `safe` so a paragraph can carry <strong> around the artefact names a reader
+       scans for, and the occasional list. This field is site-authored content in
+       hunts.json, never scraped or submitted input, which is the same basis on
+       which cluster.njk renders its overview paragraphs. #}
+    {% for paragraph in hunt.description | paragraphs %}{{ paragraph | wrapParagraph | safe }}{% endfor %}
+
+    {% for fig in hunt.figures %}
+    <figure class="hunt-figure">
+      <img src="{{ fig.src }}" alt="{{ fig.alt }}" loading="lazy" decoding="async">
+      <figcaption><span>{{ fig.caption }}</span><span class="profile-photo__source">Source: {% set externalLink = { url: fig.source, text: fig.credit } %}{% include "partials/external-link.njk" %}</span></figcaption>
+    </figure>
+    {% endfor %}
+
+    <dl class="hunt-facts">
+      {# Hunt type is already a badge in the header; repeating it here was
+         redundant. #}
+      <dt>Technique</dt>
+      <dd>{{ hunt.technique_scope }}</dd>
+      <dt>Data sources</dt>
+      <dd>{{ hunt.data_sources | join(", ") }}</dd>
+      <dt>Last updated</dt>
+      <dd>{{ hunt.last_updated }}</dd>
+    </dl>
+  </section>
+
+  {% if hunt.indicators and hunt.indicators.length %}
+  <section>
+    <h2>Indicators</h2>
+    <p>
+      The atomic values this hunt matches on, listed separately from the
+      queries so they can be lifted into tooling that speaks none of the query
+      languages below. Every value here is reported by one of the sources
+      cited at the foot of this page.
+    </p>
+    {% set tableFilter = { target: "#hunt-indicators-table", noun: "indicators", id: "hunt-indicator-search", label: "Search these indicators", placeholder: "Type, value, or note", page: limits.list } %}
+    {% include "partials/table-filter.njk" %}
+    <div class="table-scroll">
+      <table class="results-table" id="hunt-indicators-table">
+        <thead>
+          <tr><th scope="col">Type</th><th scope="col">Value</th><th scope="col">Note</th></tr>
+        </thead>
+        <tbody>
+          {% for indicator in hunt.indicators %}
+          <tr>
+            <td>{{ indicator.type }}</td>
+            <td><code>{{ indicator.value }}</code></td>
+            <td>{{ indicator.note }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% include "partials/table-filter-more.njk" %}
+  </section>
+  {% endif %}
+
+  {% if hunt.logic and hunt.logic.length %}
+  <section>
+    <h2>Logic</h2>
+    <p>
+      Every query below implements these steps, so the same hunt returns the
+      same result in each product.
+    </p>
+    {# Each line is "Prefix: text" with the prefix one of Collect, Match,
+       Exclude or Report (enforced by scripts/lib/hunt-schema.js); the prefix
+       is split off on the first ": " and set in bold. #}
+    <ol class="hunt-logic">
+      {% for line in hunt.logic %}{% set logicParts = line.split(": ") %}
+      <li><strong>{{ logicParts[0] }}</strong>: {{ logicParts.slice(1).join(": ") }}</li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>Queries</h2>
+    {% for query in hunt.queries %}
+    <div class="hunt-query">
+      <div class="hunt-query__head">
+        <h3 class="hunt-query__platform">{{ query.platform }}</h3>
+        {# `source_url` links the provenance line straight to the article the
+           query or its indicators came from. Publications are credited by
+           name, never individual authors. #}
+        <span class="hunt-query__origin">
+          {% if query.origin == "reproduced" %}Reproduced from {% else %}Written for this site{% if query.source %}, from indicators reported by {% endif %}{% endif %}
+          {%- if query.source %}{% if query.source_url %}{% set externalLink = { url: query.source_url, text: query.source, sameTab: true } %}{% include "partials/external-link.njk" %}{% else %}{{ query.source }}{% endif %}{% endif %}
+        </span>
+        {# Revealed by src/assets/js/query-copy.js, which copies the <pre>
+           below; without the script the block is still selectable text. #}
+        <button type="button" class="btn btn--secondary btn--small hunt-query__copy" data-copy-query hidden aria-label="Copy the {{ query.platform }} query">Copy</button>
+      </div>
+      {% if query.note %}<p class="hunt-query__note">{{ query.note }}</p>{% endif %}
+      <pre class="query-block"><code>{{ query.query }}</code></pre>
+      {# The clauses of this query that trade fidelity for coverage, each with
+         how to drop it. Collapsed like the other secondary content on the
+         site (.disclosure); the same text is in the page without JavaScript. #}
+      {% if query.tuning and query.tuning.length %}
+      <details class="disclosure">
+        <summary>Lower-fidelity parts ({{ query.tuning.length }})</summary>
+        <ul class="hunt-query__tuning">
+          {% for item in query.tuning %}
+          <li><strong>{{ item.part }}</strong> — {{ item.reason }}. <em>Remove:</em> {{ item.remove }}</li>
+          {% endfor %}
+        </ul>
+      </details>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </section>
+
+  {% if hunt.false_positive_notes %}
+  <section>
+    <h2>False positives and tuning</h2>
+    {% for paragraph in hunt.false_positive_notes | paragraphs %}{{ paragraph | wrapParagraph | safe }}{% endfor %}
+  </section>
+  {% endif %}
+
+  <section>
+    <h2>Sources</h2>
+    <ul>
+      {% for source in hunt.sources %}
+      <li>{% set externalLink = { url: source.url, text: source.title, sameTab: true } %}{% include "partials/external-link.njk" %} — {{ source.publisher }}{% if source.date %}, {{ source.date }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% set disclaimer = {
+    title: "Tuning required before use",
+    body: 'This hunt is a starting point. Adapt the queries to your schema, validate them against your baseline and tune them for the false positives noted above. Indicators go stale as operators rotate hosts.'
+  } %}{% include "partials/disclaimer.njk" %}
+
+</article>
+{% endblock %}

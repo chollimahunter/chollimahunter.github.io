@@ -1,0 +1,211 @@
+{#
+  partials/ioc-detail.njk: one indicator, below the caller's heading. Set
+  `iocDetail`; optionally `iocDetailSkipStatus` (omit the account-status block)
+  and `personaScope` (the persona slug being rendered).
+#}
+<p>
+  <span class="tag-chip">{{ iocDetail.ioc_type | replace("_", " ") }}</span>
+  {% for campaign in iocDetail.campaign %}{% set campaignCluster = [] %}{% for candidate in clusters %}{% set scopeLabels = candidate.indicators.scope.split("|") %}{% if campaign in scopeLabels and (not campaignCluster.length or scopeLabels.length < campaignCluster[0].size) %}{% set _ = campaignCluster.unshift({ size: scopeLabels.length, url: candidate.url }) %}{% endif %}{% endfor %}{% if campaignCluster.length %}<a class="tag-chip" href="{{ campaignCluster[0].url }}">{{ campaign }}</a>{% else %}<span class="tag-chip">{{ campaign }}</span>{% endif %}{% endfor %}
+  <span class="badge badge--{{ iocDetail.extraction.method | badgeForMethod }}">{{ iocDetail.extraction.method | labelForMethod }}</span>
+  {% set malwareRecord = iocDetail %}{% include "partials/malware-badge.njk" %}
+  {% set accountStatus = iocDetail.account_status %}{% include "partials/account-badge.njk" %}
+</p>
+
+{% if iocDetail.osv_advisories %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">OSV advisories</{{ iocDetailHeading | default("h4") }}>
+<ul class="ioc-result__sources">
+  {% for advisory in iocDetail.osv_advisories %}
+  <li><a href="https://osv.dev/vulnerability/{{ advisory.id }}" rel="noopener">{{ advisory.id }}</a>{% if advisory.published %} <span class="ioc-result__meta">published {{ advisory.published }}</span>{% endif %}{% if advisory.summary %} <span class="ioc-result__meta">{{ advisory.summary }}</span>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% if iocDetail.display %}
+<p><strong>Listed as</strong> {{ iocDetail.display }}</p>
+{% endif %}
+
+{# A shared value names the other owners. #}
+{% if iocDetail.personas and iocDetail.personas.length > 1 %}
+{% set otherOwners = [] %}
+{% for owner in iocDetail.personas %}
+  {% if owner.slug != personaScope %}{% set otherOwners = (otherOwners.push(owner), otherOwners) %}{% endif %}
+{% endfor %}
+<p>
+  <strong>{% if personaScope %}Also listed under{% else %}Listed under{% endif %}</strong>
+  {% for owner in otherOwners %}<a href="/remote-workers/personas/{{ owner.slug }}/">{{ owner.name | default(owner.slug) }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% if personaScope %}
+  &mdash; <a href="/indicators/{{ iocDetail.id }}/">this value&rsquo;s page</a>
+  names all of them{% endif %}.
+</p>
+{% endif %}
+
+{# Password and reuse group. #}
+{% if iocDetail.password %}
+<p>
+  <strong>Password</strong>
+  <code>{{ iocDetail.password }}</code>
+  &mdash; {% if iocDetail.password_origin == "observed" %}printed beside this address{% else %}from an infostealer log{% endif %}{% if iocDetail.password_siblings and iocDetail.password_siblings.length %} and
+  reused with
+  {% for sibling in iocDetail.password_siblings %}<a href="/indicators/{{ sibling.id }}/"><code>{{ sibling.value }}</code></a>{% if not loop.last %}, {% endif %}{% endfor %}
+  (reuse cluster <code>{{ iocDetail.password_group }}</code>){% endif %}.
+</p>
+{% endif %}
+
+{# From source publication dates; pull dates are on each citation. #}
+<p class="ioc-result__meta">
+  First seen {{ iocDetail.first_seen | default("unknown", true) }}
+  &middot; last seen {{ iocDetail.last_seen | default("unknown", true) }}
+  {% if iocDetail.extraction.model %}&middot; extracted by {{ iocDetail.extraction.model }}{% endif %}
+  {% if not iocDetail.extraction.grounded %}&middot; <strong>not verified against its source</strong>{% endif %}
+</p>
+
+{# Telephone line type. #}
+{% if iocDetail.phone_status %}
+{% set line = iocDetail.phone_status %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Line type</{{ iocDetailHeading | default("h4") }}>
+<div class="table-scroll">
+  <table class="results-table">
+    <tbody>
+      {% if line.line_type %}<tr><th scope="row">Line type</th><td>{{ line.line_type }}{% if line.prepaid %} <span class="ioc-result__meta">{{ line.prepaid }}</span>{% endif %}</td></tr>{% endif %}
+      {% if line.carrier %}<tr><th scope="row">Carrier</th><td>{{ line.carrier }}</td></tr>{% endif %}
+      {% if line.block_carrier %}<tr><th scope="row">Block carrier</th><td>{{ line.block_carrier }}</td></tr>{% endif %}
+      {% if line.location %}<tr><th scope="row">Rate centre</th><td>{{ line.location }}</td></tr>{% endif %}
+      {% if line.names.length %}<tr><th scope="row">Directory names</th><td>{{ line.names | join(", ") }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</div>
+{% if line.note %}<p class="ioc-result__meta">{{ line.note }}</p>{% endif %}
+<p class="ioc-result__meta">
+  Looked up {{ line.checked }}{% if line.looked_up_at.length %} at {{ line.looked_up_at | join(" and ") }}{% endif %}.
+  {% if line.basis == "block" %}
+  This is the block&rsquo;s carrier, not the line&rsquo;s.
+  {% elif line.basis == "number" %}
+  This is a lookup of the line itself.
+  {% endif %}
+  {% if line.line_type and "voip" in (line.line_type | lower) %}
+  A VoIP line is not evidence on its own.
+  {% endif %}
+  {% if line.names.length %}
+  A directory name is an association only.
+  {% endif %}
+</p>
+{% endif %}
+
+{# Domain registration, from the registry's RDAP record (scripts/enrich-domains.js). #}
+{% if iocDetail.registration %}
+{% set reg = iocDetail.registration %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Registration</{{ iocDetailHeading | default("h4") }}>
+{% if reg.registered === false %}
+<p>The registry had no record of <code>{{ reg.domain }}</code> when it was looked up on {{ reg.checked }}: the registration had lapsed or been deleted.</p>
+{% else %}
+<div class="table-scroll">
+  <table class="results-table">
+    <tbody>
+      {% if reg.created %}<tr><th scope="row">Registered</th><td>{{ reg.created }}</td></tr>{% endif %}
+      {% if reg.registrar %}<tr><th scope="row">Registrar</th><td>{{ reg.registrar }}</td></tr>{% endif %}
+      {% if reg.expires %}<tr><th scope="row">Expires</th><td>{{ reg.expires }}</td></tr>{% endif %}
+      {% if reg.updated %}<tr><th scope="row">Last changed</th><td>{{ reg.updated }}</td></tr>{% endif %}
+      {% if reg.status.length %}<tr><th scope="row">Status</th><td>{{ reg.status | join(", ") }}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</div>
+<p class="ioc-result__meta">From the registry&rsquo;s RDAP record for <code>{{ reg.domain }}</code>, looked up {{ reg.checked }}.{% if "client hold" in reg.status or "server hold" in reg.status %} A hold means the domain does not resolve, usually because the registrar or registry suspended it.{% endif %}</p>
+{% endif %}
+{% endif %}
+
+{# IP network kind. #}
+{% if iocDetail.network_status %}
+{% set net = iocDetail.network_status %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">Network</{{ iocDetailHeading | default("h4") }}>
+<div class="table-scroll">
+  <table class="results-table">
+    <tbody>
+      <tr><th scope="row">Kind</th><td>{{ net.label }}{% if net.provider and net.kind == "vpn" %} <span class="ioc-result__meta">exit address</span>{% endif %}</td></tr>
+      {% if net.isp %}<tr><th scope="row">Network</th><td>{{ net.isp }}{% if net.org and net.org != net.isp %} <span class="ioc-result__meta">({{ net.org }})</span>{% endif %}</td></tr>{% endif %}
+      {% if net.asn %}<tr><th scope="row">Announced by</th><td>{{ net.asn }}</td></tr>{% endif %}
+      {% if net.country_name %}<tr><th scope="row">Country</th><td>{{ net.country_name }}</td></tr>{% endif %}
+      {% if net.hosting or net.proxy or net.mobile %}<tr><th scope="row">Flags</th><td>{% if net.hosting %}hosting range{% endif %}{% if net.proxy %}{% if net.hosting %}, {% endif %}known proxy or VPN{% endif %}{% if net.mobile %}{% if net.hosting or net.proxy %}, {% endif %}mobile carrier{% endif %}</td></tr>{% endif %}
+    </tbody>
+  </table>
+</div>
+{% if net.note %}<p class="ioc-result__meta">{{ net.note }}</p>{% endif %}
+<p class="ioc-result__meta">
+  {% if net.checked %}Looked up {{ net.checked }}{% if net.looked_up_at %} at {{ net.looked_up_at }}{% endif %}.{% endif %}
+  {% if net.kind == "vpn" %}
+  This address is on Spur&rsquo;s list of {{ net.provider }} exits. It names the
+  VPN, not the user.
+  {% elif net.kind == "proxy" %}
+  This range is classed as a proxy or VPN; it does not show who used it.
+  {% elif net.kind == "datacenter" %}
+  A hosting range is not evidence on its own.
+  {% elif net.kind == "fixed-line" %}
+  A subscriber line, as a person working from home ordinarily has.
+  {% endif %}
+</p>
+{% endif %}
+
+{% if iocDetail.account_status and not iocDetailSkipStatus %}
+<div class="account-status account-status--large">
+  {% if iocDetail.account_status.avatar %}
+  <img class="account-status__avatar" src="{{ iocDetail.account_status.avatar }}" alt="" loading="lazy" decoding="async">
+  {% endif %}
+  <div>
+    <p>{% set accountStatus = iocDetail.account_status %}{% include "partials/account-badge.njk" %}</p>
+    {# A recycled handle is not the reported account; no avatar is mirrored. #}
+    {% if iocDetail.account_status.state == "recycled" %}
+    <p class="ioc-result__meta">
+      This login no longer resolves to the reported account. The present holder
+      was created
+      {% if iocDetail.account_status.account_created %}on {{ iocDetail.account_status.account_created }}{% endif %},
+      after the identifier was first published
+      {% if iocDetail.account_status.reported %}on {{ iocDetail.account_status.reported }}{% endif %},
+      so it is unconnected to this indicator.
+    </p>
+    {% elif iocDetail.account_status.avatar %}
+    <p class="ioc-result__meta">
+      The image is the avatar this account displays, not evidence of who
+      operates it.
+    </p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+{# LinkedIn profile facts, unless the persona page renders them. #}
+{% if iocDetail.ioc_type == "linkedin_profile" and iocDetail.account_status and iocDetail.account_status.profile and not iocDetailSkipStatus %}
+{% set liStatus = iocDetail.account_status %}
+{% include "partials/linkedin-profile-facts.njk" %}
+{% endif %}
+
+{% set liveMalware = iocDetail.malware_status and iocDetail.malware_status.state == "live" %}
+<{{ iocDetailHeading | default("h4") }} class="ioc-result__heading">{% if iocDetail.sources.length == 1 %}Source{% else %}Sources{% endif %}</{{ iocDetailHeading | default("h4") }}>
+<ul class="ioc-result__sources">
+  {% for source in iocDetail.sources %}
+  <li>
+    {# The source's own lines around the value, first. #}
+    {% if source.excerpt %}
+    <p class="ioc-result__meta">As printed:</p>
+    <blockquote class="notice-quote notice-quote--verbatim">{{ source.excerpt | highlightIndicator(iocDetail) | safe }}</blockquote>
+    {% endif %}
+    {# A "list" context is neighbouring appendix entries, labelled as such. #}
+    {% if source.context %}
+    {% if source.context_origin == "list" %}
+    <p class="ioc-result__meta">Nearby text:</p>
+    {% elif source.excerpt and source.context_origin == "curated" %}
+    <p class="ioc-result__meta">Notes:</p>
+    {% endif %}
+    <blockquote class="ioc-result__context{% if source.context_origin == "list" %} ioc-result__context--nearby{% endif %}">{{ source.context | highlightIndicator(iocDetail) | safe }}</blockquote>
+    {% endif %}
+    {% if source.url %}
+    {% set externalLink = { url: source.url, text: source.title, plain: liveMalware and (iocDetail.value in source.url) } %}{% include "partials/external-link.njk" %}
+    {% else %}
+    {{ source.title }}
+    {% endif %}
+    {% if source.publisher %}&mdash; {{ source.publisher }}{% endif %}
+    <span class="ioc-result__meta">
+      {% if source.section %}&middot; under &ldquo;{{ source.section }}&rdquo;{% endif %}
+      {% if source.published %}&middot; published {{ source.published }}{% endif %}
+      {% if source.pulled_at %}&middot; pulled {{ source.pulled_at }}{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>

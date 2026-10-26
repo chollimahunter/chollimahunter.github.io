@@ -1,0 +1,95 @@
+---
+layout: base.njk
+title: "Submit IOC/Profile"
+description: "Submit a new indicator of compromise, a new DPRK actor profile lead, or a general tip for manual review."
+---
+{#
+  src/submit/index.njk: backend-free. Submissions go by mailto link, never a
+  form POST or a JS-built URL (a long profile_sources list can exceed the
+  ~2000-character URL limit); each is turned into a draft by hand
+  (docs/submission-review-assist.md). The address is read from
+  src/_data/site.json `businessEmail`; do not hardcode it elsewhere.
+#}
+{% set mailSubject = "New Chollima Hunter submission" %}
+{% set mailBody %}Submission type (New IOC / New Profile / Correction or removal request / General tip):
+
+Your contact (optional, only used to follow up on this submission):
+
+Description (what you're submitting, and why you believe it's DPRK-linked):
+
+
+--- If this is a new IOC, also fill in ---
+Indicator type (email address, phone number, GitHub, LinkedIn or other
+platform account, persona name, npm or PyPI package, file hash, domain, IP
+address, wallet or smart contract address, or other):
+Indicator value:
+Associated campaign/cluster (if known):
+
+--- If this is a correction or removal request, also fill in ---
+Page address:
+What is wrong, or why the entry concerns your own identity:
+Public record supporting the correction (if any):
+--- If this is a new profile lead, also fill in ---
+Subject name / known aliases:
+Alleged activity:
+Links to supporting public sources (one per line; required for any claim
+about a named person):
+{% endset %}
+<section>
+  <h1>Submit IOC/Profile</h1>
+  <p>
+    Send an indicator, a profile lead, a correction or removal request, or a
+    tip by email. Every submission is reviewed manually; nothing is published
+    automatically. If you are listed, see
+    <a href="/guidance/#listed">If you are listed on this site</a>.
+  </p>
+
+{% if site.businessEmail and "TODO" not in site.businessEmail %}
+  <p>
+    A submission is an ordinary email to
+    <a href="mailto:{{ site.businessEmail }}">{{ site.businessEmail }}</a>; it
+    never passes through the site.
+    {%- if site.repoUrl %} Corrections and removal requests can also be raised
+    as an issue on the {% set externalLink = { url: site.repoUrl + "/issues", text: "GitHub repository" } %}{% include "partials/external-link.njk" %}.
+    {%- endif %}
+  </p>
+
+  <p>
+    <a class="btn" href="mailto:{{ site.businessEmail }}?subject={{ mailSubject | urlencode }}&amp;body={{ mailBody | trim | urlencode }}">Email your submission</a>
+  </p>
+  <p class="form-hint">
+    The link opens your mail client with the template below filled in.
+  </p>
+
+  {% set disclaimer = {
+    title: "What not to send",
+    id: "what-not-to-send",
+    body: 'Do not attach malware; send the file hash and a link to published analysis. Do not include other people&rsquo;s personal data beyond what identifies the entry. Email is not confidential.'
+  } %}{% include "partials/disclaimer.njk" %}
+
+  <fieldset class="form-fieldset">
+    <legend>Email template</legend>
+    <pre class="query-block">{{ mailBody | trim }}</pre>
+  </fieldset>
+
+  <fieldset class="form-fieldset">
+    <legend>New profile leads</legend>
+    <p class="form-hint">
+      <strong>A claim about a named individual needs a public source</strong>,
+      such as an indictment, sanctions designation, press release or named
+      threat-intelligence report. Without one it will not be published.
+    </p>
+  </fieldset>
+{% else %}
+  {% set disclaimer = {
+    title: "Submissions are not open yet",
+    body: 'This page is not accepting submissions yet.'
+  } %}{% include "partials/disclaimer.njk" %}
+  {%- if site.repoUrl %}
+  <p>
+    In the meantime, open an issue on the {% set externalLink = { url: site.repoUrl + "/issues", text: "GitHub repository" } %}{% include "partials/external-link.njk" %}
+    with the indicator or lead and its public source.
+  </p>
+  {%- endif %}
+{% endif %}
+</section>

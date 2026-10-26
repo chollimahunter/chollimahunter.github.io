@@ -1,0 +1,1944 @@
+{
+  "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
+  "checked": "2026-10-20",
+  "domains": {
+    "67sixcebeh.surf": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-09-18",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "9jaarenaxtra.com": {
+      "registered": true,
+      "created": "2024-11-07",
+      "expires": "2026-11-07",
+      "updated": "2025-09-25",
+      "registrar": "Web Commerce Communications Limited dba WebNic.cc",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "aabstone.com": {
+      "registered": true,
+      "created": "2026-03-16",
+      "expires": "2027-03-16",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "aceeyl.com": {
+      "registered": true,
+      "created": "2021-03-17",
+      "expires": "2027-03-17",
+      "updated": "2026-03-18",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "adamglab.dev": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "ag.com": {
+      "registered": true,
+      "created": "1994-09-07",
+      "expires": "2027-09-06",
+      "updated": "2026-09-02",
+      "registrar": "CSC Corporate Domains, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ager-stp.org": {
+      "registered": true,
+      "created": "2026-04-23",
+      "expires": "2027-04-23",
+      "updated": "2026-08-11",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ahdaratlegalservices.com": {
+      "registered": true,
+      "created": "2023-04-06",
+      "expires": "2027-04-06",
+      "updated": "2026-06-02",
+      "registrar": "OwnRegistrar, Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ajayplamingo.com": {
+      "registered": true,
+      "created": "2025-03-12",
+      "expires": "2027-03-12",
+      "updated": "2026-02-19",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "alphabet.com": {
+      "registered": true,
+      "created": "1995-08-03",
+      "expires": "2033-08-02",
+      "updated": "2023-08-03",
+      "registrar": "CSC Corporate Domains, Inc.",
+      "status": [
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "althouqroastery.com": {
+      "registered": true,
+      "created": "2022-10-28",
+      "expires": "2026-10-28",
+      "updated": "2026-07-10",
+      "registrar": "IONOS SE",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ameenafshin.com": {
+      "registered": true,
+      "created": "2017-04-07",
+      "expires": "2027-04-07",
+      "updated": "2026-03-23",
+      "registrar": "Domain.com - Network Solutions, LLC",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "angeloper.com": {
+      "registered": true,
+      "created": "2023-09-20",
+      "expires": "2027-09-20",
+      "updated": "2026-09-21",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "angeloperonline.online": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "anupamaivf.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "apdhlhs3.xyz": {
+      "registered": true,
+      "created": "2026-06-29",
+      "expires": "2027-06-29",
+      "updated": "2026-07-07",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "api-gateway-prod.com": {
+      "registered": true,
+      "created": "2025-11-29",
+      "expires": "2026-11-29",
+      "updated": "2025-11-29",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "apply-blocknovas.site": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "appstartlabs.com": {
+      "registered": true,
+      "created": "2015-05-28",
+      "expires": "2027-05-28",
+      "updated": "2026-06-04",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "aurineuroth.com": {
+      "registered": true,
+      "created": "2026-03-09",
+      "expires": "2027-03-09",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "awqhnjewqjkl.icu": {
+      "registered": true,
+      "created": "2026-08-04",
+      "expires": "2027-08-04",
+      "updated": "2026-08-10",
+      "registrar": "NameSilo, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "bdstop.net": {
+      "registered": true,
+      "created": "2026-03-17",
+      "expires": "2027-03-17",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "bduwih8.pro": {
+      "registered": true,
+      "created": "2026-06-28",
+      "expires": "2027-06-28",
+      "updated": "2026-08-12",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "bermanlawrsk.com": {
+      "registered": true,
+      "created": "2026-03-09",
+      "expires": "2027-03-09",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "bitgesell.finance": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-08-12",
+      "registrar": "CommuniGal Communication Ltd.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "blgbeach.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "blocknovas.com": {
+      "registered": true,
+      "created": "2024-07-16",
+      "expires": "2027-07-16",
+      "updated": "2026-07-16",
+      "registrar": "Cloudflare, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "blxrbn.com": {
+      "registered": true,
+      "created": "2025-12-01",
+      "expires": "2026-12-01",
+      "updated": "2026-02-26",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "bmanal.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "businesshire.top": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "businessvibes.financial": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "callnrwise.com": {
+      "registered": true,
+      "created": "2026-03-30",
+      "expires": "2027-03-30",
+      "updated": "2026-03-30",
+      "registrar": "Dynadot Inc",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "camdriversupport.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "camorreado.click": {
+      "registered": true,
+      "created": "2026-05-25",
+      "expires": "2027-05-25",
+      "updated": "2026-05-30",
+      "registrar": "Sav.com, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "canal.com": {
+      "registered": true,
+      "created": "1996-02-02",
+      "expires": "2030-02-03",
+      "updated": "2025-11-01",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ccppeptides.art": {
+      "registered": true,
+      "created": "2026-05-01",
+      "expires": "2027-05-01",
+      "updated": "2026-06-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "cerumo.shop": {
+      "registered": true,
+      "created": "2026-03-31",
+      "expires": "2027-03-31",
+      "updated": "2026-09-30",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "changelog.rest": {
+      "registered": true,
+      "created": "2026-02-27",
+      "expires": "2027-02-27",
+      "updated": "2026-03-04",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "chjunhao.com": {
+      "registered": true,
+      "created": "2026-03-03",
+      "expires": "2027-03-03",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "citcix6.xyz": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-07-07",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "clob-polymarket.com": {
+      "registered": true,
+      "created": "2026-02-20",
+      "expires": "2027-02-20",
+      "updated": "2026-02-20",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "contra.com": {
+      "registered": true,
+      "created": "1996-06-12",
+      "expires": "2034-06-11",
+      "updated": "2026-10-01",
+      "registrar": "Network Solutions, LLC",
+      "status": [
+        "pending transfer"
+      ],
+      "checked": "2026-10-05"
+    },
+    "crowdon.info": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "cruahop.shop": {
+      "registered": true,
+      "created": "2026-09-10",
+      "expires": "2027-09-10",
+      "updated": "2026-09-10",
+      "registrar": "Dynadot Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "cryptojobslist.com": {
+      "registered": true,
+      "created": "2017-09-27",
+      "expires": "2027-09-27",
+      "updated": "2026-09-26",
+      "registrar": "Porkbun LLC",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "daedong.or.kr": {
+      "registered": false,
+      "checked": "2026-10-18"
+    },
+    "dmors.com": {
+      "registered": true,
+      "created": "2026-04-23",
+      "expires": "2027-04-23",
+      "updated": "2026-04-23",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "dreambigworkharddomore.com": {
+      "registered": true,
+      "created": "2026-01-05",
+      "expires": "2027-01-05",
+      "updated": "2026-01-05",
+      "registrar": "Regional Network Information Center, JSC dba RU-CENTER",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "drepace.click": {
+      "registered": true,
+      "created": "2026-09-01",
+      "expires": "2027-09-01",
+      "updated": "2026-09-06",
+      "registrar": "Dynadot, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "easydriver.cloud": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "egyptinfo.shop": {
+      "registered": true,
+      "created": "2026-03-19",
+      "expires": "2027-03-19",
+      "updated": "2026-09-30",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "encryptuganda.org": {
+      "registered": true,
+      "created": "2025-08-06",
+      "expires": "2027-08-06",
+      "updated": "2026-08-12",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "entered.com": {
+      "registered": true,
+      "created": "1999-11-15",
+      "expires": "2027-11-15",
+      "updated": "2026-09-25",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "estimation.com": {
+      "registered": true,
+      "created": "1995-09-12",
+      "expires": "2027-09-11",
+      "updated": "2026-09-07",
+      "registrar": "CSC Corporate Domains, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "eth-mainnet-alchemy.com": {
+      "registered": true,
+      "created": "2026-01-15",
+      "expires": "2027-01-15",
+      "updated": "2026-02-25",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "euclidrent.com": {
+      "registered": true,
+      "created": "2026-02-23",
+      "expires": "2027-02-23",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "expertweblancer.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "fashdefi.store": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "fastgamesltd.club": {
+      "registered": true,
+      "created": "2026-03-19",
+      "expires": "2027-03-19",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "fdffofofofo4.com": {
+      "registered": true,
+      "created": "2026-07-07",
+      "expires": "2027-07-07",
+      "updated": "2026-07-07",
+      "registrar": "Dominet (HK) Limited",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "financemydeductible.com": {
+      "registered": true,
+      "created": "2025-12-15",
+      "expires": "2026-12-15",
+      "updated": "2025-12-15",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "fluxnet.life": {
+      "registered": true,
+      "created": "2026-03-31",
+      "expires": "2027-03-31",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server delete prohibited",
+        "server hold",
+        "client transfer prohibited",
+        "server transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "futuresea.fun": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "gateway001kir.com": {
+      "registered": true,
+      "created": "2025-12-11",
+      "expires": "2026-12-11",
+      "updated": "2026-02-17",
+      "registrar": "MAT BAO CORPORATION",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "genuinashop.com": {
+      "registered": true,
+      "created": "2020-04-28",
+      "expires": "2027-04-28",
+      "updated": "2026-05-13",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "gesck4m.pro": {
+      "registered": true,
+      "created": "2026-05-27",
+      "expires": "2027-05-27",
+      "updated": "2026-08-11",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "ghostraper.top": {
+      "registered": true,
+      "created": "2026-04-02",
+      "expires": "2027-04-02",
+      "updated": "2026-06-13",
+      "registrar": "PDR Ltd.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-10-05"
+    },
+    "grabify.link": {
+      "registered": true,
+      "created": "2015-07-05",
+      "expires": "2028-07-05",
+      "updated": "2025-06-13",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "haruhana-happytown.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "hayesmed.com": {
+      "registered": true,
+      "created": "2026-02-06",
+      "expires": "2027-02-06",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "hf98x4d.site": {
+      "registered": true,
+      "created": "2026-06-06",
+      "expires": "2027-06-06",
+      "updated": "2026-07-08",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "hodlwarden.com": {
+      "registered": true,
+      "created": "2026-03-07",
+      "expires": "2027-03-07",
+      "updated": "2026-03-07",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ianbelknap.com": {
+      "registered": true,
+      "created": "2026-09-01",
+      "expires": "2027-09-01",
+      "updated": "2026-09-01",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "igamingroundtable.com": {
+      "registered": true,
+      "created": "2025-06-06",
+      "expires": "2027-06-06",
+      "updated": "2026-06-07",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "immunefi.com": {
+      "registered": true,
+      "created": "2020-09-13",
+      "expires": "2027-09-13",
+      "updated": "2026-08-30",
+      "registrar": "Squarespace Domains II LLC",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "industryinfostructure.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "ipregionchecker.net": {
+      "registered": true,
+      "created": "2026-05-08",
+      "expires": "2027-05-08",
+      "updated": "2026-05-08",
+      "registrar": "Name.com, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ironphantomcore.top": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-06-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "isillegalregion.com": {
+      "registered": true,
+      "created": "2026-02-13",
+      "expires": "2027-02-13",
+      "updated": "2026-04-27",
+      "registrar": "Name.com, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "itemrange.com": {
+      "registered": true,
+      "created": "2026-07-01",
+      "expires": "2027-07-01",
+      "updated": "2026-09-05",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "iwakihiroto.info": {
+      "registered": true,
+      "created": "2026-02-08",
+      "expires": "2027-02-08",
+      "updated": "2026-08-12",
+      "registrar": "Gransy, s.r.o.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "j9af4sr.guru": {
+      "registered": true,
+      "created": "2026-06-30",
+      "expires": "2027-06-30",
+      "updated": "2026-08-13",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "jaicvc.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "japanroom.com": {
+      "registered": true,
+      "created": "2005-08-12",
+      "expires": "2027-08-12",
+      "updated": "2026-08-12",
+      "registrar": "Gabia, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "jariosos.com": {
+      "registered": true,
+      "created": "2025-12-17",
+      "expires": "2026-12-17",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "jinjinpig.co.kr": {
+      "registered": true,
+      "created": "2001-05-22",
+      "expires": "2027-05-22",
+      "updated": "2025-06-24",
+      "registrar": null,
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-18"
+    },
+    "jlrandsons.co.uk": {
+      "registered": true,
+      "created": "2025-01-31",
+      "expires": "2027-01-31",
+      "updated": "2026-02-11",
+      "registrar": "GoDaddy.com, LLC.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited",
+        "client renew prohibited",
+        "client delete prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "johnguava.com": {
+      "registered": true,
+      "created": "2024-07-10",
+      "expires": "2027-07-10",
+      "updated": "2024-08-15",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "joinupvts.org": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "jrodacooker.dev": {
+      "registered": true,
+      "created": "2025-04-09",
+      "expires": "2027-04-09",
+      "updated": "2026-03-15",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "justtalken.com": {
+      "registered": true,
+      "created": "2026-02-17",
+      "expires": "2027-02-17",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "kadmecnp-643laolmd.com": {
+      "registered": true,
+      "created": "2026-04-16",
+      "expires": "2027-04-16",
+      "updated": "2026-08-31",
+      "registrar": "Spaceship, Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "kaize3.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "kcnp.or.kr": {
+      "registered": true,
+      "created": "2003-05-27",
+      "expires": "2029-05-27",
+      "updated": "2026-04-16",
+      "registrar": null,
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-18"
+    },
+    "kosic.or.kr": {
+      "registered": true,
+      "created": "2001-11-29",
+      "expires": "2028-11-29",
+      "updated": "2023-11-21",
+      "registrar": null,
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-18"
+    },
+    "kppe.pl": {
+      "registered": true,
+      "created": "2010-01-06",
+      "expires": "2027-01-06",
+      "updated": "2025-12-15",
+      "registrar": "home.pl sp. z o.o.",
+      "status": [],
+      "checked": "2026-10-05"
+    },
+    "labipt.com": {
+      "registered": true,
+      "created": "2026-07-30",
+      "expires": "2027-07-30",
+      "updated": "2026-07-30",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "leopriego.com": {
+      "registered": true,
+      "created": "2026-05-29",
+      "expires": "2027-05-29",
+      "updated": "2026-05-29",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "lepaniermagic.com": {
+      "registered": true,
+      "created": "2026-03-16",
+      "expires": "2027-03-16",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "lermontov-656idlop.com": {
+      "registered": true,
+      "created": "2026-04-29",
+      "expires": "2027-04-29",
+      "updated": "2026-04-29",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "lianxinxiao.com": {
+      "registered": true,
+      "created": "2023-11-20",
+      "expires": "2026-11-20",
+      "updated": "2025-11-21",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "liltet.digital": {
+      "registered": true,
+      "created": "2026-04-24",
+      "expires": "2027-04-24",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "liquina.vip": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "logevents.club": {
+      "registered": true,
+      "created": "2026-03-19",
+      "expires": "2027-03-19",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "luckyguys.site": {
+      "registered": true,
+      "created": "2025-12-02",
+      "expires": "2028-12-02",
+      "updated": "2025-12-07",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "luminarybrand.co.uk": {
+      "registered": true,
+      "created": "2026-05-12",
+      "expires": "2027-05-12",
+      "updated": "2026-06-16",
+      "registrar": "Realtime Register BV t/a Axidomains",
+      "status": [
+        "client transfer prohibited",
+        "client hold"
+      ],
+      "checked": "2026-10-05"
+    },
+    "luminer.work": {
+      "registered": true,
+      "created": "2026-03-30",
+      "expires": "2027-03-30",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "magehire.com": {
+      "registered": true,
+      "created": "2017-01-29",
+      "expires": "2028-01-29",
+      "updated": "2025-08-30",
+      "registrar": "Bluehost Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "mastluner.club": {
+      "registered": true,
+      "created": "2026-03-11",
+      "expires": "2027-03-11",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "matthiasli.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "mbml-writer-info.info": {
+      "registered": true,
+      "created": "2026-01-23",
+      "expires": "2027-01-23",
+      "updated": "2026-08-12",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "mebeliotmasiv.com": {
+      "registered": true,
+      "created": "2026-02-19",
+      "expires": "2027-02-19",
+      "updated": "2026-02-19",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "microsoft-tools.com": {
+      "registered": true,
+      "created": "2026-02-03",
+      "expires": "2027-02-03",
+      "updated": "2026-02-11",
+      "registrar": "Key-Systems GmbH",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "microsoft.com": {
+      "registered": true,
+      "created": "1991-05-02",
+      "expires": "2027-05-03",
+      "updated": "2026-01-29",
+      "registrar": "MarkMonitor Inc.",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited",
+        "client update prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "millersteel.digital": {
+      "registered": true,
+      "created": "2026-03-31",
+      "expires": "2027-03-31",
+      "updated": "2026-09-26",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server delete prohibited",
+        "server hold",
+        "client transfer prohibited",
+        "server transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "mmdis-worls.com": {
+      "registered": true,
+      "created": "2026-01-26",
+      "expires": "2027-01-26",
+      "updated": "2026-01-26",
+      "registrar": "Hello Internet Corp",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "motokimasuo.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "ms-office.services": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "ms-offices.com": {
+      "registered": true,
+      "created": "2025-03-23",
+      "expires": "2028-03-23",
+      "updated": "2025-03-23",
+      "registrar": "Squarespace Domains LLC",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "mymexico.social": {
+      "registered": true,
+      "created": "2026-01-03",
+      "expires": "2027-01-03",
+      "updated": "2026-08-11",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "mywalletsss.store": {
+      "registered": true,
+      "created": "2026-02-26",
+      "expires": "2027-02-26",
+      "updated": "2026-05-01",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "nationalinterestparty.com": {
+      "registered": true,
+      "created": "2017-05-06",
+      "expires": "2028-05-06",
+      "updated": "2026-05-07",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "navigatorshub.com": {
+      "registered": true,
+      "created": "2026-03-25",
+      "expires": "2027-03-25",
+      "updated": "2026-03-28",
+      "registrar": "Hosting Concepts B.V. d/b/a Registrar.eu",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "necropatia.com": {
+      "registered": true,
+      "created": "2026-06-23",
+      "expires": "2027-06-23",
+      "updated": "2026-06-23",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "nightflamevortex.top": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-06-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "o-parana.com": {
+      "registered": true,
+      "created": "2026-02-25",
+      "expires": "2027-02-25",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "oceanvw.click": {
+      "registered": true,
+      "created": "2026-08-19",
+      "expires": "2027-08-19",
+      "updated": "2026-08-24",
+      "registrar": "Dynadot, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "okhash.org": {
+      "registered": true,
+      "created": "2026-03-19",
+      "expires": "2027-03-19",
+      "updated": "2026-08-12",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "opencode-setup-al.com": {
+      "registered": true,
+      "created": "2026-08-25",
+      "expires": "2027-08-25",
+      "updated": "2026-09-06",
+      "registrar": "Dominet (HK) Limited",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "opencodeoptlons.com": {
+      "registered": true,
+      "created": "2026-08-24",
+      "expires": "2027-08-24",
+      "updated": "2026-10-12",
+      "registrar": "Dominet (HK) Limited",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-12"
+    },
+    "openxmlformat.org": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "orioncoding.com": {
+      "registered": true,
+      "created": "2025-09-12",
+      "expires": "2027-09-12",
+      "updated": "2026-09-13",
+      "registrar": "Unstoppable Domains Inc.",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "palshona.com": {
+      "registered": true,
+      "created": "2026-03-02",
+      "expires": "2027-03-02",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "payloadrpc.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "perrine90-deltajohnsons.com": {
+      "registered": true,
+      "created": "2026-04-08",
+      "expires": "2027-04-08",
+      "updated": "2026-04-16",
+      "registrar": "MAT BAO CORPORATION",
+      "status": [
+        "client delete prohibited",
+        "client hold",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "polblxpnl.space": {
+      "registered": true,
+      "created": "2026-03-12",
+      "expires": "2027-03-12",
+      "updated": "2026-04-29",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-10-05"
+    },
+    "polymarket-clob.com": {
+      "registered": true,
+      "created": "2026-02-21",
+      "expires": "2027-02-21",
+      "updated": "2026-04-09",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "pomozzi.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "publisherresolution.com": {
+      "registered": true,
+      "created": "2026-03-31",
+      "expires": "2027-03-31",
+      "updated": "2026-05-19",
+      "registrar": "Metaregistrar BV",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "regancontrols.com": {
+      "registered": true,
+      "created": "2026-02-16",
+      "expires": "2027-02-16",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "resolveissue.org": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "resumeacceptable.com": {
+      "registered": true,
+      "created": "2026-03-31",
+      "expires": "2027-03-31",
+      "updated": "2026-04-16",
+      "registrar": "Metaregistrar BV",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "rg-telemetry.sbs": {
+      "registered": true,
+      "created": "2026-06-10",
+      "expires": "2027-06-10",
+      "updated": "2026-06-15",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "rubysen.com": {
+      "registered": true,
+      "created": "2026-05-18",
+      "expires": "2027-05-18",
+      "updated": "2026-05-18",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "salinasrent.com": {
+      "registered": true,
+      "created": "2026-02-17",
+      "expires": "2027-02-17",
+      "updated": "2026-03-26",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "sasuke.dev": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "sfrclak.com": {
+      "registered": true,
+      "created": "2026-03-30",
+      "expires": "2027-03-30",
+      "updated": "2026-03-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "shadowemberstrike.top": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-06-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "shiny-dev.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "shopandtravelusa.com": {
+      "registered": true,
+      "created": "2017-04-06",
+      "expires": "2028-04-06",
+      "updated": "2026-04-07",
+      "registrar": "GoDaddy.com, LLC",
+      "status": [
+        "client delete prohibited",
+        "client renew prohibited",
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "simultaneouslypower.com": {
+      "registered": true,
+      "created": "2026-06-12",
+      "expires": "2027-06-12",
+      "updated": "2026-06-12",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "sistemablackatz.com": {
+      "registered": true,
+      "created": "2026-02-04",
+      "expires": "2027-02-04",
+      "updated": "2026-02-04",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "sj98xe4.xyz": {
+      "registered": true,
+      "created": "2026-05-27",
+      "expires": "2027-05-27",
+      "updated": "2026-07-23",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "sjrhs.org": {
+      "registered": true,
+      "created": "2026-03-11",
+      "expires": "2027-03-11",
+      "updated": "2026-08-12",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "smdh7.surf": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-08-04",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "solidactivate.com": {
+      "registered": true,
+      "created": "2026-02-05",
+      "expires": "2027-02-05",
+      "updated": "2026-06-19",
+      "registrar": "Hello Internet Corp",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "sparkwebsolutions.space": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "spmoe.xyz": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "spogear.click": {
+      "registered": true,
+      "created": "2026-09-13",
+      "expires": "2027-09-13",
+      "updated": "2026-09-18",
+      "registrar": "Dynadot, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "sslgateway001.com": {
+      "registered": true,
+      "created": "2026-01-13",
+      "expires": "2027-01-13",
+      "updated": "2026-01-13",
+      "registrar": "Hello Internet Corp",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "st0746.net": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "starbucls.xyz": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "stormvenomforge.top": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-06-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "template-openxml.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "th-updates.sbs": {
+      "registered": true,
+      "created": "2026-06-07",
+      "expires": "2027-06-07",
+      "updated": "2026-06-12",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "tklovers.com": {
+      "registered": true,
+      "created": "2026-07-09",
+      "expires": "2027-07-09",
+      "updated": "2026-07-09",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-20"
+    },
+    "tokio-sallys.net": {
+      "registered": true,
+      "created": "2026-03-23",
+      "expires": "2027-03-23",
+      "updated": "2026-03-23",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "tranzed.org": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-08-12",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "trust.com": {
+      "registered": true,
+      "created": "1997-06-06",
+      "expires": "2027-06-05",
+      "updated": "2026-06-06",
+      "registrar": "Realtime Register B.V.",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "tsagent.xyz": {
+      "registered": true,
+      "created": "2025-10-07",
+      "expires": "2026-10-07",
+      "updated": "2025-11-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "ttzcloud.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "twicegrand.com": {
+      "registered": true,
+      "created": "2026-03-23",
+      "expires": "2027-03-23",
+      "updated": "2026-03-23",
+      "registrar": "Tucows Domains Inc.",
+      "status": [
+        "client transfer prohibited",
+        "client update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "url2.ml": {
+      "registered": true,
+      "created": "2023-08-11",
+      "expires": "2026-08-11",
+      "updated": "2026-09-12",
+      "registrar": "INWX GmbH",
+      "status": [
+        "redemption period",
+        "inactive",
+        "server hold",
+        "client transfer prohibited",
+        "DS automation disabled",
+        "NS automation disabled"
+      ],
+      "checked": "2026-10-05"
+    },
+    "validator.uno": {
+      "registered": true,
+      "created": "2025-11-26",
+      "expires": "2026-11-26",
+      "updated": "2026-05-08",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "velnoderic.com": {
+      "registered": true,
+      "created": "2026-07-27",
+      "expires": "2027-07-27",
+      "updated": "2026-07-27",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "vintashmarket.com": {
+      "registered": true,
+      "created": "2020-11-16",
+      "expires": "2026-11-16",
+      "updated": "2025-11-05",
+      "registrar": "Bluehost Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "voderlence.com": {
+      "registered": true,
+      "created": "2026-07-27",
+      "expires": "2027-07-27",
+      "updated": "2026-07-27",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "voidravenstorm.top": {
+      "registered": true,
+      "created": "2026-06-05",
+      "expires": "2027-06-05",
+      "updated": "2026-06-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-12"
+    },
+    "w.com": {
+      "registered": true,
+      "created": "1993-12-01",
+      "expires": "2026-12-08",
+      "updated": "2025-12-09",
+      "registrar": "RESERVED-Internet Assigned Numbers Authority",
+      "status": [
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "w3capi.marketing": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "waygatterol002.com": {
+      "registered": true,
+      "created": "2026-02-19",
+      "expires": "2027-02-19",
+      "updated": "2026-02-19",
+      "registrar": "Hello Internet Corp",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-10-05"
+    },
+    "web.com": {
+      "registered": true,
+      "created": "1996-07-02",
+      "expires": "2033-07-01",
+      "updated": "2024-11-08",
+      "registrar": "Register.com - Network Solutions, LLC",
+      "status": [
+        "client transfer prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "wecreateproblems.org": {
+      "registered": true,
+      "created": "2026-05-07",
+      "expires": "2027-05-07",
+      "updated": "2026-08-11",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "winstonjs.site": {
+      "registered": true,
+      "created": "2026-03-30",
+      "expires": "2027-03-30",
+      "updated": "2026-04-29",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-10-05"
+    },
+    "wiselystarting.com": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-18",
+      "registrar": "PDR Ltd. d/b/a PublicDomainRegistry.com",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-11"
+    },
+    "word-template.net": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "work.com": {
+      "registered": true,
+      "created": "1998-02-18",
+      "expires": "2028-02-17",
+      "updated": "2026-01-16",
+      "registrar": "MarkMonitor Inc.",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited",
+        "client update prohibited",
+        "server delete prohibited",
+        "server transfer prohibited",
+        "server update prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "wpuadmin.shop": {
+      "registered": true,
+      "created": "2026-03-06",
+      "expires": "2027-03-06",
+      "updated": "2026-09-30",
+      "registrar": "Global Domain Group LLC",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "xuiaxwx.com": {
+      "registered": false,
+      "checked": "2026-10-11"
+    },
+    "yco.com": {
+      "registered": true,
+      "created": "1996-07-05",
+      "expires": "2031-07-04",
+      "updated": "2023-02-14",
+      "registrar": "eNom, LLC",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-05"
+    },
+    "zkservice.cloud": {
+      "registered": false,
+      "checked": "2026-10-05"
+    },
+    "zmwebsdk.com": {
+      "registered": false,
+      "checked": "2026-10-05"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{#
+  partials/tx-link.njk: text linked to the transaction that wrote a value
+  on-chain, on the chain's public block explorer (scripts/lib/explorers.js).
+  Plain text when there is no transaction or the chain has no explorer listed.
+
+  Usage: {% set txLink = { text: c.host, tx: c.first_tx, code: true } %}{% include "partials/tx-link.njk" %}
+  where tx is { chain, hash } or null, and `code` sets the text in <code>.
+
+  DELIBERATELY ON ONE LINE: src/etherhiding/index.md includes it through
+  Markdown.
+#}{% set _txUrl = (txLink.tx.hash | explorerUrl(txLink.tx.chain, "tx")) if txLink.tx else null %}{% if _txUrl %}{% set externalLink = { url: _txUrl, text: txLink.text, code: txLink.code, title: "The transaction that wrote it, on " + (txLink.tx.chain | explorerName) } %}{% include "partials/external-link.njk" %}{% elif txLink.code %}<code>{{ txLink.text }}</code>{% else %}{{ txLink.text }}{% endif -%}

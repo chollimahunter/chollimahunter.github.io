@@ -1,0 +1,143 @@
+name: Sync IT Worker Datasets
+
+# Weekly check against DTEX's public i3 Threat Advisory email-IOC appendix
+# and Spur's published Astrill VPN exit list (see
+# docs/sync-dtex-itworker-emails.md and docs/sync-spur-astrill-ips.md).
+# Never commits directly to main: opens a pull request only when the
+# source data actually changed, so a human reviews any new/removed
+# entries before they go live, same as every other content change on
+# this site.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Monday 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md). This workflow stays
+# on manual review; no step reads the value until a merge step is added.
+env:
+  AUTO_MERGE: "false"
+
+# So a manual dispatch of this workflow cannot run at the same time as the
+# cron-triggered run on the same branch and race to open two competing PRs.
+concurrency:
+  group: sync-itworker-datasets
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      - name: Run DTEX email-IOC sync
+        id: sync
+        shell: bash
+        run: node scripts/sync-dtex-itworker-emails.js | tee sync-output.txt
+        continue-on-error: true
+
+      # Each sync writes its own dataset object and reports its own CHANGED
+      # line; the step below opens one pull request if either changed.
+      - name: Run Spur Astrill VPN list sync
+        id: sync_spur
+        shell: bash
+        run: node scripts/sync-spur-astrill-ips.js | tee -a sync-output.txt
+        continue-on-error: true
+
+      # IPRoyal's public proxy directory: a snapshot the sync replaces weekly.
+      - name: Run IPRoyal free proxy list sync
+        id: sync_iproyal
+        shell: bash
+        run: node scripts/sync-iproyal-free-proxies.js | tee -a sync-output.txt
+        continue-on-error: true
+
+      # Network kinds for any address the syncs just added, so a new exit or
+      # proxy does not wait for a manual run of the enricher.
+      - name: Enrich IP network kinds
+        if: steps.sync_spur.outcome == 'success' || steps.sync_iproyal.outcome == 'success'
+        shell: bash
+        run: node scripts/enrich-ips.js | tee -a enrich-output.txt
+        continue-on-error: true
+
+      - name: Extract change status and summary
+        id: status
+        run: |
+          if grep -q "CHANGED=true" sync-output.txt; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+          {
+            echo "summary<<SYNC_SUMMARY_EOF"
+            grep -E "^(Fetched|Added:|Removed:)" sync-output.txt || true
+            echo "SYNC_SUMMARY_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request with updated dataset
+        id: cpr
+        if: steps.status.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: sync IT-worker identifier datasets"
+          title: "Weekly sync: IT-worker identifier datasets"
+          body: |
+            Automated weekly sync against DTEX's i3 Threat Advisory, Spur's
+            Astrill VPN exit list and IPRoyal's free proxy list (see
+            `docs/sync-dtex-itworker-emails.md`, `docs/sync-spur-astrill-ips.md`
+            and `docs/sync-iproyal-free-proxies.md`).
+
+            This PR is opened automatically ONLY when the fetched entry
+            list differs from what's currently checked in. Review the
+            diff in `src/_data/iocs/itworker-datasets.json` below before
+            merging — new entries are unverified leads (per DTEX's own
+            disclaimer carried in the dataset's `disclaimer` field), not
+            confirmed findings, an Astrill exit is shared by every customer
+            of the service, and a free proxy is used by anyone who finds it. Full added/removed lists are in the diff
+            itself, not repeated here.
+
+            Validation runs as a dispatched `ci` check on this branch; the
+            pull request can be merged once it is green.
+
+            ```
+            ${{ steps.status.outputs.summary }}
+            ```
+          branch: sync/itworker-datasets
+          delete-branch: true
+          # Only the dataset, not the tee'd run log.
+          add-paths: |
+            src/_data/iocs/itworker-datasets.json
+            scripts/data/ip-lookups.json
+          labels: automated,data-sync
+
+      # Pull requests opened with GITHUB_TOKEN trigger no pull_request runs, so
+      # the validation workflow is dispatched on the branch instead.
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+
+      # Each sync carries continue-on-error so one failing does not stop the
+      # other or the pull request for what did succeed. This step fails the
+      # run only when every sync failed.
+      - name: Report failed syncs
+        if: always() && steps.sync.outcome == 'failure' && steps.sync_spur.outcome == 'failure' && steps.sync_iproyal.outcome == 'failure'
+        run: |
+          echo "::error::The DTEX, Spur and IPRoyal syncs all failed; see the step logs."
+          echo "### Sync run failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "The DTEX, Spur and IPRoyal syncs all failed." >> "$GITHUB_STEP_SUMMARY"
+          exit 1

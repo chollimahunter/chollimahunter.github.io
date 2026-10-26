@@ -1,0 +1,35 @@
+{#
+  partials/profiles-tab-bar.njk — shared tab bar for the Remote Workers section.
+
+  Usage: set `active_tab` to "workers", "personas", "pictures", "candidates"
+  or "red-flags" (or the id of a tab in `privateTabs`, which only a private
+  build defines; see src/_data/privatePages.js) before including:
+    {% set active_tab = "workers" %}
+    {% include "partials/profiles-tab-bar.njk" %}
+
+  Remote Workers carries the searchable indicator index; Personas carries the
+  fabricated identities behind the reported LinkedIn accounts; Named IT Workers
+  carries the photo grid of the real people named in law-enforcement notices;
+  Potential DPRK Profiles carries unconfirmed leads awaiting human review — see
+  src/remote-workers/candidates/index.njk for what that page does and
+  does not assert.
+
+  Potential DPRK Profiles moved from /remote-workers/linkedin-candidates/ to
+  /remote-workers/candidates/ once the queue stopped being only LinkedIn
+  profiles; a redirect stub keeps the old address working.
+  The Named IT Workers tab keeps the /remote-workers/pictures/ URL it was
+  first published under, so existing links to it keep resolving.
+  Sources moved out of this bar to a top-level page at /sources/ — it covers
+  the whole site, not just this section.
+
+  Adding a further tab means adding one more <a> here and a matching active_tab
+  value at the call site — no other file needs to change.
+#}
+<nav class="tab-bar" aria-label="Remote Workers sections">
+  <a class="tab-bar__link{% if active_tab == 'workers' %} tab-bar__link--active{% endif %}" href="/remote-workers/"{% if active_tab == 'workers' %} aria-current="page"{% endif %}>Remote Workers</a>
+  <a class="tab-bar__link{% if active_tab == 'personas' %} tab-bar__link--active{% endif %}" href="/remote-workers/personas/"{% if active_tab == 'personas' %} aria-current="page"{% endif %}>Personas</a>
+  <a class="tab-bar__link{% if active_tab == 'red-flags' %} tab-bar__link--active{% endif %}" href="/remote-workers/red-flags/"{% if active_tab == 'red-flags' %} aria-current="page"{% endif %}>Red Flags</a>
+  <a class="tab-bar__link{% if active_tab == 'pictures' %} tab-bar__link--active{% endif %}" href="/remote-workers/pictures/"{% if active_tab == 'pictures' %} aria-current="page"{% endif %}>Named IT Workers</a>
+  <a class="tab-bar__link{% if active_tab == 'candidates' %} tab-bar__link--active{% endif %}" href="/remote-workers/candidates/"{% if active_tab == 'candidates' %} aria-current="page"{% endif %}>Potential DPRK Profiles</a>
+  {% for tab in privateTabs %}<a class="tab-bar__link{% if active_tab == tab.id %} tab-bar__link--active{% endif %}" href="{{ tab.href }}"{% if active_tab == tab.id %} aria-current="page"{% endif %}>{{ tab.label }}</a>{% endfor %}
+</nav>

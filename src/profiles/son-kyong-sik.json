@@ -1,0 +1,83 @@
+{
+  "slug": "son-kyong-sik",
+  "display_name": "Son Kyong Sik",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on January 16, 2025 under Executive Order 13722, program tag DPRK3, for acting or purporting to act for or on behalf of Korea Osong Shipping Corporation",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Shenyang, China"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "April 20, 1959"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "381220302 (North Korea)"
+      },
+      {
+        "label": "Linked to",
+        "value": "Korea Osong Shipping Corporation, a.k.a. Osong Shipping Company"
+      },
+      {
+        "label": "Name in Korean-language reporting",
+        "value": "송경식, which romanizes as Song Kyong Sik rather than the Son Kyong Sik that OFAC publishes. Radio Free Asia and the Korea Ilbo both name 송경식 as the Korea Osong Shipping representative designated alongside 정인철 on the same day, so the person is the same and the two renderings of the surname differ."
+      }
+    ],
+    "caution": "Son Kyong Sik is the Shenyang, China-based chief representative of Department 53's Korea Osong Shipping Co. Department 53 front company Korea Osong Shipping Co has maintained delegations of DPRK IT workers in Laos since at least 2022. As directed by their on-site supervisors, these workers have used aliases to communicate with clients and generate revenue for the DPRK regime, on IT projects such as cryptocurrency exchanges, website and mobile applications."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, January 16, 2025: North Korea Designations (Department 53, Korea Osong Shipping, Chonsurim Trading)",
+      "url": "https://ofac.treasury.gov/recent-actions/20250116",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-01-16",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Targets IT Worker Network Generating Revenue for DPRK Weapons Programs",
+      "url": "https://home.treasury.gov/news/press-releases/jy2790",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-01-16",
+      "type": "press_release"
+    },
+    {
+      "title": "미 재무부, 북 IT 노동자 파견 관련 개인∙기관 추가 제재 (U.S. Treasury sanctions further individuals and entities over the dispatch of DPRK IT workers)",
+      "url": "https://www.rfa.org/korean/in_focus/nk_nuclear_talks/us-treasury-additional-sanctions-north-korea-it-workers-01162025151955.html",
+      "publisher": "Radio Free Asia (Korean service)",
+      "date": "2025-01-16",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-19",
+  "name_korean": "송경식",
+  "name_korean_provenance": "cited"
+}

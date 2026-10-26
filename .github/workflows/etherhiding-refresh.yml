@@ -1,0 +1,211 @@
+name: EtherHiding watchlist refresh
+
+# Re-reads every contract, wallet and transaction in
+# src/_data/iocs/etherhiding-watchlist.json from public RPC endpoints and
+# writes src/_data/etherhidingFindings/latest.json, which /etherhiding/results/
+# renders. A resolver contract exists to be rewritten: EtherRAT's operators
+# rotate the C2 a contract hands back for about a dollar a write, and the
+# NullReceiver wallets move to a new address every few days, so a watchlist
+# read once is stale within a week. The script prints CHANGED=true only when an
+# observation moved (a rotation, new code, an operator's nonce), and only then
+# does this open or update the standing pull request. No API key is used: the
+# endpoints below are public and keyless. See docs/etherhiding-contract-check.md.
+
+on:
+  schedule:
+    - cron: "15 6 */2 * *" # every other day 06:15 UTC (odd days of the month), to save runner minutes
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One-line toggle for opt-in auto-merge (see docs/ci.md): "true" merges this
+# workflow's pull request once its dispatched ci run is green; "false" leaves
+# every pull request for manual review.
+env:
+  AUTO_MERGE: "true"
+
+concurrency:
+  group: etherhiding-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write
+      pull-requests: write
+      actions: write
+      issues: write
+    outputs:
+      merge-reason: ${{ steps.merge.outputs.reason }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: "24"
+
+      # Several endpoints per chain form a failover pool. 1rpc.io serves
+      # eth_getTransactionBySenderAndNonce, which following a NullReceiver
+      # resolver needs and most public endpoints do not.
+      - name: Refresh
+        id: refresh
+        shell: bash
+        run: |
+          set -o pipefail
+          # The findings as the previous run left them, for the gate below.
+          cp src/_data/etherhidingFindings/latest.json previous-latest.json
+          node scripts/check-etherhiding-contracts.js --refresh \
+            --rpc ethereum=https://eth.drpc.org \
+            --rpc ethereum=https://eth.llamarpc.com \
+            --rpc ethereum=https://ethereum-rpc.publicnode.com \
+            --rpc ethereum=https://1rpc.io/eth \
+            --rpc bsc=https://bsc-rpc.publicnode.com \
+            --rpc bsc=https://bsc-dataseed1.defibit.io \
+            --rpc bsc=https://bsc-dataseed1.ninicoin.io \
+            --rpc polygon=https://polygon-bor-rpc.publicnode.com \
+            --rpc polygon=https://polygon.drpc.org \
+            --rpc polygon=https://1rpc.io/matic \
+            --rpc sepolia=https://ethereum-sepolia-rpc.publicnode.com \
+            --rpc sepolia=https://1rpc.io/sepolia \
+            --indexer ethereum=https://eth.blockscout.com/api \
+            --indexer ethereum=https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api \
+            --indexer polygon=https://polygon.blockscout.com/api \
+            --indexer sepolia=https://eth-sepolia.blockscout.com/api \
+            | tee refresh.log
+          echo "changed=$(grep -o 'CHANGED=[a-z]*' refresh.log | tail -1 | cut -d= -f2)" >> "$GITHUB_OUTPUT"
+          # The whole findings file is compared with the previous run's. What a
+          # refresh adds merges on its own and is listed for review: the
+          # tracker marks a host nobody has reviewed as unreviewed, and nothing
+          # here files an indicator. Data loss, rewritten history, a degraded
+          # run or anything the gate does not recognise holds the pull request
+          # for a person. See scripts/lib/etherhiding-review-gate.js.
+          needs_review=true
+          if node scripts/etherhiding-review-gate.js src/_data/etherhidingFindings/latest.json previous-latest.json | tee gate.log | grep -q "^NEEDS_REVIEW=false$"; then
+            needs_review=false
+          fi
+          echo "needs_review=$needs_review" >> "$GITHUB_OUTPUT"
+
+      - name: Pull request body
+        if: steps.refresh.outputs.changed == 'true'
+        run: |
+          {
+            echo "Daily re-read of the EtherHiding watchlist found a change on-chain."
+            echo
+            echo "Each line under \"changes\" in src/_data/etherhidingFindings/latest.json says what moved. A value marked NOT IN WATCHLIST is a host or address the operator now points at that no entry carries yet; it is an on-chain observation, operators also write decoy values, and it needs review before it is filed as an indicator."
+            echo
+            echo 'Validation runs as a dispatched `ci` check on this branch; the pull request can be merged once it is green.'
+            echo
+            echo '```'
+            grep -E "^(c2|review|new):" gate.log | head -80 || true
+            tail -2 gate.log
+            echo '```'
+          } > pr-body.md
+
+      - name: Open or update pull request
+        id: cpr
+        if: steps.refresh.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          commit-message: "chore: EtherHiding watchlist refresh"
+          title: "EtherHiding watchlist refresh"
+          body-path: pr-body.md
+          branch: etherhiding/refresh
+          add-paths: |
+            src/_data/etherhidingFindings/latest.json
+          labels: automated,data-sync
+
+      # Pull requests opened with GITHUB_TOKEN trigger no pull_request runs, so
+      # the validation workflow is dispatched on the branch instead.
+      - name: Validate the pull request branch
+        if: steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: ${{ steps.cpr.outputs.pull-request-branch }}
+        run: gh workflow run ci.yml --repo "$GITHUB_REPOSITORY" --ref "$BRANCH"
+
+      # The scheduled run opens a pull request with GITHUB_TOKEN, which triggers
+      # no push run when merged, so the action also dispatches deploy.yml.
+      - name: Hold for review
+        if: env.AUTO_MERGE == 'true' && steps.refresh.outputs.needs_review == 'true' && (steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated')
+        run: |
+          echo "::notice::The refresh recorded a change written by the operator; the pull request is left for review rather than merged."
+          grep "^review:" gate.log || true
+
+      - name: Return to the base commit
+        if: env.AUTO_MERGE == 'true' && steps.refresh.outputs.needs_review != 'true' && (steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated')
+        run: git checkout --quiet "$GITHUB_SHA"
+
+      - name: Merge when ci is green
+        id: merge
+        if: env.AUTO_MERGE == 'true' && steps.refresh.outputs.needs_review != 'true' && (steps.cpr.outputs.pull-request-operation == 'created' || steps.cpr.outputs.pull-request-operation == 'updated')
+        uses: ./.github/actions/merge-when-green
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          branch: ${{ steps.cpr.outputs.pull-request-branch }}
+          expected-branch: etherhiding/refresh
+
+      # One standing issue is the review queue: a merged run lists the values
+      # it added, a held run says why it held. Values are the operator's, so
+      # they arrive only through a file into a code block (see the gate's
+      # `inert`), never through interpolation.
+      - name: Post to the review queue
+        if: always() && steps.cpr.outputs.pull-request-number != ''
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ steps.cpr.outputs.pull-request-number }}
+          MERGED: ${{ steps.merge.outputs.merged }}
+          NEEDS_REVIEW: ${{ steps.refresh.outputs.needs_review }}
+        run: |
+          title="EtherHiding: on-chain values to review"
+          if [ "$MERGED" = "true" ]; then
+            grep -q "^new:" gate.log || exit 0
+            head_line="Merged #$PR. New on-chain values, now on the tracker marked unreviewed. Mark a parked value in \`scripts/data/etherhiding-c2-review.json\`; file a real C2 host in the watchlist to make it an indicator."
+            lines=$(grep -E "^(c2|new):" gate.log)
+          elif [ "$NEEDS_REVIEW" = "true" ]; then
+            head_line="Held #$PR for review instead of merging it:"
+            lines=$(grep -E "^(c2|review|new):" gate.log)
+          else
+            exit 0
+          fi
+          printf '### %s\n\n%s\n\n```\n%s\n```\n\n' "$(date -u +%Y-%m-%d)" "$head_line" "$lines" > review-comment.md
+          # Later runs edit the open issue's body, newest entry first, rather
+          # than comment: GitHub emails on a comment but not on an edit.
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number,title \
+            | jq -r --arg t "$title" '[.[] | select(.title == $t)][0].number // empty')
+          if [ -n "$number" ]; then
+            gh issue view "$number" --repo "$GITHUB_REPOSITORY" --json body --jq .body >> review-comment.md
+            head -c 60000 review-comment.md > review-body.md
+            gh issue edit "$number" --repo "$GITHUB_REPOSITORY" --body-file review-body.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file review-comment.md
+          fi
+
+  notify-failure:
+    needs: [refresh]
+    if: failure() || needs.refresh.outputs.merge-reason == 'ci-failure' || needs.refresh.outputs.merge-reason == 'merge-refused'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: .github/actions
+
+      - name: Open or update the failure issue
+        uses: ./.github/actions/notify-failure
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+          message: ${{ (needs.refresh.outputs.merge-reason == 'merge-refused' && 'GitHub refused the automatic merge, so the pull request is waiting for you. Approve its pending ci run if one is waiting, then merge it; see the Auto-merge section of docs/ci.md.') || 'The scheduled run failed.' }}

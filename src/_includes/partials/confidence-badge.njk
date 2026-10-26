@@ -1,0 +1,12 @@
+{#
+  partials/confidence-badge.njk — an attribution-confidence level as a badge.
+
+  Usage: set `confidenceLevel` before including.
+    {% set confidenceLevel = hunt.confidence_level %}
+    {% include "partials/confidence-badge.njk" %}
+
+  Renders the bare level ("confirmed", "high", "medium", "low"). .badge sets
+  the uppercase, so the wording is the same on every page; a caller that wants
+  the word "confidence" next to it writes that in its own text. DELIBERATELY
+  ON ONE LINE, so it sits inline inside a heading or a sentence.
+#}<span class="badge badge--{{ confidenceLevel }}">{{ confidenceLevel }}</span>

@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 2
+    groups:
+      npm:
+        patterns:
+          - "*"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 2
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+
+  # The hash-pinned requirements for gh-fake-analyzer sit in
+  # .github/requirements/, which Dependabot finds from this directory. A bump
+  # also needs GH_FAKE_ANALYZER_VERSION in gh-analyzer.yml changed to match
+  # (docs/ci.md).
+  - package-ecosystem: "pip"
+    directory: "/.github"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      pip:
+        patterns:
+          - "*"
+    # gh-fake-analyzer 1.0.2 pins these exactly, and aiohttp 3.14 needs
+    # multidict below 7, so a bump past them cannot install. Lift an entry when
+    # a new gh-fake-analyzer or aiohttp release relaxes the pin.
+    ignore:
+      - dependency-name: "requests"
+      - dependency-name: "python-dotenv"
+      - dependency-name: "python-dateutil"
+      - dependency-name: "gitpython"
+      - dependency-name: "urllib3"
+      - dependency-name: "multidict"
+        update-types: ["version-update:semver-major"]

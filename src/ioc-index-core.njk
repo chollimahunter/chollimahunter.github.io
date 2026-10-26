@@ -1,0 +1,24 @@
+---
+permalink: "/assets/data/ioc-search.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/ioc-index-core.njk — the search index without its context quotes
+  =====================================================================
+  The same payload as /assets/data/ioc-index.json (see src/ioc-index.njk)
+  minus the `contexts` table, which is 42% of the bytes and only matters once
+  a reader searches for a phrase from a report. src/assets/js/ioc-search.js
+  fetches this first and has a working search as soon as it lands, then
+  fetches /assets/data/ioc-contexts.json in the background and re-runs the
+  current query when the quotes arrive.
+
+  To keep the file small, a record leaves out any key whose value is null,
+  `[]` or 0, and an `r` of "remote-workers"; ioc-search.js reads a missing
+  key as exactly that. See searchCore() in iocIndex.js.
+
+  Source entries still carry their index into the contexts table, so the two
+  files join by position. Both are built from one call, so they cannot drift.
+  The full single-file index stays where it is for the no-script fallback and
+  for anyone consuming it as data.
+#}
+{{ iocIndex.remote_workers.compact_core | dump | safe }}

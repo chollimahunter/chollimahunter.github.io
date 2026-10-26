@@ -1,0 +1,33 @@
+{#
+  partials/external-link.njk — the one way a template turns an address from
+  data into a link. Every citation, source row and account link whose URL
+  comes from a data file goes through here, so the rule below holds on every
+  page at once.
+
+  The rule: a site the operators host or control is never clickable. The
+  `isOperatorSite` filter (.eleventy.js) says whether an address is one of
+  those, and such an address is printed as text in <code> with a visible
+  "not linked" marker instead. The same applies to a malicious repository or
+  package that is still online, which the caller marks with `plain`, as
+  SECURITY.md sets out. Platform accounts (GitHub, LinkedIn, Telegram and the
+  rest) are not operator sites and stay linked.
+
+  Usage: set `externalLink` before including.
+    {% set externalLink = { url: source.url, text: source.title } %}
+    {% include "partials/external-link.njk" %}
+
+  Fields:
+    url      the address, from data
+    text     optional; the link text, the address itself when omitted
+    code     optional; true to set the link text in <code>
+    rel      optional; defaults to "noopener noreferrer". A call site that
+             carries nofollow passes its full rel here.
+    sameTab  optional; true to open the link in the same tab
+    title    optional; a title attribute for the link, e.g. the full
+             citation behind a short label
+    plain    optional; true to print the address as text whatever it is
+
+  DELIBERATELY ON ONE LINE: src/etherhiding/index.md includes it through
+  Markdown, where a raw HTML block with a line break inside is read as
+  markdown.
+#}{% set _linkText = externalLink.text or externalLink.url %}{% if externalLink.plain or (externalLink.url | isOperatorSite) %}{% if _linkText != externalLink.url %}{{ _linkText }} {% endif %}<code>{{ externalLink.url }}</code> <span class="ioc-result__meta">not linked</span>{% else %}<a href="{{ externalLink.url }}" rel="{{ externalLink.rel or 'noopener noreferrer' }}"{% if externalLink.title %} title="{{ externalLink.title }}"{% endif %}{% if not externalLink.sameTab %} target="_blank"{% endif %}>{% if externalLink.code %}<code>{{ _linkText }}</code>{% else %}{{ _linkText }}{% endif %}</a>{% endif -%}

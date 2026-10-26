@@ -1,0 +1,41 @@
+---
+permalink: "/feed.xml"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/feed.njk — an Atom feed of the dated content on the site: profiles and
+  hunts, each of which carries a last_updated date in its data file. Indicator
+  records carry no date of their own, so they are not listed; a reader who
+  wants those should pull /assets/data/ioc-index.json instead.
+#}
+{%- set entries = [] -%}
+{%- for profile in collections.profiles -%}
+  {%- if profile.last_updated -%}
+    {%- set entries = (entries.push({ url: "/profiles/" + profile.slug + "/", title: profile.display_name, updated: profile.last_updated, summary: profile.disclaimer }), entries) -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- for hunt in hunts.hunts -%}
+  {%- if hunt.last_updated -%}
+    {%- set entries = (entries.push({ url: "/hunts/" + hunt.id + "/", title: hunt.title, updated: hunt.last_updated, summary: hunt.summary }), entries) -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- set entries = entries | sort(true, false, "updated") -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chollima Hunter updates</title>
+  <subtitle>Profiles and hunting guidance added or revised on Chollima Hunter, a public DPRK cyber threat-intelligence tracker.</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <id>{{ site.url }}/</id>
+  <updated>{% if entries.length %}{{ entries[0].updated }}T00:00:00Z{% else %}{{ iocIndex.generated_at }}{% endif %}</updated>
+  <author><name>Chollima Hunter</name></author>
+{%- for entry in entries | limit(40) %}
+  <entry>
+    <title>{{ entry.title }}</title>
+    <link href="{{ site.url }}{{ entry.url }}"/>
+    <id>{{ site.url }}{{ entry.url }}</id>
+    <updated>{{ entry.updated }}T00:00:00Z</updated>
+    <summary>{{ entry.summary | paragraphs | join(" ") }}</summary>
+  </entry>
+{%- endfor %}
+</feed>

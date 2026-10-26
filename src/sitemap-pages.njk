@@ -1,0 +1,46 @@
+---
+permalink: "/sitemap-pages.xml"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/sitemap-pages.njk — every public page except the per-indicator ones,
+  listed from the same data that builds them. Nearly every template on this
+  site sets eleventyExcludeFromCollections, so collections.all cannot be used
+  here; the sections below enumerate the static routes by hand and the
+  generated ones from their data sources. A new static page needs adding to
+  the first list, unless it is a redirect stub or a private page. /clusters/
+  is a stub, marked noindex, and Google rejects a sitemap entry it is told
+  not to index. /remote-workers/held-back/ is private: it is never written
+  by a production build. check-site.js enforces both. The
+  indicator pages live in sitemap-indicators.njk, and sitemap.njk is the
+  index that names both. A static page carries no lastmod, since the build
+  has no date for it that is not invented; profiles, hunts and clusters take
+  theirs from last_updated (a cluster's is the newest of its profiles and
+  hunts).
+#}
+{%- set static_pages = ["/", "/about/", "/remote-workers/", "/remote-workers/personas/", "/remote-workers/pictures/", "/remote-workers/candidates/", "/remote-workers/red-flags/", "/profiles/", "/hunts/", "/repo-scanner/", "/etherhiding/", "/etherhiding/results/", "/sources/", "/submit/", "/glossary/", "/guidance/", "/data/", "/indicators/", "/indicators/browse/"] -%}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for url in static_pages %}
+  <url><loc>{{ site.url }}{{ url }}</loc></url>
+{%- endfor %}
+{%- for profile in collections.profiles %}
+  <url><loc>{{ site.url }}/profiles/{{ profile.slug }}/</loc>{% if profile.last_updated %}<lastmod>{{ profile.last_updated }}</lastmod>{% endif %}</url>
+{%- endfor %}
+{%- for cluster in clusters %}
+  <url><loc>{{ site.url }}{{ cluster.url }}</loc>{% if cluster.last_updated %}<lastmod>{{ cluster.last_updated }}</lastmod>{% endif %}</url>
+{%- endfor %}
+{%- for hunt in hunts.hunts %}
+  <url><loc>{{ site.url }}/hunts/{{ hunt.id }}/</loc>{% if hunt.last_updated %}<lastmod>{{ hunt.last_updated }}</lastmod>{% endif %}</url>
+{%- endfor %}
+{%- for persona in personas %}
+  {%- set personaLastmod = iocIndex.persona_indicators[persona.slug].lastmod if iocIndex.persona_indicators[persona.slug] else null %}
+  <url><loc>{{ site.url }}/remote-workers/personas/{{ persona.slug }}/</loc>{% if personaLastmod %}<lastmod>{{ personaLastmod }}</lastmod>{% endif %}</url>
+{%- endfor %}
+{%- for candidate in candidatePages %}
+  <url><loc>{{ site.url }}{{ candidate.path }}</loc>{% if candidate.last_checked %}<lastmod>{{ candidate.last_checked }}</lastmod>{% endif %}</url>
+{%- endfor %}
+{%- for run in iocIndex.indicator_browse_pages %}
+  <url><loc>{{ site.url }}{{ run.url }}</loc></url>
+{%- endfor %}
+</urlset>

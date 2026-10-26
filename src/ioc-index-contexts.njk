@@ -1,0 +1,12 @@
+---
+permalink: "/assets/data/ioc-contexts.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/ioc-index-contexts.njk — the context quotes for the search index
+  ====================================================================
+  The `contexts` table split out of /assets/data/ioc-index.json; see
+  src/ioc-index-core.njk for why. Position n here is what a source entry's
+  context index in the core file points at.
+#}
+{{ iocIndex.remote_workers.compact_contexts | dump | safe }}

@@ -1,0 +1,49 @@
+---
+layout: base.njk
+title: "Browse indicators"
+description: "Every indicator this site holds, by type: email addresses, IP addresses, GitHub and LinkedIn accounts, wallets, packages and file hashes reported in connection with North Korean (DPRK) cyber operations, each with its own page."
+permalink: "/indicators/browse/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/indicators/browse-index.njk — the directory of the browse listing
+
+  Links to every page of every per-type run cut by browseRuns() in
+  src/_data/iocIndex.js; src/indicators/browse.njk renders the runs. /indicators/,
+  which the home page links to, lists the types and links here, so any
+  indicator page is at most four clicks from the home page. This URL is the one the
+  rest of the site links to as "Browse indicators".
+#}
+<section>
+  <h1>Browse indicators</h1>
+  <p>
+    Every indicator this site holds, {{ iocIndex.totals.all | thousands }} in
+    all, listed by type and then by value. Each value links to its own page,
+    which carries every source that reported it and the text around it. To look
+    up one value, the search on <a href="/remote-workers/">Remote Workers</a> is
+    faster.
+  </p>
+  <div class="table-scroll">
+    <table class="results-table">
+      <thead>
+        <tr><th scope="col">Type</th><th scope="col">Indicators</th><th scope="col">Pages</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in iocIndex.indicator_browse_types %}
+        <tr>
+          <th scope="row"><a href="{{ entry.url }}">{{ entry.kind.plural }}</a></th>
+          <td>{{ entry.total | thousands }}</td>
+          <td>{% for run in entry.runs %}<a href="{{ run.url }}" aria-label="{{ entry.kind.plural }}, page {{ run.number }}">{{ run.number }}</a>{% if not loop.last %} {% endif %}{% endfor %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    preset: "not-proof",
+    body: 'Compromised packages and repositories name victims. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

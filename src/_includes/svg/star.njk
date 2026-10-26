@@ -1,0 +1,30 @@
+{#
+  Reusable inline SVG partial: a red five-pointed star (DPRK flag motif).
+
+  Usage: {% include "svg/star.njk" %}
+
+  Accepts no required parameters. Optional Nunjucks context variables:
+    star_size        — CSS size for width/height (default "1em")
+    star_class       — extra class(es) to add to the <svg> element
+    star_decorative  — true to hide the star from assistive technology, where
+                       it is ornament beside text (the footer)
+
+  No external references (no xlink:href to external files, no CDN) —
+  fully self-contained per the site's zero-external-image-dependency rule.
+#}
+<svg
+  class="icon-star {{ star_class | default('') }}"
+  width="{{ star_size | default('1em') }}"
+  height="{{ star_size | default('1em') }}"
+  viewBox="0 0 100 100"
+  {% if star_decorative %}aria-hidden="true"
+  focusable="false"{% else %}role="img"
+  aria-label="Five-pointed star"{% endif %}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  {% if not star_decorative %}<title>Star</title>{% endif %}
+  <polygon
+    points="50,4 61,37 96,37 68,58 79,91 50,70 21,91 32,58 4,37 39,37"
+    fill="currentColor"
+  />
+</svg>

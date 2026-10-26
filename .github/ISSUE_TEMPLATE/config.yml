@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Submission form
+    url: https://chollimahunter.github.io/submit/
+    about: Send an indicator, a profile lead, or a correction without opening a public issue.
+  - name: Corrections and removal policy
+    url: https://chollimahunter.github.io/about/#corrections
+    about: How requests to correct or remove an entry are handled, including entries that concern a stolen identity.
+  - name: Reporting DPRK activity to law enforcement
+    url: https://chollimahunter.github.io/resources/#reporting
+    about: Where to report a suspected DPRK IT worker, a fraudulent interview, or a cryptocurrency theft. This site is not an intake point.

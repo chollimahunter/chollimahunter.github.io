@@ -1,0 +1,58 @@
+{
+  "slug": "audricus-phagnasay",
+  "display_name": "Audricus Phagnasay",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Pleaded guilty November 13, 2025, Southern District of Georgia; announced November 14, 2025",
+    "details": [
+      {
+        "label": "Age at plea",
+        "value": "24"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the Southern District of Georgia"
+      },
+      {
+        "label": "Plea",
+        "value": "Guilty to one count of wire fraud conspiracy"
+      },
+      {
+        "label": "Received",
+        "value": "At least $3,450"
+      }
+    ],
+    "caution": "Yesterday, in the U.S. District Court for the Southern District of Georgia, U.S. nationals Audricus Phagnasay, 24, Jason Salazar, 30, and Alexander Paul Travis, 34, each pleaded guilty to one count of wire fraud conspiracy. From approximately September 2019 through November 2022, Phagnasay, Salazar, and Travis provided their U.S. identities to IT workers they knew were located outside the United States so that the workers could fraudulently apply for and obtain employment with victim U.S. companies. In addition, the three defendants hosted victim U.S. company-provided laptops at their residences, and installed remote access software on those laptops without authorization, so that the IT workers could create the false appearance that they were remote working from the defendants’ residences. Each defendant also assisted overseas IT workers in passing employer vetting procedures. Travis and Salazar, in particular, appeared for drug testing on behalf of the overseas IT workers. Travis, an active-duty member of the U.S. Army at the time, received at least $51,397 for his participation in the scheme. Phagnasay and Salazar earned at least $3,450 and $4,500, respectively. The fraudulent scheme earned approximately $1.28 million in salary payments from the victim U.S. companies, the vast majority of which were sent to the IT workers overseas."
+  },
+  "sources": [
+    {
+      "title": "Justice Department Announces Nationwide Actions to Combat Illicit North Korean Government Revenue Generation Schemes",
+      "url": "https://www.justice.gov/opa/pr/justice-department-announces-nationwide-actions-combat-illicit-north-korean-government",
+      "publisher": "U.S. Department of Justice, Office of Public Affairs",
+      "date": "2025-11-14",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Audricus Phagnasay is a United States national, not a DPRK national, and is profiled here as a domestic facilitator in a DPRK IT-worker scheme. According to the Department of Justice, between about September 2019 and November 2022 he provided his own identity to IT workers he knew were outside the United States so they could obtain jobs at victim companies, hosted the companies' laptops at his residence with unauthorised remote-access software, and helped the workers pass employer vetting. He received at least $3,450 for his part in a scheme that earned about $1.28 million in salary payments.",
+    "He pleaded guilty on November 13, 2025 in the Southern District of Georgia to one count of wire fraud conspiracy. The cited release records the plea and not a sentence.",
+    "The confidence level of 'confirmed' reflects that this individual is named in Justice Department records of a federal criminal case; the cited releases describe conduct as set out in court documents and a plea, and nothing beyond what they state is asserted here."
+  ],
+  "last_updated": "2026-09-18",
+  "name_korean_not_applicable": "United States citizen and domestic facilitator rather than a DPRK national, so no Korean rendering of the name applies."
+}

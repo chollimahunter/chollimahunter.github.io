@@ -1,0 +1,79 @@
+{
+  "slug": "jong-in-chol",
+  "display_name": "Jong In Chol",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on January 16, 2025 under Executive Order 13722, program tag DPRK3, for acting or purporting to act for or on behalf of Chonsurim Trading Corporation",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Laos"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "January 5, 1979"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "390220044 (North Korea), expires May 12, 2025"
+      },
+      {
+        "label": "Linked to",
+        "value": "Chonsurim Trading Corporation, a.k.a. Korea Chonsurim Trading Corporation"
+      }
+    ],
+    "caution": "Jong In Chol is the president of Chonsurim's DPRK IT worker delegation in Laos, the revenue of which is used exclusively to support the DPRK's munitions sector. Since at least 2021, Department 53 front company Chonsurim Trading Corporation has directed a group of DPRK IT workers in Laos to use falsified identification credentials to undertake software development and other IT work for companies around the world."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, January 16, 2025: North Korea Designations (Department 53, Korea Osong Shipping, Chonsurim Trading)",
+      "url": "https://ofac.treasury.gov/recent-actions/20250116",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2025-01-16",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Targets IT Worker Network Generating Revenue for DPRK Weapons Programs",
+      "url": "https://home.treasury.gov/news/press-releases/jy2790",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2025-01-16",
+      "type": "press_release"
+    },
+    {
+      "title": "미 재무부, 북 IT 노동자 파견 관련 개인∙기관 추가 제재 (U.S. Treasury sanctions further individuals and entities over the dispatch of DPRK IT workers)",
+      "url": "https://www.rfa.org/korean/in_focus/nk_nuclear_talks/us-treasury-additional-sanctions-north-korea-it-workers-01162025151955.html",
+      "publisher": "Radio Free Asia (Korean service)",
+      "date": "2025-01-16",
+      "type": "reference"
+    }
+  ],
+  "disclaimer": [
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-09-19",
+  "name_korean": "정인철",
+  "name_korean_provenance": "cited"
+}

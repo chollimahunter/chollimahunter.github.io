@@ -1,0 +1,76 @@
+---
+layout: base.njk
+title: "Indicators"
+description: "Every indicator this site holds, across the searches it splits them between: the remote-worker index, the espionage clusters, EtherHiding on-chain infrastructure, and the repositories the PolinRider campaign compromised."
+permalink: "/indicators/"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/indicators/index.njk — the indicator hub
+
+  The parent of the per-record /indicators/{id}/ pages built by
+  indicator-page.njk, and the one place that states the site-wide total.
+
+  It exists because no single search returns everything. iocIndex assigns each
+  record an `area` and three different pages search those areas, for reasons
+  documented in src/_data/iocIndex.js — an on-chain contract and a compromised
+  repository answer different questions from an operator's email address. That
+  split is right, but it left the full figure with nowhere to live, so the
+  homepage quoted the largest area as though it were the whole index.
+
+  Every count here is derived from iocIndex.totals. Do not type one in.
+#}
+<section>
+  <h1>Indicators</h1>
+  <p>
+    This site holds {{ iocIndex.totals.all | thousands }} indicators, each with
+    its own page, citation and source passage. They are searched from several
+    places because each kind answers a different question.
+  </p>
+</section>
+
+<section>
+  <ul class="card-grid cluster-grid">
+    <li class="card"><a class="cluster-card__link" href="/remote-workers/"><span class="cluster-card__name">Remote Workers</span><span class="cluster-card__count"><span class="count-figure">{{ iocIndex.totals.remote_workers | thousands }}</span> indicators</span><span class="cluster-card__body">Indicators for the operators themselves: email addresses, GitHub and LinkedIn accounts, packages, wallets, malware hashes and infrastructure reported in connection with DPRK remote IT-worker operations and the Contagious Interview lures run alongside them.</span></a></li>
+    <li class="card"><a class="cluster-card__link" href="/#actor-cluster-taxonomy"><span class="cluster-card__name">Espionage clusters</span><span class="cluster-card__count"><span class="count-figure">{{ iocIndex.totals.espionage | thousands }}</span> indicators</span><span class="cluster-card__body">Intrusion and heist indicators for the named DPRK APT clusters -- Lazarus Group, Kimsuky, APT37, Konni, APT38, Andariel and Moonstone Sleet. These answer a different question from the remote-worker identities they were filed beside, so they are grouped and searched on each cluster's own page.</span></a></li>
+    <li class="card"><a class="cluster-card__link" href="/etherhiding/"><span class="cluster-card__name">EtherHiding Tracker</span><span class="cluster-card__count"><span class="count-figure">{{ iocIndex.totals.etherhiding | thousands }}</span> indicators</span><span class="cluster-card__body">On-chain command-and-control infrastructure: the smart contracts and wallet addresses used to stage payloads on public blockchains, tracked separately because they are infrastructure rather than identities.</span></a></li>
+    <li class="card"><a class="cluster-card__link" href="/repo-scanner/?cluster=PolinRider#repository-indicators"><span class="cluster-card__name">PolinRider Repositories</span><span class="cluster-card__count"><span class="count-figure">{{ iocIndex.totals.polinrider | thousands }}</span> indicators</span><span class="cluster-card__body">Repositories the PolinRider campaign compromised. These name projects that were attacked rather than the people who ran the attack, which is why they are kept out of the remote-worker index and searched from the repo scanner instead.</span></a></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Browsing without searching</h2>
+  <p>
+    Every indicator is also laid out as plain pages of links, by type;
+    <a href="/indicators/browse/">Browse indicators</a> lists every page.
+  </p>
+  {# Type and count only. The page-number links for each run live on
+     /indicators/browse/, one click on, which keeps every indicator page within
+     four clicks of the home page without a row of bare numbers here. #}
+  <div class="table-scroll">
+    <table class="results-table">
+      <thead>
+        <tr><th scope="col">Type</th><th scope="col">Indicators</th></tr>
+      </thead>
+      <tbody>
+        {% for entry in iocIndex.indicator_browse_types %}
+        <tr>
+          <th scope="row"><a href="{{ entry.url }}">{{ entry.kind.plural }}</a></th>
+          <td>{{ entry.total | thousands }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <h2>Reading an indicator page</h2>
+  <p>
+    Each page at <code>/indicators/&lt;id&gt;/</code> lists every source that
+    reported the value and what it said. Downloads are on
+    <a href="/data/">Data and downloads</a>.
+  </p>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    preset: "not-proof",
+    body: 'Compromised packages and repositories name victims. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

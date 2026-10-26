@@ -1,0 +1,24 @@
+{#
+  partials/result-tools.njk — Sort and Download for a search over content
+  already in the page (a table, or a card grid), run by
+  src/assets/js/result-tools.js and rendered as the site dropdowns by
+  filter-dropdown.js. The indicator searches have Download from ioc-search.js
+  (partials/ioc-download-controls.njk) and sort from their table headers.
+
+  Usage: set `resultTools` before including.
+    {% set resultTools = { target: "#sources-table", noun: "sources", sort: true } %}
+    {% include "partials/result-tools.njk" %}
+
+  Fields:
+    target  the table's or grid's CSS selector
+    noun    plural noun for the file name and the status line
+    sort    true to offer Sort by title, for a card grid. A table sorts by
+            its column headers (table-sort.js) and never gets this box.
+
+  A table whose cells mark some content data-result-optional="<name>" also
+  gets an "Include <name>" checkbox: that content is left out of a download
+  unless it is ticked. The EtherHiding tracker marks its non-C2 values this way.
+
+  Hidden until the script runs. DELIBERATELY ON ONE LINE, for the same reason
+  as partials/table-filter.njk, which includes it.
+#}<div class="filter-chips" data-result-tools="{{ resultTools.target }}" data-result-noun="{{ resultTools.noun }}" hidden>{% if resultTools.sort %}<select data-result-sort aria-label="Sort {{ resultTools.noun }}" data-short-label="Sort"><option value="default">Best match</option><option value="title:asc">Name, ascending</option><option value="title:desc">Name, descending</option></select>{% endif %}<span class="filter-chips__label">Download these results</span><select data-result-format aria-label="Download format" data-short-label="Format"><option value="csv">CSV</option><option value="json">JSON</option></select><button type="button" class="btn btn--secondary" data-result-download-button>Download</button><p class="form-hint" data-result-download-status role="status" aria-live="polite"></p></div>

@@ -1,0 +1,69 @@
+---
+layout: base.njk
+title: "DPRK Hunting"
+description: "A filterable library of threat hunts for DPRK IT-worker fraud and Contagious Interview activity, with Sigma, Splunk SPL, Microsoft Defender and Sentinel KQL, CrowdStrike, Cortex XQL, Elastic, osquery and YARA queries on each hunt's own page."
+permalink: "/hunts/"
+extra_head: '<script src="/assets/js/hunt-filter.js" defer></script>'
+---
+{#
+  src/hunts/index.njk: a tile per entry in src/_data/hunts/hunts.json, each
+  linking to /hunts/{id}/ (hunt-page.njk). Loops iterate `hunts.hunts`. Facet
+  chips (type, query technology, and OS from `platforms`) are derived from the
+  data, so a new value adds a chip.
+#}
+<section>
+  <h1>DPRK Hunting</h1>
+  <p>
+    Threat hunts for the DPRK remote IT-worker scheme and the "Contagious
+    Interview" fake-recruiter campaign. Each hunt states what it detects, lists
+    the indicators it matches on, and carries copy-paste queries.
+  </p>
+  <p>
+    A query marked as reproduced is as the cited source wrote it; one marked as
+    written for this site was composed against reported indicators. None is a
+    vendor-supported detection.
+  </p>
+
+  {% set disclaimer = {
+    title: "Tuning required before use",
+    body: 'Adapt each query to your schema and tune it against the false positives noted on the hunt. Address and domain indicators go stale as operators rotate hosts.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>
+
+<section>
+  <h2>Hunt library</h2>
+
+  {# The chip bar is `hidden` in the markup and revealed by hunt-filter.js, the
+     same progressive-enhancement pattern as the /sources/ filter: without
+     JavaScript these buttons — and the sort <select> alongside them — stay
+     hidden rather than rendering as dead controls, so a reader without
+     JavaScript gets the full grid in library order. The count sits outside
+     the bar so it is still shown in that case. #}
+  {# Hidden and revealed by the same script, for the same reason as the chips
+     below it. Searching reaches into each hunt's indicator table as well as
+     its title and summary, so an artefact name finds the hunt that matches on
+     it — see the data-search attribute in partials/hunt-card.njk. #}
+  <div class="table-filter" data-hunt-search hidden>
+    {% set searchBox = { id: "hunt-search-input", label: "Search hunts", placeholder: "Title, what it detects, or an indicator such as NetKey or Astrill", attr: "data-hunt-search-input", count: "data-hunt-count", countText: (hunts.hunts.length + " hunts.") } %}{% include "partials/search-box.njk" %}
+  </div>
+
+
+  <div data-hunt-filter hidden>
+    {% set filterChips = { dimension: "type", label: "Filter by hunt type", short: "Type", allLabel: "All types (" + (hunts.hunts.length) + ")", counts: hunts.hunts | countBy("hunt_type") } %}{% include "partials/filter-chips.njk" %}
+    {% set filterChips = { dimension: "os", label: "Filter by operating system or log plane", short: "OS", allLabel: "All platforms (" + (hunts.hunts.length) + ")", counts: hunts.hunts | countValues("platforms") } %}{% include "partials/filter-chips.njk" %}
+    {% set filterChips = { dimension: "platform", label: "Filter by query language", short: "Query language", allLabel: "All query languages (" + (hunts.hunts.length) + ")", counts: hunts.hunts | countDistinctIn("queries", "platform") } %}{% include "partials/filter-chips.njk" %}
+    <select data-hunt-sort aria-label="Sort hunts by" data-short-label="Sort">
+      <option value="default">Best match</option>
+      <option value="type">Hunt type</option>
+      <option value="platform">Query language</option>
+    </select>
+  </div>
+
+  {% set resultTools = { target: "[data-hunt-grid]", noun: "hunts" } %}{% include "partials/result-tools.njk" %}
+
+  <ul class="hunt-grid" data-hunt-grid>
+    {% for entry in hunts.hunts %}{% set cardHunt = entry %}{% include "partials/hunt-card.njk" %}{% endfor %}
+  </ul>
+
+  <p data-hunt-empty hidden role="status" aria-live="polite"><em>No hunt matches that search and filter combination.</em></p>
+</section>
