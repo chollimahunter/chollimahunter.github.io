@@ -9793,6 +9793,44 @@
     "date_added": "2026-10-18"
   },
   {
+    "id": "nullreceiver-c2-ip-91-218-183-174",
+    "ioc_type": "ip_address",
+    "value": "91.218.183.174",
+    "campaign": [
+      "EtherHiding",
+      "NullReceiver",
+      "Contagious Interview",
+      "PolinRider"
+    ],
+    "description": "Command-and-control IP decoded from the NullReceiver destination address 0x5bdab7ae5bdab7ae68656c6c6f6970626f742121 that the watchlisted resolver wallet pointed to from 2026-09-28 to 2026-10-06, across 67 transactions. SafeDep's PolinRider report of 30 September 2026 names the same address as the current C2 read from the same wallet. It is recorded as the address the malware resolves to, not as a host this site has observed serving anything.",
+    "malware_family": "NullReceiver",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x38f67c5ef7c3b017eac85ce8a2dda420921461852e74febda440ce73d482cfef",
+        "url": "https://etherscan.io/tx/0x38f67c5ef7c3b017eac85ce8a2dda420921461852e74febda440ce73d482cfef",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-09-28",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "PolinRider Switches to Ethereum C2 in 30+ Repositories",
+        "url": "https://safedep.io/polinrider-ethereum-c2-github-repositories",
+        "publisher": "SafeDep",
+        "date": "2026-09-30",
+        "type": "threat_intel_report"
+      },
+      {
+        "title": "NullReceiver's Blank Crypto Transfers Solves the Challenges of EtherHiding",
+        "url": "https://opensourcemalware.com/blog/nullreceiver-dprk-c2-technique",
+        "publisher": "OpenSourceMalware",
+        "date": "2026-08-02",
+        "type": "threat_intel_report"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
     "id": "xctdh-c2-ip-111-90-143-39",
     "ioc_type": "ip_address",
     "value": "111.90.143.39",
