@@ -7120,7 +7120,7 @@
       {
         "host": "2.56.123.203",
         "since": "2026-10-22",
-        "until": "2026-10-23",
+        "until": "2026-10-27",
         "payload_tx": "0x6dbab35f72339ca247d24d96b762355d3d04f6c705931f1d09d2298aeed21d6e",
         "basis": "dropper stage the signal transactions pointed at, decoded statically"
       },
@@ -7141,15 +7141,29 @@
       {
         "host": "2.56.123.203",
         "since": "2026-10-23",
-        "until": "2026-10-23",
+        "until": "2026-10-26",
         "payload_tx": "0x64dec1f64f978684207c32c23c5db4c4ff3438db68fe2b3601ec12f004f03bc4",
         "basis": "remote-access stage the signal transactions pointed at, decoded statically"
       },
       {
         "host": "95.135.181.15",
         "since": "2026-10-23",
-        "until": "2026-10-23",
+        "until": "2026-10-26",
         "payload_tx": "0x64dec1f64f978684207c32c23c5db4c4ff3438db68fe2b3601ec12f004f03bc4",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-26",
+        "until": "2026-10-27",
+        "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-26",
+        "until": "2026-10-27",
+        "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
         "basis": "remote-access stage the signal transactions pointed at, decoded statically"
       }
     ]
