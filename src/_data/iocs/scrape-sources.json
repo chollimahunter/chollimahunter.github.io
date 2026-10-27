@@ -14140,6 +14140,131 @@
       "publisher": "bryanchriswhite (dev-trap-dossiers)",
       "campaign": [
         "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "02acf1497d4718b35ada25b159f6dd407f556afb49908fbfaa4d75aed9cabc40"
+        },
+        {
+          "sealed": "099c336cd93ce34e4f32793dff13b62ac6030e33d82643f64c1ebdf106bfaca4"
+        },
+        {
+          "sealed": "0b30e750c6c9b22daa2608569daa018573da889246e3ba3ba7cb7004d43007d4"
+        },
+        {
+          "sealed": "0cbbd87c9a16b93e0b2480192a28b9a0351449c1d18a6390b15b560d58093cfc"
+        },
+        {
+          "sealed": "17de897f8a10bfb16cf579a0a1f8d823b2999695191bfa57ca8ffe6dbe661d7a"
+        },
+        {
+          "sealed": "18beb4a18feb1911ce78125582f950cf71554b7614b4302abe436030d27021b3"
+        },
+        {
+          "sealed": "1d803353f43cacfba3dbea4c3e1fa1177d0ca75ef1cd8a767bed5d297de15c85"
+        },
+        {
+          "sealed": "25baad85705ecf2a58934e21b3bd42226aaa3a1969673357fea46cd5227cdfc7"
+        },
+        {
+          "sealed": "2ef9b0c99c1a4d3857b977ca738fa3b2fd7b30c0fb9fe54b524f2322b8871f8e"
+        },
+        {
+          "sealed": "3ac2e0699408433b83369cc02367ac96100a476463f3865f33ec14601faffbdc"
+        },
+        {
+          "sealed": "3da4759c19363e9c8cf0f3de2b0e9ed03e53d7b410f1159106854e377248a420"
+        },
+        {
+          "sealed": "40fac78f7883f958ad9d4602d985af5a3b94a24d8737f31b1b1cb78d8eca3a3c"
+        },
+        {
+          "sealed": "416a999f919b7b5ba8e550b43004c25a71968721e64de2c81e25ed377c704a39"
+        },
+        {
+          "sealed": "41cf38a2fa30c08d52812b24834b67b688f0fc2f62bacde029127e2da504a7bf"
+        },
+        {
+          "sealed": "5849136452360b972ac6c4660c96459790373fbe9aaf904e2084d86005067e59"
+        },
+        {
+          "sealed": "6dabe840da37ccd01cbb143604083ad31574e597a57e422a0e3b61f0a77af3aa"
+        },
+        {
+          "sealed": "6eb4f2bd611033c5c77c9fe7af5a67a307e4b9f7935ac08fe68b303c367a51b9"
+        },
+        {
+          "sealed": "6f9ec0c17eeb838caafa59817cb1e4e854641eb7b3f6f84086df5a2149554c15"
+        },
+        {
+          "sealed": "73215472896c7205d8660182cee9eeacf20e149a76385b7c2ee4c888b31ba133"
+        },
+        {
+          "sealed": "77dfa1be4f5e60409b6ea867ee0d93f5e713c8c8bc597c041422cae378438fb1"
+        },
+        {
+          "sealed": "844de53ce0e03040d03033f831bb50afb36b301e85d15e2535ce32756ecde83f"
+        },
+        {
+          "sealed": "880e42b85f467ce36e467c8e04cef8074fc25ece5f8f0ae07f2b5c963793458f"
+        },
+        {
+          "sealed": "8aa1826f05ab480e796b6f680e8bba31556d19e070d366ebff6ef23e3ad673d8"
+        },
+        {
+          "sealed": "929c777b2c73310ac24676ba97f6f4e5793e636e203cc7d3c208d045316c9685"
+        },
+        {
+          "sealed": "938f882b9a5c62dbc59539354e1139b48f99c52f336a7f86d2e1af5c4d506244"
+        },
+        {
+          "sealed": "97397d0b5e139c45496ffe4eea82088b965da587fcbdb556fddc8f787663d9eb"
+        },
+        {
+          "sealed": "997cc95d30917a2e7ae20bd1d284f64800d9c881d73e5be51a2a94f3f692ab77"
+        },
+        {
+          "sealed": "a00396e53bc8aed6b85e1b313cc8df2015bf4a206c408008e086d639789f5019"
+        },
+        {
+          "sealed": "a1e8b1737c90446db584e48bba1ac0445a21aff625e621f8c7026739d8604fa8"
+        },
+        {
+          "sealed": "abe979c998a7d73834fc429c994a79bf0a8c22fd3a5ee20ba41bdd1c5618efce"
+        },
+        {
+          "sealed": "af72a42ea28e3c1a6dfcd74ee57b8f02fbfc99ce7c1c7b1f40945efed2e5cecd"
+        },
+        {
+          "sealed": "b4e89198ae630f74903a0f82d53dcdce03b45871b783eb3d58a0cb94bfac06c4"
+        },
+        {
+          "sealed": "c56c0a41d03ee328271ef40f6868335efd8825bbfae2236ec01e6f22f29b3abd"
+        },
+        {
+          "sealed": "c68dced2e17b43c79f8597d8b940ae13b2bf18a66fbf9d774fc88cc9303cdfd8"
+        },
+        {
+          "sealed": "c69eb04c0bbfa6828510b8ddf369863d52a4d606236f082f86997454394555e8"
+        },
+        {
+          "sealed": "ca3045812d24955d5d1e79b70f97695c43a0e99122ab56c415b74f1689e99aa2"
+        },
+        {
+          "sealed": "d0565728c0b9e7521ebd4fd06074c1c94ed60909ad9d1a89818d79aa73d039b2"
+        },
+        {
+          "sealed": "d33a27b401f9692acd00dd5aca508748401074c807e2126eb52e0ff58bb65aeb"
+        },
+        {
+          "sealed": "da5b46e3d5b745537eaf48d27189e8ad7a43d90c090722298d75b12814cebf3b"
+        },
+        {
+          "sealed": "dc12d8fdaa862f4f26f9392a1b77cbcce5fb530e8b59003612fe5e5a599d1918"
+        },
+        {
+          "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
+        }
       ]
     },
     {
@@ -14147,6 +14272,131 @@
       "publisher": "bryanchriswhite (dev-trap-dossiers)",
       "campaign": [
         "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "02acf1497d4718b35ada25b159f6dd407f556afb49908fbfaa4d75aed9cabc40"
+        },
+        {
+          "sealed": "099c336cd93ce34e4f32793dff13b62ac6030e33d82643f64c1ebdf106bfaca4"
+        },
+        {
+          "sealed": "0b30e750c6c9b22daa2608569daa018573da889246e3ba3ba7cb7004d43007d4"
+        },
+        {
+          "sealed": "0cbbd87c9a16b93e0b2480192a28b9a0351449c1d18a6390b15b560d58093cfc"
+        },
+        {
+          "sealed": "17de897f8a10bfb16cf579a0a1f8d823b2999695191bfa57ca8ffe6dbe661d7a"
+        },
+        {
+          "sealed": "18beb4a18feb1911ce78125582f950cf71554b7614b4302abe436030d27021b3"
+        },
+        {
+          "sealed": "1d803353f43cacfba3dbea4c3e1fa1177d0ca75ef1cd8a767bed5d297de15c85"
+        },
+        {
+          "sealed": "25baad85705ecf2a58934e21b3bd42226aaa3a1969673357fea46cd5227cdfc7"
+        },
+        {
+          "sealed": "2ef9b0c99c1a4d3857b977ca738fa3b2fd7b30c0fb9fe54b524f2322b8871f8e"
+        },
+        {
+          "sealed": "3ac2e0699408433b83369cc02367ac96100a476463f3865f33ec14601faffbdc"
+        },
+        {
+          "sealed": "3da4759c19363e9c8cf0f3de2b0e9ed03e53d7b410f1159106854e377248a420"
+        },
+        {
+          "sealed": "40fac78f7883f958ad9d4602d985af5a3b94a24d8737f31b1b1cb78d8eca3a3c"
+        },
+        {
+          "sealed": "416a999f919b7b5ba8e550b43004c25a71968721e64de2c81e25ed377c704a39"
+        },
+        {
+          "sealed": "41cf38a2fa30c08d52812b24834b67b688f0fc2f62bacde029127e2da504a7bf"
+        },
+        {
+          "sealed": "5849136452360b972ac6c4660c96459790373fbe9aaf904e2084d86005067e59"
+        },
+        {
+          "sealed": "6dabe840da37ccd01cbb143604083ad31574e597a57e422a0e3b61f0a77af3aa"
+        },
+        {
+          "sealed": "6eb4f2bd611033c5c77c9fe7af5a67a307e4b9f7935ac08fe68b303c367a51b9"
+        },
+        {
+          "sealed": "6f9ec0c17eeb838caafa59817cb1e4e854641eb7b3f6f84086df5a2149554c15"
+        },
+        {
+          "sealed": "73215472896c7205d8660182cee9eeacf20e149a76385b7c2ee4c888b31ba133"
+        },
+        {
+          "sealed": "77dfa1be4f5e60409b6ea867ee0d93f5e713c8c8bc597c041422cae378438fb1"
+        },
+        {
+          "sealed": "844de53ce0e03040d03033f831bb50afb36b301e85d15e2535ce32756ecde83f"
+        },
+        {
+          "sealed": "880e42b85f467ce36e467c8e04cef8074fc25ece5f8f0ae07f2b5c963793458f"
+        },
+        {
+          "sealed": "8aa1826f05ab480e796b6f680e8bba31556d19e070d366ebff6ef23e3ad673d8"
+        },
+        {
+          "sealed": "929c777b2c73310ac24676ba97f6f4e5793e636e203cc7d3c208d045316c9685"
+        },
+        {
+          "sealed": "938f882b9a5c62dbc59539354e1139b48f99c52f336a7f86d2e1af5c4d506244"
+        },
+        {
+          "sealed": "97397d0b5e139c45496ffe4eea82088b965da587fcbdb556fddc8f787663d9eb"
+        },
+        {
+          "sealed": "997cc95d30917a2e7ae20bd1d284f64800d9c881d73e5be51a2a94f3f692ab77"
+        },
+        {
+          "sealed": "a00396e53bc8aed6b85e1b313cc8df2015bf4a206c408008e086d639789f5019"
+        },
+        {
+          "sealed": "a1e8b1737c90446db584e48bba1ac0445a21aff625e621f8c7026739d8604fa8"
+        },
+        {
+          "sealed": "abe979c998a7d73834fc429c994a79bf0a8c22fd3a5ee20ba41bdd1c5618efce"
+        },
+        {
+          "sealed": "af72a42ea28e3c1a6dfcd74ee57b8f02fbfc99ce7c1c7b1f40945efed2e5cecd"
+        },
+        {
+          "sealed": "b4e89198ae630f74903a0f82d53dcdce03b45871b783eb3d58a0cb94bfac06c4"
+        },
+        {
+          "sealed": "c56c0a41d03ee328271ef40f6868335efd8825bbfae2236ec01e6f22f29b3abd"
+        },
+        {
+          "sealed": "c68dced2e17b43c79f8597d8b940ae13b2bf18a66fbf9d774fc88cc9303cdfd8"
+        },
+        {
+          "sealed": "c69eb04c0bbfa6828510b8ddf369863d52a4d606236f082f86997454394555e8"
+        },
+        {
+          "sealed": "ca3045812d24955d5d1e79b70f97695c43a0e99122ab56c415b74f1689e99aa2"
+        },
+        {
+          "sealed": "d0565728c0b9e7521ebd4fd06074c1c94ed60909ad9d1a89818d79aa73d039b2"
+        },
+        {
+          "sealed": "d33a27b401f9692acd00dd5aca508748401074c807e2126eb52e0ff58bb65aeb"
+        },
+        {
+          "sealed": "da5b46e3d5b745537eaf48d27189e8ad7a43d90c090722298d75b12814cebf3b"
+        },
+        {
+          "sealed": "dc12d8fdaa862f4f26f9392a1b77cbcce5fb530e8b59003612fe5e5a599d1918"
+        },
+        {
+          "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
+        }
       ]
     },
     {
@@ -14154,6 +14404,131 @@
       "publisher": "bryanchriswhite (dev-trap-dossiers)",
       "campaign": [
         "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "02acf1497d4718b35ada25b159f6dd407f556afb49908fbfaa4d75aed9cabc40"
+        },
+        {
+          "sealed": "099c336cd93ce34e4f32793dff13b62ac6030e33d82643f64c1ebdf106bfaca4"
+        },
+        {
+          "sealed": "0b30e750c6c9b22daa2608569daa018573da889246e3ba3ba7cb7004d43007d4"
+        },
+        {
+          "sealed": "0cbbd87c9a16b93e0b2480192a28b9a0351449c1d18a6390b15b560d58093cfc"
+        },
+        {
+          "sealed": "17de897f8a10bfb16cf579a0a1f8d823b2999695191bfa57ca8ffe6dbe661d7a"
+        },
+        {
+          "sealed": "18beb4a18feb1911ce78125582f950cf71554b7614b4302abe436030d27021b3"
+        },
+        {
+          "sealed": "1d803353f43cacfba3dbea4c3e1fa1177d0ca75ef1cd8a767bed5d297de15c85"
+        },
+        {
+          "sealed": "25baad85705ecf2a58934e21b3bd42226aaa3a1969673357fea46cd5227cdfc7"
+        },
+        {
+          "sealed": "2ef9b0c99c1a4d3857b977ca738fa3b2fd7b30c0fb9fe54b524f2322b8871f8e"
+        },
+        {
+          "sealed": "3ac2e0699408433b83369cc02367ac96100a476463f3865f33ec14601faffbdc"
+        },
+        {
+          "sealed": "3da4759c19363e9c8cf0f3de2b0e9ed03e53d7b410f1159106854e377248a420"
+        },
+        {
+          "sealed": "40fac78f7883f958ad9d4602d985af5a3b94a24d8737f31b1b1cb78d8eca3a3c"
+        },
+        {
+          "sealed": "416a999f919b7b5ba8e550b43004c25a71968721e64de2c81e25ed377c704a39"
+        },
+        {
+          "sealed": "41cf38a2fa30c08d52812b24834b67b688f0fc2f62bacde029127e2da504a7bf"
+        },
+        {
+          "sealed": "5849136452360b972ac6c4660c96459790373fbe9aaf904e2084d86005067e59"
+        },
+        {
+          "sealed": "6dabe840da37ccd01cbb143604083ad31574e597a57e422a0e3b61f0a77af3aa"
+        },
+        {
+          "sealed": "6eb4f2bd611033c5c77c9fe7af5a67a307e4b9f7935ac08fe68b303c367a51b9"
+        },
+        {
+          "sealed": "6f9ec0c17eeb838caafa59817cb1e4e854641eb7b3f6f84086df5a2149554c15"
+        },
+        {
+          "sealed": "73215472896c7205d8660182cee9eeacf20e149a76385b7c2ee4c888b31ba133"
+        },
+        {
+          "sealed": "77dfa1be4f5e60409b6ea867ee0d93f5e713c8c8bc597c041422cae378438fb1"
+        },
+        {
+          "sealed": "844de53ce0e03040d03033f831bb50afb36b301e85d15e2535ce32756ecde83f"
+        },
+        {
+          "sealed": "880e42b85f467ce36e467c8e04cef8074fc25ece5f8f0ae07f2b5c963793458f"
+        },
+        {
+          "sealed": "8aa1826f05ab480e796b6f680e8bba31556d19e070d366ebff6ef23e3ad673d8"
+        },
+        {
+          "sealed": "929c777b2c73310ac24676ba97f6f4e5793e636e203cc7d3c208d045316c9685"
+        },
+        {
+          "sealed": "938f882b9a5c62dbc59539354e1139b48f99c52f336a7f86d2e1af5c4d506244"
+        },
+        {
+          "sealed": "97397d0b5e139c45496ffe4eea82088b965da587fcbdb556fddc8f787663d9eb"
+        },
+        {
+          "sealed": "997cc95d30917a2e7ae20bd1d284f64800d9c881d73e5be51a2a94f3f692ab77"
+        },
+        {
+          "sealed": "a00396e53bc8aed6b85e1b313cc8df2015bf4a206c408008e086d639789f5019"
+        },
+        {
+          "sealed": "a1e8b1737c90446db584e48bba1ac0445a21aff625e621f8c7026739d8604fa8"
+        },
+        {
+          "sealed": "abe979c998a7d73834fc429c994a79bf0a8c22fd3a5ee20ba41bdd1c5618efce"
+        },
+        {
+          "sealed": "af72a42ea28e3c1a6dfcd74ee57b8f02fbfc99ce7c1c7b1f40945efed2e5cecd"
+        },
+        {
+          "sealed": "b4e89198ae630f74903a0f82d53dcdce03b45871b783eb3d58a0cb94bfac06c4"
+        },
+        {
+          "sealed": "c56c0a41d03ee328271ef40f6868335efd8825bbfae2236ec01e6f22f29b3abd"
+        },
+        {
+          "sealed": "c68dced2e17b43c79f8597d8b940ae13b2bf18a66fbf9d774fc88cc9303cdfd8"
+        },
+        {
+          "sealed": "c69eb04c0bbfa6828510b8ddf369863d52a4d606236f082f86997454394555e8"
+        },
+        {
+          "sealed": "ca3045812d24955d5d1e79b70f97695c43a0e99122ab56c415b74f1689e99aa2"
+        },
+        {
+          "sealed": "d0565728c0b9e7521ebd4fd06074c1c94ed60909ad9d1a89818d79aa73d039b2"
+        },
+        {
+          "sealed": "d33a27b401f9692acd00dd5aca508748401074c807e2126eb52e0ff58bb65aeb"
+        },
+        {
+          "sealed": "da5b46e3d5b745537eaf48d27189e8ad7a43d90c090722298d75b12814cebf3b"
+        },
+        {
+          "sealed": "dc12d8fdaa862f4f26f9392a1b77cbcce5fb530e8b59003612fe5e5a599d1918"
+        },
+        {
+          "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
+        }
       ]
     },
     {
@@ -14161,6 +14536,131 @@
       "publisher": "bryanchriswhite (dev-trap-dossiers)",
       "campaign": [
         "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "02acf1497d4718b35ada25b159f6dd407f556afb49908fbfaa4d75aed9cabc40"
+        },
+        {
+          "sealed": "099c336cd93ce34e4f32793dff13b62ac6030e33d82643f64c1ebdf106bfaca4"
+        },
+        {
+          "sealed": "0b30e750c6c9b22daa2608569daa018573da889246e3ba3ba7cb7004d43007d4"
+        },
+        {
+          "sealed": "0cbbd87c9a16b93e0b2480192a28b9a0351449c1d18a6390b15b560d58093cfc"
+        },
+        {
+          "sealed": "17de897f8a10bfb16cf579a0a1f8d823b2999695191bfa57ca8ffe6dbe661d7a"
+        },
+        {
+          "sealed": "18beb4a18feb1911ce78125582f950cf71554b7614b4302abe436030d27021b3"
+        },
+        {
+          "sealed": "1d803353f43cacfba3dbea4c3e1fa1177d0ca75ef1cd8a767bed5d297de15c85"
+        },
+        {
+          "sealed": "25baad85705ecf2a58934e21b3bd42226aaa3a1969673357fea46cd5227cdfc7"
+        },
+        {
+          "sealed": "2ef9b0c99c1a4d3857b977ca738fa3b2fd7b30c0fb9fe54b524f2322b8871f8e"
+        },
+        {
+          "sealed": "3ac2e0699408433b83369cc02367ac96100a476463f3865f33ec14601faffbdc"
+        },
+        {
+          "sealed": "3da4759c19363e9c8cf0f3de2b0e9ed03e53d7b410f1159106854e377248a420"
+        },
+        {
+          "sealed": "40fac78f7883f958ad9d4602d985af5a3b94a24d8737f31b1b1cb78d8eca3a3c"
+        },
+        {
+          "sealed": "416a999f919b7b5ba8e550b43004c25a71968721e64de2c81e25ed377c704a39"
+        },
+        {
+          "sealed": "41cf38a2fa30c08d52812b24834b67b688f0fc2f62bacde029127e2da504a7bf"
+        },
+        {
+          "sealed": "5849136452360b972ac6c4660c96459790373fbe9aaf904e2084d86005067e59"
+        },
+        {
+          "sealed": "6dabe840da37ccd01cbb143604083ad31574e597a57e422a0e3b61f0a77af3aa"
+        },
+        {
+          "sealed": "6eb4f2bd611033c5c77c9fe7af5a67a307e4b9f7935ac08fe68b303c367a51b9"
+        },
+        {
+          "sealed": "6f9ec0c17eeb838caafa59817cb1e4e854641eb7b3f6f84086df5a2149554c15"
+        },
+        {
+          "sealed": "73215472896c7205d8660182cee9eeacf20e149a76385b7c2ee4c888b31ba133"
+        },
+        {
+          "sealed": "77dfa1be4f5e60409b6ea867ee0d93f5e713c8c8bc597c041422cae378438fb1"
+        },
+        {
+          "sealed": "844de53ce0e03040d03033f831bb50afb36b301e85d15e2535ce32756ecde83f"
+        },
+        {
+          "sealed": "880e42b85f467ce36e467c8e04cef8074fc25ece5f8f0ae07f2b5c963793458f"
+        },
+        {
+          "sealed": "8aa1826f05ab480e796b6f680e8bba31556d19e070d366ebff6ef23e3ad673d8"
+        },
+        {
+          "sealed": "929c777b2c73310ac24676ba97f6f4e5793e636e203cc7d3c208d045316c9685"
+        },
+        {
+          "sealed": "938f882b9a5c62dbc59539354e1139b48f99c52f336a7f86d2e1af5c4d506244"
+        },
+        {
+          "sealed": "97397d0b5e139c45496ffe4eea82088b965da587fcbdb556fddc8f787663d9eb"
+        },
+        {
+          "sealed": "997cc95d30917a2e7ae20bd1d284f64800d9c881d73e5be51a2a94f3f692ab77"
+        },
+        {
+          "sealed": "a00396e53bc8aed6b85e1b313cc8df2015bf4a206c408008e086d639789f5019"
+        },
+        {
+          "sealed": "a1e8b1737c90446db584e48bba1ac0445a21aff625e621f8c7026739d8604fa8"
+        },
+        {
+          "sealed": "abe979c998a7d73834fc429c994a79bf0a8c22fd3a5ee20ba41bdd1c5618efce"
+        },
+        {
+          "sealed": "af72a42ea28e3c1a6dfcd74ee57b8f02fbfc99ce7c1c7b1f40945efed2e5cecd"
+        },
+        {
+          "sealed": "b4e89198ae630f74903a0f82d53dcdce03b45871b783eb3d58a0cb94bfac06c4"
+        },
+        {
+          "sealed": "c56c0a41d03ee328271ef40f6868335efd8825bbfae2236ec01e6f22f29b3abd"
+        },
+        {
+          "sealed": "c68dced2e17b43c79f8597d8b940ae13b2bf18a66fbf9d774fc88cc9303cdfd8"
+        },
+        {
+          "sealed": "c69eb04c0bbfa6828510b8ddf369863d52a4d606236f082f86997454394555e8"
+        },
+        {
+          "sealed": "ca3045812d24955d5d1e79b70f97695c43a0e99122ab56c415b74f1689e99aa2"
+        },
+        {
+          "sealed": "d0565728c0b9e7521ebd4fd06074c1c94ed60909ad9d1a89818d79aa73d039b2"
+        },
+        {
+          "sealed": "d33a27b401f9692acd00dd5aca508748401074c807e2126eb52e0ff58bb65aeb"
+        },
+        {
+          "sealed": "da5b46e3d5b745537eaf48d27189e8ad7a43d90c090722298d75b12814cebf3b"
+        },
+        {
+          "sealed": "dc12d8fdaa862f4f26f9392a1b77cbcce5fb530e8b59003612fe5e5a599d1918"
+        },
+        {
+          "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
+        }
       ]
     },
     {
