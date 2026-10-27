@@ -21717,7 +21717,7 @@
       "note": "Endpoint telemetry from a developer who downloaded the main-branch archive of togetherlabsinchub/palooza from GitHub, reported to this site in October 2026, shows the project started with node server.js and then a Node.js child process run inline with node -e, carrying a campaign identifier, a numeric key and the C2 address http://151.80.76.64:1224/. That shape, an inline loader calling back to port 1224 and identifying itself to the server, is the BeaverTail first stage of the Contagious Interview campaign, delivered as a coding exercise in a fake job interview. The account name borrows that of Together Labs, Inc., a real company with no part in this; impersonating a real employer is the campaign's usual lure. By 26 October 2026 the account and the repository both returned not found through the GitHub API, and the Wayback Machine holds no capture of either, so the repository is listed as a removed link. Nothing from it was downloaded or run. Maltrail's Lazarus trail list carries 151.80.76.64 on ports 1224 and 3333 (the BeaverTail and InvisibleFerret ports), together with 151.80.76.66 and 151.80.76.67 on the same two ports. All three sit on OVH in Roubaix, rented through the Windows VPS reseller RDP Quick with remote desktop open. Shodan's InternetDB on 26 October 2026 showed a Node.js Express server on 151.80.76.64 port 3333 and on 151.80.76.66 port 1224, so at least two of the three were serving that day."
     },
     {
-      "label": "Three interview-exercise repositories carrying the ip-check-encrypted loader, and two C2 domains",
+      "label": "Four interview-exercise repositories carrying the ip-check-encrypted loader, and their C2",
       "researcher": "chollimahunter",
       "transcribed": "2026-10-27",
       "campaign": [
@@ -21738,6 +21738,10 @@
         },
         {
           "url": "https://github.com/stamparm/trails/blob/master/malware/apt_lazarus.txt",
+          "date": "2026-10-27"
+        },
+        {
+          "url": "https://github.com/jamesm-dev/NitroGem/blob/main/SECURITY_FINDINGS.md",
           "date": "2026-10-27"
         }
       ],
@@ -21781,9 +21785,14 @@
           "ioc_type": "github_profile",
           "value": "https://github.com/0xbrentfi",
           "post": 2
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "locate-my-ip.vercel.app",
+          "post": 4
         }
       ],
-      "note": "Found on 27 October 2026 by searching GitHub code for the loader that bryanchriswhite's dev-trap-dossiers documents as the realfraction generation of the Contagious Interview campaign: a backend file that holds a base64-encoded URL ending /api/ip-check-encrypted/<id>, posts the whole of process.env to it with the header x-secret-header: secret, and runs the reply with new Function(\"require\", ...). Each of the three repositories below carries that loader, read as text and never run.\n\nQevoratrix-live-coding is a GitHub organization created on 20 October 2026 that the same day published six repositories named for languages (react, go, rust, java, solidity, node), the shape of a live-coding interview exercise. In react, backend/src/services/errorHandler.service.config.js decodes to https://www.jitnad.lol/api/ip-check-encrypted/3aeb34a39; the file's only commit is dated 3 September 2026 and attributed to a real developer, whose history the repository copies. stockx-fi, an organization created on 3 August 2026, holds stockx_v1, whose backend/src/compliance/complianceService.js decodes to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a32. 0xbrentfi, a user account created on 21 February 2026 and displaying the name Brent Phelps, holds StockX_PoC_1.03 with the same file decoding to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a37; dev-trap-dossiers already lists that account among the realfraction repositories, and Maltrail's Lazarus trail list carries ipregionchecker.org. The StockX proof-of-concept is the lure that write-up describes, and its first C2 was ipregionchecker.com. jitnad.lol was registered through Dynadot on 23 October 2026, the day the loader was pushed to the repository, and appears in no published source found on 27 October 2026.\n\nNot carried: the commit authors of all three repositories are real developers (one at Uniswap) whose commit history was copied into the lure, the usual way these repositories borrow credibility."
+      "note": "Found on 27 October 2026 by searching GitHub code for the loader that bryanchriswhite's dev-trap-dossiers documents as the realfraction generation of the Contagious Interview campaign: a backend file that holds a base64-encoded URL ending /api/ip-check-encrypted/<id>, posts the whole of process.env to it with the header x-secret-header: secret, and runs the reply with new Function(\"require\", ...). Each of the three repositories below carries that loader, read as text and never run.\n\nQevoratrix-live-coding is a GitHub organization created on 20 October 2026 that the same day published six repositories named for languages (react, go, rust, java, solidity, node), the shape of a live-coding interview exercise. In react, backend/src/services/errorHandler.service.config.js decodes to https://www.jitnad.lol/api/ip-check-encrypted/3aeb34a39; the file's only commit is dated 3 September 2026 and attributed to a real developer, whose history the repository copies. stockx-fi, an organization created on 3 August 2026, holds stockx_v1, whose backend/src/compliance/complianceService.js decodes to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a32. 0xbrentfi, a user account created on 21 February 2026 and displaying the name Brent Phelps, holds StockX_PoC_1.03 with the same file decoding to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a37; dev-trap-dossiers already lists that account among the realfraction repositories, and Maltrail's Lazarus trail list carries ipregionchecker.org. The StockX proof-of-concept is the lure that write-up describes, and its first C2 was ipregionchecker.com. jitnad.lol was registered through Dynadot on 23 October 2026, the day the loader was pushed to the repository, and appears in no published source found on 27 October 2026.\n\nThe same search found jamesm-dev/NitroGem, a neutralized copy of the NitroGem trading-bot lure published for study, whose report gives the original's stage-one C2 as https://locate-my-ip.vercel.app/api/ip-check-encrypted/3aeb34a31; dev-trap-dossiers lists the original, TechByteX/NitroGem, in the cluster. The study copy itself is not filed.\n\nNot carried: the commit authors of all three repositories are real developers (one at Uniswap) whose commit history was copied into the lure, the usual way these repositories borrow credibility."
     }
   ]
 }

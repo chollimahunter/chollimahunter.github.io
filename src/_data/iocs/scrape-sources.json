@@ -14662,13 +14662,6 @@
           "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
         }
       ]
-    },
-    {
-      "url": "https://raw.githubusercontent.com/jamesm-dev/NitroGem/main/SECURITY_FINDINGS.md",
-      "publisher": "jamesm-dev (NitroGem)",
-      "campaign": [
-        "Contagious Interview"
-      ]
     }
   ],
   "not_scraped": [
@@ -19936,6 +19929,13 @@
       "reason": "declined",
       "notes": "Announces a directory of North Korean trading companies scraped from the Foreign Trade of the DPRK magazine, with the companies' trade contacts and UN sanctions matches; nothing in it is a cyber indicator. Read in a browser on 26 October 2026, since the site refuses the scraper's TLS handshake.",
       "checked": "2026-10-26"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jamesm-dev/NitroGem/main/SECURITY_FINDINGS.md",
+      "publisher": "jamesm-dev (NitroGem)",
+      "reason": "declined",
+      "notes": "A neutralization report on the NitroGem lure repository that names its C2 deployments but never the DPRK, so the scraper's keyword guard refuses it. The tie runs through bryanchriswhite's dev-trap-dossiers, which lists the original TechByteX/NitroGem in the Contagious Interview cluster; its stage-one C2 is filed by hand in direct-observations.json (27 October 2026), and precommit.vercel.app was already indexed.",
+      "checked": "2026-10-27"
     }
   ],
   "discovered": []
