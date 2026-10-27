@@ -14134,6 +14134,41 @@
           "sealed": "e55eb95b4bb2103137ccc25194d1d5e8a74029c365db87f6d0f0081df952a7c0"
         }
       ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+      "publisher": "bryanchriswhite (dev-trap-dossiers)",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+      "publisher": "bryanchriswhite (dev-trap-dossiers)",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-18-realfraction/README.md",
+      "publisher": "bryanchriswhite (dev-trap-dossiers)",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md",
+      "publisher": "bryanchriswhite (dev-trap-dossiers)",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://raw.githubusercontent.com/jamesm-dev/NitroGem/main/SECURITY_FINDINGS.md",
+      "publisher": "jamesm-dev (NitroGem)",
+      "campaign": [
+        "Contagious Interview"
+      ]
     }
   ],
   "not_scraped": [
