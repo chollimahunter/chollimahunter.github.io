@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-26T04:49:27Z",
-  "record_count": 12050,
+  "generated_at": "2026-10-27T04:13:04Z",
+  "record_count": 12074,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -1634,6 +1634,36 @@
           "section": "Appendix: Indicators of Compromise",
           "pulled_at": "2026-09-27",
           "source_sha256": "f0c7dd572d40a0464e8f669a6586c663136945424ba7f6b09db916332b9c7873"
+        }
+      ]
+    },
+    {
+      "id": "calendly-account-84215b7b51b1",
+      "ioc_type": "calendly_account",
+      "value": "https://calendly.com/wallace55",
+      "display": "wallace55",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-08-12-daam-ai-agent-marketplace/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-08-12",
+          "context": "…or full-time flexibility, and pre-call review of documentation, video, and a \"codebase snapshot.\" The recruiter supplied: - Calendly: `https://calendly.com/wallace55/30mins` - LimeWire delivery URL: `https://limewire.com/d/vlTzy#wGXKqgjp2B` The contact identified the purported hiring manager as…",
+          "context_origin": "text",
+          "section": "1. Recruitment and social-engineering context",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "aa5b521ff58e80a15cd38458cc772a795b9aa0724ab3e82e9cd6359cdea09147"
         }
       ]
     },
@@ -43346,6 +43376,47 @@
           "section": "CONCLUSION",
           "pulled_at": "2026-09-01",
           "source_sha256": "f9e8337f3f9c37dbcd03a07d418dd688c577cb60998af5218bed6398fb5e6775"
+        }
+      ]
+    },
+    {
+      "id": "email-address-a53fbd39a739",
+      "ioc_type": "email_address",
+      "value": "fatihafariya8@gmail.com",
+      "display": "fatihafariya8+2@gmail.com",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…The operator's commit-author Gmail (`fatihafariya8+2@gmail.com`) sits on a single parent inbox (`fatihafariya8@gmail.com`) that the `+N` alias convention routes every persona's mail back to.…",
+          "context_origin": "text",
+          "section": "📮 You're filing a takedown report against any repo in this campaign",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-13-ajunaverse-mvp/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-13",
+          "context": "…created the same day | | `GitWorkHub9` | User | 272514006 | (pre-2026) | (search-restricted) | Sole committer to `AjunaVerse_MVP`; email `fatihafariya8+2@gmail.com` (Gmail `+2` alias) | | `GitWorkHub99` | User | 213663943 | older | 21 | Sibling user account; **credibility-farming**: hosts personal…",
+          "context_origin": "text",
+          "section": "6.1 The two organizations and the single committer",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "52fb1f49727686a62ad68ebe1437dd4d94b3b1d815717dbfee34a2ab616c8ae7"
         }
       ]
     },
@@ -185707,6 +185778,36 @@
       ]
     },
     {
+      "id": "file-hash-6e3e164c532b",
+      "ioc_type": "file_hash",
+      "value": "665d013769320c8fe90426b707864f9128fd419107ae1f69525cfece7217044b",
+      "display": "665d01376932...",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-08-12-daam-ai-agent-marketplace/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-08-12",
+          "context": "…`fb7f9d7b0b8dbd76feeed437378493c6142f728db8e726417d20cec5735bf9f5` - Hidden JavaScript payload size: 2,901,715 bytes - Video SHA-256: `665d013769320c8fe90426b707864f9128fd419107ae1f69525cfece7217044b` --- ## 3.…",
+          "context_origin": "text",
+          "section": "2. Primary artifact hashes",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "aa5b521ff58e80a15cd38458cc772a795b9aa0724ab3e82e9cd6359cdea09147"
+        }
+      ]
+    },
+    {
       "id": "file-hash-7dd9c9a01675",
       "ioc_type": "file_hash",
       "value": "66710f1e5fdfca8bbd4681e979bf42192b118426db6891d43ded6f57a2115d75",
@@ -208964,6 +209065,36 @@
           "section": "대북 관련 질문지를 위장한 CHM 악성코드 (Kimsuky)",
           "pulled_at": "2026-09-12",
           "source_sha256": "d6bf64dc73d11904633b9f5f45021171be745317b92d59d0254a324aebc18075"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-7222584c3351",
+      "ioc_type": "file_hash",
+      "value": "9f63eb04c513bd8c12c2d7efce7b764d9731990fd434814899bd6621255262e9",
+      "display": "9f63eb04c513...",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-08-12",
+      "last_seen": "2026-08-12",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-08-12-daam-ai-agent-marketplace/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-08-12",
+          "context": "…artifact hashes - ZIP SHA-256: `b2545579ec4d36b1ad7d4e30221293ebb1ae472e9d8fb440e80a90a7e7db019d` - `.git/hooks/post-checkout` SHA-256: `9f63eb04c513bd8c12c2d7efce7b764d9731990fd434814899bd6621255262e9` - Hidden JavaScript payload SHA-256: `fb7f9d7b0b8dbd76feeed437378493c6142f728db8e726417d20cec5735bf9f5` - Hidden JavaScript payload size:…",
+          "context_origin": "text",
+          "section": "2. Primary artifact hashes",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "aa5b521ff58e80a15cd38458cc772a795b9aa0724ab3e82e9cd6359cdea09147"
         }
       ]
     },
@@ -244603,6 +244734,36 @@
       }
     },
     {
+      "id": "github-profile-f232bccc510c",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/0xbrentfi",
+      "display": "0xbrentfi",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| StockX PoC | realfraction (sub-shape C) | L | | [0xbrentfi/StockX_PoC_1.03](https://github.com/0xbrentfi/StockX_PoC_1.03) | StockX PoC | realfraction (sub-shape C) | L | | [0xbrentfi/StockX_PoC_1.04](https://github.com/0xbrentfi/StockX_PoC_1.04) | StockX PoC |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-63c97bc08c3b",
       "ioc_type": "github_profile",
       "value": "https://github.com/0xchamel",
@@ -245451,6 +245612,47 @@
       }
     },
     {
+      "id": "github-profile-62f41ef3ac1f",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/aetsoftworkhub",
+      "display": "aetsoftworkhub",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Web3 metaverse | AjunaVerse-current | L · T · E · I | | [AetSoftWorkHub/AetSoft_MVP](https://github.com/AetSoftWorkHub/AetSoft_MVP) | Web3 metaverse | AjunaVerse-current | L · T · I (via bit-identical `tasks.json` blob with AjunaVerse) | |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-13-ajunaverse-mvp/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-13",
+          "context": "…See `server/controllers/auth.js:67–72` and `server/routes/api/auth.js:18–36`. > The sibling repository `https://github.com/AetSoftWorkHub/AetSoft_MVP` carries the bit-identical `.vscode/tasks.json` (SHA `998c34f02d94169a546b4c36123d552dd14f985b`).…",
+          "context_origin": "text",
+          "section": "8.2 Reporting templates (you decide whether to file these)",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "52fb1f49727686a62ad68ebe1437dd4d94b3b1d815717dbfee34a2ab616c8ae7"
+        }
+      ]
+    },
+    {
       "id": "github-profile-f60cc8f12890",
       "ioc_type": "github_profile",
       "value": "https://github.com/agent-dev-well",
@@ -245718,6 +245920,47 @@
         "checked": "2026-08-30",
         "avatar": null
       }
+    },
+    {
+      "id": "github-profile-79d2593d1e04",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/ajunaworkhub",
+      "display": "ajunaworkhub",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…DEPLOYMENT_DISABLED). | Repository | Lure theme | Generation | Repo signals verified | |---|---|---|---| | [AjunaWorkHub/AjunaVerse_MVP](https://github.com/AjunaWorkHub/AjunaVerse_MVP) | Web3 metaverse | AjunaVerse-current | L · T · E · I | | [AetSoftWorkHub/AetSoft_MVP](https://github.com/AetSoftWorkHub/AetSoft_MVP) |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-13-ajunaverse-mvp/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-13",
+          "context": "# AjunaVerse_MVP — incident write-up & technical analysis | | | |---|---| | Subject | `https://github.com/AjunaWorkHub/AjunaVerse_MVP` | | Encounter date | 2026-05-13 (delivered via a suspicious recruiting/interview flow) | | Author of this report | Claude Code (Opus 4.7,…",
+          "context_origin": "text",
+          "section": "AjunaVerse_MVP — incident write-up & technical analysis",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "52fb1f49727686a62ad68ebe1437dd4d94b3b1d815717dbfee34a2ab616c8ae7"
+        }
+      ]
     },
     {
       "id": "github-profile-8689f620a317",
@@ -248603,6 +248846,36 @@
       }
     },
     {
+      "id": "github-profile-946b85b39636",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/bvslabs",
+      "display": "bvslabs",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Payments demo | realfraction (sub-shape D) | L | | [BVSLabs/blockchain-voting-system](https://github.com/BVSLabs/blockchain-voting-system) | Blockchain voting | realfraction (sub-shape E; cross-gen with AjunaVerse-earlier file path) | L | |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-c1aa4ff687f2",
       "ioc_type": "github_profile",
       "value": "https://github.com/caddo229",
@@ -248979,6 +249252,36 @@
       }
     },
     {
+      "id": "github-profile-2f420c46d568",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/chainbits1",
+      "display": "chainbits1",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…C; inferred) | (inferred sibling on confirmed-operator-owned account; loader presence not directly verified) | | [Chainbits1/StockX](https://github.com/Chainbits1/StockX) | StockX PoC | realfraction (sub-shape C) | L | | [Lynqex-Labs/Stockx_PoC_v3](https://github.com/Lynqex-Labs/Stockx_PoC_v3) | StockX PoC |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-d44120115eb6",
       "ioc_type": "github_profile",
       "value": "https://github.com/chainlito",
@@ -249120,6 +249423,36 @@
         "avatar": "/assets/img/github/chainstacker.webp",
         "account_id": 208267807
       }
+    },
+    {
+      "id": "github-profile-3561ca801b9d",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/chainvisita-protocols",
+      "display": "chainvisita-protocols",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Real-estate tokenization | realfraction (sub-shape A) | L (end-to-end review) | | [chainvisita-protocols/realfraction-mvp](https://github.com/chainvisita-protocols/realfraction-mvp) | Real-estate tokenization | realfraction (sub-shape A) | L · I (byte-identical loader to realfraction/realfraction except for C2 suffix)…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-e7a4fbc5714f",
@@ -249940,6 +250273,36 @@
         "checked": "2026-08-30",
         "avatar": "/assets/img/github/cornel-cp.png"
       }
+    },
+    {
+      "id": "github-profile-cc73e3c34c45",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/cortexa-org",
+      "display": "cortexa-org",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Blockchain voting | realfraction (sub-shape E; cross-gen with AjunaVerse-earlier file path) | L | | [Cortexa-org/NitroGem](https://github.com/Cortexa-org/NitroGem) | NitroGem (generic MVP) | realfraction (sub-shape E; cross-gen) | L | |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-2c119691ab15",
@@ -251754,6 +252117,36 @@
         "checked": "2026-08-30",
         "avatar": "/assets/img/github/director2010s.png"
       }
+    },
+    {
+      "id": "github-profile-18dfd2a69245",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/dlabshungary-hub9",
+      "display": "dlabshungary-hub9",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| AjunaVerse-current | L · T · I (via bit-identical `tasks.json` blob with AjunaVerse) | | [DLabsHungary-Hub9/DLabs-Platform-MVP2](https://github.com/DLabsHungary-Hub9/DLabs-Platform-MVP2) | Generic platform MVP | AjunaVerse-current | L | | [roamanbuild/OnyxVerse](https://github.com/roamanbuild/OnyxVerse) | Web3 metaverse |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-576bd00a59b0",
@@ -253812,6 +254205,36 @@
         "checked": "2026-08-30",
         "avatar": "/assets/img/github/githubrealfan.png"
       }
+    },
+    {
+      "id": "github-profile-067ccb1e63f0",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/gitworkhub9",
+      "display": "gitworkhub9",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| | [GitWorkHub9](https://github.com/GitWorkHub9) | user | **Operator-owned** (suspend) | A | User id 272514006.…",
+          "context_origin": "text",
+          "section": "Owning accounts and orgs",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-218819840380",
@@ -255931,6 +256354,36 @@
       }
     },
     {
+      "id": "github-profile-e00e9c364503",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/jaiu3d",
+      "display": "jaiu3d",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Real-estate tokenization | realfraction (sub-shape D) | L | | [jaiu3d/DeFi-Estate](https://github.com/jaiu3d/DeFi-Estate) | Real-estate tokenization | realfraction (sub-shape D) | L | | [kio87j/DeFi-Estate](https://github.com/kio87j/DeFi-Estate) | Real-estate…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-b5717f1a8220",
       "ioc_type": "github_profile",
       "value": "https://github.com/james0x40",
@@ -257300,6 +257753,36 @@
       }
     },
     {
+      "id": "github-profile-aeeb037c82ec",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/kio87j",
+      "display": "kio87j",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Real-estate tokenization | realfraction (sub-shape D) | L | | [kio87j/DeFi-Estate](https://github.com/kio87j/DeFi-Estate) | Real-estate tokenization | realfraction (sub-shape D) | L | | [kio87j/defi-estate-latest](https://github.com/kio87j/defi-estate-latest)…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-a08e9f572742",
       "ioc_type": "github_profile",
       "value": "https://github.com/kiracore",
@@ -258527,6 +259010,36 @@
       }
     },
     {
+      "id": "github-profile-c2fec75fd890",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/lynqex-labs",
+      "display": "lynqex-labs",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| StockX PoC | realfraction (sub-shape C) | L | | [Lynqex-Labs/gas-optimization](https://github.com/Lynqex-Labs/gas-optimization) | StockX-adjacent | realfraction (sub-shape C; inferred) | (inferred sibling on confirmed-operator-owned org; loader presence not directly…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-7d2220ddf55f",
       "ioc_type": "github_profile",
       "value": "https://github.com/m4rcu5o",
@@ -259206,6 +259719,36 @@
         "checked": "2026-08-30",
         "avatar": null
       }
+    },
+    {
+      "id": "github-profile-ab65d7788c70",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/metapulse54",
+      "display": "metapulse54",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…C; inferred) | (inferred sibling on confirmed-operator-owned org; loader presence not directly verified) | | [metapulse54/RealEstateDemo](https://github.com/metapulse54/RealEstateDemo) | Real-estate tokenization | realfraction (sub-shape D) | L | | [RockTxoi/DeFi-Estate](https://github.com/RockTxoi/DeFi-Estate) |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-3a3cad273c21",
@@ -262420,6 +262963,47 @@
       }
     },
     {
+      "id": "github-profile-dde578bd3a83",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/realfraction",
+      "display": "realfraction",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Real-estate tokenization | AjunaVerse-earlier | L | | [realfraction/realfraction](https://github.com/realfraction/realfraction) | Real-estate tokenization | realfraction (sub-shape A) | L (end-to-end review) | |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-18-realfraction/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-18-realfraction/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "# realfraction — incident write-up & technical analysis | | | |---|---| | Subject | `https://github.com/realfraction/realfraction` | | Encounter date | 2026-05-18 (forwarded by a third party as a suspect repo, framing not confirmed) | | Author of this report | Claude…",
+          "context_origin": "text",
+          "section": "realfraction — incident write-up & technical analysis",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "da6bc379847924f80e99669e7b1a99868519e93df09bb96471bb87b32c4c4e65"
+        }
+      ]
+    },
+    {
       "id": "github-profile-a64227cc586a",
       "ioc_type": "github_profile",
       "value": "https://github.com/realhardworkingdeveloper",
@@ -262875,6 +263459,36 @@
       }
     },
     {
+      "id": "github-profile-8bf344b18fbc",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/roamanbuild",
+      "display": "roamanbuild",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Generic platform MVP | AjunaVerse-current | L | | [roamanbuild/OnyxVerse](https://github.com/roamanbuild/OnyxVerse) | Web3 metaverse | AjunaVerse-current | L | | [khaleb-dev/jackpot](https://github.com/khaleb-dev/jackpot) | Gambling | AjunaVerse-current…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
+    },
+    {
       "id": "github-profile-d48dda08268a",
       "ioc_type": "github_profile",
       "value": "https://github.com/rochelle128",
@@ -262909,6 +263523,36 @@
         "avatar": "/assets/img/github/rochelle128.png",
         "account_id": 250275080
       }
+    },
+    {
+      "id": "github-profile-0643e8ca996b",
+      "ioc_type": "github_profile",
+      "value": "https://github.com/rocktxoi",
+      "display": "rocktxoi",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Real-estate tokenization | realfraction (sub-shape D) | L | | [RockTxoi/DeFi-Estate](https://github.com/RockTxoi/DeFi-Estate) | Real-estate tokenization | realfraction (sub-shape D) | L | | [jaiu3d/DeFi-Estate](https://github.com/jaiu3d/DeFi-Estate) | Real-estate…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        }
+      ]
     },
     {
       "id": "github-profile-737886be3538",
@@ -271615,6 +272259,47 @@
       ]
     },
     {
+      "id": "hosted-site-4cf1a8c330c6",
+      "ioc_type": "hosted_site",
+      "value": "cookie-xi-seven.vercel.app",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-05-18",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…C2 hosts: `ipregionchecker.com` (registrar-frozen), `isillegalregion.com` (Vercel; live), `cookie-xi-seven.vercel.app` and `ip-check-api.vercel.app` (both DEPLOYMENT_DISABLED). | Repository | Lure theme | Generation | Repo signals verified…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-18-realfraction/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-18-realfraction/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…| Vercel (`ns1.vercel-dns.com` / `ns2.vercel-dns.com`) | **live; serving stage-2** | 64.29.17.65 / 216.198.79.1 | | `cookie-xi-seven.vercel.app` | Vercel | **DEPLOYMENT_DISABLED** (already actioned) | 64.29.17.3 / 216.198.79.3 | | `ip-check-api.vercel.app` | Vercel |…",
+          "context_origin": "text",
+          "section": "7.7 Vercel hosts the realfraction-family C2 infrastructure",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "da6bc379847924f80e99669e7b1a99868519e93df09bb96471bb87b32c4c4e65"
+        }
+      ]
+    },
+    {
       "id": "hosted-site-6d7d7deffd0c",
       "ioc_type": "hosted_site",
       "value": "curly-spoon-sigma.vercel.app",
@@ -272084,7 +272769,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-04-04",
-      "last_seen": "2025-04-04",
+      "last_seen": "2026-05-18",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -272101,6 +272786,17 @@
           "section": "Expanded Payloads and Obfuscation #",
           "pulled_at": "2026-09-12",
           "source_sha256": "811d6d8f350e8309efff9fce86d808500bd8c98fb5086a9f7382392052ff557d"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…C2 hosts: `ipregionchecker.com` (registrar-frozen), `isillegalregion.com` (Vercel; live), `cookie-xi-seven.vercel.app` and `ip-check-api.vercel.app` (both DEPLOYMENT_DISABLED). | Repository | Lure theme | Generation | Repo signals verified | |---|---|---|---| |…",
+          "context_origin": "text",
+          "section": "Repositories",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
         }
       ]
     },
@@ -272203,6 +272899,36 @@
           "section": "IOCs",
           "pulled_at": "2026-09-12",
           "source_sha256": "54c852d2629b67a4aca26ad9a7ea73fe6526f4b24daa245b021df0254a2a5fbb"
+        }
+      ]
+    },
+    {
+      "id": "hosted-site-3b39f19fe76a",
+      "ioc_type": "hosted_site",
+      "value": "ip-core-api-one.vercel.app",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-05-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-13-ajunaverse-mvp/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-13",
+          "context": "…Copy-paste straight into detections. ### 7.1 Domains ``` vscode-settings-0506.vercel.app ip-core-api-one.vercel.app ``` Likely siblings (not directly confirmed; pattern is `vscode-settings- .vercel.app` rotated by date, and `ip-core-api- .vercel.app` —…",
+          "context_origin": "text",
+          "section": "7.1 Domains",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "52fb1f49727686a62ad68ebe1437dd4d94b3b1d815717dbfee34a2ab616c8ae7"
         }
       ]
     },
@@ -273785,6 +274511,36 @@
           "section": "Appendix 2: Indicators of Compromise",
           "pulled_at": "2026-09-01",
           "source_sha256": "eb61840c41e9cfe0f070045535eca2eead398b6ef3896d612e66ec3b4723e577"
+        }
+      ]
+    },
+    {
+      "id": "hosted-site-ff2a90c67341",
+      "ioc_type": "hosted_site",
+      "value": "vscode-settings-0506.vercel.app",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-13",
+      "last_seen": "2026-05-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-05-13-ajunaverse-mvp/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-13",
+          "context": "…Copy-paste straight into detections. ### 7.1 Domains ``` vscode-settings-0506.vercel.app ip-core-api-one.vercel.app ``` Likely siblings (not directly confirmed; pattern is `vscode-settings- .vercel.app` rotated by date, and…",
+          "context_origin": "text",
+          "section": "7.1 Domains",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "52fb1f49727686a62ad68ebe1437dd4d94b3b1d815717dbfee34a2ab616c8ae7"
         }
       ]
     },
@@ -338956,6 +339712,47 @@
           "section": "Key Findings",
           "pulled_at": "2026-10-01",
           "source_sha256": "16128976f788be1a812101330b656d933ebafe04b59eff5d5f1b1f4d4934d269"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-361ce71cc94c",
+      "ioc_type": "ip_address",
+      "value": "216.126.225.243",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-05-18",
+      "last_seen": "2026-08-12",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-05-18",
+          "context": "…deployments, `ipregionchecker.com`, `isillegalregion.com`, `cookie-xi-seven.vercel.app`, `ip-check-api.vercel.app`, `iploglab.store`, and `216.126.225.243:8085/8086/8087`. If you arrived here because of one of the situations below, jump straight to the file that's for you.…",
+          "context_origin": "text",
+          "section": "Attack-campaign documentation",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "a7d9d180510fc3272dd3d51068bfdcd902e944935fe6f084ba002644d095132c"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md",
+          "title": "bryanchriswhite/dev-trap-dossiers — incidents/2026-08-12-daam-ai-agent-marketplace/README",
+          "publisher": "bryanchriswhite (dev-trap-dossiers)",
+          "published": "2026-08-12",
+          "context": "…network, and crypto modules/APIs, contains strings associated with developer-secret theft, and statically recovered C2 endpoints at `216.126.225.243:8085`, `:8086`, and `:8087`.…",
+          "context_origin": "text",
+          "section": "0. TL;DR",
+          "pulled_at": "2026-10-27",
+          "source_sha256": "aa5b521ff58e80a15cd38458cc772a795b9aa0724ab3e82e9cd6359cdea09147"
         }
       ]
     },

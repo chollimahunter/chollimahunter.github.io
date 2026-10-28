@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-10-20",
+  "checked": "2026-10-27",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -771,6 +771,17 @@
       ],
       "checked": "2026-10-05"
     },
+    "ipregionchecker.org": {
+      "registered": true,
+      "created": "2026-05-26",
+      "expires": "2027-05-26",
+      "updated": "2026-08-12",
+      "registrar": "Name.com, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-27"
+    },
     "ironphantomcore.top": {
       "registered": true,
       "created": "2026-06-05",
@@ -853,6 +864,10 @@
       ],
       "checked": "2026-10-05"
     },
+    "javadevhouse.co.kr": {
+      "registered": false,
+      "checked": "2026-10-27"
+    },
     "jinjinpig.co.kr": {
       "registered": true,
       "created": "2001-05-22",
@@ -863,6 +878,19 @@
         "active"
       ],
       "checked": "2026-10-18"
+    },
+    "jitnad.lol": {
+      "registered": true,
+      "created": "2026-10-23",
+      "expires": "2027-10-23",
+      "updated": "2026-10-23",
+      "registrar": "Dynadot Inc",
+      "status": [
+        "server transfer prohibited",
+        "client transfer prohibited",
+        "add period"
+      ],
+      "checked": "2026-10-27"
     },
     "jlrandsons.co.uk": {
       "registered": true,
@@ -1421,6 +1449,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "pythonapischool.com": {
+      "registered": true,
+      "created": "2026-01-07",
+      "expires": "2027-01-07",
+      "updated": "2026-01-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-10-27"
     },
     "regancontrols.com": {
       "registered": true,
