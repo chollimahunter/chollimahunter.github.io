@@ -81,7 +81,8 @@
     "nickel gladstone",
     "nickel hyatt",
     "copernicium",
-    "reconnaissance general bureau"
+    "reconnaissance general bureau",
+    "lazarus"
   ],
   "sources": [
     {
@@ -523,20 +524,6 @@
     {
       "url": "https://nkinternet.com/2026/04/26/more-fake-devs-more-fake-companies-vexxloso-and-nixsora-com/",
       "publisher": "nkinternet",
-      "campaign": [
-        "IT Worker Fraud"
-      ]
-    },
-    {
-      "url": "https://chollima-group.io/posts/bells-ringing-in-dar-es-salaam.html",
-      "publisher": "Chollima Group",
-      "campaign": [
-        "IT Worker Fraud"
-      ]
-    },
-    {
-      "url": "https://chollima-group.io/posts/dubai-crypto-moonstonesleet-pivot-odyssey.html",
-      "publisher": "Chollima Group",
       "campaign": [
         "IT Worker Fraud"
       ]
@@ -9188,12 +9175,14 @@
       ]
     },
     {
-      "url": "https://www.anomali.com/blog/suspected-north-korean-cyber-espionage-campaign-targets-multiple-foreign-ministries-and-think-tanks",
+      "url": "https://web.archive.org/web/20211127232905/https://www.anomali.com/blog/suspected-north-korean-cyber-espionage-campaign-targets-multiple-foreign-ministries-and-think-tanks",
       "publisher": "Anomali",
       "title": "Suspected North Korean Cyber Espionage Campaign Targets Multiple Foreign Ministries and Think Tanks",
       "campaign": [
         "DPRK (cluster unattributed)"
-      ]
+      ],
+      "original_url": "https://www.anomali.com/blog/suspected-north-korean-cyber-espionage-campaign-targets-multiple-foreign-ministries-and-think-tanks",
+      "note": "The publisher's URL now redirects to the Anomali blog index, so the source points at the Wayback Machine capture of 2021-11-27."
     },
     {
       "url": "https://norfolkinfosec.com/osint-reporting-on-dprk-and-ta505-overlap/",
@@ -19936,6 +19925,20 @@
       "reason": "declined",
       "notes": "A neutralization report on the NitroGem lure repository that names its C2 deployments but never the DPRK, so the scraper's keyword guard refuses it. The tie runs through bryanchriswhite's dev-trap-dossiers, which lists the original TechByteX/NitroGem in the Contagious Interview cluster; its stage-one C2 is filed by hand in direct-observations.json (27 October 2026), and precommit.vercel.app was already indexed.",
       "checked": "2026-10-27"
+    },
+    {
+      "url": "https://chollima-group.io/posts/bells-ringing-in-dar-es-salaam.html",
+      "publisher": "Chollima Group",
+      "reason": "withdrawn",
+      "checked": "2026-10-28",
+      "notes": "The same article as https://chollima-group.io/posts/bells-ringing-in-dar-es-salaam, which remains a source, under a second address. Every record citing this address also cited that one, so each carried the article twice. The ingest removes this address's citations on every run."
+    },
+    {
+      "url": "https://chollima-group.io/posts/dubai-crypto-moonstonesleet-pivot-odyssey.html",
+      "publisher": "Chollima Group",
+      "reason": "withdrawn",
+      "checked": "2026-10-28",
+      "notes": "The same article as https://chollima-group.io/posts/dubai-crypto-moonstonesleet-pivot-odyssey, which remains a source, under a second address. Every record citing this address also cited that one, so each carried the article twice. The ingest removes this address's citations on every run."
     }
   ],
   "discovered": []
