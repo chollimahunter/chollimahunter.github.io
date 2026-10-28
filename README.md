@@ -42,9 +42,9 @@ npm run build    # writes _site/
 `.github/workflows/deploy.yml` builds and publishes on push. It deploys through
 the Pages Actions pipeline, so the repository's Pages source has to be set to
 "GitHub Actions" rather than to a branch, or the workflow succeeds and nothing
-is served. Two further workflows keep indicator data current and open a pull
-request rather than committing, so every dataset change is reviewed by a person
-before it ships.
+is served. The scheduled workflows that keep indicator data current, listed in
+`docs/ci.md`, open a pull request rather than committing, and `main` takes a
+change only through a pull request with a passing `ci` check.
 
 `src/_data/site.json` holds the site URL, the contact address, and the Ko-fi
 link. While the contact address is empty or still contains the substring
