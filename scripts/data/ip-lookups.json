@@ -6752,6 +6752,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "2.56.123.203": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "NetCrafters OU",
+      "org": "NetCrafters OU",
+      "asn": "AS203273 NetCrafters OU",
+      "as_name": "NetCraftersOU",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
     "2.56.151.8": {
       "kind": "datacenter",
       "provider": null,
@@ -61588,6 +61603,36 @@
       "as_name": "A1BG",
       "hosting": false,
       "proxy": true,
+      "mobile": false,
+      "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.135.181.15": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "12651980 Canada Inc.",
+      "org": null,
+      "asn": "AS399486 12651980 CANADA INC.",
+      "as_name": "VIRTUO",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.135.181.25": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "12651980 Canada Inc.",
+      "org": null,
+      "asn": "AS399486 12651980 CANADA INC.",
+      "as_name": "VIRTUO",
+      "hosting": false,
+      "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"

@@ -7004,6 +7004,167 @@
         "until": "2026-10-20",
         "payload_tx": "0x9cbee4f4a18c5262aba3dea9dddc0dfc6721fea8434511968959f1891da915ea",
         "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "154.91.0.20",
+        "since": "2026-10-20",
+        "until": "2026-10-20",
+        "payload_tx": "0x85e515f7f348324ca4f2c4c7a9c99db4700c648650ace681ff4cfce0a3f5285c",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-20",
+        "until": "2026-10-20",
+        "payload_tx": "0x85e515f7f348324ca4f2c4c7a9c99db4700c648650ace681ff4cfce0a3f5285c",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-20",
+        "until": "2026-10-20",
+        "payload_tx": "0x043ce2b31d1b00a2b69ba974414a41b962714809922eed8f9c52c713aa50ca71",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-20",
+        "until": "2026-10-20",
+        "payload_tx": "0xc2827c6ba8c903f5a5c5021d76135dcbada1c79228982ef55edf05c420ffa16c",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-20",
+        "until": "2026-10-20",
+        "payload_tx": "0x9ff1529860252a8b62e208006dc416c774fd09c9f29cf0aa1bec897d57e02cce",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0x51c6d8261eede4748a167c1afcf7f859e4aeedc001a4b84f93d2664aa5f9c8df",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.25",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0x51c6d8261eede4748a167c1afcf7f859e4aeedc001a4b84f93d2664aa5f9c8df",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.25",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0x1ea10a97726ee56ecc9620ddd59ca01bef05bc05d95cdbd0360af23028adc9b8",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0x4febd1b6286ef6680516a2dabb0d91da94e66ae8953d8046338b6b5df70b9b13",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.25",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0x4febd1b6286ef6680516a2dabb0d91da94e66ae8953d8046338b6b5df70b9b13",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.25",
+        "since": "2026-10-21",
+        "until": "2026-10-21",
+        "payload_tx": "0xb5bab8fcecc74263d1b57175b09ca46657ee5e47e545117fed5d290cf10a0fd1",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-22",
+        "until": "2026-10-22",
+        "payload_tx": "0x7160fa9c754bd21a1e218a61921f42f77cecf4653403e7393d074cc4f640131f",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-22",
+        "until": "2026-10-22",
+        "payload_tx": "0x7160fa9c754bd21a1e218a61921f42f77cecf4653403e7393d074cc4f640131f",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-22",
+        "until": "2026-10-22",
+        "payload_tx": "0xf257d2ca2e3c4fa7da99001324e3946c4c8ce4626dd7b8e3f85ecb31c7041bb2",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-22",
+        "until": "2026-10-22",
+        "payload_tx": "0x009c9b2c951ccbb1282c867020663a78011bcd8b076a91a7ae87513680562f99",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-22",
+        "until": "2026-10-22",
+        "payload_tx": "0x009c9b2c951ccbb1282c867020663a78011bcd8b076a91a7ae87513680562f99",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-22",
+        "until": "2026-10-27",
+        "payload_tx": "0x6dbab35f72339ca247d24d96b762355d3d04f6c705931f1d09d2298aeed21d6e",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-23",
+        "until": "2026-10-23",
+        "payload_tx": "0x6ad55947a35454cac34c00549625c6c70e7bf5d3222ef9d7bec96ae7d93f9003",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-23",
+        "until": "2026-10-23",
+        "payload_tx": "0x6ad55947a35454cac34c00549625c6c70e7bf5d3222ef9d7bec96ae7d93f9003",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-23",
+        "until": "2026-10-26",
+        "payload_tx": "0x64dec1f64f978684207c32c23c5db4c4ff3438db68fe2b3601ec12f004f03bc4",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-23",
+        "until": "2026-10-26",
+        "payload_tx": "0x64dec1f64f978684207c32c23c5db4c4ff3438db68fe2b3601ec12f004f03bc4",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-10-26",
+        "until": "2026-10-27",
+        "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-10-26",
+        "until": "2026-10-27",
+        "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
       }
     ]
   },
@@ -10642,6 +10803,93 @@
         "date": "2026-07-21",
         "type": "threat_intel_report",
         "quote": "0x52221c293a21D8CA7AFD01Ac6bFAC7175D590A84"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
+    "id": "xctdh-c2-ip-95-135-181-15",
+    "ioc_type": "ip_address",
+    "value": "95.135.181.15",
+    "campaign": [
+      "EtherHiding",
+      "Contagious Interview"
+    ],
+    "description": "Command-and-control address named in every remote-access stage the signal address has pointed at since 2026-10-20 (on port 443 from the second version that day) and in the dropper stage of 2026-10-20. The XCTDH loader reads the recipient of each transaction from 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb as packed pointers to BNB Smart Chain transactions, whose inputs carry XOR-encrypted scripts; this site follows the pointers and decodes each stage statically, without running it. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "DEV#POPPER.js",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "BNB Smart Chain transaction 0x85e515f7f348324ca4f2c4c7a9c99db4700c648650ace681ff4cfce0a3f5285c",
+        "url": "https://bscscan.com/tx/0x85e515f7f348324ca4f2c4c7a9c99db4700c648650ace681ff4cfce0a3f5285c",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-20",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "XCTDH Adopts Hash Hiding",
+        "url": "https://ransom-isac.org/blog/xctdh-adopts-hash-hiding/",
+        "publisher": "Ransom-ISAC",
+        "date": "2026-09-25",
+        "type": "threat_intel_report"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
+    "id": "xctdh-c2-ip-95-135-181-25",
+    "ioc_type": "ip_address",
+    "value": "95.135.181.25",
+    "campaign": [
+      "EtherHiding",
+      "Contagious Interview"
+    ],
+    "description": "Command-and-control address named in the remote-access and dropper stages the signal address pointed at on 2026-10-21. The XCTDH loader reads the recipient of each transaction from 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb as packed pointers to BNB Smart Chain transactions, whose inputs carry XOR-encrypted scripts; this site follows the pointers and decodes each stage statically, without running it. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "DEV#POPPER.js",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "BNB Smart Chain transaction 0x51c6d8261eede4748a167c1afcf7f859e4aeedc001a4b84f93d2664aa5f9c8df",
+        "url": "https://bscscan.com/tx/0x51c6d8261eede4748a167c1afcf7f859e4aeedc001a4b84f93d2664aa5f9c8df",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-21",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "XCTDH Adopts Hash Hiding",
+        "url": "https://ransom-isac.org/blog/xctdh-adopts-hash-hiding/",
+        "publisher": "Ransom-ISAC",
+        "date": "2026-09-25",
+        "type": "threat_intel_report"
+      }
+    ],
+    "date_added": "2026-10-26"
+  },
+  {
+    "id": "xctdh-c2-ip-2-56-123-203",
+    "ioc_type": "ip_address",
+    "value": "2.56.123.203",
+    "campaign": [
+      "EtherHiding",
+      "Contagious Interview"
+    ],
+    "description": "Command-and-control address named in the remote-access and dropper stages the signal address has pointed at since 2026-10-22. The XCTDH loader reads the recipient of each transaction from 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb as packed pointers to BNB Smart Chain transactions, whose inputs carry XOR-encrypted scripts; this site follows the pointers and decodes each stage statically, without running it. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "DEV#POPPER.js",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "BNB Smart Chain transaction 0x7160fa9c754bd21a1e218a61921f42f77cecf4653403e7393d074cc4f640131f",
+        "url": "https://bscscan.com/tx/0x7160fa9c754bd21a1e218a61921f42f77cecf4653403e7393d074cc4f640131f",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-22",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "XCTDH Adopts Hash Hiding",
+        "url": "https://ransom-isac.org/blog/xctdh-adopts-hash-hiding/",
+        "publisher": "Ransom-ISAC",
+        "date": "2026-09-25",
+        "type": "threat_intel_report"
       }
     ],
     "date_added": "2026-10-26"
