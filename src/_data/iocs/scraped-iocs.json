@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T04:13:04Z",
+  "generated_at": "2026-10-28T04:45:24Z",
   "record_count": 12074,
   "records": [
     {
@@ -1192,7 +1192,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -42696,7 +42696,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -72501,7 +72501,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -149949,7 +149949,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -151290,7 +151290,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -151723,7 +151723,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -153077,7 +153077,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -160744,7 +160744,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -163629,7 +163629,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -165230,7 +165230,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -170517,7 +170517,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -171060,7 +171060,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -172885,7 +172885,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -173328,7 +173328,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -173846,7 +173846,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -177777,7 +177777,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -178999,7 +178999,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -182391,7 +182391,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -182702,7 +182702,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -183887,7 +183887,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -213269,7 +213269,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -225747,7 +225747,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -230759,7 +230759,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -233522,7 +233522,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -279767,7 +279767,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2023-11-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -281030,7 +281030,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -281073,7 +281073,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -281116,7 +281116,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -281159,7 +281159,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -281202,7 +281202,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -292636,7 +292636,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -297588,7 +297588,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -298176,7 +298176,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -299001,7 +299001,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -305946,7 +305946,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -305988,7 +305988,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -306529,7 +306529,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -307094,7 +307094,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -314150,7 +314150,7 @@
         "Andariel"
       ],
       "first_seen": "2024-10-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -315723,7 +315723,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -315766,7 +315766,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -315809,7 +315809,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -315958,7 +315958,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-01-29",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -316072,7 +316072,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -316146,7 +316146,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -316529,7 +316529,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2017-05-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -317261,7 +317261,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -318461,7 +318461,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -322180,7 +322180,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324083,7 +324083,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324126,7 +324126,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324259,7 +324259,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324490,7 +324490,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-04-23",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324577,7 +324577,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-04-23",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -339263,7 +339263,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -339305,7 +339305,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -339347,7 +339347,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -339564,7 +339564,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -340187,7 +340187,7 @@
         "APT38"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -341291,7 +341291,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -344235,7 +344235,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -351978,7 +351978,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-05-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -356652,7 +356652,7 @@
         "APT38"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -364941,7 +364941,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -365279,7 +365279,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -367358,7 +367358,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -375049,7 +375049,7 @@
         "APT38"
       ],
       "first_seen": "2025-02-25",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -377016,7 +377016,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -377694,7 +377694,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378349,7 +378349,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378392,7 +378392,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378686,7 +378686,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378791,7 +378791,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-01-29",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -378918,7 +378918,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -384295,7 +384295,7 @@
         "APT38"
       ],
       "first_seen": "2025-02-25",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -387035,7 +387035,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-03-23",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -402012,7 +402012,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -403235,7 +403235,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -405162,7 +405162,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -405222,7 +405222,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-18",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-10-28",
       "extraction": {
         "method": "regex",
         "model": null,

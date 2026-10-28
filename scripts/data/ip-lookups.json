@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-10-26",
+  "checked": "2026-10-28",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",

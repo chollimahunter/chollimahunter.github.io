@@ -19938,5 +19938,30 @@
       "checked": "2026-10-27"
     }
   ],
-  "discovered": []
+  "discovered": [
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-20-27-oct-2026",
+      "publisher": "SecurityAlliance",
+      "title": "SEAL weekly stats: 20-27 Oct, 2026",
+      "published": "2026-10-27",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview",
+        "UNC1069"
+      ],
+      "discovered": "2026-10-28"
+    },
+    {
+      "url": "https://securelist.ru/lazarus-operation-flashhole/117319",
+      "publisher": "Kaspersky",
+      "title": "«Операция FlashHole»: Lazarus взламывает защиту и обходит контроль",
+      "published": "2026-10-21",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "Lazarus"
+      ],
+      "discovered": "2026-10-28"
+    }
+  ]
 }
