@@ -19936,7 +19936,28 @@
       "reason": "declined",
       "notes": "A neutralization report on the NitroGem lure repository that names its C2 deployments but never the DPRK, so the scraper's keyword guard refuses it. The tie runs through bryanchriswhite's dev-trap-dossiers, which lists the original TechByteX/NitroGem in the Contagious Interview cluster; its stage-one C2 is filed by hand in direct-observations.json (27 October 2026), and precommit.vercel.app was already indexed.",
       "checked": "2026-10-27"
+    },
+    {
+      "url": "https://securelist.ru/lazarus-operation-flashhole/117319",
+      "publisher": "Kaspersky",
+      "reason": "declined",
+      "checked": "2026-10-28",
+      "notes": "The Russian edition of Kaspersky's Operation FlashHole report; the English edition (securelist.com/lazarus-operation-flashhole/121541/) is already a source."
     }
   ],
-  "discovered": []
+  "discovered": [
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-20-27-oct-2026",
+      "publisher": "SecurityAlliance",
+      "title": "SEAL weekly stats: 20-27 Oct, 2026",
+      "published": "2026-10-27",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview",
+        "UNC1069"
+      ],
+      "discovered": "2026-10-28"
+    }
+  ]
 }
