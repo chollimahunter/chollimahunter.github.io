@@ -22,12 +22,11 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
 
 # EtherHiding Tracker
 
-Contracts and wallets that serve malware or its C2 hosts. The tracker covers all EtherHiding, not only North Korean operations.
+Contracts and wallets that serve malware or its C2 hosts.
 
 </section>
 
 <section>
-<h2 id="addresses">Addresses and their C2 hosts</h2>
 {% set tableFilter = { target: "#address-table", noun: "addresses", page: limits.list, id: "address-search-input", label: "Search addresses", placeholder: "Address, C2 host, parked value, malware family, or chain", chips: [
   { dimension: "family", label: "Filter addresses by malware family", allLabel: "All families", counts: etherhidingAddresses.facets.family, short: "Family", multiple: true },
   { dimension: "chain", label: "Filter addresses by chain", allLabel: "All chains", counts: etherhidingAddresses.facets.chain, short: "Chain", multiple: true }
