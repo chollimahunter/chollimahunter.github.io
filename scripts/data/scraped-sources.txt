@@ -2291,3 +2291,7 @@ https://www.cyfirma.com/research/cyfirma-threat-advisory-suspected-dprk-campaign
 https://bluecyber.hashnode.dev/etherrat-malware-bootcamp2026
 https://radar.securityalliance.org/seal-weekly-stats-13-20-oct-2026
 https://raw.githubusercontent.com/NextronSystems/iocs/master/reports/Hunting%20Kimsuky%3A%20Multi-Language%20LNK%20Lures%20Delivering%20Persistent%20Backdoors/readme.md
+https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/README.md
+https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-13-ajunaverse-mvp/README.md
+https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-05-18-realfraction/README.md
+https://raw.githubusercontent.com/bryanchriswhite/dev-trap-dossiers/main/incidents/2026-08-12-daam-ai-agent-marketplace/README.md
