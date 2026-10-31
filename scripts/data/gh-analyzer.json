@@ -7790,6 +7790,600 @@
       ],
       "organizations": []
     },
+    "camonanesi": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "Camonanesi",
+      "created_at": "2013-01-15T02:14:19Z",
+      "public_repos": 2,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 2,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "camronrohan030303": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "camronrohan030303",
+      "status": "no report"
+    },
+    "capitalist42": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "capitalist42",
+      "created_at": "2020-07-12T13:35:10Z",
+      "public_repos": 162,
+      "followers": 15,
+      "following": 85,
+      "original_repos": 5,
+      "forked_repos": 157,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "capitalist42@protonmail.ch"
+      ],
+      "commit_names": [
+        "capitalist42"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "ororopickpocket"
+      ],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "capsulelabs-lgtml": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "capsulelabs-lgtml",
+      "status": "no report"
+    },
+    "cardoso-topdev": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "Cardoso-topdev",
+      "created_at": "2020-12-09T13:25:04Z",
+      "public_repos": 74,
+      "followers": 53,
+      "following": 24,
+      "original_repos": 71,
+      "forked_repos": 3,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "oscar@cardoso-devstar.com"
+      ],
+      "commit_names": [
+        "Cardoso Studio",
+        "Cardoso-topdev",
+        "Oscar C",
+        "Oscar Cardoso Garcia",
+        "cardoso-topdev"
+      ],
+      "names_per_email_max": 4,
+      "emails_per_name_max": 3,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "dragonV22",
+        "ironcg20"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "AccessibleForAll",
+        "CommunityPro",
+        "Design-and-Code",
+        "DevCrafta-Team",
+        "Devs-Dungeon",
+        "Intel-Student-Ambassadors",
+        "Magic-Academy",
+        "dev-protocol",
+        "infraform"
+      ]
+    },
+    "carlotalentengine-sketch": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "carlotalentengine-sketch",
+      "created_at": "2025-10-20T01:22:29Z",
+      "public_repos": 0,
+      "followers": 1,
+      "following": 0,
+      "original_repos": 0,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "cedev935": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "cedev935",
+      "created_at": "2023-07-26T13:28:44Z",
+      "public_repos": 124,
+      "followers": 988,
+      "following": 1997,
+      "original_repos": 90,
+      "forked_repos": 34,
+      "backdated_repos": 61,
+      "backdated_examples": [
+        {
+          "repo": "adonis0302/OpenChat",
+          "first_commit": "2022-06-24"
+        },
+        {
+          "repo": "AI-python",
+          "first_commit": "2021-11-01"
+        },
+        {
+          "repo": "android-chat",
+          "first_commit": "2016-02-25"
+        },
+        {
+          "repo": "appwrite",
+          "first_commit": "2020-09-23"
+        },
+        {
+          "repo": "bettingsite",
+          "first_commit": "2022-08-22"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "cedev935@gmail.com"
+      ],
+      "commit_names": [
+        "Count&on&me",
+        "Olaf",
+        "Super-Dev2023",
+        "cedev935"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "AringoldX",
+        "Forest410",
+        "milkdev11"
+      ],
+      "followers_indexed": [
+        "AI0228",
+        "Forest410",
+        "Phoenix-Genius",
+        "PixelPanther714",
+        "SacredDever",
+        "bestengineer1112",
+        "bstar0406",
+        "codeninja819",
+        "codetechie-G",
+        "superman0052"
+      ],
+      "mutual_indexed": [
+        "Forest410"
+      ],
+      "organizations": []
+    },
+    "ch2888": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "ch2888",
+      "created_at": "2013-06-03T01:33:33Z",
+      "public_repos": 16,
+      "followers": 14,
+      "following": 6,
+      "original_repos": 4,
+      "forked_repos": 12,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "changhong2888@gmail.com"
+      ],
+      "commit_names": [
+        "Jeyhun Ilyasov",
+        "ch2888"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "ch2888"
+      ],
+      "following_indexed": [
+        "hc0503",
+        "persec10000"
+      ],
+      "followers_indexed": [
+        "hc0503"
+      ],
+      "mutual_indexed": [
+        "hc0503"
+      ],
+      "organizations": []
+    },
+    "chain-leaddev": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chain-leaddev",
+      "created_at": "2026-08-04T06:36:32Z",
+      "public_repos": 0,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 0,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "chainbits1": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainbits1",
+      "status": "no report"
+    },
+    "chainlito": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainlito",
+      "created_at": "2020-04-21T01:28:39Z",
+      "public_repos": 43,
+      "followers": 18,
+      "following": 2,
+      "original_repos": 27,
+      "forked_repos": 16,
+      "backdated_repos": 6,
+      "backdated_examples": [
+        {
+          "repo": "Draggable-Resizable-Panel",
+          "first_commit": "2017-03-16"
+        },
+        {
+          "repo": "Goaler",
+          "first_commit": "2013-12-27"
+        },
+        {
+          "repo": "MovieMarket",
+          "first_commit": "2019-12-03"
+        },
+        {
+          "repo": "react-coreone",
+          "first_commit": "2020-01-20"
+        },
+        {
+          "repo": "tecjrsite",
+          "first_commit": "2019-02-01"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "justinhs0807@gmail.com",
+        "kirikiri.viking@gmail.com"
+      ],
+      "commit_names": [
+        "Lito",
+        "Teddy",
+        "chainlito",
+        "kirikiri"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": [
+        "ARTTokenKit",
+        "Cokeeeee",
+        "Design-and-Code",
+        "KumaInu",
+        "SavageryOrZen"
+      ]
+    },
+    "chainoneer": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainoneer",
+      "status": "no report"
+    },
+    "chainshifu": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainshifu",
+      "created_at": "2024-06-08T19:30:51Z",
+      "public_repos": 9,
+      "followers": 52,
+      "following": 25,
+      "original_repos": 8,
+      "forked_repos": 1,
+      "backdated_repos": 6,
+      "backdated_examples": [
+        {
+          "repo": "chat-llama",
+          "first_commit": "2023-03-05"
+        },
+        {
+          "repo": "chatgpt-webapp",
+          "first_commit": "2023-04-21"
+        },
+        {
+          "repo": "ECommerce-next",
+          "first_commit": "2021-11-22"
+        },
+        {
+          "repo": "frontend-shopify",
+          "first_commit": "2024-01-29"
+        },
+        {
+          "repo": "langchain-ui",
+          "first_commit": "2023-03-22"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "chainchief@outlook.com"
+      ],
+      "commit_names": [
+        "chainshifu"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "Daniel-Kennison",
+        "Luis96920",
+        "appleseed619",
+        "basitali717",
+        "felipedev418",
+        "goldsunshines",
+        "noahstoner",
+        "popstar7",
+        "sergiourrego",
+        "silvershiny",
+        "stanislavboik"
+      ],
+      "followers_indexed": [
+        "BeautifulMoon211",
+        "Luis96920",
+        "basitali717",
+        "dragonsea0927",
+        "felipedev418",
+        "git25126",
+        "goldsunshines",
+        "guilmola724",
+        "lucatosc",
+        "noahstoner",
+        "passionatedev724",
+        "popstar7",
+        "sergiourrego",
+        "silvershiny",
+        "stanislavboik",
+        "topsecretagent007"
+      ],
+      "mutual_indexed": [
+        "Luis96920",
+        "basitali717",
+        "felipedev418",
+        "goldsunshines",
+        "noahstoner",
+        "popstar7",
+        "sergiourrego",
+        "silvershiny",
+        "stanislavboik"
+      ],
+      "organizations": [
+        "Finalgoal231"
+      ]
+    },
+    "chainspacehub": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainspacehub",
+      "status": "no report"
+    },
+    "chainstacker": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainstacker",
+      "created_at": "2025-04-19T12:52:43Z",
+      "public_repos": 7,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 6,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "jatinhemantpawar@gmail.com"
+      ],
+      "commit_names": [
+        "chainstacker"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "chainvisita-protocols": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "chainvisita-protocols",
+      "status": "no report"
+    },
+    "challengedev210": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "ChallengeDev210",
+      "created_at": "2022-08-01T01:51:53Z",
+      "public_repos": 21,
+      "followers": 55,
+      "following": 82,
+      "original_repos": 17,
+      "forked_repos": 4,
+      "backdated_repos": 2,
+      "backdated_examples": [
+        {
+          "repo": "ChallengeDev210/jodit-react",
+          "first_commit": "2019-04-02"
+        },
+        {
+          "repo": "ChallengeDev210/parallax",
+          "first_commit": "2013-08-01"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "challengedev210@gmail.com"
+      ],
+      "commit_names": [
+        "ChallengeDev210",
+        "challengedev210"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "OrdinalKing",
+        "TopCodeBeast",
+        "alexiva0806",
+        "bestengineer1112",
+        "srfullstackwebdev",
+        "techwizard210",
+        "webpointdev"
+      ],
+      "followers_indexed": [
+        "OrdinalKing",
+        "Thomas-Kebin",
+        "bestengineer1112",
+        "devconductor125",
+        "lovelyBestDev",
+        "smartgeek1003",
+        "techwizard210",
+        "uniwaydev"
+      ],
+      "mutual_indexed": [
+        "OrdinalKing",
+        "bestengineer1112",
+        "techwizard210"
+      ],
+      "organizations": []
+    },
+    "challengehandler": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "ChallengeHandler",
+      "created_at": "2022-10-10T12:13:21Z",
+      "public_repos": 11,
+      "followers": 9,
+      "following": 1,
+      "original_repos": 7,
+      "forked_repos": 4,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "challengehandler@gmail.com"
+      ],
+      "commit_names": [
+        "Challenge Handler",
+        "ChallengeHandler"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "ironcg20"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "AccessibleForAll",
+        "Bauddhik-Geeks",
+        "Design-and-Code",
+        "EddieHubCommunity",
+        "WarriorWhoCodesCommunity",
+        "golang-friends",
+        "yfosp"
+      ]
+    },
+    "champion119": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "champion119",
+      "created_at": "2024-01-05T16:21:03Z",
+      "public_repos": 5,
+      "followers": 1,
+      "following": 0,
+      "original_repos": 5,
+      "forked_repos": 0,
+      "backdated_repos": 3,
+      "backdated_examples": [
+        {
+          "repo": "react",
+          "first_commit": "2022-04-19"
+        },
+        {
+          "repo": "react_node",
+          "first_commit": "2023-02-02"
+        },
+        {
+          "repo": "shopify-to-ga4",
+          "first_commit": "2023-11-07"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "dascalcosmin52@gmail.com"
+      ],
+      "commit_names": [
+        "Dascal Cosmin",
+        "Jesus Quevedo"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "changdev0811": {
       "analyzed": "2026-10-01",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -7821,6 +8415,63 @@
       ],
       "mutual_indexed": [],
       "organizations": []
+    },
+    "changeyourself0613": {
+      "analyzed": "2026-10-31",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "ChangeYourself0613",
+      "created_at": "2023-12-12T15:40:37Z",
+      "public_repos": 73,
+      "followers": 82,
+      "following": 3,
+      "original_repos": 66,
+      "forked_repos": 7,
+      "backdated_repos": 10,
+      "backdated_examples": [
+        {
+          "repo": "ChangeYourself0613/Marketplace_Backend",
+          "first_commit": "2023-08-16"
+        },
+        {
+          "repo": "ChangeYourself0613/RubyExchange-contracts",
+          "first_commit": "2022-05-11"
+        },
+        {
+          "repo": "ChangeYourself0613/niftyswap",
+          "first_commit": "2019-06-27"
+        },
+        {
+          "repo": "ChangeYourself0613/solana-raydium-ui",
+          "first_commit": "2021-03-31"
+        },
+        {
+          "repo": "ChangeYourself0613/My-Website",
+          "first_commit": "2023-03-04"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "Go To Infinite"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "changeyourself0613"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [
+        "CryptoNinja0331",
+        "devstar829",
+        "dynamic612",
+        "frostyalce000",
+        "futurestar425",
+        "hi-tech-AI"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "stabilitydao"
+      ]
     },
     "chazcarey": {
       "analyzed": "2026-10-01",
@@ -15332,5 +15983,5 @@
     }
   },
   "_comment": "gh-fake-analyzer (github.com/shortdoom/gh-fake-analyzer, by the Ketman Project) run over GitHub accounts in this index by .github/workflows/gh-analyzer.yml, summarized by scripts/gh-analyzer-summarize.js. Signals only: an account flagged here is not thereby attributed to anyone, and one that passes is not cleared. See docs/gh-fake-analyzer.md.",
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }
