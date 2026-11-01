@@ -1,6 +1,6 @@
 {
   "_comment": "Liveness for the GitHub accounts that reach this site through the hand-transcribed dossier files. scripts/enrich-github-accounts.js only ever reads src/_data/iocs/scraped-iocs.json, so these had no status at all; scripts/lib/dossiers.js attaches this file to them at build time, exactly as it attaches linkedin-account-status.json to the LinkedIn accounts. It covers every dossier login, including those the scraper also holds, because src/_data/iocs/iocIndex.js lets the dossier group claim an id first — so for a shared login it is the dossier record that renders, and without an entry here it rendered with no status. `account_id` is GitHub's numeric id, read from the redirect github.com/<login>.png issues, and it is recorded because GitHub frees a deleted account's login for anyone to re-register: without it a recycled handle answers 200, reads as live, and this site would present whoever holds it now as the account a researcher named. A `recycled` entry carries the date the present account was created and the date the identifier was first published, so the page can state the gap, and never carries an avatar.",
-  "checked": "2026-10-11",
+  "checked": "2026-11-01",
   "accounts": [
     {
       "login": "098oiuyt",
@@ -67,6 +67,13 @@
       "login": "0xbomb215",
       "state": "removed",
       "checked": "2026-09-02"
+    },
+    {
+      "login": "0xbrentfi",
+      "state": "live",
+      "checked": "2026-11-01",
+      "account_id": 263011287,
+      "account_created": "2026-02-21"
     },
     {
       "login": "0xchamel",
@@ -7073,6 +7080,13 @@
       "account_created": "2023-09-29"
     },
     {
+      "login": "qevoratrix-live-coding",
+      "state": "live",
+      "checked": "2026-11-01",
+      "account_id": 345100866,
+      "account_created": "2026-10-20"
+    },
+    {
       "login": "qingtopdev",
       "state": "live",
       "checked": "2026-09-30",
@@ -8235,6 +8249,13 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "stockx-fi",
+      "state": "live",
+      "checked": "2026-11-01",
+      "account_id": 312729000,
+      "account_created": "2026-08-03"
+    },
+    {
       "login": "stoller85",
       "state": "live",
       "checked": "2026-09-30",
@@ -8824,6 +8845,11 @@
       "account_id": 144047004,
       "avatar": "/assets/img/github/together320.webp",
       "account_created": "2023-09-04"
+    },
+    {
+      "login": "togetherlabsinchub",
+      "state": "removed",
+      "checked": "2026-11-01"
     },
     {
       "login": "tomlove223",
