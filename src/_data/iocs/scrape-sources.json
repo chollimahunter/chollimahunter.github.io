@@ -19938,5 +19938,287 @@
       "checked": "2026-10-27"
     }
   ],
-  "discovered": []
+  "discovered": [
+    {
+      "url": "https://wezard4u.tistory.com/429909",
+      "publisher": "wezard4u (tistory)",
+      "title": "Kimsuky(김수키) 의심 악성코드 분석-아산시 폐기물처리장 민원&middot;산업단지 지원 문제를 다룬 26년 10월 2차 이장미팅 회의내용 문서 위장 분석",
+      "published": "2026-11-01",
+      "feed": "https://wezard4u.tistory.com/rss",
+      "matched_terms": [
+        "Kimsuky",
+        "김수키"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack",
+      "publisher": "USFBI",
+      "title": "North Korea Responsible for $6 Billion+ Binance Attack",
+      "published": "2026-10-31",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korea",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.silentpush.com/blog/north-korea-crypto-heists-open-internet/",
+      "publisher": "Silent Push",
+      "title": "North Korea’s Crypto Heists Start on the Open Internet",
+      "published": "2026-10-30",
+      "feed": "https://www.silentpush.com/feed/",
+      "matched_terms": [
+        "North Korea",
+        "North Korean"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/polinrider-malware-found-in-2025-npm-packages",
+      "publisher": "OpenSourceMalware",
+      "title": "Earliest Known PolinRider Malware Found in 2025 npm Packages",
+      "published": "2026-10-30",
+      "feed": "https://opensourcemalware.com/rss.xml",
+      "matched_terms": [
+        "North Korean",
+        "PolinRider"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.jamf.com/blog/binance-attack-dprk-developer-laptop-security/",
+      "publisher": "Jamf Threat Labs",
+      "title": "Binance attack: how DPRK targets developer laptops",
+      "published": "2026-10-30",
+      "feed": "https://www.jamf.com/blog/rss/",
+      "matched_terms": [
+        "DPRK"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history",
+      "publisher": "Elliptic",
+      "title": "The largest theft in history: North Korea likely behind the $6.4 billion Binance hack",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korea",
+        "DPRK"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://asec.ahnlab.com/en/96295",
+      "publisher": "Ahnlab",
+      "title": "September 2026 Threat Trend Report on APT Attacks (South Korea)",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://asec.ahnlab.com/ko/96294",
+      "publisher": "Ahnlab",
+      "title": "2026년 9월 APT 공격 동향 보고서(국내)",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response",
+      "publisher": "Chainalysis",
+      "title": "Binance Exploit: Latest Findings and Response",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korean",
+        "DPRK",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+      "publisher": "Binance",
+      "title": "Security Incident Update",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft/",
+      "publisher": "Microsoft Security Blog",
+      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
+      "published": "2026-10-29",
+      "feed": "https://www.microsoft.com/en-us/security/blog/feed/",
+      "matched_terms": [
+        "North Korean",
+        "Sapphire Sleet"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history",
+      "publisher": "Trmlabs",
+      "title": "North Korea Steals USD 6.36 Billion From Binance in the Largest Hack in History",
+      "published": "2026-10-29",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korea",
+        "North Korean",
+        "DPRK",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://newtonpaul.com/blog/dprk-contagious-interview-polygon-loader/",
+      "publisher": "NewtonPaul",
+      "title": "DPRK's Contagious Interview Meets ErrTraffic",
+      "published": "2026-10-29",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0669/",
+      "publisher": "U.S. Treasury (press releases)",
+      "title": "Treasury Sanctions Facilitators of DPRK IT Worker Fraud Targeting U.S. Businesses",
+      "published": "2026-10-28",
+      "feed": "https://home.treasury.gov/news/press-releases/index.xml",
+      "matched_terms": [
+        "North Korean",
+        "DPRK",
+        "IT Worker"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edva/pr/defense-contractor-employee-pleads-guilty-aiding-north-korean-remote-it-scheme",
+      "publisher": "USJustice",
+      "title": "Defense contractor employee pleads guilty to aiding North Korean remote IT scheme",
+      "published": "2026-10-28",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "North Korean"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/the-opensourcemalwareshow-episode27",
+      "publisher": "Open Source Malware",
+      "title": "The OpenSourceMalware Show #27",
+      "published": "2026-10-28",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.trmlabs.com/resources/blog/ofac-designates-facilitators-of-north-korean-it-worker-schemes-targeting-us-businesses",
+      "publisher": "Trmlabs",
+      "title": "OFAC Designates Facilitators of North Korean IT Worker Schemes Targeting US Businesses",
+      "published": "2026-10-28",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "North Korean",
+        "IT Worker"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.chainalysis.com/blog/ofac-sanctions-dprk-it-worker-fraud",
+      "publisher": "Chainalysis",
+      "title": "OFAC Sanctions North Korean IT Worker Fraud Scheme",
+      "published": "2026-10-28",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "North Korean",
+        "IT Worker"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.welivesecurity.com/en/eset-research/eset-apt-activity-report-q2-2026-q3-2026",
+      "publisher": "ESET",
+      "title": "ESET APT Activity Report Q2 2026–Q3 2026",
+      "published": "2026-10-28",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://blog.gitguardian.com/ghostaction-x-polinrider",
+      "publisher": "Git Guardian",
+      "title": "GhostAction Crosses Paths With PolinRider: Inside the October Escalation",
+      "published": "2026-10-27",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "PolinRider"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-20-27-oct-2026",
+      "publisher": "Security Alliance",
+      "title": "SEAL weekly stats: 20-27 Oct, 2026",
+      "published": "2026-10-27",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://www.dfat.gov.au/news/two-persons-and-two-entities-listed-under-autonomous-sanctions-regulations-2011-democratic-peoples-republic-korea",
+      "publisher": "AUDFAT",
+      "title": "Two persons and two entities listed under the Autonomous Sanctions Regulations 2011 – Democratic People’s Republic of Korea",
+      "published": "2026-10-23",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-01"
+    },
+    {
+      "url": "https://x.com/somaxbt/status/2116884703655723207",
+      "publisher": "SomaXBT",
+      "title": "Binance exploit: about $242M laundered through the Tron leg in two days",
+      "published": "2026-11-01",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-02"
+    },
+    {
+      "url": "https://threatmon.io/binance-lost-6-3-billion-without-losing-a-key",
+      "publisher": "ThreatMon",
+      "title": "Binance Lost $6.3 Billion Without Losing a Key",
+      "published": "2026-10-30",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-02"
+    }
+  ]
 }
