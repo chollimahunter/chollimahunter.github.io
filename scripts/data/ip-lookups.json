@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-10-26",
+  "checked": "2026-11-02",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -6947,6 +6947,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "2.59.133.151": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "DE",
+      "country_name": "Germany",
+      "isp": "dataforest GmbH",
+      "org": null,
+      "asn": "AS58212 dataforest GmbH",
+      "as_name": "DATAFOREST",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "2.59.181.125": {
       "kind": "proxy",
       "provider": null,
@@ -12767,6 +12782,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "23.234.113.169": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "tzulo, inc.",
+      "org": "kejihulain",
+      "asn": "AS11878 tzulo, inc.",
+      "as_name": "TZULO",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "23.236.169.233": {
       "kind": "proxy",
       "provider": null,
@@ -15885,6 +15915,36 @@
       "proxy": true,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "32.236.50.30": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "AU",
+      "country_name": "Australia",
+      "isp": "Amazon.com, Inc.",
+      "org": "AWS EC2 (ap-southeast-2)",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "as_name": "AMAZON-02",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
+    "32.236.55.80": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "AU",
+      "country_name": "Australia",
+      "isp": "Amazon.com, Inc.",
+      "org": "AWS EC2 (ap-southeast-2)",
+      "asn": "AS16509 Amazon.com, Inc.",
+      "as_name": "AMAZON-02",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "34.13.42.35": {
@@ -33572,6 +33632,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "47.250.155.133": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "MY",
+      "country_name": "Malaysia",
+      "isp": "Alibaba (US) Technology Co., Ltd.",
+      "org": "Alibaba.com LLC",
+      "asn": "AS45102 Alibaba (US) Technology Co., Ltd.",
+      "as_name": "ALIBABA-CN-NET",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "47.251.12.225": {
       "kind": "proxy",
       "provider": null,
@@ -39585,6 +39660,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "64.11.92.102": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "Verizon Business",
+      "org": "UUNET Canada Inc.",
+      "asn": "AS701 Verizon Business",
+      "as_name": "UUNET",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "64.17.30.238": {
@@ -50627,6 +50717,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "79.193.197.168": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "DE",
+      "country_name": "Germany",
+      "isp": "Deutsche Telekom AG",
+      "org": "Deutsche Telekom AG",
+      "asn": "AS3320 Deutsche Telekom AG",
+      "as_name": "DTAG",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "80.23.253.250": {
       "kind": "fixed-line",
       "provider": null,
@@ -53775,6 +53880,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "85.11.190.112": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "SC",
+      "country_name": "Seychelles",
+      "isp": "IP Vendetta Inc.",
+      "org": "IP Vendetta Inc",
+      "asn": "AS209101 IP Vendetta Inc.",
+      "as_name": "ipvendettainc",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "85.13.146.113": {
@@ -62250,6 +62370,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.179.220.151": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "The Constant Company, LLC",
+      "org": "Vultr Holdings LLC Paris",
+      "asn": "AS20473 The Constant Company, LLC",
+      "as_name": "AS-VULTR",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "95.182.78.2": {
@@ -86057,6 +86192,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "112.245.227.143": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "CN",
+      "country_name": "China",
+      "isp": "China Unicom CHINA169 Shandong Province Network",
+      "org": null,
+      "asn": "AS4837 CHINA UNICOM China169 Backbone",
+      "as_name": "CHINA169-Backbone",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "113.10.170.98": {
       "kind": "fixed-line",
       "provider": null,
@@ -88712,6 +88862,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "117.83.155.42": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "CN",
+      "country_name": "China",
+      "isp": "China Telecom",
+      "org": "Chinanet JS",
+      "asn": "AS140292 CHINATELECOM Jiangsu province Suzhou 5G network",
+      "as_name": "CHINATELECOM-JIANGSU-SUZHOU-5G-NETWORK",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "117.102.78.42": {
       "kind": "fixed-line",
       "provider": null,
@@ -90077,6 +90242,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "118.186.18.243": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "CN",
+      "country_name": "China",
+      "isp": "Neteon",
+      "org": "Beijing NETEON Technology Co., Ltd",
+      "asn": "AS23724 IDC, China Telecommunications Corporation",
+      "as_name": "CHINANET-IDC-BJ-AP",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "118.193.68.11": {
       "kind": "datacenter",
       "provider": null,
@@ -90975,6 +91155,21 @@
       "proxy": true,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "119.59.101.74": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "TH",
+      "country_name": "Thailand",
+      "isp": "Metrabyte Co., Ltd",
+      "org": "Metrabyte Co., Ltd",
+      "asn": "AS56067 453 Ladplacout Jorakhaebua",
+      "as_name": "METRABYTE-TH",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "119.63.72.54": {
@@ -96332,6 +96527,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "138.199.43.94": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "Datacamp Limited",
+      "org": "Cdnext SEA",
+      "asn": "AS212238 Datacamp Limited",
+      "as_name": "CDNEXT",
+      "hosting": true,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "138.201.50.5": {
       "kind": "datacenter",
       "provider": null,
@@ -98085,6 +98295,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "141.98.255.246": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "SE",
+      "country_name": "Sweden",
+      "isp": "31173 Services AB",
+      "org": "31173 Services AB",
+      "asn": "AS39351 31173 Services AB",
+      "as_name": "ESAB-AS",
+      "hosting": true,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "141.105.65.165": {
@@ -107567,6 +107792,36 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "152.237.230.31": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "RO",
+      "country_name": "Romania",
+      "isp": "X-zone IT SRL",
+      "org": null,
+      "asn": "AS60982 X-ZONE IT SRL",
+      "as_name": "XZONE",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
+    "152.237.230.36": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "RO",
+      "country_name": "Romania",
+      "isp": "X-zone IT SRL",
+      "org": null,
+      "asn": "AS60982 X-ZONE IT SRL",
+      "as_name": "XZONE",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "153.75.87.26": {
       "kind": "datacenter",
       "provider": null,
@@ -109290,6 +109545,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "156.225.28.97": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "HK",
+      "country_name": "Hong Kong",
+      "isp": "Vapeline Technology",
+      "org": null,
+      "asn": "AS401701 cognetcloud INC",
+      "as_name": "COGNETCLOUD-2",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "156.227.0.60": {
@@ -111705,6 +111975,36 @@
       "proxy": true,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "161.97.178.84": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "Contabo GmbH",
+      "org": "Contabo GmbH",
+      "asn": "AS51167 Contabo GmbH",
+      "as_name": "CONTABO",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
+    "161.97.179.152": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "Contabo GmbH",
+      "org": "Contabo GmbH",
+      "asn": "AS51167 Contabo GmbH",
+      "as_name": "CONTABO",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "161.199.130.1": {
@@ -124562,6 +124862,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "178.249.214.6": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "CA",
+      "country_name": "Canada",
+      "isp": "Datacamp Limited",
+      "org": "Cdnext TOR",
+      "asn": "AS212238 Datacamp Limited",
+      "as_name": "CDNEXT",
+      "hosting": true,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "178.249.218.34": {
       "kind": "proxy",
       "provider": null,
@@ -131942,6 +132257,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "185.177.72.45": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "FR",
+      "country_name": "France",
+      "isp": "Bucklog SARL",
+      "org": "FBW NETWORKS",
+      "asn": "AS211590 Bucklog SARL",
+      "as_name": "BUCKLOG",
+      "hosting": false,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-02",
+      "looked_up_at": "ip-api.com"
+    },
     "185.179.132.152": {
       "kind": "fixed-line",
       "provider": null,
@@ -133440,6 +133770,21 @@
       "proxy": true,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "186.22.19.172": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "AR",
+      "country_name": "Argentina",
+      "isp": "Telecentro S.A.",
+      "org": "Telecentro S.A",
+      "asn": "AS27747 Telecentro S.A.",
+      "as_name": "Telecentro S.A.",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "186.31.30.211": {
@@ -164670,6 +165015,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "223.178.86.187": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "IN",
+      "country_name": "India",
+      "isp": "Bharti Airtel",
+      "org": "Bharti Airtel Limited",
+      "asn": "AS24560 Bharti Airtel Ltd., Telemedia Services",
+      "as_name": "AIRTELBROADBAND-AS-AP",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-02",
       "looked_up_at": "ip-api.com"
     },
     "223.223.174.49": {
