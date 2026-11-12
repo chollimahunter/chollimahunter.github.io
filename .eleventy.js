@@ -279,25 +279,6 @@ module.exports = function (eleventyConfig) {
     return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
   });
 
-  // A raw ISO 8601 timestamp (e.g. from a scan_result's matched_at) rendered
-  // as something a reader can actually parse at a glance, in UTC so it means
-  // the same thing to every visitor regardless of their own timezone.
-  eleventyConfig.addFilter("prettyDate", function (iso) {
-    if (!iso) return "";
-    const d = new Date(iso);
-    if (isNaN(d.getTime())) return iso;
-    return (
-      d.toLocaleString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-        timeZone: "UTC",
-      }) + " UTC"
-    );
-  });
-
   // A scan match's `location` is a full GitHub blob URL -- readable to a
   // machine, not to a person scanning a table. This reduces it to
   // "owner/repo — filename", the two facts a reviewer actually needs to
