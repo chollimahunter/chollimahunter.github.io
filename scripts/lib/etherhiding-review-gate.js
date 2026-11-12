@@ -73,15 +73,20 @@ function compareObservation(key, now, then, holds, fresh) {
   }
 
   // Rotation: every recorded run must still be there with the same identity;
-  // only its end date, count and last transaction may grow. Runs after the
-  // last recorded one are new.
+  // only its end date, count and last transaction may grow. A count that
+  // falls while the run still starts and ends on the same transactions is a
+  // recount of the same span by an indexer, not lost history: run 4 of the
+  // first XCTDH signal wallet went from 603 to 602 that way in November 2026
+  // and held every refresh for review. Runs after the last recorded one are
+  // new.
   const before = then.rotation || [];
   const after = now.rotation || [];
   if (before.length && !after.length) holds.push(`${key} rotation history was recorded before and is missing now`);
   else {
     before.forEach((run, i) => {
       const cur = after[i];
-      if (!cur || cur.to !== run.to || cur.from !== run.from || cur.first_tx !== run.first_tx || !(cur.count >= run.count)) {
+      const recount = cur && cur.last_tx === run.last_tx;
+      if (!cur || cur.to !== run.to || cur.from !== run.from || cur.first_tx !== run.first_tx || !(cur.count >= run.count || recount)) {
         holds.push(`${key} rotation run ${i + 1} (${run.to}) was rewritten or lost`);
       }
     });

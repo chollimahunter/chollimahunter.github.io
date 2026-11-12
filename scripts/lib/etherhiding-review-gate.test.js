@@ -29,6 +29,18 @@ test("a nonce advance and an extended rotation run merge with nothing new", () =
   assert.equal(d.fresh.length, 0);
 });
 
+test("a lower count over the same first and last transaction is a recount, not lost history", () => {
+  const w = clone(wallet); w.rotation[0].count = 2;
+  const d = gateDecision(base([w, contract]), previous);
+  assert.equal(d.needsReview, false, d.reasons.join("; "));
+});
+
+test("a lower count that also loses the last transaction holds", () => {
+  const w = clone(wallet); w.rotation[0].count = 2; w.rotation[0].last_tx = "0x2";
+  const d = gateDecision(base([w, contract]), previous);
+  assert.equal(d.needsReview, true);
+});
+
 test("a new rotation, a new C2 string and a new write merge and are listed for review", () => {
   const w = clone(wallet);
   w.rotation.push({ to: "0x67d5f82d01bb880007e7005000ff5c60b6c34b5a", resolved_ip: "103.213.248.45", resolved_ips: ["103.213.248.45", "136.0.7.231"], from: "2026-10-07", until: "2026-10-08", count: 2, first_tx: "0x10", last_tx: "0x11" });
