@@ -17302,6 +17302,165 @@
       "login": "everdreamsoftsolution",
       "status": "no report"
     },
+    "everest-dev0323": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "everest-dev0323",
+      "created_at": "2022-07-13T11:52:41Z",
+      "public_repos": 11,
+      "followers": 202,
+      "following": 245,
+      "original_repos": 10,
+      "forked_repos": 1,
+      "backdated_repos": 2,
+      "backdated_examples": [
+        {
+          "repo": "COVID19-QA",
+          "first_commit": "2020-03-17"
+        },
+        {
+          "repo": "react-native-typescript-example",
+          "first_commit": "2019-04-13"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "tony0323jefferson@gmail.com"
+      ],
+      "commit_names": [
+        "Everest-0323",
+        "Everest-dev0323",
+        "everest-0323",
+        "everest-dev0323"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "Forest410",
+        "cryptosmiler",
+        "webstar1014"
+      ],
+      "followers_indexed": [
+        "Forest410",
+        "Kage0923",
+        "codetechie-G",
+        "ironcg20",
+        "super124dev",
+        "uniwaydev",
+        "webstar1014"
+      ],
+      "mutual_indexed": [
+        "Forest410",
+        "webstar1014"
+      ],
+      "organizations": [
+        "AccessibleForAll",
+        "EddieHubCommunity",
+        "Modern-Game",
+        "Py-Contributors"
+      ]
+    },
+    "evertonpassos915": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "evertonpassos915",
+      "created_at": "2023-01-09T14:16:05Z",
+      "public_repos": 61,
+      "followers": 36,
+      "following": 45,
+      "original_repos": 61,
+      "forked_repos": 0,
+      "backdated_repos": 48,
+      "backdated_examples": [
+        {
+          "repo": "android-game-fastmind",
+          "first_commit": "2018-12-26"
+        },
+        {
+          "repo": "angular4-bioplate",
+          "first_commit": "2017-02-04"
+        },
+        {
+          "repo": "bitcoin",
+          "first_commit": "2015-07-10"
+        },
+        {
+          "repo": "code-generator",
+          "first_commit": "2021-09-25"
+        },
+        {
+          "repo": "dropboxManagement",
+          "first_commit": "2018-05-20"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "ByteCrafting1"
+      ],
+      "followers_indexed": [
+        "ByteCrafting1"
+      ],
+      "mutual_indexed": [
+        "ByteCrafting1"
+      ],
+      "organizations": []
+    },
+    "every821": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "every821",
+      "created_at": "2024-07-05T12:49:35Z",
+      "public_repos": 45,
+      "followers": 2,
+      "following": 0,
+      "original_repos": 45,
+      "forked_repos": 0,
+      "backdated_repos": 44,
+      "backdated_examples": [
+        {
+          "repo": "android-shopify",
+          "first_commit": "2017-04-10"
+        },
+        {
+          "repo": "AndroidChatbot",
+          "first_commit": "2017-01-23"
+        },
+        {
+          "repo": "auth-with-wallet-nextjs",
+          "first_commit": "2022-02-16"
+        },
+        {
+          "repo": "auto-arb-web3",
+          "first_commit": "2022-08-04"
+        },
+        {
+          "repo": "bet",
+          "first_commit": "2017-08-08"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "audithunter821@gmail.com"
+      ],
+      "commit_names": [
+        "William James",
+        "every821",
+        "every821r"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "everythinguwannatobe": {
       "analyzed": "2026-10-02",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -17452,6 +17611,593 @@
       "following_indexed": [
         "0xwhiz"
       ],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "evilhanse": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "evilhanse",
+      "status": "no report"
+    },
+    "experss-js": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "experss-js",
+      "created_at": "2026-01-12T09:34:24Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "morriswheeler1@outlook.com"
+      ],
+      "commit_names": [
+        "experss-js"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "expess-js": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "expess-js",
+      "created_at": "2025-12-22T10:00:31Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "raymondmorgan329@outlook.com"
+      ],
+      "commit_names": [
+        "expess-js"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "expessjs": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "expessjs",
+      "status": "no report"
+    },
+    "exubient0": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "exubient0",
+      "created_at": "2025-08-20T06:26:44Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "exubient0"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "faang-star": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "FAANG-star",
+      "created_at": "2023-05-19T15:48:28Z",
+      "public_repos": 52,
+      "followers": 9,
+      "following": 4,
+      "original_repos": 46,
+      "forked_repos": 6,
+      "backdated_repos": 4,
+      "backdated_examples": [
+        {
+          "repo": "FAANG-star/Restaurant-delivery-BE-Nestjs",
+          "first_commit": "2020-11-25"
+        },
+        {
+          "repo": "FAANG-star/Mercedes-assistify",
+          "first_commit": "2021-11-11"
+        },
+        {
+          "repo": "FAANG-star/Sharify",
+          "first_commit": "2020-12-05"
+        },
+        {
+          "repo": "FAANG-star/E-Commerce-BE-nestjs",
+          "first_commit": "2021-08-15"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "sibiriwolf@gmail.com"
+      ],
+      "commit_names": [
+        "FAANG",
+        "FAANG-star",
+        "Zeusofsky",
+        "faang-star",
+        "zeusofsky"
+      ],
+      "names_per_email_max": 4,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": [
+        "Jaidevstudio",
+        "Py-Contributors"
+      ]
+    },
+    "fairsky0201": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "fairsky0201",
+      "created_at": "2024-03-01T18:46:17Z",
+      "public_repos": 26,
+      "followers": 132,
+      "following": 94,
+      "original_repos": 26,
+      "forked_repos": 0,
+      "backdated_repos": 18,
+      "backdated_examples": [
+        {
+          "repo": "Build-Hotel-Site-With-Python-Django",
+          "first_commit": "2019-02-17"
+        },
+        {
+          "repo": "challenge-git-fix-conflict",
+          "first_commit": "2017-09-15"
+        },
+        {
+          "repo": "chat-room",
+          "first_commit": "2017-01-08"
+        },
+        {
+          "repo": "google-maps-drawing",
+          "first_commit": "2018-02-07"
+        },
+        {
+          "repo": "gpuRIR",
+          "first_commit": "2018-10-08"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "fairsky0201@gmail.com"
+      ],
+      "commit_names": [
+        "FairSky",
+        "Olgierd",
+        "fair Sky",
+        "fairsky0201",
+        "payattention"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "fairsky0201"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": [
+        "EddieHubCommunity",
+        "Py-Contributors"
+      ]
+    },
+    "fairskydev0201": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "fairskyDev0201",
+      "created_at": "2024-04-17T02:12:40Z",
+      "public_repos": 19,
+      "followers": 7,
+      "following": 42,
+      "original_repos": 19,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "fairskyDev0201/typescript-cheatsheet",
+          "first_commit": "2018-06-04"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "andrzejgrabiecdevb@outlook.com"
+      ],
+      "commit_names": [
+        "Front End Developer",
+        "fairskyDev0201"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [
+        "fairskydev0201"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "fairypigdev": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "FairyPigDev",
+      "created_at": "2026-02-10T15:09:19Z",
+      "public_repos": 16,
+      "followers": 3,
+      "following": 1,
+      "original_repos": 3,
+      "forked_repos": 13,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "luislee3108@gmail.com"
+      ],
+      "commit_names": [
+        "FairyPigDev",
+        "FairyPiggyDev"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "fantasticoder850": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "fantasticoder850",
+      "created_at": "2023-05-30T12:52:50Z",
+      "public_repos": 8,
+      "followers": 3,
+      "following": 12,
+      "original_repos": 1,
+      "forked_repos": 7,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "fantasticoder850"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "fantasy1114": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "fantasy1114",
+      "status": "no report"
+    },
+    "fantasy2345": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "fantasy2345",
+      "created_at": "2021-09-01T13:33:21Z",
+      "public_repos": 23,
+      "followers": 6,
+      "following": 5,
+      "original_repos": 17,
+      "forked_repos": 6,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "peter.jas0n325@gmail.com",
+        "renokamoto325@gmail.com"
+      ],
+      "commit_names": [
+        "ChainDev",
+        "fantasy",
+        "fantasy2345",
+        "joeheror"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 3,
+      "dprk_naming": [
+        "fantasy2345"
+      ],
+      "following_indexed": [
+        "ares-dev05"
+      ],
+      "followers_indexed": [
+        "ares-dev05"
+      ],
+      "mutual_indexed": [
+        "ares-dev05"
+      ],
+      "organizations": []
+    },
+    "fantasymonster": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "FantasyMonster",
+      "created_at": "2024-05-30T09:05:06Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "fddec525": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "Fddec525",
+      "created_at": "2023-01-14T00:01:55Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "Fddec525"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "felipedev418": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "felipedev418",
+      "created_at": "2024-06-30T15:51:28Z",
+      "public_repos": 42,
+      "followers": 201,
+      "following": 317,
+      "original_repos": 41,
+      "forked_repos": 1,
+      "backdated_repos": 22,
+      "backdated_examples": [
+        {
+          "repo": "angular_dropbox_using",
+          "first_commit": "2018-07-22"
+        },
+        {
+          "repo": "car_showcase_nextjs",
+          "first_commit": "2023-05-19"
+        },
+        {
+          "repo": "dating_app",
+          "first_commit": "2018-12-26"
+        },
+        {
+          "repo": "Dynamic_web_scraping_with_python",
+          "first_commit": "2020-03-02"
+        },
+        {
+          "repo": "e-commerce_with_react_native_app",
+          "first_commit": "2020-08-12"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "felipedeaalmeida@gmail.com",
+        "storm712418@gmail.com"
+      ],
+      "commit_names": [
+        "Software Developer",
+        "felipedev418"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "BeautifulMoon211",
+        "Daniel-Kennison",
+        "Luis96920",
+        "YouthDream0925",
+        "appleseed619",
+        "basitali717",
+        "bitcrusher1023",
+        "chainshifu",
+        "chivalrousdev",
+        "codeninja819",
+        "creative2113",
+        "devconductor125",
+        "fireman03151",
+        "git25126",
+        "goldsunshines",
+        "grasshousedev",
+        "guilmola724",
+        "lucatosc",
+        "noahstoner",
+        "passionatedev724",
+        "popstar7",
+        "richdev0724",
+        "sharkxhunter",
+        "silvershiny",
+        "stanislavboik",
+        "topsecretagent007",
+        "uneoka0114"
+      ],
+      "followers_indexed": [
+        "BeautifulMoon211",
+        "DevHawkNov",
+        "Luis96920",
+        "basitali717",
+        "chainshifu",
+        "chivalrousdev",
+        "creative2113",
+        "dragonsea0927",
+        "fireman03151",
+        "git25126",
+        "goldsunshines",
+        "guilmola724",
+        "lucatosc",
+        "noahstoner",
+        "passionatedev724",
+        "popstar7",
+        "richdev0724",
+        "sergiourrego",
+        "silvershiny",
+        "stanislavboik",
+        "thinkingdev9",
+        "topsecretagent007"
+      ],
+      "mutual_indexed": [
+        "BeautifulMoon211",
+        "Luis96920",
+        "basitali717",
+        "chainshifu",
+        "chivalrousdev",
+        "creative2113",
+        "fireman03151",
+        "git25126",
+        "goldsunshines",
+        "guilmola724",
+        "lucatosc",
+        "noahstoner",
+        "passionatedev724",
+        "popstar7",
+        "richdev0724",
+        "silvershiny",
+        "stanislavboik",
+        "topsecretagent007"
+      ],
+      "organizations": [
+        "Bauddhik-Geeks",
+        "CommunityPro",
+        "Design-and-Code",
+        "Devs-Dungeon",
+        "Finalgoal231",
+        "cloudcommunity",
+        "dev-protocol"
+      ]
+    },
+    "felix4170": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "felix4170",
+      "created_at": "2024-08-10T03:03:14Z",
+      "public_repos": 10,
+      "followers": 3,
+      "following": 2,
+      "original_repos": 10,
+      "forked_repos": 0,
+      "backdated_repos": 9,
+      "backdated_examples": [
+        {
+          "repo": "hashi7412/send-email-without-backend",
+          "first_commit": "2023-02-18"
+        },
+        {
+          "repo": "hashi7412/btc-scan",
+          "first_commit": "2022-10-26"
+        },
+        {
+          "repo": "hashi7412/chatgpt-node",
+          "first_commit": "2023-05-13"
+        },
+        {
+          "repo": "hashi7412/nakamonsta",
+          "first_commit": "2022-09-23"
+        },
+        {
+          "repo": "hashi7412/neon-scan",
+          "first_commit": "2023-06-20"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "felix44291@gmail.com"
+      ],
+      "commit_names": [
+        "Popcorn412",
+        "felix4170",
+        "popcorn412"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "felix4170"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "fergaus": {
+      "analyzed": "2026-11-12",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "Fergaus",
+      "created_at": "2026-09-10T00:47:58Z",
+      "public_repos": 1,
+      "followers": 1,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "strategy.808@atomicmail.io"
+      ],
+      "commit_names": [
+        "Fergaus"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
       "followers_indexed": [],
       "mutual_indexed": [],
       "organizations": []
@@ -23653,5 +24399,5 @@
     }
   },
   "_comment": "gh-fake-analyzer (github.com/shortdoom/gh-fake-analyzer, by the Ketman Project) run over GitHub accounts in this index by .github/workflows/gh-analyzer.yml, summarized by scripts/gh-analyzer-summarize.js. Signals only: an account flagged here is not thereby attributed to anyone, and one that passes is not cleared. See docs/gh-fake-analyzer.md.",
-  "updated": "2026-11-11"
+  "updated": "2026-11-12"
 }
