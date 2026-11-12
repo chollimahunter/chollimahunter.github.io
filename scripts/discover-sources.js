@@ -129,6 +129,20 @@ function loadSeen() {
     .filter((line) => line && !line.startsWith("#"));
 }
 
+/** Whether a link is on the publisher's own site, by registrable host. */
+function sameSite(link, site) {
+  const host = (u) => {
+    try {
+      return new URL(u).hostname.toLowerCase().replace(/^www\./, "");
+    } catch {
+      return null;
+    }
+  };
+  const a = host(link);
+  const b = host(site);
+  return Boolean(a && b && (a === b || a.endsWith("." + b)));
+}
+
 // ---------------------------------------------------------------------------
 // Reading one publisher
 // ---------------------------------------------------------------------------
@@ -438,6 +452,9 @@ async function main() {
     let kept = 0;
     for (const item of result.items) {
       if (!item.link) continue;
+      // A publisher whose feed mixes in press coverage of itself, linked to
+      // other sites, is marked own_site_only; those items are not its reporting.
+      if (entry.own_site_only && !sameSite(item.link, entry.site)) continue;
       if (!item.published) {
         undated += 1;
         if (!includeUndated) continue;

@@ -286,6 +286,9 @@ function stripTracking(input) {
   for (const key of [...url.searchParams.keys()]) {
     if (TRACKING_PARAMS.test(key)) url.searchParams.delete(key);
   }
+  // A fragment never names a different article; Silent Push's feed appends
+  // #new_tab to its links.
+  url.hash = "";
   return url.toString();
 }
 

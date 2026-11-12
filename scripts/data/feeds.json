@@ -230,8 +230,9 @@
       "site": "https://www.silentpush.com/blog/",
       "feed": "https://www.silentpush.com/feed/",
       "verified": "2026-09-25",
-      "note": null,
-      "status": "ok: rss, 10 items, newest 2026-09-22"
+      "note": "Its feed also carries press coverage of Silent Push, linked to the outlets that ran it (The Hacker News, Politico, Traders Union), one under the wrong title; own_site_only keeps only silentpush.com items.",
+      "status": "ok: rss, 10 items, newest 2026-09-22",
+      "own_site_only": true
     },
     {
       "publisher": "Hunt.io",
