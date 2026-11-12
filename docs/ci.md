@@ -1,9 +1,9 @@
 # Workflows
 
 Every workflow lives in `.github/workflows/`. Each action is pinned to a full
-commit SHA, and Dependabot (`.github/dependabot.yml`) proposes updates to
-those pins and to the npm dependencies weekly, one grouped pull request per
-ecosystem.
+commit SHA. Dependabot was removed on 2026-11-11 at the maintainer's request,
+so action pins, npm dependencies and the hash-pinned gh-fake-analyzer
+requirements in `.github/requirements/` are updated by hand.
 
 | File | Trigger | What it does | Opens or deploys | Secret | Doc |
 | --- | --- | --- | --- | --- | --- |
