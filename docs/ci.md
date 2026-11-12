@@ -82,7 +82,9 @@ on-chain observation, and the tracker marks a host nobody has reviewed as
 unreviewed; nothing becomes an indicator until a person files it, and parked
 values go in `scripts/data/etherhiding-c2-review.json`. What it holds for a person is
 data loss (an observation, rotation run, write, payload or code that was
-recorded before and is missing now), rewritten history, a degraded run (more
+recorded before and is missing now), rewritten history (a lower count over a
+run whose first and last transactions are unchanged is an indexer recount and
+does not hold), a degraded run (more
 than 5% of chain queries failed), and anything it does not recognise. Each run
 adds an entry to one standing issue, "EtherHiding: on-chain values to review":
 the values a merged run added, or why a run was held. Entries after the first

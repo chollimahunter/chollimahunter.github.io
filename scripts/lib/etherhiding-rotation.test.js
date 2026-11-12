@@ -28,6 +28,16 @@ test("an ordinary address decodes to nothing", () => {
   assert.equal(run.resolved_ip, null);
 });
 
+test("a transaction the indexer lists twice is counted once", () => {
+  const runs = rotationTimeline([
+    tx("0xa658863ea658863e68656c6c6f6970626f742121", 1759800000, "0xa"),
+    tx("0xa658863ea658863e68656c6c6f6970626f742121", 1759800000, "0xa"),
+    tx("0xa658863ea658863e68656c6c6f6970626f742121", 1759810000, "0xb"),
+  ]);
+  assert.equal(runs.length, 1);
+  assert.equal(runs[0].count, 2);
+});
+
 test("consecutive writes to the same recipient form one run, and the newest run is last", () => {
   const runs = rotationTimeline([
     tx("0xa658863ea658863e68656c6c6f6970626f742121", 1759800000, "0xa"),

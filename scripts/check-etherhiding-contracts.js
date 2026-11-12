@@ -565,7 +565,12 @@ async function enumerateFrom(indexer, key, address, backoff = true) {
  */
 function rotationTimeline(transactions) {
   const runs = [];
+  // A transaction an indexer lists twice is still one payment; counting it
+  // twice made a later recount look like lost history to the review gate.
+  const seen = new Set();
   for (const tx of transactions) {
+    if (tx.hash && seen.has(tx.hash)) continue;
+    if (tx.hash) seen.add(tx.hash);
     const to = (tx.to || "").toLowerCase();
     if (!ADDRESS_RE.test(to)) continue;
     const date = new Date(Number(tx.timeStamp) * 1000).toISOString().slice(0, 10);
