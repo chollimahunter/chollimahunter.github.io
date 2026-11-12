@@ -253,8 +253,38 @@ function loadExisting() {
  * Compared decoded, so a citation stored before titles, URLs and quotes were
  * decoded at extraction still matches the same sighting read again.
  */
-function sourceKey(source) {
-  return JSON.stringify([decodeEntities(source.url), stripCfEmailPlaceholder(source.context || "")]);
+function sourceKey(source, record) {
+  const context = stripCfEmailPlaceholder(source.context || "");
+  const core = record && source.context_origin !== "redacted" ? passageCore(context, record) : null;
+  return JSON.stringify(core === null ? [decodeEntities(source.url), context] : [decodeEntities(source.url), "core", core]);
+}
+
+/**
+ * The part of a quoted passage that identifies it: the indicator and a fixed
+ * window around it, case and whitespace folded. The stored quote is a window
+ * cut from the page text, and that window moves when anything around it
+ * changes -- a Substack footer gaining "Latest Discussions", an extractor
+ * version cutting a few characters further -- so comparing whole quotes kept
+ * two copies of one passage as two citations (126 record/source pairs when
+ * this was written). Null when the indicator is not in the quote, which then
+ * falls back to the whole quote.
+ */
+// Short after the indicator: a list or footer that follows it is where the
+// quote windows drift ("Top Latest Discussions" two words past an account).
+const CORE_BEFORE = 60;
+const CORE_AFTER = 20;
+function passageCore(context, record) {
+  const text = context.toLowerCase().replace(/\s+/g, " ");
+  for (const needle of [record.display, groundingToken(record), record.value]) {
+    if (!needle) continue;
+    const at = text.indexOf(String(needle).toLowerCase());
+    if (at < 0) continue;
+    // Only a full window identifies the passage; one cut short by the edge of
+    // the quote could match a different passage that shares those few words.
+    if (at < CORE_BEFORE || at + needle.length + CORE_AFTER > text.length) return null;
+    return text.slice(at - CORE_BEFORE, at + needle.length + CORE_AFTER);
+  }
+  return null;
 }
 
 function mergeInto(byId, incoming, stats) {
@@ -286,9 +316,9 @@ function mergeInto(byId, incoming, stats) {
   // "# The Mysterious Case of NetKey" an older run had captured before the
   // heading cleanup existed. Refreshing `pulled_at` churned every source read
   // by more than one staged run, with the winner decided by filename order.
-  const byKey = new Map(existing.sources.map((source) => [sourceKey(source), source]));
+  const byKey = new Map(existing.sources.map((source) => [sourceKey(source, existing), source]));
   for (const source of incoming.sources) {
-    const key = sourceKey(source);
+    const key = sourceKey(source, existing);
     const held = byKey.get(key);
     if (!held) {
       existing.sources.push(source);
@@ -480,6 +510,26 @@ function main() {
     );
   }
 
+  // Two copies of one passage stored before sourceKey compared the passage
+  // core rather than the whole quote collapse into one, in the first one's
+  // place. The copy kept is the first, unless it still carries Cloudflare's
+  // "[email protected]" placeholder and the other does not.
+  const placeholdered = (s) => stripCfEmailPlaceholder(s.context || "") !== (s.context || "");
+  for (const record of byId.values()) {
+    const slot = new Map();
+    const kept = [];
+    for (const source of record.sources) {
+      const key = sourceKey(source, record);
+      if (!slot.has(key)) {
+        slot.set(key, kept.length);
+        kept.push(source);
+      } else if (placeholdered(kept[slot.get(key)]) && !placeholdered(source)) {
+        kept[slot.get(key)] = source;
+      }
+    }
+    record.sources = kept;
+  }
+
   const excludedHosts = loadExcludedHosts();
   const falsePositives = loadFalsePositives();
   const withdrawnSources = loadWithdrawnSources();
@@ -569,10 +619,14 @@ function main() {
   console.log(`CHANGED=${changed}`);
 }
 
-try {
-  main();
-} catch (err) {
-  console.error("Ingest failed:", err.message);
-  console.log("CHANGED=false");
-  process.exitCode = 1;
+if (require.main === module) {
+  try {
+    main();
+  } catch (err) {
+    console.error("Ingest failed:", err.message);
+    console.log("CHANGED=false");
+    process.exitCode = 1;
+  }
 }
+
+module.exports = { sourceKey, passageCore };
