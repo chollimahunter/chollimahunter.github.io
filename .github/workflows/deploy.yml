@@ -107,7 +107,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 40
     permissions:
       contents: read
       pages: write
@@ -119,6 +119,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
+        with:
+          # Pages sat at "syncing_files" past the action's 10-minute default on
+          # 10 November 2026 with about 24,700 files, and the deploy was
+          # cancelled although nothing was wrong with it.
+          timeout: 1800000
 
       # Bing, Yandex, Naver and Seznam learn about the changed pages within
       # minutes instead of on their next crawl. Google does not take IndexNow;

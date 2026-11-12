@@ -207,7 +207,7 @@ module.exports = function (eleventyConfig) {
     // so it takes no trailing slash; otherwise the crumb disagrees with the
     // page's own canonical URL.
     return segments.map((segment, i) => {
-      const isFile = i === segments.length - 1 && /.[a-z0-9]+$/i.test(segment);
+      const isFile = i === segments.length - 1 && /\.[a-z0-9]+$/i.test(segment);
       return { segment, path: "/" + segments.slice(0, i + 1).join("/") + (isFile ? "" : "/") };
     });
   });
@@ -277,25 +277,6 @@ module.exports = function (eleventyConfig) {
       for (const value of new Set(((entry && entry[key]) || []).map(String))) counts[value] = (counts[value] || 0) + 1;
     }
     return Object.fromEntries(Object.entries(counts).sort(([a], [b]) => a.localeCompare(b)));
-  });
-
-  // A raw ISO 8601 timestamp (e.g. from a scan_result's matched_at) rendered
-  // as something a reader can actually parse at a glance, in UTC so it means
-  // the same thing to every visitor regardless of their own timezone.
-  eleventyConfig.addFilter("prettyDate", function (iso) {
-    if (!iso) return "";
-    const d = new Date(iso);
-    if (isNaN(d.getTime())) return iso;
-    return (
-      d.toLocaleString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "numeric",
-        minute: "2-digit",
-        timeZone: "UTC",
-      }) + " UTC"
-    );
   });
 
   // A scan match's `location` is a full GitHub blob URL -- readable to a

@@ -7120,7 +7120,7 @@
       {
         "host": "2.56.123.203",
         "since": "2026-10-22",
-        "until": "2026-10-27",
+        "until": "2026-11-04",
         "payload_tx": "0x6dbab35f72339ca247d24d96b762355d3d04f6c705931f1d09d2298aeed21d6e",
         "basis": "dropper stage the signal transactions pointed at, decoded statically"
       },
@@ -7155,16 +7155,37 @@
       {
         "host": "2.56.123.203",
         "since": "2026-10-26",
-        "until": "2026-10-27",
+        "until": "2026-11-04",
         "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
         "basis": "remote-access stage the signal transactions pointed at, decoded statically"
       },
       {
         "host": "95.135.181.15",
         "since": "2026-10-26",
-        "until": "2026-10-27",
+        "until": "2026-11-04",
         "payload_tx": "0x7d6f2e77781223eae16fc1d6569fc2ba8ae40c50702b6a797b42b9b5070d1661",
         "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-11-04",
+        "until": "2026-11-11",
+        "payload_tx": "0x22da2d58eb18f9e86264a1de3dd71e78c1ca51cb9ae64bfb2eb66bbf913794fd",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "95.135.181.15",
+        "since": "2026-11-04",
+        "until": "2026-11-11",
+        "payload_tx": "0x22da2d58eb18f9e86264a1de3dd71e78c1ca51cb9ae64bfb2eb66bbf913794fd",
+        "basis": "remote-access stage the signal transactions pointed at, decoded statically"
+      },
+      {
+        "host": "2.56.123.203",
+        "since": "2026-11-04",
+        "until": "2026-11-11",
+        "payload_tx": "0xfbc603e74e3f7712001a6ff44983bf093320b26f394a19bb7b5a080a8694c7ee",
+        "basis": "dropper stage the signal transactions pointed at, decoded statically"
       }
     ]
   },
@@ -10219,11 +10240,12 @@
     "ioc_type": "smart_contract_address",
     "value": "0x17fff8d3f56574a85840d12af91b9d8f4178f85b",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 21 time(s) between 2026-05-27 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 33 time(s) between 2026-05-27 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 91.184.242.248, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
       "89.124.115.52",
+      "91.184.242.248",
       "92.118.168.26",
       "89.124.117.170",
       "78.40.198.61"
@@ -10249,7 +10271,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0x439fbf20c9ddd49ec7b2e8cb52804f48f6e913e4",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 81 time(s) between 2026-03-13 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, 109.107.167.184, 91.184.242.248 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 88 time(s) between 2026-03-13 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, 109.107.167.184, 91.184.242.248 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
@@ -10282,7 +10304,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0xa210e19de57555face122be5cdc57cc0636ddb1c",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 24 time(s) between 2026-04-14 and 2026-10-16. The decoded configurations name 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, xororand.ru, 193.233.138.30, 83.171.224.127 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 33 time(s) between 2026-04-14 and 2026-10-29. The decoded configurations name 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, xororand.ru, 193.233.138.30, 83.171.224.127 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "78.40.198.61",
@@ -10312,7 +10334,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0x2fbd66fe245052d265ca0eda7d01d35b2d8b9feb",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 35 time(s) between 2026-03-15 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, 91.184.242.248, 5.101.86.83 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 46 time(s) between 2026-03-15 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, 91.184.242.248, 5.101.86.83 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
@@ -10893,5 +10915,2332 @@
       }
     ],
     "date_added": "2026-10-26"
+  },
+  {
+    "id": "etherrat-c2-westusserverfor-westus2-cloudapp-azure-com",
+    "ioc_type": "domain",
+    "value": "westusserverfor.westus2.cloudapp.azure.com",
+    "confidence_level": "low",
+    "description": "Value written to the EtherRAT resolver contract 0x8b12e09abb2e5130310b24c75b51c8afd85e8223 by operator wallet 0x2dbca26addf031ada655861933d0386a39ea6427 on 2026-10-28 (transaction 0xda10cb4baa3036e28e731e8aec7ec3f2f9c5018e1dce6e731402c7dc7a8de334), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). An Azure cloudapp.azure.com name written by an operator of the contract, in the same pattern as other Azure-hosted EtherRAT values; the name is a free regional label and says nothing about the account behind it. It replaced dns1.southafricanorth.cloudapp.azure.com, the contract's value since 2026-06-26. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "sources": [
+      {
+        "title": "EtherRAT resolver contract 0x8b12e09abb2e5130310b24c75b51c8afd85e8223",
+        "url": "https://etherscan.io/address/0x8b12e09abb2e5130310b24c75b51c8afd85e8223",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-28",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0xda10cb4baa3036e28e731e8aec7ec3f2f9c5018e1dce6e731402c7dc7a8de334",
+        "url": "https://etherscan.io/tx/0xda10cb4baa3036e28e731e8aec7ec3f2f9c5018e1dce6e731402c7dc7a8de334",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-28",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+        "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
+        "publisher": "Sysdig",
+        "type": "threat_intel_report"
+      }
+    ],
+    "campaign": [
+      "EtherHiding",
+      "DPRK (cluster unattributed)"
+    ],
+    "malware_family": "EtherRAT",
+    "date_added": "2026-11-11"
+  },
+  {
+    "id": "etherrat-c2-tsmpl-centralus-cloudapp-azure-com",
+    "ioc_type": "domain",
+    "value": "tsmpl.centralus.cloudapp.azure.com",
+    "confidence_level": "low",
+    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-06 (transaction 0x8dd774b7690d9542bac406d96c52f8ab0ee5d1f9c40ae077decbb618237b9309), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). An Azure cloudapp.azure.com name written by an operator of the contract, in the same pattern as other Azure-hosted EtherRAT values; the name is a free regional label and says nothing about the account behind it. It replaced fsecure.centralus.cloudapp.azure.com and was itself replaced by basodara.com four days later. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "sources": [
+      {
+        "title": "EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
+        "url": "https://etherscan.io/address/0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-06",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0x8dd774b7690d9542bac406d96c52f8ab0ee5d1f9c40ae077decbb618237b9309",
+        "url": "https://etherscan.io/tx/0x8dd774b7690d9542bac406d96c52f8ab0ee5d1f9c40ae077decbb618237b9309",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-06",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+        "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
+        "publisher": "Sysdig",
+        "type": "threat_intel_report"
+      }
+    ],
+    "campaign": [
+      "EtherHiding",
+      "DPRK (cluster unattributed)"
+    ],
+    "malware_family": "EtherRAT",
+    "date_added": "2026-11-11"
+  },
+  {
+    "id": "etherrat-c2-basodara-com",
+    "ioc_type": "domain",
+    "value": "basodara.com",
+    "confidence_level": "low",
+    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-10 (transaction 0xe1ee6e2e468df06f4120bd504526840a9de2ab14a4b097f1469cd0824925c8dc), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). RDAP shows the domain registered on 2026-11-10, the day it was written, through Tucows Domains Inc. with nameservers 1-you.njalla.no, 2-can.njalla.in and 3-get.njalla.fo, the Njalla privacy-registrar pattern that other EtherRAT operator domains share. It was the contract's value when this site read it on 2026-11-11. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "sources": [
+      {
+        "title": "EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
+        "url": "https://etherscan.io/address/0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-10",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0xe1ee6e2e468df06f4120bd504526840a9de2ab14a4b097f1469cd0824925c8dc",
+        "url": "https://etherscan.io/tx/0xe1ee6e2e468df06f4120bd504526840a9de2ab14a4b097f1469cd0824925c8dc",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-10",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+        "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
+        "publisher": "Sysdig",
+        "type": "threat_intel_report"
+      }
+    ],
+    "campaign": [
+      "EtherHiding",
+      "DPRK (cluster unattributed)"
+    ],
+    "malware_family": "EtherRAT",
+    "date_added": "2026-11-11"
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-owner-88361c91",
+    "ioc_type": "wallet_address",
+    "value": "0x88361c914bb0942da9a1b7bb396a7513c1917aee",
+    "chain": "sepolia",
+    "onchain_role": "owner_eoa",
+    "description": "Ethereum Sepolia wallet that owns every HexMage resolver contract Confiant reported: owner-gated TextStorage contracts exposing getText() (selector 0xe00fe2eb) and setText(string), with byte-identical 1,415-byte runtime code (sha256 84a8e7a07890558fe82d53d4d0c8f65341fa4275b627b4466f61997ee2bbbbc5). A checkout page compromised by the cluster loads ethers.js, reads one contract's value over public Sepolia RPC, and turns it into the host that serves a card skimmer. Confiant counted 144 contracts deployed between 2026-03-28 and 2026-07-21; when this site read the wallet on 2026-11-11 it had created 183 contracts, the latest on 2026-11-05. Of those, 49 hold a host in plain base64, 122 hold a salt:iv:ciphertext value sealed with a per-loader password, and 12 hold test strings. The 41 plaintext hosts are the ones Confiant lists; the seven published PhantomPolia passwords, which use the same PBKDF2 and AES-GCM scheme, open none of the sealed values.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Ethereum Sepolia address 0x88361c914bb0942da9a1b7bb396a7513c1917aee",
+        "url": "https://sepolia.etherscan.io/address/0x88361c914bb0942da9a1b7bb396a7513c1917aee",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x88361C914Bb0942da9a1b7Bb396a7513C1917aee"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-77fedd16",
+    "ioc_type": "smart_contract_address",
+    "value": "0x77fedd16e94a86d2797bfecc9b82199790188620",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host brokenvelvetdream.top. Created on 2026-05-25 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "brokenvelvetdream.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x77fedd16e94a86d2797bfecc9b82199790188620"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x77fedd16e94a86d2797bfecc9b82199790188620",
+        "url": "https://sepolia.etherscan.io/address/0x77fedd16e94a86d2797bfecc9b82199790188620",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-6bcf6ffc",
+    "ioc_type": "smart_contract_address",
+    "value": "0x6bcf6ffce66317335d2928a31dc4e6efade765e6",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host nightstalkerwatch.top. Created on 2026-06-19 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "nightstalkerwatch.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x6bcf6ffce66317335d2928a31dc4e6efade765e6"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x6bcf6ffce66317335d2928a31dc4e6efade765e6",
+        "url": "https://sepolia.etherscan.io/address/0x6bcf6ffce66317335d2928a31dc4e6efade765e6",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-51e3f029",
+    "ioc_type": "smart_contract_address",
+    "value": "0x51e3f029209c210fa8946c219644394aae71224d",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host frozennebularhy.top. Created on 2026-05-25 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "frozennebularhy.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x51e3f029209c210fa8946c219644394aae71224d"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x51e3f029209c210fa8946c219644394aae71224d",
+        "url": "https://sepolia.etherscan.io/address/0x51e3f029209c210fa8946c219644394aae71224d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-f8290bea",
+    "ioc_type": "smart_contract_address",
+    "value": "0xf8290bea4e7585302ba9984b76766d4f0e282c0e",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host ashenravenfort.top. Created on 2026-06-29 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "ashenravenfort.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xf8290bea4e7585302ba9984b76766d4f0e282c0e"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xf8290bea4e7585302ba9984b76766d4f0e282c0e",
+        "url": "https://sepolia.etherscan.io/address/0xf8290bea4e7585302ba9984b76766d4f0e282c0e",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-f56f2af1",
+    "ioc_type": "smart_contract_address",
+    "value": "0xf56f2af13080ea86c718849139fbf404b5050558",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host frozenwildheart.top. Created on 2026-05-25 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "frozenwildheart.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xf56f2af13080ea86c718849139fbf404b5050558"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xf56f2af13080ea86c718849139fbf404b5050558",
+        "url": "https://sepolia.etherscan.io/address/0xf56f2af13080ea86c718849139fbf404b5050558",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-4b6170a4",
+    "ioc_type": "smart_contract_address",
+    "value": "0x4b6170a49090fae965527e222515c2224fe73dd5",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host voidwalkerforge.top. Created on 2026-06-19 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "voidwalkerforge.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x4b6170a49090fae965527e222515c2224fe73dd5"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x4b6170a49090fae965527e222515c2224fe73dd5",
+        "url": "https://sepolia.etherscan.io/address/0x4b6170a49090fae965527e222515c2224fe73dd5",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-515cfebd",
+    "ioc_type": "smart_contract_address",
+    "value": "0x515cfebd53a860c311d583b74a8b02a78a7884e0",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host shadowrunevail.top. Created on 2026-06-19 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "shadowrunevail.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x515cfebd53a860c311d583b74a8b02a78a7884e0"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x515cfebd53a860c311d583b74a8b02a78a7884e0",
+        "url": "https://sepolia.etherscan.io/address/0x515cfebd53a860c311d583b74a8b02a78a7884e0",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-d641493e",
+    "ioc_type": "smart_contract_address",
+    "value": "0xd641493ea15a3f3b3de327401c8cd63e36236bfb",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host bloodthornkeep.top. Created on 2026-06-29 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "bloodthornkeep.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xd641493ea15a3f3b3de327401c8cd63e36236bfb"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xd641493ea15a3f3b3de327401c8cd63e36236bfb",
+        "url": "https://sepolia.etherscan.io/address/0xd641493ea15a3f3b3de327401c8cd63e36236bfb",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-46e18e04",
+    "ioc_type": "smart_contract_address",
+    "value": "0x46e18e042e0aa3fd7a29df15058c8672c197c644",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host grimwardens.com. Created on 2026-07-21 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "grimwardens.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x46e18e042e0aa3fd7a29df15058c8672c197c644"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x46e18e042e0aa3fd7a29df15058c8672c197c644",
+        "url": "https://sepolia.etherscan.io/address/0x46e18e042e0aa3fd7a29df15058c8672c197c644",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-ffbc6712",
+    "ioc_type": "smart_contract_address",
+    "value": "0xffbc6712ef6b8f4c8542cbc51fc6bbca06b08455",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host bloodboundcitadel.top. Created on 2026-06-19 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "bloodboundcitadel.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xffbc6712ef6b8f4c8542cbc51fc6bbca06b08455"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xffbc6712ef6b8f4c8542cbc51fc6bbca06b08455",
+        "url": "https://sepolia.etherscan.io/address/0xffbc6712ef6b8f4c8542cbc51fc6bbca06b08455",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-ff2ff2de",
+    "ioc_type": "smart_contract_address",
+    "value": "0xff2ff2de4bf5434a160b666a1a17559fb454eee2",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host warmcoffeetime.top. Created on 2026-05-19 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "warmcoffeetime.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xff2ff2de4bf5434a160b666a1a17559fb454eee2"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xff2ff2de4bf5434a160b666a1a17559fb454eee2",
+        "url": "https://sepolia.etherscan.io/address/0xff2ff2de4bf5434a160b666a1a17559fb454eee2",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-6ac4170a",
+    "ioc_type": "smart_contract_address",
+    "value": "0x6ac4170a50f2b6e982069463c205277c13bb391d",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host ravenstonekeep.top. Created on 2026-06-16 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "ravenstonekeep.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x6ac4170a50f2b6e982069463c205277c13bb391d"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x6ac4170a50f2b6e982069463c205277c13bb391d",
+        "url": "https://sepolia.etherscan.io/address/0x6ac4170a50f2b6e982069463c205277c13bb391d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-e0f9aca9",
+    "ioc_type": "smart_contract_address",
+    "value": "0xe0f9aca9384da7b7dd04fa9fe06dfe51d816d9ec",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host darkflamewatch.top. Created on 2026-06-29 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "darkflamewatch.top"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xe0f9aca9384da7b7dd04fa9fe06dfe51d816d9ec"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xe0f9aca9384da7b7dd04fa9fe06dfe51d816d9ec",
+        "url": "https://sepolia.etherscan.io/address/0xe0f9aca9384da7b7dd04fa9fe06dfe51d816d9ec",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-9f852771",
+    "ioc_type": "smart_contract_address",
+    "value": "0x9f85277114091095d323a1d4fb18219a66b18538",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host styleussles.com. Created on 2026-04-10 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it was not captured by Confiant; this site read it on 2026-11-11 as the plaintext host styleussles.com.",
+    "c2_hosts": [
+      "styleussles.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x9f85277114091095d323a1d4fb18219a66b18538"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x9f85277114091095d323a1d4fb18219a66b18538",
+        "url": "https://sepolia.etherscan.io/address/0x9f85277114091095d323a1d4fb18219a66b18538",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-a10fd03d",
+    "ioc_type": "smart_contract_address",
+    "value": "0xa10fd03d545f44c3287d5542acfb4d74e6bb9906",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host styleteleport.com. Created on 2026-04-10 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds the host in plain base64, which this site read on 2026-11-11 as styleteleport.com.",
+    "c2_hosts": [
+      "styleteleport.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xa10fd03d545f44c3287d5542acfb4d74e6bb9906"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xa10fd03d545f44c3287d5542acfb4d74e6bb9906",
+        "url": "https://sepolia.etherscan.io/address/0xa10fd03d545f44c3287d5542acfb4d74e6bb9906",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-1cf9f972",
+    "ioc_type": "smart_contract_address",
+    "value": "0x1cf9f972ffb05f8f8c32705dccb6548a7cbae496",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host stylehailens.com. Created on 2026-03-30 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds the host in plain base64, which this site read on 2026-11-11 as stylehailens.com.",
+    "c2_hosts": [
+      "stylehailens.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x1cf9f972ffb05f8f8c32705dccb6548a7cbae496"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x1cf9f972ffb05f8f8c32705dccb6548a7cbae496",
+        "url": "https://sepolia.etherscan.io/address/0x1cf9f972ffb05f8f8c32705dccb6548a7cbae496",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-5ba5fffc",
+    "ioc_type": "smart_contract_address",
+    "value": "0x5ba5fffc8b9376295cb98a93bdfba975e1c9fdc9",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host styleoutspin.com. Created on 2026-03-30 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds the host in plain base64, which this site read on 2026-11-11 as styleoutspin.com.",
+    "c2_hosts": [
+      "styleoutspin.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x5ba5fffc8b9376295cb98a93bdfba975e1c9fdc9"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x5ba5fffc8b9376295cb98a93bdfba975e1c9fdc9",
+        "url": "https://sepolia.etherscan.io/address/0x5ba5fffc8b9376295cb98a93bdfba975e1c9fdc9",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-6332d0e3",
+    "ioc_type": "smart_contract_address",
+    "value": "0x6332d0e357a7b8209eb3d25e909bfe666db0290b",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host styletimeset.com. Created on 2026-04-10 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds the host in plain base64, which this site read on 2026-11-11 as styletimeset.com.",
+    "c2_hosts": [
+      "styletimeset.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0x6332d0e357a7b8209eb3d25e909bfe666db0290b"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x6332d0e357a7b8209eb3d25e909bfe666db0290b",
+        "url": "https://sepolia.etherscan.io/address/0x6332d0e357a7b8209eb3d25e909bfe666db0290b",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-dec19e35",
+    "ioc_type": "smart_contract_address",
+    "value": "0xdec19e351fe4cbc5427a54ea34eaabbe2b58e671",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host voidravencitadel.com. Created on 2026-07-06 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds a sealed salt:iv:ciphertext value that the loader decrypts with a per-build password (PBKDF2-SHA256, 100,000 iterations, AES-256-GCM).",
+    "c2_hosts": [
+      "voidravencitadel.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xdec19e351fe4cbc5427a54ea34eaabbe2b58e671"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xdec19e351fe4cbc5427a54ea34eaabbe2b58e671",
+        "url": "https://sepolia.etherscan.io/address/0xdec19e351fe4cbc5427a54ea34eaabbe2b58e671",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-sepolia-contract-ce14bcf4",
+    "ioc_type": "smart_contract_address",
+    "value": "0xce14bcf47c302b8ca945fa00e66af0b480328bac",
+    "chain": "sepolia",
+    "description": "Ethereum Sepolia contract the HexMage Magecart loader reads as a dead-drop resolver through getText(). Confiant reports that it resolves to the skimmer delivery host stylerightnoww.com. Created on 2026-04-10 by 0x88361c914bb0942da9a1b7bb396a7513c1917aee; it holds the host in plain base64, which this site read on 2026-11-11 as stylerightnoww.com.",
+    "c2_hosts": [
+      "stylerightnoww.com"
+    ],
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "0xce14bcf47c302b8ca945fa00e66af0b480328bac"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xce14bcf47c302b8ca945fa00e66af0b480328bac",
+        "url": "https://sepolia.etherscan.io/address/0xce14bcf47c302b8ca945fa00e66af0b480328bac",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-ashenravenfort-top",
+    "ioc_type": "domain",
+    "value": "ashenravenfort.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xf8290bea4e7585302ba9984b76766d4f0e282c0e resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "ashenravenfort[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-bloodboundcitadel-top",
+    "ioc_type": "domain",
+    "value": "bloodboundcitadel.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xffbc6712ef6b8f4c8542cbc51fc6bbca06b08455 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "bloodboundcitadel[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-bloodthornkeep-top",
+    "ioc_type": "domain",
+    "value": "bloodthornkeep.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xd641493ea15a3f3b3de327401c8cd63e36236bfb resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "bloodthornkeep[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-brokenvelvetdream-top",
+    "ioc_type": "domain",
+    "value": "brokenvelvetdream.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x77fedd16e94a86d2797bfecc9b82199790188620 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "brokenvelvetdream[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-darkflamewatch-top",
+    "ioc_type": "domain",
+    "value": "darkflamewatch.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xe0f9aca9384da7b7dd04fa9fe06dfe51d816d9ec resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "darkflamewatch[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-frozennebularhy-top",
+    "ioc_type": "domain",
+    "value": "frozennebularhy.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x51e3f029209c210fa8946c219644394aae71224d resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "frozennebularhy[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-frozenwildheart-top",
+    "ioc_type": "domain",
+    "value": "frozenwildheart.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xf56f2af13080ea86c718849139fbf404b5050558 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "frozenwildheart[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-grimwardens-com",
+    "ioc_type": "domain",
+    "value": "grimwardens.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x46e18e042e0aa3fd7a29df15058c8672c197c644 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "grimwardens[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-nightstalkerwatch-top",
+    "ioc_type": "domain",
+    "value": "nightstalkerwatch.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x6bcf6ffce66317335d2928a31dc4e6efade765e6 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "nightstalkerwatch[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-ravenstonekeep-top",
+    "ioc_type": "domain",
+    "value": "ravenstonekeep.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x6ac4170a50f2b6e982069463c205277c13bb391d resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "ravenstonekeep[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-shadowrunevail-top",
+    "ioc_type": "domain",
+    "value": "shadowrunevail.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x515cfebd53a860c311d583b74a8b02a78a7884e0 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "shadowrunevail[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylehailens-com",
+    "ioc_type": "domain",
+    "value": "stylehailens.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x1cf9f972ffb05f8f8c32705dccb6548a7cbae496 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylehailens[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleoutspin-com",
+    "ioc_type": "domain",
+    "value": "styleoutspin.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x5ba5fffc8b9376295cb98a93bdfba975e1c9fdc9 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleoutspin[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylerightnoww-com",
+    "ioc_type": "domain",
+    "value": "stylerightnoww.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xce14bcf47c302b8ca945fa00e66af0b480328bac resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylerightnoww[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleteleport-com",
+    "ioc_type": "domain",
+    "value": "styleteleport.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xa10fd03d545f44c3287d5542acfb4d74e6bb9906 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleteleport[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styletimeset-com",
+    "ioc_type": "domain",
+    "value": "styletimeset.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x6332d0e357a7b8209eb3d25e909bfe666db0290b resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styletimeset[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleussles-com",
+    "ioc_type": "domain",
+    "value": "styleussles.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x9f85277114091095d323a1d4fb18219a66b18538 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleussles[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-voidravencitadel-com",
+    "ioc_type": "domain",
+    "value": "voidravencitadel.com",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xdec19e351fe4cbc5427a54ea34eaabbe2b58e671 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "voidravencitadel[.]com"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-voidwalkerforge-top",
+    "ioc_type": "domain",
+    "value": "voidwalkerforge.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0x4b6170a49090fae965527e222515c2224fe73dd5 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "voidwalkerforge[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-warmcoffeetime-top",
+    "ioc_type": "domain",
+    "value": "warmcoffeetime.top",
+    "description": "HexMage skimmer delivery host that the Ethereum Sepolia contract 0xff2ff2de4bf5434a160b666a1a17559fb454eee2 resolves to, observed by Confiant serving the card skimmer to compromised checkout pages.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "warmcoffeetime[.]top"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-blueoceanbreeze-org",
+    "ioc_type": "domain",
+    "value": "blueoceanbreeze.org",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x41d18136bb899b4316bc7fcd868791d29ffc47a8, created 2026-04-29) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "blueoceanbreeze[.]org"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x41d18136bb899b4316bc7fcd868791d29ffc47a8",
+        "url": "https://sepolia.etherscan.io/address/0x41d18136bb899b4316bc7fcd868791d29ffc47a8",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleferry-com",
+    "ioc_type": "domain",
+    "value": "styleferry.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x248620726fde0889aee8dc05efd69946d4d2d347, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleferry[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x248620726fde0889aee8dc05efd69946d4d2d347",
+        "url": "https://sepolia.etherscan.io/address/0x248620726fde0889aee8dc05efd69946d4d2d347",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylekay-com",
+    "ioc_type": "domain",
+    "value": "stylekay.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xd69f363350af4ec855b3338d7e23750e3804a92d, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylekay[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xd69f363350af4ec855b3338d7e23750e3804a92d",
+        "url": "https://sepolia.etherscan.io/address/0xd69f363350af4ec855b3338d7e23750e3804a92d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylerunningg-com",
+    "ioc_type": "domain",
+    "value": "stylerunningg.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x04141d92baa052a778dd86cccc1287d870a2a06c, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylerunningg[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x04141d92baa052a778dd86cccc1287d870a2a06c",
+        "url": "https://sepolia.etherscan.io/address/0x04141d92baa052a778dd86cccc1287d870a2a06c",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-smartpeoplework-info",
+    "ioc_type": "domain",
+    "value": "smartpeoplework.info",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x05f7150bfc2ac80614f2a0840810d7c9e57c5b82, created 2026-04-29) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "smartpeoplework[.]info"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x05f7150bfc2ac80614f2a0840810d7c9e57c5b82",
+        "url": "https://sepolia.etherscan.io/address/0x05f7150bfc2ac80614f2a0840810d7c9e57c5b82",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylegamagee-com",
+    "ioc_type": "domain",
+    "value": "stylegamagee.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xe7eb8ad844ede51fb789f011799f8082cfe4e947, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylegamagee[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xe7eb8ad844ede51fb789f011799f8082cfe4e947",
+        "url": "https://sepolia.etherscan.io/address/0xe7eb8ad844ede51fb789f011799f8082cfe4e947",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleleftt-com",
+    "ioc_type": "domain",
+    "value": "styleleftt.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x50714f132d98bcfe5d0f2c98838c0f2f0f553733, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleleftt[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x50714f132d98bcfe5d0f2c98838c0f2f0f553733",
+        "url": "https://sepolia.etherscan.io/address/0x50714f132d98bcfe5d0f2c98838c0f2f0f553733",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleshort-com",
+    "ioc_type": "domain",
+    "value": "styleshort.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xfbb285e976b98c84c9a9279c2fc1d93eb40ac462, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleshort[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xfbb285e976b98c84c9a9279c2fc1d93eb40ac462",
+        "url": "https://sepolia.etherscan.io/address/0xfbb285e976b98c84c9a9279c2fc1d93eb40ac462",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-streetfleshroyalgaming-top",
+    "ioc_type": "domain",
+    "value": "streetfleshroyalgaming.top",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x72814ae4f5ddf7e47fac26a6a834a02d9ac49dde, created 2026-04-29) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "streetfleshroyalgaming[.]top"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x72814ae4f5ddf7e47fac26a6a834a02d9ac49dde",
+        "url": "https://sepolia.etherscan.io/address/0x72814ae4f5ddf7e47fac26a6a834a02d9ac49dde",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylegamingg-com",
+    "ioc_type": "domain",
+    "value": "stylegamingg.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x663d02327aacfa31ae555724409995fb7089d0fb, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylegamingg[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x663d02327aacfa31ae555724409995fb7089d0fb",
+        "url": "https://sepolia.etherscan.io/address/0x663d02327aacfa31ae555724409995fb7089d0fb",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleouresen-com",
+    "ioc_type": "domain",
+    "value": "styleouresen.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x1d1230a46549063327e469f9b307269b2dc9f9b0, created 2026-03-30) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleouresen[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x1d1230a46549063327e469f9b307269b2dc9f9b0",
+        "url": "https://sepolia.etherscan.io/address/0x1d1230a46549063327e469f9b307269b2dc9f9b0",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylestyk-com",
+    "ioc_type": "domain",
+    "value": "stylestyk.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x467fe8baa36abb495c36b0b583692c34350b5d04, created 2026-03-30) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylestyk[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x467fe8baa36abb495c36b0b583692c34350b5d04",
+        "url": "https://sepolia.etherscan.io/address/0x467fe8baa36abb495c36b0b583692c34350b5d04",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleanimal-com",
+    "ioc_type": "domain",
+    "value": "styleanimal.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x3070c01b31eb6f43e778d1f3c3bddc2368bc04a9, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleanimal[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x3070c01b31eb6f43e778d1f3c3bddc2368bc04a9",
+        "url": "https://sepolia.etherscan.io/address/0x3070c01b31eb6f43e778d1f3c3bddc2368bc04a9",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylehelloman-com",
+    "ioc_type": "domain",
+    "value": "stylehelloman.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x8b51ed1e379f77f595b0634783f35b7dd1376f1c, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylehelloman[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x8b51ed1e379f77f595b0634783f35b7dd1376f1c",
+        "url": "https://sepolia.etherscan.io/address/0x8b51ed1e379f77f595b0634783f35b7dd1376f1c",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylepenalty-com",
+    "ioc_type": "domain",
+    "value": "stylepenalty.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x40521dff2ce1f8b92f3fea649d9be07310b82083, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylepenalty[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x40521dff2ce1f8b92f3fea649d9be07310b82083",
+        "url": "https://sepolia.etherscan.io/address/0x40521dff2ce1f8b92f3fea649d9be07310b82083",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styletray-com",
+    "ioc_type": "domain",
+    "value": "styletray.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x59028be4a413e95b227c5d4a8e95573f726829ab, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styletray[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x59028be4a413e95b227c5d4a8e95573f726829ab",
+        "url": "https://sepolia.etherscan.io/address/0x59028be4a413e95b227c5d4a8e95573f726829ab",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylebonus-com",
+    "ioc_type": "domain",
+    "value": "stylebonus.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xfba32b859085b0d70095c08f6b1f7d91e462c26b, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylebonus[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xfba32b859085b0d70095c08f6b1f7d91e462c26b",
+        "url": "https://sepolia.etherscan.io/address/0xfba32b859085b0d70095c08f6b1f7d91e462c26b",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylehersi-com",
+    "ioc_type": "domain",
+    "value": "stylehersi.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x5610aff9ffff99565ee968931870291dd5734aa7, created 2026-03-30) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylehersi[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x5610aff9ffff99565ee968931870291dd5734aa7",
+        "url": "https://sepolia.etherscan.io/address/0x5610aff9ffff99565ee968931870291dd5734aa7",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleranked-com",
+    "ioc_type": "domain",
+    "value": "styleranked.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x380472eb0b536ab833be43c6c15febb53249b76e, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleranked[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x380472eb0b536ab833be43c6c15febb53249b76e",
+        "url": "https://sepolia.etherscan.io/address/0x380472eb0b536ab833be43c6c15febb53249b76e",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styletropik-com",
+    "ioc_type": "domain",
+    "value": "styletropik.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xe5cdd8300bf16c2d7968082e4a6b9858522b61e0, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styletropik[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xe5cdd8300bf16c2d7968082e4a6b9858522b61e0",
+        "url": "https://sepolia.etherscan.io/address/0xe5cdd8300bf16c2d7968082e4a6b9858522b61e0",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleboosted-com",
+    "ioc_type": "domain",
+    "value": "styleboosted.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xa9293a879a25104356bdb4ed90345b4bf84b3cbd, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleboosted[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xa9293a879a25104356bdb4ed90345b4bf84b3cbd",
+        "url": "https://sepolia.etherscan.io/address/0xa9293a879a25104356bdb4ed90345b4bf84b3cbd",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylehipp-com",
+    "ioc_type": "domain",
+    "value": "stylehipp.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x5be163dfa932ebb74a8c1faa440dee20f72e6d27, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylehipp[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x5be163dfa932ebb74a8c1faa440dee20f72e6d27",
+        "url": "https://sepolia.etherscan.io/address/0x5be163dfa932ebb74a8c1faa440dee20f72e6d27",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylerazorr-com",
+    "ioc_type": "domain",
+    "value": "stylerazorr.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x71b134c81261d68edc603f0cfd8ce84b39468317, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylerazorr[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x71b134c81261d68edc603f0cfd8ce84b39468317",
+        "url": "https://sepolia.etherscan.io/address/0x71b134c81261d68edc603f0cfd8ce84b39468317",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styletumor-com",
+    "ioc_type": "domain",
+    "value": "styletumor.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xace71e141504d3adcec94f9bac1c03e5e4ecffb3, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styletumor[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xace71e141504d3adcec94f9bac1c03e5e4ecffb3",
+        "url": "https://sepolia.etherscan.io/address/0xace71e141504d3adcec94f9bac1c03e5e4ecffb3",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylecaving-com",
+    "ioc_type": "domain",
+    "value": "stylecaving.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x6ec8f6f438f18e0600fc2204cbc7513971c0ba03, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylecaving[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x6ec8f6f438f18e0600fc2204cbc7513971c0ba03",
+        "url": "https://sepolia.etherscan.io/address/0x6ec8f6f438f18e0600fc2204cbc7513971c0ba03",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylehotrod-com",
+    "ioc_type": "domain",
+    "value": "stylehotrod.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x8cd80b87ccca8885c059ccf75f6660b860e1e88f, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylehotrod[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x8cd80b87ccca8885c059ccf75f6660b860e1e88f",
+        "url": "https://sepolia.etherscan.io/address/0x8cd80b87ccca8885c059ccf75f6660b860e1e88f",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylewify-com",
+    "ioc_type": "domain",
+    "value": "stylewify.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x7a9a9c976239a8041ec806f6d8fde3f3231c200d, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylewify[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x7a9a9c976239a8041ec806f6d8fde3f3231c200d",
+        "url": "https://sepolia.etherscan.io/address/0x7a9a9c976239a8041ec806f6d8fde3f3231c200d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-sunnydaycoffees-net",
+    "ioc_type": "domain",
+    "value": "sunnydaycoffees.net",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xd68a17112a476e9f9bb739293f5f85717fb1a73c, created 2026-04-29) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "sunnydaycoffees[.]net"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xd68a17112a476e9f9bb739293f5f85717fb1a73c",
+        "url": "https://sepolia.etherscan.io/address/0xd68a17112a476e9f9bb739293f5f85717fb1a73c",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylecholera-com",
+    "ioc_type": "domain",
+    "value": "stylecholera.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xfe8fba87775af2b0df0a0cab95a01950f552b124, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylecholera[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xfe8fba87775af2b0df0a0cab95a01950f552b124",
+        "url": "https://sepolia.etherscan.io/address/0xfe8fba87775af2b0df0a0cab95a01950f552b124",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylejunglee-com",
+    "ioc_type": "domain",
+    "value": "stylejunglee.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x28efe0596794535fcb6017a5797b5bd3f50c871a, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylejunglee[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x28efe0596794535fcb6017a5797b5bd3f50c871a",
+        "url": "https://sepolia.etherscan.io/address/0x28efe0596794535fcb6017a5797b5bd3f50c871a",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleconnectorr-com",
+    "ioc_type": "domain",
+    "value": "styleconnectorr.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xd1387d5be3fbe9a6372667a5ec4cf6f92450b1f9, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleconnectorr[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xd1387d5be3fbe9a6372667a5ec4cf6f92450b1f9",
+        "url": "https://sepolia.etherscan.io/address/0xd1387d5be3fbe9a6372667a5ec4cf6f92450b1f9",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-stylekanions-com",
+    "ioc_type": "domain",
+    "value": "stylekanions.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xe835fffec743e5b7e9713adadbe5bdda1f19fbee, created 2026-03-30) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "stylekanions[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xe835fffec743e5b7e9713adadbe5bdda1f19fbee",
+        "url": "https://sepolia.etherscan.io/address/0xe835fffec743e5b7e9713adadbe5bdda1f19fbee",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styledespair-com",
+    "ioc_type": "domain",
+    "value": "styledespair.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0xf558addf1ff2517684106b00e181d305f8b7b4f6, created 2026-04-24) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styledespair[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0xf558addf1ff2517684106b00e181d305f8b7b4f6",
+        "url": "https://sepolia.etherscan.io/address/0xf558addf1ff2517684106b00e181d305f8b7b4f6",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styledupstep-com",
+    "ioc_type": "domain",
+    "value": "styledupstep.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x3c7e279c1c8ceca02c00d19d4be0262fa96ac38f, created 2026-04-10) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styledupstep[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x3c7e279c1c8ceca02c00d19d4be0262fa96ac38f",
+        "url": "https://sepolia.etherscan.io/address/0x3c7e279c1c8ceca02c00d19d4be0262fa96ac38f",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "etherhiding-hexmage-host-styleember-com",
+    "ioc_type": "domain",
+    "value": "styleember.com",
+    "description": "Host stored in plain base64 in a HexMage resolver contract (0x12fed6fdcf398d38ff63f0ed40642d649d267414, created 2026-03-30) that Confiant lists as staged rather than observed: written on chain ahead of use, with no skimmer traffic seen for it when the report was written.",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "malware_family": "Magecart skimmer (HexMage)",
+    "confidence_level": "low",
+    "attribution_doubt": "Confiant tracks this cluster as HexMage, a Magecart card-skimming operation that loads its skimmer through EtherHiding, and names no actor or state; it mentions DPRK-linked EtherHiding only as separate work, and no DPRK link is published for it.",
+    "date_added": "2026-11-11",
+    "sources": [
+      {
+        "title": "Skimming on the Blockchain: A Magecart Campaign That Uses EtherHiding, Found by Malvertising Scanning",
+        "url": "https://blog.confiant.com/p/skimming-on-the-blockchain-a-magecart",
+        "publisher": "Confiant",
+        "date": "2026-08-28",
+        "type": "threat_intel_report",
+        "quote": "styleember[.]com"
+      },
+      {
+        "title": "Ethereum Sepolia address 0x12fed6fdcf398d38ff63f0ed40642d649d267414",
+        "url": "https://sepolia.etherscan.io/address/0x12fed6fdcf398d38ff63f0ed40642d649d267414",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-11",
+        "type": "on_chain_observation"
+      }
+    ]
   }
 ]

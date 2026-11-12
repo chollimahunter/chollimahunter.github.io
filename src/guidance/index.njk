@@ -70,7 +70,12 @@ eleventyExcludeFromCollections: true
       <h3 class="step__title">Verify the person, not only the value</h3>
       <p>
         The same guidance recommends verifying employment and education history
-        through independently found contacts.
+        through independently found contacts. The FBI&rsquo;s
+        {% set externalLink = { url: "https://www.ic3.gov/PSA/2026/PSA261013", text: "announcement of 13 October 2026" } %}{% include "partials/external-link.njk" %}
+        adds that no single indicator is reliable, recommends layered checks
+        across the whole employment, and warns that the worker may be a
+        recruited facilitator or a subcontractor rather than the person who was
+        hired.
       </p>
     </li>
     <li class="card step" id="employers-report">

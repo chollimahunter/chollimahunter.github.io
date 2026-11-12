@@ -179,6 +179,36 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src
       <p class="reading-list__note">The FBI&rsquo;s intake point for cyber-enabled crime, including suspected DPRK IT workers.</p>
     </li>
     <li>
+      {% set externalLink = { url: "https://report.ncsc.gov.uk/", text: "Report a cyber incident" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">National Cyber Security Centre, United Kingdom</span>
+      <p class="reading-list__note">The United Kingdom&rsquo;s reporting service for cyber incidents affecting an organisation.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.cyber.gc.ca/en/incident-management", text: "Report a cyber incident" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Canadian Centre for Cyber Security</span>
+      <p class="reading-list__note">Canada&rsquo;s incident reporting route; fraud against individuals goes to the {% set externalLink = { url: "https://antifraudcentre-centreantifraude.ca/", text: "Canadian Anti-Fraud Centre" } %}{% include "partials/external-link.njk" %}.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.boho.or.kr/", text: "KrCERT/CC incident reporting" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Korea Internet &amp; Security Agency, Republic of Korea</span>
+      <p class="reading-list__note">South Korea&rsquo;s national incident response centre.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.npa.go.jp/bureau/cyber/soudan.html", text: "Cybercrime consultation and reporting" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">National Police Agency, Japan</span>
+      <p class="reading-list__note">Japan&rsquo;s police contact points for cybercrime, by prefecture.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.europol.europa.eu/report-a-crime", text: "Report a crime" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">Europol, European Union</span>
+      <p class="reading-list__note">Points to each member state&rsquo;s national police reporting service.</p>
+    </li>
+    <li>
+      {% set externalLink = { url: "https://www.ic3.gov/PSA/2026/PSA261013", text: "North Korean IT Workers Expanding Use of Facilitators, Broadening Recruitment" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">FBI public service announcement &middot; 2026-10-13</span>
+      <p class="reading-list__note">Recruited facilitators, smaller laptop farms, subcontracted work, and layered identity checks for employers.</p>
+    </li>
+    <li>
       {% set externalLink = { url: "https://www.ic3.gov/PSA/2025/PSA250123", text: "North Korean IT Workers Conducting Data Extortion" } %}{% include "partials/external-link.njk" %}
       <span class="reading-list__meta">FBI public service announcement &middot; 2025-01-23</span>
       <p class="reading-list__note">Discovered IT workers have begun holding stolen source code and data for ransom.</p>

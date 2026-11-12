@@ -216,8 +216,18 @@
     }
 
     panel.hidden = false;
-    apply("");
+    input.value = initialQuery(panel);
+    apply(input.value.trim());
   }
 
-  [].slice.call(document.querySelectorAll("[data-table-filter]")).forEach(setUp);
+  // A link such as /sources/?q=sentinelone opens the table already filtered,
+  // as the indicator searches do. Only on a page with one table search and no
+  // indicator search, which reads the same parameter for itself.
+  var panels = [].slice.call(document.querySelectorAll("[data-table-filter]"));
+  function initialQuery(panel) {
+    if (panels.length !== 1 || panel !== panels[0] || document.querySelector("[data-ioc-search]")) return "";
+    return new URLSearchParams(location.search).get("q") || "";
+  }
+
+  panels.forEach(setUp);
 })();

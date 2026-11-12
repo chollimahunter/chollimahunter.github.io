@@ -47,8 +47,7 @@
 {%- set crumbs = [{ "@type": "ListItem", "position": 1, "name": "Chollima Hunter", "item": site.url + "/" }] -%}
 {%- for crumb in page.url | pathCrumbs -%}
   {%- set crumbName = title if loop.last else (sectionTitles[crumb.segment] or crumb.segment) -%}
-  {%- set crumbPath = crumb.path if (crumb.path.endsWith("/") or crumb.path.endsWith(".html")) else crumb.path + "/" -%}
-  {%- set crumbs = (crumbs.push({ "@type": "ListItem", "position": loop.index + 1, "name": crumbName, "item": site.url + crumbPath }), crumbs) -%}
+  {%- set crumbs = (crumbs.push({ "@type": "ListItem", "position": loop.index + 1, "name": crumbName, "item": site.url + crumb.path }), crumbs) -%}
 {%- endfor -%}
 {%- set graph = [] -%}
 {%- if page.url == "/" -%}

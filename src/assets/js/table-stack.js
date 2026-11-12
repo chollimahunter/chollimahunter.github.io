@@ -18,6 +18,9 @@
   A table of eight or more columns is also marked .results-table--wide: on a
   desktop screen it extends past the reading column, centred, while the page
   around it keeps the same column as every other page.
+
+  Any .table-scroll wrapper or .query-block that still scrolls sideways is
+  made focusable, so it can be scrolled from the keyboard.
 */
 (function () {
   "use strict";
@@ -25,6 +28,29 @@
   var MIN_COLUMNS = 4;
   var WIDE_COLUMNS = 8;
   var NARROW = "(max-width: 64rem)";
+
+  // A .table-scroll wrapper or a .query-block that scrolls sideways can only
+  // be scrolled from the keyboard once it can take focus, so each one that
+  // overflows joins the tab order as a named region and leaves it when it fits.
+  function reachable() {
+    Array.prototype.forEach.call(document.querySelectorAll(".table-scroll, .query-block"), function (box) {
+      if (box.scrollWidth > box.clientWidth + 1) {
+        box.tabIndex = 0;
+        box.setAttribute("role", "region");
+        if (!box.hasAttribute("aria-label")) {
+          box.setAttribute("aria-label", box.classList.contains("query-block") ? "Query, scrollable" : "Table, scrollable");
+        }
+      } else if (box.getAttribute("tabindex") === "0") {
+        box.removeAttribute("tabindex");
+        box.removeAttribute("role");
+      }
+    });
+  }
+  var reachLater = window.siteUtils.debounce(reachable, 150);
+  window.addEventListener("resize", reachLater);
+  window.addEventListener("load", reachLater);
+  document.addEventListener("tablerender", reachLater, true);
+  reachable();
 
   var tables = [];
   Array.prototype.forEach.call(document.querySelectorAll("table.results-table"), function (table) {
