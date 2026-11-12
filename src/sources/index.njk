@@ -179,6 +179,11 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src
       <p class="reading-list__note">The FBI&rsquo;s intake point for cyber-enabled crime, including suspected DPRK IT workers.</p>
     </li>
     <li>
+      {% set externalLink = { url: "https://www.ic3.gov/PSA/2026/PSA261013", text: "North Korean IT Workers Expanding Use of Facilitators, Broadening Recruitment" } %}{% include "partials/external-link.njk" %}
+      <span class="reading-list__meta">FBI public service announcement &middot; 2026-10-13</span>
+      <p class="reading-list__note">Recruited facilitators, smaller laptop farms, subcontracted work, and layered identity checks for employers.</p>
+    </li>
+    <li>
       {% set externalLink = { url: "https://www.ic3.gov/PSA/2025/PSA250123", text: "North Korean IT Workers Conducting Data Extortion" } %}{% include "partials/external-link.njk" %}
       <span class="reading-list__meta">FBI public service announcement &middot; 2025-01-23</span>
       <p class="reading-list__note">Discovered IT workers have begun holding stolen source code and data for ransom.</p>
