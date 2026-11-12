@@ -14662,6 +14662,464 @@
           "sealed": "f63a7c6a4b16beb56d7f0f686b54739cfdb53b926f59fcdd7639d4b6cd095ee9"
         }
       ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429914",
+      "publisher": "wezard4u (tistory)",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://bitquery.io/investigations/binance-hack-laundering",
+      "publisher": "Bitquery",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor",
+      "publisher": "MichaelKoczwara",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/the-opensourcemalwareshow-episode28",
+      "publisher": "OpenSourceMalware",
+      "campaign": [
+        "PolinRider"
+      ]
+    },
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0685/",
+      "publisher": "U.S. Treasury (press releases)",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://rekt.news/binance-rekt",
+      "publisher": "Rekt",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429913",
+      "publisher": "wezard4u (tistory)",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://radar.securityalliance.org/tradertraitor-vs-contagious-interview-a-look-at-binances-initial-incident-report",
+      "publisher": "SecurityAlliance",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://slowmist.medium.com/u-s-ofac-sanctions-individuals-and-entities-linked-to-dprk-it-worker-networks-3d475a4152f5",
+      "publisher": "Slowmist",
+      "campaign": [
+        "IT Worker Fraud"
+      ]
+    },
+    {
+      "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages",
+      "publisher": "Sonatype",
+      "campaign": [
+        "PolinRider"
+      ]
+    },
+    {
+      "url": "https://safedep.io/blog/binance-hack-lessons",
+      "publisher": "SafeDep",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://blog.polyswarm.io/fbi-attributes-6.3-billion-binance-heist-to-north-korea-as-pyongyang-denies-involvement",
+      "publisher": "PolySwarm",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.trellix.com/advanced-research-center/threat-reports/november-2026",
+      "publisher": "Trellix",
+      "campaign": [
+        "Lazarus Group",
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+      "publisher": "OxSecurity",
+      "campaign": [
+        "PolinRider"
+      ]
+    },
+    {
+      "url": "https://www.reversinglabs.com/blog/binance-heist-what-we-know-and-what-rl-sees-in-tradertraitors-toolkit",
+      "publisher": "Reversing Labs",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://haydenmckenzie.com/research/tracking-operational-changes-in-north-korean-it-work",
+      "publisher": "Hayden Mckenzie",
+      "campaign": [
+        "IT Worker Fraud"
+      ]
+    },
+    {
+      "url": "https://s2w.inc/en/resources/1154",
+      "publisher": "S2W",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-28-oct-3-nov-2026",
+      "publisher": "Security Alliance",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "3906718d977940b93bf53e2a99b673c9491c8c62d45765a1c10c7c23766c4756"
+        }
+      ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429911",
+      "publisher": "wezard4u (tistory)",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://safedep.io/blog/binance-hack-developer-supply-chain-attack-path",
+      "publisher": "SafeDep",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://blog.amlbot.com/binance-hack-explained/",
+      "publisher": "AMLBot",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.trmlabs.com/resources/blog/binance-hack-update-north-korea-launders-proceeds-through-self-minted-tokens-and-chained-bridges",
+      "publisher": "Trmlabs",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/why-conventional-reputation-feeds-miss-software-supply-chain-attacks",
+      "publisher": "Open Source Malware",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://www.chainalysis.com/blog/binance-hack-dprk-employment-fraud",
+      "publisher": "Chainalysis",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://binance.com/en/blog/community/3229153443759566763",
+      "publisher": "Binance",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://safedep.io/blog/antd-img-crop-forged-commit-overlord-stealer",
+      "publisher": "Safe Dep",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.elliptic.co/insights/how-north-korea-is-laundering-the-6-4-billion-stolen-from-binance/",
+      "publisher": "Elliptic",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429909",
+      "publisher": "wezard4u (tistory)",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://polytrop.io/scanner/incident/binance-hack",
+      "publisher": "AMLBot",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack",
+      "publisher": "USFBI",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.silentpush.com/blog/north-korea-crypto-heists-open-internet/",
+      "publisher": "Silent Push",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/polinrider-malware-found-in-2025-npm-packages",
+      "publisher": "OpenSourceMalware",
+      "campaign": [
+        "PolinRider"
+      ]
+    },
+    {
+      "url": "https://www.jamf.com/blog/binance-attack-dprk-developer-laptop-security/",
+      "publisher": "Jamf Threat Labs",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
+      "publisher": "Bitquery",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.bitquery.io/investigations/binance-hack",
+      "publisher": "Bitquery",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.trmlabs.com/resources/blog/north-korea-has-stolen-usd-128-billion-in-crypto-usd-74-billion-of-it-in-2026",
+      "publisher": "Trmlabs",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.joesecurity.org/reports/report-7d62e779a769e120ac8f0c5a8bd4e968.html",
+      "publisher": "Joe Security",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://threatmon.io/binance-lost-6-3-billion-without-losing-a-key",
+      "publisher": "Threat Mon",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history",
+      "publisher": "Elliptic",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://asec.ahnlab.com/en/96295",
+      "publisher": "Ahnlab",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response",
+      "publisher": "Chainalysis",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+      "publisher": "Binance",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://asec.ahnlab.com/ko/96294/",
+      "publisher": "AhnLab ASEC (Korean)",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history",
+      "publisher": "Trmlabs",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://newtonpaul.com/blog/dprk-contagious-interview-polygon-loader/",
+      "publisher": "Newton Paul",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft",
+      "publisher": "Microsoft",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html#new_tab",
+      "publisher": "Silent Push",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.stormshield.com/news/cti-trigram-campaign",
+      "publisher": "Stormshield",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "d867435f6d03ab9a12960966168adf0a66f701a7f83325675d6077aaa95d7c85"
+        }
+      ]
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-4-11-nov-2026",
+      "publisher": "SecurityAlliance",
+      "campaign": [
+        "APT38",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.elliptic.co/insights/north-korea-meme-coins-binance-hack/",
+      "publisher": "Elliptic",
+      "campaign": [
+        "APT38"
+      ]
+    },
+    {
+      "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+      "publisher": "Jfrog",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "0eecaa78ca57c5dbf33c1d5948417f4bd211020cba1da1bb2a79388a82b5ca57"
+        }
+      ]
+    },
+    {
+      "url": "https://amsterdam-technologies.com/blog/a-very-contagious-interview",
+      "publisher": "Amsterdam Technologies",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "exclude": [
+        {
+          "sealed": "015252bafdd77842368577bf7814b9b77c84eb1b1084db9271891e617d0dc2e6"
+        },
+        {
+          "sealed": "018a1630d2b52ef64fa3f364bc361717a7e8a03a71dabae4c464fa9dfa6cdff6"
+        },
+        {
+          "sealed": "1d2ace27e7cf5519be96cdb16a79483caa33717ce842bbae9d100a3e512ddb02"
+        },
+        {
+          "sealed": "234baffae679bd1ad03b2a8505b1d9c6db5b86c5494444a1824653a08a2a184a"
+        },
+        {
+          "sealed": "2fb90833f629f83e83f02531f7c57517c896533e8ba9cbc3ca24b85154af726c"
+        },
+        {
+          "sealed": "63f69abcb989b6dff895b90d4c270bc3f9565ce2fc9deab8c13f8d30866eb5d2"
+        },
+        {
+          "sealed": "6dcb747705bd35ad88b618b3baa04f2e5a513d5bac78435fa433f804305343c4"
+        },
+        {
+          "sealed": "703f02c1d27cc158669fce41ffd90bbcd23c24214a0e77849e59a2ec128f6a90"
+        },
+        {
+          "sealed": "7b31c45ec10be5a6cbffee67882cc74dc729914ff661e6a93ce4dd26934d90d0"
+        },
+        {
+          "sealed": "86658b24215c0dfeb502d44830967fb58222fb00c18bfc7c9781a93cd976e9be"
+        },
+        {
+          "sealed": "888f4f8664e0564df3aae7595b2918bdab6d2404c7e31d21dff554cc443e7eb7"
+        },
+        {
+          "sealed": "989593f317a52c539787ba22d92588d1d0c98d73be6bf6a6b763d0b809f7a32f"
+        },
+        {
+          "sealed": "9e12230c6e6aeb0871643f716c68ab5d5c0572f66f57971bf01c8f1d15a4bb9c"
+        },
+        {
+          "sealed": "a20dfcddfaa443991f9996f482474c6a84577c86092d196ae378f1fe7b469cf8"
+        },
+        {
+          "sealed": "ac025812a854b7d01c9e770944e9fd0f12d19776e6ccccb71bf3dc517675906e"
+        },
+        {
+          "sealed": "b6658095d0df567933df427a405c68864d681ccf325f2fca61d3fca62a88a607"
+        },
+        {
+          "sealed": "c3be6e88f067a6a8df2283a53be1d6b0dc964c3fc514b55c1640d3167c038fdd"
+        },
+        {
+          "sealed": "d86c4b77f0c79228d6fabf82a5d32fb9c6540c1ff801821da78128f985b50817"
+        },
+        {
+          "sealed": "db25ae665e1bdfc3d3592bc49a467c64767d05372134dd55dc021d154b302ae5"
+        },
+        {
+          "sealed": "eb7d6fd90a9ec57cb1401302fc9b779bcce1b44f1a1a5a4929f9a504c5f54588"
+        },
+        {
+          "sealed": "f03df1c34e7fe1e8f89013ec767e109330eef27516fa3bf8688dbef5da09be83"
+        },
+        {
+          "sealed": "f22c13ce35f6d8488cac09b2329762a72aab5c76cf2bc540a49a336b3835b711"
+        },
+        {
+          "sealed": "f8b199f3086cce73351dc9473295bea452edda6e0ada9126e8a33599f85de176"
+        }
+      ]
     }
   ],
   "not_scraped": [
@@ -19936,584 +20394,42 @@
       "reason": "declined",
       "notes": "A neutralization report on the NitroGem lure repository that names its C2 deployments but never the DPRK, so the scraper's keyword guard refuses it. The tie runs through bryanchriswhite's dev-trap-dossiers, which lists the original TechByteX/NitroGem in the Contagious Interview cluster; its stage-one C2 is filed by hand in direct-observations.json (27 October 2026), and precommit.vercel.app was already indexed.",
       "checked": "2026-10-27"
-    }
-  ],
-  "discovered": [
-    {
-      "url": "https://wezard4u.tistory.com/429914",
-      "publisher": "wezard4u (tistory)",
-      "title": "북한 Kimsuky(김수키) 미&middot;중 정상회담 관련 일본어 문서로 위장한 악성 코드 분석-米中首脳会談とトランプ次期政権の対北朝鮮政策に関する資料質問紙.pdf",
-      "published": "2026-11-08",
-      "feed": "https://wezard4u.tistory.com/rss",
-      "matched_terms": [
-        "Kimsuky",
-        "APT43",
-        "북한",
-        "김수키",
-        "北朝鮮"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://bitquery.io/investigations/binance-hack-laundering",
-      "publisher": "Bitquery",
-      "title": "Binance Hacked: $333M Laundered in a Week, $208M in 2.5 Days",
-      "published": "2026-11-07",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor",
-      "publisher": "MichaelKoczwara",
-      "title": "Tracking Lazarus Group TraderTraitor Infrastructure Through Certificates and Historical Records",
-      "published": "2026-11-07",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "Lazarus",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://opensourcemalware.com/blog/the-opensourcemalwareshow-episode28",
-      "publisher": "OpenSourceMalware",
-      "title": "The OpenSourceMalware Show #28",
-      "published": "2026-11-06",
-      "feed": "https://opensourcemalware.com/rss.xml",
-      "matched_terms": [
-        "PolinRider"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://home.treasury.gov/news/press-releases/sb0685/",
-      "publisher": "U.S. Treasury (press releases)",
-      "title": "Operation Economic Outcast Severs MEXC Global’s Access to the U.S. Financial System",
-      "published": "2026-11-06",
-      "feed": "https://home.treasury.gov/news/press-releases/index.xml",
-      "matched_terms": [
-        "North Korean"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://rekt.news/binance-rekt",
-      "publisher": "Rekt",
-      "title": "Binance",
-      "published": "2026-11-06",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korea",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://wezard4u.tistory.com/429913",
-      "publisher": "wezard4u (tistory)",
-      "title": "김수키(Kimsuky) 인증서 갱긴 안내 로 위장한 악성코드-인증서 갱긴 안내.pdf 분석",
-      "published": "2026-11-05",
-      "feed": "https://wezard4u.tistory.com/rss",
-      "matched_terms": [
-        "DPRK",
-        "Kimsuky",
-        "북한",
-        "김수키"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://radar.securityalliance.org/tradertraitor-vs-contagious-interview-a-look-at-binances-initial-incident-report",
-      "publisher": "SecurityAlliance",
-      "title": "TraderTraitor vs Contagious Interview - A Look at Binance's Initial Incident Report",
-      "published": "2026-11-05",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "Contagious Interview",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://slowmist.medium.com/u-s-ofac-sanctions-individuals-and-entities-linked-to-dprk-it-worker-networks-3d475a4152f5",
-      "publisher": "Slowmist",
-      "title": "U.S. OFAC Sanctions Individuals and Entities Linked to DPRK IT Worker Networks",
-      "published": "2026-11-05",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korean",
-        "DPRK",
-        "IT worker",
-        "IT Worker"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages",
-      "publisher": "Sonatype",
-      "title": "PolinRider Loader Reappears in Hijacked npm Packages",
-      "published": "2026-11-04",
-      "feed": "https://www.sonatype.com/blog/rss.xml",
-      "matched_terms": [
-        "PolinRider"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://safedep.io/blog/binance-hack-lessons",
-      "publisher": "SafeDep",
-      "title": "Binance Hack Lessons: Sandbox the Take-Home Assignment",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "Contagious Interview"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://blog.polyswarm.io/fbi-attributes-6.3-billion-binance-heist-to-north-korea-as-pyongyang-denies-involvement",
-      "publisher": "PolySwarm",
-      "title": "FBI Attributes $6.3 Billion Binance Heist to North Korea as Pyongyang Denies Involvement",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korea",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.trellix.com/advanced-research-center/threat-reports/november-2026",
-      "publisher": "Trellix",
-      "title": "The CyberThreat Report: November 2026",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "Lazarus",
-        "BlueNoroff",
-        "Kimsuky"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
-      "publisher": "OxSecurity",
-      "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "PolinRider",
-        "EtherHiding"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.reversinglabs.com/blog/binance-heist-what-we-know-and-what-rl-sees-in-tradertraitors-toolkit",
-      "publisher": "Reversing Labs",
-      "title": "Binance heist: what we know, and what RL sees in TraderTraitor's toolkit",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://haydenmckenzie.com/research/tracking-operational-changes-in-north-korean-it-work",
-      "publisher": "Hayden Mckenzie",
-      "title": "Tracking Operational Changes in North Korean IT Work",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korean"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://s2w.inc/en/resources/1154",
-      "publisher": "S2W",
-      "title": "Binance Hot Wallet Compromise and Multi-Chain Asset Theft Incident Analysis Report",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://radar.securityalliance.org/seal-weekly-stats-28-oct-3-nov-2026",
-      "publisher": "Security Alliance",
-      "title": "SEAL weekly stats: 28 Oct - 3 Nov 2026",
-      "published": "2026-11-04",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://wezard4u.tistory.com/429911",
-      "publisher": "wezard4u (tistory)",
-      "title": "김수키(Kimsuky) 우크라이나 정부를 공격한 악성코드-Аналітичний_звіт_Наталії.lnk",
-      "published": "2026-11-03",
-      "feed": "https://wezard4u.tistory.com/rss",
-      "matched_terms": [
-        "Kimsuky",
-        "북한",
-        "김수키"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://safedep.io/blog/binance-hack-developer-supply-chain-attack-path",
-      "publisher": "SafeDep",
-      "title": "Binance Hack: How Attackers Stole $6.34 Billion Through Developer Laptops",
-      "published": "2026-11-03",
-      "feed": "https://safedep.io/rss.xml",
-      "matched_terms": [
-        "North Korean"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://blog.amlbot.com/binance-hack-explained/",
-      "publisher": "AMLBot",
-      "title": "Breaking Down the Binance Hack: Timeline, Laundering Routes, and How Polytrop Helps Businesses Spot Stolen Funds",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.trmlabs.com/resources/blog/binance-hack-update-north-korea-launders-proceeds-through-self-minted-tokens-and-chained-bridges",
-      "publisher": "Trmlabs",
-      "title": "Binance Hack Update: North Korea Launders Proceeds Through Self-Minted Tokens and Chained Bridges",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
     },
     {
       "url": "https://unchainedcrypto.com/thorchain-restarts-most-swaps-after-analyst-said-operators-would-expect-north-korea-to-launder/",
       "publisher": "Unchained",
-      "title": "THORChain Restarts Most Swaps After Analyst Said Operators Would Expect North Korea to Launder",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://opensourcemalware.com/blog/why-conventional-reputation-feeds-miss-software-supply-chain-attacks",
-      "publisher": "Open Source Malware",
-      "title": "Why Conventional Reputation Feeds Miss Software Supply Chain Attacks",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
+      "reason": "declined",
+      "notes": "News report on THORChain resuming swaps after the Binance theft; market coverage with no indicators of its own.",
+      "checked": "2026-11-11"
     },
     {
       "url": "https://x.com/somaxbt/status/2117650880917094512",
       "publisher": "Soma XBT",
-      "title": "A Machine Is Laundering the Funds Stolen in the $6.36B Binance Hack!",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.chainalysis.com/blog/binance-hack-dprk-employment-fraud",
-      "publisher": "Chainalysis",
-      "title": "DPRK Hackers Perfected Their Fake Interview Playbook Over Dozens of Attacks Before Binance",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "DPRK"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://binance.com/en/blog/community/3229153443759566763",
-      "publisher": "Binance",
-      "title": "29 October 2026 Binance Security Incident: Initial Findings and Response Update",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://safedep.io/blog/antd-img-crop-forged-commit-overlord-stealer",
-      "publisher": "Safe Dep",
-      "title": "antd-img-crop GitHub Repository Hijacked to Deliver OverLord Stealer",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.elliptic.co/insights/how-north-korea-is-laundering-the-6-4-billion-stolen-from-binance/",
-      "publisher": "Elliptic",
-      "title": "How North Korea is laundering the $6.4 billion stolen from Binance",
-      "published": "2026-11-02",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://wezard4u.tistory.com/429909",
-      "publisher": "wezard4u (tistory)",
-      "title": "Kimsuky(김수키) 의심 악성코드 분석-아산시 폐기물처리장 민원&middot;산업단지 지원 문제를 다룬 26년 10월 2차 이장미팅 회의내용 문서 위장 분석",
-      "published": "2026-11-01",
-      "feed": "https://wezard4u.tistory.com/rss",
-      "matched_terms": [
-        "Kimsuky",
-        "김수키"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://polytrop.io/scanner/incident/binance-hack",
-      "publisher": "AMLBot",
-      "title": "Binance Hack",
-      "published": "2026-11-01",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
+      "reason": "client-side-rendered",
+      "notes": "An X post; x.com serves a script shell the scraper cannot read and is on the host denylist. Read by hand if needed.",
+      "checked": "2026-11-11"
     },
     {
       "url": "https://x.com/somaxbt/status/2116884703655723207",
       "publisher": "Soma XBT",
-      "title": "Binance exploit: about $242M laundered through the Tron leg in two days",
-      "published": "2026-11-01",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack",
-      "publisher": "USFBI",
-      "title": "North Korea Responsible for $6 Billion+ Binance Attack",
-      "published": "2026-10-31",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.silentpush.com/blog/north-korea-crypto-heists-open-internet/",
-      "publisher": "Silent Push",
-      "title": "North Korea’s Crypto Heists Start on the Open Internet",
-      "published": "2026-10-30",
-      "feed": "https://www.silentpush.com/feed/",
-      "matched_terms": [
-        "North Korea",
-        "North Korean"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://opensourcemalware.com/blog/polinrider-malware-found-in-2025-npm-packages",
-      "publisher": "OpenSourceMalware",
-      "title": "Earliest Known PolinRider Malware Found in 2025 npm Packages",
-      "published": "2026-10-30",
-      "feed": "https://opensourcemalware.com/rss.xml",
-      "matched_terms": [
-        "North Korean",
-        "PolinRider"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.jamf.com/blog/binance-attack-dprk-developer-laptop-security/",
-      "publisher": "Jamf Threat Labs",
-      "title": "Binance attack: how DPRK targets developer laptops",
-      "published": "2026-10-30",
-      "feed": "https://www.jamf.com/blog/rss/",
-      "matched_terms": [
-        "DPRK"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
-      "publisher": "Bitquery",
-      "title": "Binance Hack: Hacker Lost $119M on Swaps, Traders Kept $60M",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.bitquery.io/investigations/binance-hack",
-      "publisher": "Bitquery",
-      "title": "Binance Hack: $6.3B Drained on 9 Chains, $2.8B Frozen",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.trmlabs.com/resources/blog/north-korea-has-stolen-usd-128-billion-in-crypto-usd-74-billion-of-it-in-2026",
-      "publisher": "Trmlabs",
-      "title": "North Korea Has Stolen USD 12.8 Billion in Crypto, USD 7.4 Billion of It in 2026",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.joesecurity.org/reports/report-7d62e779a769e120ac8f0c5a8bd4e968.html",
-      "publisher": "Joe Security",
-      "title": "Operation GitPower",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://threatmon.io/binance-lost-6-3-billion-without-losing-a-key",
-      "publisher": "Threat Mon",
-      "title": "Binance Lost $6.3 Billion Without Losing a Key",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.elliptic.co/insights/binance-largest-hack-in-history",
-      "publisher": "Elliptic",
-      "title": "The largest theft in history: North Korea likely behind the $6.4 billion Binance hack",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://asec.ahnlab.com/en/96295",
-      "publisher": "Ahnlab",
-      "title": "September 2026 Threat Trend Report on APT Attacks (South Korea)",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response",
-      "publisher": "Chainalysis",
-      "title": "Binance Exploit: Latest Findings and Response",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
-      "publisher": "Binance",
-      "title": "Security Incident Update",
-      "published": "2026-10-30",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://asec.ahnlab.com/ko/96294/",
-      "publisher": "AhnLab ASEC (Korean)",
-      "title": "2026년 9월 APT 공격 동향 보고서(국내)",
-      "published": "2026-10-29",
-      "feed": "https://asec.ahnlab.com/ko/feed/",
-      "matched_terms": [
-        "Kimsuky"
-      ],
-      "discovered": "2026-11-09"
+      "reason": "client-side-rendered",
+      "notes": "An X post; x.com serves a script shell the scraper cannot read and is on the host denylist. Read by hand if needed.",
+      "checked": "2026-11-11"
     },
     {
       "url": "https://protos.com/live-binance-suspends-withdrawals-amid-massive-crypto-hack/",
       "publisher": "Protos",
-      "title": "Binance resumes withdrawals leading to $6B outflows",
-      "published": "2026-10-29",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "lazarus.day"
-      ],
-      "discovered": "2026-11-09"
+      "reason": "declined",
+      "notes": "Live news coverage of Binance resuming withdrawals; no indicators of its own.",
+      "checked": "2026-11-11"
     },
     {
-      "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history",
-      "publisher": "Trmlabs",
-      "title": "North Korea Steals USD 6.36 Billion From Binance in the Largest Hack in History",
-      "published": "2026-10-29",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://newtonpaul.com/blog/dprk-contagious-interview-polygon-loader/",
-      "publisher": "Newton Paul",
-      "title": "DPRK's Contagious Interview Meets ErrTraffic",
-      "published": "2026-10-29",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "DPRK",
-        "Contagious Interview"
-      ],
-      "discovered": "2026-11-09"
-    },
-    {
-      "url": "https://www.microsoft.com/en-us/security/blog/2026/10/29/tracking-ai-adoption-in-north-korean-threat-actor-tradecraft",
-      "publisher": "Microsoft",
-      "title": "Tracking AI adoption in North Korean threat actor tradecraft",
-      "published": "2026-10-29",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "North Korean"
-      ],
-      "discovered": "2026-11-09"
+      "url": "https://www.politico.com/newsletters/weekly-cybersecurity/2026/09/14/inside-a-new-push-to-bring-ai-to-critical-infrastructure-01074100#new_tab",
+      "publisher": "Politico",
+      "reason": "declined",
+      "notes": "Reached through a lazarus.day item that resolved to the wrong original (the item was Silent Push's report on North Korean IT workers faking technical interviews); a newsletter on AI in critical infrastructure with no indicators.",
+      "checked": "2026-11-11"
     }
-  ]
+  ],
+  "discovered": []
 }
