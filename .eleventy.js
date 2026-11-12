@@ -207,7 +207,7 @@ module.exports = function (eleventyConfig) {
     // so it takes no trailing slash; otherwise the crumb disagrees with the
     // page's own canonical URL.
     return segments.map((segment, i) => {
-      const isFile = i === segments.length - 1 && /.[a-z0-9]+$/i.test(segment);
+      const isFile = i === segments.length - 1 && /\.[a-z0-9]+$/i.test(segment);
       return { segment, path: "/" + segments.slice(0, i + 1).join("/") + (isFile ? "" : "/") };
     });
   });
