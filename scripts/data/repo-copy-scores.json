@@ -344,6 +344,64 @@
       "copies": [],
       "best_scores": []
     },
+    "0xbrentfi": {
+      "login": "0xbrentfi",
+      "checked_at": "2026-10-28",
+      "repos_checked": 2,
+      "repos_unreadable": 0,
+      "copies": [
+        {
+          "repo": "StockX_PoC_1.04",
+          "origin": "stockx-fi/stockx_v1",
+          "found_by": [
+            "code-line",
+            "pkg-name"
+          ],
+          "hash_share": 0.98,
+          "line_share": 1,
+          "identical_files": 146,
+          "files": 149
+        },
+        {
+          "repo": "StockX_PoC_1.03",
+          "origin": "stockx-fi/stockx_v1",
+          "found_by": [
+            "code-line",
+            "pkg-name"
+          ],
+          "hash_share": 0.993,
+          "line_share": 1,
+          "identical_files": 148,
+          "files": 149
+        }
+      ],
+      "best_scores": [
+        {
+          "repo": "StockX_PoC_1.03",
+          "origin": "stockx-fi/stockx_v1",
+          "found_by": [
+            "code-line",
+            "pkg-name"
+          ],
+          "files": 149,
+          "identical_files": 148,
+          "hash_share": 0.993,
+          "line_share": 1
+        },
+        {
+          "repo": "StockX_PoC_1.04",
+          "origin": "stockx-fi/stockx_v1",
+          "found_by": [
+            "code-line",
+            "pkg-name"
+          ],
+          "files": 149,
+          "identical_files": 146,
+          "hash_share": 0.98,
+          "line_share": 1
+        }
+      ]
+    },
     "0xdanieltran": {
       "login": "0xdanieltran",
       "checked_at": "2026-10-26",
@@ -476,8 +534,317 @@
     },
     "0xdpta": {
       "login": "0xdpta",
-      "checked_at": "2026-10-26",
+      "checked_at": "2026-10-28",
       "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xguardstate": {
+      "login": "0xguardstate",
+      "checked_at": "2026-10-28",
+      "repos_checked": 24,
+      "repos_unreadable": 0,
+      "copies": [
+        {
+          "repo": "zkliquid-protocol-solidity",
+          "origin": "LiquidsFi/pool-chainlink-auto",
+          "found_by": [
+            "pkg-name"
+          ],
+          "hash_share": 0.353,
+          "line_share": 0.815,
+          "identical_files": 6,
+          "files": 17
+        },
+        {
+          "repo": "Solidity-finance-protocol",
+          "origin": "ZhangZhuoSJTU/Web3Bugs",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 0.039,
+          "line_share": 0.875,
+          "identical_files": 9,
+          "files": 231
+        },
+        {
+          "repo": "canonical-account-prefixes",
+          "origin": "kevinrodriguez-io/canonical-account-prefixes",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 10,
+          "files": 10
+        },
+        {
+          "repo": "magic-pancakes",
+          "origin": "kevinrodriguez-io/magic-pancakes",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 13,
+          "files": 13
+        },
+        {
+          "repo": "financial-ops",
+          "origin": "kevinrodriguez-io/financial-ops",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 0.368,
+          "line_share": 0.958,
+          "identical_files": 7,
+          "files": 19
+        },
+        {
+          "repo": "eth-staking",
+          "origin": "Agnish1611/eth-staking",
+          "found_by": [
+            "code-line",
+            "readme-url"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 10,
+          "files": 10
+        },
+        {
+          "repo": "cyber-security-llm-agents",
+          "origin": "NVISOsecurity/cyber-security-llm-agents",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 23,
+          "files": 23
+        },
+        {
+          "repo": "ai-travel-agent",
+          "origin": "nirbar1985/ai-travel-agent",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 0.875,
+          "line_share": 0.997,
+          "identical_files": 7,
+          "files": 8
+        },
+        {
+          "repo": "ai-patent-path",
+          "origin": "diorwave/Patentpath",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 22,
+          "files": 22
+        },
+        {
+          "repo": "solidity-contracts",
+          "origin": "samnang/solidity-examples",
+          "found_by": [
+            "code-line",
+            "pkg-name",
+            "readme-url"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 153,
+          "files": 153
+        },
+        {
+          "repo": "solana-atrbitrage-bot",
+          "origin": "rusto0212/Solana-Arbitrage-Bot",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 0.974,
+          "line_share": 1,
+          "identical_files": 38,
+          "files": 39
+        },
+        {
+          "repo": "Decentralised-Venture-Capital-Protocol",
+          "origin": "TruCol/Decentralised-Venture-Capital-Protocol",
+          "found_by": [
+            "code-line"
+          ],
+          "hash_share": 1,
+          "line_share": 1,
+          "identical_files": 97,
+          "files": 97
+        }
+      ],
+      "best_scores": [
+        {
+          "repo": "canonical-account-prefixes",
+          "origin": "kevinrodriguez-io/canonical-account-prefixes",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 10,
+          "identical_files": 10,
+          "hash_share": 1,
+          "line_share": 1
+        },
+        {
+          "repo": "magic-pancakes",
+          "origin": "kevinrodriguez-io/magic-pancakes",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 13,
+          "identical_files": 13,
+          "hash_share": 1,
+          "line_share": 1
+        },
+        {
+          "repo": "eth-staking",
+          "origin": "Agnish1611/eth-staking",
+          "found_by": [
+            "code-line",
+            "readme-url"
+          ],
+          "files": 10,
+          "identical_files": 10,
+          "hash_share": 1,
+          "line_share": 1
+        },
+        {
+          "repo": "cyber-security-llm-agents",
+          "origin": "NVISOsecurity/cyber-security-llm-agents",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 23,
+          "identical_files": 23,
+          "hash_share": 1,
+          "line_share": 1
+        },
+        {
+          "repo": "ai-patent-path",
+          "origin": "diorwave/Patentpath",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 22,
+          "identical_files": 22,
+          "hash_share": 1,
+          "line_share": 1
+        }
+      ]
+    },
+    "0xhiler": {
+      "login": "0xhiler",
+      "checked_at": "2026-10-28",
+      "repos_checked": 2,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "crowdfunding",
+          "origin": "OpenZeppelin/openzeppelin-contracts",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 634,
+          "identical_files": 80,
+          "hash_share": 0.126,
+          "line_share": 0.305
+        },
+        {
+          "repo": "more-front",
+          "origin": "vercel/next.js",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 608,
+          "identical_files": 7,
+          "hash_share": 0.012,
+          "line_share": 0
+        }
+      ]
+    },
+    "0xhiros": {
+      "login": "0xhiros",
+      "checked_at": "2026-10-28",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xichikawa": {
+      "login": "0xichikawa",
+      "checked_at": "2026-10-28",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xjhdev": {
+      "login": "0xjhdev",
+      "checked_at": "2026-10-28",
+      "repos_checked": 0,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": []
+    },
+    "0xl2": {
+      "login": "0xl2",
+      "checked_at": "2026-10-28",
+      "repos_checked": 0,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": []
+    },
+    "0xllach": {
+      "login": "0xllach",
+      "checked_at": "2026-10-28",
+      "repos_checked": 8,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "hodl",
+          "origin": "facebook/create-react-app",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 119,
+          "identical_files": 4,
+          "hash_share": 0.034,
+          "line_share": 0.146
+        },
+        {
+          "repo": "pinata-nft",
+          "origin": "clayanNEU/RunNFT",
+          "found_by": [
+            "pkg-name"
+          ],
+          "files": 2,
+          "identical_files": 0,
+          "hash_share": 0,
+          "line_share": 0
+        }
+      ]
+    },
+    "0xlock": {
+      "login": "0xlock",
+      "checked_at": "2026-10-28",
+      "repos_checked": 1,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "yield-yak-test",
+          "origin": "ZhangZhuoSJTU/Web3Bugs",
+          "found_by": [
+            "code-line"
+          ],
+          "files": 627,
+          "identical_files": 276,
+          "hash_share": 0.44,
+          "line_share": 0.552
+        }
+      ]
     }
   },
   "control": {
