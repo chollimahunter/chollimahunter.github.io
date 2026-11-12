@@ -1,0 +1,57 @@
+{
+  "slug": "pei-li-guang",
+  "display_name": "Pei Li Guang",
+  "aliases": [],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Court-record details",
+    "status": "Charged by indictment returned October 1, 2026, unsealed October 13, 2026, Northern District of Ohio; at large",
+    "details": [
+      {
+        "label": "Age",
+        "value": "Not stated by the Justice Department"
+      },
+      {
+        "label": "Location",
+        "value": "Liaoning, China"
+      },
+      {
+        "label": "Court",
+        "value": "U.S. District Court for the Northern District of Ohio, United States v. Ming, 1:26-cr-00429"
+      },
+      {
+        "label": "Charges",
+        "value": "Wire fraud conspiracy, money laundering conspiracy, conspiracy to commit identity theft and aggravated identity theft"
+      }
+    ],
+    "caution": "According to the allegations in the indictment, the defendants conspired to participate in a multi-year fraudulent scheme to obtain remote IT work to generate revenue for the government of the Democratic People's Republic of Korea. The scheme was allegedly carried out by facilitators in the United States who assisted others working on behalf of the DPRK to be hired as remote IT workers with U.S. companies, including by receiving and hosting laptop computers issued by victim companies at their residences. In total, the scheme impacted more than 70 U.S. company employers and generated approximately $3 million in revenue for IT workers, which is believed to have been sent to sanctioned entities controlled by the DPRK. An indictment is only a charge and is not evidence of guilt."
+  },
+  "sources": [
+    {
+      "title": "14 Indicted in North Korean Remote IT Worker Conspiracy Affecting More than 70 U.S. Companies",
+      "url": "https://www.justice.gov/usao-ndoh/pr/14-indicted-north-korean-remote-it-worker-conspiracy-affecting-more-70-us-companies",
+      "publisher": "U.S. Department of Justice, U.S. Attorney's Office for the Northern District of Ohio",
+      "date": "2026-10-13",
+      "type": "indictment"
+    }
+  ],
+  "disclaimer": [
+    "Pei Li Guang is one of ten defendants the Justice Department lists with locations in China in a 14-defendant indictment charging wire fraud conspiracy, money laundering conspiracy, conspiracy to commit identity theft and aggravated identity theft in a DPRK remote IT-worker scheme that affected more than 70 U.S. companies. The release does not set out Pei Li Guang's individual role, and none is asserted here. The release gives the location as Liaoning, China; it states that all defendants other than the two arrested in the United States remain at large.",
+    "The confidence level of 'confirmed' reflects that this individual is named in a federal indictment returned on 1 October 2026 and unsealed on 13 October 2026 in the Northern District of Ohio (United States v. Ming, 1:26-cr-00429); the conduct is alleged, and every person named is presumed innocent unless and until proven guilty in a court of law."
+  ],
+  "last_updated": "2026-11-11",
+  "name_korean_not_applicable": "Named by the Justice Department as a defendant located in China rather than as a DPRK national, so no Korean rendering of the name applies."
+}
