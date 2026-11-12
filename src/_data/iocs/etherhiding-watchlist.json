@@ -3457,7 +3457,7 @@
       "NullReceiver",
       "Contagious Interview"
     ],
-    "description": "Ethereum wallet whose outbound transactions the September 2026 XCTDH implant scans for. A module the malware calls _Z samples recent blocks through public RPC endpoints, looks for transactions whose sender contains 33ff3edaf55a8e03dcbc7cb40d498a49, and decodes an IPv4 address and port from the first six bytes of the recipient address, the same recipient-address encoding OpenSourceMalware published as NullReceiver. Ransom-ISAC reports 2,655 outbound transactions from 23 June 2026 to 21 September 2026, one about every 50 minutes, with the encoded address rotated four times in that window, and calls the technique Hash Hiding. Ransom-ISAC labels the campaign DPRK-attributed and ties it to the same BSC wallet as its October 2025 series.",
+    "description": "Ethereum wallet whose outbound transactions the September 2026 XCTDH implant scans for. A module the malware calls _Z samples recent blocks through public RPC endpoints, looks for transactions whose sender contains 33ff3edaf55a8e03dcbc7cb40d498a49, and decodes an IPv4 address and port from the first six bytes of the recipient address, the same recipient-address encoding OpenSourceMalware published as NullReceiver. Ransom-ISAC reports 2,655 outbound transactions from 23 June 2026 to 21 September 2026, one about every 50 minutes, with the encoded address rotated four times in that window, and calls the technique Hash Hiding. Ransom-ISAC labels the campaign DPRK-attributed and ties it to the same BSC wallet as its October 2025 series. This site's refresh has followed the rotations since: on 2026-10-06 and again on 2026-10-31 the wallet sent a single transaction to the second signal address 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb, and from 2026-11-02 its recipient encodes 95.135.181.25, the host the second address's stages also name.",
     "malware_family": "DEV#POPPER.js",
     "confidence_level": "medium",
     "sources": [
@@ -3468,6 +3468,13 @@
         "date": "2026-09-25",
         "type": "threat_intel_report",
         "quote": "The signal wallet ( 0x33ff3edaf55a8e03dcbc7cb40d498a49cd499891 ) is an actively maintained channel, not dormant infrastructure. It sent 2,655 outbound transactions between 23 June 2026 and 21 September 2026, and it still beacons. The current …"
+      },
+      {
+        "title": "Ethereum transaction 0xd26dbb6733f83336f8fb55589f2c59c55a6895842733fe954bc8e20b766aa4e8",
+        "url": "https://etherscan.io/tx/0xd26dbb6733f83336f8fb55589f2c59c55a6895842733fe954bc8e20b766aa4e8",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-10-31",
+        "type": "on_chain_observation"
       }
     ],
     "date_added": "2026-10-03"
@@ -10020,7 +10027,7 @@
       "EtherHiding",
       "Contagious Interview"
     ],
-    "description": "Command-and-control IP decoded from recipient address 0x6f5a8f2700506f5a8f27005000ff54e1649d5b77, which the watchlisted XCTDH signal wallet 0x33ff3edaf55a8e03dcbc7cb40d498a49cd499891 began paying on 2026-10-12, replacing 150.40.98.42, and was still paying on 2026-10-18. Read with the encoding Ransom-ISAC published for this wallet: the first four bytes are the IP and the next two the port, here 80 for both endpoints. This is an on-chain observation by this site, made after the report was published, and it is recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "description": "Command-and-control IP decoded from recipient address 0x6f5a8f2700506f5a8f27005000ff54e1649d5b77, which the watchlisted XCTDH signal wallet 0x33ff3edaf55a8e03dcbc7cb40d498a49cd499891 began paying on 2026-10-12, replacing 150.40.98.42, and paid until 2026-11-02, apart from one transaction to the second signal address on 2026-10-31; 95.135.181.25 replaced it. Read with the encoding Ransom-ISAC published for this wallet: the first four bytes are the IP and the next two the port, here 80 for both endpoints. This is an on-chain observation by this site, made after the report was published, and it is recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
     "malware_family": "DEV#POPPER.js",
     "confidence_level": "medium",
     "sources": [
@@ -10866,7 +10873,7 @@
       "EtherHiding",
       "Contagious Interview"
     ],
-    "description": "Command-and-control address named in the remote-access and dropper stages the signal address pointed at on 2026-10-21. The XCTDH loader reads the recipient of each transaction from 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb as packed pointers to BNB Smart Chain transactions, whose inputs carry XOR-encrypted scripts; this site follows the pointers and decodes each stage statically, without running it. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "description": "Command-and-control address named in the remote-access and dropper stages the signal address pointed at on 2026-10-21. The XCTDH loader reads the recipient of each transaction from 0x596dcc9fda875309ff85eba09cf5a97d8c7691bb as packed pointers to BNB Smart Chain transactions, whose inputs carry XOR-encrypted scripts; this site follows the pointers and decodes each stage statically, without running it. From 2026-11-02 the first signal wallet 0x33ff3edaf55a8e03dcbc7cb40d498a49cd499891 also points implants straight at it, through the recipient address 0x5f87b51900505f87b519005000ffeecb20ccec7c (port 80), read with the encoding Ransom-ISAC published for that wallet; it was still doing so on 2026-11-11. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
     "malware_family": "DEV#POPPER.js",
     "confidence_level": "medium",
     "sources": [
@@ -10883,6 +10890,13 @@
         "publisher": "Ransom-ISAC",
         "date": "2026-09-25",
         "type": "threat_intel_report"
+      },
+      {
+        "title": "Ethereum transaction 0xa43ac0c1dae0299bef55f036052af716f34c25dba9b062e6a4e626af54d47b31",
+        "url": "https://etherscan.io/tx/0xa43ac0c1dae0299bef55f036052af716f34c25dba9b062e6a4e626af54d47b31",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-02",
+        "type": "on_chain_observation"
       }
     ],
     "date_added": "2026-10-26"
@@ -10956,7 +10970,7 @@
     "ioc_type": "domain",
     "value": "tsmpl.centralus.cloudapp.azure.com",
     "confidence_level": "low",
-    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-06 (transaction 0x8dd774b7690d9542bac406d96c52f8ab0ee5d1f9c40ae077decbb618237b9309), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). An Azure cloudapp.azure.com name written by an operator of the contract, in the same pattern as other Azure-hosted EtherRAT values; the name is a free regional label and says nothing about the account behind it. It replaced fsecure.centralus.cloudapp.azure.com and was itself replaced by basodara.com four days later. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-06 (transaction 0x8dd774b7690d9542bac406d96c52f8ab0ee5d1f9c40ae077decbb618237b9309), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). An Azure cloudapp.azure.com name written by an operator of the contract, in the same pattern as other Azure-hosted EtherRAT values; the name is a free regional label and says nothing about the account behind it. It replaced rversl.centralus.cloudapp.azure.com, written two days earlier, and was itself replaced by basodara.com four days later. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution. The same value was written on the same day to 0x788a5336c0ef70be87619a3c13a43050c426f7ec, the resolver of the EtherRAT fake Microsoft Teams campaign, by its resolver address 0x6e044e19000487c4a6e6af15b4132a5561b5ee1f (transaction 0x0a77e721b149eace6c7c1a62b24f382eb44e62d995f811ba9dff18578f95d39d), so the two resolvers were pointed at one host; this is this site's own observation.",
     "sources": [
       {
         "title": "EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
@@ -10977,6 +10991,13 @@
         "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
         "publisher": "Sysdig",
         "type": "threat_intel_report"
+      },
+      {
+        "title": "Ethereum transaction 0x0a77e721b149eace6c7c1a62b24f382eb44e62d995f811ba9dff18578f95d39d",
+        "url": "https://etherscan.io/tx/0x0a77e721b149eace6c7c1a62b24f382eb44e62d995f811ba9dff18578f95d39d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-06",
+        "type": "on_chain_observation"
       }
     ],
     "campaign": [
@@ -10991,7 +11012,7 @@
     "ioc_type": "domain",
     "value": "basodara.com",
     "confidence_level": "low",
-    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-10 (transaction 0xe1ee6e2e468df06f4120bd504526840a9de2ab14a4b097f1469cd0824925c8dc), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). RDAP shows the domain registered on 2026-11-10, the day it was written, through Tucows Domains Inc. with nameservers 1-you.njalla.no, 2-can.njalla.in and 3-get.njalla.fo, the Njalla privacy-registrar pattern that other EtherRAT operator domains share. It was the contract's value when this site read it on 2026-11-11. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "description": "Value written to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 on 2026-11-10 (transaction 0xe1ee6e2e468df06f4120bd504526840a9de2ab14a4b097f1469cd0824925c8dc), as recorded in the contract's setString events. This is an on-chain observation by this site, not a value carried in published reporting. The contract was found by its identical bytecode and setString event to published EtherRAT resolvers (keccak256 of runtime code 484c7fb94d7084807bf4385d4c7fe9bd768ecb92669c162fac9ab299b28f302e). RDAP shows the domain registered on 2026-11-10, the day it was written, through Tucows Domains Inc. with nameservers 1-you.njalla.no, 2-can.njalla.in and 3-get.njalla.fo, the Njalla privacy-registrar pattern that other EtherRAT operator domains share. It was the contract's value when this site read it on 2026-11-11. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution. The same value was written on the same day to 0x788a5336c0ef70be87619a3c13a43050c426f7ec, the resolver of the EtherRAT fake Microsoft Teams campaign, by its resolver address 0x6e044e19000487c4a6e6af15b4132a5561b5ee1f (transaction 0x895edb53c404673fff4a141536b0f5b6e76af6dfd3ceeb8b578da2c135eece74), so the two resolvers were pointed at one host; this is this site's own observation.",
     "sources": [
       {
         "title": "EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca",
@@ -11012,6 +11033,13 @@
         "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
         "publisher": "Sysdig",
         "type": "threat_intel_report"
+      },
+      {
+        "title": "Ethereum transaction 0x895edb53c404673fff4a141536b0f5b6e76af6dfd3ceeb8b578da2c135eece74",
+        "url": "https://etherscan.io/tx/0x895edb53c404673fff4a141536b0f5b6e76af6dfd3ceeb8b578da2c135eece74",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-10",
+        "type": "on_chain_observation"
       }
     ],
     "campaign": [
@@ -13242,5 +13270,40 @@
         "type": "on_chain_observation"
       }
     ]
+  },
+  {
+    "id": "etherrat-c2-rversl-centralus-cloudapp-azure-com",
+    "ioc_type": "domain",
+    "value": "rversl.centralus.cloudapp.azure.com",
+    "confidence_level": "low",
+    "description": "Value written on 2026-11-04 both to the EtherRAT resolver contract 0x45729d7424d7310a0c041a2906ba95a4bd5ebfca, by operator wallet 0xa001d3863b138ed523f255f62725ab1ddc82af87 (transaction 0x322b507895d02a0ec3d650cb118efd215bdd8571d4a8d2a1b730fbfaabe5c1aa), and to 0x788a5336c0ef70be87619a3c13a43050c426f7ec, the resolver of the EtherRAT fake Microsoft Teams campaign, by its resolver address 0x6e044e19000487c4a6e6af15b4132a5561b5ee1f (transaction 0xef15f033a0e0ded65d99758c30cf4384105e9350df4560d6862e29e71bd764b2). It replaced fsecure.centralus.cloudapp.azure.com and was replaced by tsmpl.centralus.cloudapp.azure.com two days later. An Azure cloudapp.azure.com name in the same pattern as other Azure-hosted EtherRAT values; the name is a free regional label and says nothing about the account behind it. This is an on-chain observation by this site, not a value carried in published reporting. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, and the Teams campaign is attributed to an unidentified actor, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x322b507895d02a0ec3d650cb118efd215bdd8571d4a8d2a1b730fbfaabe5c1aa",
+        "url": "https://etherscan.io/tx/0x322b507895d02a0ec3d650cb118efd215bdd8571d4a8d2a1b730fbfaabe5c1aa",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-04",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0xef15f033a0e0ded65d99758c30cf4384105e9350df4560d6862e29e71bd764b2",
+        "url": "https://etherscan.io/tx/0xef15f033a0e0ded65d99758c30cf4384105e9350df4560d6862e29e71bd764b2",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-04",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+        "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
+        "publisher": "Sysdig",
+        "type": "threat_intel_report"
+      }
+    ],
+    "campaign": [
+      "EtherHiding",
+      "DPRK (cluster unattributed)"
+    ],
+    "malware_family": "EtherRAT",
+    "date_added": "2026-11-12"
   }
 ]
