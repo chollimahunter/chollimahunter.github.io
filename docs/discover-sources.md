@@ -97,6 +97,14 @@ several government and sanctions pages in the file are listed exactly that
 way, so a future feed or sitemap on the same page is not missed if `--probe`
 is re-run against it later.
 
+Set `own_site_only: true` on a publisher whose feed mixes in press coverage
+of itself linked to other outlets; discovery then keeps only items on the
+`site` host. Silent Push's feed is the case in point: in November 2026 it
+carried The Hacker News and Politico articles about its research, one under the
+title of a different article, and both were queued as Silent Push reporting.
+URL fragments (Silent Push appends `#new_tab`) are dropped from every queued
+link.
+
 `--probe` is how an entry is verified rather than guessed at. For a publisher
 with `feed` already set, it re-reads that URL and records whether it parses
 and how many items it holds. For one with no feed, it fetches the site page,

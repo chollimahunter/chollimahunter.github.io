@@ -211,6 +211,13 @@ test("stripTracking drops utm_medium=feed but keeps a meaningful param", () => {
   );
 });
 
+test("stripTracking drops a fragment", () => {
+  assert.equal(
+    stripTracking("https://thehackernews.com/2026/09/contagious-interview-campaign.html#new_tab"),
+    "https://thehackernews.com/2026/09/contagious-interview-campaign.html"
+  );
+});
+
 test("stripTracking returns the input unchanged when it is not a URL", () => {
   assert.equal(stripTracking("not a url"), "not a url");
 });
