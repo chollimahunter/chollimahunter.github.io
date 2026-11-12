@@ -10240,11 +10240,12 @@
     "ioc_type": "smart_contract_address",
     "value": "0x17fff8d3f56574a85840d12af91b9d8f4178f85b",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 21 time(s) between 2026-05-27 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 33 time(s) between 2026-05-27 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 91.184.242.248, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
       "89.124.115.52",
+      "91.184.242.248",
       "92.118.168.26",
       "89.124.117.170",
       "78.40.198.61"
@@ -10270,7 +10271,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0x439fbf20c9ddd49ec7b2e8cb52804f48f6e913e4",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 81 time(s) between 2026-03-13 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, 109.107.167.184, 91.184.242.248 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 88 time(s) between 2026-03-13 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, 109.107.167.184, 91.184.242.248 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
@@ -10303,7 +10304,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0xa210e19de57555face122be5cdc57cc0636ddb1c",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 24 time(s) between 2026-04-14 and 2026-10-16. The decoded configurations name 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, xororand.ru, 193.233.138.30, 83.171.224.127 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 33 time(s) between 2026-04-14 and 2026-10-29. The decoded configurations name 78.40.198.61, xmr-eu1.nanopool.org, 212.34.142.111, xororand.ru, 193.233.138.30, 83.171.224.127 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "78.40.198.61",
@@ -10333,7 +10334,7 @@
     "ioc_type": "smart_contract_address",
     "value": "0x2fbd66fe245052d265ca0eda7d01d35b2d8b9feb",
     "chain": "polygon",
-    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 35 time(s) between 2026-03-15 and 2026-10-16. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, 91.184.242.248, 5.101.86.83 as the pool or configuration server.",
+    "description": "Polygon contract deployed by 0x19532c0fbaf0fb8c1d0f3fac0b704bf2f4645539 that stores an XOR-encoded cryptocurrency-miner configuration, written 46 time(s) between 2026-03-15 and 2026-10-29. The decoded configurations name 144.124.224.120, 89.124.115.52, 92.118.168.26, 89.124.117.170, 78.40.198.61, 91.184.242.248, 5.101.86.83 as the pool or configuration server. The writes of 2026-10-29 changed only the idle CPU share, from 70 to 80 per cent, and kept 78.40.198.61 as the pool.",
     "malware_family": "cryptominer (unidentified)",
     "c2_hosts": [
       "144.124.224.120",
