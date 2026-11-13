@@ -1,6 +1,6 @@
 {
   "_comment": "Written by scripts/enrich-osv-malicious.js: the OSV malicious-package advisories (MAL- ids) held for each indexed npm and PyPI package, looked up by name. An empty advisories list means OSV held none when checked. Packages the lookup could not answer are absent.",
-  "checked": "2026-11-09",
+  "checked": "2026-11-13",
   "items": [
     {
       "type": "npm_package",
@@ -3310,7 +3310,7 @@
         {
           "id": "MAL-2026-3180",
           "published": "2026-04-29",
-          "modified": "2026-04-30",
+          "modified": "2026-11-10",
           "summary": "Malicious code in nicegui (npm)"
         }
       ]
@@ -3808,7 +3808,7 @@
         {
           "id": "MAL-2026-3181",
           "published": "2026-04-29",
-          "modified": "2026-04-30",
+          "modified": "2026-11-10",
           "summary": "Malicious code in period-newline (npm)"
         }
       ]
@@ -4811,7 +4811,7 @@
         {
           "id": "MAL-2026-3182",
           "published": "2026-04-29",
-          "modified": "2026-04-30",
+          "modified": "2026-11-10",
           "summary": "Malicious code in redeem-onchain-sdk (npm)"
         }
       ]
