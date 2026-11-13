@@ -20462,58 +20462,5 @@
       "notes": "A stealer log from a Mac that may have belonged to a Binance employee. The North Korean attribution is Binance's, citing the FBI, and the article says the log may predate or be unrelated to the disclosed theft. Nearly every value in it is the victim's (the employer's hosts, corporate addresses, the machine's IP); the one attacker value, the lure page, is a subdomain of a third-party document platform."
     }
   ],
-  "discovered": [
-    {
-      "url": "https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency",
-      "publisher": "U.S. Department of Justice (press releases)",
-      "title": "Justice Department Announces Actions to Disrupt North Korea’s Massive Theft of Cryptocurrency",
-      "published": "2026-11-12",
-      "feed": "https://www.justice.gov/news/rss?type=press_release&m=1",
-      "matched_terms": [
-        "North Korea",
-        "DPRK"
-      ],
-      "discovered": "2026-11-13"
-    },
-    {
-      "url": "https://www.ic3.gov/CSA/2026/261112.pdf",
-      "publisher": "USFBI",
-      "title": "North Korean Hackers Use Secretly Recorded Webcam Library of 900+ Tech Workers in $400M “FaceStealer” Crypto Theft Scheme",
-      "published": "2026-11-12",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korean",
-        "BlueNoroff",
-        "APT38",
-        "Sapphire Sleet",
-        "Stardust Chollima",
-        "Chollima",
-        "UNC1069"
-      ],
-      "discovered": "2026-11-13"
-    },
-    {
-      "url": "https://constella.ai/blog/a-potential-binance-employees-mac-was-infected-seconds-after-a-fake-homebrew-ad",
-      "publisher": "Constella",
-      "title": "A Potential Binance Employee's Mac Was Infected Seconds After a Fake Homebrew Ad",
-      "published": "2026-11-11",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korea"
-      ],
-      "discovered": "2026-11-13"
-    },
-    {
-      "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
-      "publisher": "Octoprobe",
-      "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
-      "published": "2026-11-03",
-      "feed": "https://lazarus.day/reports/2026/",
-      "matched_terms": [
-        "Kimsuky",
-        "APT43"
-      ],
-      "discovered": "2026-11-13"
-    }
-  ]
+  "discovered": []
 }
