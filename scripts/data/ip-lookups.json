@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-11-12",
+  "checked": "2026-11-13",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -110325,6 +110325,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "157.7.184.15": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "JP",
+      "country_name": "Japan",
+      "isp": "GMO Internet Group, Inc.",
+      "org": "GMO Internet Group, Inc.",
+      "asn": "AS7506 GMO Internet, Inc.",
+      "as_name": "GMO Internet, Inc.",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-13",
       "looked_up_at": "ip-api.com"
     },
     "157.7.184.26": {
