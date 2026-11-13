@@ -22,10 +22,10 @@
  * disclaimer says so, and a match means "a connection through a public
  * proxy on IPRoyal's list", nothing about who was behind it.
  *
- * The page fills its table in the browser from IPRoyal's CMS
- * (api/free-proxy-records), so the script reads the same records: it finds
- * the table component the page loads, takes the CMS address and the
- * read-only token from it, and pages through every record. It refuses to
+ * The page fills its table in the browser by calling the site's
+ * getFreeProxyList action ten records at a time, so the script makes the same
+ * calls: it confirms the table component the page loads still uses that
+ * action, then pages through every record. It refuses to
  * write when it parses fewer than
  * MIN_ADDRESSES, or fewer than half the entries already stored, so a layout
  * change produces a failed run and not a pull request that empties the list.
@@ -60,8 +60,11 @@ const DATA_PATH = path.join(__dirname, "..", "src", "_data", "iocs", "itworker-d
 const DATASET_ID = "iproyal-free-proxy-ips";
 const MAX_BYTES = 10 * 1024 * 1024;
 const MIN_ADDRESSES = 20;
-const PAGE_SIZE = 1000;
-const MAX_PAGES = 50;
+const ACTION_NAME = "getFreeProxyList";
+const ACTION_URL = `https://iproyal.com/_actions/${ACTION_NAME}/`;
+// The action serves ten records a page (about 620 pages in November 2026).
+const MAX_PAGES = 2000;
+const PAGE_DELAY_MS = 100;
 const USER_AGENT = "Mozilla/5.0 (compatible; ChollimaHunterSync/1.0)";
 
 async function fetchText(url) {
@@ -75,39 +78,80 @@ async function fetchText(url) {
 }
 
 /**
- * The page renders its table in the browser from IPRoyal's CMS, through a
- * script component that carries the CMS address and a read-only access token
- * every visitor's browser receives. Both are read from the live script on each
- * run rather than stored here, so a rotated token or a moved component is
- * picked up without a code change. The token is never printed.
+ * The page renders its table in the browser through a script component that
+ * calls the site's getFreeProxyList action. Confirming the live component
+ * still names the action makes a redesign fail the run instead of reading an
+ * endpoint the page has stopped using.
  */
-async function cmsAccess() {
+async function checkComponent() {
   const html = await fetchText(PAGE_URL);
   const component = html.match(/component-url="([^"]*FreeProxyListTable[^"]*\.js)"/);
   if (!component) throw new Error("the page no longer loads a FreeProxyListTable component");
   const script = await fetchText(new URL(component[1], PAGE_URL).href);
-  const base = script.match(/baseURL:\s*[`"'](https:\/\/[^`"']+)[`"']/);
-  const token = script.match(/Bearer ([0-9a-f]{32,})/);
-  if (!base || !token) throw new Error("the table component no longer names a CMS address and access token");
-  if (!script.includes("api/free-proxy-records")) throw new Error("the table component no longer reads api/free-proxy-records");
-  return { base: base[1], token: token[1] };
+  if (!script.includes(`${ACTION_NAME}(`)) throw new Error(`the table component no longer calls ${ACTION_NAME}`);
 }
 
-/** Every record the CMS holds, a page of PAGE_SIZE at a time. */
+/**
+ * Rebuilds a value from devalue's flat encoding, the format the action
+ * answers in: an array whose first element is the root and whose objects and
+ * arrays hold indices into the same array. Only plain objects, arrays and
+ * primitives are expected; any typed form (Date, Map, ...) fails the run.
+ */
+function unflatten(flat) {
+  if (!Array.isArray(flat) || flat.length === 0) throw new Error("the action answered with an empty or non-array body");
+  const memo = new Map();
+  const hydrate = (i) => {
+    if (i === -1) return undefined;
+    if (!Number.isInteger(i) || i < 0 || i >= flat.length) throw new Error(`devalue index ${i} out of range`);
+    if (memo.has(i)) return memo.get(i);
+    const v = flat[i];
+    let out;
+    if (Array.isArray(v)) {
+      if (typeof v[0] === "string") throw new Error(`unsupported devalue type ${v[0]}`);
+      out = [];
+      memo.set(i, out);
+      for (const j of v) out.push(hydrate(j));
+    } else if (v && typeof v === "object") {
+      out = {};
+      memo.set(i, out);
+      for (const [k, j] of Object.entries(v)) out[k] = hydrate(j);
+    } else {
+      out = v;
+      memo.set(i, out);
+    }
+    return out;
+  };
+  return hydrate(0);
+}
+
+async function fetchPage(page) {
+  const res = await fetch(ACTION_URL, {
+    method: "POST",
+    headers: { "User-Agent": USER_AGENT, Accept: "application/json", "Content-Type": "application/json" },
+    body: JSON.stringify({ page }),
+    signal: AbortSignal.timeout(60000),
+  });
+  if (!res.ok) throw new Error(`action page ${page} failed: ${res.status} ${res.statusText}`);
+  const text = await res.text();
+  if (text.length > MAX_BYTES) throw new Error(`action page ${page} exceeds ${MAX_BYTES} bytes`);
+  const body = unflatten(JSON.parse(text));
+  if (!Array.isArray(body?.records)) throw new Error(`action page ${page} has no records array`);
+  return body;
+}
+
+/** Every record the list holds, one action page at a time. */
 async function fetchRecords() {
-  const { base, token } = await cmsAccess();
+  await checkComponent();
   const records = [];
-  for (let page = 1, pageCount = 1; page <= pageCount && page <= MAX_PAGES; page++) {
-    const url = `${base}/api/free-proxy-records?fields[0]=ip&fields[1]=port&pagination[page]=${page}&pagination[pageSize]=${PAGE_SIZE}`;
-    const res = await fetch(url, {
-      headers: { "User-Agent": USER_AGENT, Authorization: `Bearer ${token}` },
-      signal: AbortSignal.timeout(60000),
-    });
-    if (!res.ok) throw new Error(`CMS page ${page} failed: ${res.status} ${res.statusText}`);
-    const body = await res.json();
-    if (!Array.isArray(body.data)) throw new Error(`CMS page ${page} has no data array`);
-    records.push(...body.data);
-    pageCount = Number(body.meta?.pagination?.pageCount) || 1;
+  let pageCount = 1;
+  for (let page = 1; page <= pageCount; page++) {
+    const body = await fetchPage(page);
+    records.push(...body.records);
+    if (page === 1) {
+      pageCount = Number(body.pagination?.pageCount) || 1;
+      if (pageCount > MAX_PAGES) throw new Error(`the list reports ${pageCount} pages, more than the ${MAX_PAGES} this script will read`);
+    }
+    if (page < pageCount) await new Promise((r) => setTimeout(r, PAGE_DELAY_MS));
   }
   return records;
 }
@@ -128,7 +172,7 @@ function extractAddresses(records) {
 async function fetchList() {
   const fromIdx = process.argv.indexOf("--from");
   const records = fromIdx >= 0 ? JSON.parse(fs.readFileSync(process.argv[fromIdx + 1], "utf8")) : await fetchRecords();
-  const { valid, malformed } = extractAddresses(Array.isArray(records) ? records : records.data ?? []);
+  const { valid, malformed } = extractAddresses(Array.isArray(records) ? records : records.records ?? records.data ?? []);
   if (valid.length < MIN_ADDRESSES) {
     throw new Error(`only ${valid.length} addresses parsed; refusing to overwrite the dataset`);
   }

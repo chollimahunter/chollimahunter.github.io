@@ -16059,6 +16059,148 @@
         }
       ],
       "note": "The researcher tags the first post #DPRK #KONNI #C2 and gives a C2 URL ending in the same /YE97Bw999zB87t1U8i.php path as the KBW lure's backdoor of 29 September, then a second on 15 October, then in a reply links the paste he titles KONNI C2, which lists fifteen URLs on that path across seven hosts: four subdomains of InfinityFree's xo.je, two of its kesug.com (fe29jf323.kesug.com is the September backdoor's C2), and one of nfy.fyi. Free-hosting subdomains are filed as hosted sites, the address being the operator's choice of name on a platform that gives one to anyone. Read on 26 October 2026; the first post shows one reply, which is @skocherhan's image-only reply in the same chain and carries no value. The paste was set to expire in November 2026."
+    },
+    {
+      "researcher": "blackbigswan",
+      "label": "Qorexa Labs (AS402425): GitHub account and address",
+      "transcribed": "2026-11-12",
+      "campaign": [
+        "Moonstone Sleet"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/blackbigswan/status/2118829661794849023",
+          "date": "2026-11-06"
+        },
+        {
+          "url": "https://x.com/blackbigswan/status/2118849802767311052",
+          "date": "2026-11-06"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/minh-qorexalabs",
+          "post": 1
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "minh@qorexalabs.com",
+          "post": 1
+        },
+        {
+          "ioc_type": "domain",
+          "value": "qorexalabs.com",
+          "post": 1
+        }
+      ],
+      "note": "The researcher quotes a post by Doug Madory of Kentik advising networks to de-peer from Qorexa Labs (AS402425), which Madory says is believed to be a front for the North Korean group Moonstone Sleet and has engaged in BGP hijacking and traffic manipulation in 2026, and adds the company's GitHub account and the address it commits under, describing the operation as an IT-worker one. The attached images show the Qorexa Labs site offering a play-to-earn tank game called Chaintanks, a QorexaSwap and a QorexaWallet, and the account's single repository, chaintanks, a backend template created on 17 March 2026; the tank-game product matches the lure reported for Moonstone Sleet. The domain is carried because the address is on it. In a reply the researcher adds a capture of a Qorexa Labs LLC job listing for a Unity game engineer (Manchester, 24 February 2026) and a summary of a CNCERT report of 20 October 2026 accusing AS402425 of DNS tampering. The attribution is Madory's and the researcher's, not this site's. Read on 12 November 2026 with all three replies."
+    },
+    {
+      "researcher": "banthisguy9349",
+      "label": "Qorexa Labs: second site with the same tank game",
+      "transcribed": "2026-11-12",
+      "campaign": [
+        "Moonstone Sleet"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/banthisguy9349/status/2118849964017434669",
+          "date": "2026-11-06"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "domain",
+          "value": "qorexa-labs.com",
+          "post": 1
+        }
+      ],
+      "note": "In a reply to bbsz's post on Qorexa Labs (AS402425), which Doug Madory of Kentik says is believed to be a Moonstone Sleet front, the researcher reports that qorexa-labs.com is live with the same tank game as qorexalabs.com. The tie to North Korea is the quoted claim, not this site's finding. Read on 12 November 2026."
+    },
+    {
+      "researcher": "zachxbt",
+      "label": "Binance exploit of October 2026: exploiter and commingling addresses",
+      "transcribed": "2026-11-12",
+      "campaign": [
+        "APT38"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/zachxbt/status/2115960582230913357",
+          "date": "2026-10-30"
+        },
+        {
+          "url": "https://x.com/zachxbt/status/2116030284261179538",
+          "date": "2026-10-30"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x3E2bf1ac6bf0934BBba6456C341c2EcbCED632d5",
+          "post": 1
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x15104a9ce0f08a8f0075a0869ae80e795fe0feb7",
+          "post": 2
+        }
+      ],
+      "note": "The researcher reports that the Arbitrum Security Council, on which he is a signer, froze about $30.5M from the Binance exploit held at the first address, which he names as the exploiter's, and later that funds from the $6.3B Binance exploit and the $388M Bitget exploit were commingled at the second address after arriving through THORChain. He writes that this indicates the same actor is likely behind both incidents, that the Bitget exploit was attributed to the DPRK-linked TraderTraitor, and in a reply in the same thread that the Binance exploit is likely Lazarus Group. On 12 November 2026 the Justice Department announced that the FBI attributes the theft of about $6 billion from Binance on or about 29 October to the North Korean actors it calls TraderTraitor (https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency); the addresses themselves are the researcher's. Another researcher, tanuki42, replying the same day (https://x.com/tanuki42_/status/2116030971925475471), judges the commingling address more likely a third-party laundering service handling the proceeds of both thefts, predominantly Chinese money-laundering organisations, than an account controlled by North Korea; the second address may therefore belong to launderers rather than operators. Read on 12 November 2026 with the thread and its replies; no reply adds a value."
+    },
+    {
+      "researcher": "banthisguy9349",
+      "label": "Binance exploit of October 2026: Solana wallets",
+      "transcribed": "2026-11-12",
+      "campaign": [
+        "APT38"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/banthisguy9349/status/2116916721948966968",
+          "date": "2026-11-01"
+        },
+        {
+          "url": "https://x.com/banthisguy9349/status/2116918361506652632",
+          "date": "2026-11-01"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "wallet_address",
+          "value": "7SDuVQ2SkaHBURbxzyXAr8coNcLV2ZuSLkteoRYfQ2fK",
+          "post": 1
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "Eze86Ngj2Ue4xKBbTHgXbhm22xnVF4aTxKrhUuVNDrrD",
+          "post": 2
+        }
+      ],
+      "note": "The researcher reports that the Solana wallet of the Binance hacker began moving funds to a new Solana wallet, linking the new wallet, 7SDuVQ2S..., on Solscan with a capture of a transfer labelled as from a Binance exploiter wallet, and in a reply gives both addresses as the ones to watch. In other posts the same day he writes that North Korea went too far with this hack and that people were sending 'Lazarus Group' tokens to the new Binance hacker wallets. The FBI attributes the Binance theft to the North Korean actors it calls TraderTraitor (Justice Department release of 12 November 2026); that these two wallets hold its proceeds is the researcher's reading of the chain, not the FBI's or this site's. Read on 12 November 2026 with the reply."
+    },
+    {
+      "researcher": "banthisguy9349",
+      "label": "@fanboofy ('Fan Long', Boofy Labs LLC)",
+      "transcribed": "2026-11-12",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://x.com/banthisguy9349/status/2119403323619229805",
+          "date": "2026-11-08"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/fanboofy",
+          "post": 1
+        }
+      ],
+      "note": "The researcher quotes a post by @fanboofy, an account presented as Fan Long, co-founder of Boofy Labs LLC, created in September 2026, and says it is a North Korean operative who delivers malware through malicious npm packages and GitHub repositories. He names a second website as another of theirs; that domain belongs to a registered company and is not carried here. The claim is the researcher's, made without stated evidence in the post or its reply. Read on 12 November 2026."
     }
   ],
   "unattributed_photos": [
