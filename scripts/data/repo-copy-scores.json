@@ -534,7 +534,7 @@
     },
     "0xdpta": {
       "login": "0xdpta",
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-11-13",
       "status": "error: gh: Not Found (HTTP 404)"
     },
     "0xguardstate": {
@@ -771,12 +771,12 @@
     },
     "0xhiros": {
       "login": "0xhiros",
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-11-13",
       "status": "error: gh: Not Found (HTTP 404)"
     },
     "0xichikawa": {
       "login": "0xichikawa",
-      "checked_at": "2026-10-28",
+      "checked_at": "2026-11-13",
       "status": "error: gh: Not Found (HTTP 404)"
     },
     "0xjhdev": {
@@ -843,6 +843,106 @@
           "identical_files": 276,
           "hash_share": 0.44,
           "line_share": 0.552
+        }
+      ]
+    },
+    "0xlocker": {
+      "login": "0xlocker",
+      "checked_at": "2026-11-13",
+      "repos_checked": 9,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": []
+    },
+    "0xmars": {
+      "login": "0xmars",
+      "checked_at": "2026-11-13",
+      "repos_checked": 0,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": []
+    },
+    "0xmooncity": {
+      "login": "0xmooncity",
+      "checked_at": "2026-11-13",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xnightfly": {
+      "login": "0xnightfly",
+      "checked_at": "2026-11-13",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xopsdev": {
+      "login": "0xopsdev",
+      "checked_at": "2026-11-13",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xp3p3x0": {
+      "login": "0xp3p3x0",
+      "checked_at": "2026-11-13",
+      "status": "error: gh: Not Found (HTTP 404)"
+    },
+    "0xprincedev": {
+      "login": "0xprincedev",
+      "checked_at": "2026-11-13",
+      "repos_checked": 24,
+      "repos_unreadable": 0,
+      "copies": [],
+      "best_scores": [
+        {
+          "repo": "Dynamic-Route-Test",
+          "origin": "vercel/next.js",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 14,
+          "identical_files": 6,
+          "hash_share": 0.429,
+          "line_share": 0.195
+        },
+        {
+          "repo": "apr-test-task",
+          "origin": "vercel/next.js",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 30,
+          "identical_files": 9,
+          "hash_share": 0.3,
+          "line_share": 0.009
+        },
+        {
+          "repo": "solana-candy-machine",
+          "origin": "facebook/create-react-app",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 61,
+          "identical_files": 16,
+          "hash_share": 0.262,
+          "line_share": 0.042
+        },
+        {
+          "repo": "marketplace-landing-page",
+          "origin": "facebook/create-react-app",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 52,
+          "identical_files": 9,
+          "hash_share": 0.173,
+          "line_share": 0.015
+        },
+        {
+          "repo": "Easy-node-frontend",
+          "origin": "facebook/create-react-app",
+          "found_by": [
+            "readme-url"
+          ],
+          "files": 81,
+          "identical_files": 11,
+          "hash_share": 0.136,
+          "line_share": 0
         }
       ]
     }
