@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-12",
+  "checked": "2026-11-13",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -1592,6 +1592,28 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-27"
+    },
+    "qorexa-labs.com": {
+      "registered": true,
+      "created": "2026-05-14",
+      "expires": "2027-05-14",
+      "updated": "2026-05-14",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-13"
+    },
+    "qorexalabs.com": {
+      "registered": true,
+      "created": "2026-01-12",
+      "expires": "2027-01-12",
+      "updated": "2026-02-04",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-13"
     },
     "ravenstonekeep.top": {
       "registered": true,
