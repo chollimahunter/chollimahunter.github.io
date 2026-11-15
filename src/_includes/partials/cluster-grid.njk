@@ -1,0 +1,13 @@
+{#
+  partials/cluster-grid.njk — one card per actor cluster
+
+  The grid under "Meet the groups" on the home page and the whole of
+  /clusters/. Reads the `clusters` global. Each card carries its cluster id,
+  which the home page's in-page links (#contagious-interview and the rest)
+  land on.
+
+  DELIBERATELY ON ONE LINE: src/index.md includes this through Nunjucks and
+  then Markdown, and markdown-it ends a raw HTML block at the first blank
+  line. See the matching comment in partials/tile.njk.
+#}
+<ul class="card-grid cluster-grid">{%- for cluster in clusters %}<li class="card" id="{{ cluster.id }}"><a class="cluster-card__link" href="{{ cluster.url }}"><span class="cluster-card__name">{{ cluster.label }}</span><span class="cluster-card__count">{% if cluster.profiles.length %}<span class="count-figure">{{ cluster.profiles.length }}</span> profile{% if cluster.profiles.length != 1 %}s{% endif %}{% else %}No profiles yet{% endif %}</span><span class="cluster-card__count cluster-card__count--iocs">{% if cluster.indicators.total %}<span class="count-figure">{{ cluster.indicators.total | thousands }}</span> indicator{% if cluster.indicators.total != 1 %}s{% endif %}{% else %}No indicators yet{% endif %}</span><span class="cluster-card__body">{{ cluster.description }}</span></a></li>{%- endfor %}</ul>

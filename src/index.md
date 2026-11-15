@@ -142,11 +142,7 @@ It also runs the other way: fake recruiters send real developers a "coding test"
 
 <p class="section-lede">Each one opens its own page: what it does, what a defender would see, and the research worth reading.</p>
 
-<ul class="card-grid cluster-grid">
-{%- for cluster in clusters %}
-<li class="card" id="{{ cluster.id }}"><a class="cluster-card__link" href="{{ cluster.url }}"><span class="cluster-card__name">{{ cluster.label }}</span><span class="cluster-card__count">{% if cluster.profiles.length %}<span class="count-figure">{{ cluster.profiles.length }}</span> profile{% if cluster.profiles.length != 1 %}s{% endif %}{% else %}No profiles yet{% endif %}</span><span class="cluster-card__count cluster-card__count--iocs">{% if cluster.indicators.total %}<span class="count-figure">{{ cluster.indicators.total | thousands }}</span> indicator{% if cluster.indicators.total != 1 %}s{% endif %}{% else %}No indicators yet{% endif %}</span><span class="cluster-card__body">{{ cluster.description }}</span></a></li>
-{%- endfor %}
-</ul>
+{% include "partials/cluster-grid.njk" %}
 
 </section>
 

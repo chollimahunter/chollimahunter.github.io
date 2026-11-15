@@ -9,7 +9,8 @@ eleventyExcludeFromCollections: true
 extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
 eleventyComputed:
   title: "{{ persona.name | default(persona.slug) | safe }}"
-  description: "Everything reported under the DPRK IT-worker persona {{ persona.name | default(persona.slug) | safe }}: the accounts attributed to it, the identifiers filed alongside them, and the sources that documented them."
+  head_title: "{{ persona.name | default(persona.slug) | safe }} — DPRK IT-worker persona{% if persona.title_note %} ({{ persona.title_note | safe }}){% endif %}"
+  description: "Everything reported under the DPRK IT-worker persona {{ persona.name | default(persona.slug) | safe }}{% if persona.title_note %} ({{ persona.title_note | safe }}){% endif %}: the accounts attributed to it, the identifiers filed alongside them, and the sources that documented them."
 ---
 {#
   src/remote-workers/personas/persona-page.njk: one page per persona. Paginates
@@ -17,6 +18,10 @@ eleventyComputed:
   iocIndex.persona_indicators[slug], not the persona's own `identifiers`, because
   those are the merged records with every citation; partials/ioc-detail.njk
   renders each, and each card heading links to /indicators/{id}/.
+
+  head_title names the page a persona record, so it does not share a title
+  with the /profiles/ page of a named individual of the same name, and carries
+  persona.title_note where two personas share one name.
 #}
 {% set active_tab = "personas" %}
 {% set persona_name = persona.name | default(persona.slug) %}

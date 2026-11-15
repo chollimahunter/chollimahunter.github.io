@@ -1,0 +1,47 @@
+---js
+{
+  pagination: {
+    data: "clusters",
+    size: 1,
+    alias: "cluster",
+    // Only a cluster whose citations run past one page has a full-list page.
+    before: function (items, fullData) {
+      return items.filter((cluster) => cluster.sources.length > fullData.limits.list);
+    },
+  },
+  permalink: "/clusters/{{ cluster.id }}/sources/",
+  layout: "base.njk",
+  eleventyExcludeFromCollections: true,
+  noindex: true,
+  extra_head: '<script src="/assets/js/table-filter.js" defer></script>',
+  eleventyComputed: {
+    title: "{{ cluster.label | safe }}: all records",
+    description: "Every record cited under {{ cluster.label | safe }}, in one table: the whole of the list the cluster page shows a page at a time.",
+  },
+}
+---
+{#
+  src/clusters/cluster-sources.njk — a cluster's whole citations table
+
+  A cluster page writes the first limits.list rows of "Where the evidence
+  comes from" and names this page as where the rest are
+  (partials/source-table.njk). table-filter.js fetches it for its rows when a
+  reader searches, sorts or asks for more; a reader without JavaScript follows
+  the link and reads it. Built only for a cluster with more than limits.list
+  records, noindex, and left out of the sitemap.
+#}
+<section>
+  {% set backLink = { url: cluster.url, text: cluster.label } %}{% include "partials/back-link.njk" %}
+  <h1>{{ cluster.label }}: all records</h1>
+  <p>
+    Every one of the {{ cluster.sources.length | thousands }} records cited
+    under this cluster. What the cluster is and what it does are on
+    <a href="{{ cluster.url }}">its own page</a>.
+  </p>
+
+  {% set tableFilter = { target: "#cluster-sources-table", noun: "records", id: "cluster-source-search", label: "Search these records", placeholder: "Publisher, title, year, or the profile or hunt it supports", page: limits.list } %}
+  {% include "partials/table-filter.njk" %}
+  {% set sourceTable = { id: "cluster-sources-table", rows: cluster.sources, noun: "records", first: "Record", areas: "Supports" } %}
+  {% include "partials/source-table.njk" %}
+  {% include "partials/table-filter-more.njk" %}
+</section>

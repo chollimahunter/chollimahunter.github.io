@@ -1,0 +1,74 @@
+{#
+  partials/source-table.njk — a table of cited sources
+
+  The registry on /sources/ and the citations table on every cluster page are
+  the same table: a linked title, the publisher, the date, what the source is
+  cited by, and how many indicators it accounts for. A grouped source also
+  lists the pages cited under it.
+
+  Usage: set `sourceTable` before including, between partials/table-filter.njk
+  and partials/table-filter-more.njk.
+    {% set sourceTable = { id: "sources-table", rows: sources.all, noun: "sources", first: "Source", areas: "Cited by", full_url: "/sources/all/" } %}
+    {% include "partials/source-table.njk" %}
+
+  Fields:
+    id        the table's id, which the table filter names as its target
+    rows      every source the table stands for
+    noun      plural noun for the link to the full list
+    first     heading of the first column
+    areas     heading of the column of area chips
+    full_url  optional; the page that carries the whole table. When given and
+              the table is longer than limits.list, only the first limits.list
+              rows are written here, each row's list of cited pages is cut to
+              the same number, and a link to the full page follows. The table
+              carries data-table-rows and data-table-rows-total, which
+              table-filter.js reads to fetch the rest on the first search,
+              sort, download or "show more". Omit it on the full page itself.
+
+  Each row is written without the template's own indentation: these tables
+  run to thousands of rows.
+#}
+{%- set deferred = sourceTable.full_url and sourceTable.rows.length > limits.list %}
+{%- set shown = sourceTable.rows.slice(0, limits.list) if deferred else sourceTable.rows %}
+<div class="table-scroll">
+  <table class="results-table" id="{{ sourceTable.id }}"{% if deferred %} data-table-rows="{{ sourceTable.full_url }}" data-table-rows-total="{{ sourceTable.rows.length }}"{% endif %}>
+    <thead>
+      <tr>
+        <th scope="col">{{ sourceTable.first }}</th>
+        <th scope="col">Publisher</th>
+        <th scope="col">Published</th>
+        <th scope="col">{{ sourceTable.areas }}</th>
+        <th scope="col">Indicators</th>
+      </tr>
+    </thead>
+    <tbody>
+{%- for source in shown %}
+<tr><td>{% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
+{%- if source.items.length %} <span class="ioc-result__meta">{{ source.items | join(", ") | truncate(160) }}</span>{% endif %}
+{#- A grouped source carries its pages here rather than as a row each. An X
+    post is named by its date, because status URLs distinguish themselves by
+    nothing else; a page by its title. #}
+{%- if source.posts.length %}
+{%- set noun = source.post_noun | default("post", true) %}
+{%- set listId = sourceTable.id + "-posts-" + loop.index %}
+{%- set posts = source.posts.slice(0, limits.list) if deferred else source.posts %}
+<details class="source-posts"><summary>{{ source.posts.length }} {{ noun }}{% if source.posts.length != 1 %}s{% endif %} cited</summary>
+<ul class="source-posts__list" id="{{ listId }}" data-grid-limit="{{ limits.list }}">
+{%- for post in posts %}
+<li>{% set externalLink = { url: post.url, text: (post.title | truncate(90)) if (post.title and post.title != post.url) else (post.published | default("undated", true)) } %}{% include "partials/external-link.njk" %}{% if post.title and post.published %} <span class="ioc-result__meta">{{ post.published }}</span>{% endif %}{% if post.indicator_count %} <span class="source-posts__count">{{ post.indicator_count }}</span>{% endif %}</li>
+{%- endfor %}
+</ul>
+{%- if deferred and source.posts.length > limits.list %}
+<p class="form-hint"><a href="{{ sourceTable.full_url }}#{{ listId }}">All {{ source.posts.length | thousands }} {{ noun }}s</a></p>
+{%- elif not deferred %}
+{% set gridMore = { target: "#" + listId, noun: noun + "s" } %}{% include "partials/grid-more.njk" %}
+{%- endif %}
+</details>
+{%- endif %}</td><td>{{ source.publisher | default("—", true) }}</td><td class="cell-date">{{ source.published | default("—", true) }}</td><td>{% for area in source.areas %}<span class="tag-chip">{{ area }}</span>{% endfor %}</td><td>{{ source.indicator_count | thousands }}</td></tr>
+{%- endfor %}
+    </tbody>
+  </table>
+</div>
+{%- if deferred %}
+<p class="form-hint" data-table-rows-link="#{{ sourceTable.id }}"><a href="{{ sourceTable.full_url }}">All {{ sourceTable.rows.length | thousands }} {{ sourceTable.noun }} on one page</a></p>
+{%- endif %}

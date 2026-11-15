@@ -11,7 +11,11 @@
  * several of them live. It also fails on an entity escaped twice in a title
  * or meta tag, a link with a scheme other than http(s) or mailto, a sitemap
  * entry with no page behind it, a private page in a production build, and a
- * link to a site the operators run or to an indexed payload URL.
+ * link to a site the operators run or to an indexed payload URL. Among the
+ * pages a search engine may index (those not marked noindex) it fails on two
+ * that share a title or a meta description, and on a description longer than
+ * limits.description_max; a title longer than limits.title_max is counted
+ * and printed as a note, because a file hash alone can exceed it.
  *
  *   npm run build && npm run check
  *
@@ -23,6 +27,7 @@ const fs = require("fs");
 const path = require("path");
 const { safeDecode } = require("./lib/ioc-normalize.js");
 const { isOperatorHost } = require("./lib/operator-hosts.js");
+const limits = require("../src/_data/limits.js");
 
 /** Prints the header comment's opening paragraph and exits 0, for --help/-h. */
 function printHelp() {
@@ -61,6 +66,16 @@ const pages = [];
 
 const problems = [];
 const report = (kind, page, detail) => problems.push({ kind, page, detail });
+const notes = [];
+
+// Titles and descriptions of the pages a search engine may index, to find two
+// pages presenting themselves as the same result.
+const titles = new Map();
+const descriptions = new Map();
+const decodeEntities = (text) =>
+  text.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+let longTitles = 0;
+let longTitleExample = "";
 
 // Pages written only by the dev server or with ELEVENTY_PRIVATE_PAGES set. A
 // production build that contains one, links to one or lists one in a sitemap
@@ -209,6 +224,27 @@ for (const file of pages) {
 
   if (/<title>\s*(?:—|<\/title>)/.test(html)) report("empty-title", page, "");
 
+  if (!/<meta name="robots" content="noindex">/.test(html)) {
+    const ownTitle = title ? decodeEntities(title[1].trim()) : "";
+    if (ownTitle) {
+      if (titles.has(ownTitle)) report("duplicate-title", page, `${ownTitle.slice(0, 70)}  (also ${titles.get(ownTitle)})`);
+      else titles.set(ownTitle, page);
+      if (ownTitle.length > limits.title_max) {
+        longTitles += 1;
+        if (!longTitleExample) longTitleExample = `${page}  ${ownTitle.length} characters`;
+      }
+    }
+    const meta = /<meta name="description" content="([^"]*)"/.exec(html);
+    const ownDescription = meta ? decodeEntities(meta[1].trim()) : "";
+    if (!ownDescription) report("missing-description", page, "");
+    else {
+      if (descriptions.has(ownDescription)) {
+        report("duplicate-description", page, `${ownDescription.slice(0, 60)}  (also ${descriptions.get(ownDescription)})`);
+      } else descriptions.set(ownDescription, page);
+      if (ownDescription.length > limits.description_max) report("long-description", page, `${ownDescription.length} characters`);
+    }
+  }
+
   // A quoted source passage is the source's text, which can contain the word
   // "undefined" (Abstract Security quotes a search query that does); only
   // markup outside the quotes is checked.
@@ -299,6 +335,9 @@ for (const [kind, list] of byKind) {
   for (const p of list.slice(0, 10)) console.log(`  ${p.page}${p.detail ? "  " + p.detail : ""}`);
   if (list.length > 10) console.log(`  ... and ${list.length - 10} more`);
 }
+
+if (longTitles) notes.push(`${longTitles} indexable title(s) run past ${limits.title_max} characters, e.g. ${longTitleExample}`);
+for (const note of notes) console.log(`\nnote: ${note}`);
 
 if (problems.length) {
   console.error(`\ncheck-site: ${problems.length} problem(s) found.`);
