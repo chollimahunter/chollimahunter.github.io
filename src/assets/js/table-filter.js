@@ -125,7 +125,7 @@
 
     // A long table carries only its first page of rows; the whole table is on
     // a page of its own, named in data-table-rows, with the row count in
-    // data-table-rows-total (partials/deferred-table.njk). Until a reader
+    // data-table-rows-total (partials/source-table.njk). Until a reader
     // searches, filters, sorts, downloads or asks for more, the first page is
     // all that is needed, and the count line already speaks for the total.
     // The first of those actions fetches the full page and swaps its rows in,

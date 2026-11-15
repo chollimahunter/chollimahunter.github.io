@@ -3,7 +3,7 @@
  * x-syndication.js
  * ==============================================================
  * Reads posts from X through the public syndication endpoint that
- * _drafts/private/docs/x-source-backlog.md identifies as the one route that keeps working
+ * the maintainer's X source notes identify as the one route that keeps working
  * when the interface is throttled.
  *
  * Run manually:

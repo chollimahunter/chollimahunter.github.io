@@ -1076,17 +1076,26 @@ function compactIndex(records, generatedAt) {
 const INDEX_KEYS = new Set(["t", "e"]);
 
 function searchCore(compact) {
+  // Campaign labels are a few dozen strings repeated across every record, so
+  // the search file carries them once in `campaigns` and each record's `k` as
+  // indexes into it; ioc-search.js turns them back into labels on load.
+  const campaigns = [];
+  const campaignIndex = new Map();
+  const internCampaign = (label) => {
+    if (!campaignIndex.has(label)) campaignIndex.set(label, campaigns.push(label) - 1);
+    return campaignIndex.get(label);
+  };
   const records = compact.records.map((record) => {
     const out = {};
     for (const [key, value] of Object.entries(record)) {
       if (value === null || (value === 0 && !INDEX_KEYS.has(key))) continue;
       if (key === "r" && value === "remote-workers") continue;
       if (key === "k" && value.length === 0) continue;
-      out[key] = value;
+      out[key] = key === "k" ? value.map(internCampaign) : value;
     }
     return out;
   });
-  return { ...compact, contexts: undefined, records };
+  return { ...compact, contexts: undefined, campaigns, records };
 }
 
 /**

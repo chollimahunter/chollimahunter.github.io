@@ -12,6 +12,9 @@ eleventyExcludeFromCollections: true
   fetches /assets/data/ioc-contexts.json in the background and re-runs the
   current query when the quotes arrive.
 
+  Campaign labels are carried once, in a `campaigns` table, and each record's
+  `k` holds indexes into it; ioc-search.js resolves them on load.
+
   To keep the file small, a record leaves out any key whose value is null,
   `[]` or 0, and an `r` of "remote-workers"; ioc-search.js reads a missing
   key as exactly that. See searchCore() in iocIndex.js.
