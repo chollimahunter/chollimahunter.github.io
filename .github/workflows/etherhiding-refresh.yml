@@ -37,7 +37,6 @@ jobs:
       contents: write
       pull-requests: write
       actions: write
-      issues: write
     outputs:
       merge-reason: ${{ steps.merge.outputs.reason }}
     steps:
@@ -150,43 +149,6 @@ jobs:
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           branch: ${{ steps.cpr.outputs.pull-request-branch }}
           expected-branch: etherhiding/refresh
-
-      # One standing issue is the review queue: a merged run lists the values
-      # it added, a held run says why it held. Values are the operator's, so
-      # they arrive only through a file into a code block (see the gate's
-      # `inert`), never through interpolation.
-      - name: Post to the review queue
-        if: always() && steps.cpr.outputs.pull-request-number != ''
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR: ${{ steps.cpr.outputs.pull-request-number }}
-          MERGED: ${{ steps.merge.outputs.merged }}
-          NEEDS_REVIEW: ${{ steps.refresh.outputs.needs_review }}
-        run: |
-          title="EtherHiding: on-chain values to review"
-          if [ "$MERGED" = "true" ]; then
-            grep -q "^new:" gate.log || exit 0
-            head_line="Merged #$PR. New on-chain values, now on the tracker marked unreviewed. Mark a parked value in \`scripts/data/etherhiding-c2-review.json\`; file a real C2 host in the watchlist to make it an indicator."
-            lines=$(grep -E "^(c2|new):" gate.log)
-          elif [ "$NEEDS_REVIEW" = "true" ]; then
-            head_line="Held #$PR for review instead of merging it:"
-            lines=$(grep -E "^(c2|review|new):" gate.log)
-          else
-            exit 0
-          fi
-          printf '### %s\n\n%s\n\n```\n%s\n```\n\n' "$(date -u +%Y-%m-%d)" "$head_line" "$lines" > review-comment.md
-          # Later runs edit the open issue's body, newest entry first, rather
-          # than comment: GitHub emails on a comment but not on an edit.
-          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "\"$title\" in:title" --json number,title \
-            | jq -r --arg t "$title" '[.[] | select(.title == $t)][0].number // empty')
-          if [ -n "$number" ]; then
-            gh issue view "$number" --repo "$GITHUB_REPOSITORY" --json body --jq .body >> review-comment.md
-            head -c 60000 review-comment.md > review-body.md
-            gh issue edit "$number" --repo "$GITHUB_REPOSITORY" --body-file review-body.md
-          else
-            gh issue create --repo "$GITHUB_REPOSITORY" --title "$title" --body-file review-comment.md
-          fi
 
   notify-failure:
     needs: [refresh]
