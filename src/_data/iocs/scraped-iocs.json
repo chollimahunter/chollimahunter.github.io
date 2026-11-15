@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T22:29:21Z",
-  "record_count": 12223,
+  "generated_at": "2026-11-15T22:41:20Z",
+  "record_count": 12229,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -955,7 +955,7 @@
         "APT38"
       ],
       "first_seen": "2026-04-27",
-      "last_seen": "2026-04-27",
+      "last_seen": "2026-11-11",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -972,6 +972,17 @@
           "section": "Network Infrastructure",
           "pulled_at": "2026-09-12",
           "source_sha256": "de2369fd0c939ab39226ba59cb8cc08c9cabe3de3fb2baa9ea482fb49a7fb3a6"
+        },
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…VLC, Security Alliance, named VC firms RE-HOSTED Hosting & domains • Brand typosquats • No hosting data recorded • Petrosky Cloud (AS400897) from Sept 2025 • Numbered typosquat variants, e.g.…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
         }
       ]
     },
@@ -145237,6 +145248,36 @@
       ]
     },
     {
+      "id": "file-hash-f8f27639f0ff",
+      "ioc_type": "file_hash",
+      "value": "16273df922088b0c64fd7ffbe8153dc3",
+      "display": "16273df92208...",
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…ModelArk), uploaded 1 September 2026 MD5 29e99ae57a5fb2e90cf1b6dd76392678 laptopnew.jpg-2023 \"mobile not supported\" Zoom image MD5 16273df922088b0c64fd7ffbe8153dc3 preview.png-Google Generative AI asset carrying a Hugging Face job ID File name [REDACTED]_Capital_Investment_Agr eement.zip…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
+        }
+      ]
+    },
+    {
       "id": "file-hash-423d4b8b9a8f",
       "ioc_type": "file_hash",
       "value": "1640f48cc05c58f4cc077503a5361cea",
@@ -154631,6 +154672,36 @@
           "section": "Details",
           "pulled_at": "2026-09-12",
           "source_sha256": "42656e2ce22608b1fb1caf9c7692f3793b710e1a956cfcc4d3cac4e7d353291a"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-05dc452f0616",
+      "ioc_type": "file_hash",
+      "value": "29e99ae57a5fb2e90cf1b6dd76392678",
+      "display": "29e99ae57a5f...",
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…participant video (BytePlus ModelArk), uploaded 1 September 2026 MD5 29e99ae57a5fb2e90cf1b6dd76392678 laptopnew.jpg-2023 \"mobile not supported\" Zoom image MD5 16273df922088b0c64fd7ffbe8153dc3 preview.png-Google Generative AI asset carrying…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
         }
       ]
     },
@@ -274708,6 +274779,96 @@
       ]
     },
     {
+      "id": "ip-address-b130b13d5384",
+      "ioc_type": "ip_address",
+      "value": "104.168.149.182",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…were repeatedly reprovisioned for different tenants before the current campaign. Historical resolutions include health-related blogs on 104.168.149.182 during 2019 and 2020, Chinese-language and spam-related domains on 104.168.149.21 between 2020 and 2025, and luobinhan.top on .182 in…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-3a94998af892",
+      "ioc_type": "ip_address",
+      "value": "104.168.149.21",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…resolutions include health-related blogs on 104.168.149.182 during 2019 and 2020, Chinese-language and spam-related domains on 104.168.149.21 between 2020 and 2025, and luobinhan.top on .182 in September 2025.…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-2f2cceb09d55",
+      "ioc_type": "ip_address",
+      "value": "104.168.149.230",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…weeks after Arctic Wolf published its initial findings. Historical Tenancy Does Not Establish Operator Continuity An earlier tenancy on 104.168.149.230 , active between July 2023 and July 2024, hosted starbucksevent.sbs and lottehotel-nft.bond .…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
+        }
+      ]
+    },
+    {
       "id": "ip-address-da1475b1193b",
       "ioc_type": "ip_address",
       "value": "104.168.151.116",
@@ -375368,6 +375529,36 @@
           "section": "IOCs",
           "pulled_at": "2026-09-12",
           "source_sha256": "a35ea827ec0dae3e8fcbbe8798e16aa197d51c9cd183cfed1ddee7da688fdfde"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-e765017a3e41",
+      "ioc_type": "ip_address",
+      "value": "83.136.210.38",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "APT38"
+      ],
+      "first_seen": "2026-11-11",
+      "last_seen": "2026-11-11",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+          "title": "bluenoroff still in the meeting",
+          "publisher": null,
+          "published": "2026-11-11",
+          "context": "…IP addresses. Petrosky Cloud has not been fully abandoned; docdock.online , which hosted the live Chrome PDF Viewer kit, resolved to 83.136.210.38 on AS400897.…",
+          "context_origin": "text",
+          "section": null,
+          "pulled_at": "2026-11-15",
+          "source_sha256": "2e1a7dd6d6a5f481407802e1e42e393c6185c42a4e409ed8b890edec415b5ced"
         }
       ]
     },

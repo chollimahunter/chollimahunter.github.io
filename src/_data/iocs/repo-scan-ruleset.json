@@ -18172,5 +18172,347 @@
       }
     ],
     "date_added": "2026-11-15"
+  },
+  {
+    "id": "domain-uu01webzoom-us",
+    "ioc_type": "domain",
+    "value": "uu01webzoom.us",
+    "campaign": [
+      "APT38"
+    ],
+    "description": "Typo-squatted domain impersonating Zoom meeting links, which the FBI's FaceStealer FLASH of 12 November 2026 gives as an example of domains North Korean actors (Sapphire Sleet, UNC1069, Stardust Chollima, APT38, BlueNoroff) registered for fake video meetings: a target is sent the link from a hijacked contact's account, sees prerecorded webcam video of earlier victims, and is told to run a \"fix\" for a staged audio or video error that installs malware.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "North Korean Hackers Use Secretly Recorded Webcam Videos of Victims in FaceStealer Cryptocurrency Theft Scheme (FBI FLASH)",
+        "url": "https://www.ic3.gov/CSA/2026/261112.pdf",
+        "publisher": "Federal Bureau of Investigation",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "domain-teams-livemeet-us",
+    "ioc_type": "domain",
+    "value": "teams.livemeet.us",
+    "campaign": [
+      "APT38"
+    ],
+    "description": "Typo-squatted domain impersonating Microsoft Teams meeting links, which the FBI's FaceStealer FLASH of 12 November 2026 gives as an example of domains North Korean actors (Sapphire Sleet, UNC1069, Stardust Chollima, APT38, BlueNoroff) registered for fake video meetings: a target is sent the link from a hijacked contact's account, sees prerecorded webcam video of earlier victims, and is told to run a \"fix\" for a staged audio or video error that installs malware.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "North Korean Hackers Use Secretly Recorded Webcam Videos of Victims in FaceStealer Cryptocurrency Theft Scheme (FBI FLASH)",
+        "url": "https://www.ic3.gov/CSA/2026/261112.pdf",
+        "publisher": "Federal Bureau of Investigation",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-updatesdk-novaplayer-online-update-winsdk-18731628",
+    "ioc_type": "payload_url",
+    "value": "https://updatesdk.novaplayer.online/update-winsdk-18731628",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: Windows payload (curl piped to PowerShell). A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-updatesdk-novaplayer-online-update-macsdk-49661181",
+    "ioc_type": "payload_url",
+    "value": "https://updatesdk.novaplayer.online/update-macsdk-49661181",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: macOS AppleScript payload. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-updatesdk-novaplayer-online-update-linuxsdk-06166443",
+    "ioc_type": "payload_url",
+    "value": "https://updatesdk.novaplayer.online/update-linuxsdk-06166443",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: Linux payload (curl piped to bash). A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-docview-ink-60046502686a7cjhhgic",
+    "ioc_type": "payload_url",
+    "value": "https://docview.ink/check/60046502686a7cjHHgIc",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: update.ps1 fetched by the first docview.ink LNK. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-docview-ink-7060005211md1ecy8u09",
+    "ioc_type": "payload_url",
+    "value": "https://docview.ink/check/7060005211mD1eCY8u09",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: update.ps1 fetched by the second docview.ink LNK. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-calendly-idcheck-watch-dypck",
+    "ioc_type": "payload_url",
+    "value": "https://calendly.idcheck.watch/DyPck",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: AppleScript source for the Automator JXA chain. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-chromeupdate-docdock-online-32831766541x56zrqlc1",
+    "ioc_type": "payload_url",
+    "value": "https://chromeupdate.docdock.online/check/32831766541X56zrQlC1",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: Windows payload of the fake Chrome PDF Viewer kit. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-chromeupdate-docdock-online-3976671880i9937o3d8t",
+    "ioc_type": "payload_url",
+    "value": "https://chromeupdate.docdock.online/check/3976671880i9937o3D8T",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: Linux payload of the fake Chrome PDF Viewer kit (curl piped to bash). A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "payload-url-calendly-docdock-online-troubleshoot-issue-09226",
+    "ioc_type": "payload_url",
+    "value": "https://calendly.docdock.online/troubleshoot-issue-092267",
+    "description": "BlueNoroff ClickFix payload URL from Arctic Wolf's November 2026 report: macOS AppleScript source leading to PDF Viewer Update.scpt. A target in a fake meeting is told to run it to fix a staged audio or video fault.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-ca14040cc48fbc3b",
+    "ioc_type": "file_hash",
+    "value": "ca14040cc48fbc3b00ea5f74e891266128f7bb3058be400782c5b08436f7668a",
+    "description": "SHA-256 of the NovaStream Player HTML lure (React single-page app) served at vip.novaplayer.online, from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-57201b105d64ecf9",
+    "ioc_type": "file_hash",
+    "value": "57201b105d64ecf9050fa1fb9107a6be36761b221ae32d7eb23859ce74b68718",
+    "description": "SHA-256 of the NovaStream Player expired-link HTML page, from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-1a9663641958e9e7",
+    "ioc_type": "file_hash",
+    "value": "1a9663641958e9e7c31cc621b85f22c77c20d1ace2cb0477c4d35e6c9675bb8e",
+    "description": "SHA-256 of a ZIP lure holding an LNK execution chain that fetches update.ps1 from docview.ink, from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-540da969ed2a0d82",
+    "ioc_type": "file_hash",
+    "value": "540da969ed2a0d828e208c99f3afb4b0763a7076144e1b9edd6ca9c7db0dbeae",
+    "description": "SHA-256 of a second ZIP lure holding an LNK execution chain that fetches update.ps1 from docview.ink, from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-7dc3082d2fb8f7fa",
+    "ioc_type": "file_hash",
+    "value": "7dc3082d2fb8f7fadf4de5155405fbadda2b402e0210f982fa313b99f2b29a11",
+    "description": "SHA-256 of an LNK of the docview.ink chain, built on the operator host desktop-9511m6h (reference sample of Arctic Wolf's YARA rule targeted_bluenoroff_lnk_docview_chain), from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-d78e925950df009a",
+    "ioc_type": "file_hash",
+    "value": "d78e925950df009a753f9eb193c8536551d38f84b9fe15de0c457c1441e9276d",
+    "description": "SHA-256 of a second LNK of the docview.ink chain (reference sample of Arctic Wolf's YARA rule targeted_bluenoroff_lnk_docview_chain), from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "sha256-166d9134388696e8",
+    "ioc_type": "file_hash",
+    "value": "166d9134388696e83a42454d1f5d2a2f98ba91b7820ac502ede3c32b779ea3b6",
+    "description": "SHA-256 of the macOS Automator workflow whose JXA action pipes curl output to osacompile (reference sample of Arctic Wolf's YARA rule targeted_bluenoroff_automator_jxa_osacompile), from Arctic Wolf's November 2026 BlueNoroff report.",
+    "campaign": [
+      "APT38"
+    ],
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Still in the Meeting: BlueNoroff Six Months On",
+        "url": "https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf",
+        "publisher": "Arctic Wolf",
+        "date": "2026-11-12"
+      }
+    ],
+    "date_added": "2026-11-15"
   }
 ]

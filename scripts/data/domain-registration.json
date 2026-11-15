@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-13",
+  "checked": "2026-11-15",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -68,6 +68,17 @@
         "server update prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "agenda.pw": {
+      "registered": true,
+      "created": "2026-04-26",
+      "expires": "2027-04-26",
+      "updated": "2026-07-02",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "ager-stp.org": {
       "registered": true,
@@ -207,6 +218,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-11-12"
+    },
+    "ashnote.blog": {
+      "registered": true,
+      "created": "2026-04-10",
+      "expires": "2027-04-10",
+      "updated": "2026-06-09",
+      "registrar": "Namecheap",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "aurineuroth.com": {
       "registered": true,
@@ -375,6 +397,53 @@
       "registered": false,
       "checked": "2026-10-05"
     },
+    "call-in.online": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "call-live.com": {
+      "registered": true,
+      "created": "2026-07-02",
+      "expires": "2027-07-02",
+      "updated": "2026-09-08",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "call-on.online": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-08-03",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "call-room.online": {
+      "registered": true,
+      "created": "2026-07-30",
+      "expires": "2027-07-30",
+      "updated": "2026-08-04",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "callnrwise.com": {
       "registered": true,
       "created": "2026-03-30",
@@ -483,6 +552,28 @@
       ],
       "checked": "2026-10-05"
     },
+    "cloud-docs.online": {
+      "registered": true,
+      "created": "2026-04-26",
+      "expires": "2027-04-26",
+      "updated": "2026-05-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "cobolabs.cloud": {
+      "registered": true,
+      "created": "2026-07-15",
+      "expires": "2027-07-15",
+      "updated": "2026-10-31",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "contra.com": {
       "registered": true,
       "created": "1996-06-12",
@@ -548,6 +639,84 @@
         "client update prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "docsend.blog": {
+      "registered": true,
+      "created": "2026-07-24",
+      "expires": "2027-07-24",
+      "updated": "2026-09-22",
+      "registrar": "Namecheap",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docsend.site": {
+      "registered": true,
+      "created": "2026-05-17",
+      "expires": "2027-05-17",
+      "updated": "2026-07-20",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docsend.space": {
+      "registered": true,
+      "created": "2026-05-17",
+      "expires": "2027-05-17",
+      "updated": "2026-05-22",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docsend.store": {
+      "registered": true,
+      "created": "2026-05-06",
+      "expires": "2027-05-06",
+      "updated": "2026-08-27",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docview.ink": {
+      "registered": true,
+      "created": "2026-05-22",
+      "expires": "2027-05-22",
+      "updated": "2026-07-21",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docview.pw": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-23",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "docview.vip": {
+      "registered": true,
+      "created": "2026-05-22",
+      "expires": "2027-05-22",
+      "updated": "2026-07-21",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "dreambigworkharddomore.com": {
       "registered": true,
@@ -663,6 +832,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "fbi.gov": {
+      "registered": true,
+      "created": "1997-10-02",
+      "expires": "2027-08-21",
+      "updated": "2026-08-25",
+      "registrar": "get.gov",
+      "status": [
+        "server transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "fdffofofofo4.com": {
       "registered": true,
@@ -850,6 +1030,17 @@
       ],
       "checked": "2026-10-05"
     },
+    "idcheck.watch": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-09-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "igamingroundtable.com": {
       "registered": true,
       "created": "2025-06-06",
@@ -879,6 +1070,50 @@
     "industryinfostructure.com": {
       "registered": false,
       "checked": "2026-10-05"
+    },
+    "instantsecscan.online": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-10-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "instantsecscan.xyz": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-05-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ipblock.watch": {
+      "registered": true,
+      "created": "2026-07-09",
+      "expires": "2027-07-09",
+      "updated": "2026-08-11",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ipcheck.watch": {
+      "registered": true,
+      "created": "2026-07-09",
+      "expires": "2027-07-09",
+      "updated": "2026-08-11",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "ipregionchecker.net": {
       "registered": true,
@@ -1245,6 +1480,18 @@
       ],
       "checked": "2026-10-05"
     },
+    "mailview.online": {
+      "registered": true,
+      "created": "2026-05-21",
+      "expires": "2027-05-21",
+      "updated": "2026-07-20",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "mastluner.club": {
       "registered": true,
       "created": "2026-03-11",
@@ -1273,6 +1520,39 @@
       ],
       "checked": "2026-10-05"
     },
+    "me-0live.com": {
+      "registered": true,
+      "created": "2026-09-07",
+      "expires": "2027-09-07",
+      "updated": "2026-09-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "me-live.online": {
+      "registered": true,
+      "created": "2026-07-28",
+      "expires": "2027-07-28",
+      "updated": "2026-08-02",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "me-live.xyz": {
+      "registered": true,
+      "created": "2026-07-24",
+      "expires": "2027-07-24",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "mebeliotmasiv.com": {
       "registered": true,
       "created": "2026-02-19",
@@ -1284,6 +1564,65 @@
         "client update prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "meet-on.online": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-07-22",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-11-15"
+    },
+    "meet-room.online": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-08-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-11-15"
+    },
+    "meet-room.xyz": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "meeting-on.online": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "microso1t.com": {
+      "registered": true,
+      "created": "2026-03-13",
+      "expires": "2027-03-13",
+      "updated": "2026-06-02",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "microsoft-tools.com": {
       "registered": true,
@@ -1341,6 +1680,56 @@
       "registered": false,
       "checked": "2026-10-05"
     },
+    "ms-live.cc": {
+      "registered": true,
+      "created": "2026-07-06",
+      "expires": "2027-07-06",
+      "updated": "2026-07-06",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ms-live.online": {
+      "registered": true,
+      "created": "2025-09-11",
+      "expires": "2026-09-11",
+      "updated": "2026-10-23",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server update prohibited",
+        "client transfer prohibited",
+        "server hold",
+        "pending delete",
+        "server transfer prohibited",
+        "redemption period"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ms-meet.store": {
+      "registered": true,
+      "created": "2026-07-24",
+      "expires": "2027-07-24",
+      "updated": "2026-08-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ms-meeting.live": {
+      "registered": true,
+      "created": "2026-03-27",
+      "expires": "2027-03-27",
+      "updated": "2026-08-12",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "ms-office.services": {
       "registered": false,
       "checked": "2026-10-05"
@@ -1356,6 +1745,28 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "ms-room.online": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-23",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "ms-teams.in": {
+      "registered": true,
+      "created": "2026-06-24",
+      "expires": "2027-06-24",
+      "updated": "2026-07-22",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "mymexico.social": {
       "registered": true,
@@ -1441,6 +1852,40 @@
         "client transfer prohibited"
       ],
       "checked": "2026-11-12"
+    },
+    "notionshare.online": {
+      "registered": true,
+      "created": "2026-06-13",
+      "expires": "2027-06-13",
+      "updated": "2026-07-27",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "novaplayer.online": {
+      "registered": true,
+      "created": "2026-04-24",
+      "expires": "2027-04-24",
+      "updated": "2026-04-29",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "novaplayer.xyz": {
+      "registered": true,
+      "created": "2026-04-24",
+      "expires": "2027-04-24",
+      "updated": "2026-05-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "o-parana.com": {
       "registered": true,
@@ -1571,6 +2016,17 @@
       "registered": false,
       "checked": "2026-10-05"
     },
+    "protected-view.online": {
+      "registered": true,
+      "created": "2026-05-21",
+      "expires": "2027-05-21",
+      "updated": "2026-05-26",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "publisherresolution.com": {
       "registered": true,
       "created": "2026-03-31",
@@ -1664,6 +2120,51 @@
       ],
       "checked": "2026-10-05"
     },
+    "room-live.com": {
+      "registered": true,
+      "created": "2026-07-02",
+      "expires": "2027-07-02",
+      "updated": "2026-08-11",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "room-meet.xyz": {
+      "registered": true,
+      "created": "2026-07-24",
+      "expires": "2027-07-24",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "room-on.online": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-07-27",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-11-15"
+    },
+    "room-on.xyz": {
+      "registered": true,
+      "created": "2026-07-17",
+      "expires": "2027-07-17",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "rubysen.com": {
       "registered": true,
       "created": "2026-05-18",
@@ -1690,6 +2191,85 @@
     "sasuke.dev": {
       "registered": false,
       "checked": "2026-10-05"
+    },
+    "scanmypc.online": {
+      "registered": true,
+      "created": "2026-07-23",
+      "expires": "2027-07-23",
+      "updated": "2026-07-28",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "scanmypc.xyz": {
+      "registered": true,
+      "created": "2026-07-23",
+      "expires": "2027-07-23",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "sealteam911.com": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-04-21",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "sealteam911.online": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-10-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "securealliance.xyz": {
+      "registered": true,
+      "created": "2026-07-23",
+      "expires": "2027-07-23",
+      "updated": "2026-08-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "securemypc.life": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-08-11",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "securemypc.xyz": {
+      "registered": true,
+      "created": "2026-04-21",
+      "expires": "2027-04-21",
+      "updated": "2026-10-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "server hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "sfrclak.com": {
       "registered": true,
@@ -1726,6 +2306,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-11-12"
+    },
+    "shiabank.com": {
+      "registered": true,
+      "created": "2025-10-08",
+      "expires": "2027-10-08",
+      "updated": "2026-11-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "shiny-dev.com": {
       "registered": false,
@@ -2344,6 +2935,206 @@
       ],
       "checked": "2026-11-12"
     },
+    "team-meet.xyz": {
+      "registered": true,
+      "created": "2026-06-15",
+      "expires": "2027-06-15",
+      "updated": "2026-07-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-live.cam": {
+      "registered": true,
+      "created": "2025-11-18",
+      "expires": "2026-11-18",
+      "updated": "2025-12-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-live.vip": {
+      "registered": true,
+      "created": "2025-11-18",
+      "expires": "2026-11-18",
+      "updated": "2026-01-17",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-live.work": {
+      "registered": true,
+      "created": "2025-09-02",
+      "expires": "2026-09-02",
+      "updated": "2026-09-17",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "pending delete",
+        "pending delete"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meet.cc": {
+      "registered": true,
+      "created": "2026-06-15",
+      "expires": "2027-06-15",
+      "updated": "2026-06-26",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meet.cloud": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-24",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meet.in": {
+      "registered": true,
+      "created": "2026-06-09",
+      "expires": "2027-06-09",
+      "updated": "2026-06-15",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meeting.in": {
+      "registered": true,
+      "created": "2026-06-09",
+      "expires": "2027-06-09",
+      "updated": "2026-06-18",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meets.cc": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-24",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meets.com": {
+      "registered": true,
+      "created": "2026-04-08",
+      "expires": "2027-04-08",
+      "updated": "2026-06-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meets.in": {
+      "registered": true,
+      "created": "2026-06-18",
+      "expires": "2027-06-18",
+      "updated": "2026-06-24",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams-meets.online": {
+      "registered": true,
+      "created": "2026-04-08",
+      "expires": "2027-04-08",
+      "updated": "2026-06-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams02live.com": {
+      "registered": true,
+      "created": "2026-07-28",
+      "expires": "2027-07-28",
+      "updated": "2026-07-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams05live.com": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-08-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams06live.com": {
+      "registered": true,
+      "created": "2026-07-28",
+      "expires": "2027-07-28",
+      "updated": "2026-07-31",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams07live.com": {
+      "registered": true,
+      "created": "2026-07-28",
+      "expires": "2027-07-28",
+      "updated": "2026-08-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teams0live.com": {
+      "registered": true,
+      "created": "2026-09-02",
+      "expires": "2027-09-02",
+      "updated": "2026-09-10",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "teamslive.cloud": {
+      "registered": true,
+      "created": "2026-09-18",
+      "expires": "2027-09-18",
+      "updated": "2026-09-23",
+      "registrar": "NAMECHEAP",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "template-openxml.com": {
       "registered": false,
       "checked": "2026-10-05"
@@ -2358,6 +3149,29 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "theworldofluck.online": {
+      "registered": true,
+      "created": "2026-03-01",
+      "expires": "2027-03-01",
+      "updated": "2026-03-01",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "theworldofluck.site": {
+      "registered": true,
+      "created": "2026-03-01",
+      "expires": "2027-03-01",
+      "updated": "2026-08-07",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited",
+        "server hold"
+      ],
+      "checked": "2026-11-15"
     },
     "tklovers.com": {
       "registered": true,
@@ -2449,6 +3263,28 @@
       ],
       "checked": "2026-10-05"
     },
+    "us05cloud.com": {
+      "registered": true,
+      "created": "2026-09-30",
+      "expires": "2027-09-30",
+      "updated": "2026-10-20",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "us05cloud.live": {
+      "registered": true,
+      "created": "2026-09-30",
+      "expires": "2027-09-30",
+      "updated": "2026-10-05",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
     "validator.uno": {
       "registered": true,
       "created": "2025-11-26",
@@ -2471,6 +3307,39 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-12"
+    },
+    "videolan.online": {
+      "registered": true,
+      "created": "2026-07-30",
+      "expires": "2027-07-30",
+      "updated": "2026-08-12",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "videolan.store": {
+      "registered": true,
+      "created": "2026-07-30",
+      "expires": "2027-07-30",
+      "updated": "2026-08-04",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
+    },
+    "videoviewer.online": {
+      "registered": true,
+      "created": "2026-08-12",
+      "expires": "2027-08-12",
+      "updated": "2026-08-17",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-15"
     },
     "vintashmarket.com": {
       "registered": true,
