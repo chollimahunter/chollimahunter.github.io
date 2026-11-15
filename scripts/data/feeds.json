@@ -623,6 +623,14 @@
       "status": "ok: rss, 2026-10-12"
     },
     {
+      "publisher": "NorthScan",
+      "site": "https://northscan.co/threat-research",
+      "feed": "https://northscan.co/feed.xml",
+      "verified": "2026-11-15",
+      "note": "Heiner Garcia's research group. The feed also lists its work published elsewhere (ANY.RUN, Medium, Ketman, SEAL Radar), so an item's link can sit on another publisher's site. Its X account only announces these articles.",
+      "status": "ok: rss, 13 items, newest 2026-08-10"
+    },
+    {
       "publisher": "lazarus.day",
       "site": "https://lazarus.day/reports/",
       "feed": "https://lazarus.day/reports/feed/",
