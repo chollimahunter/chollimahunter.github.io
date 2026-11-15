@@ -2340,3 +2340,7 @@ https://research.jfrog.com/post/accurasofthire-fake-interview/
 https://amsterdam-technologies.com/blog/a-very-contagious-interview
 https://web.archive.org/web/20211127232905/https://www.anomali.com/blog/suspected-north-korean-cyber-espionage-campaign-targets-multiple-foreign-ministries-and-think-tanks
 https://web.archive.org/web/20261115053606/https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack
+https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026
+https://opensourcemalware.com/blog/polinrider-dprk-compromised-hundreds-of-github-repos
+https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency
+https://www.ic3.gov/CSA/2026/261112.pdf

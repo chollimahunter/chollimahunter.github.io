@@ -16326,6 +16326,18 @@
         "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
         "publisher": "The Hacker News",
         "date": "2026-08-05"
+      },
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
       }
     ],
     "date_added": "2026-10-03"
@@ -16347,6 +16359,18 @@
         "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
         "publisher": "The Hacker News",
         "date": "2026-08-05"
+      },
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
       }
     ],
     "date_added": "2026-10-03"
@@ -16389,6 +16413,18 @@
         "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
         "publisher": "The Hacker News",
         "date": "2026-08-05"
+      },
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
       }
     ],
     "date_added": "2026-10-03"
@@ -17606,5 +17642,535 @@
       }
     ],
     "date_added": "2026-10-03"
+  },
+  {
+    "id": "npm-react-contact-forms",
+    "ioc_type": "npm_package",
+    "value": "react-contact-forms",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.2) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwindcss-form-utils",
+    "ioc_type": "npm_package",
+    "value": "tailwindcss-form-utils",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.9) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-contact-forms",
+    "ioc_type": "npm_package",
+    "value": "tailwind-contact-forms",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.8) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwindcss-contact-form",
+    "ioc_type": "npm_package",
+    "value": "tailwindcss-contact-form",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.5) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-form-core",
+    "ioc_type": "npm_package",
+    "value": "tailwind-form-core",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.5) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-input-kit",
+    "ioc_type": "npm_package",
+    "value": "tailwind-input-kit",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Malicious npm package (version 0.5.5) that OX Security linked to the PolinRider Ethereum dead-drop wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3, alongside the hijacked @adminide-stack releases of 3-4 November 2026. The loader runs when the package entry point is imported, not from an install script. npm replaced the package with its security placeholder on 4 November 2026; any other version should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider Returns: Hijacked npm Packages Use Ethereum Blockchain to Conceal Malware Infrastructure",
+        "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
+        "publisher": "OX Security",
+        "date": "2026-11-04"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-forms-kit",
+    "ioc_type": "npm_package",
+    "value": "tailwind-forms-kit",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended (version 0.5.5), named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Also listed by OX Security among the packages tied to the 0x1eef0849... wallet; replaced on npm on 4 November 2026. Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-custom-forms",
+    "ioc_type": "npm_package",
+    "value": "tailwind-custom-forms",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended, named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Replaced on npm on 25 August 2026. Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwindcss-contact-forms",
+    "ioc_type": "npm_package",
+    "value": "tailwindcss-contact-forms",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended, named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Replaced on npm on 10 September 2026. Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-form-styles",
+    "ioc_type": "npm_package",
+    "value": "tailwind-form-styles",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended, named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Replaced on npm on 22 September 2026. Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-clamps-line",
+    "ioc_type": "npm_package",
+    "value": "tailwind-clamps-line",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended, named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Replaced on npm on 26 May 2026. Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-lines-clamps",
+    "ioc_type": "npm_package",
+    "value": "tailwind-lines-clamps",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended (version 0.4.5), named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Published 16 April 2026 by the npm account tail9999 and installable for 211 days until npm replaced it on 13 November 2026 (GHSA-r79p-hc83-2mjh). Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwind-lineclamp",
+    "ioc_type": "npm_package",
+    "value": "tailwind-lineclamp",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended (version 0.4.5), named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. Published 27 May 2026 by the npm account tailwind1 and replaced on npm on 12 November 2026 (GHSA-pjpw-27p4-73xx). Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-tailwindcss-form-ui",
+    "ioc_type": "npm_package",
+    "value": "tailwindcss-form-ui",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Copy of an official Tailwind CSS plugin with the PolinRider loader appended (version 0.5.1 and 0.5.8), named in the take-home React assignment the fake employer AccuraSoftHire gave interview candidates; the loader runs when Tailwind builds the CSS, not during npm install. The loader in 0.5.8 is the character-permutation bootstrap of the @adminide-stack compromises; replaced on npm on 12 November 2026 (GHSA-7chf-fj7v-p562, GHSA-hxjv-cpxc-564m). Any version other than npm's security placeholder should be treated as malicious.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-goss1000",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~goss1000",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: one of the npm accounts JFrog and StepSecurity list as publishing the AccuraSoftHire Tailwind look-alike packages. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-sun117",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~sun117",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: the npm account that published scrollbar-hide-plugin (build marker A10-npm-handy); JFrog tied it to AccuraSoftHire through the Gmail address handy.apple117@gmail.com, which also signs commits from the GitHub account of the company's \"project manager\". An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-evaward1",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~evaward1",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: one of the npm accounts JFrog and StepSecurity list as publishing the AccuraSoftHire Tailwind look-alike packages. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-georgeodom1",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~georgeodom1",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: one of the npm accounts JFrog and StepSecurity list as publishing the AccuraSoftHire Tailwind look-alike packages. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-helmets",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~helmets",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: one of the npm accounts JFrog and StepSecurity list as publishing the AccuraSoftHire Tailwind look-alike packages. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-tail9999",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~tail9999",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: the npm account that published tailwind-lines-clamps 0.4.5 on 16 April 2026, per OpenSSF malicious-packages PR #1765. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "npm-account-tailwind1",
+    "ioc_type": "npm_account",
+    "value": "https://www.npmjs.com/~tailwind1",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "npm publisher account: the npm account that published tailwind-lineclamp 0.4.5 on 27 May 2026, per OpenSSF malicious-packages PR #1765. An account created for the campaign, not a hijacked maintainer.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
+  },
+  {
+    "id": "file-cameradriverupdate-accurasofthire",
+    "ioc_type": "filename",
+    "value": "CameraDriverUpdate.msi / CameraDriverUpdate-mac.zip / CameraDriverUpdate.deb",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "description": "Fake camera-driver installers from the AccuraSoftHire careers site: its video-verification step was scripted to fail until the candidate ran a one-line curl for a \"camera driver\" (/camera-driver/setup-win, setup-mac, setup-linux), which fetches /camera-driver/payload.js carrying the PolinRider loader with the build marker A10-online.",
+    "confidence_level": "high",
+    "sources": [
+      {
+        "title": "Contagious Interview: One Interview Away From Infection",
+        "url": "https://research.jfrog.com/post/accurasofthire-fake-interview/",
+        "publisher": "JFrog Security Research",
+        "date": "2026-11-09"
+      },
+      {
+        "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+        "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+        "publisher": "Corgea",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-15"
   }
 ]

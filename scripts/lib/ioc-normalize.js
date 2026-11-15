@@ -1575,6 +1575,18 @@ const PLATFORM_ACCOUNTS = [
     handle: /^(?:\d{15,20}|[a-z0-9._]{2,32})$/,
     reserved: new Set([]),
   },
+  {
+    // An npm publisher account, npmjs.com/~<user>. Not auto-extracted: a
+    // report on a hijacked package names the victim maintainer's account as
+    // readily as the operator's, and nothing in the prose separates them.
+    ioc_type: "npm_account",
+    hosts: ["npmjs.com"],
+    canonical: "www.npmjs.com",
+    prefix: "~",
+    auto_extract: false,
+    handle: /^[a-z0-9][a-z0-9._-]{0,213}$/,
+    reserved: new Set([]),
+  },
 ];
 
 const RE_ESCAPE = /[.*+?^${}()|[\]\\]/g;
@@ -1632,8 +1644,8 @@ function normalizePlatformAccount(spec) {
     if (!segments.length) return null;
 
     let handle = segments[0].trim();
-    if (spec.prefix === "@") {
-      if (!handle.startsWith("@")) return null;
+    if (spec.prefix === "@" || spec.prefix === "~") {
+      if (!handle.startsWith(spec.prefix)) return null;
       handle = handle.slice(1);
     }
     handle = handle.toLowerCase();
@@ -1641,7 +1653,7 @@ function normalizePlatformAccount(spec) {
     if (isCitationAccount(spec.ioc_type, handle)) return null;
     if (!spec.handle.test(handle)) return null;
 
-    const shown = spec.prefix === "@" ? `@${handle}` : `${spec.prefix}${handle}`;
+    const shown = `${spec.prefix}${handle}`;
     return `https://${spec.canonical}/${shown}`;
   };
 }

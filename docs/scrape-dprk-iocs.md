@@ -874,7 +874,7 @@ auto-extracted. Each is a handle under a fixed path on a fixed host, so one
 spec per platform describes both the pattern and the normalizer. All take the
 same victim-context guard as the LinkedIn and GitHub extractors. The same
 table also carries `x_account`, held out of automatic extraction
-(`auto_extract: false`) for the reason in the section below. So are the four added on 28 September 2026 for contacts read off persona portfolio sites, `instagram_account`, `facebook_account` (a vanity path or `profile.php?id=`), `stackoverflow_account` (keyed on the numeric user id) and `discord_account`: a report links its own publisher on Instagram and Facebook far more often than it names an operator there.
+(`auto_extract: false`) for the reason in the section below. So are the four added on 28 September 2026 for contacts read off persona portfolio sites, `instagram_account`, `facebook_account` (a vanity path or `profile.php?id=`), `stackoverflow_account` (keyed on the numeric user id) and `discord_account`: a report links its own publisher on Instagram and Facebook far more often than it names an operator there. `npm_account` (added 16 November 2026, `npmjs.com/~<user>`) is held out too: a report on a hijacked package names the victim maintainer's account as readily as the operator's.
 
 Several of these hosts sit on `HOST_DENYLIST` so that a stray social link in a
 report never becomes an indicator. The extractor passes `platform`, which tells

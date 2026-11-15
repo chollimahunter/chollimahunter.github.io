@@ -231,7 +231,7 @@ Edit `src/_data/iocs/repo-scan-ruleset.json` — a JSON array, same pattern.
 `calendly_account`, `instagram_account`, `facebook_account`,
 `stackoverflow_account`, `useme_account`, `cryptojobslist_account`,
 `web3career_account`, `cryptojobs_account`, `devpost_account`,
-`youtube_account`, `discord_account`; the table in that
+`youtube_account`, `discord_account`, `npm_account`; the table in that
 file is the authority when this list lags). If you
 can't find a real, citable public report for an indicator, don't add it — an
 uncited IOC is a liability, not a lead.
