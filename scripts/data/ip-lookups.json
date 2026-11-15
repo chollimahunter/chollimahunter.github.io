@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-11-13",
+  "checked": "2026-11-15",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -6962,6 +6962,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "2.60.226.195": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "RU",
+      "country_name": "Russia",
+      "isp": "JSC Rostelecom regional branch \"Siberia\"",
+      "org": "OJSC Sibirtelecom",
+      "asn": "AS12389 PJSC Rostelecom",
+      "as_name": "ROSTELECOM-AS",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "2.135.223.134": {
       "kind": "fixed-line",
       "provider": null,
@@ -8550,6 +8565,21 @@
       "proxy": false,
       "mobile": true,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "5.252.153.116": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "NL",
+      "country_name": "The Netherlands",
+      "isp": "Partner Hosting LTD",
+      "org": "Partner Hosting LTD",
+      "asn": null,
+      "as_name": null,
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "5.252.161.48": {
@@ -28892,6 +28922,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "45.66.249.196": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "BlueVPS OU",
+      "org": "BlueVPS OU",
+      "asn": "AS62005 BlueVPS OU",
+      "as_name": "BV-EU-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "45.67.231.58": {
       "kind": "proxy",
       "provider": null,
@@ -29927,6 +29972,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "45.125.67.172": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "HK",
+      "country_name": "Hong Kong",
+      "isp": "Tele Asia Limited",
+      "org": "Tele Asia Limited",
+      "asn": "AS133398 Tele Asia Limited",
+      "as_name": "TELE-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "45.126.3.252": {
       "kind": "fixed-line",
       "provider": null,
@@ -30465,6 +30525,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-20",
+      "looked_up_at": "ip-api.com"
+    },
+    "45.150.109.174": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "NL",
+      "country_name": "Netherlands",
+      "isp": "BlueVPS OU",
+      "org": "BV Na36",
+      "asn": "AS62005 BlueVPS OU",
+      "as_name": "BV-EU-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "45.152.188.215": {
@@ -39197,6 +39272,36 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "62.60.226.179": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "DE",
+      "country_name": "Germany",
+      "isp": "Femo IT Solutions Limited",
+      "org": "Femo IT Solutions Limited",
+      "asn": "AS214351 FEMO IT SOLUTIONS LIMITED",
+      "as_name": "FEMOIT",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
+    "62.60.226.195": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "DE",
+      "country_name": "Germany",
+      "isp": "Femo IT Solutions Limited",
+      "org": "Femo IT Solutions Limited",
+      "asn": "AS214351 FEMO IT SOLUTIONS LIMITED",
+      "as_name": "FEMOIT",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "62.60.226.225": {
       "kind": "fixed-line",
       "provider": null,
@@ -40622,6 +40727,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "65.87.7.150": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "Aokigahara SRL",
+      "org": null,
+      "asn": "AS215659 Aokigahara SRL",
+      "as_name": "MOEMOEKYUN",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "65.98.83.114": {
       "kind": "datacenter",
       "provider": null,
@@ -41040,6 +41160,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "66.78.40.120": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "RO",
+      "country_name": "Romania",
+      "isp": "Aokigahara SRL",
+      "org": "Aokigahara SRL",
+      "asn": "AS215659 Aokigahara SRL",
+      "as_name": "MOEMOEKYUN",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "66.90.90.42": {
@@ -59807,6 +59942,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "91.236.230.101": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "BlueVPS OU",
+      "org": "BlueVPS OU",
+      "asn": "AS62005 BlueVPS OU",
+      "as_name": "BV-EU-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "91.237.235.53": {
       "kind": "fixed-line",
       "provider": null,
@@ -74955,6 +75105,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "103.246.145.201": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "NL",
+      "country_name": "The Netherlands",
+      "isp": "Podaon SIA",
+      "org": "Podaon SIA",
+      "asn": "AS211381 Podaon SIA",
+      "as_name": "PODAON",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "103.248.30.219": {
@@ -124262,6 +124427,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "178.17.59.37": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "PL",
+      "country_name": "Poland",
+      "isp": "TigrisNet",
+      "org": "TigrisNet",
+      "asn": "AS213702 QWINS LTD",
+      "as_name": "QWINS-LTD",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "178.18.249.105": {
       "kind": "proxy",
       "provider": null,
@@ -130427,6 +130607,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "185.28.119.179": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "BlueVPS OU",
+      "org": "BlueVPS OU",
+      "asn": "AS62005 BlueVPS OU",
+      "as_name": "BV-EU-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "185.29.8.18": {
       "kind": "datacenter",
       "provider": null,
@@ -132677,6 +132872,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "185.169.253.162": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "BZ",
+      "country_name": "Belize",
+      "isp": "Amarutu Technology Ltd. Network",
+      "org": "Amarutu Technology Ltd",
+      "asn": "AS206264 Amarutu Technology Ltd",
+      "as_name": "AMARUTU-TECHNOLOGY",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "185.172.128.11": {
       "kind": "fixed-line",
       "provider": null,
@@ -132825,6 +133035,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "185.177.239.252": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "nuxt.cloud hosting provider",
+      "org": "nuxt.cloud hosting provider",
+      "asn": "AS209946 ALINDA LLC",
+      "as_name": "ALINDA-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "185.179.132.152": {
@@ -144077,6 +144302,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "193.233.201.21": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "AT",
+      "country_name": "Austria",
+      "isp": "Aeza Group LLC",
+      "org": "Aeza Group LLC",
+      "asn": "AS210644 AEZA GROUP LLC",
+      "as_name": "AEZA-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
+      "looked_up_at": "ip-api.com"
+    },
     "193.239.101.7": {
       "kind": "proxy",
       "provider": null,
@@ -144615,6 +144855,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "194.53.54.188": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "FI",
+      "country_name": "Finland",
+      "isp": "Ihor Hosting LTD",
+      "org": "POWER-SERVERS-ROLE-ORG",
+      "asn": "AS207569 IHOR HOSTING LTD",
+      "as_name": "I-SERVERS-NORTH-EU",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "194.61.91.131": {
@@ -146595,6 +146850,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "196.251.72.192": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "SC",
+      "country_name": "Seychelles",
+      "isp": "internet-security-cheapyhost",
+      "org": "4445 Corporation",
+      "asn": null,
+      "as_name": null,
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-15",
       "looked_up_at": "ip-api.com"
     },
     "197.44.198.211": {

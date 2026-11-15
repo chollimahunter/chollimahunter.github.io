@@ -12,7 +12,9 @@
  * reviewed with an "unreviewed" badge. None of it becomes an indicator: a host
  * reaches the index only when a person files it, and parked values are recorded in
  * scripts/data/etherhiding-c2-review.json. Each new value is listed in the
- * output so the workflow can post it for that review.
+ * output so the workflow can post it for that review. The first observation of
+ * a watchlist entry lists only the values it carries (rotation targets, mapping
+ * values and writes): the address itself was filed by hand.
  *
  * What holds the run for a person (fail closed):
  *   - no previous findings file to compare with;
@@ -154,8 +156,10 @@ function gateDecision(latest, previous) {
   for (const [key, now] of after) {
     const then = before.get(key);
     if (!then) {
+      // A watchlist entry filed by hand has been reviewed already; what its
+      // first observation can bring is the values the address carries.
       if (!now.id) holds.push(`new observation ${key} has no watchlist entry behind it`);
-      else fresh.push(`${key} first observed (${now.id})`);
+      else compareObservation(key, now, {}, holds, fresh);
       continue;
     }
     compareObservation(key, now, then, holds, fresh);

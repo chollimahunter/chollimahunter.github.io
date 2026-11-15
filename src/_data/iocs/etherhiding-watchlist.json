@@ -10790,7 +10790,13 @@
     "chain": "ethereum",
     "onchain_role": "mapping_c2_contract",
     "operators": [
-      "0x52221c293a21d8ca7afd01ac6bfac7175d590a84"
+      "0x52221c293a21d8ca7afd01ac6bfac7175d590a84",
+      "0x73625b6cdfecc81a4899d221c732e1f73e504a32",
+      "0x10ca9be67d03917e9938a7c28601663b191e4413",
+      "0xec99d2c797db6e0ebd664128efed9265fbe54579",
+      "0xf11cb0578ea61e2edb8a4a12c02e3ef26e80fc36",
+      "0xdb8e8b0ef3ea1105a6d84b27fc0baa9845c66fd7",
+      "0x46b0f9ba6f1fb89eb80347c92c9e91bdf1b9e8cc"
     ],
     "campaign": [
       "EtherHiding"
@@ -10805,6 +10811,14 @@
         "url": "https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2026-07-21-Malicious-npm-PyPI-Supply-Chain-packages.txt",
         "publisher": "Unit 42 (Palo Alto Networks)",
         "date": "2026-07-21",
+        "type": "threat_intel_report",
+        "quote": "0xa1b40044EBc2794f207D45143Bd82a1B86156c6b"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
         "type": "threat_intel_report",
         "quote": "0xa1b40044EBc2794f207D45143Bd82a1B86156c6b"
       }
@@ -13305,5 +13319,563 @@
     ],
     "malware_family": "EtherRAT",
     "date_added": "2026-11-12"
+  },
+  {
+    "id": "tsundere-c2-ip-45-125-67-172",
+    "ioc_type": "ip_address",
+    "value": "45.125.67.172",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://45.125.67.172:1228 and http://45.125.67.172:1337, on 2024-09-24 and 2024-10-21, from 0x52221c293a21d8ca7afd01ac6bfac7175d590a84, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x1259604917d99204b899d0927a7fb99aee0ddf063cd42cae60702a6834807960",
+        "url": "https://etherscan.io/tx/0x1259604917d99204b899d0927a7fb99aee0ddf063cd42cae60702a6834807960",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0x9cb89a81a4db5130fbed1a88f970365d022fdba9d82f4b0cb5f61484a7ccfecf",
+        "url": "https://etherscan.io/tx/0x9cb89a81a4db5130fbed1a88f970365d022fdba9d82f4b0cb5f61484a7ccfecf",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-193-233-201-21",
+    "ioc_type": "ip_address",
+    "value": "193.233.201.21",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://193.233.201.21:3001, on 2024-10-22, from 0x52221c293a21d8ca7afd01ac6bfac7175d590a84, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x9a9acac98bf25694527d15bf09ec586fa0a9b9d77308509e70dbab307b35e22e",
+        "url": "https://etherscan.io/tx/0x9a9acac98bf25694527d15bf09ec586fa0a9b9d77308509e70dbab307b35e22e",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-194-53-54-188",
+    "ioc_type": "ip_address",
+    "value": "194.53.54.188",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://194.53.54.188:3001, on 2024-10-26, from 0xf11cb0578ea61e2edb8a4a12c02e3ef26e80fc36, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xbb4c7648d02845b6c9870d9a78e38c1a49d60d5714d71368bed0b1423943844c",
+        "url": "https://etherscan.io/tx/0xbb4c7648d02845b6c9870d9a78e38c1a49d60d5714d71368bed0b1423943844c",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-185-169-253-162",
+    "ioc_type": "ip_address",
+    "value": "185.169.253.162",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://185.169.253.162:57869, on 2024-11-10, from 0x10ca9be67d03917e9938a7c28601663b191e4413, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x572959ea888a225f2bf5d3889c69e6c1172fc48f60d8884e246c868521c2f578",
+        "url": "https://etherscan.io/tx/0x572959ea888a225f2bf5d3889c69e6c1172fc48f60d8884e246c868521c2f578",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-185-177-239-252",
+    "ioc_type": "ip_address",
+    "value": "185.177.239.252",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://185.177.239.252:3000 and http://185.177.239.252:3001, on 2025-02-28, from 0xf11cb0578ea61e2edb8a4a12c02e3ef26e80fc36, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xe6bdc0b3c54e7e0fbedbc7a4e77a5bff4d4b2076fff0300ecd7be91adc4d6cd9",
+        "url": "https://etherscan.io/tx/0xe6bdc0b3c54e7e0fbedbc7a4e77a5bff4d4b2076fff0300ecd7be91adc4d6cd9",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Ethereum transaction 0xb813a607370b86a9401c94f8402a7bb44755c853d3f71766ed507826f3b8406d",
+        "url": "https://etherscan.io/tx/0xb813a607370b86a9401c94f8402a7bb44755c853d3f71766ed507826f3b8406d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-5-252-153-116",
+    "ioc_type": "ip_address",
+    "value": "5.252.153.116",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://5.252.153.116:1488, on 2025-03-24, from 0xec99d2c797db6e0ebd664128efed9265fbe54579, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x88538ada65d237011a2bd1fcf1abfab5219717978ec3ca7a872a9d614bc7e5b7",
+        "url": "https://etherscan.io/tx/0x88538ada65d237011a2bd1fcf1abfab5219717978ec3ca7a872a9d614bc7e5b7",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-2-60-226-195",
+    "ioc_type": "ip_address",
+    "value": "2.60.226.195",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://2.60.226.195:3001, on 2025-04-04, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xf095556624120373da0f1ac14edfb4ce088083b9a4dca753617fb216a1baceff",
+        "url": "https://etherscan.io/tx/0xf095556624120373da0f1ac14edfb4ce088083b9a4dca753617fb216a1baceff",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-62-60-226-195",
+    "ioc_type": "ip_address",
+    "value": "62.60.226.195",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://62.60.226.195:3001, on 2025-04-04, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xea69311a5145e12318aa43c5339629e504cd5ce7565255c4467ebacacfd65dae",
+        "url": "https://etherscan.io/tx/0xea69311a5145e12318aa43c5339629e504cd5ce7565255c4467ebacacfd65dae",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-65-87-7-150",
+    "ioc_type": "ip_address",
+    "value": "65.87.7.150",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://65.87.7.150:16213, on 2025-04-08, from 0x10ca9be67d03917e9938a7c28601663b191e4413, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x43d4f50955658f9d76ca796318954f04c47d699a7434ba2a5abf49c88cce56ec",
+        "url": "https://etherscan.io/tx/0x43d4f50955658f9d76ca796318954f04c47d699a7434ba2a5abf49c88cce56ec",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-62-60-226-179",
+    "ioc_type": "ip_address",
+    "value": "62.60.226.179",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://62.60.226.179:3001, on 2025-05-04, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. Kaspersky lists the address among the botnet's C2 servers. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "medium",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report",
+        "quote": "ws://62.60.226[.]179:3001"
+      },
+      {
+        "title": "Ethereum transaction 0xb09404d8a492c42aa251899a5ee721da6c343931692ac16864739c270fac1523",
+        "url": "https://etherscan.io/tx/0xb09404d8a492c42aa251899a5ee721da6c343931692ac16864739c270fac1523",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-103-246-145-201",
+    "ioc_type": "ip_address",
+    "value": "103.246.145.201",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://103.246.145.201:1234, on 2025-07-14, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. Kaspersky lists the address among the botnet's C2 servers. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "medium",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report",
+        "quote": "ws://103.246.145[.]201:1234"
+      },
+      {
+        "title": "Ethereum transaction 0x2bf7d58728d28ef893fd6dee9dbfb9cf4e4f8b2301fdaa9d2c9d7e25740826d5",
+        "url": "https://etherscan.io/tx/0x2bf7d58728d28ef893fd6dee9dbfb9cf4e4f8b2301fdaa9d2c9d7e25740826d5",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-196-251-72-192",
+    "ioc_type": "ip_address",
+    "value": "196.251.72.192",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://196.251.72.192:1234, on 2025-08-03, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. Kaspersky lists the address among the botnet's C2 servers. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "medium",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report",
+        "quote": "ws://196.251.72[.]192:1234"
+      },
+      {
+        "title": "Ethereum transaction 0xd1e088e0be1297a4c149d9240497ff34017951ef5c2e799506276fd7f1d50a0a",
+        "url": "https://etherscan.io/tx/0xd1e088e0be1297a4c149d9240497ff34017951ef5c2e799506276fd7f1d50a0a",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-185-28-119-179",
+    "ioc_type": "ip_address",
+    "value": "185.28.119.179",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://185.28.119.179:1234, on 2025-08-19, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. Kaspersky lists the address among the botnet's C2 servers. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "medium",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report",
+        "quote": "ws[:]//185.28.119[.]179:1234"
+      },
+      {
+        "title": "Ethereum transaction 0x4d096150c2419f6fe7a0d2d8577bb563595f8ed7186ec622de4323396dbe2918",
+        "url": "https://etherscan.io/tx/0x4d096150c2419f6fe7a0d2d8577bb563595f8ed7186ec622de4323396dbe2918",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-178-17-59-37",
+    "ioc_type": "ip_address",
+    "value": "178.17.59.37",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://178.17.59.37:1234, on 2025-09-21, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xad82c312d85f4d48361f02697224e727ca9d1239f529c221c3fd69b052c764f1",
+        "url": "https://etherscan.io/tx/0xad82c312d85f4d48361f02697224e727ca9d1239f529c221c3fd69b052c764f1",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-45-66-249-196",
+    "ioc_type": "ip_address",
+    "value": "45.66.249.196",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://45.66.249.196:1234, on 2025-09-23, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xd02f031350176fa78441cc1f1212bb6815df64a36984914f8dce729bf15b1aff",
+        "url": "https://etherscan.io/tx/0xd02f031350176fa78441cc1f1212bb6815df64a36984914f8dce729bf15b1aff",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-45-150-109-174",
+    "ioc_type": "ip_address",
+    "value": "45.150.109.174",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://45.150.109.174:1234, on 2025-09-30, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xad8867701d5fd06e25f27b69ad8817f83dab049fa98de89d934aff2c9e82b388",
+        "url": "https://etherscan.io/tx/0xad8867701d5fd06e25f27b69ad8817f83dab049fa98de89d934aff2c9e82b388",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-91-236-230-101",
+    "ioc_type": "ip_address",
+    "value": "91.236.230.101",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as ws://91.236.230.101:1234, on 2025-11-01, from 0x73625b6cdfecc81a4899d221c732e1f73e504a32, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x0d176c8238e75fb4b34d2a079c57681f0b608fd0775d68041bf02fb43abf7443",
+        "url": "https://etherscan.io/tx/0x0d176c8238e75fb4b34d2a079c57681f0b608fd0775d68041bf02fb43abf7443",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
+  },
+  {
+    "id": "tsundere-c2-ip-66-78-40-120",
+    "ioc_type": "ip_address",
+    "value": "66.78.40.120",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Tsundere command-and-control address the operator wrote to the Ethereum resolver contract 0xa1b40044ebc2794f207d45143bd82a1b86156c6b with setString, as http://66.78.40.120:3007, on 2026-09-01, from 0x10ca9be67d03917e9938a7c28601663b191e4413, a wallet Kaspersky lists as one that changed the contract's C2 address. This site recovered it by decoding the contract's write history; Kaspersky's report predates or omits it. Recorded as an address the malware was pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "Tsundere",
+    "confidence_level": "low",
+    "attribution_doubt": "Kaspersky reported the Tsundere botnet in November 2025 with no North Korean link, and Unit 42 lists its resolver contract among packages from \"multiple distinct threat actors\" and names none. No published source ties it to North Korea.",
+    "date_added": "2026-11-14",
+    "chain": "ethereum",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x0082ceeee756c8e61c9228df2328aaefad25f2f9ea95d904fdffb44b3da91528",
+        "url": "https://etherscan.io/tx/0x0082ceeee756c8e61c9228df2328aaefad25f2f9ea95d904fdffb44b3da91528",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-14",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "Blockchain and Node.js abused by Tsundere: an emerging botnet",
+        "url": "https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/",
+        "publisher": "Kaspersky (Securelist)",
+        "date": "2025-11-20",
+        "type": "threat_intel_report"
+      }
+    ]
   }
 ]

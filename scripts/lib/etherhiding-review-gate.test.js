@@ -100,5 +100,12 @@ test("a new observation needs a watchlist entry behind it", () => {
   const listed = { ...clone(wallet), id: "resolver-2", target: "0xdd" };
   const d = gateDecision(base([wallet, contract, listed]), previous);
   assert.equal(d.needsReview, false);
-  assert.match(d.fresh.join(" "), /first observed/);
+  assert.deepEqual(d.fresh, ["ethereum:0xdd now points at 0xa658863ea658863e68656c6c6f6970626f742121 (166.88.134.62) since 2026-09-01"]);
+});
+
+test("a first observation that carries no on-chain value lists nothing", () => {
+  const bare = { id: "contract-2", target: "0xee", kind: "contract", chain: "sepolia", block: 1, code_sha256: "c9" };
+  const d = gateDecision(base([wallet, contract, bare]), previous);
+  assert.equal(d.needsReview, false, d.reasons.join("; "));
+  assert.equal(d.fresh.length, 0);
 });
