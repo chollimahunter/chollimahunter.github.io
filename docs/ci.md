@@ -85,11 +85,10 @@ data loss (an observation, rotation run, write, payload or code that was
 recorded before and is missing now), rewritten history (a lower count over a
 run whose first and last transactions are unchanged is an indexer recount and
 does not hold), a degraded run (more
-than 5% of chain queries failed), and anything it does not recognise. Each run
-adds an entry to one standing issue, "EtherHiding: on-chain values to review":
-the values a merged run added, or why a run was held. Entries after the first
-are written into the issue's body, newest first, rather than posted as
-comments, because GitHub emails on a comment but not on an edit.
+than 5% of chain queries failed), and anything it does not recognise. A merged run
+posts nothing: the values it added are listed in its pull request body and
+show on the tracker, and a held run stays open as a pull request. No issue
+is opened for either.
 
 ## When a data job fails
 

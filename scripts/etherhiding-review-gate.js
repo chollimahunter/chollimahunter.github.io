@@ -21,7 +21,7 @@ const FILE = process.argv[2] || path.join(__dirname, "..", "src", "_data", "ethe
 const MAX_LINES = 80;
 
 // The values are written by the operator, and these lines are posted into a
-// GitHub issue inside a code block: no backtick, newline or overlong line
+// pull request body inside a code block: no backtick, newline or overlong line
 // survives to break out of it.
 const inert = (s) => String(s).replace(/[`\r\n]/g, "'").slice(0, 240);
 
