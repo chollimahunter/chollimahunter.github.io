@@ -631,6 +631,14 @@
       "note": "An aggregator of DPRK reporting, not a source. Each item is resolved to the original article named in its description (| Source: <url> (<publisher>)) and queued under that publisher; nothing is cited to lazarus.day. Its feed holds only the last ten items, so the year archive is read too and each report page the feed did not carry is opened for its original link. Every item qualifies without a keyword match. See docs/scrape-dprk-iocs.md on lazarus.day.",
       "status": "ok: rss, 2026-10-01",
       "archive": "https://lazarus.day/reports/{year}/"
+    },
+    {
+      "publisher": "Corgea",
+      "site": "https://corgea.com/research",
+      "feed": "https://corgea.com/research/rss.xml",
+      "verified": "2026-11-15",
+      "note": null,
+      "status": "ok: rss, 316 items, newest 2026-11-15"
     }
   ]
 }

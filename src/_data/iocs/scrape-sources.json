@@ -15130,6 +15130,24 @@
       "campaign": [
         "Kimsuky"
       ]
+    },
+    {
+      "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+      "publisher": "Corgea",
+      "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+      "campaign": [
+        "PolinRider",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://opensourcemalware.com/blog/polinrider-dprk-compromised-hundreds-of-github-repos",
+      "publisher": "Open Source Malware",
+      "title": "Hundreds of GitHub Repos Compromised By DPRK's PolinRider Campaign",
+      "campaign": [
+        "PolinRider",
+        "Contagious Interview"
+      ]
     }
   ],
   "not_scraped": [
