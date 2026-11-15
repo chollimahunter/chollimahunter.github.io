@@ -85,6 +85,11 @@
       "verdict": "service",
       "reviewed": "2026-10-20",
       "note": "a public Monero mining pool the cryptominer configurations on Polygon point at; a third-party service, not operator infrastructure"
+    },
+    "fbi.gov": {
+      "verdict": "parked",
+      "reviewed": "2026-11-14",
+      "note": "a well-known government domain written once to the Tsundere resolver on 2024-11-28 by 0xdb8e8b0ef3ea1105a6d84b27fc0baa9845c66fd7, between real C2 addresses; not operator infrastructure"
     }
   }
 }
