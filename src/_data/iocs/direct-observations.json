@@ -8873,6 +8873,126 @@
         }
       ],
       "note": "Found on 15 November 2026 by putting svendotdev, the GitHub login the index already holds for this persona, to Maigret's username search and reading the Telegram page it reported, cited here. The page is a public channel or group titled svendotdev, which restates the handle, with no description. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "Aiden Mori",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-16",
+      "posts": [
+        {
+          "url": "https://gitlab.com/0xdanieltran"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "gitlab_account",
+          "value": "https://gitlab.com/0xdanieltran",
+          "post": 0
+        }
+      ],
+      "note": "Found on 16 November 2026 by putting 0xdanieltran, the GitHub login the index already holds for this persona, to Maigret's username search and then asking GitLab's public user endpoint. The GitLab account states the display name 0xAI and publishes the address danillppiont106@gmail.com, which this persona's GitHub commits are already signed with in this index; the shared address, not only the handle, is what ties the account to the persona. A display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "Kevin Tan",
+      "aliases": [
+        "Adan Cui"
+      ],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-16",
+      "posts": [
+        {
+          "url": "https://dev.to/yeshealer"
+        },
+        {
+          "url": "https://gitlab.com/yeshealer"
+        },
+        {
+          "url": "https://huggingface.co/yeshealer"
+        },
+        {
+          "url": "https://medium.com/@yeshealer"
+        },
+        {
+          "url": "https://calendly.com/yeshealer"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "devto_account",
+          "value": "https://dev.to/yeshealer",
+          "post": 0
+        },
+        {
+          "ioc_type": "gitlab_account",
+          "value": "https://gitlab.com/yeshealer",
+          "post": 1
+        },
+        {
+          "ioc_type": "huggingface_account",
+          "value": "https://huggingface.co/yeshealer",
+          "post": 2
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "medium.com/@yeshealer",
+          "post": 3
+        },
+        {
+          "ioc_type": "calendly_account",
+          "value": "https://calendly.com/yeshealer",
+          "post": 4
+        }
+      ],
+      "note": "Found on 16 November 2026 by putting yeshealer, the GitHub login the index already holds for this persona, to Maigret's username search and reading each account through its platform's public endpoint. The dev.to account (joined 28 March 2022) names yeshealer as its GitHub account and gives the location Serbia and the website adan.steadystake.org; the GitLab account states the display name Adan (yeshealer); the Hugging Face, Medium and Calendly accounts all state Adan Cui, which is carried as an alias because it is a personal name presented the same way on three platforms. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "James Honeycutt",
+      "aliases": [
+        "James Araki"
+      ],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-16",
+      "posts": [
+        {
+          "url": "https://gitlab.com/0xprincedev"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "gitlab_account",
+          "value": "https://gitlab.com/0xprincedev",
+          "post": 0
+        }
+      ],
+      "note": "Found on 16 November 2026 by putting 0xprincedev, the GitHub login the index already holds for this persona, to Maigret's username search and then asking GitLab's public user endpoint. The account states the display name James Araki, carried as an alias because it is a personal name, and no public address. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "whisdev",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-16",
+      "posts": [
+        {
+          "url": "https://www.youtube.com/@whisdev/about"
+        },
+        {
+          "url": "https://medium.com/@whisdev"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "youtube_account",
+          "value": "https://www.youtube.com/@whisdev",
+          "post": 0
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "medium.com/@whisdev",
+          "post": 1
+        }
+      ],
+      "note": "Found on 16 November 2026 by putting whisdev, the GitHub login the index already holds for this persona, to Maigret's username search and reading the pages it reported, cited here. The YouTube channel states the name WHISdev and a join date of 19 November 2024; the Medium page states the name Whis. Both restate the handle and stay in the note. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
     }
   ],
   "unattributed": [
