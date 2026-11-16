@@ -8778,6 +8778,101 @@
         }
       ],
       "note": "Read on 3 October 2026, after the site's operator flagged the account. The GitHub account webgently (id 105727142) was created on 17 May 2022, displays the name Legend Dev, states gently039@gmail.com as its public address, and on the day it was read had 312 followers, 23 followed and 29 repositories: casino games (diamonds, mines, plinko, limbo), an arbitrage bot, an NFT marketplace, ChatGPT applications, and a run of Laravel and Vue repositories named as hiring challenges.\n\nIts own repositories carry about 500 commits, from November 2022 to August 2024, authored webgently <oleksandrshkabura811@gmail.com>, and from October 2023 commits under gently039@gmail.com. The value that ties it to this index is in someone else's repository. newstable/chatgpt-4-web, created on 4 May 2023 on the GitHub account newstable, which this site already holds from the DPRK IT-worker list in tayvano's lazarus-bluenoroff-research and from Chollima Group's Moonstone Sleet write-up, carries fifteen commits authored webgently <oleksandrshkabura811@gmail.com> between 11 and 16 May 2023, interleaved with commits authored Anime1026 <sasuke031026@gmail.com>, an address on the same published list. That is the same author name and the same address webgently uses in its own repositories, working in a listed account's repository beside a listed address over the same week, which is why the account is filed here rather than queued as a lead. Only the account's own addresses are carried.\n\nRecorded but not carried: commits in three 2022 challenge repositories are authored galaxy-comet, one of them through a GitHub noreply address carrying webgently's own account id, which suggests galaxy-comet was an earlier login of this account; the address oleksandrshkabura811@gmail.com also appears in mirrors on the account Zhao39 and in several trading-bot and NFT-minting repositories under other owners; casino repositories carry commits by the account timewn1, created four hours before webgently on the same day; and one 2026 commit is authored webgently from an address at looter.ai that also appears on another account under other names. None of those is this account's own value, so none is filed."
+    },
+    {
+      "persona": "Marcin Iwanski",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-15",
+      "posts": [
+        {
+          "url": "https://www.freelancer.com/u/brentjeremynel"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "freelancer_account",
+          "value": "https://www.freelancer.com/u/brentjeremynel",
+          "post": 0
+        }
+      ],
+      "note": "Found on 15 November 2026 by putting brentjeremynel, the GitLab login the index already holds for this persona, to Maigret's username search and then asking Freelancer's public user endpoint, which answers with the account record and, for a name that does not exist, with nothing. Freelancer returns the account with the display name Closed User and a registration date of 21 December 2021: an account existed under the handle and has since been closed, which is recorded here because a closed account is still a registration, and the date is the one fact it states. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "Mark Santiago",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-15",
+      "posts": [
+        {
+          "url": "https://www.freelancer.com/u/marksantiago02"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "freelancer_account",
+          "value": "https://www.freelancer.com/u/marksantiago02",
+          "post": 0
+        }
+      ],
+      "note": "Found on 15 November 2026 by putting marksantiago02, a login the index already holds for this persona, to Maigret's username search and then asking Freelancer's public user endpoint, which answers with the account record and, for a name that does not exist, with nothing. Freelancer returns the account with the display name Closed User and a registration date of 4 December 2024: an account existed under the handle and has since been closed, which is recorded here because a closed account is still a registration, and the date is the one fact it states. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "rarosem",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-15",
+      "posts": [
+        {
+          "url": "https://t.me/hccee"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/hccee",
+          "post": 0
+        }
+      ],
+      "note": "Found on 15 November 2026 by putting HCCEE, the GitHub login the index already holds for this persona, to Maigret's username search and reading the Telegram page it reported, cited here. The page states the display name 管 and the bio 时来运转 (a Chinese idiom for a change of fortune); neither is a personal name, so both stay in the note rather than as aliases. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "rarosem",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-15",
+      "posts": [
+        {
+          "url": "https://www.youtube.com/@hccee/about"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "youtube_account",
+          "value": "https://www.youtube.com/@hccee",
+          "post": 0
+        }
+      ],
+      "note": "Found on 15 November 2026 by putting HCCEE, the GitHub login the index already holds for this persona, to Maigret's username search and reading the YouTube channel page it reported, cited here. The channel states the name HC Cee, which restates the handle and stays in the note, and a join date of 16 June 2025. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "rarosem",
+      "aliases": [],
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-15",
+      "posts": [
+        {
+          "url": "https://t.me/svendotdev"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/svendotdev",
+          "post": 0
+        }
+      ],
+      "note": "Found on 15 November 2026 by putting svendotdev, the GitHub login the index already holds for this persona, to Maigret's username search and reading the Telegram page it reported, cited here. The page is a public channel or group titled svendotdev, which restates the handle, with no description. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
     }
   ],
   "unattributed": [
