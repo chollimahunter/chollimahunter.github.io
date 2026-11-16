@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -506,6 +506,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "chainmanamgentagency.info": {
+      "registered": true,
+      "created": "2026-11-05",
+      "expires": "2027-11-05",
+      "updated": "2026-11-10",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "changelog.rest": {
       "registered": true,

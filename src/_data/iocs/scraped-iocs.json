@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T22:41:20Z",
-  "record_count": 12229,
+  "generated_at": "2026-11-16T05:48:05Z",
+  "record_count": 12254,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -14350,10 +14350,11 @@
       "display": null,
       "persona": null,
       "campaign": [
-        "Contagious Interview"
+        "Contagious Interview",
+        "PolinRider"
       ],
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -14370,6 +14371,17 @@
           "section": "The task",
           "pulled_at": "2026-11-12",
           "source_sha256": "36cabb7d96798eb4b1822e43adc024e7116c018e580a3f45d76cd2bae21ce374"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…; native messaging host com.accurasoft.jobalerts Chrome and Edge (JFrog) Email addresses handy.apple117@gmail.com , antongoss11995@gmail.com npm publishers tied to the hiring accounts (JFrog) References JFrog Security Research: Contagious Interview: One Interview Away From…",
+          "context_origin": "text",
+          "section": "Indicators of Compromise",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -14892,6 +14904,17 @@
           "section": "Super-Administrator of the Consoles: eros1030109@gmail.com",
           "pulled_at": "2026-11-12",
           "source_sha256": "8e8f1aacf79d110fabbba04eed1758a6e1777d9ef30d42ecdf52394f0f997aee"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…(Ukraine) Google account None None leomsoite@gmail.com October None found None None srahnn21@gmail.com October Fiverr None None apollo1030109@gmail.com August Guru; Trello \"Oura Kano\" None eros1030109@gmail.com August Pinterest \"Oura Kano,\" \"Oura Kano-Eros\" ALIEN TXTBASE stealer logs,…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -17362,7 +17385,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -17379,6 +17402,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…China. Four Microsoft display names are typed in Korean script: Address Display name Romanized (family name first) What it is babiest26@outlook.com 민규 김 Kim Min-gyu Common Korean man's name choemiyang@hotmail.com 미향 최 Choi Mi-hyang Common Korean woman's name; tied to GitHub…",
+          "context_origin": "text",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -17721,7 +17755,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -17738,6 +17772,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Every commit author matched an address on Genians' October list: GitHub account Commit author Role in the repositories Dbaras6600 baras6600@daum.net Stolen-data drop and lures philipshub killer05121@outlook.com Command dead drop and tools sandycpuhub pooh04211@outlook.com Command…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -18289,7 +18334,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -18317,6 +18362,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…\"Oura Kano,\" \"Oura Kano-Eros\" ALIEN TXTBASE stealer logs, with a GitHub login hera1030109@gmail.com August Freelancer None None belendong40@gmail.com August Fiverr \"Belen Dong\" None brandonleeodd.93@gmail.com August Have I Been Pwned record \"Brandon Lee\" \"June 2026 Stealer Logs,\" per…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -21732,7 +21788,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -21760,6 +21816,17 @@
           "section": "3-4. WPS Office 중국어 환경 및 시스템 제조사 Arirang",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…logs, with a GitHub login hera1030109@gmail.com August Freelancer None None belendong40@gmail.com August Fiverr \"Belen Dong\" None brandonleeodd.93@gmail.com August Have I Been Pwned record \"Brandon Lee\" \"June 2026 Stealer Logs,\" per HIBP via OSINT Industries devlion413@gmail.com August…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -23600,6 +23667,36 @@
           "section": "Earlier Overlapping Campaign",
           "pulled_at": "2026-09-11",
           "source_sha256": "75bfaae02bbf87fa1414e5719165d20a4f1e1acec1ebe7fba2b5f71c97dca5de"
+        }
+      ]
+    },
+    {
+      "id": "email-address-9e5fa3e74e7a",
+      "ioc_type": "email_address",
+      "value": "c0653159@gmail.com",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…The account used \"Christopher\" as its display name and c0653159@gmail.com as its registration email address. [Figure 4-1] Dropbox Account Registration Details The information collection script in this…",
+          "context_origin": "text",
+          "section": "4-1. Exfiltration Infrastructure Registration Details",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -25531,7 +25628,7 @@
         "APT37"
       ],
       "first_seen": "2026-09-06",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -25570,6 +25667,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…All five commits are signed choemiyang@hotmail.com, an address on Genians' October list, and VULONE named the account among its \"lure-burst accounts.\" The five ZIP files in those…",
+          "context_origin": "text",
+          "section": "The choemiyang Account",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -34763,7 +34871,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -34791,6 +34899,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…brandonleeodd.93@gmail.com August Have I Been Pwned record \"Brandon Lee\" \"June 2026 Stealer Logs,\" per HIBP via OSINT Industries devlion413@gmail.com August Coursera, signed in with Google \"Ho Bai\" None holowin401@gmail.com August None found None None holowin@gmail.com August…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -40906,6 +41025,17 @@
           "section": "Super-Administrator of the Consoles: eros1030109@gmail.com",
           "pulled_at": "2026-11-12",
           "source_sha256": "8e8f1aacf79d110fabbba04eed1758a6e1777d9ef30d42ecdf52394f0f997aee"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…The breach record for eros1030109@gmail.com pairs it with a saved GitHub sign-in, so that address was in use for GitHub by early 2025.…",
+          "context_origin": "text",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -48261,7 +48391,7 @@
         "PolinRider"
       ],
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -48289,6 +48419,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…extension Folder extensions/job-new-alerts ; native messaging host com.accurasoft.jobalerts Chrome and Edge (JFrog) Email addresses handy.apple117@gmail.com , antongoss11995@gmail.com npm publishers tied to the hiring accounts (JFrog) References JFrog Security Research: Contagious…",
+          "context_origin": "text",
+          "section": "Indicators of Compromise",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -49741,7 +49882,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -49758,6 +49899,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…lures (named by Genians) megabox26 youth3920@outlook.com, signing as \"downportal48\" German lures montry111 montry111@proton.me and hazama09093@outlook.com (\"hazama-khan\") Korean lures and a booby-trapped code library choemiyang choemiyang@hotmail.com Korean finance lures jamjack2026 ,…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -50458,7 +50610,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -50486,6 +50638,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Kano\" None eros1030109@gmail.com August Pinterest \"Oura Kano,\" \"Oura Kano-Eros\" ALIEN TXTBASE stealer logs, with a GitHub login hera1030109@gmail.com August Freelancer None None belendong40@gmail.com August Fiverr \"Belen Dong\" None brandonleeodd.93@gmail.com August Have I Been Pwned…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -51505,7 +51668,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -51533,6 +51696,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…infected or the address was used by someone else first, the records show the address predates the August campaign. The Aptoide record for holowin@gmail.com comes from an April 2020 breach of the Android app store that, per HIBP's Aptoide page , exposed names, email and IP addresses.…",
+          "context_origin": "text",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -51547,7 +51721,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -51575,6 +51749,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…\"June 2026 Stealer Logs,\" per HIBP via OSINT Industries devlion413@gmail.com August Coursera, signed in with Google \"Ho Bai\" None holowin401@gmail.com August None found None None holowin@gmail.com August XVideos None Aptoide app-store breach johnstones19850308@gmail.com August…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -54119,7 +54304,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -54136,6 +54321,17 @@
           "section": "3-1. Attack Disguised as a Speaker Invitation to the Korea Cyber Security Conference",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Genians said the address info.seclab.noreply@gmail.com was copied on that invite and showed up again against a second Ukrainian expert.…",
+          "context_origin": "text",
+          "section": "What Is Kimsuky's Operation GitPower?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -57716,7 +57912,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -57733,6 +57929,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…and tools sandycpuhub pooh04211@outlook.com Command dead drop and tools nemotomui nemotom@outlook.kr AnyDesk staging twilerstar jamestony88@proton.me Tools and archives omskiwdcvoiuyfd0998 omski00@outlook.com Ukraine lures (named by Genians) megabox26 youth3920@outlook.com, signing…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -62170,7 +62377,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -62198,6 +62405,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…\"Ho Bai\" None holowin401@gmail.com August None found None None holowin@gmail.com August XVideos None Aptoide app-store breach johnstones19850308@gmail.com August Jotform None None trungvo5131993@gmail.com August Replit \"Trung Vo\" None whitewolf20000312@gmail.com August None found None…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -66547,7 +66765,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -66564,6 +66782,17 @@
           "section": "3-1. Attack Disguised as a Speaker Invitation to the Korea Cyber Security Conference",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…by security systems, and select only targets who actually respond,\" Genians wrote in the same report . One lure, sent August 6 from kcscon@proton.me, posed as an invitation to speak at the Korea Cyber Security Conference (KCSCON 2026).…",
+          "context_origin": "text",
+          "section": "What Is Kimsuky's Operation GitPower?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -68218,7 +68447,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -68235,6 +68464,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…list: GitHub account Commit author Role in the repositories Dbaras6600 baras6600@daum.net Stolen-data drop and lures philipshub killer05121@outlook.com Command dead drop and tools sandycpuhub pooh04211@outlook.com Command dead drop and tools nemotomui nemotom@outlook.kr AnyDesk…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -72893,7 +73133,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -72910,6 +73150,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…First registered site found Display name Breach records info.seclab.noreply@gmail.com October (Ukraine) Google account None None leomsoite@gmail.com October None found None None srahnn21@gmail.com October Fiverr None None apollo1030109@gmail.com August Guru; Trello \"Oura Kano\" None…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -83281,7 +83532,7 @@
         "APT37"
       ],
       "first_seen": "2026-09-06",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -83320,6 +83571,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Ukraine lures (named by Genians) megabox26 youth3920@outlook.com, signing as \"downportal48\" German lures montry111 montry111@proton.me and hazama09093@outlook.com (\"hazama-khan\") Korean lures and a booby-trapped code library choemiyang choemiyang@hotmail.com Korean…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -84120,7 +84382,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -84137,6 +84399,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Kim Min-gyu Common Korean man's name choemiyang@hotmail.com 미향 최 Choi Mi-hyang Common Korean woman's name; tied to GitHub choemiyang murayamasi26@outlook.com 야마시 무라 Mura Yamashi Korean-script spelling of the Japanese-looking handle \"murayamasi\" yaosiyaosi26@hotmail.com 오시 야 Ya Osi…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -86248,7 +86521,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -86265,6 +86538,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…killer05121@outlook.com Command dead drop and tools sandycpuhub pooh04211@outlook.com Command dead drop and tools nemotomui nemotom@outlook.kr AnyDesk staging twilerstar jamestony88@proton.me Tools and archives omskiwdcvoiuyfd0998 omski00@outlook.com Ukraine lures (named by…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -89836,7 +90120,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-09-22",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -89864,6 +90148,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…and tools nemotomui nemotom@outlook.kr AnyDesk staging twilerstar jamestony88@proton.me Tools and archives omskiwdcvoiuyfd0998 omski00@outlook.com Ukraine lures (named by Genians) megabox26 youth3920@outlook.com, signing as \"downportal48\" German lures montry111…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -93978,7 +94273,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -93995,6 +94290,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…Dbaras6600 baras6600@daum.net Stolen-data drop and lures philipshub killer05121@outlook.com Command dead drop and tools sandycpuhub pooh04211@outlook.com Command dead drop and tools nemotomui nemotom@outlook.kr AnyDesk staging twilerstar jamestony88@proton.me Tools and archives…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -109782,7 +110088,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -109799,6 +110105,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…records info.seclab.noreply@gmail.com October (Ukraine) Google account None None leomsoite@gmail.com October None found None None srahnn21@gmail.com October Fiverr None None apollo1030109@gmail.com August Guru; Trello \"Oura Kano\" None eros1030109@gmail.com August Pinterest \"Oura…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -119977,7 +120294,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -120005,6 +120322,17 @@
           "section": "Email",
           "pulled_at": "2026-09-12",
           "source_sha256": "c6e2b813c0376efb98f99ac002a7ec021ee6271938c91358162ff0e9f26a1634"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…None None holowin@gmail.com August XVideos None Aptoide app-store breach johnstones19850308@gmail.com August Jotform None None trungvo5131993@gmail.com August Replit \"Trung Vo\" None whitewolf20000312@gmail.com August None found None None No phone numbers or recovery addresses came…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -125473,7 +125801,7 @@
         "APT37"
       ],
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-09",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -125512,6 +125840,17 @@
           "section": "Email",
           "pulled_at": "2026-09-27",
           "source_sha256": "cd0432983621decfb50094ac813a2de08cb2ffc033d858b5b9ffd640994cfa07"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…app-store breach johnstones19850308@gmail.com August Jotform None None trungvo5131993@gmail.com August Replit \"Trung Vo\" None whitewolf20000312@gmail.com August None found None None No phone numbers or recovery addresses came back for any Gmail address in the data OctoProbe could…",
+          "context_origin": "list",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -128194,7 +128533,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -128211,6 +128550,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…to GitHub choemiyang murayamasi26@outlook.com 야마시 무라 Mura Yamashi Korean-script spelling of the Japanese-looking handle \"murayamasi\" yaosiyaosi26@hotmail.com 오시 야 Ya Osi Korean-script spelling of the handle \"yaosiyaosi\" OSINT Industries lists 최 (Choi) and 김 (Kim) as family names, so the…",
+          "context_origin": "text",
+          "section": "What OSINT Industries and Breach Data Show",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -129205,7 +129555,7 @@
         "Kimsuky"
       ],
       "first_seen": "2026-10-11",
-      "last_seen": "2026-10-11",
+      "last_seen": "2026-11-03",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -129222,6 +129572,17 @@
           "section": "Email",
           "pulled_at": "2026-10-20",
           "source_sha256": "cbe387c163a364727bda9ece4b49b12f9e51b87af8a1decb105750fcdc574421"
+        },
+        {
+          "url": "https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/",
+          "title": "Kimsuky (APT43) Operation GitPower: The GitHub Account Trail",
+          "publisher": "Octoprobe",
+          "published": "2026-11-03",
+          "context": "…jamestony88@proton.me Tools and archives omskiwdcvoiuyfd0998 omski00@outlook.com Ukraine lures (named by Genians) megabox26 youth3920@outlook.com, signing as \"downportal48\" German lures montry111 montry111@proton.me and hazama09093@outlook.com (\"hazama-khan\") Korean lures and a…",
+          "context_origin": "list",
+          "section": "Which Email Addresses and GitHub Accounts Does Kimsuky Use?",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "d841e182f3b05e593a05a868c39f879b47cca2acf549d1a5e4374f8552725df3"
         }
       ]
     },
@@ -182262,6 +182623,36 @@
       ]
     },
     {
+      "id": "file-hash-f7c5ee6eca5d",
+      "ioc_type": "file_hash",
+      "value": "6985f297c03520a5852734a385322d8d",
+      "display": "6985f297c035...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…The binary comparison of the three variants is shown below. Item Variant 1 Variant 2 Variant 3 MD5 6985f297c03520a5852734a385322d8d a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 C2 103.81.116.10 103.81.116.10 211.223.14.75…",
+          "context_origin": "text",
+          "section": "4-3. Comparison of XenoRAT Variant Build Fingerprints",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
+        }
+      ]
+    },
+    {
       "id": "file-hash-ea15a9e88b41",
       "ioc_type": "file_hash",
       "value": "699cd6c292b8a5933dabee63c74a9a3069ed6432c3433ab945ab46fe816d9e2c",
@@ -187152,6 +187543,36 @@
           "section": "Details",
           "pulled_at": "2026-09-12",
           "source_sha256": "adabc86a59f352104e1e0bc80d42eb0ffea716a972920236ef6d21685f57a1f5"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-7b213660cd71",
+      "ioc_type": "file_hash",
+      "value": "7575d230350299cfde0c4f993d761333",
+      "display": "7575d2303502...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…IoC (Indicator of Compromise) MD5 6985f297c03520a5852734a385322d8d 7575d230350299cfde0c4f993d761333 a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 cbcb66b530fb4f03d7dc9d55271b2ce4…",
+          "context_origin": "text",
+          "section": "MD5",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -205302,6 +205723,36 @@
       ]
     },
     {
+      "id": "file-hash-907c3efec2b4",
+      "ioc_type": "file_hash",
+      "value": "a151531b792b1df1eec8d3a6a8e1ded5",
+      "display": "a151531b792b...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…IoC (Indicator of Compromise) MD5 6985f297c03520a5852734a385322d8d 7575d230350299cfde0c4f993d761333 a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 cbcb66b530fb4f03d7dc9d55271b2ce4 ef317291bf88651666133abe84f115f0 C2…",
+          "context_origin": "text",
+          "section": "MD5",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
+        }
+      ]
+    },
+    {
       "id": "file-hash-dabfdf9f9983",
       "ioc_type": "file_hash",
       "value": "a15c386db0a3d0d208042d0982f21f37",
@@ -205328,6 +205779,36 @@
           "section": "다양한 주제의 보도자료를 사칭한 Kimsuky 공격시도",
           "pulled_at": "2026-09-12",
           "source_sha256": "a1056a0f2729f792a932baefd251738eb574ef7a05924d1d568c7ec80fd76f5b"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-1f3c41c1d481",
+      "ioc_type": "file_hash",
+      "value": "a15df586bf29e7c1a5db64d603cee382",
+      "display": "a15df586bf29...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…of Compromise) MD5 6985f297c03520a5852734a385322d8d 7575d230350299cfde0c4f993d761333 a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 cbcb66b530fb4f03d7dc9d55271b2ce4 ef317291bf88651666133abe84f115f0 C2 103.81.116.10 211.223.14.75…",
+          "context_origin": "text",
+          "section": "MD5",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -221580,6 +222061,36 @@
       ]
     },
     {
+      "id": "file-hash-1dc5271a94d7",
+      "ioc_type": "file_hash",
+      "value": "cbcb66b530fb4f03d7dc9d55271b2ce4",
+      "display": "cbcb66b530fb...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…7575d230350299cfde0c4f993d761333 a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 cbcb66b530fb4f03d7dc9d55271b2ce4 ef317291bf88651666133abe84f115f0 C2 103.81.116.10 211.223.14.75 207.148.112.166 185.27.134.207…",
+          "context_origin": "text",
+          "section": "MD5",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
+        }
+      ]
+    },
+    {
       "id": "file-hash-417c68f10033",
       "ioc_type": "file_hash",
       "value": "cbf4cfa2d3c3fb04fe349161e051a8cf9b6a29f8af0c3d93db953e5b5dc39c86",
@@ -233954,6 +234465,36 @@
           "section": "MD5",
           "pulled_at": "2026-09-12",
           "source_sha256": "c2bc6c80cafaac3097b2d7ee08b07c8472f451c42aef203019a8d28cb82b85a4"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-dcc39bef034d",
+      "ioc_type": "file_hash",
+      "value": "ef317291bf88651666133abe84f115f0",
+      "display": "ef317291bf88...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…a151531b792b1df1eec8d3a6a8e1ded5 a15df586bf29e7c1a5db64d603cee382 cbcb66b530fb4f03d7dc9d55271b2ce4 ef317291bf88651666133abe84f115f0 C2 103.81.116.10 211.223.14.75 207.148.112.166 185.27.134.207 185.27.134.120 Domain…",
+          "context_origin": "text",
+          "section": "MD5",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -272681,7 +273222,7 @@
         "PolinRider"
       ],
       "first_seen": "2026-11-09",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -272709,6 +273250,28 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://abnormal.ai/blog/polinrider-fake-coding-assignments",
+          "title": "PolinRider: How Malicious Coding Assignments Steal Developer Secrets and Backdoor Their Tools",
+          "publisher": "Abnormal",
+          "published": null,
+          "context": "…address, even as the infrastructure it contacts changes. The recovered loaders resolved backend addresses including `95.135.181.151` and `103.179.142.155` ; the latter was unavailable during downstream analysis.…",
+          "context_origin": "text",
+          "section": "Ethereum Transactions Allow the Malware to Locate Changing C2 Servers",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "51cab1554d5fcc40fa1e4ee7ec16b304536e87083baf05e867ce95de40169d44"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…September 28, 09:16 92 91.218.183.174 September 28, 10:18 October 6, 04:38 67 23.27.13.72 October 14, 00:06 October 14, 00:14 5 103.179.142.155 October 16, 05:24 October 19, 10:22 27 The date ranges for 193.247.144.38 , 166.88.134.75 and 91.218.183.174 overlap because the…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -274126,7 +274689,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-11-15",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -274154,6 +274717,17 @@
           "section": "Conclusion",
           "pulled_at": "2026-11-12",
           "source_sha256": "055f135c35c73b133e7c83560a4cb64abeac9be101a48f075b5dfa46e6c13fdf"
+        },
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…Collection Date Code Samples Main Function C2 / Exfiltration Channel 2026.06.18 1 In-memory execution of an XenoRAT variant 103.81.116.10 (IN) 2026.09.18 3 System information collection and exfiltration Dropbox API 2026.09.27 1 System information collection and…",
+          "context_origin": "text",
+          "section": "3-3. Attacks Through the Note Page",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -288874,7 +289448,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-10-29",
-      "last_seen": "2026-10-29",
+      "last_seen": "2026-11-13",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -288891,6 +289465,28 @@
           "section": "C2 Servers and the X-File-Mtime-Ms Header",
           "pulled_at": "2026-11-12",
           "source_sha256": "9cc5163385fba101783b17a52f31e18111a183badda0baa7cf73ae15fe78d2ea"
+        },
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…GET http://138.226.247.154/session/8f3d559759e67132 returns 286,820 bytes over plain HTTP, no authentication, no session, no referrer check. It is not a config blob.…",
+          "context_origin": "text",
+          "section": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        },
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…destinations to visit: db-connectors.vercel.app , chainmanamgentagency.info , green-horse-42739.zap.cloud , blue-eagle-26751.zap.cloud , 138.226.247.154 , 94.249.185.106 , 147.189.169.26 , 185.248.161.18 . C2 and infrastructure Indicator Role Detail db-connectors.vercel.app Stage…",
+          "context_origin": "text",
+          "section": "Hunting queries",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "9bd069a386fe6d33c7ea53d7392876dc675ab0d7a9ac2dae4875987ca42a96a1"
         }
       ]
     },
@@ -296136,6 +296732,47 @@
           "section": "Infrastructure",
           "pulled_at": "2026-09-12",
           "source_sha256": "93fbf7a4eaa03a1e2933b37632a338c0361eb79c2d9331f988ef862818f3639f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-ace7da79d123",
+      "ioc_type": "ip_address",
+      "value": "147.189.169.26",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…AS43641 Sollutium, NL loader, RAT kit, ABE payload 94.249.185.106:443 AS206996 ZAP-Hosting current C2, and a data store 147.189.169.26:3011 AS206996 ZAP-Hosting backup C2, and a data store 185.248.161.18:443 AS199701 SeedVPS, NL NetSupport gateway Two of those command…",
+          "context_origin": "text",
+          "section": "Where these hosts live",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        },
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…, chainmanamgentagency.info , green-horse-42739.zap.cloud , blue-eagle-26751.zap.cloud , 138.226.247.154 , 94.249.185.106 , 147.189.169.26 , 185.248.161.18 . C2 and infrastructure Indicator Role Detail db-connectors.vercel.app Stage one loader Vercel-hosted function,…",
+          "context_origin": "text",
+          "section": "Hunting queries",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "9bd069a386fe6d33c7ea53d7392876dc675ab0d7a9ac2dae4875987ca42a96a1"
         }
       ]
     },
@@ -305093,7 +305730,7 @@
         "EtherHiding"
       ],
       "first_seen": "2026-07-28",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -305231,6 +305868,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…Decoded, the history is: Server address in the transaction First posted (UTC) Last posted (UTC) Transactions 166.88.134.62 July 25, 06:48 August 22, 00:08 178 23.27.13.135 August 22, 01:28 August 27, 23:57 48 166.88.73.46 August 28, 01:46 September 3,…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -305247,7 +305895,7 @@
         "NullReceiver"
       ],
       "first_seen": "2026-09-21",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -305308,6 +305956,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…August 27, 23:57 48 166.88.73.46 August 28, 01:46 September 3, 13:13 61 193.247.144.38 September 4, 00:49 October 13, 23:57 129 166.88.134.75 September 17, 10:35 September 28, 09:16 92 91.218.183.174 September 28, 10:18 October 6, 04:38 67 23.27.13.72 October 14, 00:06…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -306014,7 +306673,7 @@
         "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -306086,6 +306745,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…posted (UTC) Transactions 166.88.134.62 July 25, 06:48 August 22, 00:08 178 23.27.13.135 August 22, 01:28 August 27, 23:57 48 166.88.73.46 August 28, 01:46 September 3, 13:13 61 193.247.144.38 September 4, 00:49 October 13, 23:57 129 166.88.134.75 September 17, 10:35…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -318608,6 +319278,47 @@
       ]
     },
     {
+      "id": "ip-address-2ded62b99f59",
+      "ioc_type": "ip_address",
+      "value": "185.248.161.18",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…AS206996 ZAP-Hosting current C2, and a data store 147.189.169.26:3011 AS206996 ZAP-Hosting backup C2, and a data store 185.248.161.18:443 AS199701 SeedVPS, NL NetSupport gateway Two of those command hosts sit on one provider.…",
+          "context_origin": "text",
+          "section": "Where these hosts live",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        },
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…they survive the operator replacing every binary. Stage 6: The command channel The gateway at chainmanamgentagency.info resolves to 185.248.161.18 and identifies itself as NetSupport Gateway/1.92 (Windows NT) .…",
+          "context_origin": "text",
+          "section": "Stage 6: The command channel",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "9bd069a386fe6d33c7ea53d7392876dc675ab0d7a9ac2dae4875987ca42a96a1"
+        }
+      ]
+    },
+    {
       "id": "ip-address-3f20e49ccf4c",
       "ioc_type": "ip_address",
       "value": "185.249.196.106",
@@ -318842,7 +319553,7 @@
         "Kimsuky"
       ],
       "first_seen": "2024-12-02",
-      "last_seen": "2024-12-04",
+      "last_seen": "2026-11-15",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -318870,6 +319581,17 @@
           "section": "IP",
           "pulled_at": "2026-09-12",
           "source_sha256": "f95de04be265cee09bd28fd504fa2b1d3423b5418f38240cc1a714d69e56e460"
+        },
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…The infrastructure used at that time was inmain.22web.org (185.27.134.207) and owna.loveslife.biz (185.27.134.120), both within the 185.27.134.0/24 subnet. [Figure 4-2] Phishing Email Disguised as a NAVER MYBOX Security Notification The…",
+          "context_origin": "text",
+          "section": "4-2. Phishing Page Layout and C2 Network Overlap",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -319016,6 +319738,36 @@
           "section": "IP",
           "pulled_at": "2026-09-12",
           "source_sha256": "f95de04be265cee09bd28fd504fa2b1d3423b5418f38240cc1a714d69e56e460"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-7f388029fe80",
+      "ioc_type": "ip_address",
+      "value": "185.27.134.207",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…The infrastructure used at that time was inmain.22web.org (185.27.134.207) and owna.loveslife.biz (185.27.134.120), both within the 185.27.134.0/24 subnet. [Figure 4-2] Phishing Email Disguised as a NAVER…",
+          "context_origin": "text",
+          "section": "4-2. Phishing Page Layout and C2 Network Overlap",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -324475,7 +325227,7 @@
         "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -324547,6 +325299,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…06:48 August 22, 00:08 178 23.27.13.135 August 22, 01:28 August 27, 23:57 48 166.88.73.46 August 28, 01:46 September 3, 13:13 61 193.247.144.38 September 4, 00:49 October 13, 23:57 129 166.88.134.75 September 17, 10:35 September 28, 09:16 92 91.218.183.174 September 28, 10:18…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -331579,6 +332342,36 @@
       ]
     },
     {
+      "id": "ip-address-46059545dc3c",
+      "ioc_type": "ip_address",
+      "value": "207.148.112.166",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…(3), document file exfiltration (1) Dropbox API, oppsite.dothome.co.kr 2026.10.16 1 NodeLinkRAT installation and execution 207.148.112.166 (JP) [Table 3-3] Attacks Through the Note Page 3-3-1.…",
+          "context_origin": "text",
+          "section": "3-3. Attacks Through the Note Page",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
+        }
+      ]
+    },
+    {
       "id": "ip-address-effbf15d98f8",
       "ioc_type": "ip_address",
       "value": "207.226.171.35",
@@ -334390,6 +335183,36 @@
           "section": "Appendix C: Astrill VPN Nodes",
           "pulled_at": "2026-09-12",
           "source_sha256": "cf19e2de6b1cbccb8d5a118a487f8b2f94cb85661360e29ae1fb7332929ebba8"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-bdbae01eb6f5",
+      "ioc_type": "ip_address",
+      "value": "211.223.14.75",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-11-15",
+      "last_seen": "2026-11-15",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+          "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+          "publisher": "Genians",
+          "published": "2026-11-15",
+          "context": "…Two use 103.81.116.10 in India as their command server, while the third uses 211.223.14.75 in South Korea.…",
+          "context_origin": "text",
+          "section": "4-3. Comparison of XenoRAT Variant Build Fingerprints",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "847702981a21b674641cc1acc9ef892bab5976c65f1863dd136b5f2c32010294"
         }
       ]
     },
@@ -343635,7 +344458,7 @@
         "NullReceiver"
       ],
       "first_seen": "2026-08-29",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -343718,6 +344541,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…address in the transaction First posted (UTC) Last posted (UTC) Transactions 166.88.134.62 July 25, 06:48 August 22, 00:08 178 23.27.13.135 August 22, 01:28 August 27, 23:57 48 166.88.73.46 August 28, 01:46 September 3, 13:13 61 193.247.144.38 September 4, 00:49 October…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -343816,7 +344650,7 @@
         "PolinRider"
       ],
       "first_seen": "2026-10-18",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -343855,6 +344689,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…13, 23:57 129 166.88.134.75 September 17, 10:35 September 28, 09:16 92 91.218.183.174 September 28, 10:18 October 6, 04:38 67 23.27.13.72 October 14, 00:06 October 14, 00:14 5 103.179.142.155 October 16, 05:24 October 19, 10:22 27 The date ranges for 193.247.144.38 ,…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -381386,7 +382231,7 @@
         "NullReceiver"
       ],
       "first_seen": "2026-09-30",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -381436,6 +382281,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…3, 13:13 61 193.247.144.38 September 4, 00:49 October 13, 23:57 129 166.88.134.75 September 17, 10:35 September 28, 09:16 92 91.218.183.174 September 28, 10:18 October 6, 04:38 67 23.27.13.72 October 14, 00:06 October 14, 00:14 5 103.179.142.155 October 16, 05:24 October…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -383908,6 +384764,47 @@
       ]
     },
     {
+      "id": "ip-address-e504ca6d97a5",
+      "ioc_type": "ip_address",
+      "value": "94.249.185.106",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…live db-connectors.vercel.app Vercel serverless stage one 138.226.247.154:80/443 AS43641 Sollutium, NL loader, RAT kit, ABE payload 94.249.185.106:443 AS206996 ZAP-Hosting current C2, and a data store 147.189.169.26:3011 AS206996 ZAP-Hosting backup C2, and a data…",
+          "context_origin": "text",
+          "section": "Where these hosts live",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        },
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…visit: db-connectors.vercel.app , chainmanamgentagency.info , green-horse-42739.zap.cloud , blue-eagle-26751.zap.cloud , 138.226.247.154 , 94.249.185.106 , 147.189.169.26 , 185.248.161.18 . C2 and infrastructure Indicator Role Detail db-connectors.vercel.app Stage one loader…",
+          "context_origin": "text",
+          "section": "Hunting queries",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "9bd069a386fe6d33c7ea53d7392876dc675ab0d7a9ac2dae4875987ca42a96a1"
+        }
+      ]
+    },
+    {
       "id": "ip-address-9637dd9f2f08",
       "ioc_type": "ip_address",
       "value": "94.46.23.20",
@@ -384008,7 +384905,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-11-04",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -384047,6 +384944,17 @@
           "section": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
           "pulled_at": "2026-11-15",
           "source_sha256": "2fa90672484c0f7f1912f0366d2a12532461b0352dc9c4066071ffe12ba97ba5"
+        },
+        {
+          "url": "https://abnormal.ai/blog/polinrider-fake-coding-assignments",
+          "title": "PolinRider: How Malicious Coding Assignments Steal Developer Secrets and Backdoor Their Tools",
+          "publisher": "Abnormal",
+          "published": null,
+          "context": "…the same on-chain address, even as the infrastructure it contacts changes. The recovered loaders resolved backend addresses including `95.135.181.151` and `103.179.142.155` ; the latter was unavailable during downstream analysis.…",
+          "context_origin": "text",
+          "section": "Ethereum Transactions Allow the Malware to Locate Changing C2 Servers",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "51cab1554d5fcc40fa1e4ee7ec16b304536e87083baf05e867ce95de40169d44"
         }
       ]
     },
@@ -396628,6 +397536,36 @@
       ]
     },
     {
+      "id": "wallet-address-fb3a47f0bf7c",
+      "ioc_type": "wallet_address",
+      "value": "0x12ea80238c7d805d003ce793594e92d84a6f4e8d",
+      "display": "Ethereum",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…(Cyrillic: БОЙКОВ, Илья Александрович), Russia; DOB 30 May 1994; nationality Russia; Gender Male; Digital Currency Address - ETH 0x12Ea80238C7d805D003ce793594e92d84A6f4E8d; alt.…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-978d24b23b2c",
       "ioc_type": "wallet_address",
       "value": "0x146ab113a6d69033cccdb4eaae61c496c2faaf05",
@@ -398886,6 +399824,36 @@
       ]
     },
     {
+      "id": "wallet-address-cfd44be95628",
+      "ioc_type": "wallet_address",
+      "value": "0x761edd5e4546229a0bd35ae99b4d3d01cf4a3510",
+      "display": "Ethereum",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Digital Currency Address - ETH 0x761edd5e4546229a0bd35ae99b4d3d01cf4a3510; Secondary sanctions risk: North Korea Sanctions Regulations, sections 510.201 and 510.210; Transactions Prohibited For Persons Owned or…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-c651e068439e",
       "ioc_type": "wallet_address",
       "value": "0x76ea76ca4eb727f18956ab93445a94c5280412b9",
@@ -400197,7 +401165,7 @@
         "EtherHiding"
       ],
       "first_seen": "2026-08-02",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -400269,6 +401237,17 @@
           "section": "The site hands out the loader itself",
           "pulled_at": "2026-11-12",
           "source_sha256": "36cabb7d96798eb4b1822e43adc024e7116c018e580a3f45d76cd2bae21ce374"
+        },
+        {
+          "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+          "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+          "publisher": "StepSecurity",
+          "published": null,
+          "context": "…It reads the most recent transaction sent from the Ethereum wallet 0xa322E5f3D311D3080e6f0121063e9aDC2490Ef1a and decodes the server address from the transaction's recipient field.…",
+          "context_origin": "text",
+          "section": "The attacker's server history is public",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "cbeefd692d96d0cd2189268b7a968233453683279b3a1c044e0f9746a3ec3c0d"
         }
       ]
     },
@@ -402104,6 +403083,36 @@
           "section": "1HmqvgSXUVES1jn4TQPzk9dxo1NE8wim2T - Vitaliy Sergeyevich Andreyev's HTX Deposit Address",
           "pulled_at": "2026-09-01",
           "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-1dfa29169d50",
+      "ioc_type": "wallet_address",
+      "value": "0xe4c9a7f68b1eba4508f54f07f7378847318dd1a3",
+      "display": "Ethereum",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…KIM, Ki-hyo'k), Russia; DOB 30 May 1980; nationality Korea, North; Gender Male; Digital Currency Address - ETH 0xE4C9a7F68B1EbA4508f54f07f7378847318dD1A3; Secondary sanctions risk: North Korea Sanctions Regulations, sections 510.201 and 510.210; Transactions Prohibited For Persons Owned or…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
         }
       ]
     },
@@ -404793,6 +405802,36 @@
       ]
     },
     {
+      "id": "wallet-address-5eba90213154",
+      "ioc_type": "wallet_address",
+      "value": "TCV4qdpTxoMyqkn7sSPeRrXmhH5JFxMvmT",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Financial Institutions: North Korea Sanctions Regulations section 510.214; Digital Currency Address - TRX TCV4qdpTxoMyqkn7sSPeRrXmhH5JFxMvmT; alt.…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-57221bc2ada1",
       "ioc_type": "wallet_address",
       "value": "TDe2UNAvuUnTbbDo7518eMe3TXN5qJW8Ft",
@@ -404963,6 +406002,36 @@
           "section": null,
           "pulled_at": "2026-10-01",
           "source_sha256": "df1e9b7a791151a22d1c6b7ce824c69367c4f78fa9b78fd37d9fccafda196c5c"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-29363a40488e",
+      "ioc_type": "wallet_address",
+      "value": "TFksjBcHPYqgAax2USheQuaT1ydRKyZRdg",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Digital Currency Address - TRX TFksjBcHPYqgAax2USheQuaT1ydRKyZRdg; National ID No.…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
         }
       ]
     },
@@ -405454,6 +406523,36 @@
       ]
     },
     {
+      "id": "wallet-address-3dc58fddd7b0",
+      "ioc_type": "wallet_address",
+      "value": "TNrWrhQLBUCJYW79VKcAHhGH4FWBZtXitN",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…TNrWrhQLBUCJYW79VKcAHhGH4FWBZtXitN 433,494 TRX major hub TWjHoMZ6SXhYWCistSRv8ChUfQ2fUbjQXc 33,421 TRX relay / collector TVewvAwcY16MzEFtUtSn2wZAURwH1WxWyA 2,657 TRX…",
+          "context_origin": "text",
+          "section": "10. Where it goes",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-14f42b434a02",
       "ioc_type": "wallet_address",
       "value": "TNrX2FwrHKoo4XACGkmSzqeK4pdnKYn6Z7",
@@ -405577,6 +406676,66 @@
       ]
     },
     {
+      "id": "wallet-address-36836b060f80",
+      "ioc_type": "wallet_address",
+      "value": "TPudUo3eskSnubeXEauJqd46aCkuNnsWgo",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…TRX major hub TWjHoMZ6SXhYWCistSRv8ChUfQ2fUbjQXc 33,421 TRX relay / collector TVewvAwcY16MzEFtUtSn2wZAURwH1WxWyA 2,657 TRX distributor TPudUo3eskSnubeXEauJqd46aCkuNnsWgo 0 TRX pass-through TB1pNBTuLwdc66S6ZTRfdPdUbQHiLWNF5H 0 TRX pass-through The distributor fans out in equal splits inside one block:…",
+          "context_origin": "text",
+          "section": "10. Where it goes",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-e90a07c69c9a",
+      "ioc_type": "wallet_address",
+      "value": "TQCBdU4K92oxLAkzwexZpqVZJhmPbtLYMm",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Digital Currency Address - TRX TQCBdU4K92oxLAkzwexZpqVZJhmPbtLYMm; alt.…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-21d10f2f6eec",
       "ioc_type": "wallet_address",
       "value": "TQdNvhGKQtVKNhBSJ1xbisxiNxUCgPBzCM",
@@ -405634,6 +406793,36 @@
           "section": "Show Me The Money",
           "pulled_at": "2026-10-03",
           "source_sha256": "5d17387c5df7092084f290d6172c4258f55477a27bb2b616d1373a4ffa26ed94"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-7c7d2f0efbf3",
+      "ioc_type": "wallet_address",
+      "value": "TQKoDq5aCrWAciiNtete5pDYVN38i4qFN1",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Financial Institutions: North Korea Sanctions Regulations section 510.214; Digital Currency Address - TRX TQKoDq5aCrWAciiNtete5pDYVN38i4qFN1; alt.…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
         }
       ]
     },
@@ -405740,6 +406929,36 @@
       ]
     },
     {
+      "id": "wallet-address-bf68d9add35a",
+      "ioc_type": "wallet_address",
+      "value": "TVewvAwcY16MzEFtUtSn2wZAURwH1WxWyA",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…TNrWrhQLBUCJYW79VKcAHhGH4FWBZtXitN 433,494 TRX major hub TWjHoMZ6SXhYWCistSRv8ChUfQ2fUbjQXc 33,421 TRX relay / collector TVewvAwcY16MzEFtUtSn2wZAURwH1WxWyA 2,657 TRX distributor TPudUo3eskSnubeXEauJqd46aCkuNnsWgo 0 TRX pass-through TB1pNBTuLwdc66S6ZTRfdPdUbQHiLWNF5H 0 TRX pass-through The…",
+          "context_origin": "text",
+          "section": "10. Where it goes",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
+        }
+      ]
+    },
+    {
       "id": "wallet-address-f6d5c3070b9e",
       "ioc_type": "wallet_address",
       "value": "TWcfg4q4wH36J5R4Au8KnPFrxcrQd1YenP",
@@ -405767,6 +406986,36 @@
           "section": null,
           "pulled_at": "2026-10-01",
           "source_sha256": "df1e9b7a791151a22d1c6b7ce824c69367c4f78fa9b78fd37d9fccafda196c5c"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-00e3355b39bc",
+      "ioc_type": "wallet_address",
+      "value": "TWjHoMZ6SXhYWCistSRv8ChUfQ2fUbjQXc",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "first_seen": "2026-11-13",
+      "last_seen": "2026-11-13",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+          "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+          "publisher": "RedAsgard",
+          "published": "2026-11-13",
+          "context": "…TNrWrhQLBUCJYW79VKcAHhGH4FWBZtXitN 433,494 TRX major hub TWjHoMZ6SXhYWCistSRv8ChUfQ2fUbjQXc 33,421 TRX relay / collector TVewvAwcY16MzEFtUtSn2wZAURwH1WxWyA 2,657 TRX distributor TPudUo3eskSnubeXEauJqd46aCkuNnsWgo 0 TRX…",
+          "context_origin": "text",
+          "section": "10. Where it goes",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "265e3a95570778e395f3e23b15f7260fba63d1fb655f75e9b79d6fa42f6f57a4"
         }
       ]
     },
@@ -405989,6 +407238,36 @@
           "section": "Cryptocurrency remains a key enabler",
           "pulled_at": "2026-09-11",
           "source_sha256": "4e113ead40c6570eb926e866c61ab35e4095d780326617f33a2b36c063b89675"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-59e37019a334",
+      "ioc_type": "wallet_address",
+      "value": "TXmrnVgsqCMJncYHTXchuJ5z111BXSj4g3",
+      "display": "Tron",
+      "persona": null,
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "first_seen": "2026-11-16",
+      "last_seen": "2026-11-16",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://ofac.treasury.gov/recent-actions/20261028",
+          "title": "Recent Actions, October 28, 2026: North Korea Designations",
+          "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+          "published": null,
+          "context": "…Digital Currency Address - TRX TXmrnVgsqCMJncYHTXchuJ5z111BXSj4g3; Passport 620645580 (Russia) expires 17 Jun 2009 (individual) [DPRK2] (Linked To: LIMITED LIABILITY COMPANY ALIS).…",
+          "context_origin": "text",
+          "section": "The following individuals have been added to OFAC's SDN List:",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "b8c14bbebeebd5d6c168ccbd7819c0f11de565b21d83f76a34fc3793e066ce4f"
         }
       ]
     },

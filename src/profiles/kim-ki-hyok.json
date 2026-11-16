@@ -18,7 +18,7 @@
   "fake_ids": [],
   "wanted_details": {
     "heading": "Sanctions-designation details",
-    "status": "Designated by the Republic of Korea on May 23, 2023, for involvement in DPRK IT workers' foreign-currency earning abroad",
+    "status": "Designated by the Republic of Korea on May 23, 2023, for involvement in DPRK IT workers' foreign-currency earning abroad; designated by OFAC on October 28, 2026 under Executive Order 13687, program tag DPRK2, for materially assisting Chinyong Information Technology Cooperation Company",
     "details": [
       {
         "label": "Post, per the identification annex",
@@ -39,6 +39,10 @@
       {
         "label": "Sex",
         "value": "Male"
+      },
+      {
+        "label": "Digital currency address, per OFAC",
+        "value": "ETH 0xE4C9a7F68B1EbA4508f54f07f7378847318dD1A3"
       }
     ],
     "caution": "이번에 제재대상으로 지정된 개인 7명은 △북한 해외 IT 지부 책임자로서 불법 외화벌이를 주도하였거나1), △자금세탁 등 불법 금융활동을 통해 외화벌이를 도움으로써2) 대북제재 회피와 핵ㆍ미사일 개발 자금 조달에 관여하였다. 특히, 이들 IT 지부 책임자들은 IT 인력에 대한 감시ㆍ통제ㆍ갑질, 임금 미지급 등 강제노동을 강요하여 이들의 인권을 유린해 왔다. 1) 김상만, 김기혁, 김성일, 전연근, 김효동 2) 유성혁, 윤성일 진영정보기술협조회사는 국방성 산하 IT 회사로, 러시아ㆍ중국ㆍ라오스 등지에 IT 인력 파견"
@@ -57,14 +61,29 @@
       "publisher": "Ministry of Foreign Affairs, Republic of Korea",
       "date": "2023-05-23",
       "type": "sanctions_designation"
+    },
+    {
+      "title": "Recent Actions, October 28, 2026: North Korea Designations (DPRK IT worker facilitators and the First Financial and Technical Development Center)",
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-10-28",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Facilitators of DPRK IT Worker Fraud Targeting U.S. Businesses",
+      "url": "https://home.treasury.gov/news/press-releases/sb0669",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-10-28",
+      "type": "press_release"
     }
   ],
   "disclaimer": [
     "Kim Ki Hyok is profiled here as the representative in Russia of Chinyong Information Technology Cooperation Company, also rendered Jinyong IT Cooperation Company (진영정보기술개발협조회사), which the Republic of Korea describes as an IT company under the DPRK Ministry of National Defence that sends IT workers to Russia, China and Laos. The ministry counts him among the heads of overseas IT branches who led the illicit earning of foreign currency and, in its words, subjected the IT workers under them to surveillance, control, abuse and withheld wages.",
     "The Korean quotation under the designation details is the ministry's own wording.",
+    "On October 28, 2026 OFAC designated him as well, as the lead of Limited Liability Company Alis, whose Russia-based delegation of DPRK IT workers he monitors to ensure they meet their financial targets; the Treasury says he has transferred cryptocurrency for the delegation valued at nearly $500,000 since 2024. OFAC's entry, which gives the same date of birth as the Republic of Korea's annex, lists one Ethereum address, which the scraper carries.",
     "The confidence level of 'confirmed' reflects that this individual is named on a government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
   ],
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-11-16",
   "name_korean": "김기혁",
   "name_korean_provenance": "cited"
 }

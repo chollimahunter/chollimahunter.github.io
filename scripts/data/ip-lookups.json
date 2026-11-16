@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -62297,6 +62297,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "94.249.185.106": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "ZAP-Hosting GmbH",
+      "org": "GHOSTnet GmbH",
+      "asn": "AS206996 ZAP-Hosting GmbH",
+      "as_name": "zap-hosting",
+      "hosting": true,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-16",
+      "looked_up_at": "ip-api.com"
+    },
     "95.0.7.41": {
       "kind": "fixed-line",
       "provider": null,
@@ -106592,6 +106607,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "147.189.169.26": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "ZAP-Hosting GmbH",
+      "org": "ZAP-Hosting GmbH",
+      "asn": "AS206996 ZAP-Hosting GmbH",
+      "as_name": "zap-hosting",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-16",
+      "looked_up_at": "ip-api.com"
+    },
     "148.72.65.242": {
       "kind": "proxy",
       "provider": null,
@@ -130637,6 +130667,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "185.27.134.207": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "GB",
+      "country_name": "United Kingdom",
+      "isp": "UK-IFASTNET",
+      "org": "I FastNet LTD",
+      "asn": "AS34119 Wildcard UK Limited",
+      "as_name": "WILDCARD-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-16",
+      "looked_up_at": "ip-api.com"
+    },
     "185.27.134.213": {
       "kind": "datacenter",
       "provider": null,
@@ -134340,6 +134385,21 @@
       "proxy": true,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "185.248.161.18": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "NL",
+      "country_name": "The Netherlands",
+      "isp": "Eldar Perez trading as SeedVPS",
+      "org": "SeedVPS",
+      "asn": "AS199701 Eldar Perez trading as SeedVPS",
+      "as_name": "SEEDVPS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-16",
       "looked_up_at": "ip-api.com"
     },
     "185.249.196.106": {
@@ -156662,6 +156722,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "207.148.112.166": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "JP",
+      "country_name": "Japan",
+      "isp": "TYO VULTR",
+      "org": null,
+      "asn": "AS20473 The Constant Company, LLC",
+      "as_name": "AS-VULTR",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-16",
+      "looked_up_at": "ip-api.com"
+    },
     "207.176.12.246": {
       "kind": "fixed-line",
       "provider": null,
@@ -160380,6 +160455,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "211.223.14.75": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "KR",
+      "country_name": "South Korea",
+      "isp": "Korea Telecom",
+      "org": "KORNET",
+      "asn": "AS4766 Korea Telecom",
+      "as_name": "KIXS-AS-KR",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-16",
       "looked_up_at": "ip-api.com"
     },
     "211.233.13.11": {

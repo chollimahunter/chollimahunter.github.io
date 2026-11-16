@@ -1,0 +1,78 @@
+{
+  "slug": "ri-thae-chol",
+  "display_name": "Ri Thae Chol",
+  "aliases": [
+    "Ri T'ae-ch'o'l"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on October 28, 2026 under Executive Order 13722, program tag DPRK3, for materially assisting the First Financial and Technical Development Center, a DPRK-controlled entity in Russia that exports North Korean IT workers",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Russia"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "February 24, 1999"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Pyongyang, North Korea"
+      },
+      {
+        "label": "Nationality",
+        "value": "North Korean"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "Passport",
+        "value": "845349262 (North Korea), issued September 1, 2025, expires September 1, 2030"
+      },
+      {
+        "label": "Linked to, per OFAC",
+        "value": "First Financial and Technical Development Center"
+      }
+    ],
+    "caution": "Since at least 2024, the First Financial and Technical Development Center (FFTDC) is a DPRK-controlled entity located in Russia that uses DPRK IT workers who have generated several millions of dollars on behalf of the DPRK government. The FFTDC has deployed several highly trained DPRK IT workers to Russia who employ Super Intelligence (SI) tools and use sophisticated money laundering methods, including complex cryptocurrency transfers, to facilitate their revenue generation schemes. Since 2025, Russia-based DPRK IT workers Kim Kyong Ju, Ri Thae Chol, So Hyon Jin, Han Yu Song, Kim Sung Gwan, and Hyon Se Il have collectively generated over $750,000 on behalf of the FFTDC."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, October 28, 2026: North Korea Designations (DPRK IT worker facilitators and the First Financial and Technical Development Center)",
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-10-28",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Facilitators of DPRK IT Worker Fraud Targeting U.S. Businesses",
+      "url": "https://home.treasury.gov/news/press-releases/sb0669",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-10-28",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Ri Thae Chol is profiled here as one of six Russia-based DPRK IT workers whom the Treasury says have collectively generated over $750,000 since 2025 on behalf of the First Financial and Technical Development Center, which OFAC designated the same day. OFAC's entry lists no email, account or digital currency address for him.",
+    "OFAC prints no Hangul for this name and the entry carries no photograph, so no Korean rendering is published rather than a reconstructed one.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-11-16"
+}
