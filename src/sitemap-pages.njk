@@ -8,9 +8,9 @@ eleventyExcludeFromCollections: true
   site sets eleventyExcludeFromCollections, so collections.all cannot be used
   here; the sections below enumerate the static routes by hand and the
   generated ones from their data sources. A new static page needs adding to
-  the first list, unless it is a redirect stub or a private page. /clusters/
-  is a stub, marked noindex, and Google rejects a sitemap entry it is told
-  not to index. /remote-workers/held-back/ is private: it is never written
+  the first list, unless it is a redirect stub or a private page: a stub is
+  marked noindex, and Google rejects a sitemap entry it is told not to index.
+  /remote-workers/held-back/ is private: it is never written
   by a production build. check-site.js enforces both. The
   indicator pages live in sitemap-indicators.njk, and sitemap.njk is the
   index that names both. A static page carries no lastmod, since the build
@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
   theirs from last_updated (a cluster's is the newest of its profiles and
   hunts).
 #}
-{%- set static_pages = ["/", "/about/", "/remote-workers/", "/remote-workers/personas/", "/remote-workers/pictures/", "/remote-workers/candidates/", "/remote-workers/red-flags/", "/profiles/", "/hunts/", "/repo-scanner/", "/etherhiding/", "/etherhiding/results/", "/sources/", "/submit/", "/glossary/", "/guidance/", "/data/", "/indicators/", "/indicators/browse/"] -%}
+{%- set static_pages = ["/", "/about/", "/remote-workers/", "/remote-workers/personas/", "/remote-workers/pictures/", "/remote-workers/candidates/", "/remote-workers/red-flags/", "/profiles/", "/hunts/", "/repo-scanner/", "/etherhiding/", "/etherhiding/results/", "/sources/", "/submit/", "/glossary/", "/guidance/", "/data/", "/indicators/", "/indicators/browse/", "/clusters/"] -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {%- for url in static_pages %}

@@ -7,7 +7,7 @@ a wallet or a GitHub login, should return that value's page.
 
 ## What the build ships
 
-Every indicator the site holds, about 20,000 of them, has an indexable page
+Every indicator the site holds, about 29,000 of them, has an indexable page
 at `/indicators/{id}/` with a canonical URL pointing at itself. That includes
 the roughly 2,500 values that also appear on a persona page. Until
 2026-09-24 those were `noindex` meta-refresh stubs pointing at the persona
@@ -55,14 +55,17 @@ than asserting identities itself.
 
 `robots.txt` allows everything and names `/sitemap.xml`, a sitemap index. It
 points at `/sitemap-pages.xml`, which holds every indexable page that is not
-an indicator (740 URLs), and at `/sitemap-indicators-N.xml`, one file per
-5,000 indicator pages (five files at 21,427 pages). Every file is far under
-the 50,000-URL and 50 MB limits: the largest is about 640 KB. The runs are
+an indicator (936 URLs), and at `/sitemap-indicators-N.xml`, one file per
+5,000 indicator pages (six files at 29,239 pages). Every file is far under
+the 50,000-URL and 50 MB limits: the largest is about 620 KB. The runs are
 cut in `src/_data/iocIndex.js`, so the index and the files it names cannot
-disagree. As of the 2026-09-28 build, the sitemaps list exactly the
-indexable pages: 22,167 URLs, each with a self-canonical and no `noindex`.
-The whole build writes about 24,700 pages; the rest are redirect stubs and
-other pages kept out of the index.
+disagree. As of the 2026-11-15 build, the sitemaps list exactly the
+indexable pages: 30,175 URLs, each with a self-canonical and no `noindex`.
+The whole build writes about 30,200 pages; the rest are a few redirect stubs
+and pages kept out of the index. The 2,457 stubs that once answered old
+`other-*` indicator ids are gone: the 404 page reads
+`/assets/data/indicator-moved.json` (through `moved-page.js`) and sends a
+reader on to the indicator's current page.
 
 `<lastmod>` on an indicator URL is the latest date its page content moved.
 That is the latest of the record's `last_seen`, the dates this site pulled
@@ -87,7 +90,7 @@ nothing because they held no content of their own.
 ## Thin content
 
 An indicator page holds about 100 unique words: the value, a lead sentence,
-the citations and their quotes. Expect most of the roughly 22,000
+the citations and their quotes. Expect most of the roughly 29,000
 near-duplicate pages to sit in "Crawled - currently not indexed" however
 they are submitted. The mitigation in place is the lead sentence, the named
 publishers, the context quotes and the ring of related links described above.
@@ -171,7 +174,7 @@ What remains to be done by hand, in order of effect:
    likely to search, such as widely reported operator email addresses. Each
    request also gets that page's links crawled.
 4. Watch the Page indexing report weekly. Expect "Discovered - currently not
-   indexed" to take most of the 20,000 at first, then to drain into Indexed
+   indexed" to take most of the 29,000 at first, then to drain into Indexed
    or "Crawled - currently not indexed" over four to twelve weeks. A large
    "Crawled - currently not indexed" count means Google judged those pages
    too thin to keep. The related-indicator links and the lead sentence are
@@ -186,7 +189,7 @@ What remains to be done by hand, in order of effect:
 Expected timelines: a fresh property on a new host is crawled slowly and
 earns crawl budget as pages prove useful. Days for the hubs after an
 inspection request, weeks for the first thousands of indicator pages, and
-months before most of 20,000 low-link pages are indexed. Some will never be.
+months before most of 29,000 low-link pages are indexed. Some will never be.
 Google indexes a share of any large set of similar pages, not all of it.
 
 A custom domain would help modestly and slowly. On `github.io` the site shares

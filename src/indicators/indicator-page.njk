@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
 eleventyComputed:
   extra_head: "{% if etherhidingAddresses.writes[ioc.id] %}<script src=\"/assets/js/table-filter.js\" defer></script>{% endif %}"
   title: "{{ ioc | iocLabel | safe }}"
-  head_title: "{{ ioc | iocLabel | safe }} — {{ ioc.kind.label | safe }}{% if not ioc.attribution_doubt %} (DPRK){% endif %}"
+  head_title: "{{ ioc | iocLabel | replace('https://', '') | safe }} — {{ ioc.kind.label | safe }}{% if not ioc.attribution_doubt %} (DPRK){% endif %}"
   description: "{% set full %}{{ ioc | iocLabel | safe }}: {{ ioc.kind.article | safe }} {{ ioc.kind.label | safe }} reported in {{ (ioc.source_count or ioc.sources.length) | safe }} source{% if (ioc.source_count or ioc.sources.length) != 1 %}s{% endif %} on {{ ioc.campaign_text | safe }} activity {% if ioc.attribution_doubt %}not tied to North Korea (DPRK){% else %}attributed to North Korea (DPRK){% endif %}{% if ioc.publishers.length %}, by {{ ioc.publishers.slice(0, 3) | join(', ') | safe }}{% if ioc.publishers.length > 3 %} and others{% endif %}{% endif %}.{% endset %}{{ full | truncate(157) | safe }}"
 ---
 {#

@@ -37,7 +37,7 @@ layout: base.njk
 {% block content %}
 <article>
 
-  {% set backLink = { url: "/#actor-cluster-taxonomy", text: "All actor clusters" } %}{% include "partials/back-link.njk" %}
+  {% set backLink = { url: "/clusters/", text: "All actor clusters" } %}{% include "partials/back-link.njk" %}
 
   <header>
     <h1>{{ cluster.label }}</h1>
@@ -192,35 +192,8 @@ layout: base.njk
     {% set tableFilter = { target: "#cluster-sources-table", noun: "records", id: "cluster-source-search", label: "Search these records", placeholder: "Publisher, title, year, or the profile or hunt it supports", page: limits.list } %}
     {% include "partials/table-filter.njk" %}
 
-    <div class="table-scroll">
-      <table class="results-table" id="cluster-sources-table">
-        <thead>
-          <tr>
-            <th scope="col">Record</th>
-            <th scope="col">Publisher</th>
-            <th scope="col">Published</th>
-            <th scope="col">Supports</th>
-            <th scope="col">Indicators</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for source in cluster.sources %}
-          <tr>
-            <td>
-              {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
-              {% if source.items.length %}
-              <span class="ioc-result__meta">{{ source.items | join(", ") | truncate(160) }}</span>
-              {% endif %}
-            </td>
-            <td>{{ source.publisher | default("—", true) }}</td>
-            <td class="cell-date">{{ source.published | default("—", true) }}</td>
-            <td>{% for area in source.areas %}<span class="tag-chip">{{ area }}</span>{% endfor %}</td>
-            <td>{{ source.indicator_count | thousands }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
+    {% set sourceTable = { id: "cluster-sources-table", rows: cluster.sources, noun: "records", first: "Record", areas: "Supports", full_url: cluster.url + "sources/" } %}
+    {% include "partials/source-table.njk" %}
     {% include "partials/table-filter-more.njk" %}
     {% else %}
     <p>

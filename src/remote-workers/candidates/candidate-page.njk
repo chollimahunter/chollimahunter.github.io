@@ -8,7 +8,8 @@ layout: base.njk
 eleventyExcludeFromCollections: true
 eleventyComputed:
   title: "{{ candidate.display_name | safe }}"
-  description: "A profile under review on Potential DPRK Profiles: the accounts and indicators it carries, the reviewer's notes and the sources behind them. Not a confirmed DPRK operator."
+  head_title: "{{ candidate.display_name | safe }} ({{ candidate.slug | safe }}) — profile under review"
+  description: "{{ candidate.display_name | truncate(60) | safe }} ({{ candidate.slug | safe }}): a profile under review on Potential DPRK Profiles, with the accounts and indicators it carries and the sources behind them. Not a confirmed DPRK operator."
 ---
 {#
   src/remote-workers/candidates/candidate-page.njk: one page per row on

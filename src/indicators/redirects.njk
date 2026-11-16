@@ -11,10 +11,13 @@ eleventyComputed:
 eleventyExcludeFromCollections: true
 ---
 {#
-  src/indicators/redirects.njk — stubs for indicator pages whose type was renamed
+  src/indicators/redirects.njk — stubs for indicator pages that were merged or retyped
 
-  An indicator page's address carries its type, so renaming a type moves every
-  page of it. iocIndex.indicator_redirects lists {from, to} id pairs, and each
-  becomes a page at the old address that sends the reader on, the same way
-  src/hunts/redirects.njk does for merged hunts.
+  An indicator page's address carries its type. When a value filed under two
+  types becomes one page, or a page is retyped by hand, the old address keeps
+  a stub that sends the reader on, the same way src/hunts/redirects.njk does
+  for merged hunts. iocIndex.indicator_redirects lists the {from, to} id
+  pairs. The repository indicators renamed in September 2026 are not here:
+  there are about 2,450 of them, so they are one map read by the 404 page
+  (src/indicator-moved.njk).
 #}

@@ -123,7 +123,7 @@ const DEV_PAGE_LIMIT = 400;
  * would show up as local 404s.
  */
 const SITEMAP_CHUNK = 5000;
-/** Types that were one `other` type before 27 September 2026; see indicator_redirects. */
+/** Types that were one `other` type before 27 September 2026; see indicator_moved. */
 const RENAMED_FROM_OTHER = new Set(["compromised_repository", "malicious_repository"]);
 const RENAMED_ON = "2026-09-27";
 
@@ -1077,17 +1077,26 @@ function compactIndex(records, generatedAt) {
 const INDEX_KEYS = new Set(["t", "e"]);
 
 function searchCore(compact) {
+  // Campaign labels are a few dozen strings repeated across every record, so
+  // the search file carries them once in `campaigns` and each record's `k` as
+  // indexes into it; ioc-search.js turns them back into labels on load.
+  const campaigns = [];
+  const campaignIndex = new Map();
+  const internCampaign = (label) => {
+    if (!campaignIndex.has(label)) campaignIndex.set(label, campaigns.push(label) - 1);
+    return campaignIndex.get(label);
+  };
   const records = compact.records.map((record) => {
     const out = {};
     for (const [key, value] of Object.entries(record)) {
       if (value === null || (value === 0 && !INDEX_KEYS.has(key))) continue;
       if (key === "r" && value === "remote-workers") continue;
       if (key === "k" && value.length === 0) continue;
-      out[key] = value;
+      out[key] = key === "k" ? value.map(internCampaign) : value;
     }
     return out;
   });
-  return { ...compact, contexts: undefined, records };
+  return { ...compact, contexts: undefined, campaigns, records };
 }
 
 /**
@@ -1597,32 +1606,37 @@ function buildIndex() {
     // directory of them that /indicators/ and /indicators/browse/ render.
     indicator_sitemaps: chunk(ownPages, SITEMAP_CHUNK),
 
-    // Old addresses of pages whose type was renamed. A page's id is its type
-    // and a digest of type and value, so a new type moves the page. Repository
-    // indicators were typed `other` until 27 September 2026, when they were
-    // split into compromised_repository (the PolinRider victims) and
-    // malicious_repository (the attackers' own); their old /indicators/other-…/
-    // addresses had been published for two days, so each keeps a stub that
-    // sends the reader and search engines on. Only a record indexed by then
-    // had such an address; one added later never did, and a stub for it would
-    // be a page at a URL nothing ever linked to.
+    // Old addresses of pages that moved. A page's id is its type and a digest
+    // of type and value, so a new type moves the page.
     //
     // A value filed under two types that name the same thing is one page; the
-    // folded type's address redirects to it. See foldDuplicateTypes().
+    // folded type's address redirects to it (see foldDuplicateTypes()), and so
+    // does a page retyped by hand. Those addresses were live for weeks, so each
+    // keeps a stub page (src/indicators/redirects.njk).
     indicator_redirects: indicatorPages(
+      folded.redirects.concat(
+        RETYPED_PAGES.map((p) => ({ from: p.from, to: recordId(p.type, p.value) })).filter((p) =>
+          records.some((r) => r.id === p.to)
+        )
+      )
+    ),
+    // Repository indicators were typed `other` until 27 September 2026, when
+    // they were split into compromised_repository (the PolinRider victims) and
+    // malicious_repository (the attackers' own). Their /indicators/other-…/
+    // addresses had been published for two days. Each had a stub page of its
+    // own until November 2026, about 2,450 pages in every build; they are now
+    // one map (/assets/data/indicator-moved.json), read by the 404 page, which
+    // sends a reader who follows an old address on. Only a record indexed by
+    // the rename had such an address. Keyed by the old id's digest; the value
+    // is the new id.
+    indicator_moved: Object.fromEntries(
       records
         .filter((r) => RENAMED_FROM_OTHER.has(r.ioc_type))
         .filter((r) => {
           const day = firstIndexed(r);
           return day && day <= RENAMED_ON;
         })
-        .map((r) => ({ from: recordId("other", r.value), to: r.id }))
-        .concat(folded.redirects)
-        .concat(
-          RETYPED_PAGES.map((p) => ({ from: p.from, to: recordId(p.type, p.value) })).filter((p) =>
-            records.some((r) => r.id === p.to)
-          )
-        )
+        .map((r) => [recordId("other", r.value).replace(/^other-/, ""), r.id])
     ),
     indicator_browse_pages: browse.runs,
     indicator_browse_types: browse.types,

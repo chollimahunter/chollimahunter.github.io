@@ -5,12 +5,16 @@ description: "The page requested does not exist on Chollima Hunter."
 permalink: "/404.html"
 eleventyExcludeFromCollections: true
 noindex: true
+extra_head: '<script src="/assets/js/moved-page.js" defer></script>'
 ---
 {#
   src/404.njk — GitHub Pages serves /404.html for any path that has no file,
   so this is the only error page the site can have. Indicator, persona and
   profile pages are removed when their entries are withdrawn, so a stale link
   landing here is expected rather than exceptional.
+
+  moved-page.js sends an old /indicators/other-…/ address on to the page that
+  replaced it; the status line below is shown only while it looks one up.
 #}
 <section class="hero">
   <h1>Page not found</h1>
@@ -19,12 +23,13 @@ noindex: true
     is accepted or a source no longer supports them, so a link that once
     worked may lead here.
   </p>
+  <p class="form-hint" data-moved-status hidden role="status">Checking whether this indicator page has moved.</p>
 </section>
 <section>
   <p>
     Search the <a href="/remote-workers/">indicator index</a>, browse the
     <a href="/profiles/">named individuals</a> or the
-    <a href="/#actor-cluster-taxonomy">actor clusters</a>, or return to the
+    <a href="/clusters/">actor clusters</a>, or return to the
     <a href="/">home page</a>.
   </p>
 </section>

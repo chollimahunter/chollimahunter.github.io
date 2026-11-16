@@ -588,6 +588,24 @@ function buildPersonas(records) {
     delete persona.key;
   }
 
+  // Two personas can carry one name (the same alias filed by two sources, or
+  // two groups a source left unnamed). Their pages would share a title and a
+  // description, so each gets a note that tells it apart: its own heading
+  // where that differs from the name, and its place in the group otherwise.
+  const sharedNames = new Map();
+  for (const persona of ordered) {
+    const key = label(persona).toLowerCase();
+    if (!sharedNames.has(key)) sharedNames.set(key, []);
+    sharedNames.get(key).push(persona);
+  }
+  for (const group of sharedNames.values()) {
+    if (group.length < 2) continue;
+    group.forEach((persona, i) => {
+      const heading = persona.heading && persona.heading !== label(persona) ? persona.heading : null;
+      persona.title_note = heading || `record ${i + 1} of ${group.length} under this name`;
+    });
+  }
+
   return ordered;
 }
 

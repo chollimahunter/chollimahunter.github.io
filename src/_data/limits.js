@@ -48,4 +48,15 @@ module.exports = {
    * row is a single link, so they are paged at build time rather than capped.
    */
   browse: 200,
+  /**
+   * Page titles. A page's own title up to this length is followed by the site
+   * name (" — Chollima Hunter", 18 characters); a longer one stands alone, so
+   * the whole stays near the 70 characters a search result shows. base.njk
+   * applies it and scripts/check-site.js reports how many titles run past
+   * `title_max`.
+   */
+  title_own: 52,
+  title_max: 70,
+  /** The longest meta description scripts/check-site.js accepts. */
+  description_max: 170,
 };

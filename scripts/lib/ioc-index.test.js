@@ -101,3 +101,24 @@ test("the search file keeps a type or method index of 0", () => {
   assert.equal("g" in record, false);
   assert.equal("d" in record, false);
 });
+
+test("the search file carries campaign labels once and indexes them", () => {
+  const { searchCore } = require("../../src/_data/iocIndex.js");
+  const core = searchCore({
+    v: 2,
+    types: ["alias"],
+    methods: ["curated"],
+    sources: [],
+    contexts: [],
+    records: [
+      { i: "a", t: 0, v: "x", e: 0, k: ["PolinRider", "Contagious Interview"], s: [] },
+      { i: "b", t: 0, v: "y", e: 0, k: ["Contagious Interview"], s: [] },
+      { i: "c", t: 0, v: "z", e: 0, k: [], s: [] },
+    ],
+  });
+  assert.deepEqual(core.campaigns, ["PolinRider", "Contagious Interview"]);
+  assert.deepEqual(core.records[0].k, [0, 1]);
+  assert.deepEqual(core.records[1].k, [1]);
+  assert.equal("k" in core.records[2], false);
+  assert.deepEqual(core.records[1].k.map((n) => core.campaigns[n]), ["Contagious Interview"]);
+});

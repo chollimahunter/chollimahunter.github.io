@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: "All sources"
+description: "Every source this site cites, in one table: the whole of the registry that the Sources page shows a page at a time."
+permalink: "/sources/all/"
+eleventyExcludeFromCollections: true
+noindex: true
+extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src="/assets/js/grid-more.js" defer></script>'
+---
+{#
+  src/sources/all.njk — the whole source registry on one page
+
+  /sources/ writes the first limits.list rows of the registry and names this
+  page as where the rest are (partials/source-table.njk). table-filter.js
+  fetches this page for its rows when a reader searches, sorts or asks for
+  more; a reader without JavaScript follows the link and reads it. It is
+  noindex and left out of the sitemap: /sources/ is the page to find.
+#}
+<section>
+  {% set backLink = { url: "/sources/", text: "Sources" } %}{% include "partials/back-link.njk" %}
+  <h1>All sources</h1>
+  <p>
+    Every one of the {{ sources.total | thousands }} sources this site cites.
+    What the table records, and the rules for citing, are on
+    <a href="/sources/">Sources</a>.
+  </p>
+
+  {% set tableFilter = { target: "#sources-table", noun: "sources", page: limits.list, id: "source-search-input", label: "Search sources", placeholder: "Publisher, title, year, or what it is cited by" } %}
+  {% include "partials/table-filter.njk" %}
+  {% set sourceTable = { id: "sources-table", rows: sources.all, noun: "sources", first: "Source", areas: "Cited by" } %}
+  {% include "partials/source-table.njk" %}
+  {% include "partials/table-filter-more.njk" %}
+</section>

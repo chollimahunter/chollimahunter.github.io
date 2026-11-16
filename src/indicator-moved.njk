@@ -1,0 +1,13 @@
+---
+permalink: "/assets/data/indicator-moved.json"
+eleventyExcludeFromCollections: true
+---
+{#
+  src/indicator-moved.njk — old indicator addresses, as one map
+  =============================================================
+  The /indicators/other-…/ addresses of repository indicators that were
+  renamed on 27 September 2026, keyed by the old id's digest; the value is the
+  id of the page that replaced it. src/assets/js/moved-page.js reads it from
+  the 404 page. See indicator_moved in src/_data/iocIndex.js.
+#}
+{{ iocIndex.indicator_moved | dump | safe }}

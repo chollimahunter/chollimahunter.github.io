@@ -53,14 +53,15 @@
     // href — so searching for the domain you remember ("grumpygoose",
     // "unit42") found nothing at all, which reads as the source being absent
     // rather than as the search not looking there.
-    var haystacks = rows.map(function (row) {
+    function haystackOf(row) {
       var text = row.textContent;
       var links = [].slice.call(row.querySelectorAll("a[href]"));
       for (var i = 0; i < links.length; i += 1) {
         text += " " + links[i].getAttribute("href");
       }
       return text.toLowerCase().replace(/\s+/g, " ");
-    });
+    }
+    var haystacks = rows.map(haystackOf);
     // table-sort.js reorders the body, and the cap below reveals the first
     // rows in the order this list holds them, so after a sort the list is
     // rebuilt from the table. The haystack travels with its row.
@@ -122,6 +123,80 @@
     if (!(pageSize > 0)) pageSize = rows.length;
     var limit = pageSize;
 
+    // A long table carries only its first page of rows; the whole table is on
+    // a page of its own, named in data-table-rows, with the row count in
+    // data-table-rows-total (partials/source-table.njk). Until a reader
+    // searches, filters, sorts, downloads or asks for more, the first page is
+    // all that is needed, and the count line already speaks for the total.
+    // The first of those actions fetches the full page and swaps its rows in,
+    // after which everything works as it does on a table rendered whole. If
+    // the fetch fails the rows on the page stay, beside the link to the full
+    // list that a reader without JavaScript uses.
+    var rowsUrl = table.getAttribute("data-table-rows");
+    var total = parseInt(table.getAttribute("data-table-rows-total"), 10);
+    var pending = Boolean(rowsUrl) && total > rows.length;
+    var loading = null;
+    function loadRows() {
+      if (!pending) return Promise.resolve();
+      if (loading) return loading;
+      if (countEl) countEl.textContent = "Loading all " + total + " " + noun + ".";
+      loading = fetch(rowsUrl)
+        .then(function (response) {
+          if (!response.ok) throw new Error("HTTP " + response.status);
+          return response.text();
+        })
+        .then(function (html) {
+          var source = new DOMParser().parseFromString(html, "text/html").getElementById(table.id);
+          var fresh = source && source.tBodies[0] ? [].slice.call(source.tBodies[0].rows) : [];
+          if (!fresh.length) throw new Error("no rows");
+          var labels = [].slice.call(table.tHead ? table.tHead.rows[0].cells : []).map(function (cell) {
+            return cell.textContent.replace(/\s+/g, " ").trim();
+          });
+          var stacks = labels.length >= 4 && !table.hasAttribute("data-no-stack");
+          var fragment = document.createDocumentFragment();
+          fresh.forEach(function (row, position) {
+            var copy = document.importNode(row, true);
+            // table-stack.js labelled the cells that were here at load.
+            if (stacks) {
+              [].forEach.call(copy.cells, function (cell, i) {
+                if (labels[i]) cell.setAttribute("data-label", labels[i]);
+              });
+            }
+            copy.tableFilterHaystack = haystackOf(copy);
+            copy.tableFilterOrder = position;
+            fragment.appendChild(copy);
+          });
+          var body = table.tBodies[0];
+          body.textContent = "";
+          body.appendChild(fragment);
+          pending = false;
+          reread();
+          if (typeof window.gridMoreInit === "function") window.gridMoreInit(body);
+          var link = document.querySelector('[data-table-rows-link="' + selector + '"]');
+          if (link) link.hidden = true;
+          table.dispatchEvent(new CustomEvent("tablerender", { bubbles: true }));
+        })
+        .catch(function () {
+          pending = false;
+        });
+      return loading;
+    }
+    // Sorting and downloading read the rows in the table, so the press that
+    // asks for either waits for all of them and is then repeated.
+    function afterRows(event, selectorOfControl) {
+      if (!pending) return;
+      var control = event.target.closest ? event.target.closest(selectorOfControl) : null;
+      if (!control) return;
+      event.stopPropagation();
+      event.preventDefault();
+      loadRows().then(function () {
+        apply(input.value.trim());
+        control.click();
+      });
+    }
+    table.addEventListener("click", function (event) { afterRows(event, ".table-sort__button"); }, true);
+    panel.addEventListener("click", function (event) { afterRows(event, "[data-result-download-button]"); }, true);
+
     // Chip groups: each is { dimension, chips, all, multiple }.
     var groups = [].slice.call(panel.querySelectorAll('.filter-chips[role="group"]')).map(function (group) {
       var chips = [].slice.call(group.querySelectorAll(".filter-chip"));
@@ -162,9 +237,17 @@
       });
     });
 
+    function narrowed() {
+      return groups.some(function (group) { return chosen(group).length > 0; });
+    }
+
     function apply(query) {
-      rank(query);
       var terms = U.terms(query);
+      if (pending && (terms.length || narrowed() || limit > rows.length)) {
+        loadRows().then(function () { apply(input.value.trim()); });
+        return;
+      }
+      rank(query);
       var matched = 0;
       var visible = 0;
       for (var i = 0; i < rows.length; i += 1) {
@@ -175,6 +258,9 @@
         if (show) visible += 1;
         rows[i].hidden = !show;
       }
+      // With the rest of the rows still to fetch nothing narrows the table,
+      // so every row of the full table counts as matching.
+      if (pending) matched = total;
 
       var rest = matched - visible;
       if (moreEl && moreBtn) {

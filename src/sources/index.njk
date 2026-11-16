@@ -40,52 +40,8 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src
   {% set tableFilter = { target: "#sources-table", noun: "sources", page: limits.list, id: "source-search-input", label: "Search sources", placeholder: "Publisher, title, year, or what it is cited by" } %}
   {% include "partials/table-filter.njk" %}
 
-  <div class="table-scroll">
-    <table class="results-table" id="sources-table">
-      <thead>
-        <tr>
-          <th scope="col">Source</th>
-          <th scope="col">Publisher</th>
-          <th scope="col">Published</th>
-          <th scope="col">Cited by</th>
-          <th scope="col">Indicators</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for source in sources.all %}
-        <tr>
-          <td>
-            {% set externalLink = { url: source.url, text: source.title } %}{% include "partials/external-link.njk" %}
-            {% if source.items.length %}
-            <span class="ioc-result__meta">{{ source.items | join(", ") | truncate(160) }}</span>
-            {% endif %}
-            {# A grouped source carries its pages here rather than as a row
-               each. An X post is named by its date, because status URLs
-               distinguish themselves by nothing else; a page by its title. #}
-            {% if source.posts.length %}
-            {% set noun = source.post_noun | default("post", true) %}
-            <details class="source-posts">
-              <summary>{{ source.posts.length }} {{ noun }}{% if source.posts.length != 1 %}s{% endif %} cited</summary>
-              <ul class="source-posts__list" id="source-posts-{{ loop.index }}" data-grid-limit="{{ limits.list }}">
-                {% for post in source.posts %}
-                <li>{% set externalLink = { url: post.url, text: (post.title | truncate(90)) if (post.title and post.title != post.url) else (post.published | default("undated", true)) } %}{% include "partials/external-link.njk" %}{% if post.title and post.published %} <span class="ioc-result__meta">{{ post.published }}</span>{% endif %}{% if post.indicator_count %} <span class="source-posts__count">{{ post.indicator_count }}</span>{% endif %}</li>
-                {% endfor %}
-              </ul>
-              {% set gridMore = { target: "#source-posts-" + loop.index, noun: noun + "s" } %}{% include "partials/grid-more.njk" %}
-            </details>
-            {% endif %}
-          </td>
-          <td>{{ source.publisher | default("—", true) }}</td>
-          <td class="cell-date">{{ source.published | default("—", true) }}</td>
-          <td>
-            {% for area in source.areas %}<span class="tag-chip">{{ area }}</span>{% endfor %}
-          </td>
-          <td>{{ source.indicator_count | thousands }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+  {% set sourceTable = { id: "sources-table", rows: sources.all, noun: "sources", first: "Source", areas: "Cited by", full_url: "/sources/all/" } %}
+  {% include "partials/source-table.njk" %}
   {% include "partials/table-filter-more.njk" %}
   {% else %}
   <p><em>No sources cited yet.</em></p>

@@ -103,10 +103,16 @@
       word "Home", since that title is what a search result shows. A page can
       set `head_title` to give the result a longer title than its heading and
       breadcrumb carry; an indicator page does, so the title names what kind
-      of value it is as well as the value. #}
-  {%- set pageTitle = "Chollima Hunter — DPRK cyber threat-intelligence tracker" if page.url == "/" else (head_title or title) + " — Chollima Hunter" %}
+      of value it is as well as the value. The site name is left off a title
+      that is already long (limits.title_own), so a search result shows the
+      page's own words rather than a cut-off suffix. #}
+  {%- set ownTitle = head_title or title %}
+  {%- set pageTitle = "Chollima Hunter — DPRK cyber threat-intelligence tracker" if page.url == "/" else (ownTitle + " — Chollima Hunter" if (ownTitle | length) <= limits.title_own else ownTitle) %}
   <title>{{ pageTitle }}</title>
-  <meta name="description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  {#- One description for the three tags that carry it, cut at a word to
+      limits.description_max, which is about what a search result shows. #}
+  {%- set pageDescription = description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') | truncate(limits.description_max - 3) %}
+  <meta name="description" content="{{ pageDescription }}">
   {%- if noindex %}
   <meta name="robots" content="noindex">
   {%- endif %}
@@ -114,12 +120,12 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chollima Hunter">
   <meta property="og:title" content="{{ pageTitle }}">
-  <meta property="og:description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  <meta property="og:description" content="{{ pageDescription }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:image" content="{{ site.url }}/assets/img/icon-512.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ pageTitle }}">
-  <meta name="twitter:description" content="{{ description | default('Tracking, documenting, and exposing DPRK state-sponsored cyber campaigns, actors, and infrastructure.') }}">
+  <meta name="twitter:description" content="{{ pageDescription }}">
   <link rel="alternate" type="application/atom+xml" title="Chollima Hunter updates" href="/feed.xml">
   <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">

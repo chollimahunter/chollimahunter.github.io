@@ -8,7 +8,8 @@ public posts by researchers on X — [@browsercookies](https://x.com/browsercook
 [@blackbigswan](https://x.com/blackbigswan) and
 [@eastside_nci](https://x.com/eastside_nci) at the time of writing, each named
 in the file's `researchers` map and cited on every record they account for.
-Recount from the file rather than trusting that list; it has gone stale before. It is the
+Recount from the file rather than trusting that list; it has gone stale before.
+Posts are read with `scripts/x-syndication.js` (`docs/x-syndication.md`). It is the
 only indicator file in this repo that is not either scraper output or a
 maintainer's own ruleset, and it exists because the scraper cannot reach the
 source.

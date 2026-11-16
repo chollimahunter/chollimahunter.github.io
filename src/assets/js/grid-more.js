@@ -26,8 +26,9 @@
 
   var U = window.siteUtils;
 
-  var controls = Array.prototype.slice.call(document.querySelectorAll("[data-grid-more]"));
-  controls.forEach(function (moreEl) {
+  function setUp(moreEl) {
+    if (moreEl.gridMoreReady) return;
+    moreEl.gridMoreReady = true;
     var grid = document.querySelector(moreEl.getAttribute("data-grid-more"));
     var button = moreEl.querySelector("[data-grid-more-button]");
     if (!grid || !button) return;
@@ -86,5 +87,13 @@
         target.focus({ preventScroll: true });
       }
     });
-  });
+  }
+
+  // table-filter.js calls this for rows it adds to a table after load (a
+  // table whose rows past the first page are fetched on demand), so a list
+  // inside one of them is capped like any other.
+  window.gridMoreInit = function (root) {
+    Array.prototype.forEach.call((root || document).querySelectorAll("[data-grid-more]"), setUp);
+  };
+  window.gridMoreInit(document);
 })();

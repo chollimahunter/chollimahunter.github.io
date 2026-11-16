@@ -1,13 +1,33 @@
 ---
-layout: layouts/redirect.njk
-permalink: "/clusters/"
+layout: base.njk
 title: "Actor clusters"
-redirect_to: "/#actor-cluster-taxonomy"
+description: "The DPRK activity clusters this site tracks, each with its own page: what the cluster does, the individuals and indicators filed under it, and the research worth reading."
+permalink: "/clusters/"
 eleventyExcludeFromCollections: true
 ---
 {#
-  The cluster listing is the taxonomy grid on the home page, so /clusters/ is a
-  redirect to it rather than a second copy of the same six cards. It exists at
-  all because every cluster page hangs off this path and a reader who trims a
-  URL back to the directory should land somewhere useful.
+  src/clusters/index.njk — the landing page every /clusters/{id}/ page hangs off
+
+  The same card grid the home page shows under "Meet the groups"
+  (partials/cluster-grid.njk), so a reader who trims a cluster URL back to
+  the directory, or follows "All actor clusters" from a cluster page, lands on
+  a page of its own rather than part-way down the home page.
 #}
+<section class="hero">
+  <h1>Actor clusters</h1>
+  <p>
+    Each cluster opens its own page: what it does, what a defender would see,
+    and the research worth reading.
+  </p>
+</section>
+
+<section>
+  {% include "partials/cluster-grid.njk" %}
+</section>
+
+<section>
+  {% set disclaimer = {
+    title: "Disclaimer",
+    body: 'Cluster names are labels applied by researchers and agencies, not units North Korea publishes. Vendors draw boundaries differently, so a tag records how the cited sources characterise the activity, not a finding of this site. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+  } %}{% include "partials/disclaimer.njk" %}
+</section>

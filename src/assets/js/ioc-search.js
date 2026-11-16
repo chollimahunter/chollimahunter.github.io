@@ -970,6 +970,17 @@
    * narrowed first — filtering later would misalign the two.
    */
   function applyScope(loaded) {
+    // The search file carries campaign labels once, in `campaigns`, and each
+    // record's `k` as indexes into it (searchCore() in iocIndex.js). Turn them
+    // back into labels before anything reads them; an index without the
+    // table already holds labels.
+    if (loaded.campaigns) {
+      for (var c = 0; c < loaded.records.length; c += 1) {
+        var ks = loaded.records[c].k;
+        if (ks) loaded.records[c].k = ks.map(function (n) { return loaded.campaigns[n]; });
+      }
+      loaded.campaigns = null;
+    }
     // The shared index carries more than one area (remote-worker identities and
     // the espionage indicators split off from them). A page marked with an area
     // sees only its own; /remote-workers/ uses this to drop the espionage
