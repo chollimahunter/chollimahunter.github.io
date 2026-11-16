@@ -567,6 +567,17 @@
       ],
       "checked": "2026-10-05"
     },
+    "chainmanamgentagency.info": {
+      "registered": true,
+      "created": "2026-11-05",
+      "expires": "2027-11-05",
+      "updated": "2026-11-10",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "changelog.rest": {
       "registered": true,
       "created": "2026-02-27",

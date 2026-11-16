@@ -1,0 +1,78 @@
+{
+  "slug": "vitold-viktorovich-obertas",
+  "display_name": "Vitold Viktorovich Obertas",
+  "aliases": [
+    "Витольд Викторович Обертас"
+  ],
+  "confidence_level": "confirmed",
+  "cluster_taxonomy": [
+    "Remote Worker Fraud / Contagious Interview"
+  ],
+  "personas": [],
+  "emails": [],
+  "phone_numbers": [],
+  "github_repos": [],
+  "photo_slot": {
+    "image_path": null,
+    "caption": "",
+    "source": ""
+  },
+  "fake_ids": [],
+  "wanted_details": {
+    "heading": "Sanctions-designation details",
+    "status": "Designated by OFAC on October 28, 2026 under Executive Order 13687, program tag DPRK2, for materially assisting the Government of North Korea",
+    "details": [
+      {
+        "label": "Location",
+        "value": "Russia"
+      },
+      {
+        "label": "Date of Birth",
+        "value": "November 18, 1968"
+      },
+      {
+        "label": "Place of Birth",
+        "value": "Vladivostok, Russia"
+      },
+      {
+        "label": "Nationality",
+        "value": "Russian"
+      },
+      {
+        "label": "Sex",
+        "value": "Male"
+      },
+      {
+        "label": "National ID",
+        "value": "4613339474 (Russia), issued January 20, 2013"
+      },
+      {
+        "label": "Digital currency addresses, per OFAC",
+        "value": "ETH 0x761edd5e4546229a0bd35ae99b4d3d01cf4a3510 (also listed for Ilya Aleksandrovich Boykov); TRX TCV4qdpTxoMyqkn7sSPeRrXmhH5JFxMvmT; TRX TQCBdU4K92oxLAkzwexZpqVZJhmPbtLYMm; TRX TFksjBcHPYqgAax2USheQuaT1ydRKyZRdg"
+      }
+    ],
+    "caution": "Vitold Viktorovich Obertas (Obertas) is a Russian intermediary for illicit DPRK financial transactions, including for Amnokgang Technology Development Company (Amnokgang). OFAC designated Amnokgang in its March 12, 2026 action. Since January 2025, Obertas has conducted nearly $2 million worth of cryptocurrency conversions, as well as at least $1.25 million in other currency transactions, for DPRK officials."
+  },
+  "sources": [
+    {
+      "title": "Recent Actions, October 28, 2026: North Korea Designations (DPRK IT worker facilitators and the First Financial and Technical Development Center)",
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-10-28",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Facilitators of DPRK IT Worker Fraud Targeting U.S. Businesses",
+      "url": "https://home.treasury.gov/news/press-releases/sb0669",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-10-28",
+      "type": "press_release"
+    }
+  ],
+  "disclaimer": [
+    "Vitold Viktorovich Obertas is a Russian national, not a DPRK national, and is profiled here as the intermediary the Treasury says has converted cryptocurrency and moved other currency for DPRK officials, including for Amnokgang Technology Development Company. OFAC's entry lists one Ethereum and three TRON addresses, which the scraper carries; the Ethereum address is listed for Ilya Aleksandrovich Boykov as well.",
+    "The confidence level of 'confirmed' reflects that this individual is named on OFAC's Specially Designated Nationals list; a sanctions designation is an administrative action by the Treasury and not a criminal charge, and nothing here states that any court has found anything."
+  ],
+  "last_updated": "2026-11-16",
+  "name_korean_not_applicable": "Russian national and financial intermediary rather than a DPRK national, so no Korean rendering of the name applies."
+}

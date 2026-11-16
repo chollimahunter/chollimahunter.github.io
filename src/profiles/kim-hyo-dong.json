@@ -18,7 +18,7 @@
   "fake_ids": [],
   "wanted_details": {
     "heading": "Sanctions-designation details",
-    "status": "Designated by the Republic of Korea on May 23, 2023, for involvement in DPRK IT workers' foreign-currency earning abroad",
+    "status": "Designated by the Republic of Korea on May 23, 2023, for involvement in DPRK IT workers' foreign-currency earning abroad; designated by OFAC on October 28, 2026 under Executive Order 13687, program tag DPRK2, for materially assisting Chinyong Information Technology Cooperation Company",
     "details": [
       {
         "label": "Post, per the identification annex",
@@ -43,6 +43,10 @@
       {
         "label": "Passport",
         "value": "108130286 (North Korea)"
+      },
+      {
+        "label": "Location, per OFAC",
+        "value": "Russia; Laos"
       }
     ],
     "caution": "이번에 제재대상으로 지정된 개인 7명은 △북한 해외 IT 지부 책임자로서 불법 외화벌이를 주도하였거나1), △자금세탁 등 불법 금융활동을 통해 외화벌이를 도움으로써2) 대북제재 회피와 핵ㆍ미사일 개발 자금 조달에 관여하였다. 특히, 이들 IT 지부 책임자들은 IT 인력에 대한 감시ㆍ통제ㆍ갑질, 임금 미지급 등 강제노동을 강요하여 이들의 인권을 유린해 왔다. 1) 김상만, 김기혁, 김성일, 전연근, 김효동 2) 유성혁, 윤성일 동명기술무역회사는 군수공업부 산하 IT 회사로, 라오스에 IT 인력 파견"
@@ -61,14 +65,29 @@
       "publisher": "Ministry of Foreign Affairs, Republic of Korea",
       "date": "2023-05-23",
       "type": "sanctions_designation"
+    },
+    {
+      "title": "Recent Actions, October 28, 2026: North Korea Designations (DPRK IT worker facilitators and the First Financial and Technical Development Center)",
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "date": "2026-10-28",
+      "type": "sanctions_designation"
+    },
+    {
+      "title": "Treasury Sanctions Facilitators of DPRK IT Worker Fraud Targeting U.S. Businesses",
+      "url": "https://home.treasury.gov/news/press-releases/sb0669",
+      "publisher": "U.S. Department of the Treasury",
+      "date": "2026-10-28",
+      "type": "press_release"
     }
   ],
   "disclaimer": [
     "Kim Hyo Dong is profiled here as the representative in Laos of Tongmyong Technology Trade Company (동명기술무역회사), which the Republic of Korea describes as an IT company under the Munitions Industry Department that sends IT workers to Laos. The ministry counts him among the heads of overseas IT branches who led the illicit earning of foreign currency and, in its words, subjected the IT workers under them to surveillance, control, abuse and withheld wages.",
     "The Korean quotation under the designation details is the ministry's own wording.",
+    "On October 28, 2026 OFAC designated him as well, locating him in Russia and Laos, as the leader of a separate Russia-based delegation subordinate to Chinyong Information Technology Cooperation Company; the Treasury says he has provided logistical assistance to the delegation since at least December 2023, engaged in sanctions evasion and facilitated the transfer of over $100,000 equivalent in financial assets. OFAC's entry gives the same date of birth and passport number as the Republic of Korea's annex.",
     "The confidence level of 'confirmed' reflects that this individual is named on a government sanctions designation; a designation is an administrative action and not a criminal charge, and nothing here states that any court has found anything."
   ],
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-11-16",
   "name_korean": "김효동",
   "name_korean_provenance": "cited"
 }

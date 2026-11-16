@@ -2346,3 +2346,12 @@ https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-nort
 https://www.ic3.gov/CSA/2026/261112.pdf
 https://arcticwolf.com/resources/blog/still-in-the-meeting-bluenoroff-six-months-on/
 https://arcticwolf.com/wp-content/bluenoroff_still_in_the_meeting.pdf
+https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat
+https://wezard4u.tistory.com/429920
+https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns
+https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record
+https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines
+https://abnormal.ai/blog/polinrider-fake-coding-assignments
+https://material.security/resources/a-thousand-masks-where-the-dprk-it-worker-threat-meets-your-data
+https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/
+https://ofac.treasury.gov/recent-actions/20261028

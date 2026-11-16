@@ -14710,13 +14710,6 @@
       ]
     },
     {
-      "url": "https://slowmist.medium.com/u-s-ofac-sanctions-individuals-and-entities-linked-to-dprk-it-worker-networks-3d475a4152f5",
-      "publisher": "Slowmist",
-      "campaign": [
-        "IT Worker Fraud"
-      ]
-    },
-    {
       "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages",
       "publisher": "Sonatype",
       "campaign": [
@@ -14739,14 +14732,6 @@
       ]
     },
     {
-      "url": "https://www.trellix.com/advanced-research-center/threat-reports/november-2026",
-      "publisher": "Trellix",
-      "campaign": [
-        "Lazarus Group",
-        "Kimsuky"
-      ]
-    },
-    {
       "url": "https://www.ox.security/blog/polinrider-returns-hijacked-npm-packages-use-ethereum-blockchain-to-conceal-malware-infrastructure/",
       "publisher": "OxSecurity",
       "campaign": [
@@ -14765,13 +14750,6 @@
       "publisher": "Hayden Mckenzie",
       "campaign": [
         "IT Worker Fraud"
-      ]
-    },
-    {
-      "url": "https://s2w.inc/en/resources/1154",
-      "publisher": "S2W",
-      "campaign": [
-        "APT38"
       ]
     },
     {
@@ -14857,13 +14835,6 @@
       "publisher": "wezard4u (tistory)",
       "campaign": [
         "Kimsuky"
-      ]
-    },
-    {
-      "url": "https://polytrop.io/scanner/incident/binance-hack",
-      "publisher": "AMLBot",
-      "campaign": [
-        "APT38"
       ]
     },
     {
@@ -15163,6 +15134,72 @@
       "title": "Still in the Meeting: BlueNoroff Six Months On (report)",
       "campaign": [
         "APT38"
+      ]
+    },
+    {
+      "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+      "publisher": "Genians",
+      "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429920",
+      "publisher": "wezard4u (tistory)",
+      "title": "김수키(Kimsuky) 국방 R&D 표적 공격 2025 국방활용가능 민간보유기술 위장한 백도어 분석",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns",
+      "publisher": "RedAsgard",
+      "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+      "publisher": "RedAsgard",
+      "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://www.stepsecurity.io/blog/accurasofthire-fake-interview-developer-machines",
+      "publisher": "StepSecurity",
+      "title": "The Take-Home Test That Runs on Your Work Laptop: Inside the AccuraSoftHire Fake Interview Campaign",
+      "campaign": [
+        "PolinRider",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://abnormal.ai/blog/polinrider-fake-coding-assignments",
+      "publisher": "Abnormal",
+      "title": "PolinRider: How Malicious Coding Assignments Steal Developer Secrets and Backdoor Their Tools",
+      "campaign": [
+        "PolinRider",
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://material.security/resources/a-thousand-masks-where-the-dprk-it-worker-threat-meets-your-data",
+      "publisher": "Material",
+      "title": "A Thousand Masks: Where the DPRK IT-Worker Threat Meets Your Data",
+      "campaign": [
+        "IT Worker Fraud"
+      ]
+    },
+    {
+      "url": "https://ofac.treasury.gov/recent-actions/20261028",
+      "publisher": "U.S. Department of the Treasury, Office of Foreign Assets Control (OFAC)",
+      "title": "Recent Actions, October 28, 2026: North Korea Designations",
+      "campaign": [
+        "IT Worker Fraud"
       ]
     }
   ],
@@ -20494,6 +20531,55 @@
       "reason": "no-extractable-indicators",
       "checked": "2026-11-13",
       "notes": "A stealer log from a Mac that may have belonged to a Binance employee. The North Korean attribution is Binance's, citing the FBI, and the article says the log may predate or be unrelated to the disclosed theft. Nearly every value in it is the victim's (the employer's hosts, corporate addresses, the machine's IP); the one attacker value, the lure page, is a subdomain of a third-party document platform."
+    },
+    {
+      "url": "https://www.genians.co.kr/blog/threat_intelligence/nodelinkrat",
+      "publisher": "Genians",
+      "reason": "declined",
+      "checked": "2026-11-16",
+      "notes": "The Korean edition of the NodeLinkRAT report; the English edition is read instead and carries the same indicators."
+    },
+    {
+      "url": "https://www.fbi.gov/investigate/cyber/alerts/2026/north-korea-responsible-for-6-billion-binance-attack",
+      "publisher": "FBI",
+      "reason": "transcribed-by-hand",
+      "checked": "2026-11-16",
+      "notes": "fbi.gov answers scripts with 403; the alert's 628 addresses are filed from the Wayback snapshot of 15 November as the dataset fbi-binance-tradertraitor-2026-addresses (PR #63)."
+    },
+    {
+      "url": "https://www.trellix.com/advanced-research-center/threat-reports/november-2026",
+      "publisher": "Trellix",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-16",
+      "notes": "Read in a browser on 16 November 2026 (scripts get 403): a landing page for Trellix's November 2026 CyberThreat Report with no North Korean content and no indicators; the report itself is a PDF executive summary."
+    },
+    {
+      "url": "https://s2w.inc/en/resources/1154",
+      "publisher": "S2W",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-16",
+      "notes": "Read in a browser on 16 November 2026 (scripts get 403): S2W TALON's summary of the Binance hot-wallet theft of 29 October, attributed to TraderTraitor per the FBI. It carries no addresses or other indicators; the FBI alert's addresses are filed as fbi-binance-tradertraitor-2026-addresses."
+    },
+    {
+      "url": "https://slowmist.medium.com/u-s-ofac-sanctions-individuals-and-entities-linked-to-dprk-it-worker-networks-3d475a4152f5",
+      "publisher": "SlowMist",
+      "reason": "blocked",
+      "checked": "2026-11-16",
+      "notes": "Medium answers scripts with 403; read in a browser on 16 November 2026. The eight sanctioned addresses it traces are OFAC's and are filed from ofac.treasury.gov/recent-actions/20261028. The rest are exchange deposit addresses (Bybit, HTX, Binance), an intermediary and an unidentified sender, which are not filed."
+    },
+    {
+      "url": "https://polytrop.io/scanner/incident/binance-hack",
+      "publisher": "Polytrop",
+      "reason": "blocked",
+      "checked": "2026-11-16",
+      "notes": "Answers scripts with 403. The Binance theft's addresses are filed from the FBI alert."
+    },
+    {
+      "url": "https://home.treasury.gov/news/press-releases/sb0669",
+      "publisher": "U.S. Department of the Treasury",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-16",
+      "notes": "The press release for OFAC's designations of 28 October 2026 carries no addresses; the digital currency addresses are on ofac.treasury.gov/recent-actions/20261028, which is read instead. The designated people are profiled from both."
     }
   ],
   "discovered": []

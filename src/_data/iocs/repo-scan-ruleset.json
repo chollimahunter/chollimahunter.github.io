@@ -18514,5 +18514,138 @@
       }
     ],
     "date_added": "2026-11-15"
+  },
+  {
+    "id": "domain-oppsite-dothome-co-kr",
+    "ioc_type": "domain",
+    "value": "oppsite.dothome.co.kr",
+    "campaign": [
+      "Kimsuky"
+    ],
+    "description": "Free-hosting subdomain that Genians lists among the domains of a Kimsuky-linked campaign delivering NodeLinkRAT: in the attack of 28 September 2026 the script posted to the operator's public note page sent collected documents to it, alongside the Dropbox API.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+        "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+        "publisher": "Genians",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-nid-weffm-p-e-kr",
+    "ioc_type": "domain",
+    "value": "nid.weffm.p-e.kr",
+    "campaign": [
+      "Kimsuky"
+    ],
+    "description": "Domain that Genians lists in the indicators of its NodeLinkRAT report, a Kimsuky-linked campaign that sends a LNK file through a South Korean webmail service's large-attachment feature and uses a public note service as a C2 channel.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+        "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+        "publisher": "Genians",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-inmain-22web-org",
+    "ioc_type": "domain",
+    "value": "inmain.22web.org",
+    "campaign": [
+      "Kimsuky"
+    ],
+    "description": "Free-hosting domain on 185.27.134.207 that Genians names as the infrastructure of a 2024 phishing page impersonating a NAVER MYBOX security notification, the same layout reused in the NodeLinkRAT campaign; Genians' earlier report attributed that 2024 campaign to Kimsuky.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Analysis of NodeLinkRAT, a New North Korea-Linked RAT Abusing Public Note Services as C2",
+        "url": "https://www.genians.co.kr/en/blog/threat_intelligence/nodelinkrat",
+        "publisher": "Genians",
+        "date": "2026-11-15"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-chainmanamgentagency-info",
+    "ioc_type": "domain",
+    "value": "chainmanamgentagency.info",
+    "campaign": [
+      "Contagious Interview"
+    ],
+    "description": "Gateway name of the NetSupport command channel in a DEV#POPPER intrusion that RedAsgard reconstructed from a poisoned take-home repository: it resolves to 185.248.161.18 and returns only a default Apache 403, a name-only front with no site behind it. RedAsgard assesses DEV#POPPER as DPRK-consistent on behaviour and cites Securonix's 2024 report linking it to North Korean actors; it does not attribute the campaign outright.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+        "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+        "publisher": "RedAsgard",
+        "date": "2026-11-13"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-green-horse-42739-zap-cloud",
+    "ioc_type": "domain",
+    "value": "green-horse-42739.zap.cloud",
+    "campaign": [
+      "Contagious Interview"
+    ],
+    "description": "ZAP-Hosting hostname of 94.249.185.106, the current command server and data store of the DEV#POPPER intrusion RedAsgard reconstructed; it names the hostname as a pivot for sibling hosts on the same provider. RedAsgard assesses DEV#POPPER as DPRK-consistent on behaviour and cites Securonix's 2024 report linking it to North Korean actors; it does not attribute the campaign outright.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+        "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+        "publisher": "RedAsgard",
+        "date": "2026-11-13"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-blue-eagle-26751-zap-cloud",
+    "ioc_type": "domain",
+    "value": "blue-eagle-26751.zap.cloud",
+    "campaign": [
+      "Contagious Interview"
+    ],
+    "description": "ZAP-Hosting hostname of 147.189.169.26, the backup command server and data store of the DEV#POPPER intrusion RedAsgard reconstructed. RedAsgard assesses DEV#POPPER as DPRK-consistent on behaviour and cites Securonix's 2024 report linking it to North Korean actors; it does not attribute the campaign outright.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+        "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+        "publisher": "RedAsgard",
+        "date": "2026-11-13"
+      }
+    ],
+    "date_added": "2026-11-16"
+  },
+  {
+    "id": "domain-db-connectors-vercel-app",
+    "ioc_type": "domain",
+    "value": "db-connectors.vercel.app",
+    "campaign": [
+      "Contagious Interview"
+    ],
+    "description": "Vercel deployment that serves the second stage of the DEV#POPPER intrusion RedAsgard reconstructed: the 363-byte payload decoded from the lure repository's logo.svg fetches /server/v2 from it with a fixed bearrtoken header and evaluates the response. RedAsgard assesses DEV#POPPER as DPRK-consistent on behaviour and cites Securonix's 2024 report linking it to North Korean actors; it does not attribute the campaign outright.",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Hunting Lazarus Part X: DEV#POPPER Returns, Stealing Browser Credentials (Technical Record)",
+        "url": "https://redasgard.com/blog/hunting-lazarus-part10-devpopper-returns-technical-record",
+        "publisher": "RedAsgard",
+        "date": "2026-11-13"
+      }
+    ],
+    "date_added": "2026-11-16"
   }
 ]
