@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -138,6 +138,18 @@
       ],
       "checked": "2026-10-05"
     },
+    "amberkernel.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "ameenafshin.com": {
       "registered": true,
       "created": "2017-04-07",
@@ -207,6 +219,18 @@
       ],
       "checked": "2026-10-05"
     },
+    "ashenfrontier.com": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-07-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "ashenravenfort.top": {
       "registered": true,
       "created": "2026-06-20",
@@ -218,6 +242,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-11-12"
+    },
+    "ashenshadowfort.top": {
+      "registered": true,
+      "created": "2026-06-22",
+      "expires": "2027-06-22",
+      "updated": "2026-06-22",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "ashnote.blog": {
       "registered": true,
@@ -307,6 +343,30 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "blackthornkeep.top": {
+      "registered": true,
+      "created": "2026-06-16",
+      "expires": "2027-06-16",
+      "updated": "2026-06-16",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "bleakhaven.com": {
+      "registered": true,
+      "created": "2026-07-13",
+      "expires": "2027-07-13",
+      "updated": "2026-07-13",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "blgbeach.com": {
       "registered": false,
@@ -585,6 +645,18 @@
       ],
       "checked": "2026-10-05"
     },
+    "crimsonnightsky.top": {
+      "registered": true,
+      "created": "2026-05-21",
+      "expires": "2027-05-21",
+      "updated": "2026-05-21",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "crowdon.info": {
       "registered": false,
       "checked": "2026-10-05"
@@ -740,6 +812,54 @@
       ],
       "checked": "2026-10-12"
     },
+    "duskharbinger.com": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-07-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "duskreaverhold.top": {
+      "registered": true,
+      "created": "2026-06-22",
+      "expires": "2027-06-22",
+      "updated": "2026-06-22",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "duskreaverwatch.com": {
+      "registered": true,
+      "created": "2026-07-04",
+      "expires": "2027-07-04",
+      "updated": "2026-07-04",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "duskwarden.com": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-07-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "easydriver.cloud": {
       "registered": false,
       "checked": "2026-10-05"
@@ -754,6 +874,30 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "electricvoidsig.top": {
+      "registered": true,
+      "created": "2026-05-23",
+      "expires": "2027-05-23",
+      "updated": "2026-05-23",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "emberwarden.com": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-21",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "encryptuganda.org": {
       "registered": true,
@@ -945,6 +1089,18 @@
       ],
       "checked": "2026-10-11"
     },
+    "ghostharvest.com": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-21",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "ghostraper.top": {
       "registered": true,
       "created": "2026-04-02",
@@ -980,6 +1136,18 @@
       ],
       "checked": "2026-11-12"
     },
+    "harborkindle.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "haruhana-happytown.com": {
       "registered": false,
       "checked": "2026-10-05"
@@ -1007,6 +1175,18 @@
       ],
       "checked": "2026-10-11"
     },
+    "hiddenmorrow.com": {
+      "registered": true,
+      "created": "2026-08-20",
+      "expires": "2027-08-20",
+      "updated": "2026-08-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "hodlwarden.com": {
       "registered": true,
       "created": "2026-03-07",
@@ -1017,6 +1197,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "hollowsentinel.com": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-21",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "ianbelknap.com": {
       "registered": true,
@@ -1137,6 +1329,18 @@
       ],
       "checked": "2026-10-27"
     },
+    "ironharbinger.com": {
+      "registered": true,
+      "created": "2026-07-21",
+      "expires": "2027-07-21",
+      "updated": "2026-07-21",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "ironphantomcore.top": {
       "registered": true,
       "created": "2026-06-05",
@@ -1148,6 +1352,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-12"
+    },
+    "ironwolfcrest.top": {
+      "registered": true,
+      "created": "2026-06-16",
+      "expires": "2027-06-16",
+      "updated": "2026-06-16",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "isillegalregion.com": {
       "registered": true,
@@ -1492,6 +1708,18 @@
       ],
       "checked": "2026-11-15"
     },
+    "marblehorizon.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "mastluner.club": {
       "registered": true,
       "created": "2026-03-11",
@@ -1665,6 +1893,18 @@
       ],
       "checked": "2026-10-05"
     },
+    "mistwalkerforge.top": {
+      "registered": true,
+      "created": "2026-06-22",
+      "expires": "2027-06-22",
+      "updated": "2026-06-22",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "mmdis-worls.com": {
       "registered": true,
       "created": "2026-01-26",
@@ -1676,9 +1916,57 @@
       ],
       "checked": "2026-10-05"
     },
+    "morrowcabin.com": {
+      "registered": true,
+      "created": "2026-08-20",
+      "expires": "2027-08-20",
+      "updated": "2026-08-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "mosstransit.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "mossymorrow.com": {
+      "registered": true,
+      "created": "2026-08-20",
+      "expires": "2027-08-20",
+      "updated": "2026-08-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "motokimasuo.com": {
       "registered": false,
       "checked": "2026-10-05"
+    },
+    "mournguardian.com": {
+      "registered": true,
+      "created": "2026-07-13",
+      "expires": "2027-07-13",
+      "updated": "2026-07-13",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "ms-live.cc": {
       "registered": true,
@@ -1853,6 +2141,18 @@
       ],
       "checked": "2026-11-12"
     },
+    "nightveilkeep.com": {
+      "registered": true,
+      "created": "2026-07-13",
+      "expires": "2027-07-13",
+      "updated": "2026-07-13",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "notionshare.online": {
       "registered": true,
       "created": "2026-06-13",
@@ -1947,6 +2247,18 @@
     "openxmlformat.org": {
       "registered": false,
       "checked": "2026-10-05"
+    },
+    "orchardvector.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "orioncoding.com": {
       "registered": true,
@@ -2070,6 +2382,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-11-13"
+    },
+    "quietthistle.com": {
+      "registered": true,
+      "created": "2026-08-20",
+      "expires": "2027-08-20",
+      "updated": "2026-08-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "ravenstonekeep.top": {
       "registered": true,
@@ -2295,6 +2619,18 @@
       ],
       "checked": "2026-10-12"
     },
+    "shadowmatrixpls.top": {
+      "registered": true,
+      "created": "2026-05-23",
+      "expires": "2027-05-23",
+      "updated": "2026-05-23",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "shadowrunevail.top": {
       "registered": true,
       "created": "2026-06-17",
@@ -2453,6 +2789,30 @@
       "registered": false,
       "checked": "2026-10-05"
     },
+    "stormfangridge.top": {
+      "registered": true,
+      "created": "2026-06-16",
+      "expires": "2027-06-16",
+      "updated": "2026-06-16",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "stormravenwatch.top": {
+      "registered": true,
+      "created": "2026-06-22",
+      "expires": "2027-06-22",
+      "updated": "2026-06-22",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "stormvenomforge.top": {
       "registered": true,
       "created": "2026-06-05",
@@ -2464,6 +2824,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-12"
+    },
+    "stormwraith.com": {
+      "registered": true,
+      "created": "2026-07-20",
+      "expires": "2027-07-20",
+      "updated": "2026-07-20",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "streetfleshroyalgaming.top": {
       "registered": true,
@@ -3364,6 +3736,30 @@
       ],
       "checked": "2026-10-12"
     },
+    "voidhunterkeep.top": {
+      "registered": true,
+      "created": "2026-06-22",
+      "expires": "2027-06-22",
+      "updated": "2026-06-22",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
+    "voidravenbastion.com": {
+      "registered": true,
+      "created": "2026-07-04",
+      "expires": "2027-07-04",
+      "updated": "2026-07-04",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "voidravencitadel.com": {
       "registered": true,
       "created": "2026-07-04",
@@ -3376,6 +3772,18 @@
       ],
       "checked": "2026-11-12"
     },
+    "voidravenfortress.com": {
+      "registered": true,
+      "created": "2026-07-04",
+      "expires": "2027-07-04",
+      "updated": "2026-07-04",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
+    },
     "voidravenstorm.top": {
       "registered": true,
       "created": "2026-06-05",
@@ -3387,6 +3795,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-12"
+    },
+    "voidravenwatch.com": {
+      "registered": true,
+      "created": "2026-07-04",
+      "expires": "2027-07-04",
+      "updated": "2026-07-04",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "voidwalkerforge.top": {
       "registered": true,
@@ -3465,6 +3885,18 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "willowtransit.com": {
+      "registered": true,
+      "created": "2026-08-05",
+      "expires": "2027-08-05",
+      "updated": "2026-08-05",
+      "registrar": "NICENIC INTERNATIONAL GROUP CO., LIMITED",
+      "status": [
+        "client delete prohibited",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-16"
     },
     "winstonjs.site": {
       "registered": true,
