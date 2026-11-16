@@ -30,5 +30,44 @@
       "postcss-initial-provider@3.0.4",
       "tailwindcss-motion-advanced@1.0.1"
     ]
+  },
+  {
+    "dataset_id": "polinrider-adminide-stack-npm-versions",
+    "title": "PolinRider: hijacked @adminide-stack and related npm releases (November 2026)",
+    "ioc_type": "npm_package",
+    "campaign": [
+      "PolinRider",
+      "Contagious Interview"
+    ],
+    "confidence_level": "high",
+    "description": "Twelve releases pushed between 3 and 4 November 2026 after the npm publisher accounts clockbook-app and pubngo-stack were hijacked, across ten established @adminide-stack, @cdmbase, @pubngo-stack, cdeops and server-hemera-mongo packages. None uses an install script: the PolinRider loader runs when the package entry point is imported, reads the latest transaction of Ethereum wallet 0x1eef0849eda15d87f64e51c73c8442cf3c8bcef3 for its C2 address, and fetches a Node RAT that persists by patching npm's cli.js and editor startup files. npm removed all twelve by 20:40 UTC on 4 November. Each entry is a specific published version, in name@version form.",
+    "disclaimer": "Third-party-reported, not independently verified per release by Chollima Hunter. These packages are legitimate projects whose maintainer accounts were hijacked: the name identifies the victim project, not the threat, and only the version listed is reported malicious. Check the cited report before acting on any single entry.",
+    "source": {
+      "title": "PolinRider expands from npm into Go, Packagist, and Chrome extension supply-chain poisoning",
+      "url": "https://corgea.com/research/polinrider-npm-packagist-go-chrome-july-2026",
+      "publisher": "Corgea",
+      "date": "2026-11-15",
+      "type": "threat_intel_report"
+    },
+    "sync": {
+      "method": "manual",
+      "last_synced": "2026-11-15",
+      "tool_path": null
+    },
+    "entry_count": 12,
+    "entries": [
+      "@adminide-stack/utils@0.0.16-129",
+      "@adminide-stack/utils@0.0.16-130",
+      "@adminide-stack/client-redux@0.0.16-18",
+      "server-hemera-mongo@0.0.15",
+      "server-hemera-mongo@0.0.16",
+      "@adminide-stack/health-api-server@0.0.18-alpha.465",
+      "@adminide-stack/user-activity-browser@1.1.3-alpha.114",
+      "@adminide-stack/forms-core@5.1.9-alpha.3",
+      "@adminide-stack/yantra-help-browser@12.0.194",
+      "cdeops@13.5.31",
+      "@cdmbase/wiki-browser@12.0.18-alpha.53",
+      "@pubngo-stack/help-browser@12.0.23-alpha.3"
+    ]
   }
 ]
