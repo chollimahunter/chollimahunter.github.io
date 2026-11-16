@@ -20582,5 +20582,35 @@
       "notes": "The press release for OFAC's designations of 28 October 2026 carries no addresses; the digital currency addresses are on ofac.treasury.gov/recent-actions/20261028, which is read instead. The designated people are profiled from both."
     }
   ],
-  "discovered": []
+  "discovered": [
+    {
+      "url": "https://www.inss.re.kr/publication/bbs/js_view.do?nttId=41038072&bbsId=js&page=1&searchCnd=100&searchWrd=",
+      "publisher": "INSS",
+      "title": "AI 도구 활용 국가배후 해킹조직(APT) 활동의 안보적 영향 분석",
+      "published": "2026-11-16",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korean",
+        "DPRK",
+        "Jade Sleet",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-16"
+    },
+    {
+      "url": "https://threatmon.io/financial-sector-threat-landscape-2026/",
+      "publisher": "ThreatMon",
+      "title": "Financial Sector Threat Landscape 2026",
+      "published": "2026-11-13",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Lazarus",
+        "BlueNoroff",
+        "UNC1069",
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-16"
+    }
+  ]
 }
