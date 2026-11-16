@@ -304,6 +304,7 @@ const TYPE_LABELS = {
   linkedin_profile: ["LinkedIn account"],
   linktree_account: ["Linktree account"],
   medium_account: ["Medium account"],
+  npm_account: ["npm account"],
   npm_package: ["npm package"],
   odnoklassniki_account: ["Odnoklassniki account"],
   compromised_repository: ["compromised repository", "Compromised repositories"],
