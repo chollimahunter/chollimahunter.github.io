@@ -142,6 +142,10 @@
     "trmlabs": {
       "publisher": "TRM Labs",
       "account": "https://www.trmlabs.com/resources/blog"
+    },
+    "nkinternet": {
+      "publisher": "North Korean Internet (nkinternet.com)",
+      "account": "https://nkinternet.com/"
     }
   },
   "dossiers": [
@@ -12215,6 +12219,399 @@
         }
       ],
       "note": "The researcher describes a small data leak found on a GitHub account run by an IT worker, about two months old when posted, setting out a multi-tier pipeline for recruiting facilitators the workers call employees, and lists the account and four addresses as its indicators. 0xprincedev and enthusiast0807@gmail.com were already filed under this persona from a commit tally of the jamesh0807 repositories on 20 September 2026, which is what places the other three addresses here. Read on 26 October 2026 with both replies, which add nothing."
+    },
+    {
+      "persona": "Kenji Brown",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "montecristo0712@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "montecristo0712@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "astro0712@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ApolloComet",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/KenjiBrown0712",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/leadcyber",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "travashley826@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "63.125.92.129",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api-jiracoders.com",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet lists these as the operator's own handles rather than a work persona: the addresses montecristo0712 and astro0712, the GitHub account ApolloComet (saved in nearly every browser profile on the laptop, and the home of the Dominique Vance resume, whose contact address is montecristo0712@gmail.com), and KenjiBrown0712, which goes with a \"Kenji Brown\" handle set. The post names no real name for the operator; Kenji Brown is the handle the post gives. It adds the GitHub account leadcyber, which commits as travashley826@gmail.com, an address the operator kept saved beside his own accounts, and the operator infrastructure saved in the browsers: 63.125.92.129 (port 50100) and api-jiracoders.com (port 3000).",
+      "unextracted": [
+        "EdmondDantes0712: a handle the post lists among the operator's own without naming its platform.",
+        "A GitLab account ApolloComet: the post names it beside the GitHub account; GitLab profiles have no indicator type here.",
+        "The jiracoders Slack workspace and a twolink.co account (no account name given): Slack workspaces have no type, and the twolink.co account has no identifier."
+      ]
+    },
+    {
+      "persona": "David Andres Guevara",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [
+        "Andrew Edelen"
+      ],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "guardiandev1953@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "davidindeed121@proton.me",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/david-guevara-4a548337b/",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/azurespheredev",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/DavidPro999",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "azuresphere.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "azuresphere.me",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. Guevara is one of the operator's two main personas, presented as a remote software engineer in Hialeah, Florida. DavidPro999 is the persona's main GitHub account and azurespheredev its showcase account, whose commits carry the author name Andrew Edelen, another name in the persona list. The post also names a Florida reference, Morgan Mastrangelo, who is the operator.",
+      "unextracted": [
+        "Further guardian* address variants: the post names the pattern, not the addresses."
+      ]
+    },
+    {
+      "persona": "Darius Wright",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [
+        "Danny"
+      ],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "darius.wright.dev@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "danny.dev.865@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dariusapply2.7@proton.me",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/darius-wright-1b436838a/",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/minionhub",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/dariusowright77",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "minionhub.dev",
+          "post": 0
+        }
+      ],
+      "unextracted": [
+        "dariusowright77.github.io: a GitHub Pages site the persona lists; the domain belongs to the platform, and the account dariusowright77 is filed."
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. Darius Wright, who sometimes goes by Danny, is the operator's second main persona, presented in Charlotte, North Carolina, and listing the same employer as Guevara. Danny is a given name alone and settles nothing by itself."
+    },
+    {
+      "persona": "Jonas Owusu",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "jonas.owusu.work@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jonasowusuindeed210@proton.me",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/jonas-owusu-7840843b0/",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. The name also appears in cardholder fields of the laptop's saved form data.",
+      "unextracted": [
+        "Further address variants the post mentions without listing."
+      ]
+    },
+    {
+      "persona": "Dominique Vance",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "dominiqueavery0223@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/dominique-vance-33980b368/",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. The persona's resume is kept on the operator's GitHub account ApolloComet and gives montecristo0712@gmail.com, one of the operator's own addresses, as its contact; the post calls this one of the cleanest links between the person and a work persona. The persona applied for a game-programming role on outscal.com.",
+      "unextracted": [
+        "dominiquevance0223@ and variants: the post gives the local part without a domain."
+      ]
+    },
+    {
+      "persona": "Dustin Lee",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "dustin.jason.lee@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. Dustin Lee is presented in Austin, Texas, is the billing name on azuresphere.dev (Guevara's portfolio domain), and appears in cardholder fields of the saved form data."
+    },
+    {
+      "persona": "Calvin Dollard",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "calvin.goldendev@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. Presented in Clearwater, Florida, through resume files and a LinkedIn page the post does not identify."
+    },
+    {
+      "persona": "Gary Shores",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "shoresgary0302@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "gary.indeed.126@proton.me",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/gary-s-453b0636b/",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts.",
+      "unextracted": [
+        "Further address variants the post mentions without listing."
+      ]
+    },
+    {
+      "persona": "Colin Lee",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/RomanSiuma",
+          "post": 0
+        },
+        {
+          "ioc_type": "linkedin_profile",
+          "value": "https://www.linkedin.com/in/colin-lee-97503b19a/",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. The persona puts romansiuma.github.io on its applications.",
+      "unextracted": [
+        "Gmail and Outlook addresses the post mentions without listing.",
+        "romansiuma.github.io: a GitHub Pages site the persona puts on its applications; the domain belongs to the platform, and the account RomanSiuma is filed."
+      ]
+    },
+    {
+      "persona": "Michael Price",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "michael2025412@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet attributes this persona to one North Korean IT worker whose laptop copy (August 2026) the post analyses, and lists it in the post's closing table of personas and accounts. The post marks this address as tentative."
+    },
+    {
+      "persona": "Morgan Mastrangelo",
+      "researcher": "nkinternet",
+      "transcribed": "2026-11-18",
+      "aliases": [
+        "James Delay"
+      ],
+      "posts": [
+        {
+          "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+          "date": "2026-11-17"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "mmastrangelo1120@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/morganm94",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "morganmdev.com",
+          "post": 0
+        }
+      ],
+      "note": "NK Internet shows that the professional reference Guevara gives, a project manager named Morgan Mastrangelo, is the operator: the GitHub account morganm94 commits to the same repositories as azurespheredev and links to morganmdev.com, and the post finds no such project manager outside the persona's own material. The HackerRank profile linked from the account is in the name James Delay, the same name an old scan of azuresphere.dev shows.",
+      "unextracted": [
+        "The HackerRank profile in the name James Delay: the post gives no profile address."
+      ]
     }
   ],
   "unattributed": [

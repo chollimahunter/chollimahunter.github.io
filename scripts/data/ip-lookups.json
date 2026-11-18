@@ -39887,6 +39887,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "63.125.92.129": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "Verizon Business",
+      "org": "Verizon Business",
+      "asn": "AS701 Verizon Business",
+      "as_name": "UUNET",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-18",
+      "looked_up_at": "ip-api.com"
+    },
     "63.143.61.53": {
       "kind": "vpn",
       "provider": "Astrill VPN",

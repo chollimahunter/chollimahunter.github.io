@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-16",
+  "checked": "2026-11-18",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -204,6 +204,10 @@
       ],
       "checked": "2026-10-05"
     },
+    "api-jiracoders.com": {
+      "registered": false,
+      "checked": "2026-11-18"
+    },
     "apply-blocknovas.site": {
       "registered": false,
       "checked": "2026-10-05"
@@ -287,6 +291,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-11"
+    },
+    "azuresphere.dev": {
+      "registered": true,
+      "created": "2026-09-02",
+      "expires": "2027-09-02",
+      "updated": "2026-09-07",
+      "registrar": "Name.com, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-18"
     },
     "basodara.com": {
       "registered": true,
@@ -1904,6 +1919,17 @@
       ],
       "checked": "2026-10-05"
     },
+    "minionhub.dev": {
+      "registered": true,
+      "created": "2026-10-10",
+      "expires": "2027-10-10",
+      "updated": "2026-10-15",
+      "registrar": "Namecheap Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-18"
+    },
     "mistwalkerforge.top": {
       "registered": true,
       "created": "2026-06-22",
@@ -1926,6 +1952,19 @@
         "active"
       ],
       "checked": "2026-10-05"
+    },
+    "morganmdev.com": {
+      "registered": true,
+      "created": "2024-10-14",
+      "expires": "2027-10-14",
+      "updated": "2026-10-15",
+      "registrar": "Squarespace Domains LLC",
+      "status": [
+        "client delete prohibited",
+        "client hold",
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-18"
     },
     "morrowcabin.com": {
       "registered": true,
