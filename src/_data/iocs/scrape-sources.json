@@ -6870,6 +6870,11 @@
       "title": "Operation Kabar Cobra: Kimsuky 공격 그룹의 최신 타깃 공격 사례 분석",
       "campaign": [
         "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "2a3053987b6887f468b0af96144c511dbd9691e878b6efa44734921fc0ba1e78"
+        }
       ]
     },
     {
@@ -14660,13 +14665,6 @@
       ]
     },
     {
-      "url": "https://bitquery.io/investigations/binance-hack-laundering",
-      "publisher": "Bitquery",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor",
       "publisher": "MichaelKoczwara",
       "campaign": [
@@ -14810,13 +14808,6 @@
       ]
     },
     {
-      "url": "https://binance.com/en/blog/community/3229153443759566763",
-      "publisher": "Binance",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://safedep.io/blog/antd-img-crop-forged-commit-overlord-stealer",
       "publisher": "Safe Dep",
       "campaign": [
@@ -14867,13 +14858,6 @@
       ]
     },
     {
-      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
-      "publisher": "Bitquery",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://www.bitquery.io/investigations/binance-hack",
       "publisher": "Bitquery",
       "campaign": [
@@ -14918,13 +14902,6 @@
     {
       "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response",
       "publisher": "Chainalysis",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
-      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
-      "publisher": "Binance",
       "campaign": [
         "APT38"
       ]
@@ -20580,37 +20557,49 @@
       "reason": "no-extractable-indicators",
       "checked": "2026-11-16",
       "notes": "The press release for OFAC's designations of 28 October 2026 carries no addresses; the digital currency addresses are on ofac.treasury.gov/recent-actions/20261028, which is read instead. The designated people are profiled from both."
-    }
-  ],
-  "discovered": [
+    },
     {
       "url": "https://www.inss.re.kr/publication/bbs/js_view.do?nttId=41038072&bbsId=js&page=1&searchCnd=100&searchWrd=",
       "publisher": "INSS",
-      "title": "AI 도구 활용 국가배후 해킹조직(APT) 활동의 안보적 영향 분석",
-      "published": "2026-11-16",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korean",
-        "DPRK",
-        "Jade Sleet",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-16"
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "INSS Strategy Report 414 (16 November 2026): a policy analysis of AI use by state-backed hacking groups, built on the Binance theft of 29 October and Microsoft's Jade Sleet reporting. The page carries no indicators; the Binance addresses are filed from the FBI alert."
     },
     {
       "url": "https://threatmon.io/financial-sector-threat-landscape-2026/",
       "publisher": "ThreatMon",
-      "title": "Financial Sector Threat Landscape 2026",
-      "published": "2026-11-13",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "Lazarus",
-        "BlueNoroff",
-        "UNC1069",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-16"
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "A narrative summary of a financial-sector report; its only DPRK content is a mention of the Binance theft, and the full report sits behind a download form. No indicators on the page."
+    },
+    {
+      "url": "https://bitquery.io/investigations/binance-hack-laundering",
+      "publisher": "Bitquery",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Bitquery's laundering trace of the Binance theft of 29 October 2026 never names North Korea; its attributions are its own address labels. The hacker addresses it prints are already filed from the FBI alert (dataset fbi-binance-tradertraitor-2026-addresses)."
+    },
+    {
+      "url": "https://binance.com/en/blog/community/3229153443759566763",
+      "publisher": "Binance",
+      "reason": "client-side-rendered",
+      "checked": "2026-11-18",
+      "notes": "Binance's findings post of 3 November 2026 renders in the browser. Read by hand on 2026-11-18: it cites the FBI's DPRK attribution and SANS ISC diary 32942 (unattributed MacSync malvertising, cited only as a similar technique) and lists no addresses or other indicators."
+    },
+    {
+      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
+      "publisher": "Bitquery",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Bitquery's account of who profited from the Binance hacker's swaps never names North Korea, and most addresses it prints belong to the traders, MEV bots and block builders on the other side of those swaps, not to the operator."
+    },
+    {
+      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+      "publisher": "Binance",
+      "reason": "client-side-rendered",
+      "checked": "2026-11-18",
+      "notes": "Binance's security incident update of 30 October 2026 renders in the browser. Read by hand on 2026-11-18: no attribution and no indicators."
     }
-  ]
+  ],
+  "discovered": []
 }

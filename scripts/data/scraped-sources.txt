@@ -2355,3 +2355,6 @@ https://abnormal.ai/blog/polinrider-fake-coding-assignments
 https://material.security/resources/a-thousand-masks-where-the-dprk-it-worker-threat-meets-your-data
 https://www.octoprobe.ai/blog/kimsuky-operation-gitpower-github-c2/
 https://ofac.treasury.gov/recent-actions/20261028
+https://web.archive.org/web/20260818091036/https://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf
+https://web.archive.org/web/20260908070903/https://www.dailysecu.com/form/html/pascon/pdf/2026/KCSCON2026_B-1.pdf
+https://web.archive.org/web/20221205155919/https://download.ahnlab.com/kr/site/library/[Report]Red_Eyes_Hacking_Group_kor.pdf

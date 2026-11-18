@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T16:49:16Z",
-  "record_count": 12254,
+  "generated_at": "2026-11-18T17:34:33Z",
+  "record_count": 12253,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -52960,37 +52960,6 @@
           "section": "IOCs.",
           "pulled_at": "2026-10-18",
           "source_sha256": "7c606bb6c67f7c66e3274718ae4c151157469701c0bb1d564355e00e16ee9034"
-        }
-      ]
-    },
-    {
-      "id": "email-address-adeea64d562d",
-      "ioc_type": "email_address",
-      "value": "human-ad@hanmail.net",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Kimsuky",
-        "Lazarus Group"
-      ],
-      "first_seen": "2019-02-26",
-      "last_seen": "2019-02-26",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://web.archive.org/web/20260818091036/https://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf",
-          "title": "Operation Kabar Cobra: Kimsuky 공격 그룹의 최신 타깃 공격 사례 분석",
-          "publisher": "Ahnlab",
-          "published": "2019-02-26",
-          "context": "…(2019.01.07) 2019 년 1 월 7 일에 통일부 기자단을 대상으로 [ 그림 4] 와 같은 내용의 이메일이 발송되었다 . ▪ 발송자 : 윤 ** (human-ad@hanmail.net) ▪ 제목 : RE: TF 참고자료 ▪ 본문내용 : TF 참고 바랍니다 * 언론사별 브랜드 관련해서 관리 잘해주 세요 ( 비번은 tf) ▪ 첨부파일 : TF 참고 .zip…",
-          "context_origin": "text",
-          "section": null,
-          "pulled_at": "2026-09-12",
-          "source_sha256": "d74435ca276f54ac53a9012483d6e781909fa6b3dcea973820fd0afd1e2cefd6"
         }
       ]
     },
