@@ -20701,6 +20701,41 @@
       "reason": "client-side-rendered",
       "checked": "2026-11-18",
       "notes": "Binance's security incident update of 30 October 2026 renders in the browser. Read by hand on 2026-11-18: no attribution and no indicators."
+    },
+    {
+      "url": "https://hunt.io/blog/rust-beacon-cobalt-strike-cat-south-korea",
+      "publisher": "Hunt.io",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "A Rust beacon delivering Cobalt Strike against South Korean organisations; the text never attributes it to North Korea. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/decoy-docs-and-malicious-browser-extensions-a-closer-look-at-a-multi-layered-threat",
+      "publisher": "Hunt.io",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Decoy manuals and malicious browser extensions; the text never names North Korea or a DPRK group. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/jspspy-filebroser-custom-webshell-management",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "JSPSpy web-shell servers; Lazarus is named only as one past user of the public web shell, and the servers listed are not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/xenorat-excel-xll-confuserex-as-access-method",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "An Excel XLL delivering the open-source XenoRAT; a North Korea-linked actor is named only as another user of the tool, and the sample is not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/good-game-gone-bad-xeno-rat-spread-via-gg-domains-and-github",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "XenoRAT spread through .gg domains and a Roblox-themed GitHub repository; Kimsuky is named only as an earlier user of the open-source tool, and this activity is not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
     }
   ],
   "discovered": []
