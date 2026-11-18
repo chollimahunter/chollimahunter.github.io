@@ -124,13 +124,37 @@ function unflatten(flat) {
   return hydrate(0);
 }
 
+// A run reads about 620 pages, and one 502 on any of them used to fail the
+// whole sync (16 November 2026), so a gateway error, rate limit or network
+// failure is retried with backoff before the run gives up.
+const PAGE_ATTEMPTS = 4;
+const RETRY_BASE_MS = 2000;
+const isTransient = (status) => status === 429 || status >= 500;
+
+async function postPage(page) {
+  for (let attempt = 1; ; attempt++) {
+    let res;
+    let reason;
+    try {
+      res = await fetch(ACTION_URL, {
+        method: "POST",
+        headers: { "User-Agent": USER_AGENT, Accept: "application/json", "Content-Type": "application/json" },
+        body: JSON.stringify({ page }),
+        signal: AbortSignal.timeout(60000),
+      });
+      if (res.ok || !isTransient(res.status)) return res;
+      reason = `${res.status} ${res.statusText}`;
+    } catch (err) {
+      reason = err.message;
+    }
+    if (attempt >= PAGE_ATTEMPTS) throw new Error(`action page ${page} failed after ${attempt} attempts: ${reason}`);
+    console.warn(`action page ${page}: ${reason}; retrying`);
+    await new Promise((r) => setTimeout(r, RETRY_BASE_MS * 2 ** (attempt - 1)));
+  }
+}
+
 async function fetchPage(page) {
-  const res = await fetch(ACTION_URL, {
-    method: "POST",
-    headers: { "User-Agent": USER_AGENT, Accept: "application/json", "Content-Type": "application/json" },
-    body: JSON.stringify({ page }),
-    signal: AbortSignal.timeout(60000),
-  });
+  const res = await postPage(page);
   if (!res.ok) throw new Error(`action page ${page} failed: ${res.status} ${res.statusText}`);
   const text = await res.text();
   if (text.length > MAX_BYTES) throw new Error(`action page ${page} exceeds ${MAX_BYTES} bytes`);
