@@ -20743,6 +20743,34 @@
       "reason": "transcribed-by-hand",
       "checked": "2026-11-18",
       "notes": "nkinternet.com does not answer scripts from this machine and its feed answers GitHub's runners with 403; the Wayback Machine's capture job failed for this post. Read in a browser on 2026-11-18 and transcribed by hand in x-dossiers.json under the nkinternet key: eleven personas and the operator's own accounts. Two values the post leaves open are on the held-back list."
+    },
+    {
+      "url": "https://nkinternet.com/2026/09/06/new-russia-north-korea-road-checkpoint-takes-shape-at-khasan/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "Satellite and procurement reading of a road checkpoint at Khasan on the Russian border; no cyber indicators. Read in a browser on 2026-11-18."
+    },
+    {
+      "url": "https://nkinternet.com/2026/08/01/a-new-silivaccine-north-koreas-antivirus/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "A new version of North Korea's SiliVaccine antivirus; the post gives installer paths and version strings but no hashes, hosts or operator infrastructure. Read in a browser on 2026-11-18."
+    },
+    {
+      "url": "https://nkinternet.com/2026/06/23/gunnersbury-avenue-sniffing-the-dprk-embassys-wifi/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "Wi-Fi observations at the DPRK embassy in London; the only addresses are North Korea's national network blocks, which are not operator indicators. Read from the Wayback snapshot of 3 July 2026 on 2026-11-18."
+    },
+    {
+      "url": "https://nisos.com/research/insider-threat-digital-recruitment-marketplace/",
+      "publisher": "Nisos",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "A general insider-threat piece on digital recruitment marketplaces; it never names North Korea. Read in a browser on 2026-11-18."
     }
   ],
   "discovered": []
