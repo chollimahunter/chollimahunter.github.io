@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:48:05Z",
+  "generated_at": "2026-11-16T16:49:16Z",
   "record_count": 12254,
   "records": [
     {
@@ -141595,7 +141595,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…3dc840d32ce86cebf657b17cef62814646ba8e98 e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec 0eeb1c0133eb4d571178b2d9d14ce3e9 bfecb8ce89a312d2ef4afc64a63847ae11c6f69e 59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983…",
           "context_origin": "text",
@@ -143248,7 +143248,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…bea77d1e59cf18dce22ad9a2fad52948fd7a9efa aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868 11bc82a9bd8297bd0823bce5d6202082 894e7d4ffd764bb458809c7f0643694b036ead30 f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952…",
           "context_origin": "text",
@@ -143320,7 +143320,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…82187ad3f0c6c225e2fba0c867280cc9 20d554a80d759c50d6537dd7097fed84dd258b3e 11be1803e2e307b647a8a7e02d128335c448ff741bf06bf52b332e0bbf423b03 74bc2d0b6680faa1a5a76b27e5479cbc bf939c9c261d27ee7bb92325cc588624fca75429…",
           "context_origin": "text",
@@ -145708,7 +145708,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -147049,7 +147049,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -147239,7 +147239,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb 27b134af30f4a86f177db2f2555fe01d 188754814b37927badc988b45b7c7f7d6b4c8dd3 c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02 5729fb29e3a7a90d2528e3357bd15a4b…",
           "context_origin": "text",
@@ -147512,7 +147512,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -147837,7 +147837,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02 5729fb29e3a7a90d2528e3357bd15a4b 19f4036f5cd91c5fc411afc4359e32f90caddaac 5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290 d5101c3b86d973a848ab7ed79cd11e5a…",
           "context_origin": "text",
@@ -148855,7 +148855,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -150933,7 +150933,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67 82187ad3f0c6c225e2fba0c867280cc9 20d554a80d759c50d6537dd7097fed84dd258b3e 11be1803e2e307b647a8a7e02d128335c448ff741bf06bf52b332e0bbf423b03 74bc2d0b6680faa1a5a76b27e5479cbc…",
           "context_origin": "text",
@@ -154025,7 +154025,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…f3487a1324f4c11b35504751a5527bc60eb95382 b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb 27b134af30f4a86f177db2f2555fe01d 188754814b37927badc988b45b7c7f7d6b4c8dd3 c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02…",
           "context_origin": "text",
@@ -156580,7 +156580,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -157590,7 +157590,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…5d833bcc679db38a45111269e727ec58b75c8d31 92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61 2fdf61fdfd649f8bbf5730307a0ab5d1 b2a89eebb5be61939f5458a024c929b169b4dc85 fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7…",
           "context_origin": "text",
@@ -159495,7 +159495,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -161085,7 +161085,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -161461,7 +161461,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…bfecb8ce89a312d2ef4afc64a63847ae11c6f69e 59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983 3703770e32820397c6e7e1e1221e6d0d 5d833bcc679db38a45111269e727ec58b75c8d31 92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61…",
           "context_origin": "text",
@@ -163144,7 +163144,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952 7faea2b01796b80d180399040bb69835 3b3e778b647371262120a523eb873c20bb82beaf 8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423 cad1120d91b812acafef7175f949dd1b09c6c21a…",
           "context_origin": "text",
@@ -164518,7 +164518,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290 d5101c3b86d973a848ab7ed79cd11e5a 3dc840d32ce86cebf657b17cef62814646ba8e98 e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec 0eeb1c0133eb4d571178b2d9d14ce3e9…",
           "context_origin": "text",
@@ -166432,7 +166432,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -167005,7 +167005,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -168861,7 +168861,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -169304,7 +169304,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -169822,7 +169822,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -173761,7 +173761,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -173801,7 +173801,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…5729fb29e3a7a90d2528e3357bd15a4b 19f4036f5cd91c5fc411afc4359e32f90caddaac 5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290 d5101c3b86d973a848ab7ed79cd11e5a 3dc840d32ce86cebf657b17cef62814646ba8e98…",
           "context_origin": "text",
@@ -174983,7 +174983,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -175174,7 +175174,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…188754814b37927badc988b45b7c7f7d6b4c8dd3 c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02 5729fb29e3a7a90d2528e3357bd15a4b 19f4036f5cd91c5fc411afc4359e32f90caddaac 5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290…",
           "context_origin": "text",
@@ -176405,7 +176405,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…0eeb1c0133eb4d571178b2d9d14ce3e9 bfecb8ce89a312d2ef4afc64a63847ae11c6f69e 59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983 3703770e32820397c6e7e1e1221e6d0d 5d833bcc679db38a45111269e727ec58b75c8d31…",
           "context_origin": "text",
@@ -177966,7 +177966,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983 3703770e32820397c6e7e1e1221e6d0d 5d833bcc679db38a45111269e727ec58b75c8d31 92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61 2fdf61fdfd649f8bbf5730307a0ab5d1…",
           "context_origin": "text",
@@ -178405,7 +178405,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -178716,7 +178716,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -179901,7 +179901,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -180365,7 +180365,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7 bb915073385dd16a846dfa318afa3c19 6285ffb5f98d35cd98e78d48b63a05af6e4e4dea dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc 9833a4779b69b38e3e51f04e395674c6…",
           "context_origin": "text",
@@ -181650,7 +181650,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…8433a94aedb6380ac8d4610af643fb0e5220c5cb fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405 660ea9b8205fbd2da59fefd26ae5115c 769383fc65d1386dd141c960c9970114547da0c2 a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67…",
           "context_origin": "text",
@@ -187273,7 +187273,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…20d554a80d759c50d6537dd7097fed84dd258b3e 11be1803e2e307b647a8a7e02d128335c448ff741bf06bf52b332e0bbf423b03 74bc2d0b6680faa1a5a76b27e5479cbc bf939c9c261d27ee7bb92325cc588624fca75429 7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896…",
           "context_origin": "text",
@@ -188137,7 +188137,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405 660ea9b8205fbd2da59fefd26ae5115c 769383fc65d1386dd141c960c9970114547da0c2 a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67 82187ad3f0c6c225e2fba0c867280cc9…",
           "context_origin": "text",
@@ -189626,7 +189626,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…74bc2d0b6680faa1a5a76b27e5479cbc bf939c9c261d27ee7bb92325cc588624fca75429 7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896 f3d4144860ca10ba60f7ef4d176cc736 bea77d1e59cf18dce22ad9a2fad52948fd7a9efa…",
           "context_origin": "text",
@@ -189839,7 +189839,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…253f3a53796f1b0fbe64f7b05ae1d66bc2b0773588d00c3d2bf08572a497fa59 83cba55f180b0c100935137615e8d296 7a1d41c8e9e4bd19e0e360ec17e30c38e4f9ca0d 82a2dafd6ce594f2cf8588f32585c71be2180fc4cf9a144e300b1692f3de5807 Bold hashes indicate that they were observed in our analysis,…",
           "context_origin": "text",
@@ -192105,7 +192105,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…894e7d4ffd764bb458809c7f0643694b036ead30 f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952 7faea2b01796b80d180399040bb69835 3b3e778b647371262120a523eb873c20bb82beaf 8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423…",
           "context_origin": "text",
@@ -193202,7 +193202,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…769383fc65d1386dd141c960c9970114547da0c2 a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67 82187ad3f0c6c225e2fba0c867280cc9 20d554a80d759c50d6537dd7097fed84dd258b3e 11be1803e2e307b647a8a7e02d128335c448ff741bf06bf52b332e0bbf423b03…",
           "context_origin": "text",
@@ -193455,7 +193455,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…83cba55f180b0c100935137615e8d296 7a1d41c8e9e4bd19e0e360ec17e30c38e4f9ca0d 82a2dafd6ce594f2cf8588f32585c71be2180fc4cf9a144e300b1692f3de5807 Bold hashes indicate that they were observed in our analysis, other files were taken from reports Volexity , SentinelOne and…",
           "context_origin": "text",
@@ -194176,7 +194176,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc 9833a4779b69b38e3e51f04e395674c6 8433a94aedb6380ac8d4610af643fb0e5220c5cb fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405 660ea9b8205fbd2da59fefd26ae5115c…",
           "context_origin": "text",
@@ -196453,7 +196453,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868 11bc82a9bd8297bd0823bce5d6202082 894e7d4ffd764bb458809c7f0643694b036ead30 f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952 7faea2b01796b80d180399040bb69835…",
           "context_origin": "text",
@@ -197092,7 +197092,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…7faea2b01796b80d180399040bb69835 3b3e778b647371262120a523eb873c20bb82beaf 8ab3a5eaaf8c296080fadf56b265194681d7da5da7c02562953a4cb60e147423 cad1120d91b812acafef7175f949dd1b09c6c21a 6426fe4dc604c7f1784ed1d48ab4ffc8 3b88cda62cdd918b62ef5aa8c5a73a46f176d18b…",
           "context_origin": "text",
@@ -200330,7 +200330,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…3703770e32820397c6e7e1e1221e6d0d 5d833bcc679db38a45111269e727ec58b75c8d31 92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61 2fdf61fdfd649f8bbf5730307a0ab5d1 b2a89eebb5be61939f5458a024c929b169b4dc85…",
           "context_origin": "text",
@@ -202868,7 +202868,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…6285ffb5f98d35cd98e78d48b63a05af6e4e4dea dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc 9833a4779b69b38e3e51f04e395674c6 8433a94aedb6380ac8d4610af643fb0e5220c5cb fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405…",
           "context_origin": "text",
@@ -207867,7 +207867,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…660ea9b8205fbd2da59fefd26ae5115c 769383fc65d1386dd141c960c9970114547da0c2 a64fa9f1c76457ecc58402142a8728ce34ccba378c17318b3340083eeb7acc67 82187ad3f0c6c225e2fba0c867280cc9 20d554a80d759c50d6537dd7097fed84dd258b3e…",
           "context_origin": "text",
@@ -209454,7 +209454,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…f3d4144860ca10ba60f7ef4d176cc736 bea77d1e59cf18dce22ad9a2fad52948fd7a9efa aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868 11bc82a9bd8297bd0823bce5d6202082 894e7d4ffd764bb458809c7f0643694b036ead30…",
           "context_origin": "text",
@@ -209496,7 +209496,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -212851,7 +212851,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…92005051ae314d61074ed94a52e76b1c3e21e7f0e8c1d1fdd497a006ce45fa61 2fdf61fdfd649f8bbf5730307a0ab5d1 b2a89eebb5be61939f5458a024c929b169b4dc85 fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7 bb915073385dd16a846dfa318afa3c19…",
           "context_origin": "text",
@@ -214871,7 +214871,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…App/.session-locks MD5 SHA1 SHA256 ca8c0385ce2b8bdd19423c8b98a5924b f3487a1324f4c11b35504751a5527bc60eb95382 b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb 27b134af30f4a86f177db2f2555fe01d 188754814b37927badc988b45b7c7f7d6b4c8dd3…",
           "context_origin": "text",
@@ -216176,7 +216176,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…b2a89eebb5be61939f5458a024c929b169b4dc85 fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7 bb915073385dd16a846dfa318afa3c19 6285ffb5f98d35cd98e78d48b63a05af6e4e4dea dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc…",
           "context_origin": "text",
@@ -217296,7 +217296,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896 f3d4144860ca10ba60f7ef4d176cc736 bea77d1e59cf18dce22ad9a2fad52948fd7a9efa aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868 11bc82a9bd8297bd0823bce5d6202082…",
           "context_origin": "text",
@@ -217653,7 +217653,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…11be1803e2e307b647a8a7e02d128335c448ff741bf06bf52b332e0bbf423b03 74bc2d0b6680faa1a5a76b27e5479cbc bf939c9c261d27ee7bb92325cc588624fca75429 7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896 f3d4144860ca10ba60f7ef4d176cc736…",
           "context_origin": "text",
@@ -217860,7 +217860,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec 0eeb1c0133eb4d571178b2d9d14ce3e9 bfecb8ce89a312d2ef4afc64a63847ae11c6f69e 59e1edf4d82fae4978e97512b0331b7eb21dd4b838b850ba46794d9c7a2c0983 3703770e32820397c6e7e1e1221e6d0d…",
           "context_origin": "text",
@@ -219262,7 +219262,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…27b134af30f4a86f177db2f2555fe01d 188754814b37927badc988b45b7c7f7d6b4c8dd3 c485674ee63ec8d4e8fde9800788175a8b02d3f9416d0e763360fff7f8eb4e02 5729fb29e3a7a90d2528e3357bd15a4b 19f4036f5cd91c5fc411afc4359e32f90caddaac…",
           "context_origin": "text",
@@ -221505,7 +221505,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…Support/3CX Desktop App/.main_storage ~/Library/Application Support/3CX Desktop App/.session-locks MD5 SHA1 SHA256 ca8c0385ce2b8bdd19423c8b98a5924b f3487a1324f4c11b35504751a5527bc60eb95382 b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb…",
           "context_origin": "text",
@@ -222174,7 +222174,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -225400,7 +225400,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…19f4036f5cd91c5fc411afc4359e32f90caddaac 5407cda7d3a75e7b1e030b1f33337a56f293578ffa8b3ae19c671051ed314290 d5101c3b86d973a848ab7ed79cd11e5a 3dc840d32ce86cebf657b17cef62814646ba8e98 e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec…",
           "context_origin": "text",
@@ -227172,7 +227172,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -228623,7 +228623,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…bb915073385dd16a846dfa318afa3c19 6285ffb5f98d35cd98e78d48b63a05af6e4e4dea dde03348075512796241389dfea5560c20a3d2a2eac95c894e7bbed5e85a0acc 9833a4779b69b38e3e51f04e395674c6 8433a94aedb6380ac8d4610af643fb0e5220c5cb…",
           "context_origin": "text",
@@ -229935,7 +229935,7 @@
         "DPRK (cluster unattributed)"
       ],
       "first_seen": "2026-09-11",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -231618,7 +231618,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…d5101c3b86d973a848ab7ed79cd11e5a 3dc840d32ce86cebf657b17cef62814646ba8e98 e6bbc33815b9f20b0cf832d7401dd893fbc467c800728b5891336706da0dbcec 0eeb1c0133eb4d571178b2d9d14ce3e9 bfecb8ce89a312d2ef4afc64a63847ae11c6f69e…",
           "context_origin": "text",
@@ -235943,7 +235943,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…Support/3CX Desktop App/.session-locks MD5 SHA1 SHA256 ca8c0385ce2b8bdd19423c8b98a5924b f3487a1324f4c11b35504751a5527bc60eb95382 b86c695822013483fa4e2dfdf712c5ee777d7b99cbad8c2fa2274b133481eadb 27b134af30f4a86f177db2f2555fe01d…",
           "context_origin": "text",
@@ -236319,7 +236319,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…bf939c9c261d27ee7bb92325cc588624fca75429 7986bbaee8940da11ce089383521ab420c443ab7b15ed42aed91fd31ce833896 f3d4144860ca10ba60f7ef4d176cc736 bea77d1e59cf18dce22ad9a2fad52948fd7a9efa aa124a4b4df12b34e74ee7f6c683b2ebec4ce9a8edcf9be345823b4fdcf5d868…",
           "context_origin": "text",
@@ -237953,7 +237953,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…11bc82a9bd8297bd0823bce5d6202082 894e7d4ffd764bb458809c7f0643694b036ead30 f79c3b0adb6ec7bcc8bc9ae955a1571aaed6755a28c8b17b1d7595ee86840952 7faea2b01796b80d180399040bb69835 3b3e778b647371262120a523eb873c20bb82beaf…",
           "context_origin": "text",
@@ -239098,7 +239098,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…9833a4779b69b38e3e51f04e395674c6 8433a94aedb6380ac8d4610af643fb0e5220c5cb fad482ded2e25ce9e1dd3d3ecc3227af714bdfbbde04347dbc1b21d6a3670405 660ea9b8205fbd2da59fefd26ae5115c 769383fc65d1386dd141c960c9970114547da0c2…",
           "context_origin": "text",
@@ -240513,7 +240513,7 @@
         {
           "url": "https://www.group-ib.com/blog/3cx-supply-chain-attack/",
           "title": "36gate: supply chain attack | Group-IB Blog",
-          "publisher": "Group-ib",
+          "publisher": "Group-IB",
           "published": "2023-03-31",
           "context": "…2fdf61fdfd649f8bbf5730307a0ab5d1 b2a89eebb5be61939f5458a024c929b169b4dc85 fee4f9dabc094df24d83ec1a8c4e4ff573e5d9973caa676f58086c99561382d7 bb915073385dd16a846dfa318afa3c19 6285ffb5f98d35cd98e78d48b63a05af6e4e4dea…",
           "context_origin": "text",
@@ -294264,7 +294264,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -311163,6 +311163,17 @@
           "section": "5. Conclusion",
           "pulled_at": "2026-09-12",
           "source_sha256": "20bdb3f7b3f0f55b985b6ba674a571197bbcb74b9c54f594a52d393607363eed"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/59460",
+          "title": "AutoIt을 사용해 악성코드를 제작하는 Kimsuky 그룹 (RftRAT, Amadey) - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2023-12-01",
+          "context": "…URL http://152.89.247.57:52390/ http://172.93.201.248:52390/ http://172.93.201.248:8083/ http://192.236.154.125:50108/ http://209.127.37.40:52390/ AhnLab TIP 를 구독하시면 연관…",
+          "context_origin": "list",
+          "section": "5. 결론",
+          "pulled_at": "2026-11-16",
+          "source_sha256": "c7216a4f5558d02b3311e36647a7b3f19f6169d16dcb55c4fbeb367c1c683c8a"
         }
       ]
     },
@@ -311301,7 +311312,7 @@
         "Andariel"
       ],
       "first_seen": "2024-10-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -337148,7 +337159,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -337812,7 +337823,7 @@
         "APT38"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -338936,7 +338947,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -341940,7 +341951,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-11-09",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -354451,7 +354462,7 @@
         "APT38"
       ],
       "first_seen": "2021-02-17",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -362947,7 +362958,7 @@
         "Andariel"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -363285,7 +363296,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -365424,7 +365435,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-16",
       "extraction": {
         "method": "regex",
         "model": null,

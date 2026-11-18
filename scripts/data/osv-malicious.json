@@ -1,7 +1,91 @@
 {
   "_comment": "Written by scripts/enrich-osv-malicious.js: the OSV malicious-package advisories (MAL- ids) held for each indexed npm and PyPI package, looked up by name. An empty advisories list means OSV held none when checked. Packages the lookup could not answer are absent.",
-  "checked": "2026-11-15",
+  "checked": "2026-11-16",
   "items": [
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/client-redux",
+      "advisories": [
+        {
+          "id": "MAL-2026-18639",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in @adminide-stack/client-redux (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/forms-core",
+      "advisories": [
+        {
+          "id": "MAL-2026-18640",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in @adminide-stack/forms-core (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/health-api-server",
+      "advisories": [
+        {
+          "id": "MAL-2026-18641",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in @adminide-stack/health-api-server (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/user-activity-browser",
+      "advisories": [
+        {
+          "id": "MAL-2026-18642",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in @adminide-stack/user-activity-browser (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-18643",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in @adminide-stack/utils (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@adminide-stack/yantra-help-browser",
+      "advisories": [
+        {
+          "id": "MAL-2026-18644",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in @adminide-stack/yantra-help-browser (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@cdmbase/wiki-browser",
+      "advisories": [
+        {
+          "id": "MAL-2026-18645",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in @cdmbase/wiki-browser (npm)"
+        }
+      ]
+    },
     {
       "type": "npm_package",
       "name": "@kolbo/mcp",
@@ -23,6 +107,18 @@
           "published": "2026-08-07",
           "modified": "2026-08-10",
           "summary": "Malicious code in @lambda-platform/lambda-vue (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@pubngo-stack/help-browser",
+      "advisories": [
+        {
+          "id": "MAL-2026-18646",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in @pubngo-stack/help-browser (npm)"
         }
       ]
     },
@@ -540,6 +636,18 @@
           "published": "2025-08-29",
           "modified": "2025-12-02",
           "summary": "Malicious code in case-sensitive-paths (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "cdeops",
+      "advisories": [
+        {
+          "id": "MAL-2026-18647",
+          "published": "2026-11-04",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in cdeops (npm)"
         }
       ]
     },
@@ -4248,6 +4356,18 @@
     },
     {
       "type": "npm_package",
+      "name": "react-contact-forms",
+      "advisories": [
+        {
+          "id": "MAL-2026-18593",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in react-contact-forms (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "react-content-provider",
       "advisories": []
     },
@@ -5160,6 +5280,18 @@
     },
     {
       "type": "npm_package",
+      "name": "server-hemera-mongo",
+      "advisories": [
+        {
+          "id": "MAL-2026-11986",
+          "published": "2026-08-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in server-hemera-mongo (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "server-log-engine",
       "advisories": [
         {
@@ -5589,6 +5721,18 @@
     },
     {
       "type": "npm_package",
+      "name": "tailwind-clamps-line",
+      "advisories": [
+        {
+          "id": "MAL-2026-5080",
+          "published": "2026-05-29",
+          "modified": "2026-05-29",
+          "summary": "Malicious code in tailwind-clamps-line (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "tailwind-class-overrides",
       "advisories": [
         {
@@ -5721,6 +5865,18 @@
     },
     {
       "type": "npm_package",
+      "name": "tailwind-contact-forms",
+      "advisories": [
+        {
+          "id": "MAL-2026-15925",
+          "published": "2026-09-04",
+          "modified": "2026-11-11",
+          "summary": "Malicious code in tailwind-contact-forms (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "tailwind-cup-icon",
       "advisories": [
         {
@@ -5728,6 +5884,18 @@
           "published": "2025-09-22",
           "modified": "2025-09-24",
           "summary": "Malicious code in tailwind-cup-icon (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-custom-forms",
+      "advisories": [
+        {
+          "id": "MAL-2026-12221",
+          "published": "2026-08-05",
+          "modified": "2026-08-31",
+          "summary": "Malicious code in tailwind-custom-forms (npm)"
         }
       ]
     },
@@ -5757,6 +5925,42 @@
           "published": "2025-11-04",
           "modified": "2025-11-09",
           "summary": "Malicious code in tailwind-fa-bridge (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-form-core",
+      "advisories": [
+        {
+          "id": "MAL-2026-18594",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in tailwind-form-core (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-form-styles",
+      "advisories": [
+        {
+          "id": "MAL-2026-16405",
+          "published": "2026-09-22",
+          "modified": "2026-09-22",
+          "summary": "Malicious code in tailwind-form-styles (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-forms-kit",
+      "advisories": [
+        {
+          "id": "MAL-2026-17310",
+          "published": "2026-09-30",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in tailwind-forms-kit (npm)"
         }
       ]
     },
@@ -5799,6 +6003,18 @@
     },
     {
       "type": "npm_package",
+      "name": "tailwind-input-kit",
+      "advisories": [
+        {
+          "id": "MAL-2026-18595",
+          "published": "2026-11-04",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in tailwind-input-kit (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "tailwind-interact",
       "advisories": []
     },
@@ -5806,6 +6022,30 @@
       "type": "npm_package",
       "name": "tailwind-justify",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-lineclamp",
+      "advisories": [
+        {
+          "id": "MAL-2026-19168",
+          "published": "2026-11-12",
+          "modified": "2026-11-12",
+          "summary": "Malicious code in tailwind-lineclamp (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwind-lines-clamps",
+      "advisories": [
+        {
+          "id": "MAL-2026-19217",
+          "published": "2026-11-13",
+          "modified": "2026-11-13",
+          "summary": "Malicious code in tailwind-lines-clamps (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
@@ -6258,6 +6498,30 @@
     },
     {
       "type": "npm_package",
+      "name": "tailwindcss-contact-form",
+      "advisories": [
+        {
+          "id": "MAL-2026-16251",
+          "published": "2026-09-17",
+          "modified": "2026-11-11",
+          "summary": "Malicious code in tailwindcss-contact-form (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwindcss-contact-forms",
+      "advisories": [
+        {
+          "id": "MAL-2026-16124",
+          "published": "2026-09-10",
+          "modified": "2026-09-14",
+          "summary": "Malicious code in tailwindcss-contact-forms (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "tailwindcss-containers",
       "advisories": []
     },
@@ -6280,6 +6544,30 @@
       "type": "npm_package",
       "name": "tailwindcss-fontawesome",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwindcss-form-ui",
+      "advisories": [
+        {
+          "id": "MAL-2026-16262",
+          "published": "2026-09-17",
+          "modified": "2026-11-12",
+          "summary": "Malicious code in tailwindcss-form-ui (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tailwindcss-form-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-16263",
+          "published": "2026-09-17",
+          "modified": "2026-11-04",
+          "summary": "Malicious code in tailwindcss-form-utils (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
