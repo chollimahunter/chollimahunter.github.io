@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T17:34:33Z",
-  "record_count": 12253,
+  "generated_at": "2026-11-18T17:45:43Z",
+  "record_count": 12259,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -513,7 +513,7 @@
         "Kimsuky"
       ],
       "first_seen": "2022-12-27",
-      "last_seen": "2026-04-04",
+      "last_seen": "2026-04-09",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -552,6 +552,28 @@
           "section": "TL;DR",
           "pulled_at": "2026-09-12",
           "source_sha256": "ed6e93d79acba1e91677c2b4fed31b8c3f9182917b4ba6d7174e473895fe984a"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory",
+          "title": "740 Hostnames, 98 Sequential Subdomains, and a Geofence That Only Lets Korea In: Inside a Kimsuky Phishing Factory",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-04",
+          "context": "…phishing URLs All published in our STIX bundle and raw text files Indicators of Compromise Primary IP 158.247.219.150 (Vultr, AS20473) Sequential Pattern auth-umblog[1-98]s.dynv6.net (98 active subdomains) Detection Detection rules and IOCs: YARA rules…",
+          "context_origin": "text",
+          "section": "Primary IP",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "898c4bc6cee9e1f6710b3dd6671ce55e5867c29da9f039e5ea22a6432240828b"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…8, 2026 , the threat intel researcher @skocherhan dropped a short #DPRK #Russia post pointing at verify.udalyonka.com / 158.247.250.37 on AS20473 (The Constant Company, LLC / Vultr).…",
+          "context_origin": "text",
+          "section": "TL;DR",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -210108,6 +210130,36 @@
       ]
     },
     {
+      "id": "file-hash-780f7aa2d08b",
+      "ioc_type": "file_hash",
+      "value": "ac33ba08410f39cf13c9a08a01582bce",
+      "display": "ac33ba08410f...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-09",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…File hash htdocs.7z SHA256 fbb36c3173a4b467fcc7fea566b3ddf7e72af8d5e45a8fd505ec21e61d160df9 MD5 ac33ba08410f39cf13c9a08a01582bce Size 1,360,437 bytes (269 files, 24 directories) Compromised SMTP accounts (for mail provider abuse notification)…",
+          "context_origin": "text",
+          "section": "File hash",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
+        }
+      ]
+    },
+    {
       "id": "file-hash-97ae72cf56a7",
       "ioc_type": "file_hash",
       "value": "ac4f6bdd6d4ef009f1108c4c8a3d58e0a19d4f73b239202dd601b0aeba5ceb54",
@@ -239165,6 +239217,36 @@
           "section": "Observables",
           "pulled_at": "2026-09-09",
           "source_sha256": "05cc074719f7c631af096ae582796aa0e995e612cc976c0868d13cf29ee302a9"
+        }
+      ]
+    },
+    {
+      "id": "file-hash-3f78bc0c5764",
+      "ioc_type": "file_hash",
+      "value": "fbb36c3173a4b467fcc7fea566b3ddf7e72af8d5e45a8fd505ec21e61d160df9",
+      "display": "fbb36c3173a4...",
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-09",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…File hash htdocs.7z SHA256 fbb36c3173a4b467fcc7fea566b3ddf7e72af8d5e45a8fd505ec21e61d160df9 MD5 ac33ba08410f39cf13c9a08a01582bce Size 1,360,437 bytes (269 files, 24 directories) Compromised SMTP accounts (for mail provider…",
+          "context_origin": "text",
+          "section": "File hash",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -297584,6 +297666,36 @@
       ]
     },
     {
+      "id": "ip-address-c354f429ce33",
+      "ioc_type": "ip_address",
+      "value": "150.241.80.3",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-09",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…— the actor's list of who they don't want reading their mail A Telegram-bot callback path via coder.udalyonka.com → tgbot.minecraft.pe → 150.241.80.3 (Aeza International, Stockholm) for real-time credential exfiltration alerts 200+ brand-impersonation subdomains across the udalyonka.com…",
+          "context_origin": "text",
+          "section": "TL;DR",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
+        }
+      ]
+    },
+    {
       "id": "ip-address-7fd0a0aa653f",
       "ioc_type": "ip_address",
       "value": "150.251.113.223",
@@ -301533,6 +301645,28 @@
           "section": "A Third Vultr Seoul Box: 60+ Kimsuky Domains, 18 Months of DDNS Rotation, and a 5-Year Infrastructure Trail",
           "pulled_at": "2026-09-12",
           "source_sha256": "41e3b45d5a1a5b5115ca48ca5bcc5fafd93f3f50b3d4b0336ec8c833fc394882"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory",
+          "title": "740 Hostnames, 98 Sequential Subdomains, and a Geofence That Only Lets Korea In: Inside a Kimsuky Phishing Factory",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-04",
+          "context": "…# Indicators of Compromise ## Primary IP ## Sequential Pattern ## Detection ## Hunt Queries When @skocherhan flagged 158.247.219.150 with a note about malicious sites on VirusTotal, we expected a shared hosting server with some bad tenants.…",
+          "context_origin": "text",
+          "section": "740 Hostnames, 98 Sequential Subdomains, and a Geofence That Only Lets Korea In: Inside a Kimsuky Phishing Factory",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "898c4bc6cee9e1f6710b3dd6671ce55e5867c29da9f039e5ea22a6432240828b"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong",
+          "title": "A Telegram Bot Token, an IPFS-Hosted Payload, and a BaoTa Panel in Guangdong: Inside a Second Kimsuky Phishing Cell",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-05",
+          "context": "…infrastructure is completely separate from our Blog Harvest investigation: Aspect Blog Harvest (prior) This Cell IP 158.247.219.150 (Vultr) ColoCrossing AS36352 Domains 98 sequential DDNS Registered domains (gcifa.com, sxgbk.com) Hosting US VPS ColoCrossing +…",
+          "context_origin": "text",
+          "section": "Two Cells, One Campaign",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "7aacf39bbb47d4ce0e2c318072fab391245b5eeb559690a43a267ff316aca90d"
         }
       ]
     },
@@ -301634,6 +301768,17 @@
           "section": "Campaign infrastructure",
           "pulled_at": "2026-09-12",
           "source_sha256": "6c37ae5de1161ae27ac919d6c8a2b2585a21f4c802ee69dab1a4496ffe7a1f6d"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…— 158.247.250.37 on Vultr Seoul, different from any Kimsuky cluster Hunt.io has documented (their 2024 posts cover 158.247.238.155 and 158.247.230.196 in the same Vultr neighborhood, not this box) Evidence that the Phrack leak did not burn the operator's deployment pipeline — this server…",
+          "context_origin": "text",
+          "section": "What this report adds to the public record",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -301674,10 +301819,11 @@
       "display": null,
       "persona": null,
       "campaign": [
-        "DPRK (cluster unattributed)"
+        "DPRK (cluster unattributed)",
+        "Kimsuky"
       ],
       "first_seen": "2024-10-29",
-      "last_seen": "2024-10-29",
+      "last_seen": "2026-04-09",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -301694,6 +301840,17 @@
           "section": "Details of the Phishing Server",
           "pulled_at": "2026-09-12",
           "source_sha256": "da7bc8be2e564836455896d6c1a0836fa16a06544a97cada748268e77ca4d215"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…infrastructure node — 158.247.250.37 on Vultr Seoul, different from any Kimsuky cluster Hunt.io has documented (their 2024 posts cover 158.247.238.155 and 158.247.230.196 in the same Vultr neighborhood, not this box) Evidence that the Phrack leak did not burn the operator's deployment…",
+          "context_origin": "text",
+          "section": "What this report adds to the public record",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -301737,7 +301894,7 @@
         "Kimsuky"
       ],
       "first_seen": "2025-08-29",
-      "last_seen": "2025-08-29",
+      "last_seen": "2026-04-09",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -301754,6 +301911,17 @@
           "section": "3.3. Kimsuky C&C 인프라 연관성",
           "pulled_at": "2026-09-12",
           "source_sha256": "a9992e0fbf397d7720ab3e5fd195966eddf6119e6ba041db764982263cf7e9c4"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…IOC 2026-04-09 GHOST investigation, kit dump, this post Detection, Hunting, Disclosure Blocks Block all of 158.247.250.37 , 158.247.240.40 , 27.102.138.45 , 190.92.173.54 , 150.241.80.3 , and 169.47.130.72 at the perimeter. DNS sinkhole udalyonka.com , uncork.biz ,…",
+          "context_origin": "text",
+          "section": "Blocks",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -302017,7 +302185,7 @@
       "campaign": [
         "Kimsuky"
       ],
-      "first_seen": "2026-04-21",
+      "first_seen": "2026-04-09",
       "last_seen": "2026-04-22",
       "extraction": {
         "method": "regex",
@@ -302035,6 +302203,17 @@
           "section": "A Third Vultr Seoul Box: 60+ Kimsuky Domains, 18 Months of DDNS Rotation, and a 5-Year Infrastructure Trail",
           "pulled_at": "2026-09-12",
           "source_sha256": "41e3b45d5a1a5b5115ca48ca5bcc5fafd93f3f50b3d4b0336ec8c833fc394882"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…Phrack Leak Published April 9, 2026 Table of Contents # TL;DR # What this report adds to the public record # The Host — 158.247.250.37 # The Open Directory # Inside the Kit ## Three parallel phishing kits ## The proxy is modified Glype / PHProxy 0.5b2 ## The…",
+          "context_origin": "text",
+          "section": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -308042,6 +308221,36 @@
       ]
     },
     {
+      "id": "ip-address-a1ffae09583b",
+      "ioc_type": "ip_address",
+      "value": "169.47.130.72",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-09",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…Hunting, Disclosure Blocks Block all of 158.247.250.37 , 158.247.240.40 , 27.102.138.45 , 190.92.173.54 , 150.241.80.3 , and 169.47.130.72 at the perimeter. DNS sinkhole udalyonka.com , uncork.biz , userclaimload.kro.kr , usermemberblg.freeddns.org , lnkblogaddress.mydns.bz ,…",
+          "context_origin": "text",
+          "section": "Blocks",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
+        }
+      ]
+    },
+    {
       "id": "ip-address-9430c7eb69f8",
       "ioc_type": "ip_address",
       "value": "169.57.129.31",
@@ -309226,6 +309435,36 @@
           "section": null,
           "pulled_at": "2026-09-18",
           "source_sha256": "7e2ecd1760424073aaea3db203939eb42275f01a9841fe10c948893702dbae2f"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-ad655bb9667f",
+      "ioc_type": "ip_address",
+      "value": "172.245.241.100",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-05",
+      "last_seen": "2026-04-05",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong",
+          "title": "A Telegram Bot Token, an IPFS-Hosted Payload, and a BaoTa Panel in Guangdong: Inside a Second Kimsuky Phishing Cell",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-05",
+          "context": "…(phishing kit repository) 172.245.241.100 (primary) Telegram Exfil Bot Token: 7756706006:AAFeJI-PAodEoxC-OMS1XHQFDv2XdR_tOFk Chat ID: -1002445522943 IPFS CID:…",
+          "context_origin": "text",
+          "section": "Network Indicators",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "7aacf39bbb47d4ce0e2c318072fab391245b5eeb559690a43a267ff316aca90d"
         }
       ]
     },
@@ -322146,6 +322385,36 @@
           "section": null,
           "pulled_at": "2026-09-12",
           "source_sha256": "9f0717b5a1f0feb2812db333b8579240c0fa4810be6c54155a2b6fe356a7f121"
+        }
+      ]
+    },
+    {
+      "id": "ip-address-e94825661c33",
+      "ioc_type": "ip_address",
+      "value": "190.92.173.54",
+      "display": null,
+      "persona": null,
+      "campaign": [
+        "Kimsuky"
+      ],
+      "first_seen": "2026-04-09",
+      "last_seen": "2026-04-09",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…kit dump, this post Detection, Hunting, Disclosure Blocks Block all of 158.247.250.37 , 158.247.240.40 , 27.102.138.45 , 190.92.173.54 , 150.241.80.3 , and 169.47.130.72 at the perimeter. DNS sinkhole udalyonka.com , uncork.biz , userclaimload.kro.kr ,…",
+          "context_origin": "text",
+          "section": "Blocks",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },
@@ -347251,7 +347520,7 @@
       "campaign": [
         "Kimsuky"
       ],
-      "first_seen": "2026-04-11",
+      "first_seen": "2026-04-09",
       "last_seen": "2026-04-11",
       "extraction": {
         "method": "regex",
@@ -347269,6 +347538,17 @@
           "section": "TL;DR",
           "pulled_at": "2026-09-12",
           "source_sha256": "0ba2a9aceb0faefe6efe941dbab4cfd31dc4456f9dce4ecf3e0ee5a4db733b13"
+        },
+        {
+          "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+          "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+          "publisher": "Break Glass Intelligence",
+          "published": "2026-04-09",
+          "context": "…chk.uncork.biz resolves to 27.102.138.45 — DAOU TECHNOLOGY (Seoul, VT 10/94 malicious) — a second phishing proxy node with at least 20+ additional phishing subdomains in its…",
+          "context_origin": "text",
+          "section": "Related infrastructure at chk.uncork.biz",
+          "pulled_at": "2026-11-18",
+          "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97"
         }
       ]
     },

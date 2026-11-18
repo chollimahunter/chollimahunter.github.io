@@ -2358,3 +2358,7 @@ https://ofac.treasury.gov/recent-actions/20261028
 https://web.archive.org/web/20260818091036/https://download.ahnlab.com/kr/site/library/%5BAnalysis_Report%5DOperation_Kabar_Cobra.pdf
 https://web.archive.org/web/20260908070903/https://www.dailysecu.com/form/html/pascon/pdf/2026/KCSCON2026_B-1.pdf
 https://web.archive.org/web/20221205155919/https://download.ahnlab.com/kr/site/library/[Report]Red_Eyes_Hacking_Group_kor.pdf
+https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack
+https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold
+https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong
+https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory

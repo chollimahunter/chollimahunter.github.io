@@ -2281,6 +2281,12 @@
       "last_fetched": "2026-11-16T16:49:03.603Z",
       "last_error": "HTTP 403 Forbidden"
     },
+    "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold": {
+      "etag": null,
+      "last_modified": null,
+      "source_sha256": "e8aa7f8579c9e241266edb4ce22e9dd371c51ede0cff1b09eab536d5a009f01c",
+      "last_fetched": "2026-11-18T17:44:41.927Z"
+    },
     "https://cloud.google.com/blog/topics/threat-intelligence/dprk-adopts-etherhiding": {
       "etag": null,
       "last_modified": null,
@@ -2829,6 +2835,12 @@
       "source_sha256": "898c4bc6cee9e1f6710b3dd6671ce55e5867c29da9f039e5ea22a6432240828b",
       "last_fetched": "2026-11-13T04:32:18.153Z"
     },
+    "https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory": {
+      "etag": "\"u6q0o5fcj513lu\"",
+      "last_modified": null,
+      "source_sha256": "898c4bc6cee9e1f6710b3dd6671ce55e5867c29da9f039e5ea22a6432240828b",
+      "last_fetched": "2026-11-18T17:44:44.309Z"
+    },
     "https://intel.breakglass.tech/post/kimsuky-chm-nidlog-c2-dump-full-payload-recovery": {
       "etag": "\"3ous7sqe7i1wme\"",
       "last_modified": null,
@@ -2841,11 +2853,23 @@
       "source_sha256": "fe23602d86acceb1177a389af4eff3671e0d32f5aec6aa78b662adc25bb5b156",
       "last_fetched": "2026-11-13T04:32:19.471Z"
     },
+    "https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong": {
+      "etag": "\"89igyivfsf142q\"",
+      "last_modified": null,
+      "source_sha256": "7aacf39bbb47d4ce0e2c318072fab391245b5eeb559690a43a267ff316aca90d",
+      "last_fetched": "2026-11-18T17:44:43.241Z"
+    },
     "https://intel.breakglass.tech/post/kimsuky-third-vultr-seoul-60-domains-ddns-rotation-naver-nts": {
       "etag": "\"qll5neblla1n1y\"",
       "last_modified": null,
       "source_sha256": "41e3b45d5a1a5b5115ca48ca5bcc5fafd93f3f50b3d4b0336ec8c833fc394882",
       "last_fetched": "2026-11-13T04:32:20.634Z"
+    },
+    "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack": {
+      "etag": "\"lq0on2x7uh2c3f\"",
+      "last_modified": null,
+      "source_sha256": "0a4d204394b5b57b939626ff98aac8b063d8d140a9a6a8d5bc69eb92baf43f97",
+      "last_fetched": "2026-11-18T17:44:41.892Z"
     },
     "https://intel.breakglass.tech/post/lazarus-group-caught-running-medusa-ransomware-xor-decoded-config-exposes-tor-c2-ime-based-loader-and-a-7-month-intrusion-timeline": {
       "etag": "\"6e9agsamr32dsh\"",

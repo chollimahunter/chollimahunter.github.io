@@ -15178,6 +15178,108 @@
       "campaign": [
         "IT Worker Fraud"
       ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+      "publisher": "Break Glass Intelligence",
+      "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "1c413141e4c61dac4508cde4f9dcfe3576c489735637bc558f562921e915d0dc"
+        },
+        {
+          "sealed": "41c46b5e40d62647a0c8853c6bb3f148b17cc724d1f573d807ac350cc44a2af4"
+        },
+        {
+          "sealed": "5097dc6f764178aa8112ca819652b37f9cc5630499d8e560d0bf880fff2e6fb8"
+        },
+        {
+          "sealed": "556b83cd2e35474d45b9f77ece1a77f1b4767bc0c0e2ad397a890317fe633f47"
+        },
+        {
+          "sealed": "68268d5fc48feaa619611918954fdfb2386ac70d489df680d7cd8f4625df5626"
+        },
+        {
+          "sealed": "751d9940c440104df26bfd9ed71ca640f275946152f38fa86fb5433856c1268f"
+        },
+        {
+          "sealed": "753afa8d2f10cfc9a66573f266ee246e160ef6163e6eff675a7f6e893f106646"
+        },
+        {
+          "sealed": "76c3dd4cde5c55f74ef81ef8ea2770066de0d1dda4bb3ccefc4875313f6988a7"
+        },
+        {
+          "sealed": "8c9ec0ec9d6f272afe596ad4ba47266cd3a632b79eebb5d08027651302da91e6"
+        },
+        {
+          "sealed": "9222ade7f9cc77a4436ef2c4dd3ac02e72bf1c10099c1f3a24f933840d75cb2f"
+        },
+        {
+          "sealed": "93cbfdfe9ec7d1555b379743036a983fba508bd77537d36a4c723c6183507c32"
+        },
+        {
+          "sealed": "ab810b986c2ea7b52291017c7a037a665c2bb6a546596c9aca09b81620dcbb2e"
+        },
+        {
+          "sealed": "aed2abeb5c2a2471a8d8ae66149e4f3b04e11030108341003982b77bbf244fab"
+        },
+        {
+          "sealed": "c3a50f76f704bec6d98a9a8ca68ce8a86c482a1b1776e701b8f083375ea57e09"
+        },
+        {
+          "sealed": "d666a4c142c430b6aa053ae9440544ac5eaa9015d66bcc370a1b9fa26d3e7430"
+        },
+        {
+          "sealed": "d9df5bd1607de357ab78c57dfd69b982b7c414be1cddaa33dee59986ab77f530"
+        },
+        {
+          "sealed": "e076820c39d4986f7e14b8bb1c5d5d9032f1a26a3c2f65af712ad388bbe8ff85"
+        },
+        {
+          "sealed": "e486da68cfe238866af79386003c1cefbbb2d15b13e185c2fc57b8841a51591f"
+        },
+        {
+          "sealed": "f1e676c3a72a832c9e130ab14c94a7abf35644aa711453e22160c1b2aeb8ba3d"
+        },
+        {
+          "sealed": "f23a960558f093b7fd8694153dcd3cd53b2234cd01c0ee18b60c04adbcd57ce3"
+        },
+        {
+          "sealed": "fb1739495a221b10f504ca28c5e8f34bde0654eacb3679bf7e680770a7879627"
+        }
+      ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong",
+      "publisher": "Break Glass Intelligence",
+      "title": "A Telegram Bot Token, an IPFS-Hosted Payload, and a BaoTa Panel in Guangdong: Inside a Second Kimsuky Phishing Cell",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "221b1b09a383071185dad1c7969a897cd19dae2c79212987a9e38fa191a3f835"
+        }
+      ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory",
+      "publisher": "Break Glass Intelligence",
+      "title": "740 Hostnames, 98 Sequential Subdomains, and a Geofence That Only Lets Korea In: Inside a Kimsuky Phishing Factory",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+      "publisher": "Google Threat Intelligence Group (GTIG) / Mandiant",
+      "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+      "campaign": [
+        "DPRK (cluster unattributed)"
+      ]
     }
   ],
   "not_scraped": [
