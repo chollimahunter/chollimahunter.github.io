@@ -10,8 +10,9 @@
  * raise an Eleventy error, which is why the first audit of the site found
  * several of them live. It also fails on an entity escaped twice in a title
  * or meta tag, a link with a scheme other than http(s) or mailto, a sitemap
- * entry with no page behind it, a private page in a production build, and a
- * link to a site the operators run or to an indexed payload URL. Among the
+ * entry with no page behind it, JSON-LD that does not parse, a private page
+ * in a production build, and a link to a site the operators run or to an
+ * indexed payload URL. Among the
  * pages a search engine may index (those not marked noindex) it fails on two
  * that share a title or a meta description, and on a description longer than
  * limits.description_max; a title longer than limits.title_max is counted
@@ -242,6 +243,16 @@ for (const file of pages) {
         report("duplicate-description", page, `${ownDescription.slice(0, 60)}  (also ${descriptions.get(ownDescription)})`);
       } else descriptions.set(ownDescription, page);
       if (ownDescription.length > limits.description_max) report("long-description", page, `${ownDescription.length} characters`);
+    }
+  }
+
+  // Structured data that does not parse is dropped by search engines without
+  // a word; a value with a stray quote in a breadcrumb name is enough.
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      JSON.parse(m[1]);
+    } catch (err) {
+      report("bad-structured-data", page, err.message.slice(0, 80));
     }
   }
 
