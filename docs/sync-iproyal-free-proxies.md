@@ -23,7 +23,9 @@ day the list was read, and nothing about who was behind it.
    `{"page": n}`), so the script makes the same calls. It fetches the page,
    confirms the `FreeProxyListTable` script component it loads still calls that
    action, then pages through every record, ten a page (about 620 pages, three
-   to four minutes, with a short pause between requests). The action answers
+   to four minutes, with a short pause between requests). A page that answers
+   with a 5xx or 429, or does not answer, is retried up to three times with
+   backoff (2, 4 and 8 seconds) before the run fails. The action answers
    in devalue's flat encoding, which the script unpacks itself. Until
    November 2026 the component read IPRoyal's CMS directly with a public
    token; that path is gone.
