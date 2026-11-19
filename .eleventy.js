@@ -12,8 +12,14 @@ const { scanMatchKind } = require("./scripts/lib/scan-match-kind.js");
 const { compareText } = require("./scripts/lib/compare.js");
 const { isOperatorHost } = require("./scripts/lib/operator-hosts.js");
 const { explorerUrl, explorerName } = require("./scripts/lib/explorers.js");
+const nunjucksCompileCache = require("./scripts/lib/nunjucks-compile-cache.js");
 
 module.exports = function (eleventyConfig) {
+  // Each Nunjucks template compiles once per build rather than once per page
+  // (scripts/lib/nunjucks-compile-cache.js has the measurements).
+  nunjucksCompileCache.install();
+  eleventyConfig.on("eleventy.before", () => nunjucksCompileCache.clear());
+
   // ---------------------------------------------------------------------
   // Filters
   // ---------------------------------------------------------------------
@@ -322,14 +328,15 @@ module.exports = function (eleventyConfig) {
   // host or control (iocIndex.operator_hosts), which a template renders as
   // text rather than a link. False for anything else, a malformed URL
   // included. scripts/check-site.js fails the build on any such link.
+  // The set is read once per build: iocIndex() stats every indicator file to
+  // check its cache, and the filter runs about 88,000 times a build, which
+  // cost 87 seconds when it read the set on every call.
   let operatorHostSet = null;
-  let operatorHostList = null;
+  eleventyConfig.on("eleventy.before", () => {
+    operatorHostSet = null;
+  });
   eleventyConfig.addFilter("isOperatorSite", function (value) {
-    const list = require("./src/_data/iocIndex.js")().operator_hosts;
-    if (list !== operatorHostList) {
-      operatorHostList = list;
-      operatorHostSet = new Set(list);
-    }
+    if (!operatorHostSet) operatorHostSet = new Set(require("./src/_data/iocIndex.js")().operator_hosts);
     return isOperatorHost(operatorHostSet, value);
   });
 

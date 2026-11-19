@@ -1,4 +1,5 @@
-// The address table on /etherhiding/ (rows) and the On-chain links section
+// The address table on /etherhiding/ (rows), its other watchlist entries
+// (others), and the On-chain links section
 // of each /indicators/{id}/ page (links, keyed by indicator id; writes, each
 // contract's write transactions): each watchlisted contract and wallet
 // with the C2 hosts tied to it, most recently active first. Built by
@@ -9,6 +10,7 @@ const path = require("path");
 const buildIocIndex = require("./iocIndex.js");
 const { readJsonIfPresent } = require("../../scripts/lib/read-json.js");
 const HOST_TYPES = new Set(["ip_address", "domain", "hosted_site"]);
+const ADDRESS_TYPES = new Set(["smart_contract_address", "wallet_address"]);
 const { addressRows, onChainLinks, hostOf } = require("../../scripts/lib/etherhiding-addresses.js");
 
 module.exports = function () {
@@ -51,5 +53,8 @@ module.exports = function () {
       .reverse();
   }
   const sorted = (counts) => Object.fromEntries(Object.entries(counts).sort(([a, x], [b, y]) => y - x || a.localeCompare(b)));
-  return { rows, facets: { family: sorted(facets.family), chain: sorted(facets.chain) }, links: onChainLinks(rows, records, registrations), writes, writes_updated: writesDoc.updated || null };
+  // The tracker's second table: every watchlist entry that is not a contract
+  // or wallet (those are the rows above).
+  const others = index.etherhiding.watchlist.filter((entry) => !ADDRESS_TYPES.has(entry.ioc_type));
+  return { rows, others, facets: { family: sorted(facets.family), chain: sorted(facets.chain) }, links: onChainLinks(rows, records, registrations), writes, writes_updated: writesDoc.updated || null };
 };

@@ -2,8 +2,10 @@ name: Notify workflow failure
 description: Records the failure in one shared "Scheduled workflows need attention" issue, editing its body in place.
 
 # The calling job needs `issues: write` and nothing more, and must run only
-# when an earlier job failed (`if: failure()`) or the automatic merge did not
-# happen for a reason a person has to fix. Every value reaches the shell
+# when an earlier job failed or timed out (`always()` and the job's `result`
+# tested for `failure` and `cancelled`, since a timeout is not a failure() to
+# GitHub) or the automatic merge did not happen for a reason a person has to
+# fix. Every value reaches the shell
 # through env, never through interpolation into the script.
 #
 # Every workflow shares one issue, and a repeat failure edits that issue's
@@ -19,7 +21,7 @@ inputs:
   message:
     description: What happened, posted ahead of the run link.
     required: false
-    default: The scheduled run failed.
+    default: The scheduled run failed or ran past its time limit.
 
 runs:
   using: composite

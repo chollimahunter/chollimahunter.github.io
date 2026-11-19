@@ -126,7 +126,12 @@ disagree.
 
 `gh-analyzer.yml`, `etherhiding-refresh.yml`, `enrich-refresh.yml` and
 `check-indexing.yml` each end with a `notify-failure` job that runs only when
-an earlier job failed or a merge was blocked. It uses the composite action
+an earlier job failed or a merge was blocked (for `enrich-refresh.yml`, only
+the latter). An earlier job that ran past its `timeout-minutes` counts as
+failed: GitHub concludes it as cancelled, which `failure()` does not see, so
+the condition starts with `always()` and tests each job's `result` for
+`cancelled` too. The EtherHiding refresh of 17 November 2026 timed out
+unreported before this. It uses the composite action
 `.github/actions/notify-failure`, which keeps one issue for all of them,
 "Scheduled workflows need attention", with one line per workflow giving the
 latest message, run link and how many runs have failed since the first. A

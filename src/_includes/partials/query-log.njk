@@ -1,0 +1,14 @@
+{#
+  partials/query-log.njk — a link to the latest run's query log
+
+  Set `queryLog` before including:
+    {% set queryLog = { url: "/repo-scanner/queries.txt", count: scan.queries_executed | length, note: "..." } %}
+    {% include "partials/query-log.njk" %}
+
+  The log itself is written by src/query-logs.njk; `note` is optional and
+  says anything the log carries besides the queries.
+#}
+<p>
+  Every query the run made, {{ queryLog.count | thousands }} in all, is listed
+  in <a href="{{ queryLog.url }}">its query log</a> (plain text).{% if queryLog.note %} {{ queryLog.note }}{% endif %}
+</p>

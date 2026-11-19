@@ -31,26 +31,7 @@ Contracts and wallets that serve malware or its C2 hosts.
   { dimension: "family", label: "Filter addresses by malware family", allLabel: "All families", counts: etherhidingAddresses.facets.family, short: "Family", multiple: true },
   { dimension: "chain", label: "Filter addresses by chain", allLabel: "All chains", counts: etherhidingAddresses.facets.chain, short: "Chain", multiple: true }
 ] } %}{% include "partials/table-filter.njk" %}
-<div class="table-scroll">
-<table class="results-table" id="address-table">
-<thead>
-<tr><th scope="col">Address</th><th scope="col">Kind</th><th scope="col">Family</th><th scope="col">C2 hosts</th><th scope="col">Non-C2 values</th><th scope="col">Latest C2</th><th scope="col">C2 added</th></tr>
-</thead>
-<tbody>
-{% for row in etherhidingAddresses.rows %}
-<tr data-family="{{ row.family_label }}" data-chain="{{ row.chain_label }}">
-<td>{% if row.indicator_id %}<a href="/indicators/{{ row.indicator_id }}/"><code>{{ row.value }}</code></a>{% else %}<code>{{ row.value }}</code>{% endif %}{% if row.attribution_doubt %} <span class="badge badge--low">DPRK link unconfirmed</span>{% endif %}</td>
-<td>{{ "Contract" if row.ioc_type == "smart_contract_address" else "Wallet" }}{% if row.chain %}, {{ row.chain }}{% endif %}</td>
-<td>{{ row.malware_family or "" }}</td>
-<td>{% if row.c2.length and row.indicator_id %}<a href="/indicators/{{ row.indicator_id }}/#on-chain-links">{{ row.c2.length }}</a>{% elif row.c2.length %}{{ row.c2.length }}{% endif %}</td>
-<td>{% if row.decoys.length %}<span data-result-optional="non-C2 values">{% if row.indicator_id %}<a href="/indicators/{{ row.indicator_id }}/#on-chain-links">{{ row.decoys.length }}</a>{% else %}{{ row.decoys.length }}{% endif %}<span class="visually-hidden">{% for d in row.decoys %} {{ d.host }} {{ d.decoy }}{% endfor %}</span></span>{% endif %}</td>
-<td>{% if row.latest_c2 %}{% set txLink = { text: row.latest_c2.host, tx: row.latest_c2.first_tx, code: true } %}{% include "partials/tx-link.njk" %}{% if not row.latest_c2.known %} <span class="badge badge--low">unreviewed</span>{% endif %}{% if row.c2.length > 1 %}<span class="visually-hidden">{% for c in row.c2 %}{% if not loop.first %} {{ c.host }}{% endif %}{% endfor %}</span>{% endif %}{% endif %}</td>
-<td class="cell-date"{% if row.latest_c2 and not row.latest_c2.first %} data-sort-empty{% endif %}>{% if row.latest_c2 and row.latest_c2.first %}{{ row.latest_c2.first }}{% elif row.latest_c2 %}<span class="ioc-result__meta">reported</span>{% endif %}</td>
-</tr>
-{% endfor %}
-</tbody>
-</table>
-</div>
+{% set addressTable = { full_url: "/etherhiding/all/" } %}{% include "partials/etherhiding-address-table.njk" %}
 {% include "partials/table-filter-more.njk" %}
 <p class="form-hint">
 Newest C2 first; an address's page lists every host it served. A C2 date is
@@ -68,24 +49,7 @@ reporting does not tie it to North Korea; it may belong to another actor, and it
 <section>
 <h2 id="watchlist">Other watchlist indicators</h2>
 {% set tableFilter = { target: "#watchlist-table", noun: "indicators", page: limits.list, id: "watchlist-search-input", label: "Search EtherHiding indicators", placeholder: "Host, hash, indicator type, or publisher" } %}{% include "partials/table-filter.njk" %}
-<div class="table-scroll">
-<table class="results-table" id="watchlist-table">
-<thead>
-<tr><th scope="col">ID</th><th scope="col">Type</th><th scope="col">Value</th><th scope="col">Confidence</th><th scope="col">Source</th></tr>
-</thead>
-<tbody>
-{% for entry in iocIndex.etherhiding.watchlist %}{% if entry.ioc_type not in ["smart_contract_address", "wallet_address"] %}
-<tr>
-<td><code>{{ entry.id }}</code></td>
-<td>{{ entry.ioc_type | replace("_", " ") }}</td>
-<td>{% if entry.indicator_id %}<a href="/indicators/{{ entry.indicator_id }}/"><code>{{ entry.value }}</code></a>{% else %}<code>{{ entry.value }}</code>{% endif %}{% if entry.attribution_doubt %} <span class="badge badge--low">DPRK link unconfirmed</span>{% endif %}</td>
-<td><span class="badge badge--{{ entry.confidence_level }}">{{ entry.confidence_level }}</span></td>
-<td>{% for s in entry.sources %}{% set externalLink = { url: s.url, text: s.publisher, sameTab: true } %}{% include "partials/external-link.njk" %}{% if not loop.last %}, {% endif %}{% endfor %}</td>
-</tr>
-{% endif %}{% endfor %}
-</tbody>
-</table>
-</div>
+{% set watchlistTable = { full_url: "/etherhiding/all/" } %}{% include "partials/etherhiding-watchlist-table.njk" %}
 {% include "partials/table-filter-more.njk" %}
 <p class="form-hint">
 The contracts and wallets are in the address table above. These are on-chain infrastructure, so the <a href="/remote-workers/">Remote

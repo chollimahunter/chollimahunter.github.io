@@ -1667,7 +1667,13 @@ async function main() {
       // A target recorded on a chain goes only to that chain's endpoint; one
       // supplied by hand has no chain, so it is tried on all of them.
       const forChain = targets.filter((t) => !t.chain || t.chain === endpoint.chain);
+      // Progress goes to stderr, outside the report on stdout: the refresh of
+      // 17 November 2026 printed nothing for 40 minutes before the workflow
+      // cut it off, which left no way to tell a hang from slow indexers.
+      const chainStart = Date.now();
+      process.stderr.write(`${endpoint.chain}: ${forChain.length} target(s) from block ${blockNumber}\n`);
       for (const target of forChain) {
+        const targetStart = Date.now();
         const options = {
           endpoint: endpoint.urls,
           chain: endpoint.chain,
@@ -1688,7 +1694,10 @@ async function main() {
         matches.push(...outcome.matches);
         queries.push(...outcome.queries);
         if (outcome.observation) observations.push(outcome.observation);
+        const seconds = Math.round((Date.now() - targetStart) / 1000);
+        if (seconds >= 20) process.stderr.write(`  slow: ${target.value} took ${seconds}s\n`);
       }
+      process.stderr.write(`${endpoint.chain}: done in ${Math.round((Date.now() - chainStart) / 1000)}s\n`);
     }
   } else {
     queries.push(
