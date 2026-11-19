@@ -12,8 +12,14 @@ const { scanMatchKind } = require("./scripts/lib/scan-match-kind.js");
 const { compareText } = require("./scripts/lib/compare.js");
 const { isOperatorHost } = require("./scripts/lib/operator-hosts.js");
 const { explorerUrl, explorerName } = require("./scripts/lib/explorers.js");
+const nunjucksCompileCache = require("./scripts/lib/nunjucks-compile-cache.js");
 
 module.exports = function (eleventyConfig) {
+  // Each Nunjucks template compiles once per build rather than once per page
+  // (scripts/lib/nunjucks-compile-cache.js has the measurements).
+  nunjucksCompileCache.install();
+  eleventyConfig.on("eleventy.before", () => nunjucksCompileCache.clear());
+
   // ---------------------------------------------------------------------
   // Filters
   // ---------------------------------------------------------------------
