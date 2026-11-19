@@ -203,7 +203,9 @@ jobs:
 
   notify-failure:
     needs: [analyze, propose]
-    if: failure() || needs.propose.outputs.merge-reason == 'ci-failure' || needs.propose.outputs.merge-reason == 'merge-refused'
+    # always(): a job past its timeout-minutes ends as cancelled, which
+    # failure() does not see (docs/ci.md, "When a daily workflow fails").
+    if: always() && (contains(needs.*.result, 'failure') || contains(needs.*.result, 'cancelled') || needs.propose.outputs.merge-reason == 'ci-failure' || needs.propose.outputs.merge-reason == 'merge-refused')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -221,4 +223,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-          message: ${{ (needs.propose.outputs.merge-reason == 'merge-refused' && 'GitHub refused the automatic merge, so the pull request is waiting for you. Approve its pending ci run if one is waiting, then merge it; see the Auto-merge section of docs/ci.md.') || 'The scheduled run failed.' }}
+          message: ${{ (needs.propose.outputs.merge-reason == 'merge-refused' && 'GitHub refused the automatic merge, so the pull request is waiting for you. Approve its pending ci run if one is waiting, then merge it; see the Auto-merge section of docs/ci.md.') || 'The scheduled run failed or ran past its time limit.' }}
