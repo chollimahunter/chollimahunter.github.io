@@ -29,16 +29,38 @@
   var WIDE_COLUMNS = 8;
   var NARROW = "(max-width: 64rem)";
 
+  // The text of the nearest heading before `box` in document order, or "".
+  function headingBefore(box) {
+    for (var el = box; el && el !== document.body; el = el.parentElement) {
+      for (var sib = el.previousElementSibling; sib; sib = sib.previousElementSibling) {
+        if (/^H[1-6]$/.test(sib.tagName)) return sib.textContent.replace(/\s+/g, " ").trim();
+        var inner = sib.querySelectorAll("h1, h2, h3, h4, h5, h6");
+        if (inner.length) return inner[inner.length - 1].textContent.replace(/\s+/g, " ").trim();
+      }
+    }
+    return "";
+  }
+
   // A .table-scroll wrapper or a .query-block that scrolls sideways can only
   // be scrolled from the keyboard once it can take focus, so each one that
   // overflows joins the tab order as a named region and leaves it when it fits.
+  // A region is named after the heading above it, numbered when two would
+  // share a name: a hunt page has several queries, and landmarks with one
+  // name cannot be told apart. A label written in the markup is kept.
   function reachable() {
+    var used = {};
     Array.prototype.forEach.call(document.querySelectorAll(".table-scroll, .query-block"), function (box) {
       if (box.scrollWidth > box.clientWidth + 1) {
         box.tabIndex = 0;
         box.setAttribute("role", "region");
-        if (!box.hasAttribute("aria-label")) {
-          box.setAttribute("aria-label", box.classList.contains("query-block") ? "Query, scrollable" : "Table, scrollable");
+        if (!box.hasAttribute("aria-label") || box.hasAttribute("data-auto-label")) {
+          var kind = box.classList.contains("query-block") ? "query" : "table";
+          var heading = headingBefore(box);
+          var name = (heading ? heading + " " + kind : kind.charAt(0).toUpperCase() + kind.slice(1)) + ", scrollable";
+          used[name] = (used[name] || 0) + 1;
+          if (used[name] > 1) name = name.replace(/, scrollable$/, " " + used[name] + ", scrollable");
+          box.setAttribute("aria-label", name);
+          box.setAttribute("data-auto-label", "");
         }
       } else if (box.getAttribute("tabindex") === "0") {
         box.removeAttribute("tabindex");
