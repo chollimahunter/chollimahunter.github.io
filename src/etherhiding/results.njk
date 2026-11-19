@@ -67,8 +67,8 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
 
   {% if etherhidingFindings.latest.queries_executed and etherhidingFindings.latest.queries_executed.length %}
   <h3>Queries executed</h3>
-  <pre class="query-block">{% for q in etherhidingFindings.latest.queries_executed %}{{ q }}
-{% endfor %}</pre>
+  {% set queryLog = { url: "/etherhiding/results/queries.txt", count: etherhidingFindings.latest.queries_executed | length } %}
+  {% include "partials/query-log.njk" %}
   {% endif %}
 </section>
 

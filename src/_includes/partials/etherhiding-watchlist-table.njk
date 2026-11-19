@@ -1,0 +1,35 @@
+{#
+  partials/etherhiding-watchlist-table.njk — the tracker's other watchlist
+  indicators: every EtherHiding watchlist entry that is not a contract or
+  wallet (etherhidingAddresses.others).
+
+  /etherhiding/ and /etherhiding/all/ show the same table. Set
+  `watchlistTable` before including, between partials/table-filter.njk and
+  partials/table-filter-more.njk; full_url works as it does in
+  partials/etherhiding-address-table.njk, and the same rule holds: no
+  indented line and no blank line, because /etherhiding/ is Markdown.
+#}
+{%- set rowsAll = etherhidingAddresses.others %}
+{%- set deferred = watchlistTable.full_url and rowsAll.length > limits.list %}
+{%- set shown = rowsAll.slice(0, limits.list) if deferred else rowsAll %}
+<div class="table-scroll">
+<table class="results-table" id="watchlist-table"{% if deferred %} data-table-rows="{{ watchlistTable.full_url }}" data-table-rows-total="{{ rowsAll.length }}"{% endif %}>
+<thead>
+<tr><th scope="col">ID</th><th scope="col">Type</th><th scope="col">Value</th><th scope="col">Confidence</th><th scope="col">Source</th></tr>
+</thead>
+<tbody>
+{%- for entry in shown %}
+<tr>
+<td><code>{{ entry.id }}</code></td>
+<td>{{ entry.ioc_type | replace("_", " ") }}</td>
+<td>{% if entry.indicator_id %}<a href="/indicators/{{ entry.indicator_id }}/"><code>{{ entry.value }}</code></a>{% else %}<code>{{ entry.value }}</code>{% endif %}{% if entry.attribution_doubt %} <span class="badge badge--low">DPRK link unconfirmed</span>{% endif %}</td>
+<td><span class="badge badge--{{ entry.confidence_level }}">{{ entry.confidence_level }}</span></td>
+<td>{% for s in entry.sources %}{% set externalLink = { url: s.url, text: s.publisher, sameTab: true } %}{% include "partials/external-link.njk" %}{% if not loop.last %}, {% endif %}{% endfor %}</td>
+</tr>
+{%- endfor %}
+</tbody>
+</table>
+</div>
+{%- if deferred %}
+<p class="form-hint" data-table-rows-link="#watchlist-table"><a href="{{ watchlistTable.full_url }}#watchlist">All {{ rowsAll.length | thousands }} indicators on one page</a></p>
+{%- endif %}

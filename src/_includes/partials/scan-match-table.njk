@@ -1,0 +1,45 @@
+{#
+  partials/scan-match-table.njk — the matches of the latest GitHub scan
+
+  /repo-scanner/ and /repo-scanner/matches/ show the same table. Set
+  `scanTable` before including, between partials/table-filter.njk and
+  partials/table-filter-more.njk:
+    {% set scanTable = { rows: scan.matches, full_url: "/repo-scanner/matches/" } %}
+    {% include "partials/scan-match-table.njk" %}
+
+  Fields:
+    rows      every match
+    full_url  optional; the page that carries the whole table. When given and
+              the table is longer than limits.list, only the first limits.list
+              rows are written here and a link to the full page follows; the
+              table carries data-table-rows and data-table-rows-total, which
+              table-filter.js reads to fetch the rest on the first search,
+              sort, download or "show more" (as partials/source-table.njk
+              does). Omit it on the full page itself.
+
+  The table id is fixed, since table-filter.js finds the rows on the full page
+  by the same id. Each row is written without the template's indentation.
+#}
+{%- set deferred = scanTable.full_url and scanTable.rows.length > limits.list %}
+{%- set shown = scanTable.rows.slice(0, limits.list) if deferred else scanTable.rows %}
+<div class="table-scroll">
+  <table class="results-table results-table--scan" id="scan-matches-table"{% if deferred %} data-table-rows="{{ scanTable.full_url }}" data-table-rows-total="{{ scanTable.rows.length }}"{% endif %}>
+    <thead>
+      <tr>
+        <th scope="col">Matched IOC</th>
+        <th scope="col">Location</th>
+        <th scope="col">Matched at</th>
+        <th scope="col">Context</th>
+      </tr>
+    </thead>
+    <tbody>
+{%- for match in shown %}
+{%- set matchKind = match.kind or (match | scanMatchKind) %}
+<tr><td><code>{{ match.ioc_id }}</code><br>{{ match.matched_value }}</td><td>{% set externalLink = { url: match.location, text: match.location | githubLocationLabel, rel: "noopener noreferrer nofollow", sameTab: true } %}{% include "partials/external-link.njk" %}</td><td class="cell-date">{{ match.matched_at | truncate(10, true, "") }}</td><td>{{ match.context }}{% if matchKind == "research" %} <span class="tag-chip">detection or research repository</span>{% endif %}</td></tr>
+{%- endfor %}
+    </tbody>
+  </table>
+</div>
+{%- if deferred %}
+<p class="form-hint" data-table-rows-link="#scan-matches-table"><a href="{{ scanTable.full_url }}">All {{ scanTable.rows.length | thousands }} matches on one page</a></p>
+{%- endif %}

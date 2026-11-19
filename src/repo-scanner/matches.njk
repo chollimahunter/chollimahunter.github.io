@@ -1,0 +1,34 @@
+---
+layout: base.njk
+title: "DPRK Repo Scanner: all scan matches"
+description: "Every match of the latest GitHub scan for BeaverTail, InvisibleFerret and OtterCookie repository indicators, in one table: the whole of the list the Repo Scanner shows a page at a time."
+permalink: "/repo-scanner/matches/"
+eleventyExcludeFromCollections: true
+noindex: true
+extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
+---
+{#
+  src/repo-scanner/matches.njk — the latest scan's whole match table
+
+  /repo-scanner/ writes the first limits.list matches and names this page as
+  where the rest are (partials/scan-match-table.njk). table-filter.js fetches
+  it for its rows when a reader searches, sorts or asks for more; a reader
+  without JavaScript follows the link and reads it. noindex, and left out of
+  the sitemap.
+#}
+{% set scan = scanResults.latest %}
+<section>
+  {% set backLink = { url: "/repo-scanner/#scan-results", text: "DPRK Repo Scanner" } %}{% include "partials/back-link.njk" %}
+  <h1>All scan matches</h1>
+  <p>
+    Every one of the {{ scan.matches.length | thousands }} matches of the
+    latest scan. What a match does and does not show is on
+    <a href="/repo-scanner/#scan-results">the Repo Scanner</a>.
+  </p>
+
+  {% set tableFilter = { target: "#scan-matches-table", noun: "matches", page: limits.list, id: "scan-search-input", label: "Search scan matches", placeholder: "Indicator id, package name, repository, or file path" } %}
+  {% include "partials/table-filter.njk" %}
+  {% set scanTable = { rows: scan.matches } %}
+  {% include "partials/scan-match-table.njk" %}
+  {% include "partials/table-filter-more.njk" %}
+</section>

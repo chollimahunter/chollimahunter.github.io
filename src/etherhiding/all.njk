@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: "EtherHiding Tracker: every address and indicator"
+description: "Every EtherHiding contract, wallet and other watchlist indicator the tracker lists, in two full tables: the whole of the lists the EtherHiding Tracker shows a page at a time."
+permalink: "/etherhiding/all/"
+eleventyExcludeFromCollections: true
+noindex: true
+extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
+---
+{#
+  src/etherhiding/all.njk — the tracker's two tables, whole
+
+  /etherhiding/ writes the first limits.list rows of its address table and of
+  its other watchlist indicators, and names this page as where the rest are
+  (partials/etherhiding-address-table.njk,
+  partials/etherhiding-watchlist-table.njk). table-filter.js fetches it and
+  takes each table's rows by its id when a reader searches, filters, sorts or
+  asks for more; a reader without JavaScript follows the link and reads it.
+  noindex, and left out of the sitemap.
+#}
+<section>
+  {% set backLink = { url: "/etherhiding/", text: "EtherHiding Tracker" } %}{% include "partials/back-link.njk" %}
+  <h1>Every EtherHiding address and indicator</h1>
+  <p>
+    Every one of the {{ etherhidingAddresses.rows.length | thousands }}
+    contracts and wallets and {{ etherhidingAddresses.others.length | thousands }}
+    other indicators the tracker lists. What each column means is on
+    <a href="/etherhiding/">the tracker</a>.
+  </p>
+  {% set tableFilter = { target: "#address-table", noun: "addresses", page: limits.list, id: "address-search-input", label: "Search addresses", placeholder: "Address, C2 host, parked value, malware family, or chain", chips: [
+    { dimension: "family", label: "Filter addresses by malware family", allLabel: "All families", counts: etherhidingAddresses.facets.family, short: "Family", multiple: true },
+    { dimension: "chain", label: "Filter addresses by chain", allLabel: "All chains", counts: etherhidingAddresses.facets.chain, short: "Chain", multiple: true }
+  ] } %}
+  {% include "partials/table-filter.njk" %}
+  {% set addressTable = {} %}
+  {% include "partials/etherhiding-address-table.njk" %}
+  {% include "partials/table-filter-more.njk" %}
+</section>
+
+<section>
+  <h2 id="watchlist">Other watchlist indicators</h2>
+  {% set tableFilter = { target: "#watchlist-table", noun: "indicators", page: limits.list, id: "watchlist-search-input", label: "Search EtherHiding indicators", placeholder: "Host, hash, indicator type, or publisher" } %}
+  {% include "partials/table-filter.njk" %}
+  {% set watchlistTable = {} %}
+  {% include "partials/etherhiding-watchlist-table.njk" %}
+  {% include "partials/table-filter-more.njk" %}
+</section>

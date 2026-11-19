@@ -1,0 +1,22 @@
+---js
+{
+  pagination: { data: "logs", size: 1, alias: "log" },
+  logs: [
+    { url: "/repo-scanner/queries.txt", source: "scan" },
+    { url: "/etherhiding/results/queries.txt", source: "etherhiding" },
+  ],
+  permalink: (data) => data.log.url,
+  eleventyExcludeFromCollections: true,
+}
+---
+{#-
+  src/query-logs.njk — the query log of the latest run, as a text file
+
+  The GitHub scan and the EtherHiding check each record every query they
+  made, which runs to over a thousand lines. Written into the page it made
+  /etherhiding/results/ 357 KB, almost all of it the log, so the pages link
+  here instead (partials/query-log.njk). One line per query, as recorded.
+  No layout, so the body is written verbatim.
+-#}
+{%- set queries = scanResults.latest.queries_executed if log.source == "scan" else etherhidingFindings.latest.queries_executed -%}
+{{ (queries or []) | join("\n") | safe }}

@@ -97,34 +97,8 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
   {% if scan.matches and scan.matches.length > 0 %}
   {% set tableFilter = { target: "#scan-matches-table", noun: "matches", page: limits.list, id: "scan-search-input", label: "Search scan matches", placeholder: "Indicator id, package name, repository, or file path" } %}
   {% include "partials/table-filter.njk" %}
-  <div class="table-scroll">
-    <table class="results-table results-table--scan" id="scan-matches-table">
-      <thead>
-        <tr>
-          <th scope="col">Matched IOC</th>
-          <th scope="col">Location</th>
-          <th scope="col">Matched at</th>
-          <th scope="col">Context</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for match in scan.matches %}
-        {% set matchKind = match.kind or (match | scanMatchKind) %}
-        <tr>
-          <td><code>{{ match.ioc_id }}</code><br>{{ match.matched_value }}</td>
-          <td>{% set externalLink = { url: match.location, text: match.location | githubLocationLabel, rel: "noopener noreferrer nofollow", sameTab: true } %}{% include "partials/external-link.njk" %}</td>
-          <td class="cell-date">{{ match.matched_at | truncate(10, true, "") }}</td>
-          <td>
-            {{ match.context }}
-            {% if matchKind == "research" %}
-            <span class="tag-chip">detection or research repository</span>
-            {% endif %}
-          </td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
+  {% set scanTable = { rows: scan.matches, full_url: "/repo-scanner/matches/" } %}
+  {% include "partials/scan-match-table.njk" %}
   {% include "partials/table-filter-more.njk" %}
   {% else %}
   <p>No matches recorded in the latest scan.</p>
@@ -139,12 +113,8 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
   {% endif %}
 
   {% if scan.queries_executed and scan.queries_executed.length > 0 %}
-  <details class="disclosure">
-    <summary>Queries executed ({{ (scan.query_count or scan.queries_executed | length) | thousands }})</summary>
-    <p>Every query the scan ran, then a count of package matches dropped as non-exact dependencies:</p>
-    <pre class="query-block">{% for q in scan.queries_executed %}{{ q }}
-{% endfor %}</pre>
-  </details>
+  {% set queryLog = { url: "/repo-scanner/queries.txt", count: scan.query_count or scan.queries_executed | length, note: "It ends with a count of package matches dropped as non-exact dependencies." } %}
+  {% include "partials/query-log.njk" %}
   {% endif %}
 
   {% if scanResults.history and scanResults.history.length > 0 %}
