@@ -1,6 +1,6 @@
 {
   "_comment": "Liveness for the GitHub accounts that reach this site through the hand-transcribed dossier files. scripts/enrich-github-accounts.js only ever reads src/_data/iocs/scraped-iocs.json, so these had no status at all; scripts/lib/dossiers.js attaches this file to them at build time, exactly as it attaches linkedin-account-status.json to the LinkedIn accounts. It covers every dossier login, including those the scraper also holds, because src/_data/iocs/iocIndex.js lets the dossier group claim an id first — so for a shared login it is the dossier record that renders, and without an entry here it rendered with no status. `account_id` is GitHub's numeric id, read from the redirect github.com/<login>.png issues, and it is recorded because GitHub frees a deleted account's login for anyone to re-register: without it a recycled handle answers 200, reads as live, and this site would present whoever holds it now as the account a researcher named. A `recycled` entry carries the date the present account was created and the date the identifier was first published, so the page can state the gap, and never carries an avatar.",
-  "checked": "2026-11-15",
+  "checked": "2026-11-18",
   "accounts": [
     {
       "login": "098oiuyt",
@@ -1088,6 +1088,14 @@
       "account_id": 160579663,
       "avatar": "/assets/img/github/aybanda.webp",
       "account_created": "2024-02-20"
+    },
+    {
+      "login": "azurespheredev",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 24680042,
+      "account_created": "2016-12-20",
+      "avatar": "/assets/img/github/azurespheredev.webp"
     },
     {
       "login": "babakwethr",
@@ -2607,6 +2615,14 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "dariusowright77",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 159926864,
+      "account_created": "2024-02-13",
+      "avatar": "/assets/img/github/dariusowright77.webp"
+    },
+    {
       "login": "darkhorse03111",
       "state": "live",
       "checked": "2026-09-30",
@@ -2650,6 +2666,14 @@
       "account_id": 75010267,
       "avatar": "/assets/img/github/daviddefiworld.webp",
       "account_created": "2020-11-25"
+    },
+    {
+      "login": "davidpro999",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 282957103,
+      "account_created": "2026-05-08",
+      "avatar": "/assets/img/github/davidpro999.webp"
     },
     {
       "login": "davidtflores",
@@ -5232,6 +5256,11 @@
       "account_created": "2018-01-10"
     },
     {
+      "login": "kenjibrown0712",
+      "state": "removed",
+      "checked": "2026-11-18"
+    },
+    {
       "login": "kentasuzzuki",
       "state": "live",
       "checked": "2026-09-30",
@@ -5503,6 +5532,14 @@
       "account_id": 116352251,
       "avatar": "/assets/img/github/ld-star.webp",
       "account_created": "2022-10-21"
+    },
+    {
+      "login": "leadcyber",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 131108458,
+      "account_created": "2023-04-18",
+      "avatar": "/assets/img/github/leadcyber.webp"
     },
     {
       "login": "legendaryangelist",
@@ -6306,6 +6343,14 @@
       "login": "moralismd",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "morganm94",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 68848623,
+      "account_created": "2020-07-27",
+      "avatar": "/assets/img/github/morganm94.webp"
     },
     {
       "login": "mountain4989",
@@ -7381,6 +7426,14 @@
       "account_id": 116632985,
       "avatar": "/assets/img/github/romanharazha.webp",
       "account_created": "2022-10-25"
+    },
+    {
+      "login": "romansiuma",
+      "state": "live",
+      "checked": "2026-11-18",
+      "account_id": 151734469,
+      "account_created": "2023-11-22",
+      "avatar": "/assets/img/github/romansiuma.webp"
     },
     {
       "login": "romik6",

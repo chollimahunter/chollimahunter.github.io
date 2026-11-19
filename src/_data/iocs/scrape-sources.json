@@ -6870,6 +6870,11 @@
       "title": "Operation Kabar Cobra: Kimsuky 공격 그룹의 최신 타깃 공격 사례 분석",
       "campaign": [
         "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "2a3053987b6887f468b0af96144c511dbd9691e878b6efa44734921fc0ba1e78"
+        }
       ]
     },
     {
@@ -14660,13 +14665,6 @@
       ]
     },
     {
-      "url": "https://bitquery.io/investigations/binance-hack-laundering",
-      "publisher": "Bitquery",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://michalkoczwara.substack.com/p/tracking-lazarus-group-tradertraitor",
       "publisher": "MichaelKoczwara",
       "campaign": [
@@ -14810,13 +14808,6 @@
       ]
     },
     {
-      "url": "https://binance.com/en/blog/community/3229153443759566763",
-      "publisher": "Binance",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://safedep.io/blog/antd-img-crop-forged-commit-overlord-stealer",
       "publisher": "Safe Dep",
       "campaign": [
@@ -14867,13 +14858,6 @@
       ]
     },
     {
-      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
-      "publisher": "Bitquery",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
       "url": "https://www.bitquery.io/investigations/binance-hack",
       "publisher": "Bitquery",
       "campaign": [
@@ -14918,13 +14902,6 @@
     {
       "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response",
       "publisher": "Chainalysis",
-      "campaign": [
-        "APT38"
-      ]
-    },
-    {
-      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
-      "publisher": "Binance",
       "campaign": [
         "APT38"
       ]
@@ -15200,6 +15177,108 @@
       "title": "Recent Actions, October 28, 2026: North Korea Designations",
       "campaign": [
         "IT Worker Fraud"
+      ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-post-phrack",
+      "publisher": "Break Glass Intelligence",
+      "title": "Kimsuky Left the Front Door Open Again: Pulling a Live Naver Phishing Kit Off a Vultr Seoul Box Eight Months After the Phrack Leak",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "1c413141e4c61dac4508cde4f9dcfe3576c489735637bc558f562921e915d0dc"
+        },
+        {
+          "sealed": "41c46b5e40d62647a0c8853c6bb3f148b17cc724d1f573d807ac350cc44a2af4"
+        },
+        {
+          "sealed": "5097dc6f764178aa8112ca819652b37f9cc5630499d8e560d0bf880fff2e6fb8"
+        },
+        {
+          "sealed": "556b83cd2e35474d45b9f77ece1a77f1b4767bc0c0e2ad397a890317fe633f47"
+        },
+        {
+          "sealed": "68268d5fc48feaa619611918954fdfb2386ac70d489df680d7cd8f4625df5626"
+        },
+        {
+          "sealed": "751d9940c440104df26bfd9ed71ca640f275946152f38fa86fb5433856c1268f"
+        },
+        {
+          "sealed": "753afa8d2f10cfc9a66573f266ee246e160ef6163e6eff675a7f6e893f106646"
+        },
+        {
+          "sealed": "76c3dd4cde5c55f74ef81ef8ea2770066de0d1dda4bb3ccefc4875313f6988a7"
+        },
+        {
+          "sealed": "8c9ec0ec9d6f272afe596ad4ba47266cd3a632b79eebb5d08027651302da91e6"
+        },
+        {
+          "sealed": "9222ade7f9cc77a4436ef2c4dd3ac02e72bf1c10099c1f3a24f933840d75cb2f"
+        },
+        {
+          "sealed": "93cbfdfe9ec7d1555b379743036a983fba508bd77537d36a4c723c6183507c32"
+        },
+        {
+          "sealed": "ab810b986c2ea7b52291017c7a037a665c2bb6a546596c9aca09b81620dcbb2e"
+        },
+        {
+          "sealed": "aed2abeb5c2a2471a8d8ae66149e4f3b04e11030108341003982b77bbf244fab"
+        },
+        {
+          "sealed": "c3a50f76f704bec6d98a9a8ca68ce8a86c482a1b1776e701b8f083375ea57e09"
+        },
+        {
+          "sealed": "d666a4c142c430b6aa053ae9440544ac5eaa9015d66bcc370a1b9fa26d3e7430"
+        },
+        {
+          "sealed": "d9df5bd1607de357ab78c57dfd69b982b7c414be1cddaa33dee59986ab77f530"
+        },
+        {
+          "sealed": "e076820c39d4986f7e14b8bb1c5d5d9032f1a26a3c2f65af712ad388bbe8ff85"
+        },
+        {
+          "sealed": "e486da68cfe238866af79386003c1cefbbb2d15b13e185c2fc57b8841a51591f"
+        },
+        {
+          "sealed": "f1e676c3a72a832c9e130ab14c94a7abf35644aa711453e22160c1b2aeb8ba3d"
+        },
+        {
+          "sealed": "f23a960558f093b7fd8694153dcd3cd53b2234cd01c0ee18b60c04adbcd57ce3"
+        },
+        {
+          "sealed": "fb1739495a221b10f504ca28c5e8f34bde0654eacb3679bf7e680770a7879627"
+        }
+      ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong",
+      "publisher": "Break Glass Intelligence",
+      "title": "A Telegram Bot Token, an IPFS-Hosted Payload, and a BaoTa Panel in Guangdong: Inside a Second Kimsuky Phishing Cell",
+      "campaign": [
+        "Kimsuky"
+      ],
+      "exclude": [
+        {
+          "sealed": "221b1b09a383071185dad1c7969a897cd19dae2c79212987a9e38fa191a3f835"
+        }
+      ]
+    },
+    {
+      "url": "https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory",
+      "publisher": "Break Glass Intelligence",
+      "title": "740 Hostnames, 98 Sequential Subdomains, and a Geofence That Only Lets Korea In: Inside a Kimsuky Phishing Factory",
+      "campaign": [
+        "Kimsuky"
+      ]
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+      "publisher": "Google Threat Intelligence Group (GTIG) / Mandiant",
+      "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+      "campaign": [
+        "DPRK (cluster unattributed)"
       ]
     }
   ],
@@ -20580,37 +20659,119 @@
       "reason": "no-extractable-indicators",
       "checked": "2026-11-16",
       "notes": "The press release for OFAC's designations of 28 October 2026 carries no addresses; the digital currency addresses are on ofac.treasury.gov/recent-actions/20261028, which is read instead. The designated people are profiled from both."
-    }
-  ],
-  "discovered": [
+    },
     {
       "url": "https://www.inss.re.kr/publication/bbs/js_view.do?nttId=41038072&bbsId=js&page=1&searchCnd=100&searchWrd=",
       "publisher": "INSS",
-      "title": "AI 도구 활용 국가배후 해킹조직(APT) 활동의 안보적 영향 분석",
-      "published": "2026-11-16",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "North Korean",
-        "DPRK",
-        "Jade Sleet",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-16"
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "INSS Strategy Report 414 (16 November 2026): a policy analysis of AI use by state-backed hacking groups, built on the Binance theft of 29 October and Microsoft's Jade Sleet reporting. The page carries no indicators; the Binance addresses are filed from the FBI alert."
     },
     {
       "url": "https://threatmon.io/financial-sector-threat-landscape-2026/",
       "publisher": "ThreatMon",
-      "title": "Financial Sector Threat Landscape 2026",
-      "published": "2026-11-13",
-      "feed": "https://lazarus.day/reports/feed/",
-      "matched_terms": [
-        "DPRK",
-        "Lazarus",
-        "BlueNoroff",
-        "UNC1069",
-        "TraderTraitor"
-      ],
-      "discovered": "2026-11-16"
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "A narrative summary of a financial-sector report; its only DPRK content is a mention of the Binance theft, and the full report sits behind a download form. No indicators on the page."
+    },
+    {
+      "url": "https://bitquery.io/investigations/binance-hack-laundering",
+      "publisher": "Bitquery",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Bitquery's laundering trace of the Binance theft of 29 October 2026 never names North Korea; its attributions are its own address labels. The hacker addresses it prints are already filed from the FBI alert (dataset fbi-binance-tradertraitor-2026-addresses)."
+    },
+    {
+      "url": "https://binance.com/en/blog/community/3229153443759566763",
+      "publisher": "Binance",
+      "reason": "client-side-rendered",
+      "checked": "2026-11-18",
+      "notes": "Binance's findings post of 3 November 2026 renders in the browser. Read by hand on 2026-11-18: it cites the FBI's DPRK attribution and SANS ISC diary 32942 (unattributed MacSync malvertising, cited only as a similar technique) and lists no addresses or other indicators."
+    },
+    {
+      "url": "https://www.bitquery.io/investigations/binance-hack-who-profited",
+      "publisher": "Bitquery",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Bitquery's account of who profited from the Binance hacker's swaps never names North Korea, and most addresses it prints belong to the traders, MEV bots and block builders on the other side of those swaps, not to the operator."
+    },
+    {
+      "url": "https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7",
+      "publisher": "Binance",
+      "reason": "client-side-rendered",
+      "checked": "2026-11-18",
+      "notes": "Binance's security incident update of 30 October 2026 renders in the browser. Read by hand on 2026-11-18: no attribution and no indicators."
+    },
+    {
+      "url": "https://hunt.io/blog/rust-beacon-cobalt-strike-cat-south-korea",
+      "publisher": "Hunt.io",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "A Rust beacon delivering Cobalt Strike against South Korean organisations; the text never attributes it to North Korea. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/decoy-docs-and-malicious-browser-extensions-a-closer-look-at-a-multi-layered-threat",
+      "publisher": "Hunt.io",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "Decoy manuals and malicious browser extensions; the text never names North Korea or a DPRK group. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/jspspy-filebroser-custom-webshell-management",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "JSPSpy web-shell servers; Lazarus is named only as one past user of the public web shell, and the servers listed are not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/xenorat-excel-xll-confuserex-as-access-method",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "An Excel XLL delivering the open-source XenoRAT; a North Korea-linked actor is named only as another user of the tool, and the sample is not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://hunt.io/blog/good-game-gone-bad-xeno-rat-spread-via-gg-domains-and-github",
+      "publisher": "Hunt.io",
+      "reason": "no-campaign-named",
+      "checked": "2026-11-18",
+      "notes": "XenoRAT spread through .gg domains and a Roblox-themed GitHub repository; Kimsuky is named only as an earlier user of the open-source tool, and this activity is not attributed. Hunt.io tags it DPRK on its blog index; read in a browser on 2026-11-18 (the page answers scripts with a 275-character shell)."
+    },
+    {
+      "url": "https://nkinternet.com/2026/11/17/the-man-with-many-names-inside-one-north-korean-workers-operation/",
+      "publisher": "NKInternet",
+      "reason": "transcribed-by-hand",
+      "checked": "2026-11-18",
+      "notes": "nkinternet.com does not answer scripts from this machine and its feed answers GitHub's runners with 403; the Wayback Machine's capture job failed for this post. Read in a browser on 2026-11-18 and transcribed by hand in x-dossiers.json under the nkinternet key: eleven personas and the operator's own accounts. Two values the post leaves open are on the held-back list."
+    },
+    {
+      "url": "https://nkinternet.com/2026/09/06/new-russia-north-korea-road-checkpoint-takes-shape-at-khasan/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "Satellite and procurement reading of a road checkpoint at Khasan on the Russian border; no cyber indicators. Read in a browser on 2026-11-18."
+    },
+    {
+      "url": "https://nkinternet.com/2026/08/01/a-new-silivaccine-north-koreas-antivirus/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "A new version of North Korea's SiliVaccine antivirus; the post gives installer paths and version strings but no hashes, hosts or operator infrastructure. Read in a browser on 2026-11-18."
+    },
+    {
+      "url": "https://nkinternet.com/2026/06/23/gunnersbury-avenue-sniffing-the-dprk-embassys-wifi/",
+      "publisher": "NKInternet",
+      "reason": "no-extractable-indicators",
+      "checked": "2026-11-18",
+      "notes": "Wi-Fi observations at the DPRK embassy in London; the only addresses are North Korea's national network blocks, which are not operator indicators. Read from the Wayback snapshot of 3 July 2026 on 2026-11-18."
+    },
+    {
+      "url": "https://nisos.com/research/insider-threat-digital-recruitment-marketplace/",
+      "publisher": "Nisos",
+      "reason": "no-dprk-keyword",
+      "checked": "2026-11-18",
+      "notes": "A general insider-threat piece on digital recruitment marketplaces; it never names North Korea. Read in a browser on 2026-11-18."
     }
-  ]
+  ],
+  "discovered": []
 }

@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-11-16",
+  "checked": "2026-11-18",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -39885,6 +39885,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "63.125.92.129": {
+      "kind": "fixed-line",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "Verizon Business",
+      "org": "Verizon Business",
+      "asn": "AS701 Verizon Business",
+      "as_name": "UUNET",
+      "hosting": false,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-18",
       "looked_up_at": "ip-api.com"
     },
     "63.143.61.53": {
@@ -107492,6 +107507,21 @@
       "checked": "2026-10-26",
       "looked_up_at": "ip-api.com"
     },
+    "150.241.80.3": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "SE",
+      "country_name": "Sweden",
+      "isp": "xorek.cloud International LTD",
+      "org": "xorek.cloud International LTD",
+      "asn": "AS210644 AEZA INTERNATIONAL LTD",
+      "as_name": "AEZA-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-18",
+      "looked_up_at": "ip-api.com"
+    },
     "150.241.203.68": {
       "kind": "proxy",
       "provider": null,
@@ -117272,6 +117302,21 @@
       "checked": "2026-09-21",
       "looked_up_at": "ip-api.com"
     },
+    "169.47.130.72": {
+      "kind": "proxy",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "SoftLayer",
+      "org": "SoftLayer Technologies, Inc",
+      "asn": "AS36351 IBM Cloud",
+      "as_name": "SOFTLAYER",
+      "hosting": true,
+      "proxy": true,
+      "mobile": false,
+      "checked": "2026-11-18",
+      "looked_up_at": "ip-api.com"
+    },
     "169.56.2.202": {
       "kind": "proxy",
       "provider": null,
@@ -119865,6 +119910,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "172.245.241.100": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "IE",
+      "country_name": "Ireland",
+      "isp": "HostPapa",
+      "org": null,
+      "asn": "AS36352 HostPapa",
+      "as_name": "AS-COLOCROSSING",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-18",
       "looked_up_at": "ip-api.com"
     },
     "172.252.11.5": {
@@ -139215,6 +139275,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-10-26",
+      "looked_up_at": "ip-api.com"
+    },
+    "190.92.173.54": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "US",
+      "country_name": "United States",
+      "isp": "WHG Hosting Services Ltd",
+      "org": "WHG Hosting Services Ltd",
+      "asn": "AS14670 WHG Hosting Services Ltd",
+      "as_name": "WHG-USE1",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-18",
       "looked_up_at": "ip-api.com"
     },
     "190.93.176.21": {

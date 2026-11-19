@@ -950,10 +950,31 @@ function extractFrom(prose, headings, opts) {
 // ---------------------------------------------------------------------------
 
 /**
+ * The address to request for a source. A Wayback snapshot of a PDF is asked
+ * for in its raw `id_` form: given an Accept header that prefers HTML, Wayback
+ * answers some PDF snapshots with its viewer page (a 9 KB frame carrying no
+ * report text), which is how three AhnLab and KCSCON reports failed the
+ * keyword gate on every run until November 2026. The citation keeps the URL
+ * as registered; only the request changes.
+ */
+function requestUrl(url) {
+  const m = url.match(/^(https?:\/\/web\.archive\.org\/web\/\d{14})\/(.+)$/);
+  if (!m) return url;
+  let original;
+  try {
+    original = new URL(m[2]).pathname;
+  } catch {
+    return url;
+  }
+  return /\.pdf$/i.test(original) ? `${m[1]}id_/${m[2]}` : url;
+}
+
+/**
  * `prior` carries the validators from the last read, when there was one, and
  * turns the request conditional; a 304 comes back as { notModified: true }.
  */
 async function fetchPage(url, { timeoutMs = 45000, prior = null } = {}) {
+  url = requestUrl(url);
   const headers = {
     "User-Agent": USER_AGENT,
     Accept: "text/html,application/xhtml+xml;q=0.9,application/pdf;q=0.9,text/plain;q=0.8",

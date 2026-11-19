@@ -592,11 +592,31 @@ function contentRefs(pageDict) {
   return (array[1].match(/(\d+)\s+\d+\s+R/g) || []).map((ref) => Number(ref.match(/\d+/)[0]));
 }
 
+const LITERAL_ESCAPES = { n: "\n", r: "\r", t: "\t", b: "\b", f: "\f" };
+
+/**
+ * The text of a literal string operand from a dictionary. Escapes are resolved
+ * first (octal `\ddd` included), then a string opening with the FE FF byte
+ * order mark is read as UTF-16BE: a Korean PowerPoint export writes its title
+ * that way, and reading the bytes one by one gave the KCSCON 2026 deck the
+ * citation title "þÿ P o w e r P o i n t ...".
+ */
+function literalString(raw) {
+  const bytes = raw.replace(/\\(?:([0-7]{1,3})|\r?\n|([\s\S]))/g, (_, octal, ch) =>
+    octal ? String.fromCharCode(parseInt(octal, 8) & 0xff) : ch === undefined ? "" : LITERAL_ESCAPES[ch] ?? ch,
+  );
+  if (bytes.charCodeAt(0) !== 0xfe || bytes.charCodeAt(1) !== 0xff) return bytes;
+  let out = "";
+  for (let i = 2; i + 1 < bytes.length; i += 2) out += String.fromCharCode((bytes.charCodeAt(i) << 8) | bytes.charCodeAt(i + 1));
+  return out;
+}
+
 /** The document title from its `/Info` dictionary, where it has a usable one. */
 function titleFrom(objects) {
   for (const object of objects.values()) {
-    const match = object.dict.match(/\/Title\s*\(([^)]*)\)/);
-    if (match && match[1].trim()) return match[1].replace(/\\(.)/g, "$1").trim();
+    const match = object.dict.match(/\/Title\s*\(((?:\\[\s\S]|[^\\)])*)\)/);
+    const literal = match && literalString(match[1]).trim();
+    if (literal) return literal;
     const hex = object.dict.match(/\/Title\s*<([0-9a-fA-F\s]+)>/);
     if (hex) {
       const text = hexString(`<${hex[1]}>`).replace(/^﻿/, "").trim();
