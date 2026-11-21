@@ -1653,14 +1653,23 @@ async function main() {
       );
     }
 
-    for (const endpoint of args.endpoints) {
+    // Chains are read in parallel: each has its own RPC and indexer hosts, and
+    // the indexer spacing and throttle state are keyed by host. Read one after
+    // another, the refresh of 19 November 2026 took 38 minutes (Sepolia alone
+    // 23) and ran out its 40-minute job. Each chain collects into its own
+    // arrays, joined below in the order the chains were given, so the report
+    // does not depend on which chain finished first.
+    const perChain = await Promise.all(args.endpoints.map(async (endpoint) => {
+      const queries = [];
+      const matches = [];
+      const observations = [];
       let blockNumber;
       try {
         blockNumber = parseInt(await rpc(endpoint.urls, "eth_blockNumber", []), 16).toLocaleString("en-US");
       } catch (err) {
         // One unreachable endpoint must not discard the chains that answered.
         queries.push(`eth_blockNumber on ${endpoint.chain} (${endpoint.urls.length} endpoint(s)) -- FAILED: ${err.message}; no target was checked on this chain`);
-        continue;
+        return { queries, matches, observations };
       }
       queries.push(`eth_blockNumber on ${endpoint.chain} -- head at block ${blockNumber}`);
 
@@ -1695,9 +1704,15 @@ async function main() {
         queries.push(...outcome.queries);
         if (outcome.observation) observations.push(outcome.observation);
         const seconds = Math.round((Date.now() - targetStart) / 1000);
-        if (seconds >= 20) process.stderr.write(`  slow: ${target.value} took ${seconds}s\n`);
+        if (seconds >= 20) process.stderr.write(`  ${endpoint.chain} slow: ${target.value} took ${seconds}s\n`);
       }
       process.stderr.write(`${endpoint.chain}: done in ${Math.round((Date.now() - chainStart) / 1000)}s\n`);
+      return { queries, matches, observations };
+    }));
+    for (const chain of perChain) {
+      queries.push(...chain.queries);
+      matches.push(...chain.matches);
+      observations.push(...chain.observations);
     }
   } else {
     queries.push(
