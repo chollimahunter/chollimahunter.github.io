@@ -45,8 +45,7 @@ async function accessToken(key) {
     })
   );
   const signature = b64url(crypto.sign("RSA-SHA256", Buffer.from(`${header}.${claims}`), key.private_key));
-  const res = await fetch("https://oauth2.googleapis.com/token", {
-    signal: AbortSignal.timeout(30000),
+  const res = await fetchRetry("https://oauth2.googleapis.com/token", {
     method: "POST",
     headers: { "content-type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams({
@@ -59,9 +58,20 @@ async function accessToken(key) {
   return body.access_token;
 }
 
+// One retry after a timeout or a dropped connection. A single request that
+// timed out ended the run of 19 November 2026 with no report at all.
+async function fetchRetry(url, options = {}) {
+  try {
+    return await fetch(url, { ...options, signal: AbortSignal.timeout(30000) });
+  } catch {
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+    return fetch(url, { ...options, signal: AbortSignal.timeout(30000) });
+  }
+}
+
 // A GET with a timeout that reports the status when the answer is not a 2xx.
 async function fetchText(url) {
-  const res = await fetch(url, { signal: AbortSignal.timeout(30000) });
+  const res = await fetchRetry(url);
   if (!res.ok) throw new Error(`${url} returned HTTP ${res.status}`);
   return res.text();
 }
@@ -88,12 +98,17 @@ function rotatingSample(urls, n) {
 }
 
 async function inspect(token, url) {
-  const res = await fetch("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {
-    signal: AbortSignal.timeout(30000),
-    method: "POST",
-    headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
-    body: JSON.stringify({ inspectionUrl: url, siteUrl: SITE }),
-  });
+  let res;
+  try {
+    res = await fetchRetry("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {
+      method: "POST",
+      headers: { authorization: `Bearer ${token}`, "content-type": "application/json" },
+      body: JSON.stringify({ inspectionUrl: url, siteUrl: SITE }),
+    });
+  } catch (err) {
+    // A page that cannot be inspected is one row of the report, not the end of it.
+    return { url, verdict: "ERROR", coverage: err.message, crawled: "" };
+  }
   const body = await res.json().catch(() => ({}));
   if (!res.ok) {
     const message = (body.error && body.error.message) || String(res.status);
