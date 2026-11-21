@@ -70,13 +70,18 @@ function identitiesFromEvents(events, into = emptyIdentities()) {
  * Other logins that committed with an address, from /search/commits items.
  * Returns Map login -> { repo, sha } (first occurrence), excluding `login`.
  */
+// GitHub resolves a commit's author to whichever account verified the address,
+// so a second persona committing under the same address still shows the first
+// account as author. The repository it pushed to is the trace that survives:
+// its owner is recorded with `via: "repo_owner"`.
 function otherLogins(items, login) {
   const out = new Map();
-  for (const it of items || []) {
-    const l = it && it.author && it.author.login;
-    if (!l || lower(l) === lower(login) || out.has(l)) continue;
-    out.set(l, { repo: it.repository && it.repository.full_name, sha: String(it.sha || "").slice(0, 12) });
-  }
+  const add = (l, it, via) => {
+    if (!l || lower(l) === lower(login) || out.has(l)) return;
+    out.set(l, { via, repo: it.repository && it.repository.full_name, sha: String(it.sha || "").slice(0, 12) });
+  };
+  for (const it of items || []) if (it) add(it.author && it.author.login, it, "author");
+  for (const it of items || []) if (it) add(it.repository && it.repository.owner && it.repository.owner.login, it, "repo_owner");
   return out;
 }
 
