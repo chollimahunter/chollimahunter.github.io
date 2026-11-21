@@ -43,6 +43,15 @@ test("otherLogins excludes self and dedupes", () => {
   assert.deepStrictEqual([...p.otherLogins(items, "FOO").keys()], ["Bar"]);
 });
 
+test("otherLogins records the owner of a repository the address pushed to", () => {
+  // Every commit resolves to the account that verified the address, but the
+  // repositories belong to a second account.
+  const items = [{ sha: "abc", author: { login: "persona-a" }, repository: { full_name: "persona-b/r", owner: { login: "persona-b" } } }];
+  const out = p.otherLogins(items, "persona-a");
+  assert.deepStrictEqual([...out.keys()], ["persona-b"]);
+  assert.strictEqual(out.get("persona-b").via, "repo_owner");
+});
+
 test("parseInclude and backoffSeconds", () => {
   const r = p.parseInclude('HTTP/2.0 403 Forbidden\r\nRetry-After: 12\r\nX-Ratelimit-Remaining: 0\r\n\r\n{"message":"x"}');
   assert.strictEqual(r.status, 403);

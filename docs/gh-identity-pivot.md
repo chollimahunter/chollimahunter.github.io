@@ -21,7 +21,17 @@ id and the login it was created under.
 For each real address it then searches commits by author address
 (`/search/commits?q=author-email:...`). A login other than the account itself
 that appears in the results is recorded under `other_logins`, with the address
-that links them and the repository and commit that show it. Each name and
+that links them and the repository and commit that show it. GitHub resolves a
+commit's author to whichever account verified the address, so a second
+persona committing under the same address still shows the first account as
+author; the owner of the repository the commit sits in is what reveals it,
+and is recorded with `via: "repo_owner"` (`via: "author"` for the other
+kind). Until 21 November 2026 only the author was read, and the pivot found
+no second account at all, though one indexed persona's address resolved to
+that persona while all twelve of its commits sat in another account's
+repositories. A
+repository owner can also be an employer or a project the persona contributed
+to, so a `repo_owner` lead needs the same review as any other. Each name and
 address also carries up to three repository and commit pairs where it was seen,
 so a reviewer can open the evidence directly.
 
