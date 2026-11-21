@@ -139,9 +139,15 @@ runs:
           gh api "repos/$REPO/actions/runs?head_sha=$pr_sha&event=pull_request" \
             --jq '[.workflow_runs[] | select(.path == ".github/workflows/ci.yml")] | sort_by(.created_at)' 2>/dev/null || echo "[]"
         }
+        # An approved run keeps reading completed/action_required for a while
+        # before GitHub queues it; on 21 November 2026 the loop below read that
+        # stale state one second after approving and gave up. Until this grace
+        # has passed, action_required means "not queued yet", not "refused".
+        approved_until=0
         for id in $(pr_runs | jq -r '.[] | select(.conclusion == "action_required") | .id'); do
           if gh api -X POST "repos/$REPO/actions/runs/$id/approve" >/dev/null 2>&1; then
             echo "Approved the pull_request ci run $id."
+            approved_until=$((SECONDS + 180))
           else
             echo "::warning title=Approval failed::The pull_request ci run $id could not be approved."
           fi
@@ -152,7 +158,10 @@ runs:
             if [ "$(jq -r '.status' <<<"$last")" = "completed" ]; then
               case "$(jq -r '.conclusion' <<<"$last")" in
                 success) break ;;
-                action_required) finish false merge-refused "The pull_request ci run is still waiting for approval." ;;
+                action_required)
+                  if [ "$SECONDS" -ge "$approved_until" ]; then
+                    finish false merge-refused "The pull_request ci run is still waiting for approval."
+                  fi ;;
                 *) finish false ci-failure "The pull_request ci run ended with $(jq -r '.conclusion' <<<"$last")." ;;
               esac
             fi
