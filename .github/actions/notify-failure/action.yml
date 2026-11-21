@@ -45,8 +45,12 @@ runs:
         else
           printf '%s\n\n' "Each scheduled workflow that failed, or whose pull request could not merge itself, has one line here, replaced on each new failure. This issue is edited rather than commented on so it sends one email, not one per run. Close it once every line is dealt with." > body.md
         fi
-        count=$(grep -F -- "$marker" body.md | sed -n 's/.*(\([0-9]*\) runs\{0,1\} since.*/\1/p' | head -n1)
-        since=$(grep -F -- "$marker" body.md | sed -n 's/.* runs\{0,1\} since \([^)]*\)).*/\1/p' | head -n1)
+        # The shell runs with -e and pipefail, so a grep that finds no line for
+        # this workflow (every first failure) must not end the script: until
+        # 20 November 2026 it did, silently, and no failure was ever reported.
+        existing=$(grep -F -- "$marker" body.md || true)
+        count=$(printf '%s\n' "$existing" | sed -n 's/.*(\([0-9]*\) runs\{0,1\} since.*/\1/p' | head -n1)
+        since=$(printf '%s\n' "$existing" | sed -n 's/.* runs\{0,1\} since \([^)]*\)).*/\1/p' | head -n1)
         count=$(( ${count:-0} + 1 ))
         since=${since:-$now}
         unit=runs; [ "$count" = 1 ] && unit=run
