@@ -31,14 +31,25 @@ const OUT = require("./lib/private-data.js").privatePath("telegram-pivot.json");
 const GAP_MS = 1000;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const decode = (s) =>
-  String(s || "")
+// Plain text for extraction only; the result is never rendered as HTML.
+// Tags are stripped until none remain, then entities are decoded once, with
+// &amp; last so "&amp;lt;" stays the literal text "&lt;".
+function decode(s) {
+  let t = String(s || "")
     .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<a [^>]*href="([^"]+)"[^>]*>[^<]*<\/a>/gi, " $1 ")
-    .replace(/<[^>]+>/g, "")
-    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/<a [^>]*href="([^"]+)"[^>]*>[^<]*<\/a>/gi, " $1 ");
+  let prev;
+  do {
+    prev = t;
+    t = t.replace(/<[^<>]*>/g, "");
+  } while (t !== prev);
+  t = t.replace(/[<>]/g, "");
+  return t
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'")
+    .replace(/&#(\d{1,7});/g, (m, n) => (Number(n) <= 0x10ffff ? String.fromCodePoint(Number(n)) : m))
+    .replace(/&amp;/g, "&")
     .trim();
+}
 
 function handleOf(url) {
   const m = String(url).match(/^https?:\/\/(?:www\.)?(?:t\.me|telegram\.me)\/([A-Za-z0-9_]{4,32})\/?$/i);
