@@ -9654,6 +9654,350 @@
       "note": "Every account here is one this index already holds under a handle that now returns 404, and was recorded as removed. Each was renamed instead. GitHub mints a noreply commit address from the account's immutable numeric id, in the form id+handle@users.noreply.github.com, so a commit address carrying the old handle with the id of a differently named account shows the two are one account, as a matter of how the address is constructed. The commit cited for each was found on 22 November 2026 by searching commits for the old handle as author name (scripts/gh-renames.js) and carries that address; the id was then resolved to the account's current name.\n\nRenamed and live when read: 0xcrypto628 is now eliancheng (id 162518527); air128731 is now cryptotorpo (id 125920704); beaubeas is now dang3621 (id 132536190); champion10873 is now skymagi-d (id 157318675); devincredible is now cordovaem (id 166714540); dobestman is now benluiux (id 110788393); dotmaker619 is now tom-b-kunkel (id 81764479); goldenpig951204 is now brightdev0814 (id 112707744); he-cat-e is now betacuresolutions (id 156427330); hudesdev is now justFiveDev (id 149679767); millicare is now markeddolphin (id 76056928); phantom-98 is now Pasan-23 (id 121192634); realdiligentdev is now RealDiligent (id 164088955); smith0811 is now hlieb515 (id 40266810); squirdev is now aichannode (id 109893731); toptalhook is now toplustar (id 156056254); zhen1007 is now techearthshaker (id 172377045).\n\nRenamed and then gone: dev0614 became KentoRei (id 122221449); illiabutenko became tDev0809 (id 95761247); justshiftjk became alphaoinker (id 18752970); kunkka0822 became crazy-dev-git (id 101172481); redmon540 became evilgon (id 66923479); sunlight0902 became jade0902 (id 118910969). These no longer resolve by name or by id, while GitHub still attributes their commits to them, which is how a suspended account appears; their last names are recorded as usernames rather than profile URLs, because an abandoned handle can be registered by anyone.\n\nNo new attribution is made: the entry gives the current or last name of accounts already filed, from the sources already cited on them, so that a reader holding a new name can find the old record. Four further renames proven the same way are held back because the only source for the original handle is a registry that publishes no method, and one of that registry's handles was found the same day to belong to an apparently uninvolved developer. Display names on these accounts are not recorded."
     },
     {
+      "label": "Indexed GitHub accounts that are one account under two handles",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/crypdev007/grpc-meteora-sniper/commit/f4473a4df2165de80aa7d5448c222b6c8d2e3634",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cryptogru725",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/EugeneAtHigh/LosAngels_scraping/commit/3a7c0afc48010603b0dd33d71ef6b1c6cda1e798",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cooldev900/deal/commit/7913d890f8f7a3455fef60e2717420fba0a52a46",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Mister-97/Magic-fresh/commit/c2845039fe25d31c168880fa02c6b295e1581a46",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/sr-gg/drop-next/commit/224180208deb7da0405bb8237c256facf72417d5",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/dolores-ai/polymarket-trading-bot/commit/3bd5a2c530180bd7b17427ea52071848a2c28c1c",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/devbeast0121/GolangAPI/commit/a147a0293ee434ef6441583fc377b511ca2cc873",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/sharkxhunter/openNFT/commit/fdca53c0f4bea04fd1de2b86d5327e1638721a84",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/snapshot-labs-archived/snapshot-spaces/commit/34732d829627e8091f2503bbda744d359acbbacd",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/tofuwu-dev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Evgenii-Dolgopolov/james-dashboard-v2/commit/d7a89b1eaf152690a4350923c4e4eff50033c56a",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Moony6789",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/chuibot/chuiwallet/commit/b39dc3f3f6852091b5223ce472b0d99d4bbd8773",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/codetechie-G",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/creative2113/finalGoal/commit/83e32c7582fefa7bd6d8d4b2b33366a5c8643fd2",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/ChangeYourself0613/Gersa-Internet-Village-BE/commit/17e892320957b691cac615eccbfecec2e12980c0",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/aristidesgpg/polartar/commit/b230598b338f238f6518666cede02fcbb35dbd4b",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Luisa-m17/reactProject_v_1/commit/00ed8b0809da83e813ab598fec68f95a4cac0dbc",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/PixelPanther714",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/aristidesgpg",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/inctoolsproject/Quiz-Application-CBT/commit/fd6460e7a428babf7462c8c6909bbbea3b3ea588",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/codepert/mfirst-site/commit/b3124f109b84d46f86904e31e5feb565a5819562",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Prudencrtoken/wallet/commit/1a778f651768ee134c05bbffd373b6afe061bfb0",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/crypdev007",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xcrypoops",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/cryptogru725",
+          "post": 1
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/aidenwong812",
+          "post": 1
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/EugeneAtHigh",
+          "post": 2
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/alchemist0803",
+          "post": 2
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/codemaestro11",
+          "post": 3
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/alexlu0917",
+          "post": 3
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/blacksaru",
+          "post": 4
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/best-lucky1030",
+          "post": 4
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/sr-gg",
+          "post": 5
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/code852",
+          "post": 5
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xsebasneuron",
+          "post": 6
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/dappboris-dev",
+          "post": 6
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devbeast0121",
+          "post": 7
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devbeast3800",
+          "post": 7
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/sharkxhunter",
+          "post": 8
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devking877",
+          "post": 8
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/winy-pengy",
+          "post": 9
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gmspacex",
+          "post": 9
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tofuwu-dev",
+          "post": 10
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/h0lme3",
+          "post": 10
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/topi-debug",
+          "post": 11
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kirbyattack",
+          "post": 11
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Moony6789",
+          "post": 12
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mooney0129",
+          "post": 12
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/borrdd34",
+          "post": 13
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mtfuji25",
+          "post": 13
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/codetechie-G",
+          "post": 14
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nickdev0118",
+          "post": 14
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/popstar7",
+          "post": 15
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/oddcommitking",
+          "post": 15
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ChangeYourself0613",
+          "post": 16
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/onlyforward0613",
+          "post": 16
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/aristidesgpg",
+          "post": 17
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/polartar",
+          "post": 17
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Luisa-m17",
+          "post": 18
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/profreelancer222",
+          "post": 18
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/PixelPanther714",
+          "post": 19
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/smiles00714",
+          "post": 19
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/talentdev2020",
+          "post": 20
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/reactmaster223",
+          "post": 21
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tomlove223",
+          "post": 21
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/codepert",
+          "post": 22
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tranguixdev",
+          "post": 22
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xllaCh",
+          "post": 23
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zhchameleon",
+          "post": 23
+        }
+      ],
+      "note": "Each pair here is two GitHub records this index already holds that are one account. The older handle returns 404 and is recorded as removed; the newer one is the same account under the name it took next. GitHub mints a noreply commit address from an account's immutable numeric id, in the form id+handle@users.noreply.github.com, so a commit address carrying the old handle with the id of the newer account shows the two are one account, as a matter of how the address is constructed. The pairs were found on 22 November 2026 by searching commits for each removed handle as author name (scripts/gh-renames.js). Where a commit is cited it carries that address; where the account's profile is cited, the address appears on commits GitHub attributes to it.\n\nRenamed and live when read: 0xcrypoops is now crypdev007 (id 37245718); aidenwong812 is now cryptogru725 (id 150643631); alchemist0803 is now EugeneAtHigh (id 103476160); code852 is now sr-gg (id 137604364); devbeast3800 is now devbeast0121 (id 121151076); devking877 is now sharkxhunter (id 126171640); h0lme3 is now tofuwu-dev (id 98631674); mooney0129 is now Moony6789 (id 126175765); nickdev0118 is now codetechie-G (id 128985647); oddcommitking is now popstar7 (id 141120325); onlyforward0613 is now ChangeYourself0613 (id 153643788); polartar and talentdev2020 are now aristidesgpg (id 48382274); profreelancer222 is now Luisa-m17 (id 155574264); smiles00714 is now PixelPanther714 (id 137973934); tranguixdev is now codepert (id 150120338); zhchameleon is now 0xllaCh (id 36299939).\n\nRenamed and since gone: alexlu0917 became codemaestro11 (id 91720859); best-lucky1030 became blacksaru (id 89365150); dappboris-dev became 0xsebasneuron (id 5048402); gmspacex became winy-pengy (id 39268153); kirbyattack became topi-debug (id 153198221); mtfuji25 became borrdd34 (id 58710601); tomlove223 became reactmaster223 (id 97944031). These no longer resolve by name or by id.\n\nBoth handles in each pair were already published from the sources cited on them, so nothing here names a new account or adds an attribution. The 24 older records are kept rather than removed, because a dead handle is still what a report written while it was live names, but a reader should count each pair as one account, as with the former handles recorded on 20 September 2026."
+    },
+    {
       "label": "Unpublished commit addresses of indexed GitHub accounts, read from their own repositories",
       "researcher": "chollimahunter",
       "transcribed": "2026-11-22",
