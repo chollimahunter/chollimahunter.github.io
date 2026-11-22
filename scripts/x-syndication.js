@@ -171,6 +171,14 @@ function describe(post) {
   if (post.note_tweet) {
     lines.push("[long-form post: text above is truncated; full text only exists in the rendered page]");
   }
+  // An X Article arrives as a post whose only content is a t.co link to
+  // x.com/i/article/<id>. The endpoint carries none of its text, and a reader
+  // who sees just a link moves on: meow_mfer's "Part One" (9 May 2026, 125
+  // values) went unfiled that way. Say it loudly.
+  const article = ((post.entities && post.entities.urls) || []).find((u) => /x\.com\/i\/article\/\d+/.test(u.expanded_url || ""));
+  if (article) {
+    lines.push(`[X ARTICLE: ${article.expanded_url} -- syndication returns none of its text; read it in a signed-in browser before deciding there is nothing here]`);
+  }
   for (const media of post.mediaDetails || []) {
     lines.push(`[image] ${largeUrl(media.media_url_https)}`);
   }
