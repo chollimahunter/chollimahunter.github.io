@@ -23467,6 +23467,45 @@
         }
       ],
       "note": "Read on 22 November 2026 from the profile fields of GitHub accounts that meow_mfer's article \"Inside a DPRK Crypto Operation. Part One: The Network.\" names and this index carries (scripts/gh-contact-pivot.js), the same test as the entry \"Contact channels indexed GitHub accounts publish on their own profiles\": a value an account publishes in its own profile fields is its holder naming another channel. github.com/solyasa links t.me/solyassa (display name Solyasa); github.com/nicejudy links t.me/co_citizen; github.com/oxtechdare links t.me/oxtechdare; github.com/nadiya-pl links t.me/nadiya_pl and gives nadiya.plt@gmail.com as its public email; monster-dev5, aoimizuno and monsterai1 give monster.highdev@gmail.com, monfra875@gmail.com and monsterai603@gmail.com as their public emails. When read, t.me/co_citizen and t.me/nadiya_pl showed no account.\n\nLeft out on purpose: LinkedIn profiles and addresses that read as a person's name, which may belong to the real person an identity borrows, and the profile fields of workplace1004, which now name someone other than the identity the article gives for it and are held for review. No attribution is added beyond the article's own."
+    },
+    {
+      "label": "Unpublished commit addresses of indexed accounts (second pass)",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/bojanterzic529/trading-bot-frontend/commit/e817cba71f90",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/relforce/morebnb-uikit/commit/0450355b80d2",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/zerox-toml/superworld-proof-of-place/commit/fc851a221486",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/oracle071/orderbook-test/commit/453c9d0492bf",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "bojanterzic529@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "passionkaizen9611@gmail.com",
+          "post": 2
+        }
+      ],
+      "note": "Read on 22 November 2026 from the commits of indexed accounts' own repositories (scripts/gh-collaborators.js), by the test of the earlier entry on unpublished commit addresses: commits dated after the repository was created in the account, authored under the account's own handle, attributed by GitHub to no other account, two or more of them, from a free-mail address that does not read as a person's name.\n\nbojanterzic529 commits as bojanterzic529@gmail.com, the handle as a mailbox: 19 commits in three of its own repositories (trading-bot-frontend, consol-log, bcv-bot) between 19 August 2022 and 18 January 2025, authored bojanterzic529, and 8 more on 13 October 2023 in morebnb-uikit in the relforce organisation, authored Bojan Terzic, the identity meow_mfer gives for the account. zerox-toml commits as passionkaizen9611@gmail.com: 4 commits in its superworld-proof-of-place and dune-script repositories between 12 December 2025 and 12 January 2026, and one on 4 December 2025 in orderbook-test, a repository of the indexed account oracle071, each authored zerox-toml. No attribution is added beyond the accounts' own."
     }
   ]
 }
