@@ -1,6 +1,6 @@
 {
   "_comment": "Written by scripts/enrich-osv-malicious.js: the OSV malicious-package advisories (MAL- ids) held for each indexed npm and PyPI package, looked up by name. An empty advisories list means OSV held none when checked. Packages the lookup could not answer are absent.",
-  "checked": "2026-11-16",
+  "checked": "2026-11-22",
   "items": [
     {
       "type": "npm_package",
@@ -6827,11 +6827,6 @@
           "summary": "Malicious code in testing-react-dom (npm)"
         }
       ]
-    },
-    {
-      "type": "npm_package",
-      "name": "the",
-      "advisories": []
     },
     {
       "type": "npm_package",
