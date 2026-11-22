@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-11-18T18:37:03Z",
-  "record_count": 12259,
+  "record_count": 12244,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -243237,41 +243237,6 @@
       }
     },
     {
-      "id": "github-profile-6fbf4439e878",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/arableprotocol",
-      "display": "arableprotocol",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md",
-          "title": "DPRK IT Workers",
-          "publisher": "tayvano (lazarus-bluenoroff-research)",
-          "published": "2025-06-19",
-          "context": "…2022: 88mph (https://88mph.app) - Mar 2019–Apr 2021: GameSwap — Avalanche - Aug 2015–May 2018: Typent — Singapore - Arable Protocol (https://github.com/arableProtocol) #### Quinn Lee - Q12024, 2024, [Zach's List](https://x.com/zachxbt/status/1824047425822310580), Arc Market?, Fastswap?, Grape…",
-          "context_origin": "list",
-          "section": "Jikun Liao - \"Austin Lim\"",
-          "pulled_at": "2026-08-30",
-          "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-08-30",
-        "avatar": "/assets/img/github/arableprotocol.png"
-      }
-    },
-    {
       "id": "github-profile-a45ee9d7d3fa",
       "ioc_type": "github_profile",
       "value": "https://github.com/aretaschmidt",
@@ -244091,52 +244056,6 @@
         "state": "removed",
         "checked": "2026-09-18",
         "avatar": null
-      }
-    },
-    {
-      "id": "github-profile-08e843cd9ed1",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/bethereumproject",
-      "display": "bethereumproject",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2025-08-28",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://theravenfile.com/2025/08/28/dprk-it-workers-unveiled/",
-          "title": "DPRK IT WORKERS UNVEILED – THE RAVEN FILE",
-          "publisher": "The Raven File",
-          "published": "2025-08-28",
-          "context": "…tps://code.grida.co/ https://cosmichive.com/blog/fullstack-nextjs-ecommerce-2/ https://joiner-for.vercel.app/ https://sakura-70c50.web.app/ https://github.com/bethereumproject/lottery/blob/master/Results.MD (Found DPRK Worker in the Winning List) https://rentbarker.vercel.app/ https://sos-security.vercel.app/ https://treppr.vercel.app/ NOTE…",
-          "context_origin": "list",
-          "section": "FINDING DPRK IT WORKERS BEYOND GITHUB",
-          "pulled_at": "2026-08-30",
-          "source_sha256": "3618d88add60c01eca486e94be0b0f9c9c0def50abf2103971396343cd80ae06"
-        },
-        {
-          "url": "https://raw.githubusercontent.com/TheRavenFile/THREAT-ACTORS/main/DPRK%20GitHub%20Accounts",
-          "title": "DPRK GitHub Accounts",
-          "publisher": "The Raven File",
-          "published": "2025-08-31",
-          "context": "…tps://code.grida.co/ https://cosmichive.com/blog/fullstack-nextjs-ecommerce-2/ https://joiner-for.vercel.app/ https://sakura-70c50.web.app/ https://github.com/bethereumproject/lottery/blob/master/Results.MD (Found DPRK Worker in the Winning List) https://rentbarker.vercel.app/ https://sos-security.vercel.app/ https://treppr.vercel.app/",
-          "context_origin": "list",
-          "section": "OTHER LINKS",
-          "pulled_at": "2026-09-18",
-          "source_sha256": "34f9bd47f2a5557ee2494c4cefa4b06b6cd79ea910e52d9a418ee494ed2327a5"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-08-30",
-        "avatar": "/assets/img/github/bethereumproject.png"
       }
     },
     {
@@ -247815,77 +247734,6 @@
       }
     },
     {
-      "id": "github-profile-8274dce1786f",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/defi-wonderland",
-      "display": "defi-wonderland",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md",
-          "title": "DPRK IT Workers",
-          "publisher": "tayvano (lazarus-bluenoroff-research)",
-          "published": "2025-06-19",
-          "context": "…github.com/0xdpta - github.com/Satoshi-Naoki - github.com/0xb10ckdev • [Archive](https://archive.ph/KMoXG) - github.com/defi-wonderland/prophet-core/pull/2 - astermiracle1009@gmail.com - SenWebDev1009@gmail.com - 0xef2a0324cfaa0100db9def8ef31c6e23bc4f9258 - ![](./astermirac1e.png) ####…",
-          "context_origin": "list",
-          "section": "Satoshi Naoki / Sano / 0xb10ckdev",
-          "pulled_at": "2026-08-30",
-          "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-08-30",
-        "avatar": "/assets/img/github/defi-wonderland.webp"
-      }
-    },
-    {
-      "id": "github-profile-4a02af0d9bf6",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/defich",
-      "display": "defich",
-      "persona": null,
-      "campaign": [
-        "Lazarus Group"
-      ],
-      "first_seen": "2022-03-31",
-      "last_seen": "2022-03-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://securelist.com/lazarus-trojanized-defi-app/106195",
-          "title": "Lazarus Trojanized DeFi app for delivering malware | Securelist",
-          "publisher": "Kaspersky Securelist",
-          "published": "2022-03-31",
-          "context": "…backdoor Exfiltration T1041 Exfiltration Over C2 Channel Exfiltrates gathered data over C2 channels with backdoor [1] https://github.com/DeFiCh/app [2] APT Intel report: Lazarus Covet Covid19 Related Intelligence Malware Technologies Google Chrome Trojan…",
-          "context_origin": "text",
-          "section": "MITRE ATT&CK Mapping",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "63eeb0df75e3e5ac19928c1d17162123677ee1e0284eb2c2af8b07a6ac651a0e"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/defich.png",
-        "account_id": 58245741
-      }
-    },
-    {
       "id": "github-profile-b0b509460b7a",
       "ioc_type": "github_profile",
       "value": "https://github.com/dejan-teofilovic",
@@ -250409,42 +250257,6 @@
       }
     },
     {
-      "id": "github-profile-d4e8e6340ac3",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/fuzzysecurity",
-      "display": "fuzzysecurity",
-      "persona": null,
-      "campaign": [
-        "Konni"
-      ],
-      "first_seen": "2022-07-20",
-      "last_seen": "2022-07-20",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://www.securonix.com/blog/stiffbizon-detection-new-attack-campaign-observed/",
-          "title": "STIFF#BIZON Detection Using Securonix – New Attack Campaign Observed Possibly Linked to Konni/APT37 (North Korea)",
-          "publisher": "Securonix",
-          "published": "2022-07-20",
-          "context": "…https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/UAC-TokenMagic.ps1 This technique can be seen in figures 24 and 25: Figure 24 Figure 25 Wpcsvc.dll, wpcsvc.dat, wpcsvc.ini These provide…",
-          "context_origin": "text",
-          "section": "Wpnprv.dll",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "c95432211a973c727123288788bf6fd5e24db35c8841714b08a3300ae370b38d"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/fuzzysecurity.png",
-        "account_id": 10997340
-      }
-    },
-    {
       "id": "github-profile-33174dd92792",
       "ioc_type": "github_profile",
       "value": "https://github.com/g0drlc",
@@ -250855,42 +250667,6 @@
       }
     },
     {
-      "id": "github-profile-f3ceafb25f7d",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/golang",
-      "display": "golang",
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2025-02-13",
-      "last_seen": "2025-02-13",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://hackernoon.com/cybercrooks-are-using-fake-job-listings-to-steal-crypto",
-          "title": "Cybercrooks Are Using Fake Job Listings to Steal Crypto",
-          "publisher": "Moonlock",
-          "published": "2025-02-13",
-          "context": "…are listed below: All the files in the archive can be categorized into a few groups: Parts of Go source code and its binaries ( https://github.com/golang/go ) ChromeUpdateAlert.app – An AppBundle containing a Mach-O binary that collects the user's IP and password A Go-written backdoor and a…",
-          "context_origin": "text",
-          "section": "Cybercrooks Are Using Fake Job Listings to Steal Crypto",
-          "pulled_at": "2026-09-28",
-          "source_sha256": "ca34db06e1276fed58f3eb9d9b01e675a7c1fe9944086b93804b7ee6b1382557"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/golang.png",
-        "account_id": 4314092
-      }
-    },
-    {
       "id": "github-profile-be12aadf5baf",
       "ioc_type": "github_profile",
       "value": "https://github.com/golangorg",
@@ -251132,42 +250908,6 @@
         "state": "live",
         "checked": "2026-08-30",
         "avatar": "/assets/img/github/good725.png"
-      }
-    },
-    {
-      "id": "github-profile-a0d051ec42f7",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/gorilla",
-      "display": "gorilla",
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-02-09",
-      "last_seen": "2026-02-09",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc1069-targets-cryptocurrency-ai-social-engineering",
-          "title": "UNC1069 Targets Cryptocurrency Sector with New Tooling and AI-Enabled Social Engineering | Google Cloud Blog",
-          "publisher": "Cloud",
-          "published": "2026-02-09",
-          "context": "…= \"2025-10-24\" rev = 1 strings: $go_build = \"Go build ID:\" $go_inf = \"Go buildinf:\" $lib1 = \"/inject_mac/inject.go\" $lib2 = \"github.com/gorilla/websocket\" $func1 = \"t_loader/inject_mac.Inject\" $func2 = \"t_loader/common.rc4_decode\" $c1 = { 48 BF 00 AC 23 FC 06 00 00 00 0F 1F 00 E8 ?? ??…",
-          "context_origin": "text",
-          "section": "YARA Rules",
-          "pulled_at": "2026-09-11",
-          "source_sha256": "947af50e81d419eb75b91456e2c1b6b1dd82260c90903eee0505c50e1ca50dfa"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/gorilla.png",
-        "account_id": 489566
       }
     },
     {
@@ -251521,41 +251261,6 @@
         "checked": "2026-09-30",
         "avatar": "/assets/img/github/happylucktomorrow.webp",
         "account_id": 171368153
-      }
-    },
-    {
-      "id": "github-profile-849624ee2665",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/harmony-one",
-      "display": "harmony-one",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md",
-          "title": "DPRK IT Workers",
-          "publisher": "tayvano (lazarus-bluenoroff-research)",
-          "published": "2025-06-19",
-          "context": "…2 - https://blogtienao.com/depo-coin/ - https://cryptototem.com/glory-games-worlds-glory/ - https://gamerse.gitbook.io/gamerse/team - https://github.com/harmony-one/chrome-extension-wallet/graphs/contributors - https://medium.com/@CryptoSavingExpert/in-depth-review-of-five-new-play-to-earn-games-part-9-magic-craft-professionalism-df7bc9c4b2de -…",
-          "context_origin": "list",
-          "section": "Mauro Liu aka Xu Liu",
-          "pulled_at": "2026-08-30",
-          "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-08-30",
-        "avatar": "/assets/img/github/harmony-one.jpg"
       }
     },
     {
@@ -254209,43 +253914,6 @@
       }
     },
     {
-      "id": "github-profile-bb5e08323c99",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/kgretzky",
-      "display": "kgretzky",
-      "persona": null,
-      "campaign": [
-        "Kimsuky",
-        "Konni"
-      ],
-      "first_seen": "2019-04-17",
-      "last_seen": "2019-04-17",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://blog.alyac.co.kr/2243",
-          "title": "한ㆍ미 겨냥 APT 캠페인 '스모크 스크린' Kimsuky 실체 공개 (아웃소싱 공격)",
-          "publisher": "ESTsecurity ALYac",
-          "published": "2019-04-17",
-          "context": "…- https://github.com/devAji917 - https://github.com/kgretzky/evilginx2/issues/253 - https://github.com/cryptonotefoundation/cryptonote/issues/221 - https://github.com/cryptonotefoundation/cryptonote/issues/222…",
-          "context_origin": "list",
-          "section": "본문",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "a4debf5689c701299a6ce270462b523125eda9952fc506a79dba0e49f73248cb"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/kgretzky.png",
-        "account_id": 19260967
-      }
-    },
-    {
       "id": "github-profile-aeeb037c82ec",
       "ioc_type": "github_profile",
       "value": "https://github.com/kio87j",
@@ -254278,41 +253946,6 @@
         "state": "removed",
         "checked": "2026-11-18",
         "avatar": null
-      }
-    },
-    {
-      "id": "github-profile-a08e9f572742",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/kiracore",
-      "display": "kiracore",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://raw.githubusercontent.com/tayvano/lazarus-bluenoroff-research/main/dprk-it-workers/readme.md",
-          "title": "DPRK IT Workers",
-          "publisher": "tayvano (lazarus-bluenoroff-research)",
-          "published": "2025-06-19",
-          "context": "…- https://medium.com/ferrumnetwork/monthly-development-report-june-2023-a439f54934e9 - https://theorg.com/org/kira-core - https://github.com/KiraCore/sekai/commits/master/?after=9f10902b12b8b55552d7f33fabe25a446d6c6df6+524 - https://www.coindesk.com/tech/2024/10/02/how-north-korea-infiltrated-the-crypto-industry - ![](./jun-kai.jpg) --- ## Hector Network…",
-          "context_origin": "list",
-          "section": "Jun Kai",
-          "pulled_at": "2026-08-30",
-          "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-08-30",
-        "avatar": "/assets/img/github/kiracore.png"
       }
     },
     {
@@ -257284,54 +256917,6 @@
       }
     },
     {
-      "id": "github-profile-e0e838f1f5cb",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/neo23x0",
-      "display": "neo23x0",
-      "persona": null,
-      "campaign": [
-        "Lazarus Group",
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2023-03-30",
-      "last_seen": "2023-03-30",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/",
-          "title": "3CX Supply Chain Compromise Leads to ICONIC Incident | Volexity",
-          "publisher": "Volexity",
-          "published": "2023-03-30",
-          "context": "…Social Media Posts https://twitter.com/cyb3rops/status/1641130326830333984 ( https://github.com/SigmaHQ/sigma/pull/4151/files , https://github.com/Neo23x0/signature-base/blob/master/yara/gen_mal_3cx_compromise_mar23.yar ) https://twitter.com/cyb3rops/status/1641339448053858304 https://twitter.com/patrickwardle/status/1641294247877021696…",
-          "context_origin": "list",
-          "section": "Appendix A – Third-Party Reporting",
-          "pulled_at": "2026-09-11",
-          "source_sha256": "2de440ffada50dd44b8b0090b44ba1c6dd30cc4edf98eb7f29adb2f97d6c60e9"
-        },
-        {
-          "url": "https://www.huntress.com/blog/3cx-voip-software-compromise-supply-chain-threats",
-          "title": "3CX VoIP Software Compromise & Supply Chain Threats | Huntress",
-          "publisher": "Huntress",
-          "published": "2023-03-30",
-          "context": "…Nextron System’s Sigma and YARA rules for detection https://github.com/Neo23x0/signature-base/blob/master/yara/gen_mal_3cx_compromise_mar23.yar Unofficial OTX AlientVault Pulse https://otx.alienvault.com/pulse/64249206b02aa3531a78d020 Kevin Beaumont’s commentary…",
-          "context_origin": "text",
-          "section": "Resources and References",
-          "pulled_at": "2026-09-11",
-          "source_sha256": "1b86ee8c5dd5ee822fb67d486529fd1dbae5e319d8bd21e2ab66e048f75953a5"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/neo23x0.jpg",
-        "account_id": 2851492
-      }
-    },
-    {
       "id": "github-profile-9e45438e29de",
       "ioc_type": "github_profile",
       "value": "https://github.com/neverm25",
@@ -258503,54 +258088,6 @@
       }
     },
     {
-      "id": "github-profile-f28dcc0af766",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/petewarden",
-      "display": "petewarden",
-      "persona": null,
-      "campaign": [
-        "APT38",
-        "Lazarus Group"
-      ],
-      "first_seen": "2020-09-01",
-      "last_seen": "2020-10-24",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://us-cert.cisa.gov/ncas/alerts/aa20-239a",
-          "title": "FASTCash 2.0: North Korea's BeagleBoyz Robbing Banks | CISA",
-          "publisher": "CISA",
-          "published": "2020-10-24",
-          "context": "…FASTCash for Windows malware uses code from github.com/petewarden/c_hashmap for hashmaps, code from Microsoft's Detours Library at github.com/Microsoft/Detours for hooking, and code from to parse ISO 8583…",
-          "context_origin": "text",
-          "section": "Impact",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "54b9f42599b8308e4938b0022be33c4e2304b8d8bacf1dad165a7db8a6f871aa"
-        },
-        {
-          "url": "https://www.cisa.gov/news-events/analysis-reports/ar20-239c",
-          "title": "MAR-10257062-1.v2 - North Korean Remote Access Tool: FASTCASH for Windows | CISA",
-          "publisher": "CISA",
-          "published": "2020-09-01",
-          "context": "…The sample uses code that is taken from github.com/petewarden/c_hashmap to load the configuration file into memory in a hashmap, API hooking using Microsoft’s Detour library at github.com/Microsoft/Detours and…",
-          "context_origin": "text",
-          "section": "Description",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "0f6e112124b011332b752c4471f35bd1b9e4605a970f80195ab1239c0a73ec95"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/petewarden.png",
-        "account_id": 161459
-      }
-    },
-    {
       "id": "github-profile-3cbf938b2d33",
       "ioc_type": "github_profile",
       "value": "https://github.com/pham0315",
@@ -258653,42 +258190,6 @@
         "state": "removed",
         "checked": "2026-08-30",
         "avatar": null
-      }
-    },
-    {
-      "id": "github-profile-1f552005f6e4",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/phpmailer",
-      "display": "phpmailer",
-      "persona": null,
-      "campaign": [
-        "Kimsuky"
-      ],
-      "first_seen": "2025-01-29",
-      "last_seen": "2025-01-29",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://wezard4u.tistory.com/429393",
-          "title": "Kimsuky(김수키) 로 추측이 되는 부가가치세 확정신고 납부 통지서 피싱 메일 분석(2025.1.20)",
-          "publisher": "wezard4u",
-          "published": "2025-01-29",
-          "context": "…<894fb3ac5b9e18e3207b1b73de5b395b@118.193.68.90> X-Mailer: PHPMailer 5.2.14 (https://github.com/PHPMailer/PHPMailer) MIME-Version: 1.0 이메일 헤더 분석 1.…",
-          "context_origin": "text",
-          "section": "이메일 헤더",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "6071e9d430e05b8cbe7652d9b5130a2f948ca3c476a222ef6045aea50d5fd781"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/phpmailer.png",
-        "account_id": 3959702
       }
     },
     {
@@ -261258,42 +260759,6 @@
         "checked": "2026-09-18",
         "avatar": "/assets/img/github/shrishail356.jpg",
         "account_id": 91820178
-      }
-    },
-    {
-      "id": "github-profile-6b8d0878014e",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/sigmahq",
-      "display": "sigmahq",
-      "persona": null,
-      "campaign": [
-        "Lazarus Group"
-      ],
-      "first_seen": "2023-03-30",
-      "last_seen": "2023-03-30",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://www.volexity.com/blog/2023/03/30/3cx-supply-chain-compromise-leads-to-iconic-incident/",
-          "title": "3CX Supply Chain Compromise Leads to ICONIC Incident | Volexity",
-          "publisher": "Volexity",
-          "published": "2023-03-30",
-          "context": "…resources will become available after publication. Social Media Posts https://twitter.com/cyb3rops/status/1641130326830333984 ( https://github.com/SigmaHQ/sigma/pull/4151/files , https://github.com/Neo23x0/signature-base/blob/master/yara/gen_mal_3cx_compromise_mar23.yar )…",
-          "context_origin": "list",
-          "section": "Appendix A – Third-Party Reporting",
-          "pulled_at": "2026-09-11",
-          "source_sha256": "2de440ffada50dd44b8b0090b44ba1c6dd30cc4edf98eb7f29adb2f97d6c60e9"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/sigmahq.png",
-        "account_id": 79842123
       }
     },
     {
@@ -265597,42 +265062,6 @@
         "state": "removed",
         "checked": "2026-08-30",
         "avatar": null
-      }
-    },
-    {
-      "id": "github-profile-b670865694fa",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/virb3",
-      "display": "virb3",
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2026-01-22",
-      "last_seen": "2026-01-22",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://sect.iij.ad.jp/blog/2026/01/dprk-moonpeak-executed-via-malicious-lnk-file/",
-          "title": "LNKファイルを介して実行されるマルウェアMoonPeak – IIJ Security Diary",
-          "publisher": "Iij",
-          "published": "2026-01-22",
-          "context": "…↩︎ 今回の解析ではde4dotのフォーク版であるde4dot-cexを使用しました。 ViRb3/de4dot-cex – GitHub https://github.com/ViRb3/de4dot-cex ↩︎ 以前の攻撃キャンペーンにおいても同じMutex名が使用されていました。 The Coordinated Embassy Hunt: Unmasking the DPRK-linked GitHub C2 Espionage Campaign…",
-          "context_origin": "text",
-          "section": "通信先",
-          "pulled_at": "2026-09-11",
-          "source_sha256": "ad33ba5e73c799845f0439bd1a252674cd816b1917531dc4dd8495f31e6d95d2"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/virb3.jpg",
-        "account_id": 2650170
       }
     },
     {
