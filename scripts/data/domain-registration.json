@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-18",
+  "checked": "2026-11-22",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -280,6 +280,10 @@
         "active"
       ],
       "checked": "2026-10-05"
+    },
+    "autopumpx.com": {
+      "registered": false,
+      "checked": "2026-11-22"
     },
     "awqhnjewqjkl.icu": {
       "registered": true,
@@ -1665,6 +1669,18 @@
     "liquina.vip": {
       "registered": false,
       "checked": "2026-10-05"
+    },
+    "livepad.meme": {
+      "registered": true,
+      "created": "2025-09-22",
+      "expires": "2026-09-22",
+      "updated": "2026-11-03",
+      "registrar": "Namecheap Inc.",
+      "status": [
+        "pending delete",
+        "redemption period"
+      ],
+      "checked": "2026-11-22"
     },
     "logevents.club": {
       "registered": true,
@@ -3641,6 +3657,17 @@
         "active"
       ],
       "checked": "2026-10-05"
+    },
+    "tsagent.online": {
+      "registered": true,
+      "created": "2025-12-21",
+      "expires": "2026-12-21",
+      "updated": "2026-11-10",
+      "registrar": "VIRTUA DRUG Kutatási Szolgáltató Korlátolt Felelősségű Társaság",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-11-22"
     },
     "tsagent.xyz": {
       "registered": true,

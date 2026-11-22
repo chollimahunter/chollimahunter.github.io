@@ -3891,7 +3891,7 @@
         },
         {
           "ioc_type": "linkedin_profile",
-          "value": "https://www.linkedin.com/in/milan-zubic",
+          "value": "https://www.linkedin.com/in/milan-zubic-20a3612a6",
           "post": 0
         },
         {
@@ -16598,6 +16598,748 @@
         }
       ],
       "note": "The researcher quotes a post by @fanboofy, an account presented as Fan Long, co-founder of Boofy Labs LLC, created in September 2026, and says it is a North Korean operative who delivers malware through malicious npm packages and GitHub repositories. He names a second website as another of theirs; that domain belongs to a registered company and is not carried here. The claim is the researcher's, made without stated evidence in the post or its reply. Read on 12 November 2026."
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "Bridge and MPC developers (meow_mfer, Part One, cell 1)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/venuswhispers",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "venuswhisperer412@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/crypto-elite-devs",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/top0329",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Darkhorse7stars",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "zoosos",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "woobinpro@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "woob19473@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "wbin90620@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher describes venuswhispers as the developer of a multi-chain bridge and its MPC signing; crypto-elite-devs as an organisation whose only members are venuswhispers and top0329; and Darkhorse7stars, formerly zoosos by matching account id, as a member of several of the same organisations who was completing job assessments and forking enterprise repositories as late as September 2025.",
+      "unextracted": [
+        "The seed account the article says controls the organisations this cell commits to. Not carried: it is a long-established account of a publicly known person, and the article argues from the organisations rather than from evidence about the account holder; held for a ruling.",
+        "Two Linode addresses the article gives as the bridge's MPC signing nodes: held with the seed account, since they serve the same bridge.",
+        "An Infura API key the article says both venuswhispers and top0329 committed, and a MetaAPI token: credentials, which have no indicator type and would be someone's live secret.",
+        "A Gmail address of the copy-trading business whose app password the article says venuswhispers committed: held with the other business values (see the cell 6 entry)."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "Balkan-identity cell around the relforce organisation (meow_mfer, Part One, cell 2)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/relforce",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bojanterzic529",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Bojan Terzic",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jacobandrey89@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "livepad.meme",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "mememayhem.io",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "95.216.67.25",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptodev0124",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cryptodev0124@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "FjRi16XZvDyMQdLHKqVSJaqq3M8ANiEpJD42iAiCecNh",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/leyr1112",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "leyr1114@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/make-green-world",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "andrei1996318@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "4Wbqb1mAPFfR3oQPfyWJ4vsntNECWXMn8aS7LybkwhWo",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "8B4k6PEG8n6BLDRHeR6LvDjFqTkwQnS8PowegTtgd3tA",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nicejudy",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "sentasmer@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x1b81D678ffb9C0263b24A97847620C99d213eB14",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher describes bojanterzic529 (\"Bojan Terzic\") as running the LivePad PumpFun clone, first at pump.cryptoprince0207.online, then mememayhem.io and livepad.meme, with a Hetzner server at 95.216.67.25 in its environment file; Cryptodev0124 as exposing a Solana treasury wallet (FjRi16...) used across repositories; leyr1112 as connected through an alternate identity; make-green-world as the deployer of two upgradeable Solana programs, COAL (4Wbqb1...) and MYN (8B4k6P...); and nicejudy as the deployer of CamelSwap, a PancakeSwap V3 fork on BSC and PulseChain, whose factory (0x0BFbCF...) and router (0x1b81D6...) addresses also appear in bojanterzic529's arbitrage bot configuration. It ties make-green-world and bojanterzic529 through an \"Andrei\" handler identity in both accounts' addresses.",
+      "unextracted": [
+        "pump.cryptoprince0207.online, LivePad's first address: a subdomain, which this repository does not file as a domain, and not a hosting-platform site.",
+        "safepad-8fjd6o1o.livekit.cloud and srv746843.hstgr.cloud: hostnames on LiveKit's and Hostinger's own domains, which would name the platforms rather than the operator.",
+        "A Helius API key and a WalletConnect project id the article says Cryptodev0124 exposed: credentials have no indicator type."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "Tenexium (Bittensor subnet 67) developers (meow_mfer, Part One, cell 3)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ehang0404",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/junhaot51",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "evanhang.workspace@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ehang6538@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ehang.workspace@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/taomind007",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "likebitmania007@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mfm-builder-001",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Mateus F. Melo",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "mateusmelo.workspace@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gold-coding",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "codeofgold@naver.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "0x72838d8A057a3d3d137DA3B340681fb3A7dd0ce6",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/oxylok",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher attributes to this cell the Tenexium Protocol on Bittensor subnet 67 and its exit of about $2.5 million on 1 January 2026, which it says Elliptic attributed to North Korea. It names ehang0404, renamed junhaot51 (shown by a shared address under both names), as the core developer; taomind007 as the maintainer and merge reviewer; mfm-builder-001 (\"Mateus F. Melo\"), a 2013 account with no crypto activity before June 2024 that the researcher reads as purchased, and its alternate gold-coding with a Naver address; the Tenexium deployer 0x72838d... on Bittensor EVM; and oxylok as running mining infrastructure. The researcher notes that three of these addresses also appear in tayvano's lazarus-bluenoroff-research.",
+      "unextracted": [
+        "The earlier owner of the account now named mfm-builder-001, whom the article places in Portland from a 2013 gist: an uninvolved person, not recorded."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "PumpFun and casino cluster around snowstorm08 (meow_mfer, Part One, cell 4)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/snowstorm08",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "snowmandot0520@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "wallet_address",
+          "value": "Dnwg6ED52C9BXHwQZ68B9ZeVuXAWfiWjEPX5zfhHw77r",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/cutupdev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "takasi75926@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/solyasa",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kryptoexpert1@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bigman-code",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "yamamotogenji7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Mind-mum",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/monster-dev5",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/aoimizuno",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Aoi Mizuno",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/TrustAlgo",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "stackweaver7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/devpulse-star",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/lucky5star",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/romanobichi",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/monsterai1",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/toma-work125",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Kawaguchi Touma",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Honestdev125",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "honestdev7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/oxtechdare",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher describes snowstorm08 as the deployer of the SlowRUG Solana casino, shut down in December 2024, whose operational wallet (Dnwg6E...) it says was then used to accumulate PumpFun tokens; cutupdev and solyasa as sharing one paid Helius RPC key; and Japanese-presenting accounts in the cluster, among them aoimizuno (\"Aoi Mizuno\"), and toma-work125 (\"Kawaguchi Touma\"). It pairs devpulse-star with lucky5star through a shared misspelled commit alias, romanobichi with monsterai1 through a git remote reference, and toma-work125 with Honestdev125 through a shared commit address, and says oxtechdare, romanobichi and monsterai1 were created within 17 minutes of one another on 30 May 2025.",
+      "unextracted": [
+        "The ZYNX token mint (EruqNUg7yVD2sTzRpRv8RcbAG9gpUREswd5soqKTxz1m) the article says the cluster distributes: a token anyone may hold, not an operator wallet; and the sweeper and distributor wallets it names only by prefix (HRS6...).",
+        "The Helius RPC key shared by cutupdev and solyasa, which the article prints: a credential, which has no type and is not reproduced here.",
+        "A Chinese name the article says aoimizuno committed under once: not recorded, since a name slip may be a real person's name."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "Copy-trading cell and shared-identity accounts (meow_mfer, Part One, cell 6)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/incredible0418",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "jordon0329",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jordonchen0329@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "arescolin1004@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "top000329@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/marksantiago290",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/luckypenny1632333",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "BTC415",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "Topcoder415",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "AudoRichter415",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "LovelyBTC",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "alenschmitt415@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "marksantiago0929@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/hashsoft7",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/topdeveloper55",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "kane0505",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "joaqperalta",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "CleanCoder0309",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher says jordon0329, now incredible0418, works with venuswhispers on a MetaTrader copy-trading platform, and that an exposed database of that platform lists \"Ares Colin\" (arescolin1004@gmail.com, also in tayvano's research) as an administrator; that top0329 (top000329@gmail.com) shares six organisations with venuswhispers; that marksantiago290 has used the usernames BTC415, Topcoder415, AudoRichter415 and LovelyBTC and is the same account holder as luckypenny1632333; and that hashsoft7 is topdeveloper55 (account id 87887034) with the earlier names kane0505, joaqperalta and CleanCoder0309. Former usernames are recorded as usernames, not profile links, because an abandoned handle can be registered by anyone.",
+      "unextracted": [
+        "The copy-trading platform's two domains and two addresses: the article itself names a client of the platform, so the business may belong to a client the developers worked for; held for a ruling rather than filed as operator infrastructure.",
+        "The MongoDB host of the exposed database, and the client's name: a service hostname and an uninvolved person.",
+        "Six further hashsoft7 addresses the article gives only as local parts (hollydev0430, rioneymar644, dothebestatm, lahim.kane, nicolas.soft94, akirasato0309): completing them would add a domain the post does not state. A personal name the article read from a commit is not recorded either."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "HODL Token theft and DeFi clone cell (meow_mfer, Part One, cell 7)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/audi057",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "super0326",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "superdev678@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/hodler-smart",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "gurujustin",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "blockchainGuru125",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "alphadev102",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kkh0102www@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "autopumpx.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kryptoDev0777",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bl0ckchaindev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kryptodev7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/starman1121",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher names audi057 (account id 81634285), formerly super0326 by matching account id, as the perpetrator of the roughly $160,000 HODL Token proxy-upgrade theft, signing as superdev678@gmail.com; hodler-smart as the same account id (67410422) as gurujustin, blockchainGuru125 and alphadev102, deployer of the HotCurves bonding-curve factory and operator of autopumpx.com; kryptoDev0777 and its alternate bl0ckchaindev (kryptodev7@gmail.com) as maintaining a Tornado Cash clone to which starman1121 also committed.",
+      "unextracted": [
+        "Commit author names given for superdev678@gmail.com (xwhiz, mm0102-dev, BlockchainBunny, mr-new-0509) and for kryptoDev0777 (Richard382, Kitty): names typed into commits, with no platform stated.",
+        "admin@hodltoken.net, which the article says committed to audi057's repositories: the address of the project that was robbed, not the operator's.",
+        "The Serbian company starman1121 claims to work for: a real business, not recorded.",
+        "An account the article calls a likely handler on the strength of who follows it alone; held with the other follow-graph accounts."
+      ]
+    },
+    {
+      "researcher": "meow_mfer",
+      "label": "Fabricated identities and the facilitator recruitment page (meow_mfer, Part One)",
+      "posts": [
+        {
+          "url": "https://x.com/meow_mfer/status/2053059870648381812",
+          "date": "2026-05-09"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/MilanJelesic",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Milan Jelesic",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/PredragWebDev",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Predrag Tomic",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/slobodan0702",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/levintech",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Dragan Kojic",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tatsuya0825",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Tatsuya Shibata",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/workplace1004",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/workplace-1216",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Murayama Takumi",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/SoftDev0125-hub",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "Antoni Kowalski",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "antoni.kowalski940125@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/codev612",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "michaeljoe612@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/nadiya-pl",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/darkhorse0512",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/CossackDev777",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "enokitakuya1988@yahoo.co.jp",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/milosjdev",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "collabocontent.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "alias",
+          "value": "David Long",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "bighottech2187@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher lists these as fabricated Serbian, Japanese, Polish and Ukrainian identities used by the network: MilanJelesic (\"Milan Jelesic\", committing under a Ukrainian name), PredragWebDev (\"Predrag Tomic\"), slobodan0702, levintech (\"Dragan Kojic\"), tatsuya0825 (\"Tatsuya Shibata\"), workplace1004 and workplace-1216 (\"Murayama Takumi\"), SoftDev0125-hub (\"Antoni Kowalski\", completing job assessments for real companies) and its alternate codev612, nadiya-pl, darkhorse0512 and CossackDev777, and an address in the Japanese pattern. It names milosjdev as the builder of collabocontent.vercel.app, a live page on which \"David Long\" (bighottech2187@gmail.com) offers a facilitator a 50/50 split for lending a LinkedIn profile while his team handles interviews and the work. A name in this list is the identity presented, which may borrow a real person's name.",
+      "unextracted": [
+        "A real developer whose identity the article says milosjdev built a portfolio for, with that developer's GitHub, LinkedIn and portfolio domain: the person whose identity is being used, not recorded.",
+        "An employee address of a company whose assessment SoftDev0125-hub completed: an uninvolved person.",
+        "Six accounts and two large organisations the article names only for whom they follow or who follows them. Held: following is how the cluster was found, not evidence about each account on its own.",
+        "Cell 5, four contributors to the Ubiquity DAO projects, which the article itself calls suspected: two are long-established accounts with open-source histories, and the cell rests on what they contributed rather than on who they are. Held for a ruling."
+      ]
     }
   ],
   "unattributed_photos": [
