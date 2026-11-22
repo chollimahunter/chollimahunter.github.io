@@ -42,7 +42,7 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
     Neither is in the <a href="/remote-workers/">Remote Workers</a> index.
   </p>
 
-  <div class="ioc-search" hidden data-ioc-search data-ioc-index="/assets/data/repo-scanner-index.json">
+  <div class="ioc-search" hidden data-ioc-search data-ioc-index="/assets/data/repo-scanner-index.json" data-ioc-sort="3 descending">
     {% set searchBox = { id: "ioc-search-input", label: "Search repository indicators", placeholder: "Repository owner or name, package name, filename, domain, or wallet address", count: "data-ioc-count" } %}{% include "partials/search-box.njk" %}
     {% set filterChips = { dimension: "type", short: "Type", label: "Filter by indicator type", allLabel: "All types (" + (repo.total | thousands) + ")", counts: repo.counts_by_type, formatValue: "replace-underscore" } %}
     {% include "partials/filter-chips.njk" %}

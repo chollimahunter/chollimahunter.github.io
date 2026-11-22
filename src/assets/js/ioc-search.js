@@ -226,6 +226,18 @@
   var sortColumn = -1;
   var sortDirection = "ascending";
   var headerLabels = [];
+  // A page can open its table already sorted with data-ioc-sort="<column>
+  // <direction>" on the panel, the column counted from 0 in the order above:
+  // /repo-scanner/ opens newest report first ("3 descending"). Without it the
+  // table keeps index order, or relevance order while a search is typed.
+  (function () {
+    var parts = String(panel.getAttribute("data-ioc-sort") || "").trim().split(/\s+/);
+    var column = Number(parts[0]);
+    if (parts[0] !== "" && COLUMNS[column]) {
+      sortColumn = column;
+      sortDirection = parts[1] === "descending" ? "descending" : "ascending";
+    }
+  })();
 
   function cell(row, column, className) {
     var td = el("td", className);
@@ -1032,7 +1044,7 @@
       button.type = "button";
       while (th.firstChild) button.appendChild(th.firstChild);
       th.appendChild(button);
-      th.setAttribute("aria-sort", "none");
+      th.setAttribute("aria-sort", column === sortColumn ? sortDirection : "none");
       button.addEventListener("click", function () {
         sortDirection = sortColumn === column && sortDirection === "ascending" ? "descending" : "ascending";
         sortColumn = column;
