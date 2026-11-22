@@ -8217,6 +8217,30 @@
       "note": "Found on 29 September 2026 by searching GitHub's code for the handles this site already holds for the persona (super1114, topsecretagent007, 0xapp123) and reading the files that name them: contact blocks, profile READMEs and portfolio data in the persona's own repositories or in repositories that credit its accounts. Each value is cited to the file it was read from. Values in copied templates, client team pages and test data are not carried."
     },
     {
+      "persona": "KGJ",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/greenfoxfun/greenfoxfun/blob/6c17f95e80dddbb2c3c3f81127eda1f9f13c8d01/README.md",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/greenfoxfun",
+          "post": 0
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/greenfoxfun",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026. greenfoxfun is a GitHub organisation (id 242159102) created on 5 November 2025 under the name GreenFox, described as a development team, whose website field is tsagent.xyz, a domain this index already holds for the persona. Its profile repository was created the same day, and all four of its commits are authored TopSecretAgent007 <lendonbracewell1114@gmail.com>, the address published for the persona's topsecretagent007 account; the organisation is therefore carried as the persona's own rather than as a lead. The profile README offers trading bots for custom development or direct purchase and names the Telegram account greenfoxfun as the contact. The organisation's other seven repositories are forks of pump.fun and four.meme bundler and sniper bots, made the same day."
+    },
+    {
       "persona": "Aiden Mori",
       "researcher": "chollimahunter",
       "transcribed": "2026-09-29",
@@ -9368,6 +9392,46 @@
         }
       ],
       "note": "github.com/SrDev36428 is GitHub account id 157616488 and was previously named DevsWorld36428; the old handle now returns 404. The account commits under both 157616488+SrDev36428@users.noreply.github.com and 157616488+DevsWorld36428@users.noreply.github.com, and GitHub mints those addresses from the account's immutable numeric id, so the two names are the same account as a matter of how the address is constructed rather than as an inference.\n\nThat noreply address already appears in the commit history of two accounts this index holds under \"Saja network portfolio accounts (Nisos)\": three commits on eros1006 and one on TopRatedDev36428, both under the display name Beautiful Devsworld. A third account in the same group, blockbusterdev, carries 544 commits from beautifuldevsworld@gmail.com under the names softvoyager, DenysOstroverkh and TalentedDev36428, and TopRatedDev36428 carries the same address under the name DevsWorld36428. The addresses are admitted as one holder's because they commit under names the group's own accounts use, including two carrying its 36428 suffix.\n\nThe account was created on 24 January 2024, four weeks after TopRatedDev36428, whose numeric handle suffix it repeats exactly, and it follows eight accounts this index holds: eros1006, TopRatedDev36428, GoodWork0903, Talented0Dev, nulidev, CleverSofter, SoftwarePassioner and blockbusterdev. Seven of those are in this group.\n\nThe limit is worth stating plainly. The direct evidence from account 157616488 into the group's repositories is four commits, which is not much on its own. The weight here is cumulative rather than from any single value: the rename recovered from the numeric id, the shared handle suffix, the creation date four weeks apart, the eight follow edges and the address reuse across three of the group's accounts. A reader who wants to discount it should discount it on that basis. The account was live when read on 20 September 2026, and no persona is attached because the group it joins carries none."
+    },
+    {
+      "label": "The listed GitHub account newstable, renamed partnerofyou26",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud",
+        "Moonstone Sleet"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/partnerofyou26",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/partnerofyou26/Shark-Baby/commit/b89555781c1cdf0121e44dfd7913e4901f32ad2c",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/partnerofyou26/casino-hilo-app/commit/c482a9d49f135e4e61802efdf3b0c5169084df77",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/partnerofyou26/nest.js-amplication/commit/8d96ef4b92b86a8aef62392433ab55198d6db2d6",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/partnerofyou26",
+          "post": 0
+        },
+        {
+          "ioc_type": "username",
+          "value": "anime1026",
+          "post": 2
+        }
+      ],
+      "note": "github.com/partnerofyou26 is GitHub account id 97214534, created on 6 January 2022, and is the same account this index holds as newstable and sasuke031026 from the DPRK IT-worker list in tayvano's lazarus-bluenoroff-research and from Chollima Group's Moonstone Sleet write-up. Its repositories carry commits from 97214534+sasuke031026@users.noreply.github.com (April 2022 to January 2023), 97214534+Anime1026@users.noreply.github.com (May 2023 to May 2024) and 97214534+newstable@users.noreply.github.com (August 2024 to 21 October 2026). GitHub mints a noreply address from the account's immutable numeric id, so the three handles are one account renamed, as a matter of how the address is constructed, and the API resolves id 97214534 to partnerofyou26 today. All three earlier handles returned 404 when read on 22 November 2026; the rename to partnerofyou26 came after 21 October 2026, the date of the last commit under newstable. anime1026 is recorded as a username rather than a profile URL because an abandoned handle can be registered by anyone.\n\nThe account's repositories also carry commits from addresses already on the published list (sasuke031026@gmail.com, jayceetran.cool@gmail.com, special.galaxy26@gmail.com, zoelasa1111@gmail.com, f99964995@gmail.com), and its casino-hilo-app, created on 9 May 2023, is worked between May and November 2023 by sasuke031026@gmail.com, f99964995@gmail.com and louistalent0123@gmail.com, the last an address of blockchainSupport1125, which this index also holds. No new attribution is made here: the entry gives the account's current name, so that a reader holding the old handles can find it. The account displayed the name Partner111 and had 93 public repositories when read."
     },
     {
       "label": "Former GitHub handles recovered from the account id in commit noreply addresses",
