@@ -71,7 +71,7 @@ as best as reasonably inferable:
 clearly supply it. Do not infer `confidence_level` from tone or your own
 judgment of plausibility — default it to `low` unless the submission itself
 cites a source whose own stated confidence is higher (per the sourcing
-methodology at `/sources/#sourcing-methodology`: confidence_level must reflect
+methodology at `/about/#sourcing`: confidence_level must reflect
 the cited source's own characterization, not this tool's).
 
 ### 3. Never invent identity/schema metadata

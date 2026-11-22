@@ -42,7 +42,7 @@ extra_head: '<script src="/assets/js/persona-filter.js" defer></script>'
      so an address or a handle finds the persona holding it — see the
      data-search attribute in partials/persona-card.njk. #}
   <div class="table-filter" data-persona-search data-persona-limit="{{ limits.list }}" hidden>
-    {% set personaCountText %}{{ personas.length }} persona{% if personas.length != 1 %}s{% endif %}{% if loosePhotos.length %}, and {{ loosePhotos.length }} photograph{% if loosePhotos.length != 1 %}s{% endif %} published without an identifier{% endif %}. Select any one for the full record.{% endset %}{% set searchBox = { id: "persona-search-input", label: "Search personas", placeholder: "Name, alias, or an indicator such as an address or GitHub handle", attr: "data-persona-search-input", count: "data-persona-count", countText: personaCountText } %}{% include "partials/search-box.njk" %}
+    {% set personaCountText %}{{ personas.length }} persona{% if personas.length != 1 %}s{% endif %}{% if loosePhotos.length %}, and {{ loosePhotos.length }} photograph{% if loosePhotos.length != 1 %}s{% endif %} published without an identifier{% endif %}.{% endset %}{% set searchBox = { id: "persona-search-input", label: "Search personas", placeholder: "Name, alias, or an indicator such as an address or GitHub handle", attr: "data-persona-search-input", count: "data-persona-count", countText: personaCountText } %}{% include "partials/search-box.njk" %}
     {% set resultTools = { target: "[data-persona-grid]", noun: "personas", sort: true } %}{% include "partials/result-tools.njk" %}
   </div>
 

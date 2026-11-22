@@ -159,7 +159,7 @@ It also runs the other way: fake recruiters send real developers a "coding test"
 
 <div class="disclaimer-banner">
 <strong>Disclaimer</strong>
-Every claim here comes from a cited public record, and confidence levels reflect the source's own characterisation rather than a determination by this site. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>. If something looks inaccurate or unfairly sourced, flag it via <a href="/submit/">Submit IOC/Profile</a>.
+Every claim here comes from a cited public record, and confidence levels reflect the source's own characterisation rather than a determination by this site. See the <a href="/about/#sourcing">sourcing methodology</a>. If something looks inaccurate or unfairly sourced, flag it via <a href="/submit/">Submit IOC/Profile</a>.
 </div>
 
 </section>

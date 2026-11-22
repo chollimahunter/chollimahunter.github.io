@@ -22,7 +22,6 @@ extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
   {% if collections.profiles.length %}
   <p class="form-hint" role="status" aria-live="polite" data-grid-count="#all-profiles">
     {{ collections.profiles.length }} profile{% if collections.profiles.length != 1 %}s{% endif %}.
-    Select any one for the full record.
   </p>
   <ul class="profile-grid" id="all-profiles" data-grid-limit="{{ limits.list }}">
     {% for profile in collections.profiles %}{% set tileProfile = profile %}{% include "partials/profile-tile.njk" %}{% endfor %}
@@ -37,6 +36,6 @@ extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
 <section>
   {% set disclaimer = {
     title: "Disclaimer",
-    body: 'Each person is drawn from a public wanted notice, indictment or sanctions designation in which the conduct is alleged, and is presumed innocent unless proven guilty in court. Confidence levels reflect the cited source, not a finding of this site. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    body: 'Each person is drawn from a public wanted notice, indictment or sanctions designation in which the conduct is alleged, and is presumed innocent unless proven guilty in court. Confidence levels reflect the cited source, not a finding of this site. See the <a href="/about/#sourcing">sourcing methodology</a>.'
   } %}{% include "partials/disclaimer.njk" %}
 </section>

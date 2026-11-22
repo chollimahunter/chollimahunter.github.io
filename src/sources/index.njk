@@ -43,19 +43,7 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src
   {% set sourceTable = { id: "sources-table", rows: sources.all, noun: "sources", first: "Source", areas: "Cited by", full_url: "/sources/all/" } %}
   {% include "partials/source-table.njk" %}
   {% include "partials/table-filter-more.njk" %}
-  {% else %}
-  <p><em>No sources cited yet.</em></p>
   {% endif %}
-</section>
-
-<section>
-  <h2 id="sourcing-methodology">Sourcing methodology</h2>
-  <p>
-    No claim about a named individual is published without a public citation,
-    and each profile&rsquo;s confidence level is taken from the cited
-    source&rsquo;s own characterisation. The full rules are under
-    <a href="/about/#sourcing">Sourcing and confidence</a>.
-  </p>
 </section>
 
 <section>
@@ -96,20 +84,15 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script><script src
 </section>
 
 {#
-  Folded in from the former /resources/ page, which had a top-level nav slot
-  and thirteen outbound links in it. Nothing below is a citation for a claim on
-  this site — the registry above is that. This is the standing reference
-  material a reader needs alongside it: where to report what this site cannot
-  act on, the advisories most of the content traces back to, and the vendor
-  naming the cluster pages follow. Keep it to material that is authoritative
-  and stable; anything cited for a fact belongs in the registry instead.
+  Nothing below is a citation for a claim on this site; the registry above is
+  that. Keep this to stable, authoritative reference material.
 #}
 <section>
   <h2 id="first-party-research">First-party research</h2>
   <p>
-    A few indicators cite this site itself, under the publisher name Chollima
-    Hunter: values the maintainer read from a live account or listing on the
-    date recorded. Each is an observation, not an attribution; anyone who
+    Some indicators cite this site itself, under the publisher name Chollima
+    Hunter: values read from public accounts, listings and commit history on
+    the date recorded, each with the method set out in its note. Anyone who
     believes one concerns their own identity can ask for review through the
     <a href="/submit/">submission page</a>.
   </p>

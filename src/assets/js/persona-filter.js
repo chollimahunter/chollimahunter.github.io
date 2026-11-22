@@ -157,7 +157,7 @@
         countEl.textContent =
           personaTotal + " persona" + (personaTotal === 1 ? "" : "s") +
           (photographs ? ", and " + photographs + " photograph" + (photographs === 1 ? "" : "s") + " published without an identifier" : "") +
-          ". Select any one for the full record.";
+          ".";
       } else if (shown < matched) {
         countEl.textContent = "Showing " + shown + " of " + matched + " entr" + (matched === 1 ? "y" : "ies") + (matched === total ? "" : " matching") + ".";
       } else {

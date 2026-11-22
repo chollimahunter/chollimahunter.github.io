@@ -24,13 +24,12 @@ eleventyComputed:
 
   Note the data key: `indicator_pages`, not `records`. They are the same list
   in a production build; under `eleventy --serve` the former is a slice, so the
-  dev server starts in seconds rather than building 20,000 pages first. Links
+  dev server starts in seconds rather than building every page first. Links
   to an omitted indicator 404 locally — run with ELEVENTY_ALL_INDICATORS=1 when
   that matters. See indicatorPages() in src/_data/iocIndex.js.
 
-  A value that belongs to a persona is also rendered in full on that persona's
-  page. It used to have only a noindex redirect stub here; it now has a real
-  page, canonical to itself, that summarises the persona and links to it. The
+  A value that belongs to a persona also gets a page here, canonical to
+  itself, that summarises the persona and links to it. The
   fields beyond the record (`kind`, `publishers_text`, `campaign_text`,
   `related`, `lastmod`) come from indicatorPageData() in iocIndex.js.
 
@@ -44,7 +43,7 @@ eleventyComputed:
     {# Back to the page an indicator is listed on, by its area (see
        src/_data/iocIndex.js): Remote Workers, the actor clusters, the
        EtherHiding Tracker or the repo scanner; the indicator index otherwise. #}
-    {% set backLinks = { "remote-workers": { url: "/remote-workers/", text: "Remote Workers" }, "espionage": { url: "/#actor-cluster-taxonomy", text: "All actor clusters" }, "etherhiding": { url: "/etherhiding/", text: "EtherHiding Tracker" }, "polinrider": { url: "/repo-scanner/", text: "Repo Scanner" } } %}
+    {% set backLinks = { "remote-workers": { url: "/remote-workers/", text: "Remote Workers" }, "espionage": { url: "/clusters/", text: "All actor clusters" }, "etherhiding": { url: "/etherhiding/", text: "EtherHiding Tracker" }, "polinrider": { url: "/repo-scanner/", text: "Repo Scanner" } } %}
     {% set backLink = backLinks[ioc.area] or { url: "/indicators/", text: "All indicators" } %}{% include "partials/back-link.njk" %}
     <h1 class="indicator-value"><code>{{ ioc | iocLabel }}</code></h1>
 
@@ -267,7 +266,7 @@ eleventyComputed:
     {% set disclaimer = {
       title: "Disclaimer",
       preset: "not-proof",
-      body: 'See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+      body: 'See the <a href="/about/#sourcing">sourcing methodology</a>.'
     } %}{% include "partials/disclaimer.njk" %}
   </section>
 </article>

@@ -62,15 +62,10 @@ eleventyExcludeFromCollections: true
       </tbody>
     </table>
   </div>
-  <h2>Reading an indicator page</h2>
-  <p>
-    Each page at <code>/indicators/&lt;id&gt;/</code> lists every source that
-    reported the value and what it said. Downloads are on
-    <a href="/data/">Data and downloads</a>.
-  </p>
+  <p>Downloads are on <a href="/data/">Data and downloads</a>.</p>
   {% set disclaimer = {
     title: "Disclaimer",
     preset: "not-proof",
-    body: 'Compromised packages and repositories name victims. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    body: 'Compromised packages and repositories name victims. See the <a href="/about/#sourcing">sourcing methodology</a>.'
   } %}{% include "partials/disclaimer.njk" %}
 </section>

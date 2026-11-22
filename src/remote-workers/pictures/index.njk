@@ -26,14 +26,12 @@ extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
   <p>
     The real people named in law-enforcement notices in connection with DPRK
     remote IT-worker operations, as distinct from the fabricated identities
-    under <a href="/remote-workers/personas/">Personas</a>. Every profile is at
-    <a href="/profiles/">Named Individuals</a>.
+    under <a href="/remote-workers/personas/">Personas</a>.
   </p>
 
   {% if worker_profiles.length %}
   <p class="form-hint" role="status" aria-live="polite" data-grid-count="#worker-profiles">
     {{ worker_profiles.length }} individual{% if worker_profiles.length != 1 %}s{% endif %}.
-    Select any one for the full record.
   </p>
   <ul class="profile-grid" id="worker-profiles" data-grid-limit="{{ limits.list }}">
     {% for profile in worker_profiles %}{% set tileProfile = profile %}{% include "partials/profile-tile.njk" %}{% endfor %}
@@ -48,6 +46,6 @@ extra_head: '<script src="/assets/js/grid-more.js" defer></script>'
 <section>
   {% set disclaimer = {
     title: "Disclaimer",
-    body: 'Each person is drawn from a law-enforcement wanted notice in which the conduct is alleged, and is presumed innocent unless proven guilty in court. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>, or <a href="/about/#corrections">ask for a correction or removal</a>.'
+    body: 'Each person is drawn from a law-enforcement wanted notice in which the conduct is alleged, and is presumed innocent unless proven guilty in court. See the <a href="/about/#sourcing">sourcing methodology</a>, or <a href="/about/#corrections">ask for a correction or removal</a>.'
   } %}{% include "partials/disclaimer.njk" %}
 </section>

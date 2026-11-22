@@ -27,7 +27,7 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
   </p>
   {% set disclaimer = {
     title: "Leads, not verdicts",
-    body: 'A match here means a report associated the value with these campaigns, or GitHub search found the string in a public repository. It does not show that a repository or its author is malicious or DPRK-linked: strings coincide with legitimate code, and a repository on the PolinRider list is almost always a victim. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    body: 'A match here means a report associated the value with these campaigns, or GitHub search found the string in a public repository. It does not show that a repository or its author is malicious or DPRK-linked: strings coincide with legitimate code, and a repository on the PolinRider list is almost always a victim. See the <a href="/about/#sourcing">sourcing methodology</a>.'
   } %}{% include "partials/disclaimer.njk" %}
 </section>
 
@@ -70,21 +70,13 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
 <section id="scan-results">
   <h2>Latest GitHub scan</h2>
   <p>
-    Runs are started by hand; this is the last run, not a live feed.
-    {% if scan.ran_at %}
-    It finished on {{ scan.ran_at | truncate(10, true, "") }} against
+    The last run finished on {{ scan.ran_at | truncate(10, true, "") }} against
     {{ scan.ruleset_version }}, ran
     {{ (scan.query_count or scan.queries_executed | length) | thousands }} queries and recorded
     {{ scan.matches | length | thousands }} matches.
-    {% else %}
-    No scan has been run yet.
-    {% endif %}
     A row tagged <span class="tag-chip">detection or research repository</span>
     matched in a repository that appears to publish detection rules.
   </p>
-  {% if scan.status == "no_scan_run_yet" and scan.notes %}
-  <p><em>{{ scan.notes }}</em></p>
-  {% endif %}
   {% set scannedEntries = scan.ruleset_version | rulesetEntryCount %}
   {% set liveEntries = iocs["repo-scan-ruleset"] | length %}
   {% if scannedEntries and liveEntries > scannedEntries %}
@@ -153,12 +145,10 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script><script src="
   <h2>Contagious Interview</h2>
   <p>
     Contagious Interview is the public name for fake recruiters who send a
-    developer a coding assessment as a repository. Running it pulls BeaverTail,
-    a JavaScript infostealer that typically fetches the InvisibleFerret
-    backdoor, with OtterCookie increasingly in the same chains. A September 2026
-    joint advisory from Japan&rsquo;s National Police Agency, the FBI and
-    partners put its reach since late 2025 at some thirty thousand infected
-    devices.
+    developer a coding assessment as a repository; running it pulls BeaverTail
+    and, usually, the InvisibleFerret backdoor. The
+    <a href="/clusters/contagious-interview/">cluster page</a> carries the
+    reporting.
   </p>
 </section>
 

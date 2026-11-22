@@ -10,8 +10,8 @@ eleventyExcludeFromCollections: true
   generated ones from their data sources. A new static page needs adding to
   the first list, unless it is a redirect stub or a private page: a stub is
   marked noindex, and Google rejects a sitemap entry it is told not to index.
-  /remote-workers/held-back/ is private: it is never written
-  by a production build. check-site.js enforces both. The
+  A private page is never written by a production build. check-site.js
+  enforces both. The
   indicator pages live in sitemap-indicators.njk, and sitemap.njk is the
   index that names both. A static page carries no lastmod, since the build
   has no date for it that is not invented; profiles, hunts and clusters take

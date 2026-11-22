@@ -17,13 +17,7 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script>'
   {% include "partials/profiles-tab-bar.njk" %}
   <p>
     Indicators from DPRK remote IT-worker schemes and the "Contagious
-    Interview" lure campaigns. Every entry cites the public record it came
-    from.
-  </p>
-  <p>
-    See also <a href="/remote-workers/personas/">Personas</a>,
-    <a href="/remote-workers/pictures/">Named IT Workers</a> and
-    <a href="/remote-workers/red-flags/">Red Flags</a>.
+    Interview" lure campaigns.
   </p>
 </section>
 
@@ -35,7 +29,7 @@ extra_head: '<script src="/assets/js/ioc-search.js" defer></script>'
     {% include "partials/filter-chips.njk" %}
     {% set filterChips = { dimension: "campaign", short: "Cluster", label: "Filter by DPRK activity cluster", allLabel: "All clusters", counts: iocIndex.remote_workers.search_counts_by_campaign } %}
     {% include "partials/filter-chips.njk" %}
-    {# Only GitHub and LinkedIn accounts have been checked, so these chips narrow to accounts. #}
+    {# Only accounts carry a live/removed status, so these chips narrow to accounts. #}
     {% set filterChips = { dimension: "status", short: "Account status", label: "Filter by account status", allLabel: "Any account status", counts: iocIndex.remote_workers.counts_by_status, suffix: " accounts" } %}
     {% include "partials/filter-chips.njk" %}
     {% include "partials/ioc-download-controls.njk" %}
