@@ -1554,11 +1554,15 @@ const PLATFORM_ACCOUNTS = [
   },
   {
     // A YouTube channel handle, youtube.com/@handle; added for justshiftjk's
-    // channel in Ketman's GitHub-organisations report.
+    // channel in Ketman's GitHub-organisations report. A channel with no
+    // handle is linked by its id, youtube.com/channel/UC... (topsecretagent007's
+    // GitHub profile, 22 November 2026); the id is kept as written, since ids
+    // are case-sensitive.
     ioc_type: "youtube_account",
     hosts: ["youtube.com", "m.youtube.com"],
     canonical: "youtube.com",
     prefix: "@",
+    channel_id: /^UC[A-Za-z0-9_-]{22}$/,
     auto_extract: false,
     handle: /^[a-z0-9._-]{3,30}$/,
     reserved: new Set([]),
@@ -1594,7 +1598,8 @@ const RE_ESCAPE = /[.*+?^${}()|[\]\\]/g;
 /** The prose pattern for one platform, built from its host list and path prefix. */
 function platformAccountPattern(spec) {
   const hosts = spec.hosts.map((host) => host.replace(RE_ESCAPE, "\\$&")).join("|");
-  const prefix = spec.prefix.replace(RE_ESCAPE, "\\$&");
+  let prefix = spec.prefix.replace(RE_ESCAPE, "\\$&");
+  if (spec.channel_id) prefix = `(?:${prefix}|channel\\/)`;
   return new RegExp(
     String.raw`\b(?:https?:\/\/)?(?:www\.)?(?:` + hosts + String.raw`)\/` +
       prefix + String.raw`[A-Za-z0-9._-]+`,
@@ -1631,6 +1636,9 @@ function normalizePlatformAccount(spec) {
     // profile.php?id=<id>; the name part is whatever the page is called today.
     if (spec.id_path && segments.length === 3 && segments[0].toLowerCase() === "people" && /^\d{5,20}$/.test(segments[2])) {
       return `https://${spec.canonical}/${spec.id_path}?${spec.id_param}=${segments[2]}`;
+    }
+    if (spec.channel_id && segments.length >= 2 && segments[0].toLowerCase() === "channel") {
+      return spec.channel_id.test(segments[1]) ? `https://${spec.canonical}/channel/${segments[1]}` : null;
     }
     // Platforms that nest accounts under fixed segments (freelancer /u/,
     // quora /profile/, laborx /freelancers/users/) must actually carry them; a
@@ -2051,6 +2059,20 @@ function normalizePhone(raw) {
   const nanp = digits.length === 11 && digits.startsWith("1") ? digits.slice(1) : digits.length === 10 ? digits : null;
   if (nanp && /^[2-9]\d{2}[2-9]\d{6}$/.test(nanp)) return `+1${nanp}`;
   return null;
+}
+
+/**
+ * The telephone number behind a WhatsApp click-to-chat link. wa.me/<digits>
+ * and api.whatsapp.com/send?phone=<digits> carry the number in international
+ * form without the plus, so the plus is restored before normalizing; the link
+ * names a number, not an account handle, and is indexed as that phone.
+ */
+const WHATSAPP_LINK_PATTERN =
+  /\b(?:https?:\/\/)?(?:wa\.me\/\+?\d{8,15}|(?:api|web)\.whatsapp\.com\/send\/?\?(?:[^\s"'<>]*&)?phone=\+?\d{8,15})/gi;
+
+function normalizeWhatsappLink(raw) {
+  const m = String(raw).match(/wa\.me\/\+?(\d{8,15})(?![\d])|[?&]phone=\+?(\d{8,15})(?![\d])/i);
+  return m ? normalizePhone(`+${m[1] || m[2]}`) : null;
 }
 
 /**
@@ -2698,6 +2720,8 @@ module.exports = {
   isVictimSection,
   normalizeIpv4,
   normalizePhone,
+  WHATSAPP_LINK_PATTERN,
+  normalizeWhatsappLink,
   PHONE_PATTERN,
   looksLikePhoneContext,
   isPhoneBoilerplate,

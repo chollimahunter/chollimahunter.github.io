@@ -11,7 +11,7 @@
  *
  * Only platforms that answer honestly are checked. A platform qualifies when a
  * made-up profile name gets a real "not found" (HTTP 404, an empty API result,
- * or for Telegram a page without the "Telegram: Contact" title) and a real
+ * or for Telegram a page without the display-name block) and a real
  * profile does not; probed on 28 September 2026. Fiverr, Medium and
  * CodeSandbox refuse automated requests, Trello, Freelancer.com, RemoteHub and
  * Calendly return the same page for a real and a made-up profile, and X needs
@@ -42,7 +42,14 @@ const handleOf = (url) => safeDecode(String(url).replace(/\/+$/, "").split("/").
 const CHECKS = {
   telegram_account: {
     url: (v) => `https://t.me/${handleOf(v)}`,
-    read: (res) => (res.status !== 200 ? null : /<title>Telegram: (Contact|View|Join)/i.test(res.body) ? "live" : "removed"),
+    // t.me serves the "Telegram: Contact @handle" title for any handle, held
+    // or not (seen 22 November 2026); only a held one's page carries the
+    // display-name block, so that block is the test.
+    read: (res) => {
+      if (res.status !== 200) return null;
+      if (/class="tgme_page_title"/.test(res.body)) return "live";
+      return /<title>Telegram: (Contact|View|Join)/i.test(res.body) ? "removed" : null;
+    },
   },
   gitlab_account: {
     url: (v) => `https://gitlab.com/api/v4/users?username=${encodeURIComponent(handleOf(v))}`,

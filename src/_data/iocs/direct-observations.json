@@ -8224,6 +8224,10 @@
         {
           "url": "https://github.com/greenfoxfun/greenfoxfun/blob/6c17f95e80dddbb2c3c3f81127eda1f9f13c8d01/README.md",
           "date": "2026-11-22"
+        },
+        {
+          "url": "https://t.me/greenfoxfun",
+          "date": "2026-11-22"
         }
       ],
       "indicators": [
@@ -8236,9 +8240,14 @@
           "ioc_type": "telegram_account",
           "value": "https://t.me/greenfoxfun",
           "post": 0
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/greenfoxworld",
+          "post": 1
         }
       ],
-      "note": "Read on 22 November 2026. greenfoxfun is a GitHub organisation (id 242159102) created on 5 November 2025 under the name GreenFox, described as a development team, whose website field is tsagent.xyz, a domain this index already holds for the persona. Its profile repository was created the same day, and all four of its commits are authored TopSecretAgent007 <lendonbracewell1114@gmail.com>, the address published for the persona's topsecretagent007 account; the organisation is therefore carried as the persona's own rather than as a lead. The profile README offers trading bots for custom development or direct purchase and names the Telegram account greenfoxfun as the contact. The organisation's other seven repositories are forks of pump.fun and four.meme bundler and sniper bots, made the same day."
+      "note": "Read on 22 November 2026. greenfoxfun is a GitHub organisation (id 242159102) created on 5 November 2025 under the name GreenFox, described as a development team, whose website field is tsagent.xyz, a domain this index already holds for the persona. Its profile repository was created the same day, and all four of its commits are authored TopSecretAgent007 <lendonbracewell1114@gmail.com>, the address published for the persona's topsecretagent007 account; the organisation is therefore carried as the persona's own rather than as a lead. The profile README offers trading bots for custom development or direct purchase and names the Telegram account greenfoxfun as the contact. That account, display name GreenFox, gives in its bio \"GreenFox pumpfun: https://x.com/greenfoxworld\"; the X account greenfoxworld was suspended when checked on 22 November 2026. The organisation's other seven repositories are forks of pump.fun and four.meme bundler and sniper bots, made the same day."
     },
     {
       "persona": "Aiden Mori",
@@ -9017,6 +9026,200 @@
         }
       ],
       "note": "Found on 16 November 2026 by putting whisdev, the GitHub login the index already holds for this persona, to Maigret's username search and reading the pages it reported, cited here. The YouTube channel states the name WHISdev and a join date of 19 November 2024; the Medium page states the name Whis. Both restate the handle and stay in the note. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
+    },
+    {
+      "persona": "Mauro Liu",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/0xlocker",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/0xlocker",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/0xlocker gives x.com/0xlocker (its profile links).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Banana",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/BitFancy",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/bitbana",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/BitFancy gives t.me/bitbana (its website field).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Rui Jin",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/devstar9981",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/invictusdev0",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/devstar9981 gives x.com/invictusdev0 (its profile links).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Michael Liu Liang",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/dreamwork999",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email",
+          "value": "bigdreamwork999@gmail.com",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/dreamwork999 gives bigdreamwork999@gmail.com (its website field).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Jackson Mori",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/jacksonmori755",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/bluebird912",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/jacksonmori755 gives t.me/bluebird912 (its profile links).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "KGJ",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/0xalberto",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/topsecretagent007",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/topsecretagent007/topsecretagent007/blob/d6422886343d8d3cf1d8f8043951c4a73340d815/README.md",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ/about",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/cryptocooker0510",
+          "post": 0
+        },
+        {
+          "ioc_type": "phone_number",
+          "value": "+16238502353",
+          "post": 1
+        },
+        {
+          "ioc_type": "youtube_account",
+          "value": "https://youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ",
+          "post": 1
+        },
+        {
+          "ioc_type": "instagram_account",
+          "value": "https://instagram.com/lbracewell114",
+          "post": 2
+        },
+        {
+          "ioc_type": "youtube_account",
+          "value": "https://youtube.com/@lendonbracewell",
+          "post": 3
+        },
+        {
+          "ioc_type": "domain",
+          "value": "tsagent.online",
+          "post": 3
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/0xalberto gives t.me/cryptocooker0510 (its profile links); github.com/topsecretagent007 gives the WhatsApp number +16238502353 (its profile links), youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ (its profile links), instagram.com/lbracewell114 (its profile README).\n\nThe YouTube channel is @LendonBracewell, the name behind the persona's published address lendonbracewell1114@gmail.com. Its description, read the same day, calls the holder a full stack blockchain developer and says \"This is my portfolio : https://tsagent.online\", beside tsagent.xyz, which this index already holds for the persona; tsagent.online then redirected to an expired-domain listing. The channel also links github.com/topsecretagent007, t.me/topsecretagent_007 and x.com/lendon1114, and names the holder a co-founder of BotSales (botsales.shop), which is not carried: a business the persona claims a part in may be someone else's.\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Mark Santiago",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/marksantiago290",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "instagram_account",
+          "value": "https://instagram.com/marksantiago290",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/marksantiago290 gives instagram.com/marksantiago290 (its profile links).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "persona": "Lucas Wong",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "posts": [
+        {
+          "url": "https://github.com/codeprom/codeprom/blob/179e149b3885d428ec384966657baf13cd392dba/README.md",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "phone_number",
+          "value": "+12318215145",
+          "post": 0
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/clox1118",
+          "post": 0
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/codeprom gives the WhatsApp number +12318215145 (its profile README), t.me/clox1118 (its profile README).\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
     }
   ],
   "unattributed": [
@@ -22775,6 +22978,414 @@
         }
       ],
       "note": "Found on 27 October 2026 by searching GitHub code for the loader that bryanchriswhite's dev-trap-dossiers documents as the realfraction generation of the Contagious Interview campaign: a backend file that holds a base64-encoded URL ending /api/ip-check-encrypted/<id>, posts the whole of process.env to it with the header x-secret-header: secret, and runs the reply with new Function(\"require\", ...). Each of the three repositories below carries that loader, read as text and never run.\n\nQevoratrix-live-coding is a GitHub organization created on 20 October 2026 that the same day published six repositories named for languages (react, go, rust, java, solidity, node), the shape of a live-coding interview exercise. In react, backend/src/services/errorHandler.service.config.js decodes to https://www.jitnad.lol/api/ip-check-encrypted/3aeb34a39; the file's only commit is dated 3 September 2026 and attributed to a real developer, whose history the repository copies. stockx-fi, an organization created on 3 August 2026, holds stockx_v1, whose backend/src/compliance/complianceService.js decodes to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a32. 0xbrentfi, a user account created on 21 February 2026 and displaying the name Brent Phelps, holds StockX_PoC_1.03 with the same file decoding to https://www.ipregionchecker.org/api/ip-check-encrypted/3aeb34a37; dev-trap-dossiers already lists that account among the realfraction repositories, and Maltrail's Lazarus trail list carries ipregionchecker.org. The StockX proof-of-concept is the lure that write-up describes, and its first C2 was ipregionchecker.com. jitnad.lol was registered through Dynadot on 23 October 2026, the day the loader was pushed to the repository, and appears in no published source found on 27 October 2026.\n\nThe same search found jamesm-dev/NitroGem, a neutralized copy of the NitroGem trading-bot lure published for study, whose report gives the original's stage-one C2 as https://locate-my-ip.vercel.app/api/ip-check-encrypted/3aeb34a31; dev-trap-dossiers lists the original, TechByteX/NitroGem, in the cluster. The study copy itself is not filed.\n\nNot carried: the commit authors of all three repositories are real developers (one at Uniswap) whose commit history was copied into the lure, the usual way these repositories borrow credibility."
+    },
+    {
+      "label": "Contact channels indexed GitHub accounts publish on their own profiles",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/ChangeYourself0613",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/AI1120",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/AngelEyeDev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/bluedev41",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/bluesky0209",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/chivalrousdev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/crypto-artisan",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cryptotorpo",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/devbamboo15",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/fairsky0201",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/fairskyDev0201",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/fantasy2345",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/firststar19950115",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/goldnite",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/jayevans-star",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Kage0923",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/kingpig-dev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/LionelPerrault",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/lucky0612",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Lucky9596",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/maestro418",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/MutantRolls",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/nightskydev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/relforce",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/SmartTabDev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/SrDev36428",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/starmastar1126",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/sunshine2329",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/super-dev03",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/supercomet329",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/TalentKingDev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/tanaka0722-dev",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/topclever",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/topstar88",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/TrendSpider001",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/venus01015",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/codeninja819",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/Sam-Devs",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/top-dev-999/top-dev-999/blob/83850d1d0b510bf9ab3b071857411626f04a98cd/README.md",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://t.me/stevensprg",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/saigod_0",
+          "post": 0
+        },
+        {
+          "ioc_type": "email",
+          "value": "aiexpert1120@gmail.com",
+          "post": 1
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/angel_devil_eyes",
+          "post": 2
+        },
+        {
+          "ioc_type": "email",
+          "value": "blancian41@gmail.com",
+          "post": 3
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/bd1203x",
+          "post": 4
+        },
+        {
+          "ioc_type": "email",
+          "value": "chivalrousdev@gmail.com",
+          "post": 5
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/talentdat0218",
+          "post": 6
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/cryptotorpo",
+          "post": 7
+        },
+        {
+          "ioc_type": "discord_account",
+          "value": "https://discord.com/users/0xbamboo",
+          "post": 8
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/devbamboo",
+          "post": 8
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/devbamboo15",
+          "post": 8
+        },
+        {
+          "ioc_type": "email",
+          "value": "fairsky0201@gmail.com",
+          "post": 9
+        },
+        {
+          "ioc_type": "email",
+          "value": "jrustackdev@gmail.com",
+          "post": 10
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/chainlito",
+          "post": 11
+        },
+        {
+          "ioc_type": "email",
+          "value": "firststar19950115@gmail.com",
+          "post": 12
+        },
+        {
+          "ioc_type": "linktree_account",
+          "value": "https://linktr.ee/goldnite",
+          "post": 13
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/goldnite_eth",
+          "post": 13
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "https://medium.com/@jayevanslinkedin",
+          "post": 14
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/kagemax",
+          "post": 15
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/crystal6529",
+          "post": 16
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/hawk0616",
+          "post": 17
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/laraviorb",
+          "post": 18
+        },
+        {
+          "ioc_type": "email",
+          "value": "alwayshappytime0430@gmail.com",
+          "post": 19
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/maestro0898",
+          "post": 20
+        },
+        {
+          "ioc_type": "youtube_account",
+          "value": "https://youtube.com/@mutantrolls",
+          "post": 21
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/solanapromania",
+          "post": 22
+        },
+        {
+          "ioc_type": "email",
+          "value": "relforce96@gmail.com",
+          "post": 23
+        },
+        {
+          "ioc_type": "devto_account",
+          "value": "https://dev.to/smarttabdev",
+          "post": 24
+        },
+        {
+          "ioc_type": "huggingface_account",
+          "value": "https://huggingface.co/smartdev19960425",
+          "post": 24
+        },
+        {
+          "ioc_type": "stackoverflow_account",
+          "value": "https://stackoverflow.com/users/19824401",
+          "post": 24
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/srdev36428",
+          "post": 25
+        },
+        {
+          "ioc_type": "linktree_account",
+          "value": "https://linktr.ee/starmastar1126",
+          "post": 26
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "https://medium.com/@starmastar1126",
+          "post": 26
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/starmastar1126",
+          "post": 26
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/web_developer_329",
+          "post": 27
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/dragon6284",
+          "post": 28
+        },
+        {
+          "ioc_type": "email",
+          "value": "supercomet329@gmail.com",
+          "post": 29
+        },
+        {
+          "ioc_type": "email",
+          "value": "godnessfortune@gmail.com",
+          "post": 30
+        },
+        {
+          "ioc_type": "email",
+          "value": "tanakabusinessen@gmail.com",
+          "post": 31
+        },
+        {
+          "ioc_type": "email",
+          "value": "lookapplication@gmail.com",
+          "post": 32
+        },
+        {
+          "ioc_type": "email",
+          "value": "winnow808@gmail.com",
+          "post": 33
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/spidertrading100",
+          "post": 34
+        },
+        {
+          "ioc_type": "medium_account",
+          "value": "https://medium.com/@boykebn",
+          "post": 35
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/codeninja819",
+          "post": 36
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/_samayorinde",
+          "post": 37
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/idealcreator99",
+          "post": 38
+        },
+        {
+          "ioc_type": "x_account",
+          "value": "https://x.com/pup5ol",
+          "post": 39
+        }
+      ],
+      "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/AI1120 gives aiexpert1120@gmail.com (its bio); github.com/AngelEyeDev gives t.me/angel_devil_eyes (its profile links); github.com/bluedev41 gives blancian41@gmail.com (its website field); github.com/bluesky0209 gives t.me/bd1203x (its profile links); github.com/ChangeYourself0613 gives t.me/saigod_0 (its profile links); github.com/chivalrousdev gives chivalrousdev@gmail.com (its public email field); github.com/codeninja819 gives x.com/codeninja819 (its profile links); github.com/crypto-artisan gives t.me/talentdat0218 (its website field); github.com/cryptotorpo gives x.com/cryptotorpo (its profile links); github.com/devbamboo15 gives discord.com/users/0xbamboo (its profile links), t.me/devbamboo (its profile links), x.com/devbamboo15 (its profile links); github.com/fairsky0201 gives fairsky0201@gmail.com (its website field); github.com/fairskyDev0201 gives jrustackdev@gmail.com (its website field); github.com/fantasy2345 gives t.me/chainlito (its profile links); github.com/firststar19950115 gives firststar19950115@gmail.com (its public email field); github.com/goldnite gives linktr.ee/goldnite (its profile links), x.com/goldnite_eth (its profile links); github.com/jayevans-star gives medium.com/@jayevanslinkedin (its profile links); github.com/Kage0923 gives x.com/kagemax (its profile links); github.com/kingpig-dev gives t.me/crystal6529 (its profile links); github.com/LionelPerrault gives t.me/hawk0616 (its profile links); github.com/lucky0612 gives x.com/laraviorb (its profile links); github.com/Lucky9596 gives alwayshappytime0430@gmail.com (its public email field); github.com/maestro418 gives t.me/maestro0898 (its profile links); github.com/MutantRolls gives youtube.com/@mutantrolls (its profile links); github.com/nightskydev gives x.com/solanapromania (its profile links); github.com/relforce gives relforce96@gmail.com (its public email field); github.com/Sam-Devs gives x.com/_samayorinde (its profile links); github.com/SmartTabDev gives dev.to/smarttabdev (its profile links), huggingface.co/smartdev19960425 (its profile links), stackoverflow.com/users/19824401 (its profile links); github.com/SrDev36428 gives t.me/srdev36428 (its profile links); github.com/starmastar1126 gives linktr.ee/starmastar1126 (its profile links), medium.com/@starmastar1126 (its profile links), x.com/starmastar1126 (its profile links); github.com/sunshine2329 gives t.me/web_developer_329 (its profile links); github.com/super-dev03 gives t.me/dragon6284 (its profile links); github.com/supercomet329 gives supercomet329@gmail.com (its public email field); github.com/TalentKingDev gives godnessfortune@gmail.com (its bio); github.com/tanaka0722-dev gives tanakabusinessen@gmail.com (its public email field); github.com/top-dev-999 gives t.me/idealcreator99 (its profile README); github.com/topclever gives lookapplication@gmail.com (its public email field); github.com/topstar88 gives winnow808@gmail.com (its public email field); github.com/TrendSpider001 gives t.me/spidertrading100 (its profile links); github.com/venus01015 gives medium.com/@boykebn (its profile links).\n\nThe Telegram accounts the index holds were read the same day for the same reason (scripts/telegram-pivot.js): t.me/stevensprg, which Kawaii Jong UwUn's HyperBuildX chart places in the m4rcu5o cluster, gives only x.com/Pup5ol as its bio, and that X account is carried here.\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
     }
   ]
 }

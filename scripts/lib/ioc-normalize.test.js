@@ -436,3 +436,23 @@ test("an IOC heading word is not an npm package", () => {
   assert.equal(normalizeNpmPackage("is-buffer-validator"), "is-buffer-validator");
   assert.equal(normalizeNpmPackage("@scope/malicious"), "@scope/malicious");
 });
+
+test("a YouTube channel id link canonicalizes and keeps the id's case", () => {
+  const { PLATFORM_ACCOUNTS, normalizePlatformAccount, platformAccountPattern } = require("./ioc-normalize.js");
+  const spec = PLATFORM_ACCOUNTS.find((p) => p.ioc_type === "youtube_account");
+  const yt = normalizePlatformAccount(spec);
+  assert.equal(yt("https://www.youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ"), "https://youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ");
+  assert.equal(yt("https://youtube.com/channel/UCshort"), null);
+  assert.equal(yt("https://youtube.com/@Some.Handle"), "https://youtube.com/@some.handle");
+  assert.equal(yt("https://youtube.com/watch?v=abc"), null);
+  assert.deepEqual("x https://m.youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ y".match(platformAccountPattern(spec)), ["https://m.youtube.com/channel/UCHqeGXuxXJj2gq1a9CViVsQ"]);
+});
+
+test("a WhatsApp click-to-chat link is read as the phone number it names", () => {
+  const { normalizeWhatsappLink, WHATSAPP_LINK_PATTERN } = require("./ioc-normalize.js");
+  assert.equal(normalizeWhatsappLink("https://wa.me/16238502353"), "+16238502353");
+  assert.equal(normalizeWhatsappLink("https://api.whatsapp.com/send?phone=447911123456&text=hi"), "+447911123456");
+  assert.equal(normalizeWhatsappLink("https://wa.me/123"), null);
+  assert.equal(normalizeWhatsappLink("https://wa.me/message/ABCDEF"), null);
+  assert.deepEqual("chat: https://wa.me/16238502353.".match(WHATSAPP_LINK_PATTERN), ["https://wa.me/16238502353"]);
+});
