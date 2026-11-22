@@ -1,6 +1,6 @@
 {
   "_comment": "Liveness for the GitHub accounts that reach this site through the hand-transcribed dossier files. scripts/enrich-github-accounts.js only ever reads src/_data/iocs/scraped-iocs.json, so these had no status at all; scripts/lib/dossiers.js attaches this file to them at build time, exactly as it attaches linkedin-account-status.json to the LinkedIn accounts. It covers every dossier login, including those the scraper also holds, because src/_data/iocs/iocIndex.js lets the dossier group claim an id first — so for a shared login it is the dossier record that renders, and without an entry here it rendered with no status. `account_id` is GitHub's numeric id, read from the redirect github.com/<login>.png issues, and it is recorded because GitHub frees a deleted account's login for anyone to re-register: without it a recycled handle answers 200, reads as live, and this site would present whoever holds it now as the account a researcher named. A `recycled` entry carries the date the present account was created and the date the identifier was first published, so the page can state the gap, and never carries an avatar.",
-  "checked": "2026-11-18",
+  "checked": "2026-11-22",
   "accounts": [
     {
       "login": "098oiuyt",
@@ -476,6 +476,13 @@
       "account_id": 105570066,
       "avatar": "/assets/img/github/aicensor.webp",
       "account_created": "2022-05-14"
+    },
+    {
+      "login": "aichannode",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 109893731,
+      "account_created": "2022-07-24"
     },
     {
       "login": "aiden77mori",
@@ -1214,6 +1221,13 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "benluiux",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 110788393,
+      "account_created": "2022-08-07"
+    },
+    {
       "login": "benrey916",
       "state": "removed",
       "checked": "2026-09-02"
@@ -1258,6 +1272,13 @@
       "login": "bestsilvertiger",
       "state": "removed",
       "checked": "2026-08-30"
+    },
+    {
+      "login": "betacuresolutions",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 156427330,
+      "account_created": "2024-01-12"
     },
     {
       "login": "betfin-mvp",
@@ -1570,6 +1591,13 @@
       "login": "brent-jeremy",
       "state": "removed",
       "checked": "2026-09-13"
+    },
+    {
+      "login": "brightdev0814",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 112707744,
+      "account_created": "2022-09-02"
     },
     {
       "login": "brightdragon0719",
@@ -2177,6 +2205,13 @@
       "account_created": "2021-06-22"
     },
     {
+      "login": "cordovaem",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 166714540,
+      "account_created": "2024-04-11"
+    },
+    {
       "login": "core116",
       "state": "removed",
       "checked": "2026-09-30"
@@ -2377,6 +2412,13 @@
       "account_created": "2023-05-13"
     },
     {
+      "login": "cryptotorpo",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 125920704,
+      "account_created": "2023-02-20"
+    },
+    {
       "login": "cryptovecom",
       "state": "live",
       "checked": "2026-09-30",
@@ -2533,6 +2575,13 @@
       "account_id": 119415974,
       "avatar": "/assets/img/github/dancodes91.webp",
       "account_created": "2022-11-29"
+    },
+    {
+      "login": "dang3621",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 132536190,
+      "account_created": "2023-05-04"
     },
     {
       "login": "daniel-kennison",
@@ -3316,6 +3365,13 @@
       "account_id": 139725778,
       "avatar": "/assets/img/github/elegant-idn.webp",
       "account_created": "2023-07-17"
+    },
+    {
+      "login": "eliancheng",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 162518527,
+      "account_created": "2024-03-06"
     },
     {
       "login": "elite1002",
@@ -4198,6 +4254,13 @@
       "account_created": "2023-01-07"
     },
     {
+      "login": "greenfoxfun",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 242159102,
+      "account_created": "2025-11-05"
+    },
+    {
       "login": "greengarden510",
       "state": "removed",
       "checked": "2026-09-30"
@@ -4450,6 +4513,13 @@
       "account_id": 102740432,
       "avatar": "/assets/img/github/hiratani0219.webp",
       "account_created": "2022-03-31"
+    },
+    {
+      "login": "hlieb515",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 40266810,
+      "account_created": "2018-06-14"
     },
     {
       "login": "hodlwarden",
@@ -5079,6 +5149,13 @@
       "account_id": 89120956,
       "avatar": "/assets/img/github/jusdy.webp",
       "account_created": "2021-08-18"
+    },
+    {
+      "login": "justfivedev",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 149679767,
+      "account_created": "2023-11-02"
     },
     {
       "login": "justpiano97",
@@ -5982,6 +6059,13 @@
       "account_created": "2014-09-10"
     },
     {
+      "login": "markeddolphin",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 76056928,
+      "account_created": "2020-12-15"
+    },
+    {
       "login": "marksantiago02",
       "state": "removed",
       "checked": "2026-09-02"
@@ -6786,6 +6870,20 @@
       "account_created": "2021-05-24"
     },
     {
+      "login": "partnerofyou26",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 97214534,
+      "account_created": "2022-01-06"
+    },
+    {
+      "login": "pasan-23",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 121192634,
+      "account_created": "2022-12-21"
+    },
+    {
       "login": "passionatedev724",
       "state": "live",
       "checked": "2026-09-30",
@@ -7199,6 +7297,13 @@
       "login": "reactmaster223",
       "state": "removed",
       "checked": "2026-09-02"
+    },
+    {
+      "login": "realdiligent",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 164088955,
+      "account_created": "2024-03-19"
     },
     {
       "login": "realdiligentdev",
@@ -7890,6 +7995,13 @@
       "login": "skillverifier834",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "skymagi-d",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 157318675,
+      "account_created": "2024-01-21"
     },
     {
       "login": "smart-coder997",
@@ -8748,6 +8860,13 @@
       "account_created": "2023-01-04"
     },
     {
+      "login": "techearthshaker",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 172377045,
+      "account_created": "2024-06-11"
+    },
+    {
       "login": "techietrend",
       "state": "removed",
       "checked": "2026-09-30"
@@ -8912,6 +9031,13 @@
       "checked": "2026-11-01"
     },
     {
+      "login": "tom-b-kunkel",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 81764479,
+      "account_created": "2021-04-01"
+    },
+    {
       "login": "tomlove223",
       "state": "removed",
       "checked": "2026-09-30"
@@ -9022,6 +9148,13 @@
       "login": "topi-debug",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "toplustar",
+      "state": "live",
+      "checked": "2026-11-22",
+      "account_id": 156056254,
+      "account_created": "2024-01-09"
     },
     {
       "login": "topmanger",
