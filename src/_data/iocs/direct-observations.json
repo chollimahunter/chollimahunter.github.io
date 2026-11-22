@@ -23386,6 +23386,87 @@
         }
       ],
       "note": "Read on 22 November 2026 from what each GitHub account this index already holds publishes about itself: the X username, website and social links on its profile, its public email and bio, and the contact block of its own profile README (scripts/gh-contact-pivot.js). A value an account publishes in its own profile fields is the account's holder naming another of their channels, the same test the 29 September entry applied to contact blocks in a persona's own repositories. github.com/AI1120 gives aiexpert1120@gmail.com (its bio); github.com/AngelEyeDev gives t.me/angel_devil_eyes (its profile links); github.com/bluedev41 gives blancian41@gmail.com (its website field); github.com/bluesky0209 gives t.me/bd1203x (its profile links); github.com/ChangeYourself0613 gives t.me/saigod_0 (its profile links); github.com/chivalrousdev gives chivalrousdev@gmail.com (its public email field); github.com/codeninja819 gives x.com/codeninja819 (its profile links); github.com/crypto-artisan gives t.me/talentdat0218 (its website field); github.com/cryptotorpo gives x.com/cryptotorpo (its profile links); github.com/devbamboo15 gives discord.com/users/0xbamboo (its profile links), t.me/devbamboo (its profile links), x.com/devbamboo15 (its profile links); github.com/fairsky0201 gives fairsky0201@gmail.com (its website field); github.com/fairskyDev0201 gives jrustackdev@gmail.com (its website field); github.com/fantasy2345 gives t.me/chainlito (its profile links); github.com/firststar19950115 gives firststar19950115@gmail.com (its public email field); github.com/goldnite gives linktr.ee/goldnite (its profile links), x.com/goldnite_eth (its profile links); github.com/jayevans-star gives medium.com/@jayevanslinkedin (its profile links); github.com/Kage0923 gives x.com/kagemax (its profile links); github.com/kingpig-dev gives t.me/crystal6529 (its profile links); github.com/LionelPerrault gives t.me/hawk0616 (its profile links); github.com/lucky0612 gives x.com/laraviorb (its profile links); github.com/Lucky9596 gives alwayshappytime0430@gmail.com (its public email field); github.com/maestro418 gives t.me/maestro0898 (its profile links); github.com/MutantRolls gives youtube.com/@mutantrolls (its profile links); github.com/nightskydev gives x.com/solanapromania (its profile links); github.com/relforce gives relforce96@gmail.com (its public email field); github.com/Sam-Devs gives x.com/_samayorinde (its profile links); github.com/SmartTabDev gives dev.to/smarttabdev (its profile links), huggingface.co/smartdev19960425 (its profile links), stackoverflow.com/users/19824401 (its profile links); github.com/SrDev36428 gives t.me/srdev36428 (its profile links); github.com/starmastar1126 gives linktr.ee/starmastar1126 (its profile links), medium.com/@starmastar1126 (its profile links), x.com/starmastar1126 (its profile links); github.com/sunshine2329 gives t.me/web_developer_329 (its profile links); github.com/super-dev03 gives t.me/dragon6284 (its profile links); github.com/supercomet329 gives supercomet329@gmail.com (its public email field); github.com/TalentKingDev gives godnessfortune@gmail.com (its bio); github.com/tanaka0722-dev gives tanakabusinessen@gmail.com (its public email field); github.com/top-dev-999 gives t.me/idealcreator99 (its profile README); github.com/topclever gives lookapplication@gmail.com (its public email field); github.com/topstar88 gives winnow808@gmail.com (its public email field); github.com/TrendSpider001 gives t.me/spidertrading100 (its profile links); github.com/venus01015 gives medium.com/@boykebn (its profile links).\n\nThe Telegram accounts the index holds were read the same day for the same reason (scripts/telegram-pivot.js): t.me/stevensprg, which Kawaii Jong UwUn's HyperBuildX chart places in the m4rcu5o cluster, gives only x.com/Pup5ol as its bio, and that X account is carried here.\n\nLeft out on purpose: LinkedIn and Facebook profiles and addresses that read as a person's full name, which may belong to the real person a persona borrows; company-domain addresses; links in a README that credit someone else or were copied with a profile template; and every value from an account created before 2020 or with more than 300 followers unless the account is already tied to a named persona, since an established account in the index may itself be a false positive. Those are held for review. No attribution is added beyond the account's own."
+    },
+    {
+      "label": "Contact channels published by accounts named in meow_mfer's Part One",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/solyasa",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/nicejudy",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/monster-dev5",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/aoimizuno",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/monsterai1",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/oxtechdare",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/nadiya-pl",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/solyassa",
+          "post": 0
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/co_citizen",
+          "post": 1
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "monster.highdev@gmail.com",
+          "post": 2
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "monfra875@gmail.com",
+          "post": 3
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "monsterai603@gmail.com",
+          "post": 4
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/oxtechdare",
+          "post": 5
+        },
+        {
+          "ioc_type": "telegram_account",
+          "value": "https://t.me/nadiya_pl",
+          "post": 6
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "nadiya.plt@gmail.com",
+          "post": 6
+        }
+      ],
+      "note": "Read on 22 November 2026 from the profile fields of GitHub accounts that meow_mfer's article \"Inside a DPRK Crypto Operation. Part One: The Network.\" names and this index carries (scripts/gh-contact-pivot.js), the same test as the entry \"Contact channels indexed GitHub accounts publish on their own profiles\": a value an account publishes in its own profile fields is its holder naming another channel. github.com/solyasa links t.me/solyassa (display name Solyasa); github.com/nicejudy links t.me/co_citizen; github.com/oxtechdare links t.me/oxtechdare; github.com/nadiya-pl links t.me/nadiya_pl and gives nadiya.plt@gmail.com as its public email; monster-dev5, aoimizuno and monsterai1 give monster.highdev@gmail.com, monfra875@gmail.com and monsterai603@gmail.com as their public emails. When read, t.me/co_citizen and t.me/nadiya_pl showed no account.\n\nLeft out on purpose: LinkedIn profiles and addresses that read as a person's name, which may belong to the real person an identity borrows, and the profile fields of workplace1004, which now name someone other than the identity the article gives for it and are held for review. No attribution is added beyond the article's own."
     }
   ]
 }
