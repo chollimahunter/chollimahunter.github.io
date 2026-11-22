@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-11-18T18:37:03Z",
-  "record_count": 12244,
+  "record_count": 12241,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -247088,43 +247088,6 @@
       }
     },
     {
-      "id": "github-profile-90336d7247ef",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/cryptonotefoundation",
-      "display": "cryptonotefoundation",
-      "persona": null,
-      "campaign": [
-        "Kimsuky",
-        "Konni"
-      ],
-      "first_seen": "2019-04-17",
-      "last_seen": "2019-04-17",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://blog.alyac.co.kr/2243",
-          "title": "한ㆍ미 겨냥 APT 캠페인 '스모크 스크린' Kimsuky 실체 공개 (아웃소싱 공격)",
-          "publisher": "ESTsecurity ALYac",
-          "published": "2019-04-17",
-          "context": "…- https://github.com/devAji917 - https://github.com/kgretzky/evilginx2/issues/253 - https://github.com/cryptonotefoundation/cryptonote/issues/221 - https://github.com/cryptonotefoundation/cryptonote/issues/222 [그림 26] 깃허브에 등록된 'devAji917' 사용자 화면 결국, 'aji199293'…",
-          "context_origin": "list",
-          "section": "본문",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "a4debf5689c701299a6ce270462b523125eda9952fc506a79dba0e49f73248cb"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/cryptonotefoundation.png",
-        "account_id": 7949845
-      }
-    },
-    {
       "id": "github-profile-f299b2187b44",
       "ioc_type": "github_profile",
       "value": "https://github.com/cryptotop1111",
@@ -258488,42 +258451,6 @@
       }
     },
     {
-      "id": "github-profile-d6c6e3279e70",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/prosefraudcatcher",
-      "display": "prosefraudcatcher",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://northscan.co/articles/beejern-full-report.html",
-          "title": "Beejern: DPRK IT Worker Front Company Network",
-          "publisher": "North Scan",
-          "published": "2026-05-19",
-          "context": "…cycling is a documented DPRK IT worker technique to evade detection Evidence of the identity chain is preserved in forked repositories: https://github.com/ProSeFraudCatcher/GoldenDev321/commit/ec014ac621a65445ad5b5552541be1989682c77f The profile no longer exists on GitHub, but the forked repository retains the commit metadata revealing the identity transitions. 2.3…",
-          "context_origin": "text",
-          "section": "2.2 Identity Chain: Redsky500 - Dragonlee321 - GoldenDev321",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "d67139808ed475d8413950177b1b62f0bd0819b9ef9378cba2b341cfd50a44bd"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/prosefraudcatcher.jpg",
-        "account_id": 179561159
-      }
-    },
-    {
       "id": "github-profile-06359f37e4b3",
       "ioc_type": "github_profile",
       "value": "https://github.com/pudgepenguin",
@@ -260091,42 +260018,6 @@
         "state": "live",
         "checked": "2026-08-30",
         "avatar": "/assets/img/github/savvy-bit.png"
-      }
-    },
-    {
-      "id": "github-profile-ccd904c3db5e",
-      "ioc_type": "github_profile",
-      "value": "https://github.com/scorpiusdraconis83",
-      "display": "scorpiusdraconis83",
-      "persona": null,
-      "campaign": [
-        "IT Worker Fraud"
-      ],
-      "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://northscan.co/articles/beejern-full-report.html",
-          "title": "Beejern: DPRK IT Worker Front Company Network",
-          "publisher": "North Scan",
-          "published": "2026-05-19",
-          "context": "…a specific commit from a forked repository of GoldenDev321 , the commit author email resolves to dragonlideveloper @gmail.com : https://github.com/ScorpiusDraconis83/GoldenDev321/commit/cb29367758d1777d882c50594c121b9619664a1d Figure 3 – Commit metadata showing dragonlideveloper@gmail.com as author…",
-          "context_origin": "text",
-          "section": "2.4 - Commit Email: dragonlideveloper@gmail.com",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "d67139808ed475d8413950177b1b62f0bd0819b9ef9378cba2b341cfd50a44bd"
-        }
-      ],
-      "account_status": {
-        "state": "live",
-        "checked": "2026-09-18",
-        "avatar": "/assets/img/github/scorpiusdraconis83.jpg",
-        "account_id": 119265324
       }
     },
     {
