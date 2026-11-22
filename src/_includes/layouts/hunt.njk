@@ -85,10 +85,8 @@ layout: base.njk
   <section>
     <h2>Indicators</h2>
     <p>
-      The atomic values this hunt matches on, listed separately from the
-      queries so they can be lifted into tooling that speaks none of the query
-      languages below. Every value here is reported by one of the sources
-      cited at the foot of this page.
+      Every value here is reported by one of the sources cited at the foot of
+      this page.
     </p>
     {% set tableFilter = { target: "#hunt-indicators-table", noun: "indicators", id: "hunt-indicator-search", label: "Search these indicators", placeholder: "Type, value, or note", page: limits.list } %}
     {% include "partials/table-filter.njk" %}
@@ -115,10 +113,6 @@ layout: base.njk
   {% if hunt.logic and hunt.logic.length %}
   <section>
     <h2>Logic</h2>
-    <p>
-      Every query below implements these steps, so the same hunt returns the
-      same result in each product.
-    </p>
     {# Each line is "Prefix: text" with the prefix one of Collect, Match,
        Exclude or Report (enforced by scripts/lib/hunt-schema.js); the prefix
        is split off on the first ": " and set in bold. #}

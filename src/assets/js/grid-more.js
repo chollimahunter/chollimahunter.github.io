@@ -51,7 +51,7 @@
           card.hidden = false;
         });
         moreEl.hidden = true;
-        if (countEl) countEl.textContent = total + " " + noun + ". Select any one for the full record.";
+        if (countEl) countEl.textContent = total + " " + noun + ".";
         return;
       }
       cards.forEach(function (card, i) {
@@ -59,7 +59,7 @@
       });
       button.textContent = "Show the remaining " + (total - limit) + " " + noun;
       if (countEl) {
-        countEl.textContent = "Showing " + limit + " of " + total + " " + noun + ". Select any one for the full record.";
+        countEl.textContent = "Showing " + limit + " of " + total + " " + noun + ".";
       }
       moreEl.hidden = false;
     }
@@ -76,7 +76,7 @@
       });
       moreEl.hidden = true;
       if (countEl) {
-        countEl.textContent = total + " " + noun + ". Select any one for the full record.";
+        countEl.textContent = total + " " + noun + ".";
       }
       var first = cards[limit];
       if (first) {

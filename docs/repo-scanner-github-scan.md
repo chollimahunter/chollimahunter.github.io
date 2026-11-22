@@ -221,7 +221,7 @@ is what the results page's "Scan history" table renders.
 ## Step 6 — Human review before any public claim
 
 This is the non-negotiable step. Per the site's sourcing methodology (see
-`/sources/#sourcing-methodology`):
+`/about/#sourcing`):
 
 - Every match in `latest.json` is a **lead for manual review**, not a
   finding. A string match against a filename or dork does not by itself

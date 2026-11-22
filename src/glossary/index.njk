@@ -26,19 +26,15 @@ eleventyExcludeFromCollections: true
   { key: "confidence", id: "labels-confidence", title: "Confidence levels", intro: "A confidence badge means something slightly different depending on what it is attached to. On a named individual's profile it is the cited source's characterisation; elsewhere it is set out below." },
   { key: "provenance", id: "labels-provenance", title: "Provenance labels", intro: "Every indicator carries one label saying how the value reached the index. Where several sources hold the same value, the label comes from the first route in this order: the hand-curated ruleset and watchlist; researchers' posts, registries and the site's own observations; scraped reports; bulk lists; and candidates under review. Every source is still cited." },
   { key: "status", id: "labels-status", title: "Status labels", intro: "A status records the result of a check made on a stated date, shown beside it. It is true as of that date only. Accounts are deleted and re-registered, packages are pulled and republished, and addresses change hands, so every status goes stale from the day it is taken." },
-  { key: "other", id: "labels-other", title: "Other labels", intro: "" }
+  { key: "other", id: "labels-other", title: "Other labels" }
 ] %}
 <section>
   <h1>Glossary</h1>
   <p>
-    Reporting on DPRK cyber operations uses several overlapping vocabularies
-    at once: the names vendors assign to clusters, the names campaigns and
-    malware families acquire, and the organisational terms from government
-    records. This page defines the ones that appear across this site. Each
-    definition is drawn from the cited source, and the
-    <a href="/clusters/">cluster pages</a> carry the full alias
-    list for each actor. The <a href="#labels">labels</a> this site puts on its
-    badges are defined at the end.
+    The cluster, campaign, malware and government terms used across this site,
+    each drawn from the cited source; the <a href="/clusters/">cluster pages</a>
+    carry each actor's full alias list. The <a href="#labels">labels</a> on the
+    site's badges are defined at the end.
   </p>
 </section>
 
@@ -61,10 +57,6 @@ eleventyExcludeFromCollections: true
 
 <section>
   <h2 id="labels">Labels used on this site</h2>
-  <p>
-    What each badge on the site means, what was checked to set it, and where
-    it appears.
-  </p>
   {% for group in labelGroups %}
   <h3 id="{{ group.id }}">{{ group.title }}</h3>
   {% if group.intro %}<p>{{ group.intro }}</p>{% endif %}

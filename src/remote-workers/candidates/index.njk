@@ -28,17 +28,7 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
   table has no room for.
 #}
 {% set active_tab = "candidates" %}
-{% set queue = iocs["candidates"] %}
 {% set published_candidates = candidatePages %}
-{% set lead_count = 0 %}
-{% set fp_count = 0 %}
-{% for candidate in queue.candidates %}
-  {% if candidate.status == "lead" %}
-    {% set lead_count = lead_count + 1 %}
-  {% elif candidate.status == "false-positive" %}
-    {% set fp_count = fp_count + 1 %}
-  {% endif %}
-{% endfor %}
 
 <section>
   <h1>Potential DPRK Profiles</h1>
@@ -49,7 +39,7 @@ extra_head: '<script src="/assets/js/table-filter.js" defer></script>'
     see the note below the table.
   </p>
   <p class="form-hint">
-    {{ published_candidates | length }} published{% if lead_count %}, {{ lead_count }} awaiting review{% endif %}{% if fp_count %}, {{ fp_count }} cleared{% endif %}.
+    {{ published_candidates | length }} published.
   </p>
 </section>
 

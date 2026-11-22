@@ -96,7 +96,7 @@ eleventyExcludeFromCollections: true
   <p>
     Files are regenerated on each build. The JSON files carry a
     <code>generated_at</code> timestamp, currently
-    {% if iocIndex.generated_at %}<code>{{ iocIndex.generated_at }}</code>{% else %}not set{% endif %}.
+    <code>{{ iocIndex.generated_at }}</code>.
     The CSV files carry no date.
   </p>
 </section>
@@ -146,7 +146,7 @@ eleventyExcludeFromCollections: true
     top level holds:
   </p>
   <ul>
-    <li><code>v</code>, the format version (currently 2), and <code>generated_at</code>;</li>
+    <li><code>v</code>, the format version, and <code>generated_at</code>;</li>
     <li>the lookup tables <code>types</code>, <code>methods</code>, <code>sources</code> and <code>contexts</code>, referred to by position;</li>
     <li><code>records</code>, with the keys below; absent values are <code>null</code>.</li>
   </ul>
@@ -210,7 +210,7 @@ eleventyExcludeFromCollections: true
   </p>
   <p>
     Suggested citation: Chollima Hunter, "Data and downloads",
-    {{ site.url }}/data/, accessed 28 September 2026.
+    {{ site.url }}/data/, with the date accessed.
   </p>
 </section>
 

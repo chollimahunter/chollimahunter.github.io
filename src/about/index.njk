@@ -68,7 +68,7 @@ eleventyExcludeFromCollections: true
     {%- if site.repoUrl %} or an issue on the
     {% set externalLink = { url: site.repoUrl + "/issues", text: "GitHub repository" } %}{% include "partials/external-link.njk" %}
     {%- endif %}
-    {%- if site.businessEmail and "TODO" not in site.businessEmail %}
+    {%- if site.businessEmail %}
     or privately to
     <a href="mailto:{{ site.businessEmail }}">{{ site.businessEmail }}</a>
     {%- endif %}, with the page address, what is wrong and, if possible, a

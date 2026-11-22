@@ -5,7 +5,7 @@ module.exports = {
   eleventyComputed: {
     permalink(data) {
       const email = (data.site && data.site.businessEmail) || "";
-      return email && !email.includes("TODO") ? "/.well-known/security.txt" : false;
+      return email ? "/.well-known/security.txt" : false;
     },
     // RFC 9116 wants Expires under a year out. Six months from the index
     // build date, falling back to the build clock if the index carries no

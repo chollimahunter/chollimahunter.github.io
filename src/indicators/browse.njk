@@ -40,9 +40,7 @@ eleventyComputed:
     reported in published sources on North Korean (DPRK) cyber operations,
     ordered by value{% if run.of > 1 %}, {{ run.records.length }} to a page. This
     is page {{ run.number }} of {{ run.of }}, from <code>{{ run.first }}</code>
-    to <code>{{ run.last }}</code>{% endif %}. Each value links to its own page,
-    which carries every source that reported it and the text around it. Other
-    types are listed in the <a href="/indicators/browse/">browse directory</a>.
+    to <code>{{ run.last }}</code>{% endif %}.
   </p>
   {% if run.of > 1 %}
   <nav class="pagination" aria-label="{{ run.kind.plural }} pages, before the table">
@@ -80,6 +78,6 @@ eleventyComputed:
   {% set disclaimer = {
     title: "Disclaimer",
     preset: "not-proof",
-    body: 'Compromised packages and repositories name victims. See the <a href="/sources/#sourcing-methodology">sourcing methodology</a>.'
+    body: 'Compromised packages and repositories name victims. See the <a href="/about/#sourcing">sourcing methodology</a>.'
   } %}{% include "partials/disclaimer.njk" %}
 </section>

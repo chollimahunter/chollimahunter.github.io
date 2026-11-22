@@ -1,89 +1,19 @@
 {#
-  NOTE: this documentation is a Nunjucks comment, not an HTML one. It used
-  to be a rendered <!-- --> block, which put ~3.5KB of prose into every page
-  on the site — 16MB of it once /indicators/ started generating a page per
-  indicator. Keep it as a Nunjucks comment so it stays in the source and out
-  of the output. Nothing inside may contain a Nunjucks comment-close sequence,
-  which would end this block early and spill the rest into every page.
+  base.njk, the layout every page uses (front matter `layout: base.njk`).
+  This is a Nunjucks comment on purpose: as an HTML comment it was copied
+  into every one of the ~30,000 pages. Nothing in it may contain a Nunjucks
+  comment-close sequence.
 
-  base.njk — Chollima Hunter base layout
-    =======================================
-    All other pages on the site MUST extend this layout via front matter:
-  
-        ---
-        layout: base.njk
-        title: "Page Title"
-        ---
-  
-    EXTENSION POINTS (documented — do not rename without updating every
-    downstream expert's templates):
-  
-    IMPORTANT — how this actually works: pages set `layout: base.njk` in
-    front matter (as shown above) rather than using a Nunjucks {% extends %}
-    tag, so Nunjucks never establishes a real extends/block-override chain
-    here. Content injection instead relies on 11ty's own layout data cascade,
-    which exposes the rendered page body as a `content` variable to the
-    layout, and passes through any other front-matter/data keys the page
-    defines (e.g. `extra_head`) the same way.
-  
-    (An earlier version of this file used {% block content %}{% endblock %}
-    here, which silently rendered EMPTY on every page: with no {% extends %}
-    in the child template, Nunjucks never overrides the layout's block, and a
-    bare, never-overridden {% block %} in a standalone-rendered template just
-    renders its own empty default. This broke every page's main content
-    without causing a build error. Found and fixed by submission-intake
-    during its build — see that expert's result notes for details.)
-  
-      content
-        The main page body. Just write plain markup under your front matter
-        in your own page template (see src/about/index.njk or
-        src/submit/index.njk for examples). Rendered inside
-        <main id="main-content"> via {{ content | safe }} below.
-  
-      extra_head
-        Optional. Injects extra <head> content (e.g. a page-specific
-        stylesheet link, extra meta tags). Set it as a plain front-matter key
-        on your page, e.g.:
-  
-          ---
-          layout: base.njk
-          title: "Page Title"
-          extra_head: "<link rel=\"stylesheet\" href=\"/assets/css/my-page.css\">"
-          ---
-  
-        Rendered via {{ extra_head | safe }} just before </head> below. Leave
-        it unset if you don't need it.
+  Pages reach it through Eleventy's layout cascade, not {% extends %}, so the
+  page body arrives as `content` (rendered in <main id="main-content">).
+  A page may also set:
+    extra_head  extra markup before </head>, e.g. a page script
+    noindex     true emits a robots noindex meta tag
 
-      noindex
-        Optional. Set `noindex: true` in front matter to emit a robots
-        noindex meta tag, as the 404 page does.
-  
-    NAV PATTERN:
-      Nav items are data-driven from src/_data/nav.json, an array of
-      { "label": string, "url": string } objects, looped with
-      {% for item in nav %}. To add a nav item, edit nav.json — do NOT hardcode
-      additional <li> elements in this file. All 6 non-home routes that other
-      experts populate (Remote Workers, DPRK Hunting, Repo Scanner,
-      EtherHiding, Sources, Submit IOCs) are already listed there, so nothing
-      here needs to change when those experts run.
-  
-    BRAND MARK / SVG MOTIFS:
-      The header brand mark is the Chollima pegasus raster asset (transparent) at
-      src/assets/img/logo-mark.webp, rendered as an <img class="site-brand__mark">
-      and sized by tokens.css. It is decorative — the surrounding <a> already
-      carries the accessible name — so its alt is intentionally empty.
-  
-      A reusable inline SVG partial lives at src/_includes/svg/star.njk.
-      Include it anywhere with:
-        {% include "svg/star.njk" %}
-      It is fully self-contained (no external image/CDN references).
-  
-    DESIGN TOKENS:
-      CSS custom properties (palette, spacing, typography) are defined in
-      src/assets/css/tokens.css, passed through untouched by 11ty and linked
-      below. Reusable utility classes defined there include:
-        .disclaimer-banner  — sourcing/attribution disclaimer banner
-        .query-block        — copy-paste-able code/query block
+  Navigation comes from src/_data/nav.json; add items there, not here.
+  The brand mark is src/assets/img/logo-mark.webp (decorative, empty alt);
+  src/_includes/svg/star.njk is the inline star motif. Styling lives in
+  src/assets/css/tokens.css.
 #}
 <!DOCTYPE html>
 <html lang="en">
@@ -212,7 +142,7 @@
         {%- if site.repoUrl %}
         <a href="{{ site.repoUrl }}" rel="noopener noreferrer">Source on GitHub</a>
         {%- endif %}
-        {%- if site.businessEmail and "TODO" not in site.businessEmail %}
+        {%- if site.businessEmail %}
         <a href="mailto:{{ site.businessEmail }}">Contact</a>
         {%- endif %}
         {%- if site.kofiUrl %}
