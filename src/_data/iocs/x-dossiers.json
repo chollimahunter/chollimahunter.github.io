@@ -16659,7 +16659,7 @@
       "unextracted": [
         "The seed account the article says controls the organisations this cell commits to. Not carried: it is a long-established account of a publicly known person, and the article argues from the organisations rather than from evidence about the account holder; held for a ruling.",
         "Two Linode addresses the article gives as the bridge's MPC signing nodes: held with the seed account, since they serve the same bridge.",
-        "An Infura API key the article says both venuswhispers and top0329 committed, and a MetaAPI token: credentials, which have no indicator type and would be someone's live secret.",
+        "The Infura API key 2e58a899d3c64eccb6955c2f33fc8a88, which the article says both venuswhispers (in its MPC node configuration) and top0329 (in its Vulcan-Launchpad-Contracts repository) committed, its cross-account proof number 12. An API key has no indicator type here, so it is recorded in this list. The article also mentions a MetaAPI token without printing it.",
         "A Gmail address of the copy-trading business whose app password the article says venuswhispers committed: held with the other business values (see the cell 6 entry)."
       ]
     },
@@ -17001,7 +17001,7 @@
       "note": "From meow_mfer's X Article \"Inside a DPRK Crypto Operation. Part One: The Network.\" (9 May 2026), the first of a planned four-part series in which the researcher says they expanded 27 seed GitHub accounts flagged as suspected North Korean IT workers into a network of more than 330 accounts by tracing commit addresses, shared API keys, follower networks and on-chain flows, and groups the accounts into seven cells. The attribution is the researcher's; the article shows its reasoning per account but not the underlying repositories in full. The researcher describes snowstorm08 as the deployer of the SlowRUG Solana casino, shut down in December 2024, whose operational wallet (Dnwg6E...) it says was then used to accumulate PumpFun tokens; cutupdev and solyasa as sharing one paid Helius RPC key; and Japanese-presenting accounts in the cluster, among them aoimizuno (\"Aoi Mizuno\"), and toma-work125 (\"Kawaguchi Touma\"). It pairs devpulse-star with lucky5star through a shared misspelled commit alias, romanobichi with monsterai1 through a git remote reference, and toma-work125 with Honestdev125 through a shared commit address, and says oxtechdare, romanobichi and monsterai1 were created within 17 minutes of one another on 30 May 2025.",
       "unextracted": [
         "The ZYNX token mint (EruqNUg7yVD2sTzRpRv8RcbAG9gpUREswd5soqKTxz1m) the article says the cluster distributes: a token anyone may hold, not an operator wallet; and the sweeper and distributor wallets it names only by prefix (HRS6...).",
-        "The Helius RPC key shared by cutupdev and solyasa, which the article prints: a credential, which has no type and is not reproduced here.",
+        "The Helius RPC API key 39d83ffa-585c-4f90-8636-2f6795db4cb3, which the article says cutupdev and solyasa both committed in their Anchor.toml files, its cross-account proof number 10. An API key has no indicator type here, so it is recorded in this list.",
         "A Chinese name the article says aoimizuno committed under once: not recorded, since a name slip may be a real person's name."
       ]
     },
