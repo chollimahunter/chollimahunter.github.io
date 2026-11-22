@@ -1,6 +1,6 @@
 {
   "_comment": "What kind of network each IP-address indicator sits on. See docs/ip-network-types.md for how these were obtained and what each field is allowed to claim. Read at build time by src/_data/iocIndex.js; nothing here is synthesized, and an address with no entry renders with no network block at all.",
-  "checked": "2026-11-18",
+  "checked": "2026-11-22",
   "addresses": {
     "1.0.0.37": {
       "kind": "datacenter",
@@ -63300,6 +63300,21 @@
       "proxy": false,
       "mobile": false,
       "checked": "2026-09-21",
+      "looked_up_at": "ip-api.com"
+    },
+    "95.216.67.25": {
+      "kind": "datacenter",
+      "provider": null,
+      "country": "FI",
+      "country_name": "Finland",
+      "isp": "Hetzner Online GmbH",
+      "org": "HETZNER-DC",
+      "asn": "AS24940 Hetzner Online GmbH",
+      "as_name": "HETZNER-AS",
+      "hosting": true,
+      "proxy": false,
+      "mobile": false,
+      "checked": "2026-11-22",
       "looked_up_at": "ip-api.com"
     },
     "95.216.181.107": {
