@@ -1,6 +1,6 @@
 {
   "generated_at": "2026-11-18T18:37:03Z",
-  "record_count": 12241,
+  "record_count": 12240,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -390217,36 +390217,6 @@
           "section": "Appendix 2: Indicators of Compromise",
           "pulled_at": "2026-10-02",
           "source_sha256": "b5949f4216e2c54e6260343fb1df9dc23cb70026b7dac76845362583dbb42c15"
-        }
-      ]
-    },
-    {
-      "id": "npm-package-f6590f390858",
-      "ioc_type": "npm_package",
-      "value": "the",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "Contagious Interview"
-      ],
-      "first_seen": "2026-04-07",
-      "last_seen": "2026-04-07",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://socket.dev/blog/contagious-interview-campaign-spreads-across-5-ecosystems",
-          "title": "North Korea’s Contagious Interview Campaign Spreads Across 5 Ecosystems, Delivering Staged RAT Payloads | Socket",
-          "publisher": "Socket",
-          "published": "2026-04-07",
-          "context": "…The npm Packages Use a Different Loader # Instead of downloading and extracting a zip archive, the npm packages (e.g.…",
-          "context_origin": "text",
-          "section": "The npm Packages Use a Different Loader #",
-          "pulled_at": "2026-10-12",
-          "source_sha256": "5941e5df6ad72fa1c711695cf73b031ce7d8d912c3753c35689040f01c37ee98"
         }
       ]
     },
