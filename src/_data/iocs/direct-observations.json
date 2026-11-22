@@ -9654,6 +9654,145 @@
       "note": "Every account here is one this index already holds under a handle that now returns 404, and was recorded as removed. Each was renamed instead. GitHub mints a noreply commit address from the account's immutable numeric id, in the form id+handle@users.noreply.github.com, so a commit address carrying the old handle with the id of a differently named account shows the two are one account, as a matter of how the address is constructed. The commit cited for each was found on 22 November 2026 by searching commits for the old handle as author name (scripts/gh-renames.js) and carries that address; the id was then resolved to the account's current name.\n\nRenamed and live when read: 0xcrypto628 is now eliancheng (id 162518527); air128731 is now cryptotorpo (id 125920704); beaubeas is now dang3621 (id 132536190); champion10873 is now skymagi-d (id 157318675); devincredible is now cordovaem (id 166714540); dobestman is now benluiux (id 110788393); dotmaker619 is now tom-b-kunkel (id 81764479); goldenpig951204 is now brightdev0814 (id 112707744); he-cat-e is now betacuresolutions (id 156427330); hudesdev is now justFiveDev (id 149679767); millicare is now markeddolphin (id 76056928); phantom-98 is now Pasan-23 (id 121192634); realdiligentdev is now RealDiligent (id 164088955); smith0811 is now hlieb515 (id 40266810); squirdev is now aichannode (id 109893731); toptalhook is now toplustar (id 156056254); zhen1007 is now techearthshaker (id 172377045).\n\nRenamed and then gone: dev0614 became KentoRei (id 122221449); illiabutenko became tDev0809 (id 95761247); justshiftjk became alphaoinker (id 18752970); kunkka0822 became crazy-dev-git (id 101172481); redmon540 became evilgon (id 66923479); sunlight0902 became jade0902 (id 118910969). These no longer resolve by name or by id, while GitHub still attributes their commits to them, which is how a suspended account appears; their last names are recorded as usernames rather than profile URLs, because an abandoned handle can be registered by anyone.\n\nNo new attribution is made: the entry gives the current or last name of accounts already filed, from the sources already cited on them, so that a reader holding a new name can find the old record. Four further renames proven the same way are held back because the only source for the original handle is a registry that publishes no method, and one of that registry's handles was found the same day to belong to an apparently uninvolved developer. Display names on these accounts are not recorded."
     },
     {
+      "label": "Unpublished commit addresses of indexed GitHub accounts, read from their own repositories",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-22",
+      "campaign": [
+        "IT Worker Fraud"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/aicensor/designclass/commit/ca3e88e2919e",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/aicensor/DES_Visual/commit/2d47af425ee4",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/akatsukione/react-google-map-integrate/commit/6d61a39533ca",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/algopert/algopert/commit/1b7f673a8380",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/aringoldx/farming_bot_lp/commit/a506d9704419",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/bstar0406/test-solid/commit/53c84d14d7c9",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/bstar0406/bstar0406/commit/05392bb44fcc",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cl0ver012/whd_ai_assistant/commit/2f7d76fba15a",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/creative2115/creative2115/commit/370810815e3c",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cryptoninja0331/AccountInfo/commit/0e482d093d4a",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cupidbow20000/MikeToken/commit/c713ddea8652",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/cupidbow20000/Bytrip/commit/2c8104fb970e",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/devconductor125/tgminiappscript/commit/02b64275519b",
+          "date": "2026-11-22"
+        },
+        {
+          "url": "https://github.com/dynamic612/amm-dex-defi-next/commit/21f08947daa2",
+          "date": "2026-11-22"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "email_address",
+          "value": "thdajamedsa@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "linksbanana883@gmail.com",
+          "post": 1
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "devpand168943@gmail.com",
+          "post": 2
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "grasshopper1013@gmail.com",
+          "post": 3
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "steinerliberus@gmail.com",
+          "post": 4
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "mrtnsort@gmail.com",
+          "post": 5
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "handby256@outlook.com",
+          "post": 6
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "goodcristina2023@gmail.com",
+          "post": 7
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kagawa2115@outlook.com",
+          "post": 8
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "luckydev0331@gmail.com",
+          "post": 9
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cupid.bow20000@gmail.com",
+          "post": 10
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "helemonar0921@gmail.com",
+          "post": 11
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "lula68125@gmail.com",
+          "post": 12
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "dynamic612strong@outlook.com",
+          "post": 13
+        }
+      ],
+      "note": "Read on 22 November 2026 from the latest commits of each account's own, non-forked repositories (scripts/gh-collaborators.js). Every address here was used on commits that sit in a repository the indexed account owns, dated after that repository was created in the account (so not history copied in with a template), authored under exactly the account's own handle as the author name, and attributed by GitHub to no other account. That is the account signing its own work from an address no source had published, the same test the webgently entry applied when it carried only that account's own addresses.\n\naicensor commits as thdajamedsa@gmail.com (7 commits in 2 of its repositories, 2026-07-07 to 2026-07-30); aicensor commits as linksbanana883@gmail.com (2 commits in 1 of its repositories, 2026-04-20 to 2026-04-22); akatsukione commits as devpand168943@gmail.com (3 commits in 1 of its repositories, 2025-03-17 to 2025-03-17); algopert commits as grasshopper1013@gmail.com (3 commits in 2 of its repositories, 2022-09-02 to 2022-09-14); aringoldx commits as steinerliberus@gmail.com (18 commits in 17 of its repositories, 2025-12-20 to 2026-08-17); bstar0406 commits as mrtnsort@gmail.com (35 commits in 5 of its repositories, 2022-08-29 to 2022-12-22); bstar0406 commits as handby256@outlook.com (25 commits in 4 of its repositories, 2022-06-03 to 2022-09-05); cl0ver012 commits as goodcristina2023@gmail.com (31 commits in 11 of its repositories, 2024-05-08 to 2025-11-18); creative2115 commits as kagawa2115@outlook.com (2 commits in 1 of its repositories, 2024-08-13 to 2024-08-13); cryptoninja0331 commits as luckydev0331@gmail.com (8 commits in 3 of its repositories, 2024-12-24 to 2025-02-01); cupidbow20000 commits as cupid.bow20000@gmail.com (6 commits in 4 of its repositories, 2023-05-14 to 2023-06-12); cupidbow20000 commits as helemonar0921@gmail.com (3 commits in 1 of its repositories, 2023-12-18 to 2023-12-21); devconductor125 commits as lula68125@gmail.com (14 commits in 5 of its repositories, 2024-01-09 to 2024-08-09); dynamic612 commits as dynamic612strong@outlook.com (15 commits in 4 of its repositories, 2024-09-03 to 2024-11-01).\n\nLeft out on purpose: addresses seen on a single commit; addresses at a company or organisation domain, which may belong to a client or employer; and addresses that read as a person's full name, since a persona's address built on a real person's name would publish that name. Those are held for review rather than filed. No attribution is added beyond the account's own: each address belongs to an account this index already holds, from the sources already cited on it."
+    },
+    {
       "label": "Former GitHub handles recovered from the account id in commit noreply addresses",
       "researcher": "chollimahunter",
       "transcribed": "2026-09-20",
