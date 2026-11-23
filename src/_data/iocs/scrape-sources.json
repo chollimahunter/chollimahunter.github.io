@@ -20773,5 +20773,231 @@
       "notes": "A general insider-threat piece on digital recruitment marketplaces; it never names North Korea. Read in a browser on 2026-11-18."
     }
   ],
-  "discovered": []
+  "discovered": [
+    {
+      "url": "https://www.justice.gov/opa/pr/united-states-files-action-recover-more-1-billion-cryptocurrency-assets-stolen-north-korean",
+      "publisher": "U.S. Department of Justice (press releases)",
+      "title": "United States Files Action to Recover More Than $1 Billion in Cryptocurrency Assets Stolen by North Korean Cyber Actors in Binance Hack",
+      "published": "2026-11-23",
+      "feed": "https://www.justice.gov/news/rss?type=press_release&m=1",
+      "matched_terms": [
+        "North Korean"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429925",
+      "publisher": "wezard4u (tistory)",
+      "title": "김수키(Kimsuky) 보험증권 으로 위장을 하고 있는 악성코드 분석-보험증권_20260909406108519804.lnk",
+      "published": "2026-11-22",
+      "feed": "https://wezard4u.tistory.com/rss",
+      "matched_terms": [
+        "Kimsuky",
+        "북한",
+        "김수키"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://asec.ahnlab.com/ko/96683/",
+      "publisher": "AhnLab ASEC (Korean)",
+      "title": "2026년 10월 APT 공격 동향 보고서(국내)",
+      "published": "2026-11-20",
+      "feed": "https://asec.ahnlab.com/ko/feed/",
+      "matched_terms": [
+        "Kimsuky"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://x.com/somaxbt/status/2123789228106744232",
+      "publisher": "SomaXBT",
+      "title": "Three Weeks After the $6.4B Binance Hack, Where Is the Money Now?",
+      "published": "2026-11-20",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "TraderTraitor"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://www.silentpush.com/blog/nk-construction/",
+      "publisher": "Silent Push",
+      "title": "Silent Push Exposes North Korean Fake Construction Company",
+      "published": "2026-11-19",
+      "feed": "https://www.silentpush.com/feed/",
+      "matched_terms": [
+        "North Korean",
+        "North Koreans"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://asec.ahnlab.com/en/96684",
+      "publisher": "Ahnlab",
+      "title": "October 2026 Threat Trend Report on APT Attacks (South Korea)",
+      "published": "2026-11-19",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "Kimsuky"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://www.levelblue.com/resources/research-reports/how-cyberwarfare-is-reshaping-the-connected-world",
+      "publisher": "Levelblue",
+      "title": "How Cyberwarfare Is Reshaping the Connected World",
+      "published": "2026-11-19",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korean",
+        "Lazarus",
+        "UNC1069"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://blog.talosintelligence.com/uat-12643-suspected-north-korea-aligned-actor-blends-blockchain-resilience-with-targeted-infostealing/",
+      "publisher": "Cisco Talos",
+      "title": "UAT-12643: Suspected North Korea-aligned actor blends blockchain resilience with targeted infostealing",
+      "published": "2026-11-18",
+      "feed": "https://blog.talosintelligence.com/rss/",
+      "matched_terms": [
+        "North Korea"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://wezard4u.tistory.com/429923",
+      "publisher": "wezard4u (tistory)",
+      "title": "김수키(Kimsuky) 한국블록체인협회 사칭 악성코드 분석-[한국블록체인협회] 활동서_작성양식_2026-0731.lnk",
+      "published": "2026-11-18",
+      "feed": "https://wezard4u.tistory.com/rss",
+      "matched_terms": [
+        "Kimsuky",
+        "김수키"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://blog.talosintelligence.com/the-challenge-of-defending-against-bulletproof-dead-drops-on-public-blockchains/",
+      "publisher": "CiscoTalos",
+      "title": "The challenge of defending against bulletproof dead drops on public blockchains",
+      "published": "2026-11-18",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "North Korean",
+        "Lazarus",
+        "Contagious Interview",
+        "InvisibleFerret",
+        "EtherHiding",
+        "UNC5342"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://lazarus.day/bsidespy26/",
+      "publisher": "lazarusholic",
+      "title": "Tracking the DPRK threat actors for fun and profit",
+      "published": "2026-11-18",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Lazarus",
+        "Andariel",
+        "Contagious Interview"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://andrewmohawk.com/2026/11/18/an-uninvited-delegation-from-dprk/",
+      "publisher": "Privy",
+      "title": "An Uninvited Delegation from DPRK-Inside the Binance Hack",
+      "published": "2026-11-18",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://asec.ahnlab.com/ko/96578/",
+      "publisher": "AhnLab ASEC (Korean)",
+      "title": "2026년 10월 다크웹 위협 행위자 동향 보고서",
+      "published": "2026-11-17",
+      "feed": "https://asec.ahnlab.com/ko/feed/",
+      "matched_terms": [
+        "북한"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://radar.securityalliance.org/seal-weekly-stats-11-17-2026",
+      "publisher": "SecurityAlliance",
+      "title": "SEAL weekly stats: 11-17, Nov. 2026",
+      "published": "2026-11-17",
+      "feed": "https://lazarus.day/reports/feed/",
+      "matched_terms": [
+        "DPRK",
+        "Contagious Interview"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://asec.ahnlab.com/en/96569",
+      "publisher": "Ahnlab",
+      "title": "October 2026: Major APT Group Trends",
+      "published": "2026-11-17",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://asec.ahnlab.com/ko/96568/",
+      "publisher": "AhnLab ASEC (Korean)",
+      "title": "2026년 10월 주요 APT 그룹 동향",
+      "published": "2026-11-16",
+      "feed": "https://asec.ahnlab.com/ko/feed/",
+      "matched_terms": [
+        "Lazarus",
+        "Kimsuky"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://openattacks.ai/attacks/gtig-midnight-neptune-claude-settings-2026-11/",
+      "publisher": "Open Attacks",
+      "title": "Suspected MIDNIGHT NEPTUNE uses SynthID recruiter lures and Claude Code settings to deploy SOMBERMEME",
+      "published": "2026-11-16",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://decodecybercrime.com/business-as-usual-how-an-iranian-hosting-operator-based-in-dubai-continues-to-enable-global-cyberattacks-and-cybercrime/",
+      "publisher": "Deep Code",
+      "title": "Business as Usual: How an Iranian Hosting Operator Based in Dubai Continues to Enable Global Cyberattacks and Cybercrime",
+      "published": "2026-11-12",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "lazarus.day"
+      ],
+      "discovered": "2026-11-23"
+    },
+    {
+      "url": "https://vulone.com/blog/inside-a-setup-panel-linked-to-suspected-kimsuky-phishing-infrastructure",
+      "publisher": "Vulone",
+      "title": "Inside a setup panel linked to suspected Kimsuky phishing infrastructure",
+      "published": "2026-11-12",
+      "feed": "https://lazarus.day/reports/2026/",
+      "matched_terms": [
+        "Kimsuky"
+      ],
+      "discovered": "2026-11-23"
+    }
+  ]
 }

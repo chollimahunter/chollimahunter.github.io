@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-18T18:37:03Z",
-  "record_count": 12240,
+  "generated_at": "2026-11-23T19:02:09Z",
+  "record_count": 12241,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -1285,7 +1285,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -2802,7 +2802,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion cwwnhwhlz52maqm7.onion Languages All language ransom messages available…",
           "context_origin": "text",
           "section": "C&C centers",
@@ -2832,7 +2832,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion cwwnhwhlz52maqm7.onion Languages All language ransom messages available here:…",
           "context_origin": "text",
           "section": "C&C centers",
@@ -3857,7 +3857,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion cwwnhwhlz52maqm7.onion Languages All language ransom messages available here:…",
           "context_origin": "text",
           "section": "C&C centers",
@@ -4342,7 +4342,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion cwwnhwhlz52maqm7.onion Languages All language…",
           "context_origin": "text",
           "section": "C&C centers",
@@ -6827,7 +6827,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion cwwnhwhlz52maqm7.onion Languages All language ransom messages available here:…",
           "context_origin": "text",
           "section": "C&C centers",
@@ -41810,7 +41810,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-08-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -44734,8 +44734,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…DoYouWantToHaveSexWithCuongDong Contact Schipkealfred@gmail.Com FunhouseRaaS@proton.Me Funhouse8764@tutamail.Com Key Generation Method Random Number + SHA-256 CryptGenRandom + Curve25519 + SHA-512 CryptGenRandom + Curve25519 +…",
           "context_origin": "list",
@@ -44764,8 +44764,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…DoYouWantToHaveSexWithCuongDong DoYouWantToHaveSexWithCuongDong Contact Schipkealfred@gmail.Com FunhouseRaaS@proton.Me Funhouse8764@tutamail.Com Key Generation Method Random Number + SHA-256 CryptGenRandom + Curve25519 + SHA-512…",
           "context_origin": "list",
@@ -70468,7 +70468,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -103811,8 +103811,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…Mutex Mutexisfunnylocal DoYouWantToHaveSexWithCuongDong DoYouWantToHaveSexWithCuongDong Contact Schipkealfred@gmail.Com FunhouseRaaS@proton.Me Funhouse8764@tutamail.Com Key Generation Method Random Number + SHA-256…",
           "context_origin": "list",
@@ -137148,6 +137148,17 @@
           "section": "SHA256 Hashes",
           "pulled_at": "2026-09-12",
           "source_sha256": "c147fdc9d18864d41781e1704343198027a6897d6ebd80e12275b8f71602edfd"
+        },
+        {
+          "url": "https://www.picussecurity.com/resource/blog/exposing-the-steps-of-the-kimsuky-apt-group",
+          "title": "Exposing the Steps of the Kimsuky APT Group",
+          "publisher": "Picus Security",
+          "published": "2024-12-27",
+          "context": "…to countering threats like Kimsuky and protecting critical assets and information. Indicators of Compromise (IOCs) SHA256 Hashes 081804B491C70BFA63ECDBE9FD4618D3570706AD8B71DBA13E234069648E5E48 0B5DB31E47B0DCCFDEC46E74C0E70C6A1684768DBACC9EACBB4FD2EF851994C7 15D53BB839E00405A34A8B690EC181F5555FC4F891B8248AE7FA72BAD28315A9 161758…",
+          "context_origin": "text",
+          "section": "SHA256 Hashes",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "8f4f690104aab5cea6f403f8fd56ec7b8d78a0090784365edcb636ed3a033f49"
         }
       ]
     },
@@ -146715,8 +146726,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…to software—including Hangul—and operating systems, and keep V3 updated to the latest version to prevent Malware infections. MD5 17d97e3ee3185d82812a4014444c36f3 327617e977eefd15708568f43140e595 3d802ceaf891ea57ecd7d1d786d96a0d 5be7578bfe633fb268ad97a520abb4e1 78c219a6bec5fc30f43b62e4934646eb…",
           "context_origin": "text",
@@ -152726,7 +152737,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2023-04-20",
-      "last_seen": "2025-09-01",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -155610,6 +155621,17 @@
           "section": "Indicators of Compromise (IOCs)",
           "pulled_at": "2026-10-01",
           "source_sha256": "5a3a594622dcd518f8b194bef77f55b251b8465d180363a1b4b770be92cda024"
+        },
+        {
+          "url": "https://labs.k7computing.com/index.php/lazarus-group-evolves-fileless-mac-threat/",
+          "title": "Lazarus Group Evolves Fileless Mac Threat",
+          "publisher": "K7 Security Labs",
+          "published": "2019-12-06",
+          "context": "…Indicators of Compromise (IOCs) UnionCryptoTrader.dmg – Trojan ( 0001140e1 ) Hash: 2ab58b7ce583402bf4cbc90bee643ba5f9503461f91574845264d4f7e3ccb390 Like what you're reading? Subscribe to our top stories. Email * : Subscribe…",
+          "context_origin": "text",
+          "section": "Indicators of Compromise (IOCs)",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "951d92712b487c84bc3e92439c2ae3497ffcd09e944cc3907f6e06420bc3bd25"
         }
       ]
     },
@@ -156207,7 +156229,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-09-01",
-      "last_seen": "2025-09-01",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -159281,8 +159303,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…operating systems, and keep V3 updated to the latest version to prevent Malware infections. MD5 17d97e3ee3185d82812a4014444c36f3 327617e977eefd15708568f43140e595 3d802ceaf891ea57ecd7d1d786d96a0d 5be7578bfe633fb268ad97a520abb4e1 78c219a6bec5fc30f43b62e4934646eb URL…",
           "context_origin": "text",
@@ -164417,8 +164439,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…to the latest version to prevent Malware infections. MD5 17d97e3ee3185d82812a4014444c36f3 327617e977eefd15708568f43140e595 3d802ceaf891ea57ecd7d1d786d96a0d 5be7578bfe633fb268ad97a520abb4e1 78c219a6bec5fc30f43b62e4934646eb URL…",
           "context_origin": "text",
@@ -166764,7 +166786,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-09-01",
-      "last_seen": "2025-09-01",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -172010,7 +172032,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-05-22",
-      "last_seen": "2026-05-22",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -177083,8 +177105,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…Malware infections. MD5 17d97e3ee3185d82812a4014444c36f3 327617e977eefd15708568f43140e595 3d802ceaf891ea57ecd7d1d786d96a0d 5be7578bfe633fb268ad97a520abb4e1 78c219a6bec5fc30f43b62e4934646eb URL…",
           "context_origin": "text",
@@ -189203,8 +189225,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…17d97e3ee3185d82812a4014444c36f3 327617e977eefd15708568f43140e595 3d802ceaf891ea57ecd7d1d786d96a0d 5be7578bfe633fb268ad97a520abb4e1 78c219a6bec5fc30f43b62e4934646eb URL…",
           "context_origin": "text",
@@ -210216,6 +210238,17 @@
           "section": "러시아와 북한 파트너쉽에 관한 논문을 위장한 APT 공격 (Kimsuky)",
           "pulled_at": "2026-09-12",
           "source_sha256": "df928c0175944a82c6164a15b667195e8ae1a297e5cc0fb975961e6e79bd35e6"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/83026",
+          "title": "러시아와 북한 파트너쉽에 관한 논문을 위장한 APT 공격 (Kimsuky) - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-09-06",
+          "context": "…관련 도메인, URL 및 IP 주소 MD5 ac68dad3114c469c5d1e81f9dbc59eb0 b0e7a8fa1eb5690e7e42fb09c9ee6307 e5288ab0f625e498e27178b0d17329f9 Tags:…",
+          "context_origin": "text",
+          "section": "러시아와 북한 파트너쉽에 관한 논문을 위장한 APT 공격 (Kimsuky)",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "856fc284bca3836844e3a9bce0dd48fe08671ce4dc1476e703cdef312d5b06e3"
         }
       ]
     },
@@ -243108,7 +243141,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-04-07",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -250640,7 +250673,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-04-07",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -268093,7 +268126,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-02-26",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -271530,7 +271563,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-02-27",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -273889,6 +273922,17 @@
           "section": "결론",
           "pulled_at": "2026-09-12",
           "source_sha256": "6300e358c179cf7437806fffa748b0c16974bb2f7be8848d06e21bdddeded323"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/84066",
+          "title": "PebbleDash와 RDP Wrapper를 악용한 Kimsuky 그룹의 최신 공격 사례 분석 - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-10-23",
+          "context": "…IP 103.5.144.26 159.100.13.216 206.206.127.152 216.107.137.73 64.49.14.181 Tags:…",
+          "context_origin": "text",
+          "section": "결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "8a0bd2d451a3af5c432ee933ed26a8db40073966916233b0954e8c9c304b80e9"
         }
       ]
     },
@@ -274614,6 +274658,17 @@
           "section": "Larva-25010 – APT Down 공격자 PC 분석",
           "pulled_at": "2026-09-12",
           "source_sha256": "a821b68ff8d83f9dedd975228db708388bf9cf5e93e8094bfd9d0321a5ab08f7"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/90408",
+          "title": "Larva-25010 - APT Down 공격자 PC 분석 - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2025-10-02",
+          "context": "…FQDN websecuritynotices.com IP 104.167.16.97 Tags: APT31 APT41 APTDown Beacon CobaltStrike CobaltStrikeBeacon…",
+          "context_origin": "text",
+          "section": "Larva-25010 – APT Down 공격자 PC 분석",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "43080aea7fce1839c7b022e83006479f5b4e34db532f4e87d8be840b52234420"
         }
       ]
     },
@@ -274908,6 +274963,17 @@
           "section": "4. Conclusion",
           "pulled_at": "2026-09-12",
           "source_sha256": "9ba87257e293ae82ddb4ac526f661d9efd110a3f8fa6b9d2fe7cb1f8c9ecfc0c"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/65918",
+          "title": "국내 기업 대상 공격에 사용 중인 SmallTiger 악성코드 (Kimsuky, Andariel 그룹) - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-05-27",
+          "context": "…URL http://104.168.145.83:993/ http://104.36.229.179/ http://104.36.229.179/am.dll http://38.110.1.69/ http://38.110.1.69:993/ AhnLab TIP 를…",
+          "context_origin": "list",
+          "section": "4. 결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "70ecd3a9eac3cfc1ba36a6658649b2c6694a2840929f53af37f5dd6036f60baa"
         }
       ]
     },
@@ -277011,7 +277077,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -277054,7 +277120,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -277097,7 +277163,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -277140,7 +277206,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -277183,7 +277249,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -288709,7 +288775,7 @@
         "IT Worker Fraud"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -292970,7 +293036,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-09-01",
-      "last_seen": "2025-09-01",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -294400,7 +294466,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -301899,6 +301965,17 @@
           "section": "IoCs",
           "pulled_at": "2026-09-12",
           "source_sha256": "a41fe3597061f12c7b961cd63b365053abf2788576829522105af10c1270bc8a"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/84066",
+          "title": "PebbleDash와 RDP Wrapper를 악용한 Kimsuky 그룹의 최신 공격 사례 분석 - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-10-23",
+          "context": "…IP 103.5.144.26 159.100.13.216 206.206.127.152 216.107.137.73 64.49.14.181 Tags: AsyncRAT InfoStealer…",
+          "context_origin": "text",
+          "section": "결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "8a0bd2d451a3af5c432ee933ed26a8db40073966916233b0954e8c9c304b80e9"
         }
       ]
     },
@@ -302477,7 +302554,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -302519,7 +302596,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -303581,7 +303658,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -312579,7 +312656,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -312622,7 +312699,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -312665,7 +312742,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -312814,7 +312891,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-01-29",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -312928,7 +313005,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -313002,7 +313079,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -313385,7 +313462,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2017-05-30",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -314118,7 +314195,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -315307,7 +315384,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -319116,7 +319193,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -321090,7 +321167,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -321133,7 +321210,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -321266,7 +321343,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -321497,7 +321574,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-04-23",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -321584,7 +321661,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-04-23",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -323781,7 +323858,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-09-01",
-      "last_seen": "2025-09-01",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -326788,6 +326865,17 @@
           "section": "4. Conclusion",
           "pulled_at": "2026-09-12",
           "source_sha256": "bc48f4c939fcf63e7927aca5c3997f048318a525728c6e643d174d2ee15f2172"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/67034",
+          "title": "국내 기업 대상 공격에 사용 중인 Xctdoor 악성코드 (Andariel) - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-06-24",
+          "context": "…URL http://195.50.242.110:8080/ http://beebeep.info/index.php http://www.jikji.pe.kr/xe/files/attach/binaries/102/663/image.gif AhnLab TIP 를…",
+          "context_origin": "list",
+          "section": "4. 결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "05cefe78817b63ac5b64ddfc32aed5fa455d1b0b12763de556fc57b693b1bd6b"
         }
       ]
     },
@@ -331862,6 +331950,17 @@
           "section": "2.3. d.ps1",
           "pulled_at": "2026-09-12",
           "source_sha256": "6703f653818e43e7b6b4ce621bd1f5c4ebf091d47bc181372a44046b442ac839"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/84066",
+          "title": "PebbleDash와 RDP Wrapper를 악용한 Kimsuky 그룹의 최신 공격 사례 분석 - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-10-23",
+          "context": "…IP 103.5.144.26 159.100.13.216 206.206.127.152 216.107.137.73 64.49.14.181 Tags: AsyncRAT InfoStealer Keylogger Kimsuky…",
+          "context_origin": "text",
+          "section": "결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "8a0bd2d451a3af5c432ee933ed26a8db40073966916233b0954e8c9c304b80e9"
         }
       ]
     },
@@ -336604,7 +336703,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -336646,7 +336745,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -336688,7 +336787,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -336892,6 +336991,17 @@
           "section": "4. 악성 파일 분석 (Malware Analysis)",
           "pulled_at": "2026-09-12",
           "source_sha256": "77440ba4b2f356c6b9e4ba56a20f2d25105f6c60a651a2d6cec2ef4c0450491b"
+        },
+        {
+          "url": "https://asec.ahnlab.com/ko/84066",
+          "title": "PebbleDash와 RDP Wrapper를 악용한 Kimsuky 그룹의 최신 공격 사례 분석 - ASEC",
+          "publisher": "AhnLab ASEC",
+          "published": "2024-10-23",
+          "context": "…IP 103.5.144.26 159.100.13.216 206.206.127.152 216.107.137.73 64.49.14.181 Tags: AsyncRAT InfoStealer Keylogger Kimsuky lnk PebbleDash…",
+          "context_origin": "text",
+          "section": "결론",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "8a0bd2d451a3af5c432ee933ed26a8db40073966916233b0954e8c9c304b80e9"
         }
       ]
     },
@@ -349501,7 +349611,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2025-05-12",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -355496,8 +355606,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…se.dwg se.dwg dog.dwg VERSION 1.1.8 1.1.8 4.4.3 HOSTS 45.95.186.232:80 45.43.60.53:80 70.36.97.236:443 TAG {Specific Identifier} {Name of Company Damaged} {Name of Company Damaged}_it1…",
           "context_origin": "text",
@@ -358842,8 +358952,8 @@
         },
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…2026) File name se.dwg se.dwg dog.dwg VERSION 1.1.8 1.1.8 4.4.3 HOSTS 45.95.186.232:80 45.43.60.53:80 70.36.97.236:443 TAG {Specific Identifier} {Name of Company Damaged} {Name of…",
           "context_origin": "text",
@@ -367561,7 +367671,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2020-06-24",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -371260,8 +371370,8 @@
       "sources": [
         {
           "url": "https://asec.ahnlab.com/en/95775",
-          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases - ASEC",
-          "publisher": null,
+          "title": "From Endpoint to Funhouse: Evolution of Ransomware Families and Kimsuky-Linked Distribution Cases",
+          "publisher": "AhnLab ASEC",
           "published": "2026-09-30",
           "context": "…dog.dwg VERSION 1.1.8 1.1.8 4.4.3 HOSTS 45.95.186.232:80 45.43.60.53:80 70.36.97.236:443 TAG {Specific Identifier} {Name of Company Damaged} {Name of Company Damaged}_it1 MUTEX…",
           "context_origin": "text",
@@ -372959,7 +373069,7 @@
         "APT38"
       ],
       "first_seen": "2025-02-25",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -374975,7 +375085,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -375653,7 +375763,7 @@
         "Contagious Interview"
       ],
       "first_seen": "2026-09-01",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -376368,7 +376478,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -376411,7 +376521,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -376705,7 +376815,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -376810,7 +376920,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2025-01-29",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -376937,7 +377047,7 @@
         "Lazarus Group"
       ],
       "first_seen": "2026-09-10",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -382445,7 +382555,7 @@
         "APT38"
       ],
       "first_seen": "2025-02-25",
-      "last_seen": "2026-10-18",
+      "last_seen": "2026-11-23",
       "extraction": {
         "method": "regex",
         "model": null,
@@ -393481,6 +393591,17 @@
           "section": "TRM User Conference",
           "pulled_at": "2026-09-11",
           "source_sha256": "b9667b9608f86c4154b41d5c474d835d916608b9ef5a2d5922ca982718a1f848"
+        },
+        {
+          "url": "https://www.trmlabs.com/post/north-korean-foreign-trade-bank-rep-charged-for-role-in-two-crypto-laundering-conspiracies",
+          "title": "TRM Labs | North Korean Foreign Trade Bank Rep Charged for Role in Two Crypto Laundering Conspiracies",
+          "publisher": "Trmlabs",
+          "published": "2023-04-26",
+          "context": "…Chinese national, Cheng Hung Man (“Cheng”), a Hong Kong British National living in Hong Kong, and an unknown user of the online moniker “live:jammychen0150” (“Chen”), to launder stolen cryptocurrency and use the funds to purchase goods through Hong Kong-based front companies for the benefit of…",
+          "context_origin": "text",
+          "section": "North Korean Foreign Trade Bank Rep Charged for Role in Two Crypto Laundering Conspiracies",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "212b876757ef7e201d5848767eb6f4faffc48572ea1707ace02a4d1f96d8d3fa"
         }
       ]
     },
@@ -403418,7 +403539,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…https://blockchain.info/address/12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn C&C centers gx7ekbenv2riucmf.onion 57g7spgrzlojinas.onion xxlvbrloxvriy2c5.onion 76jdd2ir2embyv47.onion…",
           "context_origin": "text",
           "section": "Bitcoin ransom addresses",
@@ -403479,7 +403600,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…hard coded into the malware. https://blockchain.info/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94 https://blockchain.info/address/12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn C&C centers gx7ekbenv2riucmf.onion…",
           "context_origin": "list",
           "section": "Bitcoin ransom addresses",
@@ -403509,7 +403630,7 @@
           "url": "https://gist.github.com/rain-1/989428fa5504f378b993ee6efbc0b168",
           "title": "WannaCry|WannaDecrypt0r NSA-Cyberweapon-Powered Ransomware Worm",
           "publisher": "rain1",
-          "published": "2026-08-06",
+          "published": "2026-10-02",
           "context": "…RE information by cyg_x1!! Bitcoin ransom addresses 3 addresses hard coded into the malware. https://blockchain.info/address/13AM4VW2dhxYgXeQepoHkHSQuy6NgaEb94 https://blockchain.info/address/12t9YDPgwueZ9NyMgw519p7AA8isjr6SMw https://blockchain.info/address/115p7UMMngoj1pMvkpHijcRdfJNXj6LrLn…",
           "context_origin": "list",
           "section": "Bitcoin ransom addresses",
@@ -404954,6 +405075,17 @@
           "section": "‍ The Role of Blockchain Intelligence in Following North Korean Stolen Funds ‍",
           "pulled_at": "2026-09-11",
           "source_sha256": "c44a7ee0015e5bd6df2aca7f1c0ad331272cab3369a3dc4cf3bf03283d43eccc"
+        },
+        {
+          "url": "https://www.trmlabs.com/post/fbi-confirms-that-north-korea-was-behind-41-million-stake-com-exploit",
+          "title": "FBI Confirms that North Korea was Behind $41 Million Stake.com Exploit | TRM Labs",
+          "publisher": "TRM Labs",
+          "published": "2023-09-08",
+          "context": "…bc1qc593a4d2hznk2ext3k2zmpdrqazlhhh80m4xas bc1qtnuzecpqaakj0dt855n24dv7u5pme7vyct2cf2 bc1qvjpgxa2g3nvyw2hnclptextllu9dr4vkew8jfp bc1qg0qygyv3qfp8cjyy99ch9vc9dp876vl8wys67u Related posts Insights · June 21, 2023 TRM Talks Recap: The North Korea Threat Insights · August 18, 2023 Inside North…",
+          "context_origin": "text",
+          "section": "The Role of Blockchain Intelligence in Following North Korean Stolen Funds",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "a7168ed091632a01a0d013727f87f06ba2e9cf4b44ba2e3947ab92f414195d91"
         }
       ]
     },
@@ -405025,6 +405157,36 @@
           "section": "Addresses in the Forfeiture Action",
           "pulled_at": "2026-09-09",
           "source_sha256": "0cfad3e3faae01da470dcb8ef762d57c16fe25f9a15f8c48218dcf718d48f3ba"
+        }
+      ]
+    },
+    {
+      "id": "wallet-address-21d28259464b",
+      "ioc_type": "wallet_address",
+      "value": "bc1qtnuzecpqaakj0dt855n24dv7u5pme7vyct2cf2",
+      "display": "Bitcoin",
+      "persona": null,
+      "campaign": [
+        "Lazarus Group"
+      ],
+      "first_seen": "2023-09-08",
+      "last_seen": "2023-09-08",
+      "extraction": {
+        "method": "regex",
+        "model": null,
+        "grounded": true
+      },
+      "sources": [
+        {
+          "url": "https://www.trmlabs.com/post/fbi-confirms-that-north-korea-was-behind-41-million-stake-com-exploit",
+          "title": "FBI Confirms that North Korea was Behind $41 Million Stake.com Exploit | TRM Labs",
+          "publisher": "TRM Labs",
+          "published": "2023-09-08",
+          "context": "…bc1qkrkxgvp2te3xhgn74c2azt4flf9u05y56kh3a9 bc1q6w7qlaj3mfkgfrxwtvhw45cu86wew7xpjfqcmy bc1qc593a4d2hznk2ext3k2zmpdrqazlhhh80m4xas bc1qtnuzecpqaakj0dt855n24dv7u5pme7vyct2cf2 bc1qvjpgxa2g3nvyw2hnclptextllu9dr4vkew8jfp bc1qg0qygyv3qfp8cjyy99ch9vc9dp876vl8wys67u Related posts Insights · June 21, 2023…",
+          "context_origin": "text",
+          "section": "The Role of Blockchain Intelligence in Following North Korean Stolen Funds",
+          "pulled_at": "2026-11-23",
+          "source_sha256": "a7168ed091632a01a0d013727f87f06ba2e9cf4b44ba2e3947ab92f414195d91"
         }
       ]
     },
