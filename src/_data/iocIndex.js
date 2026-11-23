@@ -33,6 +33,7 @@ const { memoByDir } = require("../../scripts/lib/memo.js");
 const { sourceKey: pageKey } = require("../../scripts/lib/source-url.js");
 const { readJsonIfPresent } = require("../../scripts/lib/read-json.js");
 const { compareText } = require("../../scripts/lib/compare.js");
+const { isFalsePositive, falsePositiveScrubber } = require("../../scripts/lib/private-data.js");
 const { canonicalPublisher } = require("../../scripts/lib/publishers.js");
 const { operatorHosts } = require("../../scripts/lib/operator-hosts.js");
 
@@ -1208,9 +1209,13 @@ function buildIndex() {
     candidateRecords
   );
   const folded = foldDuplicateTypes(merged);
-  const records = folded.records.sort(
+  // A value judged a false positive leaves the index whichever source carries
+  // it; see isFalsePositive in scripts/lib/private-data.js.
+  const falsePositive = isFalsePositive();
+  const records = folded.records.filter((r) => !falsePositive(r.value)).sort(
     (a, b) => compareText(a.ioc_type, b.ioc_type) || compareText(a.value, b.value)
   );
+  const scrub = falsePositiveScrubber(falsePositive);
   for (const record of records) {
     // "EtherHiding" folds into the UNC5342 label, except on a value no
     // published source ties to North Korea: the tracker covers every
@@ -1221,9 +1226,13 @@ function buildIndex() {
     // One spelling of each publisher's name; see scripts/lib/publishers.js.
     // A source object can be shared between records, so it is replaced
     // rather than edited.
+    // A neighbouring false positive quoted in the passage is withheld too.
     record.sources = record.sources.map((source) => {
       const publisher = canonicalPublisher(source.url, source.publisher);
-      return publisher === source.publisher ? source : { ...source, publisher };
+      const context = scrub(source.context);
+      return publisher === source.publisher && context === source.context
+        ? source
+        : { ...source, publisher, context };
     });
   }
 

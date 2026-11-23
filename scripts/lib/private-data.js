@@ -36,4 +36,53 @@ function seal(value) {
   return crypto.createHash("sha256").update(String(value).trim().toLowerCase()).digest("hex");
 }
 
-module.exports = { PRIVATE_DIR, privatePath, hasPrivateData, readPrivateJson, seal };
+const FALSE_POSITIVES_PATH = path.join(__dirname, "..", "data", "false-positives.json");
+const FREE_MAIL = ["gmail.com", "outlook.com", "hotmail.com", "yahoo.com", "proton.me", "protonmail.com"];
+
+/**
+ * A predicate that is true for a value judged a false positive. The judgement
+ * holds whichever source carries the value: ingest prunes scraped records, but
+ * a bulk list, a registry or a dossier would bring it straight back, so the
+ * index and the persona pages both filter through this.
+ */
+function isFalsePositive() {
+  const doc = fs.existsSync(FALSE_POSITIVES_PATH)
+    ? JSON.parse(fs.readFileSync(FALSE_POSITIVES_PATH, "utf8"))
+    : { values: [] };
+  const sealed = new Set((doc.values || []).map((v) => v.sealed).filter(Boolean));
+  return (value) => sealed.has(seal(value));
+}
+
+/**
+ * A function that replaces every false-positive value quoted in a passage
+ * with "[withheld]". Withdrawing a value from the index is not enough when a
+ * neighbouring record's quote, cut from the same table, still prints it. Each
+ * token is sealed and tested once: an address, host or URL also with the
+ * scheme the index stores, and a bare handle (a list of logins) as the GitHub
+ * and Telegram account it would name.
+ */
+function falsePositiveScrubber(falsePositive = isFalsePositive()) {
+  const seen = new Map();
+  const hit = (token) => {
+    if (!seen.has(token)) {
+      const bare = token.replace(/\/+$/, "");
+      // An address the quote window cut short ("name@gmail.") is tried
+      // against the free-mail domains it could have been.
+      const local = /^[^@]+@[a-z.]*$/i.test(bare) ? bare.split("@")[0] : null;
+      const forms = /[@./]/.test(bare)
+        ? [token, bare, `https://${bare}`, `https://${bare}/`, ...(local ? FREE_MAIL.map((d) => `${local}@${d}`) : [])]
+        : [`https://github.com/${bare}`, `https://t.me/${bare}`];
+      seen.set(token, forms.some((form) => falsePositive(form)));
+    }
+    return seen.get(token);
+  };
+  return (text) =>
+    typeof text !== "string"
+      ? text
+      : text.replace(/[^\s"'<>()\[\],;]+/g, (token) => {
+          const [, lead, core, trail] = token.match(/^([^\p{L}\p{N}]*)(.*?)([.:!?…]*)$/u);
+          return core.length > 3 && hit(core) ? `${lead}[withheld]${trail}` : token;
+        });
+}
+
+module.exports = { PRIVATE_DIR, privatePath, hasPrivateData, readPrivateJson, seal, isFalsePositive, falsePositiveScrubber };

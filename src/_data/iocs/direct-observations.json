@@ -2126,24 +2126,6 @@
       "note": "Found on 13 September 2026 by probing every account handle this site already holds for this operator against dev.to, and read from the profile's own public API. An account exists under 7codewizard, a login the index already carries for this persona on another platform. It gives a joined date of Jul 9, 2024. It displays the name Jaron Gaston, the same name the reporting already gives. It gives a location of Murphysboro, IL, USA. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
     },
     {
-      "persona": "Jenson Collins",
-      "researcher": "chollimahunter",
-      "transcribed": "2026-09-13",
-      "posts": [
-        {
-          "url": "https://dev.to/akcgjc007"
-        }
-      ],
-      "indicators": [
-        {
-          "ioc_type": "devto_account",
-          "value": "https://dev.to/akcgjc007",
-          "post": 0
-        }
-      ],
-      "note": "Found on 13 September 2026 by probing every account handle this site already holds for this operator against dev.to, and read from the profile's own public API. An account exists under akcgjc007, a login the index already carries for this persona on another platform. It gives a joined date of Jun 16, 2020. It displays \"anupam\", a display name rather than a person's name. The profile links a GitHub account, akcgjc007. It gives a location of UP, India. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
-    },
-    {
       "persona": "apollo0102",
       "researcher": "chollimahunter",
       "transcribed": "2026-09-13",
@@ -2561,25 +2543,6 @@
         }
       ],
       "note": "Found on 17 September 2026 by asking Hugging Face whether an account exists under aiden77mori, one of the logins the registry already holds for this operator, and read from the profile cited. The account states a display name of Aiden Mori. The display name is kept here rather than as an alias, because it restates the handle, describes the work, or repeats what this operator is already called. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
-    },
-    {
-      "persona": "Jenson Collins",
-      "aliases": [],
-      "researcher": "chollimahunter",
-      "transcribed": "2026-09-17",
-      "posts": [
-        {
-          "url": "https://hub.docker.com/u/akcgjc007"
-        }
-      ],
-      "indicators": [
-        {
-          "ioc_type": "dockerhub_account",
-          "value": "https://hub.docker.com/u/akcgjc007",
-          "post": 0
-        }
-      ],
-      "note": "Found on 17 September 2026 by asking Docker Hub whether an account exists under akcgjc007, one of the logins the registry already holds for this operator, and read from the profile cited. The account states a registration date of 7 March 2021. The handle is what links this account to the rest; nothing here establishes that one person holds both, and a display name on a profile is a name the account presents, not an identification."
     },
     {
       "persona": "anthon-dev",
