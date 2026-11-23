@@ -146,6 +146,14 @@
     "nkinternet": {
       "publisher": "North Korean Internet (nkinternet.com)",
       "account": "https://nkinternet.com/"
+    },
+    "panther": {
+      "publisher": "Panther Labs",
+      "account": "https://panther.com/blog/"
+    },
+    "githubsecurity": {
+      "publisher": "GitHub",
+      "account": "https://github.blog/security/"
     }
   },
   "dossiers": [
@@ -17340,6 +17348,1810 @@
         "Six accounts and two large organisations the article names only for whom they follow or who follows them. Held: following is how the cluster was found, not evidence about each account on its own.",
         "Cell 5, four contributors to the Ubiquity DAO projects, which the article itself calls suspected: two are long-established accounts with open-source histories, and the cell rests on what they contributed rather than on who they are. Held for a ruling."
       ]
+    },
+    {
+      "researcher": "panther",
+      "label": "Contagious Trader delivery network: GitHub repositories, npm packages and publishers, C2",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://panther.com/blog/mapping-the-contagious-trader-delivery-network",
+          "date": "2026-11-02"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/CashBlazorLab",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/XHYhappy",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Symotix",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Krypto-Hashers-Community",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/legit-script-group",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/polkadot-org",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gigi0500",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xFives",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/solcanine",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/PoDev-rahulrajasekhar",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/djosk23",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Chain-Ether-Core",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Infranova-Labs",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptonerva",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/amplify-protocol",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/TQ-trade",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Predictional-Infra",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tradebothub",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/G3-DEV-AGENCY",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zkOSAI",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Valentioo",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/machenxi",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/satyasumn7",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/AlgoInfraTech",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ScouterInfinite",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/emmarktech",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/alpaca-project",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/BNB-Alpha-Community",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/lorine93s",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Jackhuang166",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Matias123p",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Runtime-Trade-Systems",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/benja-dev-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Corettafinnougricspeaking368",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mclaeo",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Dougthethugg",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gisel69",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kyyook",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/JoTalksdxb",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/SXai-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "CashBlazorLab/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-kalshi-arbitrage-bot-15min-market",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Symotix/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Krypto-Hashers-Community/polymarket-kalshi-arbitrage-bot-15min-market",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "legit-script-group/polymarket-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-finance-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-politics-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-volume-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-bundler-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-migration-sniper",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Polymarket-Arbitrage-Crypto-Trading-Bot-V3",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Pumpfun-Volume-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Raydium-Cpmm-Sniper",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "solcanine/openclaw-ai-polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "solcanine/polymarket-impulse-monitoring-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "PoDev-rahulrajasekhar/Polymarket-Copytrading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "djosk23/polymarket-copy-trade-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/chain-fetcher-hub",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/system-lab-5857",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/stack-runtime",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/infra-pipeline-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-batch-lab-5312",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/hub-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/gateway-stack-5812",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/system-runtime",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/service-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/stack-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/engine-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/bridge-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/index-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/flux-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/prime-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-pipeline-system-4275",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/prime-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-stream-lab-1839",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/meta-runtime-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/flux-relay-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/core-hub-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/infra-service-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/worker-hub-2619",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/core-lab-7000",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/runtime-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/pipeline-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/fetcher-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/flux-batch-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/system-hub-core-536",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/index-services-2599",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/dev-platform-4287",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/infra-index-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/stack-fetcher-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/relay-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/prime-pipeline-system-8633",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Cryptonerva/prime-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Cryptonerva/system-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "amplify-protocol/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "TQ-trade/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Predictional-Infra/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "tradebothub/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "G3-DEV-AGENCY/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "G3-DEV-AGENCY/polymarket-copytrading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "zkOSAI/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "soldrift/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Valentioo/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "machenxi/Sol-marketplace",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "satyasumn7/Polymarket-Trading-Bot-Gabagool",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "AlgoInfraTech/polymarket-sports-betting-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "AlgoInfraTech/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "ScouterInfinite/polymarket-trading-bot-copytrading",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "emmarktech/Polymarket-Arbitrage-Crypto-Trading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "alpaca-project/1776507753199",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "BNB-Alpha-Community/evm-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-btc-5min-15min-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Jackhuang166/Pumpfun_AI_Trading_Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Jackhuang166/hyberliquid-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Matias123p/Polymarket-Arbitrage-Trading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Runtime-Trade-Systems/polymarket-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "benja-dev-lab/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-btc-5min-15min-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Corettafinnougricspeaking368/Polymarket-Arbitrage-Trading-Bot-Spreadmaker",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "mclaeo/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "mclaeo/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Dougthethugg/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Dougthethugg/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gisel69/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gisel69/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "kyyook/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "kyyook/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "JoTalksdxb/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "SXai-lab/prediction-market-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "SXai-lab/prediction-market-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "api-node-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "frankykevin.dev@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "api-ts-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "typescript-util-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "prettier-resolver",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kunwarshivam1971@hotmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "web-http-errors",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "http-errors-cli",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bn-eslint.js",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cashblaze1001@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-eslint-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "classnames-sub-folk",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cashblaze0510@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "result-type-tool",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "prettier-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "aleksis2026dev@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-plugin",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "maklionelox@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "picocolor-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "milosk920125@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sleek-pretty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pinky-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalks-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalk-pro-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "emojiprint-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalki-pretty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "styled-text-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "diwatkins1971k@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "color-logger-console",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "podev75926@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "lint-builder-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "super1114dev@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-big-lib",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "levex-press",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "awesome-cli-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jofarc789@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "awesome-cli-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "rjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-doc-dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "rafinhossianlove@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "big256-ts",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-relayer-pub",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "y.rix.elfi.e.co@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "di.gos.c.hristia.n.n@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builds",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ca.r.lane.es1.2.6@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-doc-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "al.lanjaysa.t.i.a.gi@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "haraldosman.ho@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "logger-beauty",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cryptopawsol@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-moduler",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cobily11@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jpeek886@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jpeek895@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "satyasumn8@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@tsjunk/chalk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@etherprojects/logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-utils-wrapper",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "chiragnikolic@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-bing",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "v.al.s.o.lo.mon7.0@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vime-azl",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-utils-dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "al.la.n.h.o.rca07@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "gleb-js",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bigint.os",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.yal.a.da.ve7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "lint-null",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "mjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "n.ar.a.tat.ia.n.aaa@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "st-bigintr",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.n.n.as.ibal2.36@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sjs-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ayal.a.d.av.e.7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "st-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bjs-lint-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.l.l.a.nh.orca0.7@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sjs-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-fancy",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-pino-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "js-tree-integer",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "js-integer-log",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ffffrakyevin",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~kunwarshivam1971",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~amauri_jesus",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~danlo00holoden",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~aleksislabs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~maklionelox",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~lorine93s",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~npmpodev0707",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~devking1616",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~alberto1114",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jofarc",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~rafinhossian",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~y.rix.elfi.e.co",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~digoschristiann",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ca.r.lane.es1.2.6",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~al.lanjaysa.t.i.a.gi",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~soju_dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~cryptopawsol",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~moduler",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jpeek886",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jpeek895",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~satyasu8",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mod_triler",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~michale127",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~chirag_nikolic",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~v.al.s.o.lo.mon7.0",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jamesjamesjmaes123",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.yal.a.da.ve7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~n.ar.a.tat.ia.n.aaa",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.n.n.as.ibal2.36",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ayal.a.d.av.e.7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.l.l.a.nh.orca0.7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~npm_kei",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "nonce-link.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "mono-link.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarkettrading.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "eslint-helper.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "eslint-config.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "170.205.31.203",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.fivefingerz.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "polymarket-clob2.blog",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-bots-backend.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.mywalletsss.store",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "clob-polymarket.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "color-picker.live",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "cloudflareinsights.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "wallet-management-tg-bot.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "208.84.100.22",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polybot-management-v1.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polybot-management-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-api-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-cli-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "cloudflare-protection.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "clob.0xundying.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "logger.clob.health",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "blxrbn.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "204.10.194.64",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7465382403e61ba1e96a6b9b700cb7d06a2cf802f7079ff0a7f859d751adc45a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9988632cd76dcb448e673daf6b97e78225fe0613fe4268b971cbd5bd29b0ba8b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a08c089ed46447cd901bbd9031f1931337afe42bb8af70299195d5f9b11c69fb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "36abee6d79f8b135d1b03540dcbde1fb2eb1abba7ea5bf59ecb342730c415519",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d00aa3cbd7ad80b72cc5df665a7377c72981ba116b486e6c34b81896be0e4124",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the tables of Panther's report, which attributes the activity \"with high confidence to DPRK / Famous Chollima as part of the Contagious Trader campaign\" and says its indicators and Contagious Interview's should be treated as a single threat. The repositories are trading-bot lures (Polymarket, PumpFun, Solana, PancakeSwap) that import DPRK-attributed npm packages delivering PromptMink, ClipViper or OtterCookie; Chain-Ether-Core, Infranova-Labs and Cryptonerva are organisations that fork CashBlazorLab's repository into 40+ copies, and Panther calls Krypto-Hashers-Community a confirmed PromptMink delivery organisation. Panther reports that gigi0500 operates under a stolen developer's name, location and profile photograph, and that lorine93s may be a compromised account rather than a persona. The account owners filed here are those Panther lists as repository owners whose accounts were removed by 23 November 2026, or that are single-repository accounts holding the lure; owners that look like unwitting forkers or real-name accounts are held back. The npm accounts and addresses are the publishers Panther lists for each package. The page's byline is 14 May 2026 and its metadata 2 November 2026; the tables were updated after the byline, since they list a repository whose owning account (solcanine, which still serves it under a new name) was created on 18 June 2026, so the citation carries the later date.",
+      "transcribed": "2026-11-23"
+    },
+    {
+      "researcher": "githubsecurity",
+      "label": "Jade Sleet social-engineering campaign: GitHub and npm accounts, packages, domains",
+      "campaign": [
+        "Lazarus Group"
+      ],
+      "posts": [
+        {
+          "url": "https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/",
+          "date": "2023-07-18"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/GalaxyStarTeam",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptowares",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptoinnowise",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/netgolden",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~charlestom2023",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~eflodzumibreathbn",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~galaxystardev",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~garik.khasmatulin.76",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~hydsapprokoennl",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~leimudkegoraie3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~leshakov-mikhail",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~linglidekili9g",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mashulya.bakhromkina",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mayvilkushiot",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~outmentsurehauw3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~paupadanberk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~pormokaiprevdz",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~podomarev.goga",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~teticseidiff51",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~toimanswotsuphous",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ufbejishisol",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "assets-graph",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "assets-table",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "audit-ejs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "audit-vue",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "binance-prices",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "coingecko-prices",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "btc-web3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cache-react",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cache-vue",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chart-tablejs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chart-vxe",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "couchcache-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ejs-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "elliptic-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "elliptic-parser",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "eth-api-node",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jpeg-metadata",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "other-web3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "price-fetch",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "price-record",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "snykaudit-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sync-http-api",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sync-https-api",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "tslib-react",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "tslib-util",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ttf-metadata",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vue-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vue-gws",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vuewjs",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmjscloud.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmrepos.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "cryptopriceoffer.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "tradingprice.net",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmjsregister.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "bi2price.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmaudit.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "coingeckoprice.com",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from GitHub's security alert of 18 July 2023, which assesses \"with high confidence that this campaign is associated with a group operating in support of North Korean objectives\", the group Microsoft tracks as Jade Sleet and CISA as TraderTraitor. GitHub lists these as the malicious GitHub accounts, malicious npm accounts and packages, and domains of a campaign that approached technology-company employees through fake personas and had them clone repositories depending on the packages. GitHub suspended the accounts; it does not say which of the four GitHub accounts were personas.",
+      "transcribed": "2026-11-23"
     }
   ],
   "unattributed_photos": [

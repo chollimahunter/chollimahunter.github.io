@@ -1,6 +1,6 @@
 {
   "_comment": "Liveness for the GitHub accounts that reach this site through the hand-transcribed dossier files. scripts/enrich-github-accounts.js only ever reads src/_data/iocs/scraped-iocs.json, so these had no status at all; scripts/lib/dossiers.js attaches this file to them at build time, exactly as it attaches linkedin-account-status.json to the LinkedIn accounts. It covers every dossier login, including those the scraper also holds, because src/_data/iocs/iocIndex.js lets the dossier group claim an id first — so for a shared login it is the dossier record that renders, and without an entry here it rendered with no status. `account_id` is GitHub's numeric id, read from the redirect github.com/<login>.png issues, and it is recorded because GitHub frees a deleted account's login for anyone to re-register: without it a recycled handle answers 200, reads as live, and this site would present whoever holds it now as the account a researcher named. A `recycled` entry carries the date the present account was created and the date the identifier was first published, so the page can state the gap, and never carries an avatar.",
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "accounts": [
     {
       "login": "098oiuyt",
@@ -119,6 +119,11 @@
       "login": "0xexp-po",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "0xfives",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "0xguardstate",
@@ -490,6 +495,11 @@
       "checked": "2026-09-02"
     },
     {
+      "login": "aidenwong812",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "aidev-jesse",
       "state": "removed",
       "checked": "2026-09-30"
@@ -548,6 +558,11 @@
       "checked": "2026-09-02"
     },
     {
+      "login": "alchemist0803",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "aleksandaralek",
       "state": "removed",
       "checked": "2026-09-30"
@@ -604,9 +619,19 @@
       "account_created": "2022-07-20"
     },
     {
+      "login": "alexlu0917",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "alexsim0219",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "algoinfratech",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "algopert",
@@ -628,6 +653,11 @@
       "account_id": 122667965,
       "avatar": "/assets/img/github/alltwinklestars.webp",
       "account_created": "2023-01-14"
+    },
+    {
+      "login": "alpaca-project",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "alpha007-dev",
@@ -707,6 +737,11 @@
       "login": "amil3955",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "amplify-protocol",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "anaconda797",
@@ -865,6 +900,14 @@
       "account_id": 90677735,
       "avatar": "/assets/img/github/anydev1103.webp",
       "account_created": "2021-09-14"
+    },
+    {
+      "login": "aoimizuno",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 219850672,
+      "account_created": "2025-07-08",
+      "avatar": "/assets/img/github/aoimizuno.webp"
     },
     {
       "login": "apollo-hero",
@@ -1073,6 +1116,14 @@
       "account_created": "2022-05-21"
     },
     {
+      "login": "audi057",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 81634285,
+      "account_created": "2021-03-30",
+      "avatar": "/assets/img/github/audi057.webp"
+    },
+    {
       "login": "autonomys-nexus",
       "state": "live",
       "checked": "2026-09-30",
@@ -1216,6 +1267,11 @@
       "account_created": "2025-07-16"
     },
     {
+      "login": "benja-dev-lab",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "benjamin-cup",
       "state": "removed",
       "checked": "2026-09-30"
@@ -1239,6 +1295,11 @@
       "account_id": 100110945,
       "avatar": "/assets/img/github/bernssolg.webp",
       "account_created": "2022-02-21"
+    },
+    {
+      "login": "best-lucky1030",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "bestdeveloper23",
@@ -1302,6 +1363,14 @@
       "account_created": "2023-10-13"
     },
     {
+      "login": "bigman-code",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 228675219,
+      "account_created": "2025-08-26",
+      "avatar": "/assets/img/github/bigman-code.webp"
+    },
+    {
       "login": "bigmoon202",
       "state": "live",
       "checked": "2026-09-30",
@@ -1362,6 +1431,14 @@
       "login": "bittech418",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "bl0ckchaindev",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 194867571,
+      "account_created": "2025-01-14",
+      "avatar": "/assets/img/github/bl0ckchaindev.webp"
     },
     {
       "login": "black02430horse",
@@ -1515,6 +1592,11 @@
       "account_id": 163466730,
       "avatar": "/assets/img/github/blux612.webp",
       "account_created": "2024-03-14"
+    },
+    {
+      "login": "bnb-alpha-community",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "bojanterzic529",
@@ -1747,6 +1829,11 @@
       "account_created": "2020-12-09"
     },
     {
+      "login": "cashblazorlab",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "ccristian88",
       "state": "removed",
       "checked": "2026-09-02"
@@ -1776,6 +1863,11 @@
       "account_id": 4596271,
       "avatar": "/assets/img/github/ch2888.webp",
       "account_created": "2013-06-03"
+    },
+    {
+      "login": "chain-ether-core",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "chain-leaddev",
@@ -1977,6 +2069,11 @@
       "state": "removed"
     },
     {
+      "login": "code852",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "codeblock140",
       "state": "removed",
       "checked": "2026-09-30"
@@ -2102,6 +2199,14 @@
       "account_created": "2023-04-19"
     },
     {
+      "login": "codepert",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 150120338,
+      "account_created": "2023-11-07",
+      "avatar": "/assets/img/github/codepert.webp"
+    },
+    {
       "login": "codeprom",
       "state": "live",
       "checked": "2026-09-30",
@@ -2124,6 +2229,14 @@
       "account_id": 128985647,
       "avatar": "/assets/img/github/codetechie-g.webp",
       "account_created": "2023-03-26"
+    },
+    {
+      "login": "codev612",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 178499505,
+      "account_created": "2024-08-15",
+      "avatar": "/assets/img/github/codev612.webp"
     },
     {
       "login": "codewizard928",
@@ -2169,6 +2282,14 @@
       "account_id": 162369804,
       "avatar": "/assets/img/github/coinyx.webp",
       "account_created": "2024-03-05"
+    },
+    {
+      "login": "colly00801",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 143971762,
+      "account_created": "2023-09-03",
+      "avatar": "/assets/img/github/colly00801.webp"
     },
     {
       "login": "comma0517",
@@ -2217,12 +2338,22 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "corettafinnougricspeaking368",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "cornel-pe",
       "state": "live",
       "checked": "2026-09-30",
       "account_id": 172536691,
       "avatar": "/assets/img/github/cornel-pe.webp",
       "account_created": "2024-06-12"
+    },
+    {
+      "login": "cossackdev777",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "covidhunter",
@@ -2338,6 +2469,14 @@
       "account_created": "2023-12-22"
     },
     {
+      "login": "crypto-elite-devs",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 179037380,
+      "account_created": "2024-08-21",
+      "avatar": "/assets/img/github/crypto-elite-devs.webp"
+    },
+    {
       "login": "cryptobyte3",
       "state": "live",
       "checked": "2026-09-30",
@@ -2346,9 +2485,25 @@
       "account_created": "2022-04-01"
     },
     {
+      "login": "cryptocooker01",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 111099795,
+      "account_created": "2022-08-12",
+      "avatar": "/assets/img/github/cryptocooker01.webp"
+    },
+    {
       "login": "cryptocore1001",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "cryptodev0124",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 169712562,
+      "account_created": "2024-05-13",
+      "avatar": "/assets/img/github/cryptodev0124.webp"
     },
     {
       "login": "cryptodev710",
@@ -2367,6 +2522,11 @@
       "account_id": 150643631,
       "avatar": "/assets/img/github/cryptogru725.webp",
       "account_created": "2023-11-13"
+    },
+    {
+      "login": "cryptoinnowise",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "cryptokstar",
@@ -2395,6 +2555,11 @@
       "login": "cryptomsol",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "cryptonerva",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "cryptosmiler",
@@ -2433,6 +2598,11 @@
       "account_id": 160248367,
       "avatar": "/assets/img/github/cryptoveteran105.webp",
       "account_created": "2024-02-16"
+    },
+    {
+      "login": "cryptowares",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "ct2187",
@@ -2646,6 +2816,14 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "danyilchukhrai",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 46705787,
+      "account_created": "2019-01-15",
+      "avatar": "/assets/img/github/danyilchukhrai.webp"
+    },
+    {
       "login": "dappboris-dev",
       "state": "removed",
       "checked": "2026-09-30"
@@ -2680,6 +2858,11 @@
       "account_created": "2024-04-11"
     },
     {
+      "login": "darkhorse0512",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "darkhorse07232020",
       "state": "live",
       "checked": "2026-09-30",
@@ -2694,6 +2877,14 @@
       "account_id": 119463399,
       "avatar": "/assets/img/github/darkhorse0725.webp",
       "account_created": "2022-11-30"
+    },
+    {
+      "login": "darkhorse7stars",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 92065535,
+      "account_created": "2021-10-07",
+      "avatar": "/assets/img/github/darkhorse7stars.webp"
     },
     {
       "login": "darkmandev103",
@@ -2850,6 +3041,11 @@
       "account_created": "2022-12-21"
     },
     {
+      "login": "devbeast3800",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "devconductor125",
       "state": "live",
       "checked": "2026-09-30",
@@ -2928,6 +3124,11 @@
       "account_created": "2024-02-26"
     },
     {
+      "login": "devking877",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "devlancer0328",
       "state": "live",
       "checked": "2026-09-30",
@@ -2961,6 +3162,14 @@
       "login": "devphoenix0409",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "devpulse-star",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 275359874,
+      "account_created": "2026-04-11",
+      "avatar": "/assets/img/github/devpulse-star.webp"
     },
     {
       "login": "devr097",
@@ -3079,6 +3288,11 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "djosk23",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "dl249995",
       "state": "live",
       "checked": "2026-09-30",
@@ -3140,6 +3354,11 @@
       "account_id": 57111814,
       "avatar": "/assets/img/github/donehello.webp",
       "account_created": "2019-10-28"
+    },
+    {
+      "login": "dougthethugg",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "dr-glassespig",
@@ -3351,6 +3570,19 @@
       "account_created": "2022-11-14"
     },
     {
+      "login": "ehang0404",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "ejayong",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 224782180,
+      "account_created": "2025-08-05",
+      "avatar": "/assets/img/github/ejayong.webp"
+    },
+    {
       "login": "elbaable",
       "state": "live",
       "checked": "2026-09-30",
@@ -3432,6 +3664,11 @@
       "login": "emmanuel-bot-rgb",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "emmarktech",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "engineer10223",
@@ -3775,6 +4012,14 @@
       "account_created": "2024-08-06"
     },
     {
+      "login": "fitlureonline",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 283297564,
+      "account_created": "2026-05-10",
+      "avatar": "/assets/img/github/fitlureonline.webp"
+    },
+    {
       "login": "flutter-genius",
       "state": "live",
       "checked": "2026-09-30",
@@ -3886,6 +4131,14 @@
       "account_created": "2023-10-03"
     },
     {
+      "login": "fulldev114",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 36738095,
+      "account_created": "2018-02-22",
+      "avatar": "/assets/img/github/fulldev114.webp"
+    },
+    {
       "login": "fullstackdev0701",
       "state": "live",
       "checked": "2026-09-30",
@@ -3931,9 +4184,19 @@
       "account_created": "2024-02-15"
     },
     {
+      "login": "g3-dev-agency",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "gabrielyiu",
       "state": "removed",
       "checked": "2026-08-30"
+    },
+    {
+      "login": "galaxystarteam",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "galinayavodchak-web",
@@ -4003,6 +4266,16 @@
       "account_id": 138994346,
       "avatar": "/assets/img/github/ghleoperez.webp",
       "account_created": "2023-07-08"
+    },
+    {
+      "login": "gigi0500",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "gisel69",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "git25126",
@@ -4080,6 +4353,14 @@
       "account_id": 73145400,
       "avatar": "/assets/img/github/goddev99.webp",
       "account_created": "2020-10-19"
+    },
+    {
+      "login": "gold-coding",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 190497716,
+      "account_created": "2024-12-03",
+      "avatar": "/assets/img/github/gold-coding.webp"
     },
     {
       "login": "goldants",
@@ -4317,6 +4598,11 @@
       "checked": "2026-09-02"
     },
     {
+      "login": "h0lme3",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "h918m",
       "state": "live",
       "checked": "2026-09-30",
@@ -4407,6 +4693,14 @@
       "login": "hasanguray",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "hashsoft7",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 87887034,
+      "account_created": "2021-07-24",
+      "avatar": "/assets/img/github/hashsoft7.webp"
     },
     {
       "login": "hc0503",
@@ -4522,6 +4816,14 @@
       "account_created": "2018-06-14"
     },
     {
+      "login": "hodler-smart",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 67410422,
+      "account_created": "2020-06-25",
+      "avatar": "/assets/img/github/hodler-smart.webp"
+    },
+    {
       "login": "hodlwarden",
       "state": "removed",
       "checked": "2026-09-02"
@@ -4558,6 +4860,11 @@
       "account_id": 126373867,
       "avatar": "/assets/img/github/holyblock.webp",
       "account_created": "2023-02-26"
+    },
+    {
+      "login": "honestdev125",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "honey-creator-git",
@@ -4753,6 +5060,14 @@
       "account_created": "2019-09-01"
     },
     {
+      "login": "incredible0418",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 141919291,
+      "account_created": "2023-08-10",
+      "avatar": "/assets/img/github/incredible0418.webp"
+    },
+    {
       "login": "incredible17",
       "state": "removed",
       "checked": "2026-09-30"
@@ -4764,6 +5079,11 @@
       "account_id": 97311663,
       "avatar": "/assets/img/github/infiniteaengus.webp",
       "account_created": "2022-01-07"
+    },
+    {
+      "login": "infranova-labs",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "innovation-inc808",
@@ -4858,6 +5178,11 @@
       "login": "jackhill2765-gif",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "jackhuang166",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "jacksonmori",
@@ -5111,6 +5436,11 @@
       "account_created": "2024-06-14"
     },
     {
+      "login": "jotalksdxb",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "joun-099910",
       "state": "removed",
       "checked": "2026-09-02"
@@ -5131,6 +5461,14 @@
       "checked": "2026-09-02",
       "account_id": 60581848,
       "account_created": "2020-02-02"
+    },
+    {
+      "login": "junhaot51",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 51195001,
+      "account_created": "2019-05-30",
+      "avatar": "/assets/img/github/junhaot51.webp"
     },
     {
       "login": "jupiter0913",
@@ -5474,6 +5812,11 @@
       "account_created": "2022-12-03"
     },
     {
+      "login": "kirbyattack",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "kjohn888",
       "state": "live",
       "checked": "2026-09-02",
@@ -5535,6 +5878,19 @@
       "account_created": "2015-12-21"
     },
     {
+      "login": "krypto-hashers-community",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "kryptodev0777",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 73242220,
+      "account_created": "2020-10-21",
+      "avatar": "/assets/img/github/kryptodev0777.webp"
+    },
+    {
       "login": "kstar0102",
       "state": "live",
       "checked": "2026-09-02",
@@ -5553,6 +5909,11 @@
       "login": "kylemo19",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "kyyook",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "lamsiuming",
@@ -5632,6 +5993,11 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "legit-script-group",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "leograntbz-byte",
       "state": "removed",
       "checked": "2026-09-30"
@@ -5658,6 +6024,14 @@
       "login": "levinelarry",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "levintech",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 88108931,
+      "account_created": "2021-07-28",
+      "avatar": "/assets/img/github/levintech.webp"
     },
     {
       "login": "lewisbarajas95",
@@ -5745,6 +6119,11 @@
       "account_created": "2022-05-13"
     },
     {
+      "login": "lorine93s",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "lovefeynman",
       "state": "live",
       "checked": "2026-09-30",
@@ -5830,6 +6209,14 @@
       "account_id": 145666325,
       "avatar": "/assets/img/github/lucky0612.webp",
       "account_created": "2023-09-21"
+    },
+    {
+      "login": "lucky5star",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 229782523,
+      "account_created": "2025-09-01",
+      "avatar": "/assets/img/github/lucky5star.webp"
     },
     {
       "login": "lucky9596",
@@ -5972,6 +6359,11 @@
       "account_created": "2024-10-11"
     },
     {
+      "login": "machenxi",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "madspace1112",
       "state": "live",
       "checked": "2026-09-30",
@@ -6012,6 +6404,14 @@
       "account_id": 56201324,
       "avatar": "/assets/img/github/mahmodghnaj.webp",
       "account_created": "2019-10-05"
+    },
+    {
+      "login": "make-green-world",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 102867163,
+      "account_created": "2022-04-02",
+      "avatar": "/assets/img/github/make-green-world.webp"
     },
     {
       "login": "malsaid1987",
@@ -6144,6 +6544,14 @@
       "account_created": "2024-10-22"
     },
     {
+      "login": "matias123p",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 180882398,
+      "account_created": "2024-09-08",
+      "avatar": "/assets/img/github/matias123p.webp"
+    },
+    {
       "login": "matthewr1103",
       "state": "live",
       "checked": "2026-09-30",
@@ -6202,6 +6610,11 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "mclaeo",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "megadev007",
       "state": "removed",
       "checked": "2026-09-30"
@@ -6239,6 +6652,14 @@
       "account_id": 136709372,
       "avatar": "/assets/img/github/messi0416.webp",
       "account_created": "2023-06-15"
+    },
+    {
+      "login": "mfm-builder-001",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 4359549,
+      "account_created": "2013-05-07",
+      "avatar": "/assets/img/github/mfm-builder-001.webp"
     },
     {
       "login": "michaelreth",
@@ -6312,6 +6733,19 @@
       "account_id": 212546487,
       "avatar": "/assets/img/github/millos0308.webp",
       "account_created": "2025-05-20"
+    },
+    {
+      "login": "milosjdev",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "mind-mum",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 223116726,
+      "account_created": "2025-07-27",
+      "avatar": "/assets/img/github/mind-mum.webp"
     },
     {
       "login": "minh-qorexalabs",
@@ -6390,12 +6824,28 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "monster-dev5",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 228987097,
+      "account_created": "2025-08-27",
+      "avatar": "/assets/img/github/monster-dev5.webp"
+    },
+    {
       "login": "monster223223",
       "state": "live",
       "checked": "2026-09-30",
       "account_id": 126131584,
       "avatar": "/assets/img/github/monster223223.webp",
       "account_created": "2023-02-23"
+    },
+    {
+      "login": "monsterai1",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 214169362,
+      "account_created": "2025-05-30",
+      "avatar": "/assets/img/github/monsterai1.webp"
     },
     {
       "login": "mooney0129",
@@ -6450,6 +6900,11 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "mtfuji25",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "multikitty",
       "state": "live",
       "checked": "2026-09-30",
@@ -6500,6 +6955,14 @@
       "account_created": "2023-01-04"
     },
     {
+      "login": "nadiya-pl",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 232031695,
+      "account_created": "2025-09-13",
+      "avatar": "/assets/img/github/nadiya-pl.webp"
+    },
+    {
       "login": "nancy535",
       "state": "live",
       "checked": "2026-09-30",
@@ -6524,6 +6987,11 @@
       "login": "neonnexus0408",
       "state": "removed",
       "checked": "2026-09-02"
+    },
+    {
+      "login": "netgolden",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "neverm25",
@@ -6561,6 +7029,14 @@
       "checked": "2026-09-30",
       "account_id": 321269815,
       "avatar": "/assets/img/github/ngjuj88-design.webp"
+    },
+    {
+      "login": "nicejudy",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 102686798,
+      "account_created": "2022-03-30",
+      "avatar": "/assets/img/github/nicejudy.webp"
     },
     {
       "login": "niceworkerok",
@@ -6662,6 +7138,14 @@
       "account_id": 159231933,
       "avatar": "/assets/img/github/nulidev.webp",
       "account_created": "2024-02-07"
+    },
+    {
+      "login": "nullbranches",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 166689894,
+      "account_created": "2024-04-11",
+      "avatar": "/assets/img/github/nullbranches.webp"
     },
     {
       "login": "nurlanmen502",
@@ -6819,11 +7303,27 @@
       "account_created": "2021-03-11"
     },
     {
+      "login": "oxtechdare",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 214167553,
+      "account_created": "2025-05-30",
+      "avatar": "/assets/img/github/oxtechdare.webp"
+    },
+    {
       "login": "oxyaorigin-hub2000",
       "state": "live",
       "checked": "2026-09-30",
       "account_id": 333681969,
       "avatar": "/assets/img/github/oxyaorigin-hub2000.webp"
+    },
+    {
+      "login": "oxylok",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 191692105,
+      "account_created": "2024-12-14",
+      "avatar": "/assets/img/github/oxylok.webp"
     },
     {
       "login": "oyase-shinob",
@@ -7014,6 +7514,11 @@
       "avatar": "/assets/img/github/plwrd.webp"
     },
     {
+      "login": "podev-rahulrajasekhar",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "pohs131",
       "state": "live",
       "checked": "2026-09-30",
@@ -7033,6 +7538,11 @@
       "login": "polartar",
       "state": "removed",
       "checked": "2026-08-30"
+    },
+    {
+      "login": "polkadot-org",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "pongzu313",
@@ -7094,6 +7604,19 @@
       "account_id": 310493611,
       "avatar": "/assets/img/github/portablehub04.webp",
       "account_created": "2026-07-29"
+    },
+    {
+      "login": "predictional-infra",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "predragwebdev",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 125158731,
+      "account_created": "2023-02-11",
+      "avatar": "/assets/img/github/predragwebdev.webp"
     },
     {
       "login": "prfsnape",
@@ -7258,6 +7781,14 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "ramil-huertas",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 64638045,
+      "account_created": "2020-05-01",
+      "avatar": "/assets/img/github/ramil-huertas.webp"
+    },
+    {
       "login": "ramirezhector9299",
       "state": "removed",
       "checked": "2026-09-30"
@@ -7345,6 +7876,14 @@
       "account_id": 230136085,
       "avatar": "/assets/img/github/reichenausteve-cloud.webp",
       "account_created": "2025-09-03"
+    },
+    {
+      "login": "relforce",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 146366991,
+      "account_created": "2023-09-28",
+      "avatar": "/assets/img/github/relforce.webp"
     },
     {
       "login": "ren-418",
@@ -7533,6 +8072,14 @@
       "account_created": "2022-10-25"
     },
     {
+      "login": "romanobichi",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 214169022,
+      "account_created": "2025-05-30",
+      "avatar": "/assets/img/github/romanobichi.webp"
+    },
+    {
       "login": "romansiuma",
       "state": "live",
       "checked": "2026-11-18",
@@ -7613,6 +8160,11 @@
       "account_id": 187411359,
       "avatar": "/assets/img/github/ruijindev0801.webp",
       "account_created": "2024-11-05"
+    },
+    {
+      "login": "runtime-trade-systems",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "rustblockchainengineer",
@@ -7748,6 +8300,14 @@
       "account_created": "2022-01-08"
     },
     {
+      "login": "satyasumn7",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 267608295,
+      "account_created": "2026-03-12",
+      "avatar": "/assets/img/github/satyasumn7.webp"
+    },
+    {
       "login": "scar813710",
       "state": "removed",
       "checked": "2026-09-30"
@@ -7767,6 +8327,11 @@
       "account_id": 204186446,
       "avatar": "/assets/img/github/scoderacker.webp",
       "account_created": "2025-03-20"
+    },
+    {
+      "login": "scouterinfinite",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "sea872",
@@ -7890,6 +8455,14 @@
       "account_created": "2018-03-21"
     },
     {
+      "login": "sharkxhunter",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 126171640,
+      "account_created": "2023-02-23",
+      "avatar": "/assets/img/github/sharkxhunter.webp"
+    },
+    {
       "login": "sharpspear",
       "state": "removed",
       "checked": "2026-09-30"
@@ -8002,6 +8575,14 @@
       "checked": "2026-11-22",
       "account_id": 157318675,
       "account_created": "2024-01-21"
+    },
+    {
+      "login": "slobodan0702",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 95300035,
+      "account_created": "2021-11-30",
+      "avatar": "/assets/img/github/slobodan0702.webp"
     },
     {
       "login": "smart-coder997",
@@ -8150,6 +8731,11 @@
       "account_created": "2022-05-02"
     },
     {
+      "login": "smiles00714",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "sminio",
       "state": "live",
       "checked": "2026-09-30",
@@ -8183,9 +8769,25 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "snowstorm08",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 158440611,
+      "account_created": "2024-02-01",
+      "avatar": "/assets/img/github/snowstorm08.webp"
+    },
+    {
       "login": "socool728",
       "state": "removed",
       "checked": "2026-09-30"
+    },
+    {
+      "login": "softdev0125-hub",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 235261211,
+      "account_created": "2025-09-30",
+      "avatar": "/assets/img/github/softdev0125-hub.webp"
     },
     {
       "login": "softdevveteran",
@@ -8222,6 +8824,14 @@
       "account_created": "2023-11-18"
     },
     {
+      "login": "solcanine",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 294837911,
+      "account_created": "2026-06-18",
+      "avatar": "/assets/img/github/solcanine.webp"
+    },
+    {
       "login": "solidmaster568",
       "state": "live",
       "checked": "2026-09-30",
@@ -8244,6 +8854,14 @@
       "account_id": 170902643,
       "avatar": "/assets/img/github/solutionguru0129.jpg",
       "account_created": "2024-05-27"
+    },
+    {
+      "login": "solyasa",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 97841807,
+      "account_created": "2022-01-16",
+      "avatar": "/assets/img/github/solyasa.webp"
     },
     {
       "login": "sparkdev0917",
@@ -8372,6 +8990,14 @@
       "checked": "2026-09-02",
       "account_id": 29581627,
       "account_created": "2017-06-20"
+    },
+    {
+      "login": "starman1121",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 95298844,
+      "account_created": "2021-11-30",
+      "avatar": "/assets/img/github/starman1121.webp"
     },
     {
       "login": "starmastar1126",
@@ -8736,12 +9362,22 @@
       "account_created": "2017-02-22"
     },
     {
+      "login": "sxai-lab",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "sylvester05",
       "state": "live",
       "checked": "2026-09-30",
       "account_id": 109437175,
       "avatar": "/assets/img/github/sylvester05.webp",
       "account_created": "2022-07-16"
+    },
+    {
+      "login": "symotix",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "t-105",
@@ -8816,6 +9452,14 @@
       "account_created": "2023-04-30"
     },
     {
+      "login": "taomind007",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 151855768,
+      "account_created": "2023-11-23",
+      "avatar": "/assets/img/github/taomind007.webp"
+    },
+    {
       "login": "taprwhiz",
       "state": "removed",
       "checked": "2026-09-30"
@@ -8842,6 +9486,14 @@
       "account_id": 321268457,
       "avatar": "/assets/img/github/tarsai-pro.webp",
       "account_created": "2026-08-26"
+    },
+    {
+      "login": "tatsuya0825",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 232522739,
+      "account_created": "2025-09-16",
+      "avatar": "/assets/img/github/tatsuya0825.webp"
     },
     {
       "login": "tech-master823",
@@ -9038,6 +9690,11 @@
       "account_created": "2021-04-01"
     },
     {
+      "login": "toma-work125",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "tomlove223",
       "state": "removed",
       "checked": "2026-09-30"
@@ -9097,6 +9754,14 @@
       "account_created": "2022-11-05"
     },
     {
+      "login": "top0329",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 7569992,
+      "account_created": "2014-05-13",
+      "avatar": "/assets/img/github/top0329.webp"
+    },
+    {
       "login": "toparc077",
       "state": "live",
       "checked": "2026-08-30",
@@ -9128,6 +9793,11 @@
       "account_id": 137994720,
       "avatar": "/assets/img/github/topdeveloper0322.webp",
       "account_created": "2023-06-28"
+    },
+    {
+      "login": "topdeveloper55",
+      "state": "removed",
+      "checked": "2026-11-23"
     },
     {
       "login": "topdevhere623",
@@ -9270,6 +9940,21 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "tq-trade",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "tradebothub",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
+      "login": "tranguixdev",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "trendspider001",
       "state": "live",
       "checked": "2026-09-30",
@@ -9318,6 +10003,14 @@
       "login": "trust0212-fantohm",
       "state": "removed",
       "checked": "2026-09-02"
+    },
+    {
+      "login": "trustalgo",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 236707503,
+      "account_created": "2025-10-07",
+      "avatar": "/assets/img/github/trustalgo.webp"
     },
     {
       "login": "trustmeforever",
@@ -9441,6 +10134,11 @@
       "account_created": "2023-01-27"
     },
     {
+      "login": "valentioo",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "vantascript",
       "state": "live",
       "checked": "2026-09-30",
@@ -9487,6 +10185,14 @@
       "account_id": 41372580,
       "avatar": "/assets/img/github/venus0906.webp",
       "account_created": "2018-07-18"
+    },
+    {
+      "login": "venuswhispers",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 153607879,
+      "account_created": "2023-12-12",
+      "avatar": "/assets/img/github/venuswhispers.webp"
     },
     {
       "login": "verytinydever",
@@ -9888,6 +10594,22 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "workplace-1216",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 235181101,
+      "account_created": "2025-09-29",
+      "avatar": "/assets/img/github/workplace-1216.webp"
+    },
+    {
+      "login": "workplace1004",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 212233848,
+      "account_created": "2025-05-18",
+      "avatar": "/assets/img/github/workplace1004.webp"
+    },
+    {
       "login": "workwithhim",
       "state": "live",
       "checked": "2026-09-30",
@@ -9953,6 +10675,11 @@
       "checked": "2026-09-30"
     },
     {
+      "login": "xhyhappy",
+      "state": "removed",
+      "checked": "2026-11-23"
+    },
+    {
       "login": "xiaoxinlou",
       "state": "live",
       "checked": "2026-09-30",
@@ -10005,6 +10732,14 @@
       "account_id": 126276351,
       "avatar": "/assets/img/github/yirideveloper.webp",
       "account_created": "2023-02-24"
+    },
+    {
+      "login": "yoanrada",
+      "state": "live",
+      "checked": "2026-11-23",
+      "account_id": 112542724,
+      "account_created": "2022-08-31",
+      "avatar": "/assets/img/github/yoanrada.webp"
     },
     {
       "login": "yong-yi-wong",
@@ -10123,6 +10858,11 @@
       "login": "zhmoly",
       "state": "removed",
       "checked": "2026-08-30"
+    },
+    {
+      "login": "zkosai",
+      "state": "removed",
+      "checked": "2026-11-23"
     }
   ]
 }
