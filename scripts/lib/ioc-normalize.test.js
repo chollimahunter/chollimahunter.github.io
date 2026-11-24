@@ -17,6 +17,7 @@ const {
   normalizeEmail,
   normalizePhone,
   NPM_TABLE_ROW_PATTERN,
+  normalizeNpmPackage,
   isHostileTableRow,
   PHONE_PATTERN,
   looksLikePhoneContext,
@@ -336,6 +337,13 @@ test("a table row typed npm package and called malicious is taken", () => {
 
 test("a scoped package in a typed row is taken whole", () => {
   assert.deepEqual(npmRows("\n@scope/evil-pkg npm package malware N/A N/A Malicious dependency \n"), ["@scope/evil-pkg"]);
+});
+
+test("a label word opening the row is not a package name", () => {
+  for (const word of ["Related", "The", "Additional", "Compromised"]) {
+    assert.strictEqual(normalizeNpmPackage(word), null, word);
+  }
+  assert.strictEqual(normalizeNpmPackage("js-logger-pack"), "js-logger-pack");
 });
 
 test("a legitimate dependency named in prose is never taken", () => {
