@@ -112,6 +112,8 @@ const {
 } = require("./lib/ioc-normalize.js");
 
 const { pdfToText } = require("./lib/pdf-text.js");
+const { readHeaderTables, normalizePypiPackage } = require("./lib/header-tables.js");
+const { resolveStreamedHtml } = require("./lib/streamed-html.js");
 const { writeFileAtomic } = require("./lib/write-atomic.js");
 const { seal } = require("./lib/private-data.js");
 const { decodeEntities, stripCfEmailPlaceholder } = require("./lib/html-entities.js");
@@ -267,6 +269,9 @@ function cutAtContinuation(html) {
  * produced "context" that was just a run of adjacent URLs.
  */
 function parseHtml(html) {
+  // A React-streamed page is put back in document order first; see
+  // streamed-html.js.
+  html = resolveStreamedHtml(html);
   // Cloudflare-obfuscated addresses are decoded in place so they read as
   // ordinary text to the extractor below, with their surrounding prose intact.
   const deobfuscated = html.replace(
@@ -311,6 +316,8 @@ function parseHtml(html) {
   // Compromise") says where in the report it was found — which is the thing a
   // reader actually wants when there is no prose.
   const headings = [];
+  // Cells of indicator tables typed by their header row; see header-tables.js.
+  const tables = [];
   let text = "";
   for (const segment of stripped.split(/(<h[1-6][^>]*>[\s\S]*?<\/h[1-6]>)/i)) {
     if (/^<h[1-6]/i.test(segment)) {
@@ -329,6 +336,7 @@ function parseHtml(html) {
       }
       continue;
     }
+    if (/<table\b/i.test(segment)) tables.push(...readHeaderTables(segment, headings.map((h) => h.label), toText));
     text += toText(segment);
   }
 
@@ -364,7 +372,7 @@ function parseHtml(html) {
 
   const published = extractPublishedDate(deobfuscated) || dateFromLeadingText(text);
 
-  return { title, text, headings, published };
+  return { title, text, headings, published, tables };
 }
 
 /** The nearest heading at or before a position in the extracted text. */
@@ -863,6 +871,12 @@ function referenceListStart(prose) {
   return at;
 }
 
+const TABLE_CELL_TYPES = {
+  npm_package: { ioc_type: "npm_package", normalize: normalizeNpmPackage, display: () => null },
+  pypi_package: { ioc_type: "pypi_package", normalize: normalizePypiPackage, display: () => null },
+  file_hash: { ioc_type: "file_hash", normalize: normalizeFileHash, display: () => null },
+};
+
 function extractFrom(prose, headings, opts) {
   const found = new Map();
   const referencesAt = referenceListStart(prose);
@@ -932,6 +946,15 @@ function extractFrom(prose, headings, opts) {
         record(extractor, raw, context, "text", section, typeOverride);
       }
     }
+  }
+
+  // Cells of indicator tables typed by their header row (header-tables.js),
+  // which parseHtml reads from the HTML before it is flattened. Recorded as
+  // list sightings; a prose quote of the same value elsewhere still wins.
+  for (const cell of opts.tables || []) {
+    if (isChromeSection(cell.section) || isVictimSection(cell.section)) continue;
+    const typed = TABLE_CELL_TYPES[cell.ioc_type];
+    if (typed) record(typed, cell.value, cell.context, "list", cell.section);
   }
 
   // A value the page calls a contract in one place and says nothing about in
@@ -1204,6 +1227,7 @@ function scrapeSource(source, parsed, opts) {
   }
 
   const extracted = extractFrom(prose, headings, {
+    tables: parsed.tables,
     excludedHosts: opts.excludedHosts,
     excludedAccounts: opts.excludedAccounts,
     // An exempted source is a curated indicator list with no prose, so a
