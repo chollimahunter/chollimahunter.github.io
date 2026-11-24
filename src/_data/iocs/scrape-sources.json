@@ -15280,6 +15280,20 @@
       "campaign": [
         "DPRK (cluster unattributed)"
       ]
+    },
+    {
+      "url": "https://panther.com/blog/mapping-the-contagious-trader-delivery-network",
+      "publisher": "Panther",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/",
+      "publisher": "GitHub",
+      "campaign": [
+        "Lazarus Group"
+      ]
     }
   ],
   "not_scraped": [

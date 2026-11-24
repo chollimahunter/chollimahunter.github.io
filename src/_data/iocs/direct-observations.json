@@ -23603,6 +23603,34 @@
         }
       ],
       "note": "Found between 21 and 22 November 2026 by searching GitHub's commit index for every address this index carries from an attributing source (scripts/gh-email-owners.js), the same pivot as the entries of 24 September 2026. GitHub credits a commit to the account that has the signing address registered and verified, which only the holder of the mailbox can do, so each account below is controlled by the holder of an address a named source attributed. Each is cited to one of those commits. Counts are of the commits GitHub's search returns, up to 100.\n\ngithub.com/ramil-huertas (account id 64638045) is credited with chidev0104@gmail.com (published by this site's own earlier research; 100 commits, 14 February 2022 to 23 September 2025) and chidotechdev@gmail.com (published by The Raven File; 15 commits, 13 September 2021 to 25 March 2022); github.com/fulldev114 (account id 36738095) is credited with fulldev114@outlook.com (published by Chollima Group and tayvano; 19 commits, 22 February 2018 to 23 September 2020); github.com/danyilchukhrai (account id 46705787) is credited with codingninjaprox@gmail.com (published by browsercookies (for the persona ares-dev05); 34 commits, 5 October 2024 to 13 November 2026); github.com/colly00801 (account id 143971762) is credited with dreampioneer9999@gmail.com (published by Kawaii Jong UwUn (for Wang Yu Long); 100 commits, 19 July 2023 to 20 March 2026); github.com/nullbranches (account id 166689894) is credited with darkhorse03111@gmail.com (published by The Raven File; 100 commits, 5 July 2021 to 13 November 2026); github.com/cryptocooker01 (account id 111099795) is credited with cryptocooker301@gmail.com (published by Kawaii Jong UwUn's HyperBuildX research; 1 commit, 15 November 2023 to 15 November 2023); github.com/YoanRada (account id 112542724) is credited with akijohansson116@gmail.com (published by Flare; 97 commits, 29 January 2023 to 9 September 2026); github.com/ejayong (account id 224782180) is credited with ejayong@proton.me (published by AhnLab; 12 commits, 13 December 2025 to 17 December 2025); github.com/fitlureonline (account id 283297564) is credited with freelancer1235khan@gmail.com (published by Red Asgard; 100 commits, 10 May 2026 to 12 May 2026); baymaxspo, which no longer resolves by name, (account id 207997549) is credited with billmark0093@gmail.com (published by Kieran Miyamoto (kmsec); 100 commits, 10 November 2022 to 7 November 2025); GoInf613, which no longer resolves by name, (account id 183838703) is credited with daveescott0509@gmail.com (published by this site's own earlier research (Wagemole article persona); 67 commits, 9 August 2023 to 10 September 2024); Jake3450, which no longer resolves by name, (account id 216346254) is credited with jackjhon1997917@gmail.com (published by Abstract Security; 2 commits, 8 July 2026 to 9 July 2026); noproblem23, which no longer resolves by name, (account id 127774878) is credited with hundredup2023@gmail.com (published by SentinelOne, Silent Push and Recorded Future; 13 commits, 20 December 2023 to 22 December 2023).\n\nThe accounts that no longer resolve are recorded as usernames rather than profile links, because an abandoned handle can be registered by anyone; GitHub still credits them with the commits, which is how a suspended account appears.\n\nLeft out on purpose: accounts that hold an address carried only in a bulk list that its publisher calls unconfirmed, long-established accounts with a real name or a named employer, holders of generic addresses, and holders of the addresses in GitLab's report, several of which belong to established developers. Those are held for review as possible errors in the sources rather than filed. No attribution is added beyond the address's own source."
+    },
+    {
+      "label": "bestsilvertiger renamed gigi0500",
+      "researcher": "chollimahunter",
+      "transcribed": "2026-11-23",
+      "campaign": [
+        "IT Worker Fraud",
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://github.com/Miracle-Mun/HG_Report/commit/a030b9b48530af2134bdc520ead7358600725f2f",
+          "date": "2026-11-23"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/bestsilvertiger",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gigi0500",
+          "post": 0
+        }
+      ],
+      "note": "Two GitHub records this index already holds are one account. bestsilvertiger is filed from the lazarus.group registry (persona Pete Yama) and gigi0500 from Panther Labs' Contagious Trader report, which says the account ran six PumpFun-themed delivery repositories under a stolen developer's name, location and profile photograph. The commit cited, of 27 August 2020, is authored as BestSilverTiger from the address 69390291+bestsilvertiger@users.noreply.github.com, and GitHub attributes it to gigi0500. GitHub mints that address from an account's immutable numeric id, so the old handle with gigi0500's id (69390291) shows the two are one account, as a matter of how the address is constructed. Found on 22 November 2026 by searching commits for the removed handle as author name (scripts/gh-renames.js), and held until a second source attributed the account; Panther's report is that source. Neither handle resolves today."
     }
   ]
 }
