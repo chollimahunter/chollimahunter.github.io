@@ -49,7 +49,7 @@ async function getJson(url) {
   return { status: 0, body: null };
 }
 
-const enc = (name) => name.replace("/", "%2f");
+const enc = (name) => name.replace(/\//g, "%2f");
 
 /** Indexed npm packages (bare names) and npm publisher handles, and everything indexed for comparison. */
 function fromIndex() {

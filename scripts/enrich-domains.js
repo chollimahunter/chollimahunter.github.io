@@ -228,4 +228,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { registrableDomain, parseRecord };
+module.exports = { registrableDomain, parseRecord, loadSuffixes, hostOf };
