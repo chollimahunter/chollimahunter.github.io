@@ -82,7 +82,19 @@
     "nickel hyatt",
     "copernicium",
     "reconnaissance general bureau",
-    "lazarus"
+    "lazarus",
+    "clearfake",
+    "clearshort",
+    "unc5142",
+    "etherrat",
+    "zigcryptostealer",
+    "phantompolia",
+    "hexmage",
+    "tsundere botnet",
+    "bnb smart chain",
+    "bsc testnet",
+    "smart contract c2",
+    "blockchain c2"
   ],
   "sources": [
     {
@@ -15279,6 +15291,48 @@
       "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
       "campaign": [
         "DPRK (cluster unattributed)"
+      ]
+    },
+    {
+      "url": "https://panther.com/blog/mapping-the-contagious-trader-delivery-network",
+      "publisher": "Panther",
+      "campaign": [
+        "Contagious Interview"
+      ]
+    },
+    {
+      "url": "https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/",
+      "publisher": "GitHub",
+      "campaign": [
+        "Lazarus Group"
+      ]
+    },
+    {
+      "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+      "publisher": "Trend Micro",
+      "campaign": [
+        "EtherHiding"
+      ]
+    },
+    {
+      "url": "https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html",
+      "publisher": "Randy McEoin",
+      "campaign": [
+        "EtherHiding"
+      ]
+    },
+    {
+      "url": "https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/",
+      "publisher": "Cyber Security News",
+      "campaign": [
+        "EtherHiding"
+      ]
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+      "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+      "campaign": [
+        "EtherHiding"
       ]
     }
   ],

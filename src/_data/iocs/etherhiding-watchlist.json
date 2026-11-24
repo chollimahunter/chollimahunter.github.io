@@ -17966,5 +17966,461 @@
         "type": "threat_intel_report"
       }
     ]
+  },
+  {
+    "id": "clearfake-bsctestnet-router-a1decfb7",
+    "ioc_type": "smart_contract_address",
+    "value": "0xa1decfb75c8c0ca28c10517ce56b710baf727d2e",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "ClearFake's first-stage contract on BNB Smart Chain testnet (\"Smart Contract A\" in Trend Micro's report, the \"main / router\" contract in Randy McEoin's). The script injected into compromised sites reads it with eth_call to get() and receives base64 JavaScript for an anti-analysis dispatcher, which routes the visitor to the Windows or macOS payload contract. Trend Micro gives a deployment date of 26 May 2025 and reports all four ClearFake contracts deployed by one wallet. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain testnet.",
+    "malware_family": "ClearFake",
+    "confidence_level": "medium",
+    "attribution_doubt": "Trend Micro and Randy McEoin describe ClearFake, a long-running fake-browser-update and ClickFix operation, and name no actor; Trend Micro mentions North Korea only to note that a DPRK cluster adopted the same technique. No published source ties these contracts to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+        "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+        "publisher": "Trend Micro",
+        "date": "2026-05-26",
+        "type": "threat_intel_report",
+        "quote": "0xA1decFB75C8C0CA28C10517ce56B710baf727d2e was found in the Stage 1 JavaScript injected into the compromised website. It holds base64-encoded JavaScript for an anti-analysis dispatcher. This blog refers to it as Smart Contract A ."
+      },
+      {
+        "title": "ClearFake 2026",
+        "url": "https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html",
+        "publisher": "Randy McEoin",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "0xA1decFB75C8C0CA28C10517ce56B710baf727d2e via"
+      }
+    ]
+  },
+  {
+    "id": "clearfake-bsctestnet-windows-46790e2a",
+    "ioc_type": "smart_contract_address",
+    "value": "0x46790e2ac7f3ca5a7d1bfce312d11e91d23383ff",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "ClearFake's Windows payload contract on BNB Smart Chain testnet (\"Smart Contract B\" in Trend Micro's report): it serves the Windows-specific ClickFix overlay. Trend Micro gives a deployment date of 24 September 2025; Cyber Security News lists it as the Windows second-stage contract of the ClearFake branch it reports in September 2026. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain testnet.",
+    "malware_family": "ClearFake",
+    "confidence_level": "medium",
+    "attribution_doubt": "Trend Micro and Randy McEoin describe ClearFake, a long-running fake-browser-update and ClickFix operation, and name no actor; Trend Micro mentions North Korea only to note that a DPRK cluster adopted the same technique. No published source ties these contracts to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+        "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+        "publisher": "Trend Micro",
+        "date": "2026-05-26",
+        "type": "threat_intel_report",
+        "quote": "0x46790e2Ac7F3CA5a7D1bfCe312d11E91d23383Ff was found in the Stage 2 JavaScript decoded from that contract's storage. It is a Windows-specific ClickFix overlay. This blog refers to it as Smart Contract B ."
+      },
+      {
+        "title": "ClearFake 2026",
+        "url": "https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html",
+        "publisher": "Randy McEoin",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "isWindows ? load_ ( \" 0x46790e2Ac7F3CA5a7D1bfCe312d11E91d23383Ff \" ) : isMac && load_ ( \" 0x68DcE15C1002a2689E19D33A3aE509DD1fEb11A5 \" )"
+      },
+      {
+        "title": "ClearFake Deploys Crypto Stealer That Uses Vulnerable Driver to Kill EDR Security Tools",
+        "url": "https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/",
+        "publisher": "Cyber Security News",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "BNB Smart Chain contract 0x46790e2Ac7F3CA5a7D1bfCe312d11E91d23383Ff Windows-specific second-stage contract"
+      }
+    ]
+  },
+  {
+    "id": "clearfake-bsctestnet-macos-68dce15c",
+    "ioc_type": "smart_contract_address",
+    "value": "0x68dce15c1002a2689e19d33a3ae509dd1feb11a5",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "ClearFake's macOS payload contract on BNB Smart Chain testnet (\"Smart Contract C\" in Trend Micro's report). Trend Micro gives a deployment date of 30 September 2025; Cyber Security News lists it as the macOS second-stage contract. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain testnet.",
+    "malware_family": "ClearFake",
+    "confidence_level": "medium",
+    "attribution_doubt": "Trend Micro and Randy McEoin describe ClearFake, a long-running fake-browser-update and ClickFix operation, and name no actor; Trend Micro mentions North Korea only to note that a DPRK cluster adopted the same technique. No published source ties these contracts to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+        "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+        "publisher": "Trend Micro",
+        "date": "2026-05-26",
+        "type": "threat_intel_report",
+        "quote": "0x68DcE15C1002a2689E19D33A3aE509DD1fEb11A5 was found in the Stage 2 JavaScript decoded from that contract's storage. It is a macOS-specific payload. We will refer to this as Smart Contract C ."
+      },
+      {
+        "title": "ClearFake 2026",
+        "url": "https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html",
+        "publisher": "Randy McEoin",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "isWindows ? load_ ( \" 0x46790e2Ac7F3CA5a7D1bfCe312d11E91d23383Ff \" ) : isMac && load_ ( \" 0x68DcE15C1002a2689E19D33A3aE509DD1fEb11A5 \" )"
+      },
+      {
+        "title": "ClearFake Deploys Crypto Stealer That Uses Vulnerable Driver to Kill EDR Security Tools",
+        "url": "https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/",
+        "publisher": "Cyber Security News",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "BNB Smart Chain contract 0x68DcE15C1002a2689E19D33A3aE509DD1fEb11A5 macOS-specific second-stage contract"
+      }
+    ]
+  },
+  {
+    "id": "clearfake-bsctestnet-checker-f4a32588",
+    "ioc_type": "smart_contract_address",
+    "value": "0xf4a32588b50a59a82fba148d436081a48d80832a",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "ClearFake's execution-tracking contract on BNB Smart Chain testnet (\"Smart Contract D\" in Trend Micro's report, the \"checker\" in Randy McEoin's): it records which visitors have already run the lure, through functions Trend Micro names isGoalReached and addtoList and McEoin names checkUUID, addUUID and removeUUID. Trend Micro gives a deployment date of 18 June 2025. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain testnet.",
+    "malware_family": "ClearFake",
+    "confidence_level": "medium",
+    "attribution_doubt": "Trend Micro and Randy McEoin describe ClearFake, a long-running fake-browser-update and ClickFix operation, and name no actor; Trend Micro mentions North Korea only to note that a DPRK cluster adopted the same technique. No published source ties these contracts to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+        "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+        "publisher": "Trend Micro",
+        "date": "2026-05-26",
+        "type": "threat_intel_report",
+        "quote": "0xf4a32588b50a59a82fbA148d436081A48d80832A was found in the Stage 3 JavaScript decoded from the Windows payload contract. It stores conversion states, polled by the overlay JavaScript to detect when the victim had executed the payload. This blog will refer to it as Smart Contract D ."
+      },
+      {
+        "title": "ClearFake 2026",
+        "url": "https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html",
+        "publisher": "Randy McEoin",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "Here we have another BSC contract 0xf4a32588b50a59a82fbA148d436081A48d80832A"
+      }
+    ]
+  },
+  {
+    "id": "clearfake-bsctestnet-deployer-d71f4cdc",
+    "ioc_type": "wallet_address",
+    "value": "0xd71f4cdc84420d2bd07f50787b4f998b4c2d5290",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "The single wallet Trend Micro reports deployed all four ClearFake contracts on BNB Smart Chain testnet, and which each contract's owner() returns. Watched so that a new contract it deploys can be found.",
+    "malware_family": "ClearFake",
+    "confidence_level": "medium",
+    "attribution_doubt": "Trend Micro and Randy McEoin describe ClearFake, a long-running fake-browser-update and ClickFix operation, and name no actor; Trend Micro mentions North Korea only to note that a DPRK cluster adopted the same technique. No published source ties these contracts to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "Smart Contracts for C&C: How ClearFake Hid in Plain Sight on BSC Testnet",
+        "url": "https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html",
+        "publisher": "Trend Micro",
+        "date": "2026-05-26",
+        "type": "threat_intel_report",
+        "quote": "On-chain verification of all four contracts confirms they share a single deployer wallet: 0xd71f4cdC84420d2bd07F50787B4F998b4c2d5290 . The deployment timeline establishes the campaign's operational history:"
+      }
+    ]
+  },
+  {
+    "id": "clearfake-bsctestnet-initial-886d310a",
+    "ioc_type": "smart_contract_address",
+    "value": "0x886d310ac23e05ea705e24e513d19f53793832a9",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Initial contract the ClearFake branch reported in September 2026 reads to retrieve its encoded JavaScript, alongside the Windows and macOS contracts above. The report lists it on BNB Smart Chain without naming the network; this site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain testnet.",
+    "malware_family": "ClearFake",
+    "confidence_level": "low",
+    "attribution_doubt": "The report ties this to a ClearFake branch Cisco Talos tracks as UAT-10820 and does not mention North Korea. No published source ties it to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc-testnet",
+    "sources": [
+      {
+        "title": "ClearFake Deploys Crypto Stealer That Uses Vulnerable Driver to Kill EDR Security Tools",
+        "url": "https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/",
+        "publisher": "Cyber Security News",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "BNB Smart Chain contract 0x886d310Ac23e05EA705e24E513D19f53793832A9 Initial contract used to retrieve encoded malicious JavaScript"
+      }
+    ]
+  },
+  {
+    "id": "zigcryptostealer-bsc-config-7cc3cfc1",
+    "ioc_type": "smart_contract_address",
+    "value": "0x7cc3cfc1ac007b8c6566fd2c7419b15a75473468",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Contract ZigCryptoStealer, delivered by the ClearFake branch reported in September 2026, reads to obtain its command-and-control configuration. The report lists the hosts it has held: fd.gstats-api-contact.cc, pkg.vogueatelier.cc, kffd3.vogueatelier.cc, kffd3.vexlatech.cc and static.quorashift.cc, and lb.propertyfind.cc during its analysis. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "ZigCryptoStealer",
+    "confidence_level": "low",
+    "attribution_doubt": "The report ties this to a ClearFake branch Cisco Talos tracks as UAT-10820 and does not mention North Korea. No published source ties it to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "ClearFake Deploys Crypto Stealer That Uses Vulnerable Driver to Kill EDR Security Tools",
+        "url": "https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/",
+        "publisher": "Cyber Security News",
+        "date": "2026-09-09",
+        "type": "threat_intel_report",
+        "quote": "BNB Smart Chain contract 0x7CC3cFC1Ac007B8c6566fD2C7419b15a75473468 Contract used by ZigCryptoStealer to obtain C2 configuration"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-main-9179dda8",
+    "ioc_type": "smart_contract_address",
+    "value": "0x9179dda8b285040bf381aabb8a1f4a1b8c37ed53",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "First-level (router) contract of UNC5142's main contract group: hard-coded in the CLEARSHORT script injected into compromised sites, it returns the address and ABI of the next stage. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "], '0x9179dda8B285040Bf381AABb8a1f4a1b8c37Ed53'); // Hardcoded address of the 1st-Level Contract."
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-main-8fba1667",
+    "ioc_type": "smart_contract_address",
+    "value": "0x8fba1667bef5eda433928b220886a830488549bd",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Second-level (logic) contract of UNC5142's main contract group: fingerprints the visitor before the configuration is released. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "2) Victim fingerprinting via the Second-Level contract: The injected JavaScript connects to the Second-Level Smart Contract (e.g., 0x8FBA1667BEF5EdA433928b220886A830488549BD ). This contract acts as the logic of the attack, containing code to perform reconnaissance actions (Figure 5 and Figure 6). It makes a series of eth_call operations to execute …"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-main-53fd54f5",
+    "ioc_type": "smart_contract_address",
+    "value": "0x53fd54f55c93f9bcca471cd0ccbabc3acbd3e4aa",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Third-level (configuration storage) contract of UNC5142's main contract group: holds the encrypted landing-page URL, its AES key and the second-stage URL. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "3) Lure & payload URL hosting in Third-Level Contract: Once the victim is fingerprinted, the logic in the Second-Level Contract queries the Third-Level Smart Contract (e.g., 0x53fd54f55C93f9BCCA471cD0CcbaBC3Acbd3E4AA ). This final contract acts as a configuration storage container. It typically contains the URL hosting the encrypted CLEARSHORT payload, the AES key to decrypt the page, and the …"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-secondary-8f386ac6",
+    "ioc_type": "smart_contract_address",
+    "value": "0x8f386ac6050b21af0e34864eabf0308f89c6f13c",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "First-level (router) contract of UNC5142's secondary contract group. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0x8f386Ac6050b21aF0e34864eAbf0308f89C6f13c"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-secondary-d210e8a9",
+    "ioc_type": "smart_contract_address",
+    "value": "0xd210e8a9f22bc5b4c9b3982ed1c2e702d66a8a5e",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Second-level (logic) contract of UNC5142's secondary contract group. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0xd210e8a9f22Bc5b4C9B3982ED1c2E702D66A8a5E"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-secondary-15b495fb",
+    "ioc_type": "smart_contract_address",
+    "value": "0x15b495fbe9e49ea8688f86776fd7a50b156c6c3f",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "Third-level (configuration storage) contract of UNC5142's secondary contract group. Google reports the three-level design and both groups in its October 2025 post on UNC5142, which distributes information stealers (Vidar, Lumma, StealC, Atomic) through compromised WordPress sites. This site confirmed on 23 November 2026 that the address holds deployed contract code on BNB Smart Chain.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0x15b495FBe9E49ea8688f86776Fd7a50b156C6c3F"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-main-operator-f5b962cc",
+    "ioc_type": "wallet_address",
+    "value": "0xf5b962cca374de0b769617888932250363c5971b",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "The main operator wallet Google lists for UNC5142: it deploys the main contract group and sends its update transactions. Watched so that a new contract it deploys or writes can be found. The funding wallet Google lists beside these is an exchange address and is not filed.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0xF5B962Cca374de0b769617888932250363C5971B"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-secondary-operator-9aae9a37",
+    "ioc_type": "wallet_address",
+    "value": "0x9aae9a373cece9ef8453fa2deaf4bf7b8afbfac9",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "The operator wallet Google lists for UNC5142's secondary contract group. Watched so that a new contract it deploys or writes can be found. The funding wallet Google lists beside these is an exchange address and is not filed.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0x9AAe9A373CECe9Ef8453fa2dEAF4bf7B8aFBfac9"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-main-wallet-9fa7a2f4",
+    "ioc_type": "wallet_address",
+    "value": "0x9fa7a2f4872d10bf59d436ea8433067811f67c04",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "A wallet Google lists among UNC5142's main wallets, without a stated role. Watched so that a new contract it deploys or writes can be found. The funding wallet Google lists beside these is an exchange address and is not filed.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0x9fA7A2F4872D10bF59d436EA8433067811F67C04"
+      }
+    ]
+  },
+  {
+    "id": "unc5142-bsc-secondary-wallet-9fef571b",
+    "ioc_type": "wallet_address",
+    "value": "0x9fef571baeabdb8bf417a780c1b78aaa3295ff45",
+    "campaign": [
+      "EtherHiding"
+    ],
+    "description": "A wallet Google lists among UNC5142's secondary wallets, without a stated role. Watched so that a new contract it deploys or writes can be found. The funding wallet Google lists beside these is an exchange address and is not filed.",
+    "malware_family": "CLEARSHORT",
+    "confidence_level": "medium",
+    "attribution_doubt": "Google attributes these to UNC5142, which it calls a financially motivated threat actor, and does not tie it to North Korea; the post only links to Google's separate report on DPRK adopting EtherHiding. No published source ties these to North Korea.",
+    "date_added": "2026-11-23",
+    "chain": "bsc",
+    "sources": [
+      {
+        "title": "New Group on the Block: UNC5142 Leverages EtherHiding to Distribute Malware",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware",
+        "publisher": "Mandiant / Google Threat Intelligence Group (GTIG)",
+        "date": "2025-10-16",
+        "type": "threat_intel_report",
+        "quote": "0x9FEF571BAeAbdB8bF417a780c1b78aAa3295fF45"
+      }
+    ]
   }
 ]

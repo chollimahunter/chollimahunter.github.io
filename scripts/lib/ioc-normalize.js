@@ -1711,7 +1711,14 @@ function isReservedIpv4(value) {
 // Words an IOC section's heading puts beside a package list ("# Malicious npm
 // Packages"), which the extractor read as a package named "malicious" in
 // eleven reports. A bare name equal to one of them is a heading, not a package.
-const NPM_HEADING_WORDS = new Set(["malicious", "package", "packages", "npm", "indicators", "iocs", "name", "version", "versions"]);
+// Also the label words a row can open with ("Related npm package
+// js-logger-pack" in SafeDep's table put a legitimate 2014 package called
+// "related" in the index, as "the" did before it).
+const NPM_HEADING_WORDS = new Set([
+  "malicious", "package", "packages", "npm", "indicators", "iocs", "name", "version", "versions",
+  "the", "a", "an", "related", "associated", "additional", "other", "another", "second", "first",
+  "secondary", "primary", "original", "legitimate", "compromised", "fake", "this", "that", "each", "every",
+]);
 
 function normalizeNpmPackage(raw, opts = {}) {
   const value = String(raw).trim().replace(/[.,;:)\]}'"]+$/, "").toLowerCase();

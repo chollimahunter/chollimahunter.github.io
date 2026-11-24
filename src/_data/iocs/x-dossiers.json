@@ -146,6 +146,18 @@
     "nkinternet": {
       "publisher": "North Korean Internet (nkinternet.com)",
       "account": "https://nkinternet.com/"
+    },
+    "panther": {
+      "publisher": "Panther Labs",
+      "account": "https://panther.com/blog/"
+    },
+    "githubsecurity": {
+      "publisher": "GitHub",
+      "account": "https://github.blog/security/"
+    },
+    "reversinglabs": {
+      "publisher": "ReversingLabs",
+      "account": "https://www.reversinglabs.com/blog/"
     }
   },
   "dossiers": [
@@ -17340,6 +17352,3772 @@
         "Six accounts and two large organisations the article names only for whom they follow or who follows them. Held: following is how the cluster was found, not evidence about each account on its own.",
         "Cell 5, four contributors to the Ubiquity DAO projects, which the article itself calls suspected: two are long-established accounts with open-source histories, and the cell rests on what they contributed rather than on who they are. Held for a ruling."
       ]
+    },
+    {
+      "researcher": "panther",
+      "label": "Contagious Trader delivery network: GitHub repositories, npm packages and publishers, C2",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://panther.com/blog/mapping-the-contagious-trader-delivery-network",
+          "date": "2026-11-02"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/CashBlazorLab",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/XHYhappy",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Symotix",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Krypto-Hashers-Community",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/legit-script-group",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/polkadot-org",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gigi0500",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/0xFives",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/solcanine",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/PoDev-rahulrajasekhar",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/djosk23",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Chain-Ether-Core",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Infranova-Labs",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptonerva",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/amplify-protocol",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/TQ-trade",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Predictional-Infra",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/tradebothub",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/G3-DEV-AGENCY",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/zkOSAI",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Valentioo",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/machenxi",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/satyasumn7",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/AlgoInfraTech",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/ScouterInfinite",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/emmarktech",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/alpaca-project",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/BNB-Alpha-Community",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/lorine93s",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Jackhuang166",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Matias123p",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Runtime-Trade-Systems",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/benja-dev-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Corettafinnougricspeaking368",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/mclaeo",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Dougthethugg",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/gisel69",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/kyyook",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/JoTalksdxb",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/SXai-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "CashBlazorLab/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "XHYhappy/polymarket-kalshi-arbitrage-bot-15min-market",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Symotix/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Krypto-Hashers-Community/polymarket-kalshi-arbitrage-bot-15min-market",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "legit-script-group/polymarket-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-finance-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "polkadot-org/polymarket-politics-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-ai-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-volume-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-bundler-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gigi0500/pumpfun-mayhem-migration-sniper",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Polymarket-Arbitrage-Crypto-Trading-Bot-V3",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Pumpfun-Volume-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "0xFives/Raydium-Cpmm-Sniper",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "solcanine/openclaw-ai-polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "solcanine/polymarket-impulse-monitoring-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "PoDev-rahulrajasekhar/Polymarket-Copytrading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "djosk23/polymarket-copy-trade-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/chain-fetcher-hub",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/system-lab-5857",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/stack-runtime",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/infra-pipeline-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-batch-lab-5312",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/hub-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/gateway-stack-5812",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/system-runtime",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/service-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/stack-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/engine-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/bridge-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/index-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/flux-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/prime-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-pipeline-system-4275",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/sync-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/prime-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/data-stream-lab-1839",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Chain-Ether-Core/meta-runtime-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/flux-relay-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/core-hub-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/infra-service-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/worker-hub-2619",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/core-lab-7000",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/runtime-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/pipeline-system",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/fetcher-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/flux-batch-stack",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/system-hub-core-536",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/index-services-2599",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/dev-platform-4287",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/infra-index-kit",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/stack-fetcher-lab",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/relay-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Infranova-Labs/prime-pipeline-system-8633",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Cryptonerva/prime-suite",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Cryptonerva/system-services",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "amplify-protocol/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "TQ-trade/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Predictional-Infra/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "tradebothub/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "G3-DEV-AGENCY/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "G3-DEV-AGENCY/polymarket-copytrading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "zkOSAI/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "soldrift/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Valentioo/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "machenxi/Sol-marketplace",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "satyasumn7/Polymarket-Trading-Bot-Gabagool",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "AlgoInfraTech/polymarket-sports-betting-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "AlgoInfraTech/polymarket-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "ScouterInfinite/polymarket-trading-bot-copytrading",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "emmarktech/Polymarket-Arbitrage-Crypto-Trading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "alpaca-project/1776507753199",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "BNB-Alpha-Community/evm-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-btc-5min-15min-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Jackhuang166/Pumpfun_AI_Trading_Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Jackhuang166/hyberliquid-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Matias123p/Polymarket-Arbitrage-Trading-Bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Runtime-Trade-Systems/polymarket-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "benja-dev-lab/polymarket-copy-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "lorine93s/polymarket-btc-5min-15min-arbitrage-trading-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Corettafinnougricspeaking368/Polymarket-Arbitrage-Trading-Bot-Spreadmaker",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "mclaeo/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "mclaeo/polymarket-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Dougthethugg/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "Dougthethugg/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gisel69/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "gisel69/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "kyyook/polymarket-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "kyyook/polymarketarbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "JoTalksdxb/polymarket-arbitrage-bot",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "SXai-lab/prediction-market-copytrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "malicious_repository",
+          "value": "SXai-lab/prediction-market-arbitrage",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "api-node-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "frankykevin.dev@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "api-ts-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "typescript-util-core",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "prettier-resolver",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "kunwarshivam1971@hotmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "web-http-errors",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "http-errors-cli",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bn-eslint.js",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cashblaze1001@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-eslint-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "classnames-sub-folk",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cashblaze0510@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "result-type-tool",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "prettier-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "aleksis2026dev@outlook.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-plugin",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "maklionelox@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "picocolor-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "milosk920125@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sleek-pretty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pinky-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalks-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalk-pro-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "emojiprint-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chalki-pretty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "styled-text-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "diwatkins1971k@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "color-logger-console",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "podev75926@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "lint-builder-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "super1114dev@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-big-lib",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "levex-press",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "awesome-cli-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jofarc789@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "awesome-cli-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "rjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-doc-dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "rafinhossianlove@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "big256-ts",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-relayer-pub",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "y.rix.elfi.e.co@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "di.gos.c.hristia.n.n@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builds",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ca.r.lane.es1.2.6@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "npm-doc-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "al.lanjaysa.t.i.a.gi@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "haraldosman.ho@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "logger-beauty",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cryptopawsol@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-moduler",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "cobily11@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jpeek886@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "jpeek895@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "satyasumn8@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@tsjunk/chalk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@etherprojects/logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-utils-wrapper",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "chiragnikolic@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-bing",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "v.al.s.o.lo.mon7.0@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vime-azl",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-utils-dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "al.la.n.h.o.rca07@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "gleb-js",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bigint.os",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.yal.a.da.ve7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "lint-null",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "mjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "n.ar.a.tat.ia.n.aaa@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-lint-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "st-bigintr",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.n.n.as.ibal2.36@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cjs-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sjs-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "ayal.a.d.av.e.7@gmail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "st-biginteger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "bjs-lint-builders",
+          "post": 0
+        },
+        {
+          "ioc_type": "email_address",
+          "value": "a.l.l.a.nh.orca0.7@googlemail.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sjs-builder",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-fancy",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-pino-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "js-tree-integer",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "js-integer-log",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ffffrakyevin",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~kunwarshivam1971",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~amauri_jesus",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~danlo00holoden",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~aleksislabs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~maklionelox",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~lorine93s",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~npmpodev0707",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~devking1616",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~alberto1114",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jofarc",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~rafinhossian",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~y.rix.elfi.e.co",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~digoschristiann",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ca.r.lane.es1.2.6",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~al.lanjaysa.t.i.a.gi",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~soju_dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~cryptopawsol",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~moduler",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jpeek886",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jpeek895",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~satyasu8",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mod_triler",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~michale127",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~chirag_nikolic",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~v.al.s.o.lo.mon7.0",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~jamesjamesjmaes123",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.yal.a.da.ve7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~n.ar.a.tat.ia.n.aaa",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.n.n.as.ibal2.36",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ayal.a.d.av.e.7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~a.l.l.a.nh.orca0.7",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~npm_kei",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "nonce-link.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "mono-link.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarkettrading.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "eslint-helper.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "eslint-config.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "170.205.31.203",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.fivefingerz.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "polymarket-clob2.blog",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-bots-backend.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.mywalletsss.store",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "clob-polymarket.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "color-picker.live",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "cloudflareinsights.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "wallet-management-tg-bot.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "208.84.100.22",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polybot-management-v1.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polybot-management-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-api-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "polymarket-cli-v2.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "cloudflare-protection.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "clob.0xundying.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "logger.clob.health",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "blxrbn.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "204.10.194.64",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7465382403e61ba1e96a6b9b700cb7d06a2cf802f7079ff0a7f859d751adc45a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9988632cd76dcb448e673daf6b97e78225fe0613fe4268b971cbd5bd29b0ba8b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a08c089ed46447cd901bbd9031f1931337afe42bb8af70299195d5f9b11c69fb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "36abee6d79f8b135d1b03540dcbde1fb2eb1abba7ea5bf59ecb342730c415519",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d00aa3cbd7ad80b72cc5df665a7377c72981ba116b486e6c34b81896be0e4124",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the tables of Panther's report, which attributes the activity \"with high confidence to DPRK / Famous Chollima as part of the Contagious Trader campaign\" and says its indicators and Contagious Interview's should be treated as a single threat. The repositories are trading-bot lures (Polymarket, PumpFun, Solana, PancakeSwap) that import DPRK-attributed npm packages delivering PromptMink, ClipViper or OtterCookie; Chain-Ether-Core, Infranova-Labs and Cryptonerva are organisations that fork CashBlazorLab's repository into 40+ copies, and Panther calls Krypto-Hashers-Community a confirmed PromptMink delivery organisation. Panther reports that gigi0500 operates under a stolen developer's name, location and profile photograph, and that lorine93s may be a compromised account rather than a persona. The account owners filed here are those Panther lists as repository owners whose accounts were removed by 23 November 2026, or that are single-repository accounts holding the lure; owners that look like unwitting forkers or real-name accounts are held back. The npm accounts and addresses are the publishers Panther lists for each package. The page's byline is 14 May 2026 and its metadata 2 November 2026; the tables were updated after the byline, since they list a repository whose owning account (solcanine, which still serves it under a new name) was created on 18 June 2026, so the citation carries the later date.",
+      "transcribed": "2026-11-23"
+    },
+    {
+      "researcher": "githubsecurity",
+      "label": "Jade Sleet social-engineering campaign: GitHub and npm accounts, packages, domains",
+      "campaign": [
+        "Lazarus Group"
+      ],
+      "posts": [
+        {
+          "url": "https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/",
+          "date": "2023-07-18"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/GalaxyStarTeam",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptowares",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/Cryptoinnowise",
+          "post": 0
+        },
+        {
+          "ioc_type": "github_profile",
+          "value": "https://github.com/netgolden",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~charlestom2023",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~eflodzumibreathbn",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~galaxystardev",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~garik.khasmatulin.76",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~hydsapprokoennl",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~leimudkegoraie3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~leshakov-mikhail",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~linglidekili9g",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mashulya.bakhromkina",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~mayvilkushiot",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~outmentsurehauw3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~paupadanberk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~pormokaiprevdz",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~podomarev.goga",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~teticseidiff51",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~toimanswotsuphous",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_account",
+          "value": "https://www.npmjs.com/~ufbejishisol",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "assets-graph",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "assets-table",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "audit-ejs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "audit-vue",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "binance-prices",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "coingecko-prices",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "btc-web3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cache-react",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cache-vue",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chart-tablejs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "chart-vxe",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "couchcache-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ejs-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "elliptic-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "elliptic-parser",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "eth-api-node",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jpeg-metadata",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "other-web3",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "price-fetch",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "price-record",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "snykaudit-helper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sync-http-api",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sync-https-api",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "tslib-react",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "tslib-util",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ttf-metadata",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vue-audit",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vue-gws",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "vuewjs",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmjscloud.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmrepos.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "cryptopriceoffer.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "tradingprice.net",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmjsregister.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "bi2price.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "npmaudit.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "coingeckoprice.com",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from GitHub's security alert of 18 July 2023, which assesses \"with high confidence that this campaign is associated with a group operating in support of North Korean objectives\", the group Microsoft tracks as Jade Sleet and CISA as TraderTraitor. GitHub lists these as the malicious GitHub accounts, malicious npm accounts and packages, and domains of a campaign that approached technology-company employees through fake personas and had them clone repositories depending on the packages. GitHub suspended the accounts; it does not say which of the four GitHub accounts were personas.",
+      "transcribed": "2026-11-23"
+    },
+    {
+      "researcher": "reversinglabs",
+      "label": "PromptMink: npm and PyPI packages, C2 and package hashes",
+      "campaign": [
+        "Contagious Interview"
+      ],
+      "posts": [
+        {
+          "url": "https://www.reversinglabs.com/blog/claude-promptmink-malware-crypto",
+          "date": "2026-04-29"
+        }
+      ],
+      "indicators": [
+        {
+          "ioc_type": "pypi_package",
+          "value": "scraper-npm",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@hash-validator/v2",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@solana-launchpad/sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "aes-create-ipheriv",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jito-sub-aes-ipheriv",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jito-proper-excutor",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@bs58-utils/wrapper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@validate-sdk/v2",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@meme-sdk/trade",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@validate-pubkey/hex",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@validator-sdk/pubkey",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "aes-core-valid-ipherv",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "4meme-readable-stream",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@validate-ethereum-address/core",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@solmasterv3/solana-metadata-sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@pumpfun-ipfs/sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@solana-ipfs/sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@mgcrae/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-pino-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-logger-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-changelog-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-pretty-log",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-ts-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jonas-prettier-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-loggers",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-logger-utilities",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-logger-wrapper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "logger-beauty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-logger-utils",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-logger-wrap",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@slackgram/logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-utils-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-utils-wrapper",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "prettier-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-sdk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-cli-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "changelog-utils-structured-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pretty-pino-loggers",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "jellyfi-pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@winstonts/winston2",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "pino-pretty-logs",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@logcore/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@logforge/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "js-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "ts-logger-pack",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "cli-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@tslogger/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@keydev/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@buglab/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@magcd/pino-pretty-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@asuly/check-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-prettier",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "log-upgrade",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-structured-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@tsjunk/chalk",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@etherprojects/logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "@nklkas/hyperliquid",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "sleek-pretty",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "awesome-cli-logger",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "terminal-formatter",
+          "post": 0
+        },
+        {
+          "ioc_type": "npm_package",
+          "value": "polymarket-onchain-plugin",
+          "post": 0
+        },
+        {
+          "ioc_type": "hosted_site",
+          "value": "ipfs-url-validator.vercel.app",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "validator.uno",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.mywalletsss.store",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "mywalletsss.store",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.soladify.fun",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "logger.clob.health",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "polymarket-clob.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "clob-polymarket.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "ghostraper.top",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "winstonjs.site",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "polblxpnl.space",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "navigatorshub.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "blxrbn.com",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "changelog.rest",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "log.pricesheet.ink",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api-sub.jrodacooker.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.bensaru.site",
+          "post": 0
+        },
+        {
+          "ioc_type": "domain",
+          "value": "api.fivefingerz.dev",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "45.61.161.146",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "45.8.22.144",
+          "post": 0
+        },
+        {
+          "ioc_type": "ip_address",
+          "value": "45.8.22.52",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ae4fe9f9a4f099de9132eb3346abcdd96dbeb39d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e79ce589913bb8c5743bf0e55e075e2260c7a915",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "893593fc1677fcf9179bcbe7b7f5dc25e24fba09",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ba7f596f53ecd1081f8623869007ec6e07767808",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6a7b0c76a4bc246686982e88c1967be91bf3d0a7",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "103db43d138b95cde454f1838ff10843dc8c5c51",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bcc62ac97b8335c825103b8d3b3c7998bcff6e7b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "896b2a766b952b4797c1bb572bf78eb376151b21",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d8b57811e7d00e063270ad659614cb81e1d67e59",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "475269d512273cb6e41d07e016cf8860cdf1e2dd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "0661193bd03188c16063bd71d176080f0ec6b0dc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "263e9078c76a75cf2c4d7e2166a7c659de1f58bf",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "08ec5fd6e8849fb7c17e4215f7a113bd0f9fe3e5",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d671d02713962c568658fe6457289a13e4b93b83",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7758943d96c9eacf3971f0e99e3f98a399e61c71",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e4ee0c2c9ec25036df9b59fa15240b2b349eb441",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "da1e50a5b0c553b4603ed65d2aec742b4ae742dd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "0a1e693299df0f1bf682b83ee5cbdeadcd8031df",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b69660a6bbbf64d5cbf9542035f08f7c04502537",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e03967662fade599ad95a8ea55bfba3b89d91319",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5fb93f992f82aeb871b56b50ae220f89e85d9524",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f20c9e39773c2c3c7b37f53f88d9e03faec220ef",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bb85fa89bec917f6a9c043d8ea9eedff51844e63",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3cf9427a4f7acf5e30fa4ee47b099e3ed5e3747f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "84eea060c4d80eaf8a392132d99cc436fbf12449",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "75e2ac8f490a8d75cbdc78fb1d821fb119f33043",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d35b52f9c4445cd1b8115919768dd7bb9a5a6c14",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f4adcd805330fbd67c81ff6912c930c3ac1256c6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ff78aad0cf325ae6fb5eca591c1f25fcafce2251",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9cc9be6ebcd3d2b535bc8a7d1f646bd7f40470b4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c27362e9acc322aaf02545fc439fab0063524cd1",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "31e653d69a3aa6dc2dc4fedddacf8bc167f8c63f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a0678faae0ad574ad7b2db7703990d60d2a02482",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "dcc397b1641d2d3c693fa3917c325f3467188437",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "18404bf12c9d7c70d5ab6ee839865e3f9cc1cffb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a91b330113554a2cc67b30905d35165db67fc947",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "591c23c78a847a2041f0f75525e42661ec94e16c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "1332ac36fd1e464199f587b08c2af644632234b3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bbcd50b6cf6f2f6f4b8a06261b5f23e47d098cf2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6f00d3fc77c2cdb1b1240f847c52b83a6ed5cc93",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4e3d75c7905c7e3e2eb5489555a9cc4c472916d4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4080b35d16d6521ab5e01364ec772a78d1a13bae",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "cbb5b0dd5bf6cd2097a48f0a66208ab3a3843168",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6f1c37fe7d6c0a3786613271cd9694c584ea2d4c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "11438c87e50ebee4c526c3596805f4a8c24cdfc7",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "67b681f7f1fb55b61283c4d609c24e352cf6ff4c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "17d731b7758fa31584b0af3255335cb8f33a1699",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "013e70c7fe6b686d1f94aa120ab71a47670a3fb4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c1d0297ddf0e0df00142de69cfac392a2b86a09e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f82d2691d031d14f682bfcb62c8801b61c446259",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6b037f7fff58817867a946ca642587d2a27305d2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "11462a56d3d51621550d5c9bc625a8741d40af1b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3ac7f2b9cabd833070f3d3160a8763da8edfbce3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5516f99b00cda686403b86654b65924ea275f7dc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "acf872edbb397bee642e9a6dfa8febe08973f5ac",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6aa22d68bfb8b63e20b3f86cffcc848324d19f58",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "08cf15c11032dd1d9f5d1877fb7ca852034adeda",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f3d7a3feb444c19914740f05d864341d118a52f9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "eca61a49b766a75823bf8ca38120be697937ebe9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bddf288c8e2257543621fa3066bdaa686b15a5b3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "208d990c7f66a2493dd53ee72a7f95a0d0acd0f0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8211171c19e956dfba31e29a6b752e37f4287447",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3ff7cc3c77c07134c4bd3fd78365bfc41ee235a4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "40c2b2b8248bcebb887b59b73f46cd593d5089a2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "26831679e7d20ff95b01168c8b5a3b069b17105c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7edac993e7ab2552b9fd0057ea572716dd5002ce",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a96597831566c99608ae56ca0c3ccd61f90672f9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "872d275131dc94c96c09ce20ba192e89197ebfe3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6c07031de09c70a32545a9806457b1cd9fe529c9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6943ff08a7bf9203f0205720d50510558a819e6f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2d9dc1c95f426af46fd75249f7fe44360d9074d0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "958172bacb3e6db4b9b5872cbdb9e67016d4c96e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "65a038a696b48ef31d40d7e006fd8678990684aa",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e6f33673ff3d6682c07c7b6aafc4c3c976e4afd3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "05ffe3e1af362948133ef37730cf58eb8ce28f4f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "dfa605703362bfd1744b6b5fc65142d3fbcca02f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "edfa946fa10a2a354a83f75e2959cea174ee5ca9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "500b10783412a4f8296e505125980a44bc14c8f1",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c037d81aade6b24960439d5af3a199826f678f0a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6cade28390a44cc0defd76267113a1d4a815b121",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "23d9f451f853dba33dd6fa01a7830a494ba2c89a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f004252dc9fbf06b274d6309c3c7e5f9a66c9cac",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "302372cb07a71000fd5ba3e78e409919caecf7b4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6de816e20412dec5ac5649e9fc6ac083870af598",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7e8f9cd56398b7c284fb3dd8ca58d734b7571955",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d4c327bc14d8e7348d74a5130a3b4e6ddbc347a9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f22d46be5ca7a5bb7572f2de8193c4e67d77aa2d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2ae5d8242a706b97153ca07a582fabe2319612d2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5311915622520e91c9e8c6fbadc6fe56253f355c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c273582ba404e0627aa7b6c94df4ef7d446e0087",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "180c6cdcf524f2d36b80ff327c609e3204345265",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5370c3c7b4af622602bbb79ed2f7d0e59fdab9e9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "43c26856ea0c9b9982475987b1f82856feb08a5d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4277afad7992cb7c7f12fdb2da0f0ccb96174d30",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "390b0eb5af6f5ddf4c5d844e870d590d688449fe",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "87925c3e43ae3d68ea2b3d34d8815fbe7ade67f0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2cffbd6697b44200d277856e0361d74987f7805a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "65c43e10b3d0c542aa38a536b1d4937a95a6e62a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "70541117c96769512fee750ac8b0ccff95129a97",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fe4008f45b83e1e7845b635d6d923ab71e1ce2c5",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "59bc1113d3ce9d6a1e63d22bd14e06442a103a6a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4e27323682e670ba8ace370c411eaa88286d2e9a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5fe065b6d161dfe92d10bc5b9b68f087f274a9df",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3d4eb9a1234721ea783a4c33b7f50b0b95dbf58a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e42e8d74fd2a2538fa18adbfbe29ce8f2b874869",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8f41efbc20eecef95f3a41385ad88e6715ec629d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c8253f3b96f89f17065bdcaa85f9daa2f38814d2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "592494383b589b8073f76ef8a600fb497874296c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4906b3f7a66f50167ed3a3a4d9a29c69a1f33fdb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "db61daf2d7d723cf5776861e6271fa98bc93fc59",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9372670bd571d95e6e2593e0716f3ebdfdea7c16",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "85a363f57a93b828cb80f28d033a3dd4bcf1a77a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fa31058453d5dd27863d1d828deaede2702c08ab",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "cd965f5ee68b7ae2250822e433cd98b36653c4f5",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bbb72614201cf881868abb60b37711f42d05cc66",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "653ab02d9a7d96394120048b424ea82f65f00064",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "0c1b26aab551e796bc1d0b76700a3ca1bd4db777",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7dded0958ebf70b265584e0acf16d0c507b46459",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "73f536353c8bcf33384c47a6a7c7859a747374c0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e1947a7237a010111eeabafa176b6727bd8bbce3",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d47e40967f7d2029b62307d23ed6c5f3786f6e52",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "77eb751ea08dfec295387a0de755e700b3a45584",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "23d7699870adf02af4f6d6e27006a5e44ec176cf",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d1b71ffe94fde7676de5836f99b2db43f4a9970e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b3f899a679b9c1a2c4aa265b5f149f4fa7953c22",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "eb65f10198f3c6fc3b0f3c01a490d73746c6fbcb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "df0b313d492fd29d564372e5c6ccef969648743b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b8acc3f00e687a1d980f057a9c5aecc5d063320d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a2156247b883cff1f16ebde0c532f0b722a11c64",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "0377d83baf324ddf65141f4d7889919343cff004",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7f64b9c8703726380beb808c4d2dce65904682b4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6be2ffa8d57eb7a32a818e1035770b4c5fe99e3b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d59a354c1cbfb07232e3815a86c035df37137f62",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8589ffb556e726f1f1f240cea64c3bf3f121caed",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "66de6e894f38926069a140417cdca1273fee392d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "91b9e7a3ea24d93c78d9e1bafcc965685d6394be",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6dc795a2ee566572ca096a77c8125503080bf03f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "be49359eb480e89d8cba692e118a45e87b3a6122",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3e6af356854bcc9f3483da15c2fa6ddd15d8ad64",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "63f5f78477a5fd1ba29ca5f473abb7ae113fccd6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "976828ded1eea075834684210663ba72282c1c7b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3f4f5f850d88d1e12bf13bb9c227b18780b062f8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9b322f0999f19710c9826211c5fc2c3c8add3fdb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "65b283c0575efd2763e23ceb56ff1dc687f64272",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a94414c982ecae3da85e1fea2b4e5ef9cb39976d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e1af34c4485ded9301998729d596a0cab5699237",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2b7a158372adae48c9037f94ed4be880090e5012",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f2e37b34aa72019553f428823e51ebed199bf96d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "cf822ef7a0411a4b30805063c435682df593ba2b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "aae77c48a0049aad6dbc07d4ff6175921a8c738d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4a215f075487fe5b1199f80b4f0bee03fe1feda9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "53b3665e9d4d26d86fd76637696becbe65d63e92",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "034a86a0619f7fde304f01b24a1a9c4f7d8ea1d6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "192f66b67699a8884787136400873d8f33f0c706",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3b675c6b472fff9210ca44f0b7f5a468a98a5395",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "06e17ec20c35dc65631a779cd6ae4afbaa7f7a59",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6228cfe361538e2d51c6278ecb45366785234818",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6f7d4e9cb15b7093eafdafe39ad58bd8d27d275e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "51035bbfeb17b301a412877d9b1ff6d1f206ee92",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c2706d6973478efd6b207ebddd70cea0c6a63e4d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ae8a575289de1cabc43e495dba642dccfe008d87",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "91540fb4142b2ed9f58ec97d33c6556432e8cb0c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8185ab9bef1bd669118bf2102f6d9fc0c931c596",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "73dc4146888d456cbfcd194650baf855c317a50a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ded928c7e1deb61fc44881c2640df78b6868d180",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "227406a980ac70ad7ffc0baf3dbab6f0e3eae433",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "08d5e153dee672980117382fb170442ff76a073d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b253741f4a928c021d1ec155707c3e43d9b03439",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "1f79a9d35a49565e7c3c6bc010f44b38f90bd7ee",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "88634efdee04d3a3c36e0e8046cd4ae8e61a5a4c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "336805302c84e5d560eccbb88dd21482bab44f6d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "22db901081ea445b40daea33bdd2806c4e8efe6c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a8a8655432126374229f4cbf0153b5c154a42bb2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "66f92590d883ac0cfb31b600c91ad6ff3d58f71e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "abfc2f6032441c3e9eb2398c64299d192b1d2a37",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "40a5d4269389a62bc92bbe66a479c3239a899cff",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6c160c957ba73898dbe992bf8ce885be6e4ce2b6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "60096860b1eacb993a42ac2352d0f62f5e2b0142",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c57175ba47d4f9b9c88a721c22fec77a630e8c8b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7a49271a4a41c480cd783e82156965f3d61ec52b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3af3250907d5d81010f5556e346e24def7cb44e8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3b770aeaeb3f73f9fc4a718ca2595e1fbf884e55",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ae4571164a473d94bfef561c11b20dd5c02d90eb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "717a89a31046d0204109beca262c587d9819e6b2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6e4bc7d4ea0ee6f72e0ae1e8c477d24252400730",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5752c267b37393d8391ebb3c7f0d08bf1dcabbfa",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "982d1ddce4cef2467d5a69b0f9c212896b25e39c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fab8dcb15b7fa5ca67b4b607361d55cb299fe2b1",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "120327b89687349007709f23d719420b141a22a9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f08924d3bd6d584b7c5abe248780c8c254ca3721",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e6e6d9324226f2f1928966f57bc36122f43b6d38",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "10d7594d36d984a6ebfeec495ceb54cd671716bb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ae59023c2cd7fce2bc9deb923edcbf78f3ab674a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a40011131d42168dfe886415497c7c00f7a1aa17",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "454d14d274ea6c04cd1749478a1eda458eb8bdf4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "43dc25f3a65b08636483f20c10f412fbadc5eb54",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bfe31550f8efaecb03eb8b4ba4646f0a609c6445",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ddcc7ee1b80363e6ef39425ec1ecfdfe2b974bda",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "1fac062e33c195a9355ae95a7d7a9fdfa1521c6b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c74fdd581bf1ff6f0f21a0e7f1a0af52049fcc5a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b30eab2fa6e27e2fa64b3053812f094056098c31",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ba843c94aefc6b734236879a09933f1b15a461c0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "62580db6fd136787fd4d5fe2550ea228cdfcec63",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "0d39e7f03ab2c56ce664ae3e14109f8160df130e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "596b7a3b7980a63bbff9b354ad8b7ba5b0d1d4e9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "17c7dd74e3146003072668251612c2aed20ba28a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a670425e56c751f4b58d9349e8ce78ad4b454bd2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "306e183189df75267e88cd294f34fde05ae91222",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ec86d92c0ca10fd9a8bccd774b0854a702d773e2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "cce4758edc7cfd5195f0e7a6aab7a3f9b8efcad8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "718f465ca2ed418854086641b7aba6ea0ed88c08",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5b3047ea948ac8f1973f0ba70370c1a583cc9ee6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c1a41aa7a705153dfbb76f25e8fd1af9fe27aec8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9a5bdd7e2754c6db6890fe1fde69fad9d744ab78",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b13642e8a792087eb8dd8dc9a13e4127f681bd02",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "614bd1fc79923f55a42054e53f4d05b07e5213bc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7c69a9e067c6d6f527326f2fddbdf703cb2aed40",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "622c5f801275df95ec8cac6931a06e2f8b38c7e8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "85355c1b0c8674dddb6d703d90c00190c18ca4c0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bab879ff0fbd8406aa1a51358cd3a4ece8b901d5",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "703056fc81edb02867c197e30c29afdaf089fb3f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3578178f0ac3316c21275af6b93241468bfa84fe",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c967cd2535e07930aeec927678d37f88430d66bd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "428827247b27926393cde5b9772c48bec9f8a7ef",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5b3232e2f6015c9effb2eff7a4b84cd78be7aae0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f05473df5f5ad1c4aac100b14d15de60d37894ee",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "99dd534fcfa46b7948775143b0242537c5cb2568",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5b18b7f1fa0e55cabbf99c36d68684122beb929e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "93227e680630b6b73ea66c00941ffb0dce0932b0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "07f7045655087436fdc048749a534f84d5098579",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c13e68cc5e07a9bb40fbccfabdfeaadef177c25c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ec8fe3de24c7c1ab682ccc28fc298488bbe1303a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c846a263b6c183b367c18a01463fbb40c4c22138",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "096ec7bb98492bc279d5a5a6bc0f31b089618175",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fd9a8835086c47961708650ccc627eef94b6eda7",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7dff597d5967bc879a7e72e750ebde61db66c060",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "174e58a805422bb63f9e99ac91c7a592e09c8e78",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5d6e3a1fdc9dfcbd743b086f55cb99dd686359fc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3b6ccae910cb7f3ce2251c833a6476e92385176a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8b8d10684401b537f38996e733f4b6593f6744cd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c1657e8315bc9840748446bd5de64d1165a5e6ee",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7fd6e87e62bca1447aca3c47f02a0cc2d03c39bd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "7731f2c146b767a2bf3bc406a209c2d4805c4dcf",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "6e8a6a50826e593a6cc508b515f5e28d3834995c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "895eb0b37630fff17c2d4172e3681a9338278b2f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a2701753d612bcdbaa2e602c7225a9c7112e87a9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c6e6ecc168901a16b41df94e6b8d6735459a08d1",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "59c100ec04fe840c8acf52324faea27a99c40d0e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c395d53f335359d05a356ed1ba30f912f505e662",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "bc0876e614be35e78b0b7f14e3d1bde7cd74dc18",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f3ba5e18457871c3a925ace7e4e4669bfe5068cc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "cca8436a7d28edd37129c399defe59f1ea94eeb8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "34065a7d79b46937edcdd33cbb89d67962ff8366",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b59a4fd4b240ec85d8629cc8f0af97d34d3cbb8f",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e770e5b7798fb6008ace7283ed41463e3e320ab0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e28630b0ea4736eb690e1606ca3846c033773751",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fd1fc59c504ca6da2e97e5be67c10f4ff44c5894",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9e39401440dc760af4e4c0956dbe951f4eb35387",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "efa79590d78933687254c93544b2a8bb1c307bcb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "231cb08a15190db1a132d95d9f4eb318f9dd6c6e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2af5d317e64af24675589732b093754eed54fb02",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d5af92920998a03c90e04aea75c7d41b33ec5e5c",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "24669f94c20cad95c8ddffb06d67aef2b64217dd",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "03a1d104b84c53eb6b3b84f9c1cc52a5290f163e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "9a55a1b6414e3eae7055bf2c3a95686fe834180b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "fbef9ca0fe8de0605ea51467caba7d46d2972075",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "baa640aad99e479a3c6a3c038ddc9fbd23005053",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "aa95ce2d6c940f1cf5f3add0da9686b8807d8959",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "026d72d0ef5d3155dcf1d3d45430a50bdc5c79d2",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "378f8fdc31d3cde41965584effff8d9a20c980bc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "be934c08ea33e8612763bd17c9b6752253a65b10",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e53decc029a99ddba54d2f1bf5dc3c7ac5884cc6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c7af1d6699423289abe645648c637f77c40fcec6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "b511ea6cb913a9f7dc937825ce197622a2dc1493",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a5f92633a10978ccd0bb478ab841c1189335c561",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "04844ac51016d5890e38e1939f26243ba5c3eae7",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8b93503acd02b7b9693ff9018c8d7a89a0be9a90",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c276863fc5202fdf89200519f5b36349a8dff4bb",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ec59f09fdc511de308dd4512a8672e338033ae98",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e7f61092ef3e53c94d95ff0f955010fa496ff449",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ac84d0711877ba15d8851f8cf331bfa14bd8a6b9",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f5edd40ee873088f48b52fcb425d92ec9c9bb512",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "aec958b1687070c79764db142c475ead8a18c3f6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "37758f303c97f4e2db1371280d1d875c27964a59",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ba5be0376063ca328623df4e4a3e158fc81bb61e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "3c630831dc84adf8280e98be99ef185e0a500c8a",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8c3684c9a0b2b0d0dd4f08dc58859d32811826dc",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2211b8416f78f6b59166d3435f7162da2c6a1c44",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "ac6502d31fce661397847de65a92b5de68e9063b",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "efd0943e6f4bf9fa00dd25098a9b1256215281f4",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "d5afb9c0ba4856cf45395104e7a44647dc384c11",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "2261cdd08313534fd1f1abdd577e27fb50bd0ce1",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "8d9995a462bd02b20983f7cb33150152a828c074",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "c69ae36113f8369efa11d724ef91e83aa0c11a31",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5cbb6daaffc313493fe86a56d81a94daa90af755",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "898e5435e1d3ab0e8a6b772222271a0560649055",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "f445d745bfd193f84b4d0821608014e4a2f1c0a8",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "dd77e27865284012a81d82ee41e67beeb55ed3a6",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4ee49d87fa25f3e00bd2600d0c56eab19161240d",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "4818945d96ecd2cf35edd169952c8e5c47bf8527",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "28739beef65107f926c0e0404a90425586fe37a0",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "a8ea2bd8dd04445771af90486b30a48b4d7c9108",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "5d5117c391b102ac8c568ff00573374c9fe5356e",
+          "post": 0
+        },
+        {
+          "ioc_type": "file_hash",
+          "value": "e6ca88cc922e95ad6264d878803b1c478b7f097e",
+          "post": 0
+        }
+      ],
+      "note": "Transcribed from the indicator table of ReversingLabs' report on PromptMink, which says \"the North Korean group known as Famous Chollima is behind it\" and links it to the Contagious Trader campaign. The table lists each malicious package version with its SHA1; every package name and digest is carried. The C2 list also names polygon-rpc.com and rpc-amoy.polygon.technology, public Polygon RPC endpoints the malware uses, which are not filed. The scraper took the C2 domains and IPs from this source but no packages, because the table gives no per-row type.",
+      "transcribed": "2026-11-23"
     }
   ],
   "unattributed_photos": [

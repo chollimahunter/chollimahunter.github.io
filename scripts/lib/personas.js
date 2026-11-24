@@ -31,6 +31,7 @@
 const fs = require("fs");
 const path = require("path");
 const { compareText } = require("./compare.js");
+const { isFalsePositive } = require("./private-data.js");
 
 /** Where a persona photograph must actually live to be rendered. */
 const ASSETS_DIR = path.join(__dirname, "..", "..", "src", "assets");
@@ -169,7 +170,10 @@ function latest(a, b) {
  * @param {object[]} records - records in the shape scraped-iocs.json holds.
  * @returns {object[]} personas, named ones first and alphabetical within each.
  */
-function buildPersonas(records) {
+function buildPersonas(allRecords) {
+  // A withdrawn value leaves the persona pages as it leaves the index.
+  const falsePositive = isFalsePositive();
+  const records = allRecords.filter((record) => !falsePositive(record.value));
   // Pass one: every LinkedIn account opens a persona. Nothing else can — the
   // page is about the fabricated profiles, and a heading with no LinkedIn
   // account under it has no profile to show.

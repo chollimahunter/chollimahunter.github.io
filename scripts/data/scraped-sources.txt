@@ -2362,3 +2362,5 @@ https://intel.breakglass.tech/post/kimsuky-udalyonka-htdocs-dump-vultr-seoul-pos
 https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold
 https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvester-zoom-webmail-baota-guangdong
 https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory
+https://panther.com/blog/mapping-the-contagious-trader-delivery-network
+https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/

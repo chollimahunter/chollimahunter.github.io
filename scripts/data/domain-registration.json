@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-22",
+  "checked": "2026-11-23",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -352,6 +352,10 @@
       ],
       "checked": "2026-10-05"
     },
+    "bi2price.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
     "bitgesell.finance": {
       "registered": true,
       "created": "2026-07-20",
@@ -664,6 +668,21 @@
       ],
       "checked": "2026-11-15"
     },
+    "coingeckoprice.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
+    "color-picker.live": {
+      "registered": true,
+      "created": "2026-03-18",
+      "expires": "2027-03-18",
+      "updated": "2026-08-12",
+      "registrar": "NameCheap, Inc.",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-23"
+    },
     "contra.com": {
       "registered": true,
       "created": "1996-06-12",
@@ -713,6 +732,10 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "cryptopriceoffer.com": {
+      "registered": false,
+      "checked": "2026-11-23"
     },
     "daedong.or.kr": {
       "registered": false,
@@ -2253,6 +2276,22 @@
       ],
       "checked": "2026-11-15"
     },
+    "npmaudit.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
+    "npmjscloud.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
+    "npmjsregister.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
+    "npmrepos.com": {
+      "registered": false,
+      "checked": "2026-11-23"
+    },
     "o-parana.com": {
       "registered": true,
       "created": "2026-02-25",
@@ -2389,6 +2428,17 @@
         "client transfer prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "polymarket-clob2.blog": {
+      "registered": true,
+      "created": "2026-04-29",
+      "expires": "2027-04-29",
+      "updated": "2026-06-28",
+      "registrar": "HOSTINGER operations, UAB",
+      "status": [
+        "client transfer prohibited"
+      ],
+      "checked": "2026-11-23"
     },
     "pomozzi.com": {
       "registered": false,
@@ -3634,6 +3684,10 @@
         "client update prohibited"
       ],
       "checked": "2026-10-05"
+    },
+    "tradingprice.net": {
+      "registered": false,
+      "checked": "2026-11-23"
     },
     "tranzed.org": {
       "registered": true,
