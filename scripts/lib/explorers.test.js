@@ -30,3 +30,8 @@ test("Polygon and Sepolia link to their explorers", () => {
   assert.equal(explorerUrl("0xabc", "sepolia"), "https://sepolia.etherscan.io/address/0xabc");
   assert.equal(explorerName("sepolia"), "Sepolia Etherscan");
 });
+
+test("BNB Smart Chain testnet links to BscScan's testnet explorer", () => {
+  assert.equal(explorerUrl("0xabc", "bsc-testnet"), "https://testnet.bscscan.com/address/0xabc");
+  assert.equal(explorerName("bsc-testnet"), "BscScan Testnet");
+});

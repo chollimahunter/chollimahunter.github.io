@@ -11,6 +11,7 @@ const EXPLORERS = {
   bsc: { address: (v) => `https://bscscan.com/address/${v}`, tx: (v) => `https://bscscan.com/tx/${v}` },
   polygon: { address: (v) => `https://polygonscan.com/address/${v}`, tx: (v) => `https://polygonscan.com/tx/${v}` },
   sepolia: { address: (v) => `https://sepolia.etherscan.io/address/${v}`, tx: (v) => `https://sepolia.etherscan.io/tx/${v}` },
+  "bsc-testnet": { address: (v) => `https://testnet.bscscan.com/address/${v}`, tx: (v) => `https://testnet.bscscan.com/tx/${v}` },
   tron: {
     address: (v) => (/^T[1-9A-HJ-NP-Za-km-z]{33}$/.test(v) ? `https://tronscan.org/#/address/${v}` : `https://tronscan.org/#/transaction/${v}`),
     tx: (v) => `https://tronscan.org/#/transaction/${String(v).replace(/^0x/, "")}`,
@@ -21,7 +22,7 @@ const EXPLORERS = {
   },
 };
 
-const NAMES = { ethereum: "Etherscan", bsc: "BscScan", polygon: "Polygonscan", sepolia: "Sepolia Etherscan", tron: "Tronscan", aptos: "Aptos Explorer" };
+const NAMES = { ethereum: "Etherscan", bsc: "BscScan", polygon: "Polygonscan", sepolia: "Sepolia Etherscan", "bsc-testnet": "BscScan Testnet", tron: "Tronscan", aptos: "Aptos Explorer" };
 
 function explorerUrl(value, chain, kind = "address") {
   const explorer = EXPLORERS[String(chain || "").toLowerCase()];
