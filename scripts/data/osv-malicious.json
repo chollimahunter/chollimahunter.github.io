@@ -1,6 +1,6 @@
 {
   "_comment": "Written by scripts/enrich-osv-malicious.js: the OSV malicious-package advisories (MAL- ids) held for each indexed npm and PyPI package, looked up by name. An empty advisories list means OSV held none when checked. Packages the lookup could not answer are absent.",
-  "checked": "2026-11-22",
+  "checked": "2026-11-24",
   "items": [
     {
       "type": "npm_package",
@@ -76,6 +76,35 @@
     },
     {
       "type": "npm_package",
+      "name": "@asuly/check-logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "@bs58-utils/wrapper",
+      "advisories": [
+        {
+          "id": "MAL-2025-47913",
+          "published": "2025-10-07",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in @bs58-utils/wrapper (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@buglab/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-7057",
+          "published": "2026-07-07",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in @buglab/pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "@cdmbase/wiki-browser",
       "advisories": [
         {
@@ -83,6 +112,35 @@
           "published": "2026-11-04",
           "modified": "2026-11-04",
           "summary": "Malicious code in @cdmbase/wiki-browser (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@etherprojects/logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "@hash-validator/v2",
+      "advisories": [
+        {
+          "id": "MAL-2025-47916",
+          "published": "2025-10-07",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in @hash-validator/v2 (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@keydev/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-7080",
+          "published": "2026-07-07",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in @keydev/pino-pretty-logger (npm)"
         }
       ]
     },
@@ -112,6 +170,71 @@
     },
     {
       "type": "npm_package",
+      "name": "@logcore/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2318",
+          "published": "2026-04-01",
+          "modified": "2026-04-07",
+          "summary": "Malicious code in @logcore/pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@logforge/pino-pretty-logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "@magcd/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-7083",
+          "published": "2026-07-07",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in @magcd/pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@meme-sdk/trade",
+      "advisories": [
+        {
+          "id": "MAL-2026-5494",
+          "published": "2026-06-10",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in @meme-sdk/trade (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@mgcrae/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2421",
+          "published": "2026-04-02",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in @mgcrae/pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@nklkas/hyperliquid",
+      "advisories": [
+        {
+          "id": "MAL-2026-3004",
+          "published": "2026-04-23",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in @nklkas/hyperliquid (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "@pubngo-stack/help-browser",
       "advisories": [
         {
@@ -119,6 +242,59 @@
           "published": "2026-11-04",
           "modified": "2026-11-13",
           "summary": "Malicious code in @pubngo-stack/help-browser (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@pumpfun-ipfs/sdk",
+      "advisories": [
+        {
+          "id": "MAL-2026-2216",
+          "published": "2026-03-26",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in @pumpfun-ipfs/sdk (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@slackgram/logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "@solana-ipfs/sdk",
+      "advisories": [
+        {
+          "id": "MAL-2026-2218",
+          "published": "2026-03-26",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in @solana-ipfs/sdk (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@solana-launchpad/sdk",
+      "advisories": [
+        {
+          "id": "MAL-2026-5495",
+          "published": "2026-06-10",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in @solana-launchpad/sdk (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@solmasterv3/solana-metadata-sdk",
+      "advisories": [
+        {
+          "id": "MAL-2026-2219",
+          "published": "2026-03-26",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in @solmasterv3/solana-metadata-sdk (npm)"
         }
       ]
     },
@@ -155,6 +331,71 @@
           "published": "2026-08-23",
           "modified": "2026-08-26",
           "summary": "Malicious code in @syncraft-labs/vue (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@tsjunk/chalk",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "@tslogger/pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-7099",
+          "published": "2026-07-07",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in @tslogger/pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@validate-ethereum-address/core",
+      "advisories": [
+        {
+          "id": "MAL-2026-5496",
+          "published": "2026-06-10",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in @validate-ethereum-address/core (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@validate-pubkey/hex",
+      "advisories": [
+        {
+          "id": "MAL-2025-190634",
+          "published": "2025-11-24",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in @validate-pubkey/hex (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@validate-sdk/v2",
+      "advisories": [
+        {
+          "id": "MAL-2026-5497",
+          "published": "2026-06-10",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in @validate-sdk/v2 (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "@validator-sdk/pubkey",
+      "advisories": [
+        {
+          "id": "MAL-2026-5498",
+          "published": "2026-06-10",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in @validator-sdk/pubkey (npm)"
         }
       ]
     },
@@ -232,8 +473,49 @@
     },
     {
       "type": "npm_package",
+      "name": "@winstonts/winston2",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "1imit",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "4meme-readable-stream",
+      "advisories": [
+        {
+          "id": "MAL-2025-149904",
+          "published": "2025-11-12",
+          "modified": "2025-11-13",
+          "summary": "Malicious code in 4meme-readable-stream (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "aes-core-valid-ipherv",
+      "advisories": [
+        {
+          "id": "MAL-2025-149905",
+          "published": "2025-11-12",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in aes-core-valid-ipherv (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "aes-create-ipheriv",
+      "advisories": [
+        {
+          "id": "MAL-2025-47972",
+          "published": "2025-10-07",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in aes-create-ipheriv (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
@@ -273,6 +555,30 @@
     },
     {
       "type": "npm_package",
+      "name": "api-node-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-6743",
+          "published": "2026-07-03",
+          "modified": "2026-07-10",
+          "summary": "Malicious code in api-node-utils (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "api-ts-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-6744",
+          "published": "2026-07-03",
+          "modified": "2026-07-03",
+          "summary": "Malicious code in api-ts-utils (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "assert-json-not",
       "advisories": [
         {
@@ -280,6 +586,30 @@
           "published": "2025-12-23",
           "modified": "2026-03-19",
           "summary": "Malicious code in assert-json-not (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "assets-graph",
+      "advisories": [
+        {
+          "id": "MAL-2023-107",
+          "published": "2023-06-21",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in assets-graph (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "assets-table",
+      "advisories": [
+        {
+          "id": "MAL-2023-108",
+          "published": "2023-06-21",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in assets-table (npm)"
         }
       ]
     },
@@ -302,6 +632,30 @@
     },
     {
       "type": "npm_package",
+      "name": "audit-ejs",
+      "advisories": [
+        {
+          "id": "MAL-2023-112",
+          "published": "2023-06-15",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in audit-ejs (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "audit-vue",
+      "advisories": [
+        {
+          "id": "MAL-2023-113",
+          "published": "2023-06-15",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in audit-vue (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "auth-handler",
       "advisories": [
         {
@@ -309,6 +663,23 @@
           "published": "2025-12-23",
           "modified": "2026-03-19",
           "summary": "Malicious code in auth-handler (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "awesome-cli-builders",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "awesome-cli-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6799",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in awesome-cli-logger (npm)"
         }
       ]
     },
@@ -403,6 +774,42 @@
           "published": "2026-07-28",
           "modified": "2026-07-28",
           "summary": "Malicious code in bianira-ui (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "big256-ts",
+      "advisories": [
+        {
+          "id": "MAL-2026-6803",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in big256-ts (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "bigint.os",
+      "advisories": [
+        {
+          "id": "MAL-2026-6804",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in bigint.os (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "binance-prices",
+      "advisories": [
+        {
+          "id": "MAL-2023-133",
+          "published": "2023-07-04",
+          "modified": "2024-06-28",
+          "summary": "Malicious code in binance-prices (npm)"
         }
       ]
     },
@@ -564,6 +971,18 @@
     },
     {
       "type": "npm_package",
+      "name": "bn-eslint.js",
+      "advisories": [
+        {
+          "id": "MAL-2026-6805",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in bn-eslint.js (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "boby_parser",
       "advisories": [
         {
@@ -617,6 +1036,18 @@
     },
     {
       "type": "npm_package",
+      "name": "btc-web3",
+      "advisories": [
+        {
+          "id": "MAL-2023-146",
+          "published": "2023-06-20",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in btc-web3 (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "btrez-logger",
       "advisories": [
         {
@@ -624,6 +1055,30 @@
           "published": "2025-08-28",
           "modified": "2025-12-02",
           "summary": "Malicious code in btrez-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "cache-react",
+      "advisories": [
+        {
+          "id": "MAL-2023-153",
+          "published": "2023-06-20",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in cache-react (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "cache-vue",
+      "advisories": [
+        {
+          "id": "MAL-2023-154",
+          "published": "2023-06-20",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in cache-vue (npm)"
         }
       ]
     },
@@ -894,6 +1349,162 @@
     },
     {
       "type": "npm_package",
+      "name": "chalk-pro-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6828",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in chalk-pro-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chalki-pretty",
+      "advisories": [
+        {
+          "id": "MAL-2026-6829",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in chalki-pretty (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chalks-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6811",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in chalks-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-cli-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-3005",
+          "published": "2026-04-23",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in changelog-cli-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-logger-utilities",
+      "advisories": [
+        {
+          "id": "MAL-2026-1459",
+          "published": "2026-03-16",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in changelog-logger-utilities (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-logger-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-1927",
+          "published": "2026-03-19",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in changelog-logger-utils (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-logger-wrap",
+      "advisories": [
+        {
+          "id": "MAL-2026-1928",
+          "published": "2026-03-19",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in changelog-logger-wrap (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-logger-wrapper",
+      "advisories": [
+        {
+          "id": "MAL-2026-1460",
+          "published": "2026-03-16",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in changelog-logger-wrapper (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-utils-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2191",
+          "published": "2026-03-25",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in changelog-utils-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-utils-structured-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-3006",
+          "published": "2026-04-23",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in changelog-utils-structured-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "changelog-utils-wrapper",
+      "advisories": [
+        {
+          "id": "MAL-2026-2192",
+          "published": "2026-03-25",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in changelog-utils-wrapper (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chart-tablejs",
+      "advisories": [
+        {
+          "id": "MAL-2023-171",
+          "published": "2023-06-13",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in chart-tablejs (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chart-vxe",
+      "advisories": [
+        {
+          "id": "MAL-2023-172",
+          "published": "2023-06-15",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in chart-vxe (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "chartable-utils",
       "advisories": [
         {
@@ -942,6 +1553,35 @@
     },
     {
       "type": "npm_package",
+      "name": "cjs-biginteger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2882",
+          "published": "2026-04-14",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in cjs-biginteger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "classnames-sub-folk",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "cli-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-7246",
+          "published": "2026-07-07",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in cli-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "clsx-tailwind",
       "advisories": [
         {
@@ -949,6 +1589,30 @@
           "published": "2026-06-11",
           "modified": "2026-06-12",
           "summary": "Malicious code in clsx-tailwind (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "coingecko-prices",
+      "advisories": [
+        {
+          "id": "MAL-2023-199",
+          "published": "2023-07-14",
+          "modified": "2024-06-28",
+          "summary": "Malicious code in coingecko-prices (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "color-logger-console",
+      "advisories": [
+        {
+          "id": "MAL-2026-6831",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in color-logger-console (npm)"
         }
       ]
     },
@@ -1110,6 +1774,18 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in cors-validator (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "couchcache-audit",
+      "advisories": [
+        {
+          "id": "MAL-2023-209",
+          "published": "2023-06-22",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in couchcache-audit (npm)"
         }
       ]
     },
@@ -1341,6 +2017,18 @@
     },
     {
       "type": "npm_package",
+      "name": "ejs-audit",
+      "advisories": [
+        {
+          "id": "MAL-2023-302",
+          "published": "2023-06-19",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in ejs-audit (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "elevate-log",
       "advisories": [
         {
@@ -1348,6 +2036,30 @@
           "published": "2026-07-06",
           "modified": "2026-07-06",
           "summary": "Malicious code in elevate-log (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "elliptic-helper",
+      "advisories": [
+        {
+          "id": "MAL-2023-303",
+          "published": "2023-06-13",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in elliptic-helper (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "elliptic-parser",
+      "advisories": [
+        {
+          "id": "MAL-2023-304",
+          "published": "2023-06-13",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in elliptic-parser (npm)"
         }
       ]
     },
@@ -1372,6 +2084,18 @@
           "published": "2025-08-28",
           "modified": "2025-12-02",
           "summary": "Malicious code in emittery-up (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "emojiprint-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6816",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in emojiprint-logger (npm)"
         }
       ]
     },
@@ -1552,6 +2276,18 @@
           "published": "2025-09-15",
           "modified": "2025-09-17",
           "summary": "Malicious code in eslints-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "eth-api-node",
+      "advisories": [
+        {
+          "id": "MAL-2023-314",
+          "published": "2023-07-06",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in eth-api-node (npm)"
         }
       ]
     },
@@ -2038,6 +2774,18 @@
     },
     {
       "type": "npm_package",
+      "name": "gleb-js",
+      "advisories": [
+        {
+          "id": "MAL-2026-2976",
+          "published": "2026-04-22",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in gleb-js (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "glow-admin",
       "advisories": []
     },
@@ -2192,6 +2940,11 @@
     },
     {
       "type": "npm_package",
+      "name": "http-errors-cli",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "http-helmet",
       "advisories": [
         {
@@ -2341,6 +3094,18 @@
     },
     {
       "type": "npm_package",
+      "name": "jellyfi-pino-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2324",
+          "published": "2026-04-01",
+          "modified": "2026-04-07",
+          "summary": "Malicious code in jellyfi-pino-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "jito-components",
       "advisories": [
         {
@@ -2348,6 +3113,30 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in jito-components (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "jito-proper-excutor",
+      "advisories": [
+        {
+          "id": "MAL-2025-47978",
+          "published": "2025-10-07",
+          "modified": "2025-10-07",
+          "summary": "Malicious code in jito-proper-excutor (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "jito-sub-aes-ipheriv",
+      "advisories": [
+        {
+          "id": "MAL-2025-47979",
+          "published": "2025-10-07",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in jito-sub-aes-ipheriv (npm)"
         }
       ]
     },
@@ -2365,8 +3154,32 @@
     },
     {
       "type": "npm_package",
+      "name": "jonas-prettier-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-2325",
+          "published": "2026-04-01",
+          "modified": "2026-04-07",
+          "summary": "Malicious code in jonas-prettier-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "joyfill",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "jpeg-metadata",
+      "advisories": [
+        {
+          "id": "MAL-2023-536",
+          "published": "2023-06-12",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in jpeg-metadata (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
@@ -2385,6 +3198,11 @@
     },
     {
       "type": "npm_package",
+      "name": "js-integer-log",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "js-log-print",
       "advisories": [
         {
@@ -2392,6 +3210,18 @@
           "published": "2025-06-18",
           "modified": "2025-08-01",
           "summary": "Malicious code in js-log-print (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "js-logger-pack",
+      "advisories": [
+        {
+          "id": "MAL-2026-2827",
+          "published": "2026-04-15",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in js-logger-pack (npm)"
         }
       ]
     },
@@ -2430,6 +3260,11 @@
           "summary": "Malicious code in js-repack (npm)"
         }
       ]
+    },
+    {
+      "type": "npm_package",
+      "name": "js-tree-integer",
+      "advisories": []
     },
     {
       "type": "npm_package",
@@ -2821,6 +3656,42 @@
     },
     {
       "type": "npm_package",
+      "name": "levex-press",
+      "advisories": [
+        {
+          "id": "MAL-2026-4318",
+          "published": "2026-05-25",
+          "modified": "2026-05-25",
+          "summary": "Malicious code in levex-press (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "lint-builder-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-4319",
+          "published": "2026-05-25",
+          "modified": "2026-05-25",
+          "summary": "Malicious code in lint-builder-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "lint-null",
+      "advisories": [
+        {
+          "id": "MAL-2026-6846",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in lint-null (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "lintcolor",
       "advisories": []
     },
@@ -2838,6 +3709,18 @@
           "published": "2025-05-07",
           "modified": "2025-05-08",
           "summary": "Malicious code in log-task (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "log-upgrade",
+      "advisories": [
+        {
+          "id": "MAL-2026-6849",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in log-upgrade (npm)"
         }
       ]
     },
@@ -2874,6 +3757,18 @@
       "type": "npm_package",
       "name": "logger-base",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "logger-beauty",
+      "advisories": [
+        {
+          "id": "MAL-2026-6850",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in logger-beauty (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
@@ -3168,6 +4063,18 @@
           "published": "2025-05-14",
           "modified": "2025-08-01",
           "summary": "Malicious code in middy-js (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "mjs-biginteger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6853",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in mjs-biginteger (npm)"
         }
       ]
     },
@@ -3810,6 +4717,18 @@
     },
     {
       "type": "npm_package",
+      "name": "npm-builders",
+      "advisories": [
+        {
+          "id": "MAL-2026-1345",
+          "published": "2026-03-11",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in npm-builders (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "npm-doc-builder",
       "advisories": [
         {
@@ -3822,6 +4741,30 @@
     },
     {
       "type": "npm_package",
+      "name": "npm-doc-dev",
+      "advisories": [
+        {
+          "id": "MAL-2026-6857",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in npm-doc-dev (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "npm-eslint-helper",
+      "advisories": [
+        {
+          "id": "MAL-2026-6858",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in npm-eslint-helper (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "orbital-ledger",
       "advisories": [
         {
@@ -3829,6 +4772,18 @@
           "published": "2025-10-09",
           "modified": "2025-10-10",
           "summary": "Malicious code in orbital-ledger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "other-web3",
+      "advisories": [
+        {
+          "id": "MAL-2023-659",
+          "published": "2023-06-20",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in other-web3 (npm)"
         }
       ]
     },
@@ -3940,6 +4895,23 @@
     },
     {
       "type": "npm_package",
+      "name": "picocolor-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6861",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in picocolor-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pinky-logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "pino-debugger",
       "advisories": [
         {
@@ -3947,6 +4919,18 @@
           "published": "2026-01-28",
           "modified": "2026-02-02",
           "summary": "Malicious code in pino-debugger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pino-logger-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-1493",
+          "published": "2026-03-17",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in pino-logger-utils (npm)"
         }
       ]
     },
@@ -3976,6 +4960,35 @@
     },
     {
       "type": "npm_package",
+      "name": "pino-pretty-log",
+      "advisories": [
+        {
+          "id": "MAL-2026-2155",
+          "published": "2026-03-25",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in pino-pretty-log (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pino-pretty-logger",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "pino-pretty-logs",
+      "advisories": [
+        {
+          "id": "MAL-2026-6862",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in pino-pretty-logs (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "pino-req",
       "advisories": [
         {
@@ -3983,6 +4996,18 @@
           "published": "2025-07-15",
           "modified": "2025-07-17",
           "summary": "Malicious code in pino-req (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pino-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-6863",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in pino-utils (npm)"
         }
       ]
     },
@@ -4043,6 +5068,42 @@
           "published": "2026-03-31",
           "modified": "2026-03-31",
           "summary": "Malicious code in plain-crypto-js (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "polymarket-onchain",
+      "advisories": [
+        {
+          "id": "MAL-2026-1963",
+          "published": "2026-03-20",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in polymarket-onchain (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "polymarket-onchain-plugin",
+      "advisories": [
+        {
+          "id": "MAL-2026-6864",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in polymarket-onchain-plugin (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "polymarket-onchain-sdk",
+      "advisories": [
+        {
+          "id": "MAL-2026-6865",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in polymarket-onchain-sdk (npm)"
         }
       ]
     },
@@ -4120,6 +5181,23 @@
     },
     {
       "type": "npm_package",
+      "name": "prettier-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6866",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in prettier-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "prettier-resolver",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "prettier-utils",
       "advisories": [
         {
@@ -4144,6 +5222,23 @@
     },
     {
       "type": "npm_package",
+      "name": "pretty-changelog-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-1464",
+          "published": "2026-03-16",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in pretty-changelog-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pretty-fancy",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
       "name": "pretty-format-setting",
       "advisories": [
         {
@@ -4156,8 +5251,80 @@
     },
     {
       "type": "npm_package",
+      "name": "pretty-loggers",
+      "advisories": [
+        {
+          "id": "MAL-2026-1964",
+          "published": "2026-03-20",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in pretty-loggers (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pretty-pino-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6867",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in pretty-pino-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pretty-pino-loggers",
+      "advisories": [
+        {
+          "id": "MAL-2026-6868",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in pretty-pino-loggers (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "pretty-text-formatter",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "pretty-ts-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-1965",
+          "published": "2026-03-20",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in pretty-ts-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "price-fetch",
+      "advisories": [
+        {
+          "id": "MAL-2023-696",
+          "published": "2023-06-19",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in price-fetch (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "price-record",
+      "advisories": [
+        {
+          "id": "MAL-2023-697",
+          "published": "2023-06-19",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in price-record (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
@@ -5056,11 +6223,6 @@
     },
     {
       "type": "npm_package",
-      "name": "related",
-      "advisories": []
-    },
-    {
-      "type": "npm_package",
       "name": "reqnexus",
       "advisories": [
         {
@@ -5116,6 +6278,16 @@
           "summary": "Malicious code in restpilot (npm)"
         }
       ]
+    },
+    {
+      "type": "npm_package",
+      "name": "result-type-tool",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "rjs-biginteger",
+      "advisories": []
     },
     {
       "type": "npm_package",
@@ -5463,6 +6635,18 @@
     },
     {
       "type": "npm_package",
+      "name": "sleek-pretty",
+      "advisories": [
+        {
+          "id": "MAL-2026-6878",
+          "published": "2026-07-06",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in sleek-pretty (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "smart-parser",
       "advisories": [
         {
@@ -5470,6 +6654,18 @@
           "published": "2025-12-23",
           "modified": "2026-03-19",
           "summary": "Malicious code in smart-parser (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "snykaudit-helper",
+      "advisories": [
+        {
+          "id": "MAL-2023-782",
+          "published": "2023-06-22",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in snykaudit-helper (npm)"
         }
       ]
     },
@@ -5506,6 +6702,30 @@
           "published": "2025-06-10",
           "modified": "2025-06-11",
           "summary": "Malicious code in springboot-md (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "st-biginteger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6880",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in st-biginteger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "st-bigintr",
+      "advisories": [
+        {
+          "id": "MAL-2026-6881",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in st-bigintr (npm)"
         }
       ]
     },
@@ -5600,6 +6820,18 @@
     },
     {
       "type": "npm_package",
+      "name": "styled-text-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-6883",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in styled-text-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "succgdess",
       "advisories": []
     },
@@ -5612,6 +6844,30 @@
           "published": "2025-06-26",
           "modified": "2025-06-27",
           "summary": "Malicious code in sumsub-node-websdk (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "sync-http-api",
+      "advisories": [
+        {
+          "id": "MAL-2023-825",
+          "published": "2023-06-21",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in sync-http-api (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "sync-https-api",
+      "advisories": [
+        {
+          "id": "MAL-2023-826",
+          "published": "2023-06-21",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in sync-https-api (npm)"
         }
       ]
     },
@@ -6808,6 +8064,59 @@
     },
     {
       "type": "npm_package",
+      "name": "terminal-formatter",
+      "advisories": [
+        {
+          "id": "MAL-2026-2911",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in terminal-formatter (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "terminal-logger-pack",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "terminal-prettier",
+      "advisories": [
+        {
+          "id": "MAL-2026-6676",
+          "published": "2026-06-30",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in terminal-prettier (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "terminal-pretty-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-5866",
+          "published": "2026-06-16",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in terminal-pretty-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "terminal-structured-logger",
+      "advisories": [
+        {
+          "id": "MAL-2026-5867",
+          "published": "2026-06-16",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in terminal-structured-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "test-topdev-logger-v1",
       "advisories": []
     },
@@ -6890,6 +8199,114 @@
     },
     {
       "type": "npm_package",
+      "name": "ts-big-lib",
+      "advisories": [
+        {
+          "id": "MAL-2026-4324",
+          "published": "2026-05-25",
+          "modified": "2026-05-25",
+          "summary": "Malicious code in ts-big-lib (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-bing",
+      "advisories": [
+        {
+          "id": "MAL-2026-3011",
+          "published": "2026-04-23",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in ts-bing (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-lint-builder",
+      "advisories": [
+        {
+          "id": "MAL-2026-1346",
+          "published": "2026-03-11",
+          "modified": "2026-03-23",
+          "summary": "Malicious code in ts-lint-builder (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-lint-builders",
+      "advisories": [
+        {
+          "id": "MAL-2026-6897",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in ts-lint-builders (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-lint-builds",
+      "advisories": [
+        {
+          "id": "MAL-2026-2883",
+          "published": "2026-04-14",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in ts-lint-builds (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-logger-pack",
+      "advisories": [
+        {
+          "id": "MAL-2026-4199",
+          "published": "2026-05-20",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in ts-logger-pack (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-moduler",
+      "advisories": [
+        {
+          "id": "MAL-2026-3012",
+          "published": "2026-04-23",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in ts-moduler (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-relayer-pub",
+      "advisories": [
+        {
+          "id": "MAL-2026-6898",
+          "published": "2026-07-06",
+          "modified": "2026-07-06",
+          "summary": "Malicious code in ts-relayer-pub (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ts-utils-dev",
+      "advisories": [
+        {
+          "id": "MAL-2026-2977",
+          "published": "2026-04-22",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in ts-utils-dev (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "tsleep",
       "advisories": [
         {
@@ -6902,6 +8319,42 @@
     },
     {
       "type": "npm_package",
+      "name": "tslib-react",
+      "advisories": [
+        {
+          "id": "MAL-2023-910",
+          "published": "2023-06-14",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in tslib-react (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "tslib-util",
+      "advisories": [
+        {
+          "id": "MAL-2023-911",
+          "published": "2023-06-13",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in tslib-util (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "ttf-metadata",
+      "advisories": [
+        {
+          "id": "MAL-2023-912",
+          "published": "2023-06-12",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in ttf-metadata (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "typeorm-encrypt",
       "advisories": [
         {
@@ -6909,6 +8362,18 @@
           "published": "2026-06-11",
           "modified": "2026-06-12",
           "summary": "Malicious code in typeorm-encrypt (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "typescript-util-core",
+      "advisories": [
+        {
+          "id": "MAL-2026-6746",
+          "published": "2026-07-03",
+          "modified": "2026-07-10",
+          "summary": "Malicious code in typescript-util-core (npm)"
         }
       ]
     },
@@ -7015,6 +8480,18 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in viam (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "vime-azl",
+      "advisories": [
+        {
+          "id": "MAL-2026-3014",
+          "published": "2026-04-23",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in vime-azl (npm)"
         }
       ]
     },
@@ -7830,6 +9307,42 @@
     },
     {
       "type": "npm_package",
+      "name": "vue-audit",
+      "advisories": [
+        {
+          "id": "MAL-2023-947",
+          "published": "2023-06-19",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in vue-audit (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "vue-gws",
+      "advisories": [
+        {
+          "id": "MAL-2023-948",
+          "published": "2023-06-15",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in vue-gws (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "vuewjs",
+      "advisories": [
+        {
+          "id": "MAL-2023-951",
+          "published": "2023-06-13",
+          "modified": "2023-11-08",
+          "summary": "Malicious code in vuewjs (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "vvite-plugin-react-ping",
       "advisories": [
         {
@@ -7863,6 +9376,11 @@
           "summary": "Malicious code in we3.js (npm)"
         }
       ]
+    },
+    {
+      "type": "npm_package",
+      "name": "web-http-errors",
+      "advisories": []
     },
     {
       "type": "npm_package",
@@ -8041,6 +9559,18 @@
           "published": "2026-03-23",
           "modified": "2026-04-08",
           "summary": "Malicious code in logutilkit (PyPI)"
+        }
+      ]
+    },
+    {
+      "type": "pypi_package",
+      "name": "scraper-npm",
+      "advisories": [
+        {
+          "id": "MAL-2026-1000",
+          "published": "2026-02-23",
+          "modified": "2026-02-23",
+          "summary": "Malicious code in scraper-npm (PyPI)"
         }
       ]
     }
