@@ -2364,3 +2364,7 @@ https://intel.breakglass.tech/post/kimsuky-second-cell-telegram-bot-ipfs-harvest
 https://intel.breakglass.tech/post/kimsuky-740-hostnames-98-sequential-subdomains-geofenced-korean-phishing-factory
 https://panther.com/blog/mapping-the-contagious-trader-delivery-network
 https://github.blog/security/vulnerability-research/security-alert-social-engineering-campaign-targets-technology-industry-employees/
+https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware
+https://www.trendmicro.com/en/research/26/e/smart-contracts-for-command-and-control.html
+https://rmceoin.github.io/malware-analysis/2026/09/09/clearfake.html
+https://cybersecuritynews.com/clearfake-deploys-crypto-stealer/

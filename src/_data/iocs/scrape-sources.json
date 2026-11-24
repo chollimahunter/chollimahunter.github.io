@@ -4715,6 +4715,32 @@
       "title": "Hunting for Unsigned DLLs to Find APTs",
       "campaign": [
         "Lazarus Group"
+      ],
+      "exclude": [
+        {
+          "sealed": "9d5ab610f37f7177ce79e9d2ec69ed06a0c96fdcc93f9275558bdc68ee497adc"
+        },
+        {
+          "sealed": "280944207cb643eafef93082acffd05ad59b9ff067b1f90b8140174700bf1fe1"
+        },
+        {
+          "sealed": "893c635b0e5e403943c9a56740b8940c7a281ece87a888056595d3e286539d81"
+        },
+        {
+          "sealed": "300f5f03ecd5470eeb272c008400a391556acf44c3180b51585faa515e74aca9"
+        },
+        {
+          "sealed": "85e79d9f5ab40a189851af923d42ec768f0e8b78783bac714496ccb85c3e47dc"
+        },
+        {
+          "sealed": "ba33915ffb2b03c30be05de0d3c8b26ecd1d517d46dccddc35341b9c9462c1ed"
+        },
+        {
+          "sealed": "6fdcffc7462465658367d33c8a49d6582f8856dd93644b72407520859018074a"
+        },
+        {
+          "sealed": "e216ec7953d27007ee900b096a2e3beb6f274e90f2945ba3e485d1f3608bad99"
+        }
       ]
     },
     {
@@ -15319,6 +15345,11 @@
       "publisher": "Randy McEoin",
       "campaign": [
         "EtherHiding"
+      ],
+      "exclude": [
+        {
+          "sealed": "34647690e86eff33030dc64c9f6fd985ab19433daa395288f7ed70b88c9b38f5"
+        }
       ]
     },
     {

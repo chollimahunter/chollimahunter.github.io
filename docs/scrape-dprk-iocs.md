@@ -224,6 +224,26 @@ improvement to the extractor reaches pages whose text has not moved.
    citation alone carries the meaning. Quoting it would be noise dressed as
    evidence.
 
+### Tables typed by their header row
+
+Some reports put the type in a table's header ("package_name | version |
+SHA1") and the registry in the heading above it ("npm packages:", "PyPI
+package:"), with no type cell on each row. Flattened to text, those cells
+are loose lines, so ReversingLabs' PromptMink report gave the scraper its C2
+hosts and none of its 63 packages or 305 digests. `scripts/lib/header-tables.js`
+reads such tables from the HTML before it is flattened. A table is read only
+when a header cell names a package or a hash algorithm and one of the three
+headings above it, or the line just before it, marks it as an indicator list
+(indicators of compromise, IOCs, appendix, malicious). A package column is
+read only when the header or that context names exactly one registry, npm or
+PyPI. The cells are recorded as list sightings, quoted as the row.
+
+A page built with React's streaming renderer (ReversingLabs' blog is one)
+sends whatever was not ready as hidden chunks at the end of the body, each
+moved into place by a `$RS(...)` script, so read raw its tables break off
+after a few rows. `scripts/lib/streamed-html.js` does what that script does
+before anything else reads the page.
+
 ## PDFs
 
 The most authoritative sources here are PDFs — UN and multilateral sanctions
