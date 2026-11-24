@@ -67,3 +67,11 @@ test("streamed chunks are moved into their placeholders, nested ones too", () =>
   assert.equal(resolveStreamedHtml(html), `<table><tr><td>a</td><td>b<b>2</b></td></tr></table>`);
   assert.equal(resolveStreamedHtml("<p>plain</p>"), "<p>plain</p>");
 });
+
+test("decoy and legitimate files are skipped, by row and by label", () => {
+  const h = "a".repeat(64);
+  const rows = table(["File", "SHA256", "Note"], ["lure.hwp", h, "decoy document"], ["mapistub.dll", "b".repeat(64), "loader"]);
+  assert.deepEqual(readHeaderTables(rows, ["IOCs"], text).map((c) => c.value), ["b".repeat(64)]);
+  const labelled = `<p>Most of the files below are clean decoy files.</p>${table(["MD5"], ["c".repeat(32)])}`;
+  assert.deepEqual(readHeaderTables(labelled, ["Appendix"], text), []);
+});

@@ -17,13 +17,18 @@
  * above it, or the label line just before it, marks it as an indicator list
  * (indicators of compromise, IOCs, appendix, malicious). A package column is
  * read only when the header or that context names exactly one registry, npm
- * or PyPI; a name with no registry stated is left alone.
+ * or PyPI; a name with no registry stated is left alone. A row that calls its
+ * file a decoy, legitimate, benign or clean is skipped, and so is a table whose
+ * label says so.
  */
 
 const PACKAGE_HEADER = /^(?:(npm|pypi)[ _-]*)?package(?:[ _-]*names?)?s?$|^(npm|pypi)$/i;
 const HASH_HEADER = /^(?:sha-?(?:1|256|512)|md-?5)(?:[ _-]*(?:hash|digest|sum))?$|^(?:file[ _-]*)?hash(?:es)?$/i;
 const INDICATOR_CONTEXT = /indicators?\s+of\s+compromise|\biocs?\b|\bappendix\b|malicious|malware/i;
 const HEADINGS_ABOVE = 3;
+// A row or label saying the file is a decoy or a legitimate one: a lure
+// document can be a victim's own file, and a side-loading host is the vendor's.
+const NOT_MALICIOUS = /\b(?:decoys?|legitimate|benign|clean)\b/i;
 
 function registryOf(text) {
   const npm = /\bnpm\b/i.test(text);
@@ -56,7 +61,7 @@ function readHeaderTables(segmentHtml, headings, cellText) {
     const rows = rowsOf(table[0], cellText).filter((r) => r.length);
     if (rows.length < 2) continue;
     const context = [...above, label].join("\n");
-    if (!INDICATOR_CONTEXT.test(context)) continue;
+    if (!INDICATOR_CONTEXT.test(context) || NOT_MALICIOUS.test(label)) continue;
 
     const header = rows[0];
     const columns = header.map((name) => {
@@ -71,7 +76,7 @@ function readHeaderTables(segmentHtml, headings, cellText) {
     if (!columns.some(Boolean)) continue;
 
     for (const row of rows.slice(1)) {
-      if (row.join("|") === header.join("|")) continue;
+      if (row.join("|") === header.join("|") || NOT_MALICIOUS.test(row.join(" "))) continue;
       const quote = `${label ? `${label} ` : ""}${row.join(" | ")}`.slice(0, 300);
       row.forEach((cell, i) => {
         if (columns[i] && cell && !/\s/.test(cell)) out.push({ ioc_type: columns[i], value: cell, context: quote, section });

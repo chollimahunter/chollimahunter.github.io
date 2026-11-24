@@ -1132,6 +1132,35 @@
     },
     {
       "type": "npm_package",
+      "name": "chai-as-encrypted",
+      "advisories": [
+        {
+          "id": "MAL-2026-2888",
+          "published": "2026-04-15",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in chai-as-encrypted (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chai-as-hooked",
+      "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "chai-as-redeployed",
+      "advisories": [
+        {
+          "id": "MAL-2026-3165",
+          "published": "2026-04-29",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in chai-as-redeployed (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "chai-as-sorted",
       "advisories": [
         {
@@ -1219,6 +1248,42 @@
     },
     {
       "type": "npm_package",
+      "name": "chai-beta",
+      "advisories": [
+        {
+          "id": "MAL-2026-2897",
+          "published": "2026-04-15",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in chai-beta (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chai-chain-coremesh",
+      "advisories": [
+        {
+          "id": "MAL-2026-2741",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in chai-chain-coremesh (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chai-extensions-extra",
+      "advisories": [
+        {
+          "id": "MAL-2026-2742",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in chai-extensions-extra (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "chai-jsons",
       "advisories": [
         {
@@ -1289,6 +1354,18 @@
     },
     {
       "type": "npm_package",
+      "name": "chai-str",
+      "advisories": [
+        {
+          "id": "MAL-2026-2898",
+          "published": "2026-04-15",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in chai-str (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "chai-sync",
       "advisories": [
         {
@@ -1325,6 +1402,18 @@
     },
     {
       "type": "npm_package",
+      "name": "chai-use-chain",
+      "advisories": [
+        {
+          "id": "MAL-2026-2743",
+          "published": "2026-04-16",
+          "modified": "2026-07-23",
+          "summary": "Malicious code in chai-use-chain (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "chai-utils",
       "advisories": [
         {
@@ -1332,6 +1421,30 @@
           "published": "2025-10-09",
           "modified": "2025-10-10",
           "summary": "Malicious code in chai-utils (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chain-metrica",
+      "advisories": [
+        {
+          "id": "MAL-2026-2744",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in chain-metrica (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "chain-syncora",
+      "advisories": [
+        {
+          "id": "MAL-2026-2745",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in chain-syncora (npm)"
         }
       ]
     },
@@ -1762,6 +1875,30 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in cookies-logger (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "coremesh",
+      "advisories": [
+        {
+          "id": "MAL-2026-2750",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in coremesh (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "coremeshnode",
+      "advisories": [
+        {
+          "id": "MAL-2026-2751",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in coremeshnode (npm)"
         }
       ]
     },
@@ -2269,6 +2406,18 @@
     },
     {
       "type": "npm_package",
+      "name": "eslint-validator",
+      "advisories": [
+        {
+          "id": "MAL-2026-2300",
+          "published": "2026-03-30",
+          "modified": "2026-03-31",
+          "summary": "Malicious code in eslint-validator (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "eslints-logger",
       "advisories": [
         {
@@ -2769,6 +2918,18 @@
           "published": "2025-09-16",
           "modified": "2025-09-18",
           "summary": "Malicious code in gatepass (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "gemini-ai-checker",
+      "advisories": [
+        {
+          "id": "MAL-2026-2763",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in gemini-ai-checker (npm)"
         }
       ]
     },
@@ -3697,6 +3858,18 @@
     },
     {
       "type": "npm_package",
+      "name": "lockedin-chai-chain",
+      "advisories": [
+        {
+          "id": "MAL-2026-2902",
+          "published": "2026-04-15",
+          "modified": "2026-09-01",
+          "summary": "Malicious code in lockedin-chai-chain (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "log-pino",
       "advisories": []
     },
@@ -4027,6 +4200,30 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in metamask-api (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "metrify-chain",
+      "advisories": [
+        {
+          "id": "MAL-2026-2779",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in metrify-chain (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "metrify-node",
+      "advisories": [
+        {
+          "id": "MAL-2026-2780",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in metrify-node (npm)"
         }
       ]
     },
@@ -4409,6 +4606,18 @@
     },
     {
       "type": "npm_package",
+      "name": "node-metrica",
+      "advisories": [
+        {
+          "id": "MAL-2026-2786",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in node-metrica (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "node-mongo-orm",
       "advisories": [
         {
@@ -4493,6 +4702,18 @@
           "published": "2025-07-01",
           "modified": "2025-07-03",
           "summary": "Malicious code in node-orm-mongoose (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "node-syncora",
+      "advisories": [
+        {
+          "id": "MAL-2026-2787",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in node-syncora (npm)"
         }
       ]
     },
@@ -4912,6 +5133,18 @@
     },
     {
       "type": "npm_package",
+      "name": "pinno-loggers",
+      "advisories": [
+        {
+          "id": "MAL-2026-4196",
+          "published": "2026-05-20",
+          "modified": "2026-05-20",
+          "summary": "Malicious code in pinno-loggers (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "pino-debugger",
       "advisories": [
         {
@@ -5109,6 +5342,18 @@
     },
     {
       "type": "npm_package",
+      "name": "polymarket-validator",
+      "advisories": [
+        {
+          "id": "MAL-2026-1463",
+          "published": "2026-03-16",
+          "modified": "2026-07-09",
+          "summary": "Malicious code in polymarket-validator (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
       "name": "post-css-transfer",
       "advisories": [
         {
@@ -5246,6 +5491,18 @@
           "published": "2025-10-12",
           "modified": "2025-10-13",
           "summary": "Malicious code in pretty-format-setting (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "pretty-logger-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-4197",
+          "published": "2026-05-20",
+          "modified": "2026-05-20",
+          "summary": "Malicious code in pretty-logger-utils (npm)"
         }
       ]
     },
@@ -6218,6 +6475,30 @@
           "published": "2025-08-29",
           "modified": "2025-08-29",
           "summary": "Malicious code in redux-toolkit-rts (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "relion-chain",
+      "advisories": [
+        {
+          "id": "MAL-2026-2796",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in relion-chain (npm)"
+        }
+      ]
+    },
+    {
+      "type": "npm_package",
+      "name": "relion-node",
+      "advisories": [
+        {
+          "id": "MAL-2026-2797",
+          "published": "2026-04-16",
+          "modified": "2026-04-23",
+          "summary": "Malicious code in relion-node (npm)"
         }
       ]
     },
@@ -8078,6 +8359,18 @@
       "type": "npm_package",
       "name": "terminal-logger-pack",
       "advisories": []
+    },
+    {
+      "type": "npm_package",
+      "name": "terminal-logger-utils",
+      "advisories": [
+        {
+          "id": "MAL-2026-4198",
+          "published": "2026-05-20",
+          "modified": "2026-05-26",
+          "summary": "Malicious code in terminal-logger-utils (npm)"
+        }
+      ]
     },
     {
       "type": "npm_package",
