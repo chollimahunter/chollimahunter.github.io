@@ -1,6 +1,6 @@
 {
   "_comment": "When each registrable domain indicator was registered, from the registry's RDAP record. Written by scripts/enrich-domains.js; read at build time by src/_data/iocIndex.js. Subdomains are never looked up, and a domain with no entry was not looked up.",
-  "checked": "2026-11-23",
+  "checked": "2026-11-24",
   "domains": {
     "67sixcebeh.surf": {
       "registered": true,
@@ -1010,6 +1010,17 @@
         "active"
       ],
       "checked": "2026-10-05"
+    },
+    "exma-htlarlvageustio.com": {
+      "registered": true,
+      "created": "2026-03-02",
+      "expires": "2027-03-02",
+      "updated": "2026-11-15",
+      "registrar": "Hello Internet Corp",
+      "status": [
+        "active"
+      ],
+      "checked": "2026-11-24"
     },
     "expertweblancer.com": {
       "registered": false,

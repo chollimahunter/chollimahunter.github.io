@@ -18422,5 +18422,69 @@
         "quote": "0x9FEF571BAeAbdB8bF417a780c1b78aAa3295fF45"
       }
     ]
+  },
+  {
+    "id": "etherrat-c2-exma-htlarlvageustio-com",
+    "ioc_type": "domain",
+    "value": "exma-htlarlvageustio.com",
+    "confidence_level": "low",
+    "description": "Value written to the EtherRAT resolver contract 0x277852e1c349b03c79e348018a8391bd21c412e8 by operator wallet 0x6c0bdc011f31715c4ff537aa9c6a8a141f8a6119 on 2026-11-15, replacing opencodeoptlons.com, as recorded in the contract's setString events; the same wallet wrote opencode-setup-al.com back later that day. This is an on-chain observation by this site, not a value carried in published reporting. RDAP shows the domain registered on 2026-03-02 through Hello Internet Corp and last changed on 2026-11-15 at 14:16 UTC, the day it was written, with Cloudflare nameservers; on 2026-11-24 it resolved to 193.233.126.182. The label rests on Sysdig's attribution of the EtherRAT family; one deployment of the family (The DFIR Report) ended in The Gentlemen ransomware with no nation-state named, so this entry carries low confidence and is not itself a DPRK attribution.",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0xe23bb51497f2af9db06775e3f32c8adfea42f59f65ff2fa5c75a72cbca981ba3",
+        "url": "https://etherscan.io/tx/0xe23bb51497f2af9db06775e3f32c8adfea42f59f65ff2fa5c75a72cbca981ba3",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-15",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "EtherRAT: DPRK uses novel Ethereum implant in React2Shell attacks",
+        "url": "https://www.sysdig.com/blog/etherrat-dprk-uses-novel-ethereum-implant-in-react2shell-attacks",
+        "publisher": "Sysdig",
+        "type": "threat_intel_report"
+      }
+    ],
+    "campaign": [
+      "EtherHiding",
+      "DPRK (cluster unattributed)"
+    ],
+    "malware_family": "EtherRAT",
+    "date_added": "2026-11-24"
+  },
+  {
+    "id": "xctdh-c2-ip-141-11-243-171",
+    "ioc_type": "ip_address",
+    "value": "141.11.243.171",
+    "campaign": [
+      "EtherHiding",
+      "Contagious Interview"
+    ],
+    "description": "Address the first XCTDH signal wallet 0x33ff3edaf55a8e03dcbc7cb40d498a49cd499891 has pointed implants at since 2026-11-17, through the recipient address 0x8d0bf3ab00508d0bf3ab005000ff0cb58abd71de (port 80), read with the encoding Ransom-ISAC published for that wallet. It replaced 95.135.181.25, which the wallet pointed at from 2026-11-02 to 2026-11-17; 174 transactions paid the new recipient by 2026-11-23, the last of them 0x389e5759315d0342efbbd98c79da3f881f32d0d0fb4a9acb5c3fc7226d5b212b. This is an on-chain observation by this site, not published reporting. Recorded as the address the implant is pointed at, not as a host this site has observed serving anything.",
+    "malware_family": "DEV#POPPER.js",
+    "confidence_level": "medium",
+    "sources": [
+      {
+        "title": "Ethereum transaction 0x2ded79a0a2e8556f601b12581703e389e1bd6181d51592b349903061a536df2d",
+        "url": "https://etherscan.io/tx/0x2ded79a0a2e8556f601b12581703e389e1bd6181d51592b349903061a536df2d",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-17",
+        "type": "on_chain_observation"
+      },
+      {
+        "title": "XCTDH Adopts Hash Hiding",
+        "url": "https://ransom-isac.org/blog/xctdh-adopts-hash-hiding/",
+        "publisher": "Ransom-ISAC",
+        "date": "2026-09-25",
+        "type": "threat_intel_report"
+      },
+      {
+        "title": "Ethereum transaction 0x389e5759315d0342efbbd98c79da3f881f32d0d0fb4a9acb5c3fc7226d5b212b",
+        "url": "https://etherscan.io/tx/0x389e5759315d0342efbbd98c79da3f881f32d0d0fb4a9acb5c3fc7226d5b212b",
+        "publisher": "Chollima Hunter (on-chain observation)",
+        "date": "2026-11-23",
+        "type": "on_chain_observation"
+      }
+    ],
+    "date_added": "2026-11-24"
   }
 ]

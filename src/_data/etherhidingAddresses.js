@@ -28,7 +28,7 @@ module.exports = function () {
   const registrations = readJsonIfPresent(path.join(__dirname, "..", "..", "scripts", "data", "domain-registration.json"), { domains: {} }).domains;
   const rows = addressRows(index.etherhiding.watchlist, latest, review, indexed);
   // The tracker's Family and Chain filters, by the value each row carries.
-  const CHAIN_LABELS = { ethereum: "Ethereum", bsc: "BNB Smart Chain", tron: "TRON", aptos: "Aptos", polygon: "Polygon", sepolia: "Ethereum Sepolia (testnet)" };
+  const CHAIN_LABELS = { ethereum: "Ethereum", bsc: "BNB Smart Chain", tron: "TRON", aptos: "Aptos", polygon: "Polygon", sepolia: "Ethereum Sepolia (testnet)", "bsc-testnet": "BNB Smart Chain testnet" };
   const facets = { family: {}, chain: {} };
   for (const row of rows) {
     row.family_label = row.malware_family || "Unspecified";
