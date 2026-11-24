@@ -1,11 +1,16 @@
 # EtherHiding hunt
 
-`scripts/hunt-etherhiding.js`, run monthly (the 1st) by `.github/workflows/etherhiding-hunt.yml`,
+`scripts/hunt-etherhiding.js`, run weekly (Wednesdays) by `.github/workflows/etherhiding-hunt.yml`,
 looks for EtherHiding contracts the watchlist does not carry. It follows the
 method Alex Necula described on LinkedIn on 7 and 12 October 2026: a contract
 that overwrites its stored C2 still leaves every earlier value in the inputs of
 the transactions that set it, and some operators also emit an event such as
 `DataUpdated(string,string)` on every rotation.
+
+BNB Smart Chain testnet (`bsc-testnet`, where ClearFake keeps its contracts)
+has no indexer wired in, so its watchlisted contracts are re-read by the
+refresh but a new testnet contract from their deployer is not hunted; check
+that deployer by hand on testnet.bscscan.com when ClearFake is reported again.
 
 For each EVM contract and wallet in the watchlist on a chain with an indexer,
 it:
@@ -38,7 +43,7 @@ With `--writes`, the write history of every watchlisted contract goes to
 `src/_data/etherhidingFindings/writes.json`, newest value per transaction cut
 to 300 characters; a contract a run could not read keeps its earlier history.
 The Write transactions table on each contract's indicator page shows it, and
-the monthly run commits it through the `etherhiding/writes` pull request.
+the weekly run commits it through the `etherhiding/writes` pull request.
 
 Run it by hand:
 

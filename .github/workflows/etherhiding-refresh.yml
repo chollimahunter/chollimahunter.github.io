@@ -71,6 +71,9 @@ jobs:
             --rpc polygon=https://1rpc.io/matic \
             --rpc sepolia=https://ethereum-sepolia-rpc.publicnode.com \
             --rpc sepolia=https://1rpc.io/sepolia \
+            --rpc bsc-testnet=https://bsc-testnet-dataseed.bnbchain.org \
+            --rpc bsc-testnet=https://data-seed-prebsc-1-s1.bnbchain.org:8545 \
+            --rpc bsc-testnet=https://bsc-testnet-rpc.publicnode.com \
             --indexer ethereum=https://eth.blockscout.com/api \
             --indexer ethereum=https://api.routescan.io/v2/network/mainnet/evm/1/etherscan/api \
             --indexer polygon=https://polygon.blockscout.com/api \
