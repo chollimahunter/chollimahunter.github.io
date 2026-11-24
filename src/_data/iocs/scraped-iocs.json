@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T05:19:32Z",
-  "record_count": 13476,
+  "generated_at": "2026-11-24T05:43:46Z",
+  "record_count": 13463,
   "records": [
     {
       "id": "asn-59a43ca6a906",
@@ -4254,66 +4254,6 @@
       ]
     },
     {
-      "id": "domain-aa0d18584674",
-      "ioc_type": "domain",
-      "value": "euiro8966.organiccrap.com",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…C2: jennifer998.lookin.at 196.44.49.154 www.hosting.tempors.com kted56erhg.dynssl.com euiro8966.organiccrap.com 116.193.155.38 games.my-homeip.com Back to top Tags Bioazih Bisonal Dexbia Operation Bitter Biscuit…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
-        }
-      ]
-    },
-    {
-      "id": "domain-bb6add7b4526",
-      "ioc_type": "domain",
-      "value": "games.my-homeip.com",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…C2: jennifer998.lookin.at 196.44.49.154 www.hosting.tempors.com kted56erhg.dynssl.com euiro8966.organiccrap.com 116.193.155.38 games.my-homeip.com Back to top Tags Bioazih Bisonal Dexbia Operation Bitter Biscuit Russia South Korea Threat…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
-        }
-      ]
-    },
-    {
       "id": "domain-08f788eafd79",
       "ioc_type": "domain",
       "value": "genuinashop.com",
@@ -4430,36 +4370,6 @@
           "section": "Indicators of Compromise",
           "pulled_at": "2026-10-03",
           "source_sha256": "57047fab34995104c819f1691f9c3482e5af62b9b8184860c48a4c853b3c2c8c"
-        }
-      ]
-    },
-    {
-      "id": "domain-e26ca4d8de87",
-      "ioc_type": "domain",
-      "value": "hosting.tempors.com",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…C2: jennifer998.lookin.at 196.44.49.154 www.hosting.tempors.com kted56erhg.dynssl.com euiro8966.organiccrap.com 116.193.155.38 games.my-homeip.com Back to top Tags Bioazih…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
@@ -4672,36 +4582,6 @@
           "section": "C2 servers",
           "pulled_at": "2026-10-26",
           "source_sha256": "620830e29d04d47502a4ca9f7da0371f28a5a031b839524e75ab873b4dca573b"
-        }
-      ]
-    },
-    {
-      "id": "domain-4cb6ba0e81b8",
-      "ioc_type": "domain",
-      "value": "jennifer998.lookin.at",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…C2: jennifer998.lookin.at 196.44.49.154 www.hosting.tempors.com kted56erhg.dynssl.com euiro8966.organiccrap.com 116.193.155.38 games.my-homeip.com…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
@@ -4923,36 +4803,6 @@
           "section": "C2",
           "pulled_at": "2026-09-12",
           "source_sha256": "64b0af984dd0d3c6c3dfd3a9fb3aaa98ffba569970c2f34fefb0985a67822d21"
-        }
-      ]
-    },
-    {
-      "id": "domain-04e64dcdb2b5",
-      "ioc_type": "domain",
-      "value": "kted56erhg.dynssl.com",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…C2: jennifer998.lookin.at 196.44.49.154 www.hosting.tempors.com kted56erhg.dynssl.com euiro8966.organiccrap.com 116.193.155.38 games.my-homeip.com Back to top Tags Bioazih Bisonal Dexbia…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
@@ -136863,36 +136713,6 @@
       ]
     },
     {
-      "id": "file-hash-bf1e7387f2ef",
-      "ioc_type": "file_hash",
-      "value": "0641fe04713fbdad272a6f8e9b44631b7554dfd1e1332a8afa767d845a90b3fa",
-      "display": "0641fe04713f...",
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…executable installs Bisonal and a decoy file in the paths shown in Table 3, below. Type PATH SHA256 Dropper EXE N/A 0641fe04713fbdad272a6f8e9b44631b7554dfd1e1332a8afa767d845a90b3fa Bisonal EXE %Temp%\\[random].tmp 359835C4A9DBE2D95E483464659744409E877CB6F5D791DAA33FD601A01376FC Korean Decoy PDF [dropper…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
-        }
-      ]
-    },
-    {
       "id": "file-hash-aa47eef4202b",
       "ioc_type": "file_hash",
       "value": "06431a5d8f6262cc3db39d911a920f793fa6c648be94daf789c11cc5514d0c3d",
@@ -145971,36 +145791,6 @@
           "section": "IOCs",
           "pulled_at": "2026-11-24",
           "source_sha256": "06836f87129ad3ae0efedc4a1beaf581da5ca5d762e10910d91577ffa0354458"
-        }
-      ]
-    },
-    {
-      "id": "file-hash-e7c7a71a1bc5",
-      "ioc_type": "file_hash",
-      "value": "1128d10347dd602ecd3228faa389add11415bf6936e2328101311264547afa75",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "Following table is the summary of the Bisonal samples described in this article. 2018 | Russia | 0425god | 1128D10347DD602ECD3228FAA389ADD11415BF6936E2328101311264547AFA75 | RC4 | NO | YES | kted56erhg.dynssl.com, euiro8966.organiccrap.com",
-          "context_origin": "list",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-11-24",
-          "source_sha256": "65ac9073bb1f0db9b54df83045ada3566c3518c07710e4473ef84ebfa3b9a242"
         }
       ]
     },
@@ -168547,36 +168337,6 @@
       ]
     },
     {
-      "id": "file-hash-145111ec9853",
-      "ioc_type": "file_hash",
-      "value": "359835c4a9dbe2d95e483464659744409e877cb6f5d791daa33fd601a01376fc",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "Following table is the summary of the Bisonal samples described in this article. 2018 | South Korea | pmo | 359835C4A9DBE2D95E483464659744409E877CB6F5D791DAA33FD601A01376FC | RC4 | NO | YES | games.my-homeip.com",
-          "context_origin": "list",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-11-24",
-          "source_sha256": "65ac9073bb1f0db9b54df83045ada3566c3518c07710e4473ef84ebfa3b9a242"
-        }
-      ]
-    },
-    {
       "id": "file-hash-6a2e2adca7db",
       "ioc_type": "file_hash",
       "value": "35a101941f438a7d072b31eb3b666e2c31a070dd7cf8099d20b738778fbd3458",
@@ -176024,36 +175784,6 @@
           "section": "Files",
           "pulled_at": "2026-11-24",
           "source_sha256": "df363a32e19c1ff76eec7daa5958d3e5aa66aa8d681d8ac22338ffbb6b60a418"
-        }
-      ]
-    },
-    {
-      "id": "file-hash-04e452171e47",
-      "ioc_type": "file_hash",
-      "value": "43459f5117bee7b49f2cee7ce934471e01fb2aa2856f230943460e14e19183a6",
-      "display": "43459f5117be...",
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…Bisonal SHA256: 43459F5117BEE7B49F2CEE7CE934471E01FB2AA2856F230943460E14E19183A6 DFA1AD6083AA06B82EDFA672925BB78C16D4E8CB2510CBE18EA1CF598E7F2722 1128D10347DD602ECD3228FAA389ADD11415BF6936E2328101311264547AFA75 359835…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
@@ -236037,36 +235767,6 @@
       ]
     },
     {
-      "id": "file-hash-198c7b0b5de8",
-      "ioc_type": "file_hash",
-      "value": "b1da7e1963dc09c325ba3ea2442a54afea02929ec26477a1b120ae44368082f8",
-      "display": "b1da7e1963dc...",
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…cipher with the key, “34123412”, saves them in the path shown below and executes them. Type PATH SHA256 Dropper EXE N/A b1da7e1963dc09c325ba3ea2442a54afea02929ec26477a1b120ae44368082f8 Bisonal DLL C:\\Windows\\Temp\\pvcu.dll 1128D10347DD602ECD3228FAA389ADD11415BF6936E2328101311264547AFA75 Russian Decoy PDF…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
-        }
-      ]
-    },
-    {
       "id": "file-hash-aba768f635d2",
       "ioc_type": "file_hash",
       "value": "b1dd2c73b3c13a147828f7bb4389d241",
@@ -258705,36 +258405,6 @@
           "section": "Indicators of Compromise (IOCs)",
           "pulled_at": "2026-11-24",
           "source_sha256": "53911df5dbb9a99e3452d2d11611eba2b6010ab916d009be502400c816da2304"
-        }
-      ]
-    },
-    {
-      "id": "file-hash-a0957d272237",
-      "ioc_type": "file_hash",
-      "value": "dfa1ad6083aa06b82edfa672925bb78c16d4e8cb2510cbe18ea1cf598e7f2722",
-      "display": "dfa1ad6083aa...",
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…Bisonal SHA256: 43459F5117BEE7B49F2CEE7CE934471E01FB2AA2856F230943460E14E19183A6 DFA1AD6083AA06B82EDFA672925BB78C16D4E8CB2510CBE18EA1CF598E7F2722 1128D10347DD602ECD3228FAA389ADD11415BF6936E2328101311264547AFA75 359835C4A9DBE2D95E483464659744409E877CB6F5D791DAA33FD601A01376FC C2:…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
@@ -316495,36 +316165,6 @@
       ]
     },
     {
-      "id": "ip-address-314732c0b8d7",
-      "ioc_type": "ip_address",
-      "value": "116.193.155.38",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…These domains are provided by a free DDNS service and both resolve to the same IP address, 116.193.155.38. When this Bisonal variant communicates with its C2, the malware sends an HTTP POST request with the static strings “ks8d” and…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
-        }
-      ]
-    },
-    {
       "id": "ip-address-2e7b025be3e5",
       "ioc_type": "ip_address",
       "value": "116.202.208.125",
@@ -362284,36 +361924,6 @@
           "section": "Conclusion",
           "pulled_at": "2026-09-12",
           "source_sha256": "b205610fac935a5dedfea37125ed86ad65b4e455c8dd33f5cfffc82cb81c4852"
-        }
-      ]
-    },
-    {
-      "id": "ip-address-8fd1d255bcb2",
-      "ioc_type": "ip_address",
-      "value": "196.44.49.154",
-      "display": null,
-      "persona": null,
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ],
-      "first_seen": "2018-07-31",
-      "last_seen": "2018-07-31",
-      "extraction": {
-        "method": "regex",
-        "model": null,
-        "grounded": true
-      },
-      "sources": [
-        {
-          "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-          "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-          "publisher": "Paloalto Networks",
-          "published": "2018-07-31",
-          "context": "…2012 unidentified 1031 43459f5117bee7b49f2cee7ce934471e01fb2aa2856f230943460e14e19183a6 XOR YES YES jennifer998.lookin.at, 196.44.49.154 2014 South Korea 0919-1 dfa1ad6083aa06b82edfa672925bb78c16d4e8cb2510cbe18ea1cf598e7f2722 RC4 NO YES…",
-          "context_origin": "text",
-          "section": "Targeting Russia",
-          "pulled_at": "2026-09-12",
-          "source_sha256": "8b4d436e6b12c14c49481fc3a1f0f87afa87230b349b46559f7e343aa6a2fa2a"
         }
       ]
     },
