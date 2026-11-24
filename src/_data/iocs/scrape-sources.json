@@ -8407,14 +8407,6 @@
       ]
     },
     {
-      "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
-      "publisher": "Paloalto Networks",
-      "title": "Bisonal Malware Used in Attacks Against Russia and South Korea",
-      "campaign": [
-        "DPRK (cluster unattributed)"
-      ]
-    },
-    {
       "url": "https://i.blackhat.com/briefings/asia/2018/asia-18-shen-kwak-jang-nation-state-moneymule-hunting-season-thursday.pdf",
       "publisher": "FSI",
       "title": "NATION-STATE MONEYMULE'S HUNTING SEASON",
@@ -20856,6 +20848,13 @@
       "reason": "no-dprk-keyword",
       "checked": "2026-11-18",
       "notes": "A general insider-threat piece on digital recruitment marketplaces; it never names North Korea. Read in a browser on 2026-11-18."
+    },
+    {
+      "url": "https://researchcenter.paloaltonetworks.com/2018/07/unit42-bisonal-malware-used-attacks-russia-south-korea/",
+      "publisher": "Paloalto Networks",
+      "reason": "withdrawn",
+      "checked": "2026-11-24",
+      "notes": "Withdrawn on 2026-11-24 after it had been indexed under DPRK (cluster unattributed). The report attributes the Bisonal activity only to \"one group\", names no country, and never mentions North Korea; its lures and targets are Russian and South Korean defence and government bodies. Bisonal is usually attributed elsewhere to Tonto Team, a China-nexus actor."
     }
   ],
   "discovered": [
