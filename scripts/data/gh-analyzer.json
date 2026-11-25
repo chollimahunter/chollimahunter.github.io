@@ -28915,6 +28915,101 @@
       "mutual_indexed": [],
       "organizations": []
     },
+    "kryptify": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "kryptify",
+      "created_at": "2015-12-21T23:59:36Z",
+      "public_repos": 66,
+      "followers": 40,
+      "following": 12,
+      "original_repos": 56,
+      "forked_repos": 10,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "xinzhe1025@hotmail.com",
+        "xinzhe1219@outlook.com"
+      ],
+      "commit_names": [
+        "Kryptify",
+        "XinZhe Zhang",
+        "kryptify",
+        "unknown",
+        "xinGuruZhe1219"
+      ],
+      "names_per_email_max": 5,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [
+        "coindev219"
+      ],
+      "followers_indexed": [
+        "codeninja819",
+        "hiratani0219",
+        "warmice0228"
+      ],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "kryptodev0777": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "kryptoDev0777",
+      "created_at": "2020-10-21T15:07:41Z",
+      "public_repos": 57,
+      "followers": 82,
+      "following": 53,
+      "original_repos": 17,
+      "forked_repos": 40,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "Blockchain developer"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "kryptodev0777"
+      ],
+      "following_indexed": [
+        "0xdanieltran",
+        "Cryptodev0124",
+        "TechSavvyNinja",
+        "aichannode",
+        "bl0ckchaindev",
+        "hodler-smart",
+        "icetrust0212",
+        "levintech",
+        "leyr1112",
+        "make-green-world",
+        "partnerofyou26",
+        "solyasa",
+        "starman1121"
+      ],
+      "followers_indexed": [
+        "Cryptodev0124",
+        "audi057",
+        "bestengineer1112",
+        "bojanterzic529",
+        "icetrust0212",
+        "leyr1112",
+        "solyasa",
+        "starman1121",
+        "topclever"
+      ],
+      "mutual_indexed": [
+        "Cryptodev0124",
+        "icetrust0212",
+        "leyr1112",
+        "solyasa",
+        "starman1121"
+      ],
+      "organizations": []
+    },
     "kstar0102": {
       "analyzed": "2026-10-06",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -28988,6 +29083,149 @@
       "mutual_indexed": [],
       "organizations": []
     },
+    "kula7107": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "KULA7107",
+      "created_at": "2023-05-01T18:24:21Z",
+      "public_repos": 5,
+      "followers": 4,
+      "following": 6,
+      "original_repos": 4,
+      "forked_repos": 1,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "teddybear0259@gmail.com"
+      ],
+      "commit_names": [
+        "KULA",
+        "KULA7107"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "kula7107"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "kunkka0822": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "kunkka0822",
+      "status": "no report"
+    },
+    "kvenus-uj": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "kvenus-uj",
+      "status": "no report"
+    },
+    "l34rnt0c0d3": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "l34rnt0c0d3",
+      "status": "no report"
+    },
+    "lambda-platform": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "lambda-platform",
+      "created_at": "2015-10-05T05:29:40Z",
+      "public_repos": 33,
+      "followers": 13,
+      "following": 0,
+      "original_repos": 33,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "lamsiuming": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "LamSiuMing",
+      "created_at": "2023-04-28T19:18:11Z",
+      "public_repos": 8,
+      "followers": 18,
+      "following": 7,
+      "original_repos": 8,
+      "forked_repos": 0,
+      "backdated_repos": 3,
+      "backdated_examples": [
+        {
+          "repo": "LamSiuMing/salesrecorder",
+          "first_commit": "2022-12-04"
+        },
+        {
+          "repo": "LamSiuMing/duco-webservices",
+          "first_commit": "2020-06-26"
+        },
+        {
+          "repo": "LamSiuMing/clean-react",
+          "first_commit": "2020-06-01"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "PeterPan627",
+        "margalingibhubclt",
+        "supersenior017"
+      ],
+      "followers_indexed": [
+        "PeterPan627",
+        "niceDeve"
+      ],
+      "mutual_indexed": [
+        "PeterPan627"
+      ],
+      "organizations": []
+    },
+    "lancer92-rep": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "lancer92-rep",
+      "created_at": "2023-05-19T04:58:10Z",
+      "public_repos": 3,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 3,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "superceo99@gmail.com"
+      ],
+      "commit_names": [
+        "lancer92-rep"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "larrylevine495": {
       "analyzed": "2026-10-06",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -29034,6 +29272,98 @@
       "mutual_indexed": [],
       "organizations": []
     },
+    "lartiquel": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "lArtiquel",
+      "created_at": "2018-02-26T20:11:27Z",
+      "public_repos": 37,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 25,
+      "forked_repos": 12,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "laurenninedots": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "laurenninedots",
+      "created_at": "2022-11-14T15:47:47Z",
+      "public_repos": 0,
+      "followers": 1,
+      "following": 11,
+      "original_repos": 0,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "lazy0345": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "lazy0345",
+      "created_at": "2024-03-26T07:10:13Z",
+      "public_repos": 1,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 1,
+      "forked_repos": 0,
+      "backdated_repos": 6,
+      "backdated_examples": [
+        {
+          "repo": "anochkasky/Huddle",
+          "first_commit": "2023-07-10"
+        },
+        {
+          "repo": "viktasty/landingpage",
+          "first_commit": "2023-09-30"
+        },
+        {
+          "repo": "anochkasky/Avellino",
+          "first_commit": "2023-08-16"
+        },
+        {
+          "repo": "Trustpad-web/blur-admin",
+          "first_commit": "2023-05-22"
+        },
+        {
+          "repo": "VenusGworld/fore_more_manage",
+          "first_commit": "2023-09-22"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [
+        "lazy0345"
+      ],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
     "lb-1010": {
       "analyzed": "2026-10-06",
       "tool": "gh-fake-analyzer 1.0.2",
@@ -29062,6 +29392,44 @@
       "mutual_indexed": [
         "generalxdev"
       ],
+      "organizations": []
+    },
+    "ld-star": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "Ld-star",
+      "created_at": "2022-10-21T10:29:06Z",
+      "public_repos": 7,
+      "followers": 10,
+      "following": 7,
+      "original_repos": 7,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "Ld-star/Solidity",
+          "first_commit": "2022-01-14"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "lodestar0905@gmail.com"
+      ],
+      "commit_names": [
+        "Ld-Star",
+        "kretovvadim"
+      ],
+      "names_per_email_max": 0,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "prowebdev119"
+      ],
+      "followers_indexed": [
+        "Kage0923",
+        "uniwaydev"
+      ],
+      "mutual_indexed": [],
       "organizations": []
     },
     "leadcyber": {
@@ -29101,6 +29469,244 @@
       "followers_indexed": [],
       "mutual_indexed": [],
       "organizations": []
+    },
+    "legendaryangelist": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "legendaryangelist",
+      "created_at": "2022-01-06T16:26:03Z",
+      "public_repos": 66,
+      "followers": 205,
+      "following": 105,
+      "original_repos": 42,
+      "forked_repos": 24,
+      "backdated_repos": 22,
+      "backdated_examples": [
+        {
+          "repo": "binance-nft-buy",
+          "first_commit": "2021-07-08"
+        },
+        {
+          "repo": "calculator-with-react",
+          "first_commit": "2020-12-30"
+        },
+        {
+          "repo": "ecommerce-with-laravel",
+          "first_commit": "2021-01-02"
+        },
+        {
+          "repo": "img-board",
+          "first_commit": "2021-03-21"
+        },
+        {
+          "repo": "laravel-messenger",
+          "first_commit": "2016-02-13"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "intrepid.arctic.scavenger@gmail.com"
+      ],
+      "commit_names": [
+        "Legend",
+        "genuine-developer",
+        "intrepid.arctic.scavenger",
+        "legendaryangelist"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "crypdev007",
+        "leionion"
+      ],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": [
+        "AbstractNFTy",
+        "AnttoniCsdogr",
+        "Hades-Group",
+        "MyAi-Front-End",
+        "Nftartland",
+        "roundhouse-sol"
+      ]
+    },
+    "legendx0333": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "legendx0333",
+      "status": "no report"
+    },
+    "leionion": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "leionion",
+      "created_at": "2015-09-28T22:30:37Z",
+      "public_repos": 21,
+      "followers": 200,
+      "following": 83,
+      "original_repos": 21,
+      "forked_repos": 0,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 1,
+      "commit_emails": [
+        "j.ohnceballos0716@gmail.com"
+      ],
+      "commit_names": [
+        "Atst",
+        "Leionion",
+        "atst4",
+        "leionion"
+      ],
+      "names_per_email_max": 4,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [
+        "AMagicHarry",
+        "m8s-lab",
+        "morganm94"
+      ],
+      "followers_indexed": [
+        "ironcg20",
+        "legendaryangelist",
+        "rustsol114"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "InscNix",
+        "infraform"
+      ]
+    },
+    "leopawel": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "leopawel",
+      "created_at": "2022-04-17T12:24:56Z",
+      "public_repos": 2,
+      "followers": 675,
+      "following": 249,
+      "original_repos": 1,
+      "forked_repos": 1,
+      "backdated_repos": 0,
+      "backdated_examples": [],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [],
+      "commit_names": [
+        "DeamChain CEO",
+        "Deamtest CTO"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 0,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "wildwolf085"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "deamchain"
+      ]
+    },
+    "lermontovainessa": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "lermontovainessa",
+      "status": "no report"
+    },
+    "leroys041": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "LeroyS041",
+      "created_at": "2018-06-19T15:01:12Z",
+      "public_repos": 7,
+      "followers": 0,
+      "following": 0,
+      "original_repos": 7,
+      "forked_repos": 0,
+      "backdated_repos": 1,
+      "backdated_examples": [
+        {
+          "repo": "midas92/ionic-Taxi-booking",
+          "first_commit": "2017-10-05"
+        }
+      ],
+      "duplicate_commit_repos": 0,
+      "commit_emails": [
+        "leroysmith041@gmail.com"
+      ],
+      "commit_names": [
+        "L.S",
+        "LeroyS041"
+      ],
+      "names_per_email_max": 2,
+      "emails_per_name_max": 2,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [],
+      "mutual_indexed": [],
+      "organizations": []
+    },
+    "levintech": {
+      "analyzed": "2026-11-25",
+      "tool": "gh-fake-analyzer 1.0.2",
+      "login": "levintech",
+      "created_at": "2021-07-28T18:21:46Z",
+      "public_repos": 185,
+      "followers": 140,
+      "following": 31,
+      "original_repos": 74,
+      "forked_repos": 111,
+      "backdated_repos": 3,
+      "backdated_examples": [
+        {
+          "repo": "github-slideshow",
+          "first_commit": "2018-01-23"
+        },
+        {
+          "repo": "marginswap-sdk",
+          "first_commit": "2021-03-27"
+        },
+        {
+          "repo": "marginswap-subgraph",
+          "first_commit": "2021-04-28"
+        }
+      ],
+      "duplicate_commit_repos": 2,
+      "commit_emails": [
+        "dkojic325@gmail.com",
+        "engineerlife325@gmail.com",
+        "thunderstroke.tech@gmail.com"
+      ],
+      "commit_names": [
+        "DraganKojic",
+        "Engineer Life",
+        "Levin",
+        "dkojic325",
+        "engineer325",
+        "levintech",
+        "thunderstroke325"
+      ],
+      "names_per_email_max": 3,
+      "emails_per_name_max": 3,
+      "dprk_naming": [],
+      "following_indexed": [],
+      "followers_indexed": [
+        "MilanJelesic",
+        "audi057",
+        "bojanterzic529",
+        "everythinguwannatobe",
+        "hodler-smart",
+        "kryptoDev0777",
+        "leyr1112",
+        "solyasa",
+        "starman1121"
+      ],
+      "mutual_indexed": [],
+      "organizations": [
+        "Devs-Dungeon",
+        "Py-Contributors"
+      ]
     },
     "loki-engr": {
       "analyzed": "2026-10-06",
@@ -33022,5 +33628,5 @@
     }
   },
   "_comment": "gh-fake-analyzer (github.com/shortdoom/gh-fake-analyzer, by the Ketman Project) run over GitHub accounts in this index by .github/workflows/gh-analyzer.yml, summarized by scripts/gh-analyzer-summarize.js. Signals only: an account flagged here is not thereby attributed to anyone, and one that passes is not cleared. See docs/gh-fake-analyzer.md.",
-  "updated": "2026-11-24"
+  "updated": "2026-11-25"
 }
